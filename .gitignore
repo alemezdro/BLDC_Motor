@@ -1,15 +1,15 @@
-# Build folders
-/Debug/
-/Release/
-/Generate_Source/
+# Ignore everything
+*
 
-# Compiler outputs
-*.elf
-*.hex
-*.map
-*.rpt
-*.log
-*.bak
+# But not these files
+!*.c
+!*.h
+
+# Also, don't ignore directories (so Git can traverse into them)
+!*/
+
+# Optional: keep the .gitignore itself
+!.gitignore
 
 # OS-specific
 .DS_Store

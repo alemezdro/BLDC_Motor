@@ -1,16 +1,69 @@
-# Ignore everything
+# --- General rule ---
 *
-
-# But not these files
 !*.c
 !*.h
-
-# Also, don't ignore directories (so Git can traverse into them)
 !*/
-
-# Optional: keep the .gitignore itself
 !.gitignore
 
-# OS-specific
+# --- PSoC Creator specific ---
+# Project build output
+Generated_Source/
+Debug/
+Release/
+CortexM0/
+CortexM3/
+CortexM4/
+ARM_GCC_*
+ARM_Keil_*
+ARM_MDKeil_*
+ARM_PSoC_*
+Output/
+*.rpt
+*.elf
+*.hex
+*.map
+*.lst
+*.dep
+*.svd
+
+# Creator metadata
+*.cywrk.*
+*.cyprj.*
+*.cycdx
+*.cyfit
+*.cywrk
+*.cyprj
+*.cydwr
+*.cyupdt
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.dmp
+*.orig
+
+# --- ModusToolbox specific ---
+libs/
+libs.deps
+*.launch
+*.metadata/
+mtb_shared/
+mtb-example-*
+MtbShared/
+*.gpdsc
+*.mex
+*.mtb
+*.mk
+
+# Eclipse / IDE junk
+.settings/
+.project
+.cproject
+.idea/
+.vscode/
+
+# OS files
 .DS_Store
 Thumbs.db

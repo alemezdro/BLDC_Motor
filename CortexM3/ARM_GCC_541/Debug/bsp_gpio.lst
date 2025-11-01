@@ -1,0 +1,2027 @@
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"bsp_gpio.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.init_gpio,"ax",%progbits
+  20              		.align	2
+  21              		.global	init_gpio
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	init_gpio, %function
+  25              	init_gpio:
+  26              	.LFB0:
+  27              		.file 1 "bsp_gpio.c"
+   1:bsp_gpio.c    **** /* ========================================
+   2:bsp_gpio.c    ****  *
+   3:bsp_gpio.c    ****  * Copyright YOUR COMPANY, THE YEAR
+   4:bsp_gpio.c    ****  * All Rights Reserved
+   5:bsp_gpio.c    ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:bsp_gpio.c    ****  *
+   7:bsp_gpio.c    ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:bsp_gpio.c    ****  * WHICH IS THE PROPERTY OF your company.
+   9:bsp_gpio.c    ****  *
+  10:bsp_gpio.c    ****  * ========================================
+  11:bsp_gpio.c    **** */
+  12:bsp_gpio.c    **** 
+  13:bsp_gpio.c    **** #include <bsp_gpio.h>
+  14:bsp_gpio.c    **** 
+  15:bsp_gpio.c    **** /*
+  16:bsp_gpio.c    **** ***************************************************************************************************
+  17:bsp_gpio.c    **** *                                       init_gpio()
+  18:bsp_gpio.c    **** *
+  19:bsp_gpio.c    **** * Description : This function initializes the Pin_1 GPIO module (P1_6, J1 Pin 23), the
+  20:bsp_gpio.c    **** *               Pin_2 GPIO module (P2_0, J1 Pin 1 and P2_1, J1 Pin 2) and the push button
+  21:bsp_gpio.c    **** *               GPIO module (P2_2, J1 Pin 3). On P2_1 a blue on-board LED is connected. On
+  22:bsp_gpio.c    **** *               P2_2 on side of a GND-connected button is connected.
+  23:bsp_gpio.c    **** *
+  24:bsp_gpio.c    **** * Argument(s) : none.
+  25:bsp_gpio.c    **** *
+  26:bsp_gpio.c    **** * Return(s)   : none.
+  27:bsp_gpio.c    **** *
+  28:bsp_gpio.c    **** * Caller(s)   : Application.
+  29:bsp_gpio.c    **** *
+  30:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 2
+
+
+  31:bsp_gpio.c    **** ***************************************************************************************************
+  32:bsp_gpio.c    **** */
+  33:bsp_gpio.c    **** 
+  34:bsp_gpio.c    **** CPU_VOID init_gpio(CPU_VOID)
+  35:bsp_gpio.c    **** {
+  28              		.loc 1 35 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  36:bsp_gpio.c    ****   Pin_1_SetDriveMode(Pin_1_DM_STRONG);
+  36              		.loc 1 36 0
+  37 0002 0C20     		movs	r0, #12
+  38 0004 FFF7FEFF 		bl	Pin_1_SetDriveMode
+  39              	.LVL0:
+  37:bsp_gpio.c    ****   Pin_2_SetDriveMode(Pin_2_DM_STRONG);
+  40              		.loc 1 37 0
+  41 0008 0C20     		movs	r0, #12
+  42 000a FFF7FEFF 		bl	Pin_2_SetDriveMode
+  43              	.LVL1:
+  38:bsp_gpio.c    ****   push_button_SetDriveMode(push_button_DM_STRONG);
+  44              		.loc 1 38 0
+  45 000e 0C20     		movs	r0, #12
+  46 0010 FFF7FEFF 		bl	push_button_SetDriveMode
+  47              	.LVL2:
+  39:bsp_gpio.c    ****   push_button_Write(1);
+  48              		.loc 1 39 0
+  49 0014 0120     		movs	r0, #1
+  50 0016 FFF7FEFF 		bl	push_button_Write
+  51              	.LVL3:
+  52 001a 08BD     		pop	{r3, pc}
+  53              		.cfi_endproc
+  54              	.LFE0:
+  55              		.size	init_gpio, .-init_gpio
+  56              		.section	.text.gpio_high,"ax",%progbits
+  57              		.align	2
+  58              		.global	gpio_high
+  59              		.thumb
+  60              		.thumb_func
+  61              		.type	gpio_high, %function
+  62              	gpio_high:
+  63              	.LFB1:
+  40:bsp_gpio.c    **** }
+  41:bsp_gpio.c    **** 
+  42:bsp_gpio.c    **** /*
+  43:bsp_gpio.c    **** ***************************************************************************************************
+  44:bsp_gpio.c    **** *                                       gpio_high()
+  45:bsp_gpio.c    **** *
+  46:bsp_gpio.c    **** * Description : This function set based on a chosen port (PORT1, PORT2) the digital level
+  47:bsp_gpio.c    **** *               of a chosen pin (P1_6, P2_0, P2_1) on digital high (~ 5V).
+  48:bsp_gpio.c    **** *
+  49:bsp_gpio.c    **** * Argument(s) : port ... indicates which port should be addressed (PORT1, PORT2)
+  50:bsp_gpio.c    **** *               pin  ... indicates which pin of the chosen port is addressed (P1_6, P2_0, P2_1)
+  51:bsp_gpio.c    **** *
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 3
+
+
+  52:bsp_gpio.c    **** * Return(s)   : 0 ... if no error occurred
+  53:bsp_gpio.c    **** *               >1... if an error occurred
+  54:bsp_gpio.c    **** *
+  55:bsp_gpio.c    **** * Caller(s)   : Application.
+  56:bsp_gpio.c    **** *
+  57:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+  58:bsp_gpio.c    **** ***************************************************************************************************
+  59:bsp_gpio.c    **** */
+  60:bsp_gpio.c    **** 
+  61:bsp_gpio.c    **** CPU_INT08U gpio_high(CPU_INT08U port, CPU_INT08U pin)
+  62:bsp_gpio.c    **** {
+  64              		.loc 1 62 0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              	.LVL4:
+  69 0000 08B5     		push	{r3, lr}
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 3, -8
+  72              		.cfi_offset 14, -4
+  73              	.LVL5:
+  63:bsp_gpio.c    ****   CPU_INT08U err = 0;
+  64:bsp_gpio.c    ****   
+  65:bsp_gpio.c    ****   if(port == PORT1){
+  74              		.loc 1 65 0
+  75 0002 0128     		cmp	r0, #1
+  76 0004 05D1     		bne	.L4
+  66:bsp_gpio.c    ****     if(pin == P1_6){
+  77              		.loc 1 66 0
+  78 0006 4029     		cmp	r1, #64
+  79 0008 13D1     		bne	.L7
+  67:bsp_gpio.c    ****       Pin_1_Write(HIGH);
+  80              		.loc 1 67 0
+  81 000a FFF7FEFF 		bl	Pin_1_Write
+  82              	.LVL6:
+  63:bsp_gpio.c    ****   CPU_INT08U err = 0;
+  83              		.loc 1 63 0
+  84 000e 0020     		movs	r0, #0
+  85 0010 08BD     		pop	{r3, pc}
+  86              	.LVL7:
+  87              	.L4:
+  68:bsp_gpio.c    ****     }
+  69:bsp_gpio.c    ****     else{
+  70:bsp_gpio.c    ****       err++;
+  71:bsp_gpio.c    ****     }
+  72:bsp_gpio.c    ****   }
+  73:bsp_gpio.c    ****   else if(port == PORT2){
+  88              		.loc 1 73 0
+  89 0012 0228     		cmp	r0, #2
+  90 0014 0FD1     		bne	.L8
+  74:bsp_gpio.c    ****     if(pin == P2_0){
+  91              		.loc 1 74 0
+  92 0016 0129     		cmp	r1, #1
+  93 0018 04D1     		bne	.L6
+  75:bsp_gpio.c    ****       Pin_2_Write(P2_0); 
+  94              		.loc 1 75 0
+  95 001a 0120     		movs	r0, #1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 4
+
+
+  96              	.LVL8:
+  97 001c FFF7FEFF 		bl	Pin_2_Write
+  98              	.LVL9:
+  63:bsp_gpio.c    ****   
+  99              		.loc 1 63 0
+ 100 0020 0020     		movs	r0, #0
+ 101 0022 08BD     		pop	{r3, pc}
+ 102              	.LVL10:
+ 103              	.L6:
+  76:bsp_gpio.c    ****     }
+  77:bsp_gpio.c    ****     else if(pin == P2_1){
+ 104              		.loc 1 77 0
+ 105 0024 0229     		cmp	r1, #2
+ 106 0026 08D1     		bne	.L9
+  78:bsp_gpio.c    ****       Pin_2_Write(P2_1);
+ 107              		.loc 1 78 0
+ 108 0028 0220     		movs	r0, #2
+ 109              	.LVL11:
+ 110 002a FFF7FEFF 		bl	Pin_2_Write
+ 111              	.LVL12:
+  63:bsp_gpio.c    ****   
+ 112              		.loc 1 63 0
+ 113 002e 0020     		movs	r0, #0
+ 114 0030 08BD     		pop	{r3, pc}
+ 115              	.LVL13:
+ 116              	.L7:
+  70:bsp_gpio.c    ****     }
+ 117              		.loc 1 70 0
+ 118 0032 0120     		movs	r0, #1
+ 119              	.LVL14:
+ 120 0034 08BD     		pop	{r3, pc}
+ 121              	.LVL15:
+ 122              	.L8:
+  79:bsp_gpio.c    ****     }
+  80:bsp_gpio.c    ****     else{
+  81:bsp_gpio.c    ****       err++;
+  82:bsp_gpio.c    ****     }
+  83:bsp_gpio.c    ****   }
+  84:bsp_gpio.c    ****   else{
+  85:bsp_gpio.c    ****     err++;
+ 123              		.loc 1 85 0
+ 124 0036 0120     		movs	r0, #1
+ 125              	.LVL16:
+ 126 0038 08BD     		pop	{r3, pc}
+ 127              	.LVL17:
+ 128              	.L9:
+  81:bsp_gpio.c    ****     }
+ 129              		.loc 1 81 0
+ 130 003a 0120     		movs	r0, #1
+ 131              	.LVL18:
+  86:bsp_gpio.c    ****   }
+  87:bsp_gpio.c    ****   return err;    
+  88:bsp_gpio.c    **** }
+ 132              		.loc 1 88 0
+ 133 003c 08BD     		pop	{r3, pc}
+ 134              		.cfi_endproc
+ 135              	.LFE1:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 5
+
+
+ 136              		.size	gpio_high, .-gpio_high
+ 137 003e 00BF     		.section	.text.gpio_low,"ax",%progbits
+ 138              		.align	2
+ 139              		.global	gpio_low
+ 140              		.thumb
+ 141              		.thumb_func
+ 142              		.type	gpio_low, %function
+ 143              	gpio_low:
+ 144              	.LFB2:
+  89:bsp_gpio.c    **** 
+  90:bsp_gpio.c    **** /*
+  91:bsp_gpio.c    **** ***************************************************************************************************
+  92:bsp_gpio.c    **** *                                       gpio_low()
+  93:bsp_gpio.c    **** *
+  94:bsp_gpio.c    **** * Description : This function resets based on a chosen port (PORT1, PORT2) the digital level
+  95:bsp_gpio.c    **** *               of a chosen pin (P1_6, P2_0, P2_1) on digital low (0V).
+  96:bsp_gpio.c    **** *
+  97:bsp_gpio.c    **** * Argument(s) : port ... indicates which port should be addressed (PORT1, PORT2)
+  98:bsp_gpio.c    **** *               pin  ... indicates which pin of the chosen port is addressed (P1_6, P2_0, P2_1)
+  99:bsp_gpio.c    **** *
+ 100:bsp_gpio.c    **** * Return(s)   : 0 ... if no error occurred
+ 101:bsp_gpio.c    **** *               >1... if an error occurred
+ 102:bsp_gpio.c    **** *
+ 103:bsp_gpio.c    **** * Caller(s)   : Application.
+ 104:bsp_gpio.c    **** *
+ 105:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+ 106:bsp_gpio.c    **** ***************************************************************************************************
+ 107:bsp_gpio.c    **** */
+ 108:bsp_gpio.c    **** 
+ 109:bsp_gpio.c    **** CPU_INT08U gpio_low(CPU_INT08U port, CPU_INT08U pin)
+ 110:bsp_gpio.c    **** {
+ 145              		.loc 1 110 0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              	.LVL19:
+ 150 0000 08B5     		push	{r3, lr}
+ 151              		.cfi_def_cfa_offset 8
+ 152              		.cfi_offset 3, -8
+ 153              		.cfi_offset 14, -4
+ 154              	.LVL20:
+ 111:bsp_gpio.c    ****   CPU_INT08U err = 0;
+ 112:bsp_gpio.c    ****   
+ 113:bsp_gpio.c    ****   if(port == PORT1){
+ 155              		.loc 1 113 0
+ 156 0002 0128     		cmp	r0, #1
+ 157 0004 06D1     		bne	.L12
+ 114:bsp_gpio.c    ****     if(pin == P1_6){
+ 158              		.loc 1 114 0
+ 159 0006 4029     		cmp	r1, #64
+ 160 0008 14D1     		bne	.L15
+ 115:bsp_gpio.c    ****       Pin_1_Write(LOW);
+ 161              		.loc 1 115 0
+ 162 000a 0020     		movs	r0, #0
+ 163              	.LVL21:
+ 164 000c FFF7FEFF 		bl	Pin_1_Write
+ 165              	.LVL22:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 6
+
+
+ 111:bsp_gpio.c    ****   CPU_INT08U err = 0;
+ 166              		.loc 1 111 0
+ 167 0010 0020     		movs	r0, #0
+ 168 0012 08BD     		pop	{r3, pc}
+ 169              	.LVL23:
+ 170              	.L12:
+ 116:bsp_gpio.c    ****     }
+ 117:bsp_gpio.c    ****     else{
+ 118:bsp_gpio.c    ****       err++;
+ 119:bsp_gpio.c    ****     }
+ 120:bsp_gpio.c    ****   }
+ 121:bsp_gpio.c    ****   else if(port == PORT2){
+ 171              		.loc 1 121 0
+ 172 0014 0228     		cmp	r0, #2
+ 173 0016 0FD1     		bne	.L16
+ 122:bsp_gpio.c    ****     if(pin == P2_0){
+ 174              		.loc 1 122 0
+ 175 0018 0129     		cmp	r1, #1
+ 176 001a 04D1     		bne	.L14
+ 123:bsp_gpio.c    ****       Pin_2_Write(!(P2_0)); 
+ 177              		.loc 1 123 0
+ 178 001c 0020     		movs	r0, #0
+ 179              	.LVL24:
+ 180 001e FFF7FEFF 		bl	Pin_2_Write
+ 181              	.LVL25:
+ 111:bsp_gpio.c    ****   
+ 182              		.loc 1 111 0
+ 183 0022 0020     		movs	r0, #0
+ 184 0024 08BD     		pop	{r3, pc}
+ 185              	.LVL26:
+ 186              	.L14:
+ 124:bsp_gpio.c    ****     }
+ 125:bsp_gpio.c    ****     else if(pin == P2_1){
+ 187              		.loc 1 125 0
+ 188 0026 0229     		cmp	r1, #2
+ 189 0028 08D1     		bne	.L17
+ 126:bsp_gpio.c    ****       Pin_2_Write(!(P2_1));
+ 190              		.loc 1 126 0
+ 191 002a 0020     		movs	r0, #0
+ 192              	.LVL27:
+ 193 002c FFF7FEFF 		bl	Pin_2_Write
+ 194              	.LVL28:
+ 111:bsp_gpio.c    ****   
+ 195              		.loc 1 111 0
+ 196 0030 0020     		movs	r0, #0
+ 197 0032 08BD     		pop	{r3, pc}
+ 198              	.LVL29:
+ 199              	.L15:
+ 118:bsp_gpio.c    ****     }
+ 200              		.loc 1 118 0
+ 201 0034 0120     		movs	r0, #1
+ 202              	.LVL30:
+ 203 0036 08BD     		pop	{r3, pc}
+ 204              	.LVL31:
+ 205              	.L16:
+ 127:bsp_gpio.c    ****     }
+ 128:bsp_gpio.c    ****     else{
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 7
+
+
+ 129:bsp_gpio.c    ****       err++;
+ 130:bsp_gpio.c    ****     }
+ 131:bsp_gpio.c    ****   }
+ 132:bsp_gpio.c    ****   else{
+ 133:bsp_gpio.c    ****     err++;
+ 206              		.loc 1 133 0
+ 207 0038 0120     		movs	r0, #1
+ 208              	.LVL32:
+ 209 003a 08BD     		pop	{r3, pc}
+ 210              	.LVL33:
+ 211              	.L17:
+ 129:bsp_gpio.c    ****     }
+ 212              		.loc 1 129 0
+ 213 003c 0120     		movs	r0, #1
+ 214              	.LVL34:
+ 134:bsp_gpio.c    ****   }
+ 135:bsp_gpio.c    ****   return err;   
+ 136:bsp_gpio.c    **** }
+ 215              		.loc 1 136 0
+ 216 003e 08BD     		pop	{r3, pc}
+ 217              		.cfi_endproc
+ 218              	.LFE2:
+ 219              		.size	gpio_low, .-gpio_low
+ 220              		.section	.text.gpio_read,"ax",%progbits
+ 221              		.align	2
+ 222              		.global	gpio_read
+ 223              		.thumb
+ 224              		.thumb_func
+ 225              		.type	gpio_read, %function
+ 226              	gpio_read:
+ 227              	.LFB3:
+ 137:bsp_gpio.c    **** 
+ 138:bsp_gpio.c    **** /*
+ 139:bsp_gpio.c    **** ***************************************************************************************************
+ 140:bsp_gpio.c    **** *                                       gpio_read()
+ 141:bsp_gpio.c    **** *
+ 142:bsp_gpio.c    **** * Description : This function reads the digital level of a chosen port (PORT2) and pin (P2_2).
+ 143:bsp_gpio.c    **** *
+ 144:bsp_gpio.c    **** * Argument(s) : port ... indicates which port should be addressed (PORT2)
+ 145:bsp_gpio.c    **** *               pin  ... indicates which pin of the chosen port is addressed (P2_2)
+ 146:bsp_gpio.c    **** *
+ 147:bsp_gpio.c    **** * Return(s)   : 0 ... if no error occurred
+ 148:bsp_gpio.c    **** *               -1... if an error occurred
+ 149:bsp_gpio.c    **** *
+ 150:bsp_gpio.c    **** * Caller(s)   : Application.
+ 151:bsp_gpio.c    **** *
+ 152:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+ 153:bsp_gpio.c    **** ***************************************************************************************************
+ 154:bsp_gpio.c    **** */
+ 155:bsp_gpio.c    **** 
+ 156:bsp_gpio.c    **** CPU_INT08S gpio_read(CPU_INT08U port, CPU_INT08U pin)
+ 157:bsp_gpio.c    **** {
+ 228              		.loc 1 157 0
+ 229              		.cfi_startproc
+ 230              		@ args = 0, pretend = 0, frame = 0
+ 231              		@ frame_needed = 0, uses_anonymous_args = 0
+ 232              	.LVL35:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 8
+
+
+ 158:bsp_gpio.c    ****   CPU_INT08S err = 0;
+ 159:bsp_gpio.c    ****   
+ 160:bsp_gpio.c    ****   if(port == PORT2){
+ 233              		.loc 1 160 0
+ 234 0000 0228     		cmp	r0, #2
+ 235 0002 06D1     		bne	.L21
+ 161:bsp_gpio.c    ****     if(pin == P2_2){
+ 236              		.loc 1 161 0
+ 237 0004 0429     		cmp	r1, #4
+ 238 0006 07D1     		bne	.L22
+ 157:bsp_gpio.c    ****   CPU_INT08S err = 0;
+ 239              		.loc 1 157 0
+ 240 0008 08B5     		push	{r3, lr}
+ 241              		.cfi_def_cfa_offset 8
+ 242              		.cfi_offset 3, -8
+ 243              		.cfi_offset 14, -4
+ 162:bsp_gpio.c    ****       err = push_button_Read();    
+ 244              		.loc 1 162 0
+ 245 000a FFF7FEFF 		bl	push_button_Read
+ 246              	.LVL36:
+ 247 000e 40B2     		sxtb	r0, r0
+ 248              	.LVL37:
+ 249 0010 08BD     		pop	{r3, pc}
+ 250              	.LVL38:
+ 251              	.L21:
+ 252              		.cfi_def_cfa_offset 0
+ 253              		.cfi_restore 3
+ 254              		.cfi_restore 14
+ 163:bsp_gpio.c    ****     }
+ 164:bsp_gpio.c    ****     else{
+ 165:bsp_gpio.c    ****       err = -1;
+ 166:bsp_gpio.c    ****     }
+ 167:bsp_gpio.c    ****   }
+ 168:bsp_gpio.c    ****   else{
+ 169:bsp_gpio.c    ****     err = -1;
+ 255              		.loc 1 169 0
+ 256 0012 4FF0FF30 		mov	r0, #-1
+ 257              	.LVL39:
+ 258 0016 7047     		bx	lr
+ 259              	.LVL40:
+ 260              	.L22:
+ 165:bsp_gpio.c    ****     }
+ 261              		.loc 1 165 0
+ 262 0018 4FF0FF30 		mov	r0, #-1
+ 263              	.LVL41:
+ 264 001c 7047     		bx	lr
+ 265              		.cfi_endproc
+ 266              	.LFE3:
+ 267              		.size	gpio_read, .-gpio_read
+ 268 001e 00BF     		.section	.text.PWM_INIT,"ax",%progbits
+ 269              		.align	2
+ 270              		.global	PWM_INIT
+ 271              		.thumb
+ 272              		.thumb_func
+ 273              		.type	PWM_INIT, %function
+ 274              	PWM_INIT:
+ 275              	.LFB4:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 9
+
+
+ 170:bsp_gpio.c    ****   }
+ 171:bsp_gpio.c    ****   return err;
+ 172:bsp_gpio.c    **** }
+ 173:bsp_gpio.c    **** 
+ 174:bsp_gpio.c    **** /*
+ 175:bsp_gpio.c    **** ***************************************************************************************************
+ 176:bsp_gpio.c    **** *                                       PWM INIT()
+ 177:bsp_gpio.c    **** *
+ 178:bsp_gpio.c    **** * Description : This function initiates the given pwm generator
+ 179:bsp_gpio.c    **** *
+ 180:bsp_gpio.c    **** * Argument(s) : led color
+ 181:bsp_gpio.c    **** *
+ 182:bsp_gpio.c    **** * Return(s)   : 0
+ 183:bsp_gpio.c    **** *
+ 184:bsp_gpio.c    **** * Caller(s)   : Application.
+ 185:bsp_gpio.c    **** *
+ 186:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+ 187:bsp_gpio.c    **** ***************************************************************************************************
+ 188:bsp_gpio.c    **** */
+ 189:bsp_gpio.c    **** 
+ 190:bsp_gpio.c    **** CPU_INT08S PWM_INIT(CPU_INT08U color)
+ 191:bsp_gpio.c    **** {
+ 276              		.loc 1 191 0
+ 277              		.cfi_startproc
+ 278              		@ args = 0, pretend = 0, frame = 0
+ 279              		@ frame_needed = 0, uses_anonymous_args = 0
+ 280              	.LVL42:
+ 281 0000 08B5     		push	{r3, lr}
+ 282              		.cfi_def_cfa_offset 8
+ 283              		.cfi_offset 3, -8
+ 284              		.cfi_offset 14, -4
+ 192:bsp_gpio.c    ****   
+ 193:bsp_gpio.c    ****   if(color == PWM_RED){
+ 285              		.loc 1 193 0
+ 286 0002 10B9     		cbnz	r0, .L26
+ 194:bsp_gpio.c    ****     PWM_R_Start();
+ 287              		.loc 1 194 0
+ 288 0004 FFF7FEFF 		bl	PWM_R_Start
+ 289              	.LVL43:
+ 290 0008 08E0     		b	.L27
+ 291              	.LVL44:
+ 292              	.L26:
+ 195:bsp_gpio.c    ****     
+ 196:bsp_gpio.c    ****   } else if(color == PWM_GREEN){
+ 293              		.loc 1 196 0
+ 294 000a 0128     		cmp	r0, #1
+ 295 000c 02D1     		bne	.L28
+ 197:bsp_gpio.c    ****     PWM_G_Start();
+ 296              		.loc 1 197 0
+ 297 000e FFF7FEFF 		bl	PWM_G_Start
+ 298              	.LVL45:
+ 299 0012 03E0     		b	.L27
+ 300              	.LVL46:
+ 301              	.L28:
+ 198:bsp_gpio.c    ****     
+ 199:bsp_gpio.c    ****   } else if(color == PWM_BLUE){
+ 302              		.loc 1 199 0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 10
+
+
+ 303 0014 0228     		cmp	r0, #2
+ 304 0016 01D1     		bne	.L27
+ 200:bsp_gpio.c    ****     PWM_B_Start();
+ 305              		.loc 1 200 0
+ 306 0018 FFF7FEFF 		bl	PWM_B_Start
+ 307              	.LVL47:
+ 308              	.L27:
+ 201:bsp_gpio.c    ****   }
+ 202:bsp_gpio.c    ****   return 0;
+ 203:bsp_gpio.c    **** }
+ 309              		.loc 1 203 0
+ 310 001c 0020     		movs	r0, #0
+ 311 001e 08BD     		pop	{r3, pc}
+ 312              		.cfi_endproc
+ 313              	.LFE4:
+ 314              		.size	PWM_INIT, .-PWM_INIT
+ 315              		.section	.text.PWM_SET,"ax",%progbits
+ 316              		.align	2
+ 317              		.global	PWM_SET
+ 318              		.thumb
+ 319              		.thumb_func
+ 320              		.type	PWM_SET, %function
+ 321              	PWM_SET:
+ 322              	.LFB5:
+ 204:bsp_gpio.c    **** 
+ 205:bsp_gpio.c    **** /*
+ 206:bsp_gpio.c    **** ***************************************************************************************************
+ 207:bsp_gpio.c    **** *                                       PWM_SET()
+ 208:bsp_gpio.c    **** *
+ 209:bsp_gpio.c    **** * Description : This function sets the pwm value for the pwm generator
+ 210:bsp_gpio.c    **** *
+ 211:bsp_gpio.c    **** * Argument(s) : led color , pwm value
+ 212:bsp_gpio.c    **** *
+ 213:bsp_gpio.c    **** * Return(s)   : 0
+ 214:bsp_gpio.c    **** *
+ 215:bsp_gpio.c    **** * Caller(s)   : Application.
+ 216:bsp_gpio.c    **** *
+ 217:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
+ 218:bsp_gpio.c    **** ***************************************************************************************************
+ 219:bsp_gpio.c    **** */
+ 220:bsp_gpio.c    **** 
+ 221:bsp_gpio.c    **** CPU_INT08S PWM_SET(CPU_INT08U color,CPU_INT08U value)
+ 222:bsp_gpio.c    **** {
+ 323              		.loc 1 222 0
+ 324              		.cfi_startproc
+ 325              		@ args = 0, pretend = 0, frame = 0
+ 326              		@ frame_needed = 0, uses_anonymous_args = 0
+ 327              	.LVL48:
+ 328 0000 08B5     		push	{r3, lr}
+ 329              		.cfi_def_cfa_offset 8
+ 330              		.cfi_offset 3, -8
+ 331              		.cfi_offset 14, -4
+ 223:bsp_gpio.c    ****   
+ 224:bsp_gpio.c    ****   if(color == PWM_RED){
+ 332              		.loc 1 224 0
+ 333 0002 18B9     		cbnz	r0, .L31
+ 225:bsp_gpio.c    ****     PWM_R_WriteCompare(value);
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 11
+
+
+ 334              		.loc 1 225 0
+ 335 0004 0846     		mov	r0, r1
+ 336              	.LVL49:
+ 337 0006 FFF7FEFF 		bl	PWM_R_WriteCompare
+ 338              	.LVL50:
+ 339 000a 0AE0     		b	.L32
+ 340              	.LVL51:
+ 341              	.L31:
+ 226:bsp_gpio.c    ****     
+ 227:bsp_gpio.c    ****   } else if(color == PWM_GREEN){
+ 342              		.loc 1 227 0
+ 343 000c 0128     		cmp	r0, #1
+ 344 000e 03D1     		bne	.L33
+ 228:bsp_gpio.c    ****     PWM_G_WriteCompare(value);
+ 345              		.loc 1 228 0
+ 346 0010 0846     		mov	r0, r1
+ 347              	.LVL52:
+ 348 0012 FFF7FEFF 		bl	PWM_G_WriteCompare
+ 349              	.LVL53:
+ 350 0016 04E0     		b	.L32
+ 351              	.LVL54:
+ 352              	.L33:
+ 229:bsp_gpio.c    ****     
+ 230:bsp_gpio.c    ****   } else if(color == PWM_BLUE){
+ 353              		.loc 1 230 0
+ 354 0018 0228     		cmp	r0, #2
+ 355 001a 02D1     		bne	.L32
+ 231:bsp_gpio.c    ****     PWM_B_WriteCompare(value);
+ 356              		.loc 1 231 0
+ 357 001c 0846     		mov	r0, r1
+ 358              	.LVL55:
+ 359 001e FFF7FEFF 		bl	PWM_B_WriteCompare
+ 360              	.LVL56:
+ 361              	.L32:
+ 232:bsp_gpio.c    ****   }
+ 233:bsp_gpio.c    ****   return 0;
+ 234:bsp_gpio.c    **** }
+ 362              		.loc 1 234 0
+ 363 0022 0020     		movs	r0, #0
+ 364 0024 08BD     		pop	{r3, pc}
+ 365              		.cfi_endproc
+ 366              	.LFE5:
+ 367              		.size	PWM_SET, .-PWM_SET
+ 368 0026 00BF     		.text
+ 369              	.Letext0:
+ 370              		.file 2 ".\\uC-CPU\\ARM-Cortex-M3\\GNU/cpu.h"
+ 371              		.file 3 "Generated_Source\\PSoC5/cytypes.h"
+ 372              		.file 4 "Generated_Source\\PSoC5/Pin_1.h"
+ 373              		.file 5 "Generated_Source\\PSoC5/Pin_2.h"
+ 374              		.file 6 "Generated_Source\\PSoC5/push_button.h"
+ 375              		.file 7 "Generated_Source\\PSoC5/PWM_R.h"
+ 376              		.file 8 "Generated_Source\\PSoC5/PWM_G.h"
+ 377              		.file 9 "Generated_Source\\PSoC5/PWM_B.h"
+ 378              		.section	.debug_info,"",%progbits
+ 379              	.Ldebug_info0:
+ 380 0000 6F030000 		.4byte	0x36f
+ 381 0004 0400     		.2byte	0x4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 12
+
+
+ 382 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 383 000a 04       		.byte	0x4
+ 384 000b 01       		.uleb128 0x1
+ 385 000c 9F000000 		.4byte	.LASF38
+ 386 0010 0C       		.byte	0xc
+ 387 0011 44010000 		.4byte	.LASF39
+ 388 0015 12020000 		.4byte	.LASF40
+ 389 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 390 001d 00000000 		.4byte	0
+ 391 0021 00000000 		.4byte	.Ldebug_line0
+ 392 0025 02       		.uleb128 0x2
+ 393 0026 01       		.byte	0x1
+ 394 0027 08       		.byte	0x8
+ 395 0028 0D020000 		.4byte	.LASF0
+ 396 002c 02       		.uleb128 0x2
+ 397 002d 01       		.byte	0x1
+ 398 002e 08       		.byte	0x8
+ 399 002f 91000000 		.4byte	.LASF1
+ 400 0033 03       		.uleb128 0x3
+ 401 0034 67010000 		.4byte	.LASF2
+ 402 0038 02       		.byte	0x2
+ 403 0039 78       		.byte	0x78
+ 404 003a 2C000000 		.4byte	0x2c
+ 405 003e 03       		.uleb128 0x3
+ 406 003f 39010000 		.4byte	.LASF3
+ 407 0043 02       		.byte	0x2
+ 408 0044 79       		.byte	0x79
+ 409 0045 49000000 		.4byte	0x49
+ 410 0049 02       		.uleb128 0x2
+ 411 004a 01       		.byte	0x1
+ 412 004b 06       		.byte	0x6
+ 413 004c D2020000 		.4byte	.LASF4
+ 414 0050 02       		.uleb128 0x2
+ 415 0051 02       		.byte	0x2
+ 416 0052 07       		.byte	0x7
+ 417 0053 12000000 		.4byte	.LASF5
+ 418 0057 02       		.uleb128 0x2
+ 419 0058 02       		.byte	0x2
+ 420 0059 05       		.byte	0x5
+ 421 005a 94020000 		.4byte	.LASF6
+ 422 005e 02       		.uleb128 0x2
+ 423 005f 04       		.byte	0x4
+ 424 0060 07       		.byte	0x7
+ 425 0061 A5010000 		.4byte	.LASF7
+ 426 0065 04       		.uleb128 0x4
+ 427 0066 04       		.byte	0x4
+ 428 0067 05       		.byte	0x5
+ 429 0068 696E7400 		.ascii	"int\000"
+ 430 006c 02       		.uleb128 0x2
+ 431 006d 08       		.byte	0x8
+ 432 006e 07       		.byte	0x7
+ 433 006f B2010000 		.4byte	.LASF8
+ 434 0073 02       		.uleb128 0x2
+ 435 0074 08       		.byte	0x8
+ 436 0075 05       		.byte	0x5
+ 437 0076 FF010000 		.4byte	.LASF9
+ 438 007a 02       		.uleb128 0x2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 13
+
+
+ 439 007b 04       		.byte	0x4
+ 440 007c 04       		.byte	0x4
+ 441 007d 82000000 		.4byte	.LASF10
+ 442 0081 02       		.uleb128 0x2
+ 443 0082 08       		.byte	0x8
+ 444 0083 04       		.byte	0x4
+ 445 0084 72010000 		.4byte	.LASF11
+ 446 0088 02       		.uleb128 0x2
+ 447 0089 04       		.byte	0x4
+ 448 008a 05       		.byte	0x5
+ 449 008b BD020000 		.4byte	.LASF12
+ 450 008f 02       		.uleb128 0x2
+ 451 0090 04       		.byte	0x4
+ 452 0091 07       		.byte	0x7
+ 453 0092 4F010000 		.4byte	.LASF13
+ 454 0096 05       		.uleb128 0x5
+ 455 0097 61010000 		.4byte	.LASF14
+ 456 009b 03       		.byte	0x3
+ 457 009c E401     		.2byte	0x1e4
+ 458 009e 2C000000 		.4byte	0x2c
+ 459 00a2 02       		.uleb128 0x2
+ 460 00a3 08       		.byte	0x8
+ 461 00a4 04       		.byte	0x4
+ 462 00a5 C6020000 		.4byte	.LASF15
+ 463 00a9 02       		.uleb128 0x2
+ 464 00aa 04       		.byte	0x4
+ 465 00ab 07       		.byte	0x7
+ 466 00ac F6010000 		.4byte	.LASF16
+ 467 00b0 06       		.uleb128 0x6
+ 468 00b1 D1010000 		.4byte	.LASF41
+ 469 00b5 01       		.byte	0x1
+ 470 00b6 22       		.byte	0x22
+ 471 00b7 00000000 		.4byte	.LFB0
+ 472 00bb 1C000000 		.4byte	.LFE0-.LFB0
+ 473 00bf 01       		.uleb128 0x1
+ 474 00c0 9C       		.byte	0x9c
+ 475 00c1 0E010000 		.4byte	0x10e
+ 476 00c5 07       		.uleb128 0x7
+ 477 00c6 08000000 		.4byte	.LVL0
+ 478 00ca E3020000 		.4byte	0x2e3
+ 479 00ce D8000000 		.4byte	0xd8
+ 480 00d2 08       		.uleb128 0x8
+ 481 00d3 01       		.uleb128 0x1
+ 482 00d4 50       		.byte	0x50
+ 483 00d5 01       		.uleb128 0x1
+ 484 00d6 3C       		.byte	0x3c
+ 485 00d7 00       		.byte	0
+ 486 00d8 07       		.uleb128 0x7
+ 487 00d9 0E000000 		.4byte	.LVL1
+ 488 00dd EE020000 		.4byte	0x2ee
+ 489 00e1 EB000000 		.4byte	0xeb
+ 490 00e5 08       		.uleb128 0x8
+ 491 00e6 01       		.uleb128 0x1
+ 492 00e7 50       		.byte	0x50
+ 493 00e8 01       		.uleb128 0x1
+ 494 00e9 3C       		.byte	0x3c
+ 495 00ea 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 14
+
+
+ 496 00eb 07       		.uleb128 0x7
+ 497 00ec 14000000 		.4byte	.LVL2
+ 498 00f0 F9020000 		.4byte	0x2f9
+ 499 00f4 FE000000 		.4byte	0xfe
+ 500 00f8 08       		.uleb128 0x8
+ 501 00f9 01       		.uleb128 0x1
+ 502 00fa 50       		.byte	0x50
+ 503 00fb 01       		.uleb128 0x1
+ 504 00fc 3C       		.byte	0x3c
+ 505 00fd 00       		.byte	0
+ 506 00fe 09       		.uleb128 0x9
+ 507 00ff 1A000000 		.4byte	.LVL3
+ 508 0103 04030000 		.4byte	0x304
+ 509 0107 08       		.uleb128 0x8
+ 510 0108 01       		.uleb128 0x1
+ 511 0109 50       		.byte	0x50
+ 512 010a 01       		.uleb128 0x1
+ 513 010b 31       		.byte	0x31
+ 514 010c 00       		.byte	0
+ 515 010d 00       		.byte	0
+ 516 010e 0A       		.uleb128 0xa
+ 517 010f EC010000 		.4byte	.LASF18
+ 518 0113 01       		.byte	0x1
+ 519 0114 3D       		.byte	0x3d
+ 520 0115 33000000 		.4byte	0x33
+ 521 0119 00000000 		.4byte	.LFB1
+ 522 011d 3E000000 		.4byte	.LFE1-.LFB1
+ 523 0121 01       		.uleb128 0x1
+ 524 0122 9C       		.byte	0x9c
+ 525 0123 80010000 		.4byte	0x180
+ 526 0127 0B       		.uleb128 0xb
+ 527 0128 7C020000 		.4byte	.LASF17
+ 528 012c 01       		.byte	0x1
+ 529 012d 3D       		.byte	0x3d
+ 530 012e 33000000 		.4byte	0x33
+ 531 0132 00000000 		.4byte	.LLST0
+ 532 0136 0C       		.uleb128 0xc
+ 533 0137 70696E00 		.ascii	"pin\000"
+ 534 013b 01       		.byte	0x1
+ 535 013c 3D       		.byte	0x3d
+ 536 013d 33000000 		.4byte	0x33
+ 537 0141 9E000000 		.4byte	.LLST1
+ 538 0145 0D       		.uleb128 0xd
+ 539 0146 65727200 		.ascii	"err\000"
+ 540 014a 01       		.byte	0x1
+ 541 014b 3F       		.byte	0x3f
+ 542 014c 33000000 		.4byte	0x33
+ 543 0150 FC000000 		.4byte	.LLST2
+ 544 0154 0E       		.uleb128 0xe
+ 545 0155 0E000000 		.4byte	.LVL6
+ 546 0159 0F030000 		.4byte	0x30f
+ 547 015d 07       		.uleb128 0x7
+ 548 015e 20000000 		.4byte	.LVL9
+ 549 0162 1A030000 		.4byte	0x31a
+ 550 0166 70010000 		.4byte	0x170
+ 551 016a 08       		.uleb128 0x8
+ 552 016b 01       		.uleb128 0x1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 15
+
+
+ 553 016c 50       		.byte	0x50
+ 554 016d 01       		.uleb128 0x1
+ 555 016e 31       		.byte	0x31
+ 556 016f 00       		.byte	0
+ 557 0170 09       		.uleb128 0x9
+ 558 0171 2E000000 		.4byte	.LVL12
+ 559 0175 1A030000 		.4byte	0x31a
+ 560 0179 08       		.uleb128 0x8
+ 561 017a 01       		.uleb128 0x1
+ 562 017b 50       		.byte	0x50
+ 563 017c 01       		.uleb128 0x1
+ 564 017d 32       		.byte	0x32
+ 565 017e 00       		.byte	0
+ 566 017f 00       		.byte	0
+ 567 0180 0A       		.uleb128 0xa
+ 568 0181 79000000 		.4byte	.LASF19
+ 569 0185 01       		.byte	0x1
+ 570 0186 6D       		.byte	0x6d
+ 571 0187 33000000 		.4byte	0x33
+ 572 018b 00000000 		.4byte	.LFB2
+ 573 018f 40000000 		.4byte	.LFE2-.LFB2
+ 574 0193 01       		.uleb128 0x1
+ 575 0194 9C       		.byte	0x9c
+ 576 0195 FC010000 		.4byte	0x1fc
+ 577 0199 0B       		.uleb128 0xb
+ 578 019a 7C020000 		.4byte	.LASF17
+ 579 019e 01       		.byte	0x1
+ 580 019f 6D       		.byte	0x6d
+ 581 01a0 33000000 		.4byte	0x33
+ 582 01a4 1B010000 		.4byte	.LLST3
+ 583 01a8 0C       		.uleb128 0xc
+ 584 01a9 70696E00 		.ascii	"pin\000"
+ 585 01ad 01       		.byte	0x1
+ 586 01ae 6D       		.byte	0x6d
+ 587 01af 33000000 		.4byte	0x33
+ 588 01b3 B9010000 		.4byte	.LLST4
+ 589 01b7 0D       		.uleb128 0xd
+ 590 01b8 65727200 		.ascii	"err\000"
+ 591 01bc 01       		.byte	0x1
+ 592 01bd 6F       		.byte	0x6f
+ 593 01be 33000000 		.4byte	0x33
+ 594 01c2 17020000 		.4byte	.LLST5
+ 595 01c6 07       		.uleb128 0x7
+ 596 01c7 10000000 		.4byte	.LVL22
+ 597 01cb 0F030000 		.4byte	0x30f
+ 598 01cf D9010000 		.4byte	0x1d9
+ 599 01d3 08       		.uleb128 0x8
+ 600 01d4 01       		.uleb128 0x1
+ 601 01d5 50       		.byte	0x50
+ 602 01d6 01       		.uleb128 0x1
+ 603 01d7 30       		.byte	0x30
+ 604 01d8 00       		.byte	0
+ 605 01d9 07       		.uleb128 0x7
+ 606 01da 22000000 		.4byte	.LVL25
+ 607 01de 1A030000 		.4byte	0x31a
+ 608 01e2 EC010000 		.4byte	0x1ec
+ 609 01e6 08       		.uleb128 0x8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 16
+
+
+ 610 01e7 01       		.uleb128 0x1
+ 611 01e8 50       		.byte	0x50
+ 612 01e9 01       		.uleb128 0x1
+ 613 01ea 30       		.byte	0x30
+ 614 01eb 00       		.byte	0
+ 615 01ec 09       		.uleb128 0x9
+ 616 01ed 30000000 		.4byte	.LVL28
+ 617 01f1 1A030000 		.4byte	0x31a
+ 618 01f5 08       		.uleb128 0x8
+ 619 01f6 01       		.uleb128 0x1
+ 620 01f7 50       		.byte	0x50
+ 621 01f8 01       		.uleb128 0x1
+ 622 01f9 30       		.byte	0x30
+ 623 01fa 00       		.byte	0
+ 624 01fb 00       		.byte	0
+ 625 01fc 0A       		.uleb128 0xa
+ 626 01fd 63000000 		.4byte	.LASF20
+ 627 0201 01       		.byte	0x1
+ 628 0202 9C       		.byte	0x9c
+ 629 0203 3E000000 		.4byte	0x3e
+ 630 0207 00000000 		.4byte	.LFB3
+ 631 020b 1E000000 		.4byte	.LFE3-.LFB3
+ 632 020f 01       		.uleb128 0x1
+ 633 0210 9C       		.byte	0x9c
+ 634 0211 4C020000 		.4byte	0x24c
+ 635 0215 0B       		.uleb128 0xb
+ 636 0216 7C020000 		.4byte	.LASF17
+ 637 021a 01       		.byte	0x1
+ 638 021b 9C       		.byte	0x9c
+ 639 021c 33000000 		.4byte	0x33
+ 640 0220 36020000 		.4byte	.LLST6
+ 641 0224 0C       		.uleb128 0xc
+ 642 0225 70696E00 		.ascii	"pin\000"
+ 643 0229 01       		.byte	0x1
+ 644 022a 9C       		.byte	0x9c
+ 645 022b 33000000 		.4byte	0x33
+ 646 022f 89020000 		.4byte	.LLST7
+ 647 0233 0D       		.uleb128 0xd
+ 648 0234 65727200 		.ascii	"err\000"
+ 649 0238 01       		.byte	0x1
+ 650 0239 9E       		.byte	0x9e
+ 651 023a 3E000000 		.4byte	0x3e
+ 652 023e B5020000 		.4byte	.LLST8
+ 653 0242 0E       		.uleb128 0xe
+ 654 0243 0E000000 		.4byte	.LVL36
+ 655 0247 25030000 		.4byte	0x325
+ 656 024b 00       		.byte	0
+ 657 024c 0A       		.uleb128 0xa
+ 658 024d 88000000 		.4byte	.LASF21
+ 659 0251 01       		.byte	0x1
+ 660 0252 BE       		.byte	0xbe
+ 661 0253 3E000000 		.4byte	0x3e
+ 662 0257 00000000 		.4byte	.LFB4
+ 663 025b 20000000 		.4byte	.LFE4-.LFB4
+ 664 025f 01       		.uleb128 0x1
+ 665 0260 9C       		.byte	0x9c
+ 666 0261 90020000 		.4byte	0x290
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 17
+
+
+ 667 0265 0B       		.uleb128 0xb
+ 668 0266 8C010000 		.4byte	.LASF22
+ 669 026a 01       		.byte	0x1
+ 670 026b BE       		.byte	0xbe
+ 671 026c 33000000 		.4byte	0x33
+ 672 0270 E0020000 		.4byte	.LLST9
+ 673 0274 0E       		.uleb128 0xe
+ 674 0275 08000000 		.4byte	.LVL43
+ 675 0279 30030000 		.4byte	0x330
+ 676 027d 0E       		.uleb128 0xe
+ 677 027e 12000000 		.4byte	.LVL45
+ 678 0282 3B030000 		.4byte	0x33b
+ 679 0286 0E       		.uleb128 0xe
+ 680 0287 1C000000 		.4byte	.LVL47
+ 681 028b 46030000 		.4byte	0x346
+ 682 028f 00       		.byte	0
+ 683 0290 0A       		.uleb128 0xa
+ 684 0291 C9010000 		.4byte	.LASF23
+ 685 0295 01       		.byte	0x1
+ 686 0296 DD       		.byte	0xdd
+ 687 0297 3E000000 		.4byte	0x3e
+ 688 029b 00000000 		.4byte	.LFB5
+ 689 029f 26000000 		.4byte	.LFE5-.LFB5
+ 690 02a3 01       		.uleb128 0x1
+ 691 02a4 9C       		.byte	0x9c
+ 692 02a5 E3020000 		.4byte	0x2e3
+ 693 02a9 0B       		.uleb128 0xb
+ 694 02aa 8C010000 		.4byte	.LASF22
+ 695 02ae 01       		.byte	0x1
+ 696 02af DD       		.byte	0xdd
+ 697 02b0 33000000 		.4byte	0x33
+ 698 02b4 33030000 		.4byte	.LLST10
+ 699 02b8 0B       		.uleb128 0xb
+ 700 02b9 0C000000 		.4byte	.LASF24
+ 701 02bd 01       		.byte	0x1
+ 702 02be DD       		.byte	0xdd
+ 703 02bf 33000000 		.4byte	0x33
+ 704 02c3 86030000 		.4byte	.LLST11
+ 705 02c7 0E       		.uleb128 0xe
+ 706 02c8 0A000000 		.4byte	.LVL50
+ 707 02cc 51030000 		.4byte	0x351
+ 708 02d0 0E       		.uleb128 0xe
+ 709 02d1 16000000 		.4byte	.LVL53
+ 710 02d5 5C030000 		.4byte	0x35c
+ 711 02d9 0E       		.uleb128 0xe
+ 712 02da 22000000 		.4byte	.LVL56
+ 713 02de 67030000 		.4byte	0x367
+ 714 02e2 00       		.byte	0
+ 715 02e3 0F       		.uleb128 0xf
+ 716 02e4 92010000 		.4byte	.LASF25
+ 717 02e8 92010000 		.4byte	.LASF25
+ 718 02ec 04       		.byte	0x4
+ 719 02ed 27       		.byte	0x27
+ 720 02ee 0F       		.uleb128 0xf
+ 721 02ef 9E020000 		.4byte	.LASF26
+ 722 02f3 9E020000 		.4byte	.LASF26
+ 723 02f7 05       		.byte	0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 18
+
+
+ 724 02f8 27       		.byte	0x27
+ 725 02f9 0F       		.uleb128 0xf
+ 726 02fa 4A000000 		.4byte	.LASF27
+ 727 02fe 4A000000 		.4byte	.LASF27
+ 728 0302 06       		.byte	0x6
+ 729 0303 27       		.byte	0x27
+ 730 0304 0F       		.uleb128 0xf
+ 731 0305 25000000 		.4byte	.LASF28
+ 732 0309 25000000 		.4byte	.LASF28
+ 733 030d 06       		.byte	0x6
+ 734 030e 26       		.byte	0x26
+ 735 030f 0F       		.uleb128 0xf
+ 736 0310 DE020000 		.4byte	.LASF29
+ 737 0314 DE020000 		.4byte	.LASF29
+ 738 0318 04       		.byte	0x4
+ 739 0319 26       		.byte	0x26
+ 740 031a 0F       		.uleb128 0xf
+ 741 031b 00000000 		.4byte	.LASF30
+ 742 031f 00000000 		.4byte	.LASF30
+ 743 0323 05       		.byte	0x5
+ 744 0324 26       		.byte	0x26
+ 745 0325 0F       		.uleb128 0xf
+ 746 0326 DB010000 		.4byte	.LASF31
+ 747 032a DB010000 		.4byte	.LASF31
+ 748 032e 06       		.byte	0x6
+ 749 032f 29       		.byte	0x29
+ 750 0330 0F       		.uleb128 0xf
+ 751 0331 6D000000 		.4byte	.LASF32
+ 752 0335 6D000000 		.4byte	.LASF32
+ 753 0339 07       		.byte	0x7
+ 754 033a 92       		.byte	0x92
+ 755 033b 0F       		.uleb128 0xf
+ 756 033c 2D010000 		.4byte	.LASF33
+ 757 0340 2D010000 		.4byte	.LASF33
+ 758 0344 08       		.byte	0x8
+ 759 0345 92       		.byte	0x92
+ 760 0346 0F       		.uleb128 0xf
+ 761 0347 B1020000 		.4byte	.LASF34
+ 762 034b B1020000 		.4byte	.LASF34
+ 763 034f 09       		.byte	0x9
+ 764 0350 92       		.byte	0x92
+ 765 0351 0F       		.uleb128 0xf
+ 766 0352 37000000 		.4byte	.LASF35
+ 767 0356 37000000 		.4byte	.LASF35
+ 768 035a 07       		.byte	0x7
+ 769 035b C3       		.byte	0xc3
+ 770 035c 0F       		.uleb128 0xf
+ 771 035d 79010000 		.4byte	.LASF36
+ 772 0361 79010000 		.4byte	.LASF36
+ 773 0365 08       		.byte	0x8
+ 774 0366 C3       		.byte	0xc3
+ 775 0367 0F       		.uleb128 0xf
+ 776 0368 81020000 		.4byte	.LASF37
+ 777 036c 81020000 		.4byte	.LASF37
+ 778 0370 09       		.byte	0x9
+ 779 0371 C3       		.byte	0xc3
+ 780 0372 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 19
+
+
+ 781              		.section	.debug_abbrev,"",%progbits
+ 782              	.Ldebug_abbrev0:
+ 783 0000 01       		.uleb128 0x1
+ 784 0001 11       		.uleb128 0x11
+ 785 0002 01       		.byte	0x1
+ 786 0003 25       		.uleb128 0x25
+ 787 0004 0E       		.uleb128 0xe
+ 788 0005 13       		.uleb128 0x13
+ 789 0006 0B       		.uleb128 0xb
+ 790 0007 03       		.uleb128 0x3
+ 791 0008 0E       		.uleb128 0xe
+ 792 0009 1B       		.uleb128 0x1b
+ 793 000a 0E       		.uleb128 0xe
+ 794 000b 55       		.uleb128 0x55
+ 795 000c 17       		.uleb128 0x17
+ 796 000d 11       		.uleb128 0x11
+ 797 000e 01       		.uleb128 0x1
+ 798 000f 10       		.uleb128 0x10
+ 799 0010 17       		.uleb128 0x17
+ 800 0011 00       		.byte	0
+ 801 0012 00       		.byte	0
+ 802 0013 02       		.uleb128 0x2
+ 803 0014 24       		.uleb128 0x24
+ 804 0015 00       		.byte	0
+ 805 0016 0B       		.uleb128 0xb
+ 806 0017 0B       		.uleb128 0xb
+ 807 0018 3E       		.uleb128 0x3e
+ 808 0019 0B       		.uleb128 0xb
+ 809 001a 03       		.uleb128 0x3
+ 810 001b 0E       		.uleb128 0xe
+ 811 001c 00       		.byte	0
+ 812 001d 00       		.byte	0
+ 813 001e 03       		.uleb128 0x3
+ 814 001f 16       		.uleb128 0x16
+ 815 0020 00       		.byte	0
+ 816 0021 03       		.uleb128 0x3
+ 817 0022 0E       		.uleb128 0xe
+ 818 0023 3A       		.uleb128 0x3a
+ 819 0024 0B       		.uleb128 0xb
+ 820 0025 3B       		.uleb128 0x3b
+ 821 0026 0B       		.uleb128 0xb
+ 822 0027 49       		.uleb128 0x49
+ 823 0028 13       		.uleb128 0x13
+ 824 0029 00       		.byte	0
+ 825 002a 00       		.byte	0
+ 826 002b 04       		.uleb128 0x4
+ 827 002c 24       		.uleb128 0x24
+ 828 002d 00       		.byte	0
+ 829 002e 0B       		.uleb128 0xb
+ 830 002f 0B       		.uleb128 0xb
+ 831 0030 3E       		.uleb128 0x3e
+ 832 0031 0B       		.uleb128 0xb
+ 833 0032 03       		.uleb128 0x3
+ 834 0033 08       		.uleb128 0x8
+ 835 0034 00       		.byte	0
+ 836 0035 00       		.byte	0
+ 837 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 20
+
+
+ 838 0037 16       		.uleb128 0x16
+ 839 0038 00       		.byte	0
+ 840 0039 03       		.uleb128 0x3
+ 841 003a 0E       		.uleb128 0xe
+ 842 003b 3A       		.uleb128 0x3a
+ 843 003c 0B       		.uleb128 0xb
+ 844 003d 3B       		.uleb128 0x3b
+ 845 003e 05       		.uleb128 0x5
+ 846 003f 49       		.uleb128 0x49
+ 847 0040 13       		.uleb128 0x13
+ 848 0041 00       		.byte	0
+ 849 0042 00       		.byte	0
+ 850 0043 06       		.uleb128 0x6
+ 851 0044 2E       		.uleb128 0x2e
+ 852 0045 01       		.byte	0x1
+ 853 0046 3F       		.uleb128 0x3f
+ 854 0047 19       		.uleb128 0x19
+ 855 0048 03       		.uleb128 0x3
+ 856 0049 0E       		.uleb128 0xe
+ 857 004a 3A       		.uleb128 0x3a
+ 858 004b 0B       		.uleb128 0xb
+ 859 004c 3B       		.uleb128 0x3b
+ 860 004d 0B       		.uleb128 0xb
+ 861 004e 27       		.uleb128 0x27
+ 862 004f 19       		.uleb128 0x19
+ 863 0050 11       		.uleb128 0x11
+ 864 0051 01       		.uleb128 0x1
+ 865 0052 12       		.uleb128 0x12
+ 866 0053 06       		.uleb128 0x6
+ 867 0054 40       		.uleb128 0x40
+ 868 0055 18       		.uleb128 0x18
+ 869 0056 9742     		.uleb128 0x2117
+ 870 0058 19       		.uleb128 0x19
+ 871 0059 01       		.uleb128 0x1
+ 872 005a 13       		.uleb128 0x13
+ 873 005b 00       		.byte	0
+ 874 005c 00       		.byte	0
+ 875 005d 07       		.uleb128 0x7
+ 876 005e 898201   		.uleb128 0x4109
+ 877 0061 01       		.byte	0x1
+ 878 0062 11       		.uleb128 0x11
+ 879 0063 01       		.uleb128 0x1
+ 880 0064 31       		.uleb128 0x31
+ 881 0065 13       		.uleb128 0x13
+ 882 0066 01       		.uleb128 0x1
+ 883 0067 13       		.uleb128 0x13
+ 884 0068 00       		.byte	0
+ 885 0069 00       		.byte	0
+ 886 006a 08       		.uleb128 0x8
+ 887 006b 8A8201   		.uleb128 0x410a
+ 888 006e 00       		.byte	0
+ 889 006f 02       		.uleb128 0x2
+ 890 0070 18       		.uleb128 0x18
+ 891 0071 9142     		.uleb128 0x2111
+ 892 0073 18       		.uleb128 0x18
+ 893 0074 00       		.byte	0
+ 894 0075 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 21
+
+
+ 895 0076 09       		.uleb128 0x9
+ 896 0077 898201   		.uleb128 0x4109
+ 897 007a 01       		.byte	0x1
+ 898 007b 11       		.uleb128 0x11
+ 899 007c 01       		.uleb128 0x1
+ 900 007d 31       		.uleb128 0x31
+ 901 007e 13       		.uleb128 0x13
+ 902 007f 00       		.byte	0
+ 903 0080 00       		.byte	0
+ 904 0081 0A       		.uleb128 0xa
+ 905 0082 2E       		.uleb128 0x2e
+ 906 0083 01       		.byte	0x1
+ 907 0084 3F       		.uleb128 0x3f
+ 908 0085 19       		.uleb128 0x19
+ 909 0086 03       		.uleb128 0x3
+ 910 0087 0E       		.uleb128 0xe
+ 911 0088 3A       		.uleb128 0x3a
+ 912 0089 0B       		.uleb128 0xb
+ 913 008a 3B       		.uleb128 0x3b
+ 914 008b 0B       		.uleb128 0xb
+ 915 008c 27       		.uleb128 0x27
+ 916 008d 19       		.uleb128 0x19
+ 917 008e 49       		.uleb128 0x49
+ 918 008f 13       		.uleb128 0x13
+ 919 0090 11       		.uleb128 0x11
+ 920 0091 01       		.uleb128 0x1
+ 921 0092 12       		.uleb128 0x12
+ 922 0093 06       		.uleb128 0x6
+ 923 0094 40       		.uleb128 0x40
+ 924 0095 18       		.uleb128 0x18
+ 925 0096 9742     		.uleb128 0x2117
+ 926 0098 19       		.uleb128 0x19
+ 927 0099 01       		.uleb128 0x1
+ 928 009a 13       		.uleb128 0x13
+ 929 009b 00       		.byte	0
+ 930 009c 00       		.byte	0
+ 931 009d 0B       		.uleb128 0xb
+ 932 009e 05       		.uleb128 0x5
+ 933 009f 00       		.byte	0
+ 934 00a0 03       		.uleb128 0x3
+ 935 00a1 0E       		.uleb128 0xe
+ 936 00a2 3A       		.uleb128 0x3a
+ 937 00a3 0B       		.uleb128 0xb
+ 938 00a4 3B       		.uleb128 0x3b
+ 939 00a5 0B       		.uleb128 0xb
+ 940 00a6 49       		.uleb128 0x49
+ 941 00a7 13       		.uleb128 0x13
+ 942 00a8 02       		.uleb128 0x2
+ 943 00a9 17       		.uleb128 0x17
+ 944 00aa 00       		.byte	0
+ 945 00ab 00       		.byte	0
+ 946 00ac 0C       		.uleb128 0xc
+ 947 00ad 05       		.uleb128 0x5
+ 948 00ae 00       		.byte	0
+ 949 00af 03       		.uleb128 0x3
+ 950 00b0 08       		.uleb128 0x8
+ 951 00b1 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 22
+
+
+ 952 00b2 0B       		.uleb128 0xb
+ 953 00b3 3B       		.uleb128 0x3b
+ 954 00b4 0B       		.uleb128 0xb
+ 955 00b5 49       		.uleb128 0x49
+ 956 00b6 13       		.uleb128 0x13
+ 957 00b7 02       		.uleb128 0x2
+ 958 00b8 17       		.uleb128 0x17
+ 959 00b9 00       		.byte	0
+ 960 00ba 00       		.byte	0
+ 961 00bb 0D       		.uleb128 0xd
+ 962 00bc 34       		.uleb128 0x34
+ 963 00bd 00       		.byte	0
+ 964 00be 03       		.uleb128 0x3
+ 965 00bf 08       		.uleb128 0x8
+ 966 00c0 3A       		.uleb128 0x3a
+ 967 00c1 0B       		.uleb128 0xb
+ 968 00c2 3B       		.uleb128 0x3b
+ 969 00c3 0B       		.uleb128 0xb
+ 970 00c4 49       		.uleb128 0x49
+ 971 00c5 13       		.uleb128 0x13
+ 972 00c6 02       		.uleb128 0x2
+ 973 00c7 17       		.uleb128 0x17
+ 974 00c8 00       		.byte	0
+ 975 00c9 00       		.byte	0
+ 976 00ca 0E       		.uleb128 0xe
+ 977 00cb 898201   		.uleb128 0x4109
+ 978 00ce 00       		.byte	0
+ 979 00cf 11       		.uleb128 0x11
+ 980 00d0 01       		.uleb128 0x1
+ 981 00d1 31       		.uleb128 0x31
+ 982 00d2 13       		.uleb128 0x13
+ 983 00d3 00       		.byte	0
+ 984 00d4 00       		.byte	0
+ 985 00d5 0F       		.uleb128 0xf
+ 986 00d6 2E       		.uleb128 0x2e
+ 987 00d7 00       		.byte	0
+ 988 00d8 3F       		.uleb128 0x3f
+ 989 00d9 19       		.uleb128 0x19
+ 990 00da 3C       		.uleb128 0x3c
+ 991 00db 19       		.uleb128 0x19
+ 992 00dc 6E       		.uleb128 0x6e
+ 993 00dd 0E       		.uleb128 0xe
+ 994 00de 03       		.uleb128 0x3
+ 995 00df 0E       		.uleb128 0xe
+ 996 00e0 3A       		.uleb128 0x3a
+ 997 00e1 0B       		.uleb128 0xb
+ 998 00e2 3B       		.uleb128 0x3b
+ 999 00e3 0B       		.uleb128 0xb
+ 1000 00e4 00       		.byte	0
+ 1001 00e5 00       		.byte	0
+ 1002 00e6 00       		.byte	0
+ 1003              		.section	.debug_loc,"",%progbits
+ 1004              	.Ldebug_loc0:
+ 1005              	.LLST0:
+ 1006 0000 00000000 		.4byte	.LVL4
+ 1007 0004 0D000000 		.4byte	.LVL6-1
+ 1008 0008 0100     		.2byte	0x1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 23
+
+
+ 1009 000a 50       		.byte	0x50
+ 1010 000b 0D000000 		.4byte	.LVL6-1
+ 1011 000f 12000000 		.4byte	.LVL7
+ 1012 0013 0400     		.2byte	0x4
+ 1013 0015 F3       		.byte	0xf3
+ 1014 0016 01       		.uleb128 0x1
+ 1015 0017 50       		.byte	0x50
+ 1016 0018 9F       		.byte	0x9f
+ 1017 0019 12000000 		.4byte	.LVL7
+ 1018 001d 1C000000 		.4byte	.LVL8
+ 1019 0021 0100     		.2byte	0x1
+ 1020 0023 50       		.byte	0x50
+ 1021 0024 1C000000 		.4byte	.LVL8
+ 1022 0028 24000000 		.4byte	.LVL10
+ 1023 002c 0400     		.2byte	0x4
+ 1024 002e F3       		.byte	0xf3
+ 1025 002f 01       		.uleb128 0x1
+ 1026 0030 50       		.byte	0x50
+ 1027 0031 9F       		.byte	0x9f
+ 1028 0032 24000000 		.4byte	.LVL10
+ 1029 0036 2A000000 		.4byte	.LVL11
+ 1030 003a 0100     		.2byte	0x1
+ 1031 003c 50       		.byte	0x50
+ 1032 003d 2A000000 		.4byte	.LVL11
+ 1033 0041 32000000 		.4byte	.LVL13
+ 1034 0045 0400     		.2byte	0x4
+ 1035 0047 F3       		.byte	0xf3
+ 1036 0048 01       		.uleb128 0x1
+ 1037 0049 50       		.byte	0x50
+ 1038 004a 9F       		.byte	0x9f
+ 1039 004b 32000000 		.4byte	.LVL13
+ 1040 004f 34000000 		.4byte	.LVL14
+ 1041 0053 0100     		.2byte	0x1
+ 1042 0055 50       		.byte	0x50
+ 1043 0056 34000000 		.4byte	.LVL14
+ 1044 005a 36000000 		.4byte	.LVL15
+ 1045 005e 0400     		.2byte	0x4
+ 1046 0060 F3       		.byte	0xf3
+ 1047 0061 01       		.uleb128 0x1
+ 1048 0062 50       		.byte	0x50
+ 1049 0063 9F       		.byte	0x9f
+ 1050 0064 36000000 		.4byte	.LVL15
+ 1051 0068 38000000 		.4byte	.LVL16
+ 1052 006c 0100     		.2byte	0x1
+ 1053 006e 50       		.byte	0x50
+ 1054 006f 38000000 		.4byte	.LVL16
+ 1055 0073 3A000000 		.4byte	.LVL17
+ 1056 0077 0400     		.2byte	0x4
+ 1057 0079 F3       		.byte	0xf3
+ 1058 007a 01       		.uleb128 0x1
+ 1059 007b 50       		.byte	0x50
+ 1060 007c 9F       		.byte	0x9f
+ 1061 007d 3A000000 		.4byte	.LVL17
+ 1062 0081 3C000000 		.4byte	.LVL18
+ 1063 0085 0100     		.2byte	0x1
+ 1064 0087 50       		.byte	0x50
+ 1065 0088 3C000000 		.4byte	.LVL18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 24
+
+
+ 1066 008c 3E000000 		.4byte	.LFE1
+ 1067 0090 0400     		.2byte	0x4
+ 1068 0092 F3       		.byte	0xf3
+ 1069 0093 01       		.uleb128 0x1
+ 1070 0094 50       		.byte	0x50
+ 1071 0095 9F       		.byte	0x9f
+ 1072 0096 00000000 		.4byte	0
+ 1073 009a 00000000 		.4byte	0
+ 1074              	.LLST1:
+ 1075 009e 00000000 		.4byte	.LVL4
+ 1076 00a2 0D000000 		.4byte	.LVL6-1
+ 1077 00a6 0100     		.2byte	0x1
+ 1078 00a8 51       		.byte	0x51
+ 1079 00a9 0D000000 		.4byte	.LVL6-1
+ 1080 00ad 12000000 		.4byte	.LVL7
+ 1081 00b1 0400     		.2byte	0x4
+ 1082 00b3 F3       		.byte	0xf3
+ 1083 00b4 01       		.uleb128 0x1
+ 1084 00b5 51       		.byte	0x51
+ 1085 00b6 9F       		.byte	0x9f
+ 1086 00b7 12000000 		.4byte	.LVL7
+ 1087 00bb 1F000000 		.4byte	.LVL9-1
+ 1088 00bf 0100     		.2byte	0x1
+ 1089 00c1 51       		.byte	0x51
+ 1090 00c2 1F000000 		.4byte	.LVL9-1
+ 1091 00c6 24000000 		.4byte	.LVL10
+ 1092 00ca 0400     		.2byte	0x4
+ 1093 00cc F3       		.byte	0xf3
+ 1094 00cd 01       		.uleb128 0x1
+ 1095 00ce 51       		.byte	0x51
+ 1096 00cf 9F       		.byte	0x9f
+ 1097 00d0 24000000 		.4byte	.LVL10
+ 1098 00d4 2D000000 		.4byte	.LVL12-1
+ 1099 00d8 0100     		.2byte	0x1
+ 1100 00da 51       		.byte	0x51
+ 1101 00db 2D000000 		.4byte	.LVL12-1
+ 1102 00df 32000000 		.4byte	.LVL13
+ 1103 00e3 0400     		.2byte	0x4
+ 1104 00e5 F3       		.byte	0xf3
+ 1105 00e6 01       		.uleb128 0x1
+ 1106 00e7 51       		.byte	0x51
+ 1107 00e8 9F       		.byte	0x9f
+ 1108 00e9 32000000 		.4byte	.LVL13
+ 1109 00ed 3E000000 		.4byte	.LFE1
+ 1110 00f1 0100     		.2byte	0x1
+ 1111 00f3 51       		.byte	0x51
+ 1112 00f4 00000000 		.4byte	0
+ 1113 00f8 00000000 		.4byte	0
+ 1114              	.LLST2:
+ 1115 00fc 02000000 		.4byte	.LVL5
+ 1116 0100 3C000000 		.4byte	.LVL18
+ 1117 0104 0200     		.2byte	0x2
+ 1118 0106 30       		.byte	0x30
+ 1119 0107 9F       		.byte	0x9f
+ 1120 0108 3C000000 		.4byte	.LVL18
+ 1121 010c 3E000000 		.4byte	.LFE1
+ 1122 0110 0100     		.2byte	0x1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 25
+
+
+ 1123 0112 50       		.byte	0x50
+ 1124 0113 00000000 		.4byte	0
+ 1125 0117 00000000 		.4byte	0
+ 1126              	.LLST3:
+ 1127 011b 00000000 		.4byte	.LVL19
+ 1128 011f 0C000000 		.4byte	.LVL21
+ 1129 0123 0100     		.2byte	0x1
+ 1130 0125 50       		.byte	0x50
+ 1131 0126 0C000000 		.4byte	.LVL21
+ 1132 012a 14000000 		.4byte	.LVL23
+ 1133 012e 0400     		.2byte	0x4
+ 1134 0130 F3       		.byte	0xf3
+ 1135 0131 01       		.uleb128 0x1
+ 1136 0132 50       		.byte	0x50
+ 1137 0133 9F       		.byte	0x9f
+ 1138 0134 14000000 		.4byte	.LVL23
+ 1139 0138 1E000000 		.4byte	.LVL24
+ 1140 013c 0100     		.2byte	0x1
+ 1141 013e 50       		.byte	0x50
+ 1142 013f 1E000000 		.4byte	.LVL24
+ 1143 0143 26000000 		.4byte	.LVL26
+ 1144 0147 0400     		.2byte	0x4
+ 1145 0149 F3       		.byte	0xf3
+ 1146 014a 01       		.uleb128 0x1
+ 1147 014b 50       		.byte	0x50
+ 1148 014c 9F       		.byte	0x9f
+ 1149 014d 26000000 		.4byte	.LVL26
+ 1150 0151 2C000000 		.4byte	.LVL27
+ 1151 0155 0100     		.2byte	0x1
+ 1152 0157 50       		.byte	0x50
+ 1153 0158 2C000000 		.4byte	.LVL27
+ 1154 015c 34000000 		.4byte	.LVL29
+ 1155 0160 0400     		.2byte	0x4
+ 1156 0162 F3       		.byte	0xf3
+ 1157 0163 01       		.uleb128 0x1
+ 1158 0164 50       		.byte	0x50
+ 1159 0165 9F       		.byte	0x9f
+ 1160 0166 34000000 		.4byte	.LVL29
+ 1161 016a 36000000 		.4byte	.LVL30
+ 1162 016e 0100     		.2byte	0x1
+ 1163 0170 50       		.byte	0x50
+ 1164 0171 36000000 		.4byte	.LVL30
+ 1165 0175 38000000 		.4byte	.LVL31
+ 1166 0179 0400     		.2byte	0x4
+ 1167 017b F3       		.byte	0xf3
+ 1168 017c 01       		.uleb128 0x1
+ 1169 017d 50       		.byte	0x50
+ 1170 017e 9F       		.byte	0x9f
+ 1171 017f 38000000 		.4byte	.LVL31
+ 1172 0183 3A000000 		.4byte	.LVL32
+ 1173 0187 0100     		.2byte	0x1
+ 1174 0189 50       		.byte	0x50
+ 1175 018a 3A000000 		.4byte	.LVL32
+ 1176 018e 3C000000 		.4byte	.LVL33
+ 1177 0192 0400     		.2byte	0x4
+ 1178 0194 F3       		.byte	0xf3
+ 1179 0195 01       		.uleb128 0x1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 26
+
+
+ 1180 0196 50       		.byte	0x50
+ 1181 0197 9F       		.byte	0x9f
+ 1182 0198 3C000000 		.4byte	.LVL33
+ 1183 019c 3E000000 		.4byte	.LVL34
+ 1184 01a0 0100     		.2byte	0x1
+ 1185 01a2 50       		.byte	0x50
+ 1186 01a3 3E000000 		.4byte	.LVL34
+ 1187 01a7 40000000 		.4byte	.LFE2
+ 1188 01ab 0400     		.2byte	0x4
+ 1189 01ad F3       		.byte	0xf3
+ 1190 01ae 01       		.uleb128 0x1
+ 1191 01af 50       		.byte	0x50
+ 1192 01b0 9F       		.byte	0x9f
+ 1193 01b1 00000000 		.4byte	0
+ 1194 01b5 00000000 		.4byte	0
+ 1195              	.LLST4:
+ 1196 01b9 00000000 		.4byte	.LVL19
+ 1197 01bd 0F000000 		.4byte	.LVL22-1
+ 1198 01c1 0100     		.2byte	0x1
+ 1199 01c3 51       		.byte	0x51
+ 1200 01c4 0F000000 		.4byte	.LVL22-1
+ 1201 01c8 14000000 		.4byte	.LVL23
+ 1202 01cc 0400     		.2byte	0x4
+ 1203 01ce F3       		.byte	0xf3
+ 1204 01cf 01       		.uleb128 0x1
+ 1205 01d0 51       		.byte	0x51
+ 1206 01d1 9F       		.byte	0x9f
+ 1207 01d2 14000000 		.4byte	.LVL23
+ 1208 01d6 21000000 		.4byte	.LVL25-1
+ 1209 01da 0100     		.2byte	0x1
+ 1210 01dc 51       		.byte	0x51
+ 1211 01dd 21000000 		.4byte	.LVL25-1
+ 1212 01e1 26000000 		.4byte	.LVL26
+ 1213 01e5 0400     		.2byte	0x4
+ 1214 01e7 F3       		.byte	0xf3
+ 1215 01e8 01       		.uleb128 0x1
+ 1216 01e9 51       		.byte	0x51
+ 1217 01ea 9F       		.byte	0x9f
+ 1218 01eb 26000000 		.4byte	.LVL26
+ 1219 01ef 2F000000 		.4byte	.LVL28-1
+ 1220 01f3 0100     		.2byte	0x1
+ 1221 01f5 51       		.byte	0x51
+ 1222 01f6 2F000000 		.4byte	.LVL28-1
+ 1223 01fa 34000000 		.4byte	.LVL29
+ 1224 01fe 0400     		.2byte	0x4
+ 1225 0200 F3       		.byte	0xf3
+ 1226 0201 01       		.uleb128 0x1
+ 1227 0202 51       		.byte	0x51
+ 1228 0203 9F       		.byte	0x9f
+ 1229 0204 34000000 		.4byte	.LVL29
+ 1230 0208 40000000 		.4byte	.LFE2
+ 1231 020c 0100     		.2byte	0x1
+ 1232 020e 51       		.byte	0x51
+ 1233 020f 00000000 		.4byte	0
+ 1234 0213 00000000 		.4byte	0
+ 1235              	.LLST5:
+ 1236 0217 02000000 		.4byte	.LVL20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 27
+
+
+ 1237 021b 3E000000 		.4byte	.LVL34
+ 1238 021f 0200     		.2byte	0x2
+ 1239 0221 30       		.byte	0x30
+ 1240 0222 9F       		.byte	0x9f
+ 1241 0223 3E000000 		.4byte	.LVL34
+ 1242 0227 40000000 		.4byte	.LFE2
+ 1243 022b 0100     		.2byte	0x1
+ 1244 022d 50       		.byte	0x50
+ 1245 022e 00000000 		.4byte	0
+ 1246 0232 00000000 		.4byte	0
+ 1247              	.LLST6:
+ 1248 0236 00000000 		.4byte	.LVL35
+ 1249 023a 0D000000 		.4byte	.LVL36-1
+ 1250 023e 0100     		.2byte	0x1
+ 1251 0240 50       		.byte	0x50
+ 1252 0241 0D000000 		.4byte	.LVL36-1
+ 1253 0245 12000000 		.4byte	.LVL38
+ 1254 0249 0400     		.2byte	0x4
+ 1255 024b F3       		.byte	0xf3
+ 1256 024c 01       		.uleb128 0x1
+ 1257 024d 50       		.byte	0x50
+ 1258 024e 9F       		.byte	0x9f
+ 1259 024f 12000000 		.4byte	.LVL38
+ 1260 0253 16000000 		.4byte	.LVL39
+ 1261 0257 0100     		.2byte	0x1
+ 1262 0259 50       		.byte	0x50
+ 1263 025a 16000000 		.4byte	.LVL39
+ 1264 025e 18000000 		.4byte	.LVL40
+ 1265 0262 0400     		.2byte	0x4
+ 1266 0264 F3       		.byte	0xf3
+ 1267 0265 01       		.uleb128 0x1
+ 1268 0266 50       		.byte	0x50
+ 1269 0267 9F       		.byte	0x9f
+ 1270 0268 18000000 		.4byte	.LVL40
+ 1271 026c 1C000000 		.4byte	.LVL41
+ 1272 0270 0100     		.2byte	0x1
+ 1273 0272 50       		.byte	0x50
+ 1274 0273 1C000000 		.4byte	.LVL41
+ 1275 0277 1E000000 		.4byte	.LFE3
+ 1276 027b 0400     		.2byte	0x4
+ 1277 027d F3       		.byte	0xf3
+ 1278 027e 01       		.uleb128 0x1
+ 1279 027f 50       		.byte	0x50
+ 1280 0280 9F       		.byte	0x9f
+ 1281 0281 00000000 		.4byte	0
+ 1282 0285 00000000 		.4byte	0
+ 1283              	.LLST7:
+ 1284 0289 00000000 		.4byte	.LVL35
+ 1285 028d 0D000000 		.4byte	.LVL36-1
+ 1286 0291 0100     		.2byte	0x1
+ 1287 0293 51       		.byte	0x51
+ 1288 0294 0D000000 		.4byte	.LVL36-1
+ 1289 0298 12000000 		.4byte	.LVL38
+ 1290 029c 0400     		.2byte	0x4
+ 1291 029e F3       		.byte	0xf3
+ 1292 029f 01       		.uleb128 0x1
+ 1293 02a0 51       		.byte	0x51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 28
+
+
+ 1294 02a1 9F       		.byte	0x9f
+ 1295 02a2 12000000 		.4byte	.LVL38
+ 1296 02a6 1E000000 		.4byte	.LFE3
+ 1297 02aa 0100     		.2byte	0x1
+ 1298 02ac 51       		.byte	0x51
+ 1299 02ad 00000000 		.4byte	0
+ 1300 02b1 00000000 		.4byte	0
+ 1301              	.LLST8:
+ 1302 02b5 00000000 		.4byte	.LVL35
+ 1303 02b9 10000000 		.4byte	.LVL37
+ 1304 02bd 0200     		.2byte	0x2
+ 1305 02bf 30       		.byte	0x30
+ 1306 02c0 9F       		.byte	0x9f
+ 1307 02c1 10000000 		.4byte	.LVL37
+ 1308 02c5 12000000 		.4byte	.LVL38
+ 1309 02c9 0100     		.2byte	0x1
+ 1310 02cb 50       		.byte	0x50
+ 1311 02cc 12000000 		.4byte	.LVL38
+ 1312 02d0 1E000000 		.4byte	.LFE3
+ 1313 02d4 0200     		.2byte	0x2
+ 1314 02d6 30       		.byte	0x30
+ 1315 02d7 9F       		.byte	0x9f
+ 1316 02d8 00000000 		.4byte	0
+ 1317 02dc 00000000 		.4byte	0
+ 1318              	.LLST9:
+ 1319 02e0 00000000 		.4byte	.LVL42
+ 1320 02e4 07000000 		.4byte	.LVL43-1
+ 1321 02e8 0100     		.2byte	0x1
+ 1322 02ea 50       		.byte	0x50
+ 1323 02eb 07000000 		.4byte	.LVL43-1
+ 1324 02ef 0A000000 		.4byte	.LVL44
+ 1325 02f3 0400     		.2byte	0x4
+ 1326 02f5 F3       		.byte	0xf3
+ 1327 02f6 01       		.uleb128 0x1
+ 1328 02f7 50       		.byte	0x50
+ 1329 02f8 9F       		.byte	0x9f
+ 1330 02f9 0A000000 		.4byte	.LVL44
+ 1331 02fd 11000000 		.4byte	.LVL45-1
+ 1332 0301 0100     		.2byte	0x1
+ 1333 0303 50       		.byte	0x50
+ 1334 0304 11000000 		.4byte	.LVL45-1
+ 1335 0308 14000000 		.4byte	.LVL46
+ 1336 030c 0400     		.2byte	0x4
+ 1337 030e F3       		.byte	0xf3
+ 1338 030f 01       		.uleb128 0x1
+ 1339 0310 50       		.byte	0x50
+ 1340 0311 9F       		.byte	0x9f
+ 1341 0312 14000000 		.4byte	.LVL46
+ 1342 0316 1B000000 		.4byte	.LVL47-1
+ 1343 031a 0100     		.2byte	0x1
+ 1344 031c 50       		.byte	0x50
+ 1345 031d 1B000000 		.4byte	.LVL47-1
+ 1346 0321 20000000 		.4byte	.LFE4
+ 1347 0325 0400     		.2byte	0x4
+ 1348 0327 F3       		.byte	0xf3
+ 1349 0328 01       		.uleb128 0x1
+ 1350 0329 50       		.byte	0x50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 29
+
+
+ 1351 032a 9F       		.byte	0x9f
+ 1352 032b 00000000 		.4byte	0
+ 1353 032f 00000000 		.4byte	0
+ 1354              	.LLST10:
+ 1355 0333 00000000 		.4byte	.LVL48
+ 1356 0337 06000000 		.4byte	.LVL49
+ 1357 033b 0100     		.2byte	0x1
+ 1358 033d 50       		.byte	0x50
+ 1359 033e 06000000 		.4byte	.LVL49
+ 1360 0342 0C000000 		.4byte	.LVL51
+ 1361 0346 0400     		.2byte	0x4
+ 1362 0348 F3       		.byte	0xf3
+ 1363 0349 01       		.uleb128 0x1
+ 1364 034a 50       		.byte	0x50
+ 1365 034b 9F       		.byte	0x9f
+ 1366 034c 0C000000 		.4byte	.LVL51
+ 1367 0350 12000000 		.4byte	.LVL52
+ 1368 0354 0100     		.2byte	0x1
+ 1369 0356 50       		.byte	0x50
+ 1370 0357 12000000 		.4byte	.LVL52
+ 1371 035b 18000000 		.4byte	.LVL54
+ 1372 035f 0400     		.2byte	0x4
+ 1373 0361 F3       		.byte	0xf3
+ 1374 0362 01       		.uleb128 0x1
+ 1375 0363 50       		.byte	0x50
+ 1376 0364 9F       		.byte	0x9f
+ 1377 0365 18000000 		.4byte	.LVL54
+ 1378 0369 1E000000 		.4byte	.LVL55
+ 1379 036d 0100     		.2byte	0x1
+ 1380 036f 50       		.byte	0x50
+ 1381 0370 1E000000 		.4byte	.LVL55
+ 1382 0374 26000000 		.4byte	.LFE5
+ 1383 0378 0400     		.2byte	0x4
+ 1384 037a F3       		.byte	0xf3
+ 1385 037b 01       		.uleb128 0x1
+ 1386 037c 50       		.byte	0x50
+ 1387 037d 9F       		.byte	0x9f
+ 1388 037e 00000000 		.4byte	0
+ 1389 0382 00000000 		.4byte	0
+ 1390              	.LLST11:
+ 1391 0386 00000000 		.4byte	.LVL48
+ 1392 038a 09000000 		.4byte	.LVL50-1
+ 1393 038e 0100     		.2byte	0x1
+ 1394 0390 51       		.byte	0x51
+ 1395 0391 09000000 		.4byte	.LVL50-1
+ 1396 0395 0C000000 		.4byte	.LVL51
+ 1397 0399 0400     		.2byte	0x4
+ 1398 039b F3       		.byte	0xf3
+ 1399 039c 01       		.uleb128 0x1
+ 1400 039d 51       		.byte	0x51
+ 1401 039e 9F       		.byte	0x9f
+ 1402 039f 0C000000 		.4byte	.LVL51
+ 1403 03a3 15000000 		.4byte	.LVL53-1
+ 1404 03a7 0100     		.2byte	0x1
+ 1405 03a9 51       		.byte	0x51
+ 1406 03aa 15000000 		.4byte	.LVL53-1
+ 1407 03ae 18000000 		.4byte	.LVL54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 30
+
+
+ 1408 03b2 0400     		.2byte	0x4
+ 1409 03b4 F3       		.byte	0xf3
+ 1410 03b5 01       		.uleb128 0x1
+ 1411 03b6 51       		.byte	0x51
+ 1412 03b7 9F       		.byte	0x9f
+ 1413 03b8 18000000 		.4byte	.LVL54
+ 1414 03bc 21000000 		.4byte	.LVL56-1
+ 1415 03c0 0100     		.2byte	0x1
+ 1416 03c2 51       		.byte	0x51
+ 1417 03c3 21000000 		.4byte	.LVL56-1
+ 1418 03c7 26000000 		.4byte	.LFE5
+ 1419 03cb 0400     		.2byte	0x4
+ 1420 03cd F3       		.byte	0xf3
+ 1421 03ce 01       		.uleb128 0x1
+ 1422 03cf 51       		.byte	0x51
+ 1423 03d0 9F       		.byte	0x9f
+ 1424 03d1 00000000 		.4byte	0
+ 1425 03d5 00000000 		.4byte	0
+ 1426              		.section	.debug_aranges,"",%progbits
+ 1427 0000 44000000 		.4byte	0x44
+ 1428 0004 0200     		.2byte	0x2
+ 1429 0006 00000000 		.4byte	.Ldebug_info0
+ 1430 000a 04       		.byte	0x4
+ 1431 000b 00       		.byte	0
+ 1432 000c 0000     		.2byte	0
+ 1433 000e 0000     		.2byte	0
+ 1434 0010 00000000 		.4byte	.LFB0
+ 1435 0014 1C000000 		.4byte	.LFE0-.LFB0
+ 1436 0018 00000000 		.4byte	.LFB1
+ 1437 001c 3E000000 		.4byte	.LFE1-.LFB1
+ 1438 0020 00000000 		.4byte	.LFB2
+ 1439 0024 40000000 		.4byte	.LFE2-.LFB2
+ 1440 0028 00000000 		.4byte	.LFB3
+ 1441 002c 1E000000 		.4byte	.LFE3-.LFB3
+ 1442 0030 00000000 		.4byte	.LFB4
+ 1443 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1444 0038 00000000 		.4byte	.LFB5
+ 1445 003c 26000000 		.4byte	.LFE5-.LFB5
+ 1446 0040 00000000 		.4byte	0
+ 1447 0044 00000000 		.4byte	0
+ 1448              		.section	.debug_ranges,"",%progbits
+ 1449              	.Ldebug_ranges0:
+ 1450 0000 00000000 		.4byte	.LFB0
+ 1451 0004 1C000000 		.4byte	.LFE0
+ 1452 0008 00000000 		.4byte	.LFB1
+ 1453 000c 3E000000 		.4byte	.LFE1
+ 1454 0010 00000000 		.4byte	.LFB2
+ 1455 0014 40000000 		.4byte	.LFE2
+ 1456 0018 00000000 		.4byte	.LFB3
+ 1457 001c 1E000000 		.4byte	.LFE3
+ 1458 0020 00000000 		.4byte	.LFB4
+ 1459 0024 20000000 		.4byte	.LFE4
+ 1460 0028 00000000 		.4byte	.LFB5
+ 1461 002c 26000000 		.4byte	.LFE5
+ 1462 0030 00000000 		.4byte	0
+ 1463 0034 00000000 		.4byte	0
+ 1464              		.section	.debug_line,"",%progbits
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 31
+
+
+ 1465              	.Ldebug_line0:
+ 1466 0000 5F010000 		.section	.debug_str,"MS",%progbits,1
+ 1466      0200B100 
+ 1466      00000201 
+ 1466      FB0E0D00 
+ 1466      01010101 
+ 1467              	.LASF30:
+ 1468 0000 50696E5F 		.ascii	"Pin_2_Write\000"
+ 1468      325F5772 
+ 1468      69746500 
+ 1469              	.LASF24:
+ 1470 000c 76616C75 		.ascii	"value\000"
+ 1470      6500
+ 1471              	.LASF5:
+ 1472 0012 73686F72 		.ascii	"short unsigned int\000"
+ 1472      7420756E 
+ 1472      7369676E 
+ 1472      65642069 
+ 1472      6E7400
+ 1473              	.LASF28:
+ 1474 0025 70757368 		.ascii	"push_button_Write\000"
+ 1474      5F627574 
+ 1474      746F6E5F 
+ 1474      57726974 
+ 1474      6500
+ 1475              	.LASF35:
+ 1476 0037 50574D5F 		.ascii	"PWM_R_WriteCompare\000"
+ 1476      525F5772 
+ 1476      69746543 
+ 1476      6F6D7061 
+ 1476      726500
+ 1477              	.LASF27:
+ 1478 004a 70757368 		.ascii	"push_button_SetDriveMode\000"
+ 1478      5F627574 
+ 1478      746F6E5F 
+ 1478      53657444 
+ 1478      72697665 
+ 1479              	.LASF20:
+ 1480 0063 6770696F 		.ascii	"gpio_read\000"
+ 1480      5F726561 
+ 1480      6400
+ 1481              	.LASF32:
+ 1482 006d 50574D5F 		.ascii	"PWM_R_Start\000"
+ 1482      525F5374 
+ 1482      61727400 
+ 1483              	.LASF19:
+ 1484 0079 6770696F 		.ascii	"gpio_low\000"
+ 1484      5F6C6F77 
+ 1484      00
+ 1485              	.LASF10:
+ 1486 0082 666C6F61 		.ascii	"float\000"
+ 1486      7400
+ 1487              	.LASF21:
+ 1488 0088 50574D5F 		.ascii	"PWM_INIT\000"
+ 1488      494E4954 
+ 1488      00
+ 1489              	.LASF1:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 32
+
+
+ 1490 0091 756E7369 		.ascii	"unsigned char\000"
+ 1490      676E6564 
+ 1490      20636861 
+ 1490      7200
+ 1491              	.LASF38:
+ 1492 009f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1492      43313120 
+ 1492      352E342E 
+ 1492      31203230 
+ 1492      31363036 
+ 1493 00d2 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1493      20726576 
+ 1493      6973696F 
+ 1493      6E203233 
+ 1493      37373135 
+ 1494 0105 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1494      66756E63 
+ 1494      74696F6E 
+ 1494      2D736563 
+ 1494      74696F6E 
+ 1495              	.LASF33:
+ 1496 012d 50574D5F 		.ascii	"PWM_G_Start\000"
+ 1496      475F5374 
+ 1496      61727400 
+ 1497              	.LASF3:
+ 1498 0139 4350555F 		.ascii	"CPU_INT08S\000"
+ 1498      494E5430 
+ 1498      385300
+ 1499              	.LASF39:
+ 1500 0144 6273705F 		.ascii	"bsp_gpio.c\000"
+ 1500      6770696F 
+ 1500      2E6300
+ 1501              	.LASF13:
+ 1502 014f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1502      20756E73 
+ 1502      69676E65 
+ 1502      6420696E 
+ 1502      7400
+ 1503              	.LASF14:
+ 1504 0161 75696E74 		.ascii	"uint8\000"
+ 1504      3800
+ 1505              	.LASF2:
+ 1506 0167 4350555F 		.ascii	"CPU_INT08U\000"
+ 1506      494E5430 
+ 1506      385500
+ 1507              	.LASF11:
+ 1508 0172 646F7562 		.ascii	"double\000"
+ 1508      6C6500
+ 1509              	.LASF36:
+ 1510 0179 50574D5F 		.ascii	"PWM_G_WriteCompare\000"
+ 1510      475F5772 
+ 1510      69746543 
+ 1510      6F6D7061 
+ 1510      726500
+ 1511              	.LASF22:
+ 1512 018c 636F6C6F 		.ascii	"color\000"
+ 1512      7200
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 33
+
+
+ 1513              	.LASF25:
+ 1514 0192 50696E5F 		.ascii	"Pin_1_SetDriveMode\000"
+ 1514      315F5365 
+ 1514      74447269 
+ 1514      76654D6F 
+ 1514      646500
+ 1515              	.LASF7:
+ 1516 01a5 756E7369 		.ascii	"unsigned int\000"
+ 1516      676E6564 
+ 1516      20696E74 
+ 1516      00
+ 1517              	.LASF8:
+ 1518 01b2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1518      206C6F6E 
+ 1518      6720756E 
+ 1518      7369676E 
+ 1518      65642069 
+ 1519              	.LASF23:
+ 1520 01c9 50574D5F 		.ascii	"PWM_SET\000"
+ 1520      53455400 
+ 1521              	.LASF41:
+ 1522 01d1 696E6974 		.ascii	"init_gpio\000"
+ 1522      5F677069 
+ 1522      6F00
+ 1523              	.LASF31:
+ 1524 01db 70757368 		.ascii	"push_button_Read\000"
+ 1524      5F627574 
+ 1524      746F6E5F 
+ 1524      52656164 
+ 1524      00
+ 1525              	.LASF18:
+ 1526 01ec 6770696F 		.ascii	"gpio_high\000"
+ 1526      5F686967 
+ 1526      6800
+ 1527              	.LASF16:
+ 1528 01f6 73697A65 		.ascii	"sizetype\000"
+ 1528      74797065 
+ 1528      00
+ 1529              	.LASF9:
+ 1530 01ff 6C6F6E67 		.ascii	"long long int\000"
+ 1530      206C6F6E 
+ 1530      6720696E 
+ 1530      7400
+ 1531              	.LASF0:
+ 1532 020d 63686172 		.ascii	"char\000"
+ 1532      00
+ 1533              	.LASF40:
+ 1534 0212 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 1534      73657273 
+ 1534      5C6A6F72 
+ 1534      74695C44 
+ 1534      6F63756D 
+ 1535 023f 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
+ 1535      5F536F66 
+ 1535      74776172 
+ 1535      655F315C 
+ 1535      63797072 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccMjpQh8.s 			page 34
+
+
+ 1536 026f 5F63796B 		.ascii	"_cykit.cydsn\000"
+ 1536      69742E63 
+ 1536      7964736E 
+ 1536      00
+ 1537              	.LASF17:
+ 1538 027c 706F7274 		.ascii	"port\000"
+ 1538      00
+ 1539              	.LASF37:
+ 1540 0281 50574D5F 		.ascii	"PWM_B_WriteCompare\000"
+ 1540      425F5772 
+ 1540      69746543 
+ 1540      6F6D7061 
+ 1540      726500
+ 1541              	.LASF6:
+ 1542 0294 73686F72 		.ascii	"short int\000"
+ 1542      7420696E 
+ 1542      7400
+ 1543              	.LASF26:
+ 1544 029e 50696E5F 		.ascii	"Pin_2_SetDriveMode\000"
+ 1544      325F5365 
+ 1544      74447269 
+ 1544      76654D6F 
+ 1544      646500
+ 1545              	.LASF34:
+ 1546 02b1 50574D5F 		.ascii	"PWM_B_Start\000"
+ 1546      425F5374 
+ 1546      61727400 
+ 1547              	.LASF12:
+ 1548 02bd 6C6F6E67 		.ascii	"long int\000"
+ 1548      20696E74 
+ 1548      00
+ 1549              	.LASF15:
+ 1550 02c6 6C6F6E67 		.ascii	"long double\000"
+ 1550      20646F75 
+ 1550      626C6500 
+ 1551              	.LASF4:
+ 1552 02d2 7369676E 		.ascii	"signed char\000"
+ 1552      65642063 
+ 1552      68617200 
+ 1553              	.LASF29:
+ 1554 02de 50696E5F 		.ascii	"Pin_1_Write\000"
+ 1554      315F5772 
+ 1554      69746500 
+ 1555              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

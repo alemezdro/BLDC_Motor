@@ -1,0 +1,2738 @@
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"os_app_hooks.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.App_OS_TaskCreateHook,"ax",%progbits
+  20              		.align	2
+  21              		.global	App_OS_TaskCreateHook
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	App_OS_TaskCreateHook, %function
+  25              	App_OS_TaskCreateHook:
+  26              	.LFB3:
+  27              		.file 1 "APP\\os_app_hooks.c"
+   1:APP/os_app_hooks.c **** /*
+   2:APP/os_app_hooks.c **** ***************************************************************************************************
+   3:APP/os_app_hooks.c **** *                                                     uC/OS-III
+   4:APP/os_app_hooks.c **** *                                                The Real-Time Kernel
+   5:APP/os_app_hooks.c **** *
+   6:APP/os_app_hooks.c **** *                                  (c) Copyright 2009-2012; Micrium, Inc.; Weston, FL
+   7:APP/os_app_hooks.c **** *                          All rights reserved.  Protected by international copyright laws.
+   8:APP/os_app_hooks.c **** *
+   9:APP/os_app_hooks.c **** *                                                  APPLICATION HOOKS
+  10:APP/os_app_hooks.c **** *
+  11:APP/os_app_hooks.c **** * File    : OS_APP_HOOKS.C
+  12:APP/os_app_hooks.c **** * By      : JJL
+  13:APP/os_app_hooks.c **** * Version : V3.01.1
+  14:APP/os_app_hooks.c **** *
+  15:APP/os_app_hooks.c **** * LICENSING TERMS:
+  16:APP/os_app_hooks.c **** * ---------------
+  17:APP/os_app_hooks.c **** *               uC/OS-III is provided in source form to registered licensees ONLY.  It is 
+  18:APP/os_app_hooks.c **** *               illegal to distribute this source code to any third party unless you receive 
+  19:APP/os_app_hooks.c **** *               written permission by an authorized Micrium representative.  Knowledge of 
+  20:APP/os_app_hooks.c **** *               the source code may NOT be used to develop a similar product.
+  21:APP/os_app_hooks.c **** *
+  22:APP/os_app_hooks.c **** *               Please help us continue to provide the Embedded community with the finest
+  23:APP/os_app_hooks.c **** *               software available.  Your honesty is greatly appreciated.
+  24:APP/os_app_hooks.c **** *
+  25:APP/os_app_hooks.c **** *               You can contact us at www.micrium.com.
+  26:APP/os_app_hooks.c **** ***************************************************************************************************
+  27:APP/os_app_hooks.c **** */
+  28:APP/os_app_hooks.c **** 
+  29:APP/os_app_hooks.c **** #include <os.h>
+  30:APP/os_app_hooks.c **** #include <os_app_hooks.h>
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 2
+
+
+  31:APP/os_app_hooks.c **** 
+  32:APP/os_app_hooks.c **** /*$PAGE*/
+  33:APP/os_app_hooks.c **** /*
+  34:APP/os_app_hooks.c **** ***************************************************************************************************
+  35:APP/os_app_hooks.c **** *                                              SET ALL APPLICATION HOOKS
+  36:APP/os_app_hooks.c **** *
+  37:APP/os_app_hooks.c **** * Description: Set ALL application hooks.
+  38:APP/os_app_hooks.c **** *
+  39:APP/os_app_hooks.c **** * Arguments  : none.
+  40:APP/os_app_hooks.c **** *
+  41:APP/os_app_hooks.c **** * Note(s)    : none
+  42:APP/os_app_hooks.c **** ***************************************************************************************************
+  43:APP/os_app_hooks.c **** */
+  44:APP/os_app_hooks.c **** 
+  45:APP/os_app_hooks.c **** void  App_OS_SetAllHooks (void)
+  46:APP/os_app_hooks.c **** {
+  47:APP/os_app_hooks.c **** #if OS_CFG_APP_HOOKS_EN > 0u
+  48:APP/os_app_hooks.c ****     CPU_SR_ALLOC();
+  49:APP/os_app_hooks.c **** 
+  50:APP/os_app_hooks.c **** 
+  51:APP/os_app_hooks.c ****     CPU_CRITICAL_ENTER();
+  52:APP/os_app_hooks.c ****     OS_AppTaskCreateHookPtr = App_OS_TaskCreateHook;
+  53:APP/os_app_hooks.c ****     OS_AppTaskDelHookPtr    = App_OS_TaskDelHook;
+  54:APP/os_app_hooks.c ****     OS_AppTaskReturnHookPtr = App_OS_TaskReturnHook;
+  55:APP/os_app_hooks.c **** 
+  56:APP/os_app_hooks.c ****     OS_AppIdleTaskHookPtr   = App_OS_IdleTaskHook;
+  57:APP/os_app_hooks.c ****     OS_AppStatTaskHookPtr   = App_OS_StatTaskHook;
+  58:APP/os_app_hooks.c ****     OS_AppTaskSwHookPtr     = App_OS_TaskSwHook;
+  59:APP/os_app_hooks.c ****     OS_AppTimeTickHookPtr   = App_OS_TimeTickHook;
+  60:APP/os_app_hooks.c ****     CPU_CRITICAL_EXIT();
+  61:APP/os_app_hooks.c **** #endif
+  62:APP/os_app_hooks.c **** }
+  63:APP/os_app_hooks.c **** 
+  64:APP/os_app_hooks.c **** /*$PAGE*/
+  65:APP/os_app_hooks.c **** /*
+  66:APP/os_app_hooks.c **** ***************************************************************************************************
+  67:APP/os_app_hooks.c **** *                                             CLEAR ALL APPLICATION HOOKS
+  68:APP/os_app_hooks.c **** *
+  69:APP/os_app_hooks.c **** * Description: Clear ALL application hooks.
+  70:APP/os_app_hooks.c **** *
+  71:APP/os_app_hooks.c **** * Arguments  : none.
+  72:APP/os_app_hooks.c **** *
+  73:APP/os_app_hooks.c **** * Note(s)    : none
+  74:APP/os_app_hooks.c **** ***************************************************************************************************
+  75:APP/os_app_hooks.c **** */
+  76:APP/os_app_hooks.c **** 
+  77:APP/os_app_hooks.c **** void  App_OS_ClrAllHooks (void)
+  78:APP/os_app_hooks.c **** {
+  79:APP/os_app_hooks.c **** #if OS_CFG_APP_HOOKS_EN > 0u
+  80:APP/os_app_hooks.c ****     CPU_SR_ALLOC();
+  81:APP/os_app_hooks.c **** 
+  82:APP/os_app_hooks.c **** 
+  83:APP/os_app_hooks.c ****     CPU_CRITICAL_ENTER();
+  84:APP/os_app_hooks.c ****     OS_AppTaskCreateHookPtr = (OS_APP_HOOK_TCB)0;
+  85:APP/os_app_hooks.c ****     OS_AppTaskDelHookPtr    = (OS_APP_HOOK_TCB)0;
+  86:APP/os_app_hooks.c ****     OS_AppTaskReturnHookPtr = (OS_APP_HOOK_TCB)0;
+  87:APP/os_app_hooks.c **** 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 3
+
+
+  88:APP/os_app_hooks.c ****     OS_AppIdleTaskHookPtr   = (OS_APP_HOOK_VOID)0;
+  89:APP/os_app_hooks.c ****     OS_AppStatTaskHookPtr   = (OS_APP_HOOK_VOID)0;
+  90:APP/os_app_hooks.c ****     OS_AppTaskSwHookPtr     = (OS_APP_HOOK_VOID)0;
+  91:APP/os_app_hooks.c ****     OS_AppTimeTickHookPtr   = (OS_APP_HOOK_VOID)0;
+  92:APP/os_app_hooks.c ****     CPU_CRITICAL_EXIT();
+  93:APP/os_app_hooks.c **** #endif
+  94:APP/os_app_hooks.c **** }
+  95:APP/os_app_hooks.c **** 
+  96:APP/os_app_hooks.c **** /*$PAGE*/
+  97:APP/os_app_hooks.c **** /*
+  98:APP/os_app_hooks.c **** ***************************************************************************************************
+  99:APP/os_app_hooks.c **** *                                            APPLICATION TASK CREATION HOOK
+ 100:APP/os_app_hooks.c **** *
+ 101:APP/os_app_hooks.c **** * Description: This function is called when a task is created.
+ 102:APP/os_app_hooks.c **** *
+ 103:APP/os_app_hooks.c **** * Arguments  : p_tcb   is a pointer to the task control block of the task being created.
+ 104:APP/os_app_hooks.c **** *
+ 105:APP/os_app_hooks.c **** * Note(s)    : none
+ 106:APP/os_app_hooks.c **** ***************************************************************************************************
+ 107:APP/os_app_hooks.c **** */
+ 108:APP/os_app_hooks.c **** 
+ 109:APP/os_app_hooks.c **** void  App_OS_TaskCreateHook (OS_TCB  *p_tcb)
+ 110:APP/os_app_hooks.c **** {
+  28              		.loc 1 110 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  34 0000 7047     		bx	lr
+  35              		.cfi_endproc
+  36              	.LFE3:
+  37              		.size	App_OS_TaskCreateHook, .-App_OS_TaskCreateHook
+  38 0002 00BF     		.section	.text.App_OS_TaskDelHook,"ax",%progbits
+  39              		.align	2
+  40              		.global	App_OS_TaskDelHook
+  41              		.thumb
+  42              		.thumb_func
+  43              		.type	App_OS_TaskDelHook, %function
+  44              	App_OS_TaskDelHook:
+  45              	.LFB4:
+ 111:APP/os_app_hooks.c ****     (void)&p_tcb;
+ 112:APP/os_app_hooks.c **** }
+ 113:APP/os_app_hooks.c **** 
+ 114:APP/os_app_hooks.c **** /*$PAGE*/
+ 115:APP/os_app_hooks.c **** /*
+ 116:APP/os_app_hooks.c **** ***************************************************************************************************
+ 117:APP/os_app_hooks.c **** *                                            APPLICATION TASK DELETION HOOK
+ 118:APP/os_app_hooks.c **** *
+ 119:APP/os_app_hooks.c **** * Description: This function is called when a task is deleted.
+ 120:APP/os_app_hooks.c **** *
+ 121:APP/os_app_hooks.c **** * Arguments  : p_tcb   is a pointer to the task control block of the task being deleted.
+ 122:APP/os_app_hooks.c **** *
+ 123:APP/os_app_hooks.c **** * Note(s)    : none
+ 124:APP/os_app_hooks.c **** ***************************************************************************************************
+ 125:APP/os_app_hooks.c **** */
+ 126:APP/os_app_hooks.c **** 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 4
+
+
+ 127:APP/os_app_hooks.c **** void  App_OS_TaskDelHook (OS_TCB  *p_tcb)
+ 128:APP/os_app_hooks.c **** {
+  46              		.loc 1 128 0
+  47              		.cfi_startproc
+  48              		@ args = 0, pretend = 0, frame = 0
+  49              		@ frame_needed = 0, uses_anonymous_args = 0
+  50              		@ link register save eliminated.
+  51              	.LVL1:
+  52 0000 7047     		bx	lr
+  53              		.cfi_endproc
+  54              	.LFE4:
+  55              		.size	App_OS_TaskDelHook, .-App_OS_TaskDelHook
+  56 0002 00BF     		.section	.text.App_OS_TaskReturnHook,"ax",%progbits
+  57              		.align	2
+  58              		.global	App_OS_TaskReturnHook
+  59              		.thumb
+  60              		.thumb_func
+  61              		.type	App_OS_TaskReturnHook, %function
+  62              	App_OS_TaskReturnHook:
+  63              	.LFB5:
+ 129:APP/os_app_hooks.c ****     (void)&p_tcb;
+ 130:APP/os_app_hooks.c **** }
+ 131:APP/os_app_hooks.c **** 
+ 132:APP/os_app_hooks.c **** /*$PAGE*/
+ 133:APP/os_app_hooks.c **** /*
+ 134:APP/os_app_hooks.c **** ***************************************************************************************************
+ 135:APP/os_app_hooks.c **** *                                             APPLICATION TASK RETURN HOOK
+ 136:APP/os_app_hooks.c **** *
+ 137:APP/os_app_hooks.c **** * Description: This function is called if a task accidentally returns.  In other words, a task shou
+ 138:APP/os_app_hooks.c **** *              infinite loop or delete itself when done.
+ 139:APP/os_app_hooks.c **** *
+ 140:APP/os_app_hooks.c **** * Arguments  : p_tcb     is a pointer to the OS_TCB of the task that is returning.
+ 141:APP/os_app_hooks.c **** *
+ 142:APP/os_app_hooks.c **** * Note(s)    : none
+ 143:APP/os_app_hooks.c **** ***************************************************************************************************
+ 144:APP/os_app_hooks.c **** */
+ 145:APP/os_app_hooks.c **** 
+ 146:APP/os_app_hooks.c **** void  App_OS_TaskReturnHook (OS_TCB  *p_tcb)
+ 147:APP/os_app_hooks.c **** {
+  64              		.loc 1 147 0
+  65              		.cfi_startproc
+  66              		@ args = 0, pretend = 0, frame = 0
+  67              		@ frame_needed = 0, uses_anonymous_args = 0
+  68              		@ link register save eliminated.
+  69              	.LVL2:
+  70 0000 7047     		bx	lr
+  71              		.cfi_endproc
+  72              	.LFE5:
+  73              		.size	App_OS_TaskReturnHook, .-App_OS_TaskReturnHook
+  74 0002 00BF     		.section	.text.App_OS_IdleTaskHook,"ax",%progbits
+  75              		.align	2
+  76              		.global	App_OS_IdleTaskHook
+  77              		.thumb
+  78              		.thumb_func
+  79              		.type	App_OS_IdleTaskHook, %function
+  80              	App_OS_IdleTaskHook:
+  81              	.LFB6:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 5
+
+
+ 148:APP/os_app_hooks.c ****     (void)&p_tcb;
+ 149:APP/os_app_hooks.c **** }
+ 150:APP/os_app_hooks.c **** 
+ 151:APP/os_app_hooks.c **** /*$PAGE*/
+ 152:APP/os_app_hooks.c **** /*
+ 153:APP/os_app_hooks.c **** ***************************************************************************************************
+ 154:APP/os_app_hooks.c **** *                                              APPLICATION IDLE TASK HOOK
+ 155:APP/os_app_hooks.c **** *
+ 156:APP/os_app_hooks.c **** * Description: This function is called by the idle task.  This hook has been added to allow you to 
+ 157:APP/os_app_hooks.c **** *              STOP the CPU to conserve power.
+ 158:APP/os_app_hooks.c **** *
+ 159:APP/os_app_hooks.c **** * Arguments  : none
+ 160:APP/os_app_hooks.c **** *
+ 161:APP/os_app_hooks.c **** * Note(s)    : none
+ 162:APP/os_app_hooks.c **** ***************************************************************************************************
+ 163:APP/os_app_hooks.c **** */
+ 164:APP/os_app_hooks.c **** 
+ 165:APP/os_app_hooks.c **** void  App_OS_IdleTaskHook (void)
+ 166:APP/os_app_hooks.c **** {
+  82              		.loc 1 166 0
+  83              		.cfi_startproc
+  84              		@ args = 0, pretend = 0, frame = 0
+  85              		@ frame_needed = 0, uses_anonymous_args = 0
+  86              		@ link register save eliminated.
+  87 0000 7047     		bx	lr
+  88              		.cfi_endproc
+  89              	.LFE6:
+  90              		.size	App_OS_IdleTaskHook, .-App_OS_IdleTaskHook
+  91 0002 00BF     		.section	.text.App_OS_StatTaskHook,"ax",%progbits
+  92              		.align	2
+  93              		.global	App_OS_StatTaskHook
+  94              		.thumb
+  95              		.thumb_func
+  96              		.type	App_OS_StatTaskHook, %function
+  97              	App_OS_StatTaskHook:
+  98              	.LFB8:
+ 167:APP/os_app_hooks.c **** 
+ 168:APP/os_app_hooks.c **** }
+ 169:APP/os_app_hooks.c **** 
+ 170:APP/os_app_hooks.c **** /*$PAGE*/
+ 171:APP/os_app_hooks.c **** /*
+ 172:APP/os_app_hooks.c **** ***************************************************************************************************
+ 173:APP/os_app_hooks.c **** *                                          APPLICATION OS INITIALIZATION HOOK
+ 174:APP/os_app_hooks.c **** *
+ 175:APP/os_app_hooks.c **** * Description: This function is called by OSInit() at the beginning of OSInit().
+ 176:APP/os_app_hooks.c **** *
+ 177:APP/os_app_hooks.c **** * Arguments  : none
+ 178:APP/os_app_hooks.c **** *
+ 179:APP/os_app_hooks.c **** * Note(s)    : none
+ 180:APP/os_app_hooks.c **** ***************************************************************************************************
+ 181:APP/os_app_hooks.c **** */
+ 182:APP/os_app_hooks.c **** 
+ 183:APP/os_app_hooks.c **** void  App_OS_InitHook (void)
+ 184:APP/os_app_hooks.c **** {
+ 185:APP/os_app_hooks.c **** 
+ 186:APP/os_app_hooks.c **** }
+ 187:APP/os_app_hooks.c **** 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 6
+
+
+ 188:APP/os_app_hooks.c **** /*$PAGE*/
+ 189:APP/os_app_hooks.c **** /*
+ 190:APP/os_app_hooks.c **** ***************************************************************************************************
+ 191:APP/os_app_hooks.c **** *                                           APPLICATION STATISTIC TASK HOOK
+ 192:APP/os_app_hooks.c **** *
+ 193:APP/os_app_hooks.c **** * Description: This function is called every second by uC/OS-III's statistics task.  This allows yo
+ 194:APP/os_app_hooks.c **** *              functionality to the statistics task.
+ 195:APP/os_app_hooks.c **** *
+ 196:APP/os_app_hooks.c **** * Arguments  : none
+ 197:APP/os_app_hooks.c **** *
+ 198:APP/os_app_hooks.c **** * Note(s)    : none
+ 199:APP/os_app_hooks.c **** ***************************************************************************************************
+ 200:APP/os_app_hooks.c **** */
+ 201:APP/os_app_hooks.c **** 
+ 202:APP/os_app_hooks.c **** void  App_OS_StatTaskHook (void)
+ 203:APP/os_app_hooks.c **** {
+  99              		.loc 1 203 0
+ 100              		.cfi_startproc
+ 101              		@ args = 0, pretend = 0, frame = 0
+ 102              		@ frame_needed = 0, uses_anonymous_args = 0
+ 103              		@ link register save eliminated.
+ 104 0000 7047     		bx	lr
+ 105              		.cfi_endproc
+ 106              	.LFE8:
+ 107              		.size	App_OS_StatTaskHook, .-App_OS_StatTaskHook
+ 108 0002 00BF     		.section	.text.App_OS_TaskSwHook,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	App_OS_TaskSwHook
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	App_OS_TaskSwHook, %function
+ 114              	App_OS_TaskSwHook:
+ 115              	.LFB9:
+ 204:APP/os_app_hooks.c **** 
+ 205:APP/os_app_hooks.c **** }
+ 206:APP/os_app_hooks.c **** 
+ 207:APP/os_app_hooks.c **** /*$PAGE*/
+ 208:APP/os_app_hooks.c **** /*
+ 209:APP/os_app_hooks.c **** ***************************************************************************************************
+ 210:APP/os_app_hooks.c **** *                                             APPLICATION TASK SWITCH HOOK
+ 211:APP/os_app_hooks.c **** *
+ 212:APP/os_app_hooks.c **** * Description: This function is called when a task switch is performed.  This allows you to perform
+ 213:APP/os_app_hooks.c **** *              during a context switch.
+ 214:APP/os_app_hooks.c **** *
+ 215:APP/os_app_hooks.c **** * Arguments  : none
+ 216:APP/os_app_hooks.c **** *
+ 217:APP/os_app_hooks.c **** * Note(s)    : 1) Interrupts are disabled during this call.
+ 218:APP/os_app_hooks.c **** *              2) It is assumed that the global pointer 'OSTCBHighRdyPtr' points to the TCB of the 
+ 219:APP/os_app_hooks.c **** *                 'switched in' (i.e. the highest priority task) and, 'OSTCBCurPtr' points to the t
+ 220:APP/os_app_hooks.c **** *                 (i.e. the preempted task).
+ 221:APP/os_app_hooks.c **** ***************************************************************************************************
+ 222:APP/os_app_hooks.c **** */
+ 223:APP/os_app_hooks.c **** 
+ 224:APP/os_app_hooks.c **** void  App_OS_TaskSwHook (void)
+ 225:APP/os_app_hooks.c **** {
+ 116              		.loc 1 225 0
+ 117              		.cfi_startproc
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 7
+
+
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120              		@ link register save eliminated.
+ 121 0000 7047     		bx	lr
+ 122              		.cfi_endproc
+ 123              	.LFE9:
+ 124              		.size	App_OS_TaskSwHook, .-App_OS_TaskSwHook
+ 125 0002 00BF     		.section	.text.App_OS_TimeTickHook,"ax",%progbits
+ 126              		.align	2
+ 127              		.global	App_OS_TimeTickHook
+ 128              		.thumb
+ 129              		.thumb_func
+ 130              		.type	App_OS_TimeTickHook, %function
+ 131              	App_OS_TimeTickHook:
+ 132              	.LFB10:
+ 226:APP/os_app_hooks.c **** 
+ 227:APP/os_app_hooks.c **** }
+ 228:APP/os_app_hooks.c **** 
+ 229:APP/os_app_hooks.c **** /*$PAGE*/
+ 230:APP/os_app_hooks.c **** /*
+ 231:APP/os_app_hooks.c **** ***************************************************************************************************
+ 232:APP/os_app_hooks.c **** *                                                APPLICATION TICK HOOK
+ 233:APP/os_app_hooks.c **** *
+ 234:APP/os_app_hooks.c **** * Description: This function is called every tick.
+ 235:APP/os_app_hooks.c **** *
+ 236:APP/os_app_hooks.c **** * Arguments  : none
+ 237:APP/os_app_hooks.c **** *
+ 238:APP/os_app_hooks.c **** * Note(s)    : 1) This function is assumed to be called from the Tick ISR.
+ 239:APP/os_app_hooks.c **** ***************************************************************************************************
+ 240:APP/os_app_hooks.c **** */
+ 241:APP/os_app_hooks.c **** 
+ 242:APP/os_app_hooks.c **** void  App_OS_TimeTickHook (void)
+ 243:APP/os_app_hooks.c **** {
+ 133              		.loc 1 243 0
+ 134              		.cfi_startproc
+ 135              		@ args = 0, pretend = 0, frame = 0
+ 136              		@ frame_needed = 0, uses_anonymous_args = 0
+ 137              		@ link register save eliminated.
+ 138 0000 7047     		bx	lr
+ 139              		.cfi_endproc
+ 140              	.LFE10:
+ 141              		.size	App_OS_TimeTickHook, .-App_OS_TimeTickHook
+ 142 0002 00BF     		.section	.text.App_OS_SetAllHooks,"ax",%progbits
+ 143              		.align	2
+ 144              		.global	App_OS_SetAllHooks
+ 145              		.thumb
+ 146              		.thumb_func
+ 147              		.type	App_OS_SetAllHooks, %function
+ 148              	App_OS_SetAllHooks:
+ 149              	.LFB1:
+  46:APP/os_app_hooks.c **** #if OS_CFG_APP_HOOKS_EN > 0u
+ 150              		.loc 1 46 0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+  46:APP/os_app_hooks.c **** #if OS_CFG_APP_HOOKS_EN > 0u
+ 154              		.loc 1 46 0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 8
+
+
+ 155 0000 08B5     		push	{r3, lr}
+ 156              		.cfi_def_cfa_offset 8
+ 157              		.cfi_offset 3, -8
+ 158              		.cfi_offset 14, -4
+ 159              	.LVL3:
+  51:APP/os_app_hooks.c ****     OS_AppTaskCreateHookPtr = App_OS_TaskCreateHook;
+ 160              		.loc 1 51 0
+ 161 0002 FFF7FEFF 		bl	CPU_SR_Save
+ 162              	.LVL4:
+  52:APP/os_app_hooks.c ****     OS_AppTaskDelHookPtr    = App_OS_TaskDelHook;
+ 163              		.loc 1 52 0
+ 164 0006 0C4A     		ldr	r2, .L10
+ 165 0008 0C4B     		ldr	r3, .L10+4
+ 166 000a 1A60     		str	r2, [r3]
+  53:APP/os_app_hooks.c ****     OS_AppTaskReturnHookPtr = App_OS_TaskReturnHook;
+ 167              		.loc 1 53 0
+ 168 000c 0C4A     		ldr	r2, .L10+8
+ 169 000e 0D4B     		ldr	r3, .L10+12
+ 170 0010 1A60     		str	r2, [r3]
+  54:APP/os_app_hooks.c **** 
+ 171              		.loc 1 54 0
+ 172 0012 0D4A     		ldr	r2, .L10+16
+ 173 0014 0D4B     		ldr	r3, .L10+20
+ 174 0016 1A60     		str	r2, [r3]
+  56:APP/os_app_hooks.c ****     OS_AppStatTaskHookPtr   = App_OS_StatTaskHook;
+ 175              		.loc 1 56 0
+ 176 0018 0D4A     		ldr	r2, .L10+24
+ 177 001a 0E4B     		ldr	r3, .L10+28
+ 178 001c 1A60     		str	r2, [r3]
+  57:APP/os_app_hooks.c ****     OS_AppTaskSwHookPtr     = App_OS_TaskSwHook;
+ 179              		.loc 1 57 0
+ 180 001e 0E4A     		ldr	r2, .L10+32
+ 181 0020 0E4B     		ldr	r3, .L10+36
+ 182 0022 1A60     		str	r2, [r3]
+  58:APP/os_app_hooks.c ****     OS_AppTimeTickHookPtr   = App_OS_TimeTickHook;
+ 183              		.loc 1 58 0
+ 184 0024 0E4A     		ldr	r2, .L10+40
+ 185 0026 0F4B     		ldr	r3, .L10+44
+ 186 0028 1A60     		str	r2, [r3]
+  59:APP/os_app_hooks.c ****     CPU_CRITICAL_EXIT();
+ 187              		.loc 1 59 0
+ 188 002a 0F4A     		ldr	r2, .L10+48
+ 189 002c 0F4B     		ldr	r3, .L10+52
+ 190 002e 1A60     		str	r2, [r3]
+  60:APP/os_app_hooks.c **** #endif
+ 191              		.loc 1 60 0
+ 192 0030 FFF7FEFF 		bl	CPU_SR_Restore
+ 193              	.LVL5:
+ 194 0034 08BD     		pop	{r3, pc}
+ 195              	.L11:
+ 196 0036 00BF     		.align	2
+ 197              	.L10:
+ 198 0038 00000000 		.word	App_OS_TaskCreateHook
+ 199 003c 00000000 		.word	OS_AppTaskCreateHookPtr
+ 200 0040 00000000 		.word	App_OS_TaskDelHook
+ 201 0044 00000000 		.word	OS_AppTaskDelHookPtr
+ 202 0048 00000000 		.word	App_OS_TaskReturnHook
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 9
+
+
+ 203 004c 00000000 		.word	OS_AppTaskReturnHookPtr
+ 204 0050 00000000 		.word	App_OS_IdleTaskHook
+ 205 0054 00000000 		.word	OS_AppIdleTaskHookPtr
+ 206 0058 00000000 		.word	App_OS_StatTaskHook
+ 207 005c 00000000 		.word	OS_AppStatTaskHookPtr
+ 208 0060 00000000 		.word	App_OS_TaskSwHook
+ 209 0064 00000000 		.word	OS_AppTaskSwHookPtr
+ 210 0068 00000000 		.word	App_OS_TimeTickHook
+ 211 006c 00000000 		.word	OS_AppTimeTickHookPtr
+ 212              		.cfi_endproc
+ 213              	.LFE1:
+ 214              		.size	App_OS_SetAllHooks, .-App_OS_SetAllHooks
+ 215              		.section	.text.App_OS_ClrAllHooks,"ax",%progbits
+ 216              		.align	2
+ 217              		.global	App_OS_ClrAllHooks
+ 218              		.thumb
+ 219              		.thumb_func
+ 220              		.type	App_OS_ClrAllHooks, %function
+ 221              	App_OS_ClrAllHooks:
+ 222              	.LFB2:
+  78:APP/os_app_hooks.c **** #if OS_CFG_APP_HOOKS_EN > 0u
+ 223              		.loc 1 78 0
+ 224              		.cfi_startproc
+ 225              		@ args = 0, pretend = 0, frame = 0
+ 226              		@ frame_needed = 0, uses_anonymous_args = 0
+ 227 0000 08B5     		push	{r3, lr}
+ 228              		.cfi_def_cfa_offset 8
+ 229              		.cfi_offset 3, -8
+ 230              		.cfi_offset 14, -4
+ 231              	.LVL6:
+  83:APP/os_app_hooks.c ****     OS_AppTaskCreateHookPtr = (OS_APP_HOOK_TCB)0;
+ 232              		.loc 1 83 0
+ 233 0002 FFF7FEFF 		bl	CPU_SR_Save
+ 234              	.LVL7:
+  84:APP/os_app_hooks.c ****     OS_AppTaskDelHookPtr    = (OS_APP_HOOK_TCB)0;
+ 235              		.loc 1 84 0
+ 236 0006 0023     		movs	r3, #0
+ 237 0008 084A     		ldr	r2, .L14
+ 238 000a 1360     		str	r3, [r2]
+  85:APP/os_app_hooks.c ****     OS_AppTaskReturnHookPtr = (OS_APP_HOOK_TCB)0;
+ 239              		.loc 1 85 0
+ 240 000c 084A     		ldr	r2, .L14+4
+ 241 000e 1360     		str	r3, [r2]
+  86:APP/os_app_hooks.c **** 
+ 242              		.loc 1 86 0
+ 243 0010 084A     		ldr	r2, .L14+8
+ 244 0012 1360     		str	r3, [r2]
+  88:APP/os_app_hooks.c ****     OS_AppStatTaskHookPtr   = (OS_APP_HOOK_VOID)0;
+ 245              		.loc 1 88 0
+ 246 0014 084A     		ldr	r2, .L14+12
+ 247 0016 1360     		str	r3, [r2]
+  89:APP/os_app_hooks.c ****     OS_AppTaskSwHookPtr     = (OS_APP_HOOK_VOID)0;
+ 248              		.loc 1 89 0
+ 249 0018 084A     		ldr	r2, .L14+16
+ 250 001a 1360     		str	r3, [r2]
+  90:APP/os_app_hooks.c ****     OS_AppTimeTickHookPtr   = (OS_APP_HOOK_VOID)0;
+ 251              		.loc 1 90 0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 10
+
+
+ 252 001c 084A     		ldr	r2, .L14+20
+ 253 001e 1360     		str	r3, [r2]
+  91:APP/os_app_hooks.c ****     CPU_CRITICAL_EXIT();
+ 254              		.loc 1 91 0
+ 255 0020 084A     		ldr	r2, .L14+24
+ 256 0022 1360     		str	r3, [r2]
+  92:APP/os_app_hooks.c **** #endif
+ 257              		.loc 1 92 0
+ 258 0024 FFF7FEFF 		bl	CPU_SR_Restore
+ 259              	.LVL8:
+ 260 0028 08BD     		pop	{r3, pc}
+ 261              	.L15:
+ 262 002a 00BF     		.align	2
+ 263              	.L14:
+ 264 002c 00000000 		.word	OS_AppTaskCreateHookPtr
+ 265 0030 00000000 		.word	OS_AppTaskDelHookPtr
+ 266 0034 00000000 		.word	OS_AppTaskReturnHookPtr
+ 267 0038 00000000 		.word	OS_AppIdleTaskHookPtr
+ 268 003c 00000000 		.word	OS_AppStatTaskHookPtr
+ 269 0040 00000000 		.word	OS_AppTaskSwHookPtr
+ 270 0044 00000000 		.word	OS_AppTimeTickHookPtr
+ 271              		.cfi_endproc
+ 272              	.LFE2:
+ 273              		.size	App_OS_ClrAllHooks, .-App_OS_ClrAllHooks
+ 274              		.section	.text.App_OS_InitHook,"ax",%progbits
+ 275              		.align	2
+ 276              		.global	App_OS_InitHook
+ 277              		.thumb
+ 278              		.thumb_func
+ 279              		.type	App_OS_InitHook, %function
+ 280              	App_OS_InitHook:
+ 281              	.LFB7:
+ 184:APP/os_app_hooks.c **** 
+ 282              		.loc 1 184 0
+ 283              		.cfi_startproc
+ 284              		@ args = 0, pretend = 0, frame = 0
+ 285              		@ frame_needed = 0, uses_anonymous_args = 0
+ 286              		@ link register save eliminated.
+ 287 0000 7047     		bx	lr
+ 288              		.cfi_endproc
+ 289              	.LFE7:
+ 290              		.size	App_OS_InitHook, .-App_OS_InitHook
+ 291 0002 00BF     		.text
+ 292              	.Letext0:
+ 293              		.file 2 ".\\uC-CPU\\ARM-Cortex-M3\\GNU/cpu.h"
+ 294              		.file 3 ".\\uC-CPU/cpu_core.h"
+ 295              		.file 4 ".\\uCOS-III\\Source/os_type.h"
+ 296              		.file 5 ".\\uCOS-III\\Source/os.h"
+ 297              		.section	.debug_info,"",%progbits
+ 298              	.Ldebug_info0:
+ 299 0000 90080000 		.4byte	0x890
+ 300 0004 0400     		.2byte	0x4
+ 301 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 302 000a 04       		.byte	0x4
+ 303 000b 01       		.uleb128 0x1
+ 304 000c B6010000 		.4byte	.LASF144
+ 305 0010 0C       		.byte	0xc
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 11
+
+
+ 306 0011 F0000000 		.4byte	.LASF145
+ 307 0015 06040000 		.4byte	.LASF146
+ 308 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 309 001d 00000000 		.4byte	0
+ 310 0021 00000000 		.4byte	.Ldebug_line0
+ 311 0025 02       		.uleb128 0x2
+ 312 0026 99020000 		.4byte	.LASF2
+ 313 002a 02       		.byte	0x2
+ 314 002b 76       		.byte	0x76
+ 315 002c 30000000 		.4byte	0x30
+ 316 0030 03       		.uleb128 0x3
+ 317 0031 01       		.byte	0x1
+ 318 0032 08       		.byte	0x8
+ 319 0033 40030000 		.4byte	.LASF0
+ 320 0037 03       		.uleb128 0x3
+ 321 0038 01       		.byte	0x1
+ 322 0039 08       		.byte	0x8
+ 323 003a 5D060000 		.4byte	.LASF1
+ 324 003e 02       		.uleb128 0x2
+ 325 003f 8A010000 		.4byte	.LASF3
+ 326 0043 02       		.byte	0x2
+ 327 0044 78       		.byte	0x78
+ 328 0045 37000000 		.4byte	0x37
+ 329 0049 03       		.uleb128 0x3
+ 330 004a 01       		.byte	0x1
+ 331 004b 06       		.byte	0x6
+ 332 004c DB060000 		.4byte	.LASF4
+ 333 0050 02       		.uleb128 0x2
+ 334 0051 7C040000 		.4byte	.LASF5
+ 335 0055 02       		.byte	0x2
+ 336 0056 7A       		.byte	0x7a
+ 337 0057 5B000000 		.4byte	0x5b
+ 338 005b 03       		.uleb128 0x3
+ 339 005c 02       		.byte	0x2
+ 340 005d 07       		.byte	0x7
+ 341 005e ED060000 		.4byte	.LASF6
+ 342 0062 03       		.uleb128 0x3
+ 343 0063 02       		.byte	0x2
+ 344 0064 05       		.byte	0x5
+ 345 0065 33050000 		.4byte	.LASF7
+ 346 0069 02       		.uleb128 0x2
+ 347 006a 55000000 		.4byte	.LASF8
+ 348 006e 02       		.byte	0x2
+ 349 006f 7C       		.byte	0x7c
+ 350 0070 74000000 		.4byte	0x74
+ 351 0074 03       		.uleb128 0x3
+ 352 0075 04       		.byte	0x4
+ 353 0076 07       		.byte	0x7
+ 354 0077 F9050000 		.4byte	.LASF9
+ 355 007b 04       		.uleb128 0x4
+ 356 007c 04       		.byte	0x4
+ 357 007d 05       		.byte	0x5
+ 358 007e 696E7400 		.ascii	"int\000"
+ 359 0082 03       		.uleb128 0x3
+ 360 0083 08       		.byte	0x8
+ 361 0084 07       		.byte	0x7
+ 362 0085 66010000 		.4byte	.LASF10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 12
+
+
+ 363 0089 03       		.uleb128 0x3
+ 364 008a 08       		.byte	0x8
+ 365 008b 05       		.byte	0x5
+ 366 008c CB030000 		.4byte	.LASF11
+ 367 0090 03       		.uleb128 0x3
+ 368 0091 04       		.byte	0x4
+ 369 0092 04       		.byte	0x4
+ 370 0093 37010000 		.4byte	.LASF12
+ 371 0097 03       		.uleb128 0x3
+ 372 0098 08       		.byte	0x8
+ 373 0099 04       		.byte	0x4
+ 374 009a 32070000 		.4byte	.LASF13
+ 375 009e 05       		.uleb128 0x5
+ 376 009f 04       		.byte	0x4
+ 377 00a0 A4000000 		.4byte	0xa4
+ 378 00a4 06       		.uleb128 0x6
+ 379 00a5 05       		.uleb128 0x5
+ 380 00a6 04       		.byte	0x4
+ 381 00a7 AB000000 		.4byte	0xab
+ 382 00ab 07       		.uleb128 0x7
+ 383 00ac B6000000 		.4byte	0xb6
+ 384 00b0 08       		.uleb128 0x8
+ 385 00b1 B6000000 		.4byte	0xb6
+ 386 00b5 00       		.byte	0
+ 387 00b6 09       		.uleb128 0x9
+ 388 00b7 04       		.byte	0x4
+ 389 00b8 02       		.uleb128 0x2
+ 390 00b9 43060000 		.4byte	.LASF14
+ 391 00bd 02       		.byte	0x2
+ 392 00be B5       		.byte	0xb5
+ 393 00bf 69000000 		.4byte	0x69
+ 394 00c3 02       		.uleb128 0x2
+ 395 00c4 9F070000 		.4byte	.LASF15
+ 396 00c8 02       		.byte	0x2
+ 397 00c9 D9       		.byte	0xd9
+ 398 00ca 69000000 		.4byte	0x69
+ 399 00ce 02       		.uleb128 0x2
+ 400 00cf A2020000 		.4byte	.LASF16
+ 401 00d3 02       		.byte	0x2
+ 402 00d4 DA       		.byte	0xda
+ 403 00d5 B8000000 		.4byte	0xb8
+ 404 00d9 0A       		.uleb128 0xa
+ 405 00da 70030000 		.4byte	.LASF17
+ 406 00de 02       		.byte	0x2
+ 407 00df 2901     		.2byte	0x129
+ 408 00e1 69000000 		.4byte	0x69
+ 409 00e5 03       		.uleb128 0x3
+ 410 00e6 04       		.byte	0x4
+ 411 00e7 05       		.byte	0x5
+ 412 00e8 5E050000 		.4byte	.LASF18
+ 413 00ec 03       		.uleb128 0x3
+ 414 00ed 04       		.byte	0x4
+ 415 00ee 07       		.byte	0x7
+ 416 00ef 31060000 		.4byte	.LASF19
+ 417 00f3 03       		.uleb128 0x3
+ 418 00f4 08       		.byte	0x8
+ 419 00f5 04       		.byte	0x4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 13
+
+
+ 420 00f6 FC040000 		.4byte	.LASF20
+ 421 00fa 03       		.uleb128 0x3
+ 422 00fb 04       		.byte	0x4
+ 423 00fc 07       		.byte	0x7
+ 424 00fd 28060000 		.4byte	.LASF21
+ 425 0101 02       		.uleb128 0x2
+ 426 0102 8F040000 		.4byte	.LASF22
+ 427 0106 03       		.byte	0x3
+ 428 0107 C4       		.byte	0xc4
+ 429 0108 69000000 		.4byte	0x69
+ 430 010c 02       		.uleb128 0x2
+ 431 010d C4030000 		.4byte	.LASF23
+ 432 0111 03       		.byte	0x3
+ 433 0112 C7       		.byte	0xc7
+ 434 0113 01010000 		.4byte	0x101
+ 435 0117 02       		.uleb128 0x2
+ 436 0118 36000000 		.4byte	.LASF24
+ 437 011c 04       		.byte	0x4
+ 438 011d 30       		.byte	0x30
+ 439 011e 50000000 		.4byte	0x50
+ 440 0122 02       		.uleb128 0x2
+ 441 0123 07000000 		.4byte	.LASF25
+ 442 0127 04       		.byte	0x4
+ 443 0128 34       		.byte	0x34
+ 444 0129 69000000 		.4byte	0x69
+ 445 012d 02       		.uleb128 0x2
+ 446 012e 4C060000 		.4byte	.LASF26
+ 447 0132 04       		.byte	0x4
+ 448 0133 36       		.byte	0x36
+ 449 0134 69000000 		.4byte	0x69
+ 450 0138 02       		.uleb128 0x2
+ 451 0139 00070000 		.4byte	.LASF27
+ 452 013d 04       		.byte	0x4
+ 453 013e 38       		.byte	0x38
+ 454 013f 69000000 		.4byte	0x69
+ 455 0143 02       		.uleb128 0x2
+ 456 0144 AF020000 		.4byte	.LASF28
+ 457 0148 04       		.byte	0x4
+ 458 0149 3F       		.byte	0x3f
+ 459 014a 50000000 		.4byte	0x50
+ 460 014e 02       		.uleb128 0x2
+ 461 014f 6A020000 		.4byte	.LASF29
+ 462 0153 04       		.byte	0x4
+ 463 0154 40       		.byte	0x40
+ 464 0155 50000000 		.4byte	0x50
+ 465 0159 02       		.uleb128 0x2
+ 466 015a AB050000 		.4byte	.LASF30
+ 467 015e 04       		.byte	0x4
+ 468 015f 42       		.byte	0x42
+ 469 0160 3E000000 		.4byte	0x3e
+ 470 0164 02       		.uleb128 0x2
+ 471 0165 69000000 		.4byte	.LASF31
+ 472 0169 04       		.byte	0x4
+ 473 016a 44       		.byte	0x44
+ 474 016b 50000000 		.4byte	0x50
+ 475 016f 02       		.uleb128 0x2
+ 476 0170 5A030000 		.4byte	.LASF32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 14
+
+
+ 477 0174 04       		.byte	0x4
+ 478 0175 45       		.byte	0x45
+ 479 0176 69000000 		.4byte	0x69
+ 480 017a 02       		.uleb128 0x2
+ 481 017b 74060000 		.4byte	.LASF33
+ 482 017f 04       		.byte	0x4
+ 483 0180 47       		.byte	0x47
+ 484 0181 50000000 		.4byte	0x50
+ 485 0185 02       		.uleb128 0x2
+ 486 0186 2F010000 		.4byte	.LASF34
+ 487 018a 04       		.byte	0x4
+ 488 018b 49       		.byte	0x49
+ 489 018c 3E000000 		.4byte	0x3e
+ 490 0190 02       		.uleb128 0x2
+ 491 0191 AF010000 		.4byte	.LASF35
+ 492 0195 04       		.byte	0x4
+ 493 0196 4F       		.byte	0x4f
+ 494 0197 69000000 		.4byte	0x69
+ 495 019b 02       		.uleb128 0x2
+ 496 019c C0040000 		.4byte	.LASF36
+ 497 01a0 04       		.byte	0x4
+ 498 01a1 52       		.byte	0x52
+ 499 01a2 69000000 		.4byte	0x69
+ 500 01a6 02       		.uleb128 0x2
+ 501 01a7 6B060000 		.4byte	.LASF37
+ 502 01ab 04       		.byte	0x4
+ 503 01ac 54       		.byte	0x54
+ 504 01ad 3E000000 		.4byte	0x3e
+ 505 01b1 02       		.uleb128 0x2
+ 506 01b2 5A020000 		.4byte	.LASF38
+ 507 01b6 04       		.byte	0x4
+ 508 01b7 56       		.byte	0x56
+ 509 01b8 3E000000 		.4byte	0x3e
+ 510 01bc 02       		.uleb128 0x2
+ 511 01bd 87040000 		.4byte	.LASF39
+ 512 01c1 04       		.byte	0x4
+ 513 01c2 58       		.byte	0x58
+ 514 01c3 69000000 		.4byte	0x69
+ 515 01c7 0A       		.uleb128 0xa
+ 516 01c8 5F010000 		.4byte	.LASF40
+ 517 01cc 05       		.byte	0x5
+ 518 01cd 8202     		.2byte	0x282
+ 519 01cf D3010000 		.4byte	0x1d3
+ 520 01d3 0B       		.uleb128 0xb
+ 521 01d4 95010000 		.4byte	.LASF46
+ 522 01d8 10       		.byte	0x10
+ 523 01d9 05       		.byte	0x5
+ 524 01da 4003     		.2byte	0x340
+ 525 01dc 15020000 		.4byte	0x215
+ 526 01e0 0C       		.uleb128 0xc
+ 527 01e1 F4040000 		.4byte	.LASF41
+ 528 01e5 05       		.byte	0x5
+ 529 01e6 4103     		.2byte	0x341
+ 530 01e8 D9060000 		.4byte	0x6d9
+ 531 01ec 00       		.byte	0
+ 532 01ed 0C       		.uleb128 0xc
+ 533 01ee 09070000 		.4byte	.LASF42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 15
+
+
+ 534 01f2 05       		.byte	0x5
+ 535 01f3 4203     		.2byte	0x342
+ 536 01f5 B6000000 		.4byte	0xb6
+ 537 01f9 04       		.byte	0x4
+ 538 01fa 0C       		.uleb128 0xc
+ 539 01fb 06060000 		.4byte	.LASF43
+ 540 01ff 05       		.byte	0x5
+ 541 0200 4303     		.2byte	0x343
+ 542 0202 4E010000 		.4byte	0x14e
+ 543 0206 08       		.byte	0x8
+ 544 0207 0C       		.uleb128 0xc
+ 545 0208 E7060000 		.4byte	.LASF44
+ 546 020c 05       		.byte	0x5
+ 547 020d 4403     		.2byte	0x344
+ 548 020f 0C010000 		.4byte	0x10c
+ 549 0213 0C       		.byte	0xc
+ 550 0214 00       		.byte	0
+ 551 0215 0A       		.uleb128 0xa
+ 552 0216 B6030000 		.4byte	.LASF45
+ 553 021a 05       		.byte	0x5
+ 554 021b 8402     		.2byte	0x284
+ 555 021d 21020000 		.4byte	0x221
+ 556 0221 0B       		.uleb128 0xb
+ 557 0222 96070000 		.4byte	.LASF47
+ 558 0226 10       		.byte	0x10
+ 559 0227 05       		.byte	0x5
+ 560 0228 5303     		.2byte	0x353
+ 561 022a 70020000 		.4byte	0x270
+ 562 022e 0C       		.uleb128 0xc
+ 563 022f 8A030000 		.4byte	.LASF48
+ 564 0233 05       		.byte	0x5
+ 565 0234 5403     		.2byte	0x354
+ 566 0236 D9060000 		.4byte	0x6d9
+ 567 023a 00       		.byte	0
+ 568 023b 0C       		.uleb128 0xc
+ 569 023c A0060000 		.4byte	.LASF49
+ 570 0240 05       		.byte	0x5
+ 571 0241 5503     		.2byte	0x355
+ 572 0243 D9060000 		.4byte	0x6d9
+ 573 0247 04       		.byte	0x4
+ 574 0248 0C       		.uleb128 0xc
+ 575 0249 C6020000 		.4byte	.LASF50
+ 576 024d 05       		.byte	0x5
+ 577 024e 5603     		.2byte	0x356
+ 578 0250 43010000 		.4byte	0x143
+ 579 0254 08       		.byte	0x8
+ 580 0255 0C       		.uleb128 0xc
+ 581 0256 2B000000 		.4byte	.LASF51
+ 582 025a 05       		.byte	0x5
+ 583 025b 5703     		.2byte	0x357
+ 584 025d 43010000 		.4byte	0x143
+ 585 0261 0A       		.byte	0xa
+ 586 0262 0C       		.uleb128 0xc
+ 587 0263 4D070000 		.4byte	.LASF52
+ 588 0267 05       		.byte	0x5
+ 589 0268 5803     		.2byte	0x358
+ 590 026a 43010000 		.4byte	0x143
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 16
+
+
+ 591 026e 0C       		.byte	0xc
+ 592 026f 00       		.byte	0
+ 593 0270 0A       		.uleb128 0xa
+ 594 0271 E4000000 		.4byte	.LASF53
+ 595 0275 05       		.byte	0x5
+ 596 0276 8E02     		.2byte	0x28e
+ 597 0278 A5000000 		.4byte	0xa5
+ 598 027c 0A       		.uleb128 0xa
+ 599 027d 56060000 		.4byte	.LASF54
+ 600 0281 05       		.byte	0x5
+ 601 0282 9002     		.2byte	0x290
+ 602 0284 88020000 		.4byte	0x288
+ 603 0288 0B       		.uleb128 0xb
+ 604 0289 00000000 		.4byte	.LASF55
+ 605 028d C0       		.byte	0xc0
+ 606 028e 05       		.byte	0x5
+ 607 028f AB03     		.2byte	0x3ab
+ 608 0291 2C050000 		.4byte	0x52c
+ 609 0295 0C       		.uleb128 0xc
+ 610 0296 D9030000 		.4byte	.LASF56
+ 611 029a 05       		.byte	0x5
+ 612 029b AC03     		.2byte	0x3ac
+ 613 029d DF060000 		.4byte	0x6df
+ 614 02a1 00       		.byte	0
+ 615 02a2 0C       		.uleb128 0xc
+ 616 02a3 21060000 		.4byte	.LASF57
+ 617 02a7 05       		.byte	0x5
+ 618 02a8 AE03     		.2byte	0x3ae
+ 619 02aa B6000000 		.4byte	0xb6
+ 620 02ae 04       		.byte	0x4
+ 621 02af 0C       		.uleb128 0xc
+ 622 02b0 A3040000 		.4byte	.LASF58
+ 623 02b4 05       		.byte	0x5
+ 624 02b5 B003     		.2byte	0x3b0
+ 625 02b7 DF060000 		.4byte	0x6df
+ 626 02bb 08       		.byte	0x8
+ 627 02bc 0C       		.uleb128 0xc
+ 628 02bd F4040000 		.4byte	.LASF41
+ 629 02c1 05       		.byte	0x5
+ 630 02c2 B203     		.2byte	0x3b2
+ 631 02c4 C1060000 		.4byte	0x6c1
+ 632 02c8 0C       		.byte	0xc
+ 633 02c9 0C       		.uleb128 0xc
+ 634 02ca 38030000 		.4byte	.LASF59
+ 635 02ce 05       		.byte	0x5
+ 636 02cf B303     		.2byte	0x3b3
+ 637 02d1 C1060000 		.4byte	0x6c1
+ 638 02d5 10       		.byte	0x10
+ 639 02d6 0C       		.uleb128 0xc
+ 640 02d7 DE040000 		.4byte	.LASF60
+ 641 02db 05       		.byte	0x5
+ 642 02dc B503     		.2byte	0x3b5
+ 643 02de C1060000 		.4byte	0x6c1
+ 644 02e2 14       		.byte	0x14
+ 645 02e3 0C       		.uleb128 0xc
+ 646 02e4 D5020000 		.4byte	.LASF61
+ 647 02e8 05       		.byte	0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 17
+
+
+ 648 02e9 B603     		.2byte	0x3b6
+ 649 02eb C1060000 		.4byte	0x6c1
+ 650 02ef 18       		.byte	0x18
+ 651 02f0 0C       		.uleb128 0xc
+ 652 02f1 7B060000 		.4byte	.LASF62
+ 653 02f5 05       		.byte	0x5
+ 654 02f6 B803     		.2byte	0x3b8
+ 655 02f8 E5060000 		.4byte	0x6e5
+ 656 02fc 1C       		.byte	0x1c
+ 657 02fd 0C       		.uleb128 0xc
+ 658 02fe A3030000 		.4byte	.LASF63
+ 659 0302 05       		.byte	0x5
+ 660 0303 BA03     		.2byte	0x3ba
+ 661 0305 D3060000 		.4byte	0x6d3
+ 662 0309 20       		.byte	0x20
+ 663 030a 0C       		.uleb128 0xc
+ 664 030b A4010000 		.4byte	.LASF64
+ 665 030f 05       		.byte	0x5
+ 666 0310 BC03     		.2byte	0x3bc
+ 667 0312 DF060000 		.4byte	0x6df
+ 668 0316 24       		.byte	0x24
+ 669 0317 0C       		.uleb128 0xc
+ 670 0318 95030000 		.4byte	.LASF65
+ 671 031c 05       		.byte	0x5
+ 672 031d C203     		.2byte	0x3c2
+ 673 031f 70020000 		.4byte	0x270
+ 674 0323 28       		.byte	0x28
+ 675 0324 0C       		.uleb128 0xc
+ 676 0325 93060000 		.4byte	.LASF66
+ 677 0329 05       		.byte	0x5
+ 678 032a C303     		.2byte	0x3c3
+ 679 032c B6000000 		.4byte	0xb6
+ 680 0330 2C       		.byte	0x2c
+ 681 0331 0C       		.uleb128 0xc
+ 682 0332 9C050000 		.4byte	.LASF67
+ 683 0336 05       		.byte	0x5
+ 684 0337 C503     		.2byte	0x3c5
+ 685 0339 C7060000 		.4byte	0x6c7
+ 686 033d 30       		.byte	0x30
+ 687 033e 0C       		.uleb128 0xc
+ 688 033f B6000000 		.4byte	.LASF68
+ 689 0343 05       		.byte	0x5
+ 690 0344 C603     		.2byte	0x3c6
+ 691 0346 A6010000 		.4byte	0x1a6
+ 692 034a 34       		.byte	0x34
+ 693 034b 0C       		.uleb128 0xc
+ 694 034c AB030000 		.4byte	.LASF69
+ 695 0350 05       		.byte	0x5
+ 696 0351 C703     		.2byte	0x3c7
+ 697 0353 B1010000 		.4byte	0x1b1
+ 698 0357 35       		.byte	0x35
+ 699 0358 0C       		.uleb128 0xc
+ 700 0359 66030000 		.4byte	.LASF70
+ 701 035d 05       		.byte	0x5
+ 702 035e C903     		.2byte	0x3c9
+ 703 0360 A6010000 		.4byte	0x1a6
+ 704 0364 36       		.byte	0x36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 18
+
+
+ 705 0365 0C       		.uleb128 0xc
+ 706 0366 19070000 		.4byte	.LASF71
+ 707 036a 05       		.byte	0x5
+ 708 036b CA03     		.2byte	0x3ca
+ 709 036d 85010000 		.4byte	0x185
+ 710 0371 37       		.byte	0x37
+ 711 0372 0C       		.uleb128 0xc
+ 712 0373 9C010000 		.4byte	.LASF72
+ 713 0377 05       		.byte	0x5
+ 714 0378 CB03     		.2byte	0x3cb
+ 715 037a CE000000 		.4byte	0xce
+ 716 037e 38       		.byte	0x38
+ 717 037f 0D       		.uleb128 0xd
+ 718 0380 4F707400 		.ascii	"Opt\000"
+ 719 0384 05       		.byte	0x5
+ 720 0385 CC03     		.2byte	0x3cc
+ 721 0387 7A010000 		.4byte	0x17a
+ 722 038b 3C       		.byte	0x3c
+ 723 038c 0C       		.uleb128 0xc
+ 724 038d BD000000 		.4byte	.LASF73
+ 725 0391 05       		.byte	0x5
+ 726 0392 CE03     		.2byte	0x3ce
+ 727 0394 64010000 		.4byte	0x164
+ 728 0398 3E       		.byte	0x3e
+ 729 0399 0D       		.uleb128 0xd
+ 730 039a 545300   		.ascii	"TS\000"
+ 731 039d 05       		.byte	0x5
+ 732 039e D003     		.2byte	0x3d0
+ 733 03a0 0C010000 		.4byte	0x10c
+ 734 03a4 40       		.byte	0x40
+ 735 03a5 0C       		.uleb128 0xc
+ 736 03a6 E7050000 		.4byte	.LASF74
+ 737 03aa 05       		.byte	0x5
+ 738 03ab D203     		.2byte	0x3d2
+ 739 03ad 9B010000 		.4byte	0x19b
+ 740 03b1 44       		.byte	0x44
+ 741 03b2 0C       		.uleb128 0xc
+ 742 03b3 BA020000 		.4byte	.LASF75
+ 743 03b7 05       		.byte	0x5
+ 744 03b8 D503     		.2byte	0x3d5
+ 745 03ba BC010000 		.4byte	0x1bc
+ 746 03be 48       		.byte	0x48
+ 747 03bf 0C       		.uleb128 0xc
+ 748 03c0 03010000 		.4byte	.LASF76
+ 749 03c4 05       		.byte	0x5
+ 750 03c5 D603     		.2byte	0x3d6
+ 751 03c7 BC010000 		.4byte	0x1bc
+ 752 03cb 4C       		.byte	0x4c
+ 753 03cc 0C       		.uleb128 0xc
+ 754 03cd EE050000 		.4byte	.LASF77
+ 755 03d1 05       		.byte	0x5
+ 756 03d2 D703     		.2byte	0x3d7
+ 757 03d4 BC010000 		.4byte	0x1bc
+ 758 03d8 50       		.byte	0x50
+ 759 03d9 0C       		.uleb128 0xc
+ 760 03da 8B070000 		.4byte	.LASF78
+ 761 03de 05       		.byte	0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 19
+
+
+ 762 03df D903     		.2byte	0x3d9
+ 763 03e1 BC010000 		.4byte	0x1bc
+ 764 03e5 54       		.byte	0x54
+ 765 03e6 0C       		.uleb128 0xc
+ 766 03e7 1D000000 		.4byte	.LASF79
+ 767 03eb 05       		.byte	0x5
+ 768 03ec DA03     		.2byte	0x3da
+ 769 03ee BC010000 		.4byte	0x1bc
+ 770 03f2 58       		.byte	0x58
+ 771 03f3 0C       		.uleb128 0xc
+ 772 03f4 09070000 		.4byte	.LASF42
+ 773 03f8 05       		.byte	0x5
+ 774 03f9 DD03     		.2byte	0x3dd
+ 775 03fb B6000000 		.4byte	0xb6
+ 776 03ff 5C       		.byte	0x5c
+ 777 0400 0C       		.uleb128 0xc
+ 778 0401 06060000 		.4byte	.LASF43
+ 779 0405 05       		.byte	0x5
+ 780 0406 DE03     		.2byte	0x3de
+ 781 0408 4E010000 		.4byte	0x14e
+ 782 040c 60       		.byte	0x60
+ 783 040d 0C       		.uleb128 0xc
+ 784 040e 90030000 		.4byte	.LASF80
+ 785 0412 05       		.byte	0x5
+ 786 0413 E203     		.2byte	0x3e2
+ 787 0415 15020000 		.4byte	0x215
+ 788 0419 64       		.byte	0x64
+ 789 041a 0C       		.uleb128 0xc
+ 790 041b 07030000 		.4byte	.LASF81
+ 791 041f 05       		.byte	0x5
+ 792 0420 E403     		.2byte	0x3e4
+ 793 0422 0C010000 		.4byte	0x10c
+ 794 0426 74       		.byte	0x74
+ 795 0427 0C       		.uleb128 0xc
+ 796 0428 F7020000 		.4byte	.LASF82
+ 797 042c 05       		.byte	0x5
+ 798 042d E503     		.2byte	0x3e5
+ 799 042f 0C010000 		.4byte	0x10c
+ 800 0433 78       		.byte	0x78
+ 801 0434 0C       		.uleb128 0xc
+ 802 0435 7C070000 		.4byte	.LASF83
+ 803 0439 05       		.byte	0x5
+ 804 043a EA03     		.2byte	0x3ea
+ 805 043c EB060000 		.4byte	0x6eb
+ 806 0440 7C       		.byte	0x7c
+ 807 0441 0C       		.uleb128 0xc
+ 808 0442 1C010000 		.4byte	.LASF84
+ 809 0446 05       		.byte	0x5
+ 810 0447 EE03     		.2byte	0x3ee
+ 811 0449 38010000 		.4byte	0x138
+ 812 044d 80       		.byte	0x80
+ 813 044e 0C       		.uleb128 0xc
+ 814 044f 10070000 		.4byte	.LASF85
+ 815 0453 05       		.byte	0x5
+ 816 0454 EF03     		.2byte	0x3ef
+ 817 0456 38010000 		.4byte	0x138
+ 818 045a 84       		.byte	0x84
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 20
+
+
+ 819 045b 0C       		.uleb128 0xc
+ 820 045c 60000000 		.4byte	.LASF86
+ 821 0460 05       		.byte	0x5
+ 822 0461 F003     		.2byte	0x3f0
+ 823 0463 7A010000 		.4byte	0x17a
+ 824 0467 88       		.byte	0x88
+ 825 0468 0C       		.uleb128 0xc
+ 826 0469 98040000 		.4byte	.LASF87
+ 827 046d 05       		.byte	0x5
+ 828 046e F403     		.2byte	0x3f4
+ 829 0470 59010000 		.4byte	0x159
+ 830 0474 8A       		.byte	0x8a
+ 831 0475 0C       		.uleb128 0xc
+ 832 0476 39070000 		.4byte	.LASF88
+ 833 047a 05       		.byte	0x5
+ 834 047b F803     		.2byte	0x3f8
+ 835 047d 17010000 		.4byte	0x117
+ 836 0481 8C       		.byte	0x8c
+ 837 0482 0C       		.uleb128 0xc
+ 838 0483 D2050000 		.4byte	.LASF89
+ 839 0487 05       		.byte	0x5
+ 840 0488 F903     		.2byte	0x3f9
+ 841 048a 17010000 		.4byte	0x117
+ 842 048e 8E       		.byte	0x8e
+ 843 048f 0C       		.uleb128 0xc
+ 844 0490 26010000 		.4byte	.LASF90
+ 845 0494 05       		.byte	0x5
+ 846 0495 FA03     		.2byte	0x3fa
+ 847 0497 22010000 		.4byte	0x122
+ 848 049b 90       		.byte	0x90
+ 849 049c 0C       		.uleb128 0xc
+ 850 049d D2040000 		.4byte	.LASF91
+ 851 04a1 05       		.byte	0x5
+ 852 04a2 FB03     		.2byte	0x3fb
+ 853 04a4 0C010000 		.4byte	0x10c
+ 854 04a8 94       		.byte	0x94
+ 855 04a9 0C       		.uleb128 0xc
+ 856 04aa 70040000 		.4byte	.LASF92
+ 857 04ae 05       		.byte	0x5
+ 858 04af FC03     		.2byte	0x3fc
+ 859 04b1 0C010000 		.4byte	0x10c
+ 860 04b5 98       		.byte	0x98
+ 861 04b6 0C       		.uleb128 0xc
+ 862 04b7 BA050000 		.4byte	.LASF93
+ 863 04bb 05       		.byte	0x5
+ 864 04bc FD03     		.2byte	0x3fd
+ 865 04be 2D010000 		.4byte	0x12d
+ 866 04c2 9C       		.byte	0x9c
+ 867 04c3 0C       		.uleb128 0xc
+ 868 04c4 76050000 		.4byte	.LASF94
+ 869 04c8 05       		.byte	0x5
+ 870 04c9 FE03     		.2byte	0x3fe
+ 871 04cb 2D010000 		.4byte	0x12d
+ 872 04cf A0       		.byte	0xa0
+ 873 04d0 0C       		.uleb128 0xc
+ 874 04d1 7F000000 		.4byte	.LASF95
+ 875 04d5 05       		.byte	0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 21
+
+
+ 876 04d6 0004     		.2byte	0x400
+ 877 04d8 0C010000 		.4byte	0x10c
+ 878 04dc A4       		.byte	0xa4
+ 879 04dd 0C       		.uleb128 0xc
+ 880 04de 67050000 		.4byte	.LASF96
+ 881 04e2 05       		.byte	0x5
+ 882 04e3 0104     		.2byte	0x401
+ 883 04e5 0C010000 		.4byte	0x10c
+ 884 04e9 A8       		.byte	0xa8
+ 885 04ea 0C       		.uleb128 0xc
+ 886 04eb 15000000 		.4byte	.LASF97
+ 887 04ef 05       		.byte	0x5
+ 888 04f0 0504     		.2byte	0x405
+ 889 04f2 CE000000 		.4byte	0xce
+ 890 04f6 AC       		.byte	0xac
+ 891 04f7 0C       		.uleb128 0xc
+ 892 04f8 83070000 		.4byte	.LASF98
+ 893 04fc 05       		.byte	0x5
+ 894 04fd 0604     		.2byte	0x406
+ 895 04ff CE000000 		.4byte	0xce
+ 896 0503 B0       		.byte	0xb0
+ 897 0504 0C       		.uleb128 0xc
+ 898 0505 74000000 		.4byte	.LASF99
+ 899 0509 05       		.byte	0x5
+ 900 050a 1104     		.2byte	0x411
+ 901 050c C1060000 		.4byte	0x6c1
+ 902 0510 B4       		.byte	0xb4
+ 903 0511 0C       		.uleb128 0xc
+ 904 0512 8B000000 		.4byte	.LASF100
+ 905 0516 05       		.byte	0x5
+ 906 0517 1204     		.2byte	0x412
+ 907 0519 C1060000 		.4byte	0x6c1
+ 908 051d B8       		.byte	0xb8
+ 909 051e 0C       		.uleb128 0xc
+ 910 051f 88060000 		.4byte	.LASF101
+ 911 0523 05       		.byte	0x5
+ 912 0524 1304     		.2byte	0x413
+ 913 0526 D3060000 		.4byte	0x6d3
+ 914 052a BC       		.byte	0xbc
+ 915 052b 00       		.byte	0
+ 916 052c 0A       		.uleb128 0xa
+ 917 052d 4A010000 		.4byte	.LASF102
+ 918 0531 05       		.byte	0x5
+ 919 0532 9E02     		.2byte	0x29e
+ 920 0534 38050000 		.4byte	0x538
+ 921 0538 0B       		.uleb128 0xb
+ 922 0539 E0030000 		.4byte	.LASF103
+ 923 053d 08       		.byte	0x8
+ 924 053e 05       		.byte	0x5
+ 925 053f 1E04     		.2byte	0x41e
+ 926 0541 6D050000 		.4byte	0x56d
+ 927 0545 0C       		.uleb128 0xc
+ 928 0546 18060000 		.4byte	.LASF104
+ 929 054a 05       		.byte	0x5
+ 930 054b 1F04     		.2byte	0x41f
+ 931 054d C1060000 		.4byte	0x6c1
+ 932 0551 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 22
+
+
+ 933 0552 0C       		.uleb128 0xc
+ 934 0553 2B000000 		.4byte	.LASF51
+ 935 0557 05       		.byte	0x5
+ 936 0558 2004     		.2byte	0x420
+ 937 055a 64010000 		.4byte	0x164
+ 938 055e 04       		.byte	0x4
+ 939 055f 0C       		.uleb128 0xc
+ 940 0560 4D070000 		.4byte	.LASF52
+ 941 0564 05       		.byte	0x5
+ 942 0565 2104     		.2byte	0x421
+ 943 0567 64010000 		.4byte	0x164
+ 944 056b 06       		.byte	0x6
+ 945 056c 00       		.byte	0
+ 946 056d 0A       		.uleb128 0xa
+ 947 056e 7D010000 		.4byte	.LASF105
+ 948 0572 05       		.byte	0x5
+ 949 0573 A502     		.2byte	0x2a5
+ 950 0575 79050000 		.4byte	0x579
+ 951 0579 0B       		.uleb128 0xb
+ 952 057a 3D010000 		.4byte	.LASF106
+ 953 057e 20       		.byte	0x20
+ 954 057f 05       		.byte	0x5
+ 955 0580 DD02     		.2byte	0x2dd
+ 956 0582 EF050000 		.4byte	0x5ef
+ 957 0586 0C       		.uleb128 0xc
+ 958 0587 38030000 		.4byte	.LASF59
+ 959 058b 05       		.byte	0x5
+ 960 058c DE02     		.2byte	0x2de
+ 961 058e C7060000 		.4byte	0x6c7
+ 962 0592 00       		.byte	0
+ 963 0593 0C       		.uleb128 0xc
+ 964 0594 F4040000 		.4byte	.LASF41
+ 965 0598 05       		.byte	0x5
+ 966 0599 DF02     		.2byte	0x2df
+ 967 059b C7060000 		.4byte	0x6c7
+ 968 059f 04       		.byte	0x4
+ 969 05a0 0C       		.uleb128 0xc
+ 970 05a1 CB040000 		.4byte	.LASF107
+ 971 05a5 05       		.byte	0x5
+ 972 05a6 E002     		.2byte	0x2e0
+ 973 05a8 C1060000 		.4byte	0x6c1
+ 974 05ac 08       		.byte	0x8
+ 975 05ad 0C       		.uleb128 0xc
+ 976 05ae 42070000 		.4byte	.LASF108
+ 977 05b2 05       		.byte	0x5
+ 978 05b3 E102     		.2byte	0x2e1
+ 979 05b5 CD060000 		.4byte	0x6cd
+ 980 05b9 0C       		.byte	0xc
+ 981 05ba 0C       		.uleb128 0xc
+ 982 05bb EA040000 		.4byte	.LASF109
+ 983 05bf 05       		.byte	0x5
+ 984 05c0 E202     		.2byte	0x2e2
+ 985 05c2 CD060000 		.4byte	0x6cd
+ 986 05c6 10       		.byte	0x10
+ 987 05c7 0C       		.uleb128 0xc
+ 988 05c8 0E060000 		.4byte	.LASF110
+ 989 05cc 05       		.byte	0x5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 23
+
+
+ 990 05cd E302     		.2byte	0x2e3
+ 991 05cf B6000000 		.4byte	0xb6
+ 992 05d3 14       		.byte	0x14
+ 993 05d4 0C       		.uleb128 0xc
+ 994 05d5 3D050000 		.4byte	.LASF111
+ 995 05d9 05       		.byte	0x5
+ 996 05da E402     		.2byte	0x2e4
+ 997 05dc 4E010000 		.4byte	0x14e
+ 998 05e0 18       		.byte	0x18
+ 999 05e1 0C       		.uleb128 0xc
+ 1000 05e2 08050000 		.4byte	.LASF112
+ 1001 05e6 05       		.byte	0x5
+ 1002 05e7 E502     		.2byte	0x2e5
+ 1003 05e9 0C010000 		.4byte	0x10c
+ 1004 05ed 1C       		.byte	0x1c
+ 1005 05ee 00       		.byte	0
+ 1006 05ef 0A       		.uleb128 0xa
+ 1007 05f0 A7060000 		.4byte	.LASF113
+ 1008 05f4 05       		.byte	0x5
+ 1009 05f5 A602     		.2byte	0x2a6
+ 1010 05f7 FB050000 		.4byte	0x5fb
+ 1011 05fb 0B       		.uleb128 0xb
+ 1012 05fc 5B070000 		.4byte	.LASF114
+ 1013 0600 0C       		.byte	0xc
+ 1014 0601 05       		.byte	0x5
+ 1015 0602 E902     		.2byte	0x2e9
+ 1016 0604 30060000 		.4byte	0x630
+ 1017 0608 0C       		.uleb128 0xc
+ 1018 0609 96000000 		.4byte	.LASF115
+ 1019 060d 05       		.byte	0x5
+ 1020 060e EA02     		.2byte	0x2ea
+ 1021 0610 C7060000 		.4byte	0x6c7
+ 1022 0614 00       		.byte	0
+ 1023 0615 0C       		.uleb128 0xc
+ 1024 0616 DC000000 		.4byte	.LASF116
+ 1025 061a 05       		.byte	0x5
+ 1026 061b EB02     		.2byte	0x2eb
+ 1027 061d C7060000 		.4byte	0x6c7
+ 1028 0621 04       		.byte	0x4
+ 1029 0622 0C       		.uleb128 0xc
+ 1030 0623 2B000000 		.4byte	.LASF51
+ 1031 0627 05       		.byte	0x5
+ 1032 0628 EC02     		.2byte	0x2ec
+ 1033 062a 64010000 		.4byte	0x164
+ 1034 062e 08       		.byte	0x8
+ 1035 062f 00       		.byte	0
+ 1036 0630 0A       		.uleb128 0xa
+ 1037 0631 C6050000 		.4byte	.LASF117
+ 1038 0635 05       		.byte	0x5
+ 1039 0636 A702     		.2byte	0x2a7
+ 1040 0638 3C060000 		.4byte	0x63c
+ 1041 063c 0B       		.uleb128 0xb
+ 1042 063d 10010000 		.4byte	.LASF118
+ 1043 0641 20       		.byte	0x20
+ 1044 0642 05       		.byte	0x5
+ 1045 0643 FF02     		.2byte	0x2ff
+ 1046 0645 98060000 		.4byte	0x698
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 24
+
+
+ 1047 0649 0C       		.uleb128 0xc
+ 1048 064a BF030000 		.4byte	.LASF119
+ 1049 064e 05       		.byte	0x5
+ 1050 064f 0003     		.2byte	0x300
+ 1051 0651 6F010000 		.4byte	0x16f
+ 1052 0655 00       		.byte	0
+ 1053 0656 0C       		.uleb128 0xc
+ 1054 0657 A3030000 		.4byte	.LASF63
+ 1055 065b 05       		.byte	0x5
+ 1056 065c 0103     		.2byte	0x301
+ 1057 065e D3060000 		.4byte	0x6d3
+ 1058 0662 04       		.byte	0x4
+ 1059 0663 0C       		.uleb128 0xc
+ 1060 0664 DE050000 		.4byte	.LASF120
+ 1061 0668 05       		.byte	0x5
+ 1062 0669 0203     		.2byte	0x302
+ 1063 066b EF050000 		.4byte	0x5ef
+ 1064 066f 08       		.byte	0x8
+ 1065 0670 0C       		.uleb128 0xc
+ 1066 0671 74000000 		.4byte	.LASF99
+ 1067 0675 05       		.byte	0x5
+ 1068 0676 0403     		.2byte	0x304
+ 1069 0678 B6000000 		.4byte	0xb6
+ 1070 067c 14       		.byte	0x14
+ 1071 067d 0C       		.uleb128 0xc
+ 1072 067e 8B000000 		.4byte	.LASF100
+ 1073 0682 05       		.byte	0x5
+ 1074 0683 0503     		.2byte	0x305
+ 1075 0685 B6000000 		.4byte	0xb6
+ 1076 0689 18       		.byte	0x18
+ 1077 068a 0C       		.uleb128 0xc
+ 1078 068b 88060000 		.4byte	.LASF101
+ 1079 068f 05       		.byte	0x5
+ 1080 0690 0603     		.2byte	0x306
+ 1081 0692 D3060000 		.4byte	0x6d3
+ 1082 0696 1C       		.byte	0x1c
+ 1083 0697 00       		.byte	0
+ 1084 0698 0A       		.uleb128 0xa
+ 1085 0699 AF040000 		.4byte	.LASF121
+ 1086 069d 05       		.byte	0x5
+ 1087 069e AA02     		.2byte	0x2aa
+ 1088 06a0 9E000000 		.4byte	0x9e
+ 1089 06a4 0A       		.uleb128 0xa
+ 1090 06a5 28030000 		.4byte	.LASF122
+ 1091 06a9 05       		.byte	0x5
+ 1092 06aa AB02     		.2byte	0x2ab
+ 1093 06ac B0060000 		.4byte	0x6b0
+ 1094 06b0 05       		.uleb128 0x5
+ 1095 06b1 04       		.byte	0x4
+ 1096 06b2 B6060000 		.4byte	0x6b6
+ 1097 06b6 07       		.uleb128 0x7
+ 1098 06b7 C1060000 		.4byte	0x6c1
+ 1099 06bb 08       		.uleb128 0x8
+ 1100 06bc C1060000 		.4byte	0x6c1
+ 1101 06c0 00       		.byte	0
+ 1102 06c1 05       		.uleb128 0x5
+ 1103 06c2 04       		.byte	0x4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 25
+
+
+ 1104 06c3 7C020000 		.4byte	0x27c
+ 1105 06c7 05       		.uleb128 0x5
+ 1106 06c8 04       		.byte	0x4
+ 1107 06c9 6D050000 		.4byte	0x56d
+ 1108 06cd 05       		.uleb128 0x5
+ 1109 06ce 04       		.byte	0x4
+ 1110 06cf 30060000 		.4byte	0x630
+ 1111 06d3 05       		.uleb128 0x5
+ 1112 06d4 04       		.byte	0x4
+ 1113 06d5 25000000 		.4byte	0x25
+ 1114 06d9 05       		.uleb128 0x5
+ 1115 06da 04       		.byte	0x4
+ 1116 06db C7010000 		.4byte	0x1c7
+ 1117 06df 05       		.uleb128 0x5
+ 1118 06e0 04       		.byte	0x4
+ 1119 06e1 C3000000 		.4byte	0xc3
+ 1120 06e5 05       		.uleb128 0x5
+ 1121 06e6 04       		.byte	0x4
+ 1122 06e7 2C050000 		.4byte	0x52c
+ 1123 06eb 0E       		.uleb128 0xe
+ 1124 06ec 90010000 		.4byte	0x190
+ 1125 06f0 FB060000 		.4byte	0x6fb
+ 1126 06f4 0F       		.uleb128 0xf
+ 1127 06f5 FA000000 		.4byte	0xfa
+ 1128 06f9 00       		.byte	0
+ 1129 06fa 00       		.byte	0
+ 1130 06fb 10       		.uleb128 0x10
+ 1131 06fc 44020000 		.4byte	.LASF123
+ 1132 0700 01       		.byte	0x1
+ 1133 0701 6D       		.byte	0x6d
+ 1134 0702 00000000 		.4byte	.LFB3
+ 1135 0706 02000000 		.4byte	.LFE3-.LFB3
+ 1136 070a 01       		.uleb128 0x1
+ 1137 070b 9C       		.byte	0x9c
+ 1138 070c 1E070000 		.4byte	0x71e
+ 1139 0710 11       		.uleb128 0x11
+ 1140 0711 64020000 		.4byte	.LASF125
+ 1141 0715 01       		.byte	0x1
+ 1142 0716 6D       		.byte	0x6d
+ 1143 0717 C1060000 		.4byte	0x6c1
+ 1144 071b 01       		.uleb128 0x1
+ 1145 071c 50       		.byte	0x50
+ 1146 071d 00       		.byte	0
+ 1147 071e 10       		.uleb128 0x10
+ 1148 071f C8060000 		.4byte	.LASF124
+ 1149 0723 01       		.byte	0x1
+ 1150 0724 7F       		.byte	0x7f
+ 1151 0725 00000000 		.4byte	.LFB4
+ 1152 0729 02000000 		.4byte	.LFE4-.LFB4
+ 1153 072d 01       		.uleb128 0x1
+ 1154 072e 9C       		.byte	0x9c
+ 1155 072f 41070000 		.4byte	0x741
+ 1156 0733 11       		.uleb128 0x11
+ 1157 0734 64020000 		.4byte	.LASF125
+ 1158 0738 01       		.byte	0x1
+ 1159 0739 7F       		.byte	0x7f
+ 1160 073a C1060000 		.4byte	0x6c1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 26
+
+
+ 1161 073e 01       		.uleb128 0x1
+ 1162 073f 50       		.byte	0x50
+ 1163 0740 00       		.byte	0
+ 1164 0741 10       		.uleb128 0x10
+ 1165 0742 E1020000 		.4byte	.LASF126
+ 1166 0746 01       		.byte	0x1
+ 1167 0747 92       		.byte	0x92
+ 1168 0748 00000000 		.4byte	.LFB5
+ 1169 074c 02000000 		.4byte	.LFE5-.LFB5
+ 1170 0750 01       		.uleb128 0x1
+ 1171 0751 9C       		.byte	0x9c
+ 1172 0752 64070000 		.4byte	0x764
+ 1173 0756 11       		.uleb128 0x11
+ 1174 0757 64020000 		.4byte	.LASF125
+ 1175 075b 01       		.byte	0x1
+ 1176 075c 92       		.byte	0x92
+ 1177 075d C1060000 		.4byte	0x6c1
+ 1178 0761 01       		.uleb128 0x1
+ 1179 0762 50       		.byte	0x50
+ 1180 0763 00       		.byte	0
+ 1181 0764 12       		.uleb128 0x12
+ 1182 0765 68070000 		.4byte	.LASF127
+ 1183 0769 01       		.byte	0x1
+ 1184 076a A5       		.byte	0xa5
+ 1185 076b 00000000 		.4byte	.LFB6
+ 1186 076f 02000000 		.4byte	.LFE6-.LFB6
+ 1187 0773 01       		.uleb128 0x1
+ 1188 0774 9C       		.byte	0x9c
+ 1189 0775 12       		.uleb128 0x12
+ 1190 0776 14030000 		.4byte	.LASF128
+ 1191 077a 01       		.byte	0x1
+ 1192 077b CA       		.byte	0xca
+ 1193 077c 00000000 		.4byte	.LFB8
+ 1194 0780 02000000 		.4byte	.LFE8-.LFB8
+ 1195 0784 01       		.uleb128 0x1
+ 1196 0785 9C       		.byte	0x9c
+ 1197 0786 12       		.uleb128 0x12
+ 1198 0787 43000000 		.4byte	.LASF129
+ 1199 078b 01       		.byte	0x1
+ 1200 078c E0       		.byte	0xe0
+ 1201 078d 00000000 		.4byte	.LFB9
+ 1202 0791 02000000 		.4byte	.LFE9-.LFB9
+ 1203 0795 01       		.uleb128 0x1
+ 1204 0796 9C       		.byte	0x9c
+ 1205 0797 12       		.uleb128 0x12
+ 1206 0798 1E070000 		.4byte	.LASF130
+ 1207 079c 01       		.byte	0x1
+ 1208 079d F2       		.byte	0xf2
+ 1209 079e 00000000 		.4byte	.LFB10
+ 1210 07a2 02000000 		.4byte	.LFE10-.LFB10
+ 1211 07a6 01       		.uleb128 0x1
+ 1212 07a7 9C       		.byte	0x9c
+ 1213 07a8 10       		.uleb128 0x10
+ 1214 07a9 77030000 		.4byte	.LASF131
+ 1215 07ad 01       		.byte	0x1
+ 1216 07ae 2D       		.byte	0x2d
+ 1217 07af 00000000 		.4byte	.LFB1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 27
+
+
+ 1218 07b3 70000000 		.4byte	.LFE1-.LFB1
+ 1219 07b7 01       		.uleb128 0x1
+ 1220 07b8 9C       		.byte	0x9c
+ 1221 07b9 DF070000 		.4byte	0x7df
+ 1222 07bd 13       		.uleb128 0x13
+ 1223 07be 58010000 		.4byte	.LASF133
+ 1224 07c2 01       		.byte	0x1
+ 1225 07c3 30       		.byte	0x30
+ 1226 07c4 D9000000 		.4byte	0xd9
+ 1227 07c8 00000000 		.4byte	.LLST0
+ 1228 07cc 14       		.uleb128 0x14
+ 1229 07cd 06000000 		.4byte	.LVL4
+ 1230 07d1 7B080000 		.4byte	0x87b
+ 1231 07d5 14       		.uleb128 0x14
+ 1232 07d6 34000000 		.4byte	.LVL5
+ 1233 07da 87080000 		.4byte	0x887
+ 1234 07de 00       		.byte	0
+ 1235 07df 10       		.uleb128 0x10
+ 1236 07e0 86020000 		.4byte	.LASF132
+ 1237 07e4 01       		.byte	0x1
+ 1238 07e5 4D       		.byte	0x4d
+ 1239 07e6 00000000 		.4byte	.LFB2
+ 1240 07ea 48000000 		.4byte	.LFE2-.LFB2
+ 1241 07ee 01       		.uleb128 0x1
+ 1242 07ef 9C       		.byte	0x9c
+ 1243 07f0 16080000 		.4byte	0x816
+ 1244 07f4 13       		.uleb128 0x13
+ 1245 07f5 58010000 		.4byte	.LASF133
+ 1246 07f9 01       		.byte	0x1
+ 1247 07fa 50       		.byte	0x50
+ 1248 07fb D9000000 		.4byte	0xd9
+ 1249 07ff 1F000000 		.4byte	.LLST1
+ 1250 0803 14       		.uleb128 0x14
+ 1251 0804 06000000 		.4byte	.LVL7
+ 1252 0808 7B080000 		.4byte	0x87b
+ 1253 080c 14       		.uleb128 0x14
+ 1254 080d 28000000 		.4byte	.LVL8
+ 1255 0811 87080000 		.4byte	0x887
+ 1256 0815 00       		.byte	0
+ 1257 0816 12       		.uleb128 0x12
+ 1258 0817 76020000 		.4byte	.LASF134
+ 1259 081b 01       		.byte	0x1
+ 1260 081c B7       		.byte	0xb7
+ 1261 081d 00000000 		.4byte	.LFB7
+ 1262 0821 02000000 		.4byte	.LFE7-.LFB7
+ 1263 0825 01       		.uleb128 0x1
+ 1264 0826 9C       		.byte	0x9c
+ 1265 0827 15       		.uleb128 0x15
+ 1266 0828 EE030000 		.4byte	.LASF135
+ 1267 082c 05       		.byte	0x5
+ 1268 082d 5004     		.2byte	0x450
+ 1269 082f A4060000 		.4byte	0x6a4
+ 1270 0833 15       		.uleb128 0x15
+ 1271 0834 45030000 		.4byte	.LASF136
+ 1272 0838 05       		.byte	0x5
+ 1273 0839 5104     		.2byte	0x451
+ 1274 083b A4060000 		.4byte	0x6a4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 28
+
+
+ 1275 083f 15       		.uleb128 0x15
+ 1276 0840 9E000000 		.4byte	.LASF137
+ 1277 0844 05       		.byte	0x5
+ 1278 0845 5204     		.2byte	0x452
+ 1279 0847 A4060000 		.4byte	0x6a4
+ 1280 084b 15       		.uleb128 0x15
+ 1281 084c 1D050000 		.4byte	.LASF138
+ 1282 0850 05       		.byte	0x5
+ 1283 0851 5404     		.2byte	0x454
+ 1284 0853 98060000 		.4byte	0x698
+ 1285 0857 15       		.uleb128 0x15
+ 1286 0858 86050000 		.4byte	.LASF139
+ 1287 085c 05       		.byte	0x5
+ 1288 085d 5504     		.2byte	0x455
+ 1289 085f 98060000 		.4byte	0x698
+ 1290 0863 15       		.uleb128 0x15
+ 1291 0864 B4060000 		.4byte	.LASF140
+ 1292 0868 05       		.byte	0x5
+ 1293 0869 5604     		.2byte	0x456
+ 1294 086b 98060000 		.4byte	0x698
+ 1295 086f 15       		.uleb128 0x15
+ 1296 0870 48050000 		.4byte	.LASF141
+ 1297 0874 05       		.byte	0x5
+ 1298 0875 5704     		.2byte	0x457
+ 1299 0877 98060000 		.4byte	0x698
+ 1300 087b 16       		.uleb128 0x16
+ 1301 087c D0000000 		.4byte	.LASF142
+ 1302 0880 D0000000 		.4byte	.LASF142
+ 1303 0884 02       		.byte	0x2
+ 1304 0885 7C01     		.2byte	0x17c
+ 1305 0887 16       		.uleb128 0x16
+ 1306 0888 0E050000 		.4byte	.LASF143
+ 1307 088c 0E050000 		.4byte	.LASF143
+ 1308 0890 02       		.byte	0x2
+ 1309 0891 7D01     		.2byte	0x17d
+ 1310 0893 00       		.byte	0
+ 1311              		.section	.debug_abbrev,"",%progbits
+ 1312              	.Ldebug_abbrev0:
+ 1313 0000 01       		.uleb128 0x1
+ 1314 0001 11       		.uleb128 0x11
+ 1315 0002 01       		.byte	0x1
+ 1316 0003 25       		.uleb128 0x25
+ 1317 0004 0E       		.uleb128 0xe
+ 1318 0005 13       		.uleb128 0x13
+ 1319 0006 0B       		.uleb128 0xb
+ 1320 0007 03       		.uleb128 0x3
+ 1321 0008 0E       		.uleb128 0xe
+ 1322 0009 1B       		.uleb128 0x1b
+ 1323 000a 0E       		.uleb128 0xe
+ 1324 000b 55       		.uleb128 0x55
+ 1325 000c 17       		.uleb128 0x17
+ 1326 000d 11       		.uleb128 0x11
+ 1327 000e 01       		.uleb128 0x1
+ 1328 000f 10       		.uleb128 0x10
+ 1329 0010 17       		.uleb128 0x17
+ 1330 0011 00       		.byte	0
+ 1331 0012 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 29
+
+
+ 1332 0013 02       		.uleb128 0x2
+ 1333 0014 16       		.uleb128 0x16
+ 1334 0015 00       		.byte	0
+ 1335 0016 03       		.uleb128 0x3
+ 1336 0017 0E       		.uleb128 0xe
+ 1337 0018 3A       		.uleb128 0x3a
+ 1338 0019 0B       		.uleb128 0xb
+ 1339 001a 3B       		.uleb128 0x3b
+ 1340 001b 0B       		.uleb128 0xb
+ 1341 001c 49       		.uleb128 0x49
+ 1342 001d 13       		.uleb128 0x13
+ 1343 001e 00       		.byte	0
+ 1344 001f 00       		.byte	0
+ 1345 0020 03       		.uleb128 0x3
+ 1346 0021 24       		.uleb128 0x24
+ 1347 0022 00       		.byte	0
+ 1348 0023 0B       		.uleb128 0xb
+ 1349 0024 0B       		.uleb128 0xb
+ 1350 0025 3E       		.uleb128 0x3e
+ 1351 0026 0B       		.uleb128 0xb
+ 1352 0027 03       		.uleb128 0x3
+ 1353 0028 0E       		.uleb128 0xe
+ 1354 0029 00       		.byte	0
+ 1355 002a 00       		.byte	0
+ 1356 002b 04       		.uleb128 0x4
+ 1357 002c 24       		.uleb128 0x24
+ 1358 002d 00       		.byte	0
+ 1359 002e 0B       		.uleb128 0xb
+ 1360 002f 0B       		.uleb128 0xb
+ 1361 0030 3E       		.uleb128 0x3e
+ 1362 0031 0B       		.uleb128 0xb
+ 1363 0032 03       		.uleb128 0x3
+ 1364 0033 08       		.uleb128 0x8
+ 1365 0034 00       		.byte	0
+ 1366 0035 00       		.byte	0
+ 1367 0036 05       		.uleb128 0x5
+ 1368 0037 0F       		.uleb128 0xf
+ 1369 0038 00       		.byte	0
+ 1370 0039 0B       		.uleb128 0xb
+ 1371 003a 0B       		.uleb128 0xb
+ 1372 003b 49       		.uleb128 0x49
+ 1373 003c 13       		.uleb128 0x13
+ 1374 003d 00       		.byte	0
+ 1375 003e 00       		.byte	0
+ 1376 003f 06       		.uleb128 0x6
+ 1377 0040 15       		.uleb128 0x15
+ 1378 0041 00       		.byte	0
+ 1379 0042 27       		.uleb128 0x27
+ 1380 0043 19       		.uleb128 0x19
+ 1381 0044 00       		.byte	0
+ 1382 0045 00       		.byte	0
+ 1383 0046 07       		.uleb128 0x7
+ 1384 0047 15       		.uleb128 0x15
+ 1385 0048 01       		.byte	0x1
+ 1386 0049 27       		.uleb128 0x27
+ 1387 004a 19       		.uleb128 0x19
+ 1388 004b 01       		.uleb128 0x1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 30
+
+
+ 1389 004c 13       		.uleb128 0x13
+ 1390 004d 00       		.byte	0
+ 1391 004e 00       		.byte	0
+ 1392 004f 08       		.uleb128 0x8
+ 1393 0050 05       		.uleb128 0x5
+ 1394 0051 00       		.byte	0
+ 1395 0052 49       		.uleb128 0x49
+ 1396 0053 13       		.uleb128 0x13
+ 1397 0054 00       		.byte	0
+ 1398 0055 00       		.byte	0
+ 1399 0056 09       		.uleb128 0x9
+ 1400 0057 0F       		.uleb128 0xf
+ 1401 0058 00       		.byte	0
+ 1402 0059 0B       		.uleb128 0xb
+ 1403 005a 0B       		.uleb128 0xb
+ 1404 005b 00       		.byte	0
+ 1405 005c 00       		.byte	0
+ 1406 005d 0A       		.uleb128 0xa
+ 1407 005e 16       		.uleb128 0x16
+ 1408 005f 00       		.byte	0
+ 1409 0060 03       		.uleb128 0x3
+ 1410 0061 0E       		.uleb128 0xe
+ 1411 0062 3A       		.uleb128 0x3a
+ 1412 0063 0B       		.uleb128 0xb
+ 1413 0064 3B       		.uleb128 0x3b
+ 1414 0065 05       		.uleb128 0x5
+ 1415 0066 49       		.uleb128 0x49
+ 1416 0067 13       		.uleb128 0x13
+ 1417 0068 00       		.byte	0
+ 1418 0069 00       		.byte	0
+ 1419 006a 0B       		.uleb128 0xb
+ 1420 006b 13       		.uleb128 0x13
+ 1421 006c 01       		.byte	0x1
+ 1422 006d 03       		.uleb128 0x3
+ 1423 006e 0E       		.uleb128 0xe
+ 1424 006f 0B       		.uleb128 0xb
+ 1425 0070 0B       		.uleb128 0xb
+ 1426 0071 3A       		.uleb128 0x3a
+ 1427 0072 0B       		.uleb128 0xb
+ 1428 0073 3B       		.uleb128 0x3b
+ 1429 0074 05       		.uleb128 0x5
+ 1430 0075 01       		.uleb128 0x1
+ 1431 0076 13       		.uleb128 0x13
+ 1432 0077 00       		.byte	0
+ 1433 0078 00       		.byte	0
+ 1434 0079 0C       		.uleb128 0xc
+ 1435 007a 0D       		.uleb128 0xd
+ 1436 007b 00       		.byte	0
+ 1437 007c 03       		.uleb128 0x3
+ 1438 007d 0E       		.uleb128 0xe
+ 1439 007e 3A       		.uleb128 0x3a
+ 1440 007f 0B       		.uleb128 0xb
+ 1441 0080 3B       		.uleb128 0x3b
+ 1442 0081 05       		.uleb128 0x5
+ 1443 0082 49       		.uleb128 0x49
+ 1444 0083 13       		.uleb128 0x13
+ 1445 0084 38       		.uleb128 0x38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 31
+
+
+ 1446 0085 0B       		.uleb128 0xb
+ 1447 0086 00       		.byte	0
+ 1448 0087 00       		.byte	0
+ 1449 0088 0D       		.uleb128 0xd
+ 1450 0089 0D       		.uleb128 0xd
+ 1451 008a 00       		.byte	0
+ 1452 008b 03       		.uleb128 0x3
+ 1453 008c 08       		.uleb128 0x8
+ 1454 008d 3A       		.uleb128 0x3a
+ 1455 008e 0B       		.uleb128 0xb
+ 1456 008f 3B       		.uleb128 0x3b
+ 1457 0090 05       		.uleb128 0x5
+ 1458 0091 49       		.uleb128 0x49
+ 1459 0092 13       		.uleb128 0x13
+ 1460 0093 38       		.uleb128 0x38
+ 1461 0094 0B       		.uleb128 0xb
+ 1462 0095 00       		.byte	0
+ 1463 0096 00       		.byte	0
+ 1464 0097 0E       		.uleb128 0xe
+ 1465 0098 01       		.uleb128 0x1
+ 1466 0099 01       		.byte	0x1
+ 1467 009a 49       		.uleb128 0x49
+ 1468 009b 13       		.uleb128 0x13
+ 1469 009c 01       		.uleb128 0x1
+ 1470 009d 13       		.uleb128 0x13
+ 1471 009e 00       		.byte	0
+ 1472 009f 00       		.byte	0
+ 1473 00a0 0F       		.uleb128 0xf
+ 1474 00a1 21       		.uleb128 0x21
+ 1475 00a2 00       		.byte	0
+ 1476 00a3 49       		.uleb128 0x49
+ 1477 00a4 13       		.uleb128 0x13
+ 1478 00a5 2F       		.uleb128 0x2f
+ 1479 00a6 0B       		.uleb128 0xb
+ 1480 00a7 00       		.byte	0
+ 1481 00a8 00       		.byte	0
+ 1482 00a9 10       		.uleb128 0x10
+ 1483 00aa 2E       		.uleb128 0x2e
+ 1484 00ab 01       		.byte	0x1
+ 1485 00ac 3F       		.uleb128 0x3f
+ 1486 00ad 19       		.uleb128 0x19
+ 1487 00ae 03       		.uleb128 0x3
+ 1488 00af 0E       		.uleb128 0xe
+ 1489 00b0 3A       		.uleb128 0x3a
+ 1490 00b1 0B       		.uleb128 0xb
+ 1491 00b2 3B       		.uleb128 0x3b
+ 1492 00b3 0B       		.uleb128 0xb
+ 1493 00b4 27       		.uleb128 0x27
+ 1494 00b5 19       		.uleb128 0x19
+ 1495 00b6 11       		.uleb128 0x11
+ 1496 00b7 01       		.uleb128 0x1
+ 1497 00b8 12       		.uleb128 0x12
+ 1498 00b9 06       		.uleb128 0x6
+ 1499 00ba 40       		.uleb128 0x40
+ 1500 00bb 18       		.uleb128 0x18
+ 1501 00bc 9742     		.uleb128 0x2117
+ 1502 00be 19       		.uleb128 0x19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 32
+
+
+ 1503 00bf 01       		.uleb128 0x1
+ 1504 00c0 13       		.uleb128 0x13
+ 1505 00c1 00       		.byte	0
+ 1506 00c2 00       		.byte	0
+ 1507 00c3 11       		.uleb128 0x11
+ 1508 00c4 05       		.uleb128 0x5
+ 1509 00c5 00       		.byte	0
+ 1510 00c6 03       		.uleb128 0x3
+ 1511 00c7 0E       		.uleb128 0xe
+ 1512 00c8 3A       		.uleb128 0x3a
+ 1513 00c9 0B       		.uleb128 0xb
+ 1514 00ca 3B       		.uleb128 0x3b
+ 1515 00cb 0B       		.uleb128 0xb
+ 1516 00cc 49       		.uleb128 0x49
+ 1517 00cd 13       		.uleb128 0x13
+ 1518 00ce 02       		.uleb128 0x2
+ 1519 00cf 18       		.uleb128 0x18
+ 1520 00d0 00       		.byte	0
+ 1521 00d1 00       		.byte	0
+ 1522 00d2 12       		.uleb128 0x12
+ 1523 00d3 2E       		.uleb128 0x2e
+ 1524 00d4 00       		.byte	0
+ 1525 00d5 3F       		.uleb128 0x3f
+ 1526 00d6 19       		.uleb128 0x19
+ 1527 00d7 03       		.uleb128 0x3
+ 1528 00d8 0E       		.uleb128 0xe
+ 1529 00d9 3A       		.uleb128 0x3a
+ 1530 00da 0B       		.uleb128 0xb
+ 1531 00db 3B       		.uleb128 0x3b
+ 1532 00dc 0B       		.uleb128 0xb
+ 1533 00dd 27       		.uleb128 0x27
+ 1534 00de 19       		.uleb128 0x19
+ 1535 00df 11       		.uleb128 0x11
+ 1536 00e0 01       		.uleb128 0x1
+ 1537 00e1 12       		.uleb128 0x12
+ 1538 00e2 06       		.uleb128 0x6
+ 1539 00e3 40       		.uleb128 0x40
+ 1540 00e4 18       		.uleb128 0x18
+ 1541 00e5 9742     		.uleb128 0x2117
+ 1542 00e7 19       		.uleb128 0x19
+ 1543 00e8 00       		.byte	0
+ 1544 00e9 00       		.byte	0
+ 1545 00ea 13       		.uleb128 0x13
+ 1546 00eb 34       		.uleb128 0x34
+ 1547 00ec 00       		.byte	0
+ 1548 00ed 03       		.uleb128 0x3
+ 1549 00ee 0E       		.uleb128 0xe
+ 1550 00ef 3A       		.uleb128 0x3a
+ 1551 00f0 0B       		.uleb128 0xb
+ 1552 00f1 3B       		.uleb128 0x3b
+ 1553 00f2 0B       		.uleb128 0xb
+ 1554 00f3 49       		.uleb128 0x49
+ 1555 00f4 13       		.uleb128 0x13
+ 1556 00f5 02       		.uleb128 0x2
+ 1557 00f6 17       		.uleb128 0x17
+ 1558 00f7 00       		.byte	0
+ 1559 00f8 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 33
+
+
+ 1560 00f9 14       		.uleb128 0x14
+ 1561 00fa 898201   		.uleb128 0x4109
+ 1562 00fd 00       		.byte	0
+ 1563 00fe 11       		.uleb128 0x11
+ 1564 00ff 01       		.uleb128 0x1
+ 1565 0100 31       		.uleb128 0x31
+ 1566 0101 13       		.uleb128 0x13
+ 1567 0102 00       		.byte	0
+ 1568 0103 00       		.byte	0
+ 1569 0104 15       		.uleb128 0x15
+ 1570 0105 34       		.uleb128 0x34
+ 1571 0106 00       		.byte	0
+ 1572 0107 03       		.uleb128 0x3
+ 1573 0108 0E       		.uleb128 0xe
+ 1574 0109 3A       		.uleb128 0x3a
+ 1575 010a 0B       		.uleb128 0xb
+ 1576 010b 3B       		.uleb128 0x3b
+ 1577 010c 05       		.uleb128 0x5
+ 1578 010d 49       		.uleb128 0x49
+ 1579 010e 13       		.uleb128 0x13
+ 1580 010f 3F       		.uleb128 0x3f
+ 1581 0110 19       		.uleb128 0x19
+ 1582 0111 3C       		.uleb128 0x3c
+ 1583 0112 19       		.uleb128 0x19
+ 1584 0113 00       		.byte	0
+ 1585 0114 00       		.byte	0
+ 1586 0115 16       		.uleb128 0x16
+ 1587 0116 2E       		.uleb128 0x2e
+ 1588 0117 00       		.byte	0
+ 1589 0118 3F       		.uleb128 0x3f
+ 1590 0119 19       		.uleb128 0x19
+ 1591 011a 3C       		.uleb128 0x3c
+ 1592 011b 19       		.uleb128 0x19
+ 1593 011c 6E       		.uleb128 0x6e
+ 1594 011d 0E       		.uleb128 0xe
+ 1595 011e 03       		.uleb128 0x3
+ 1596 011f 0E       		.uleb128 0xe
+ 1597 0120 3A       		.uleb128 0x3a
+ 1598 0121 0B       		.uleb128 0xb
+ 1599 0122 3B       		.uleb128 0x3b
+ 1600 0123 05       		.uleb128 0x5
+ 1601 0124 00       		.byte	0
+ 1602 0125 00       		.byte	0
+ 1603 0126 00       		.byte	0
+ 1604              		.section	.debug_loc,"",%progbits
+ 1605              	.Ldebug_loc0:
+ 1606              	.LLST0:
+ 1607 0000 02000000 		.4byte	.LVL3
+ 1608 0004 06000000 		.4byte	.LVL4
+ 1609 0008 0200     		.2byte	0x2
+ 1610 000a 30       		.byte	0x30
+ 1611 000b 9F       		.byte	0x9f
+ 1612 000c 06000000 		.4byte	.LVL4
+ 1613 0010 33000000 		.4byte	.LVL5-1
+ 1614 0014 0100     		.2byte	0x1
+ 1615 0016 50       		.byte	0x50
+ 1616 0017 00000000 		.4byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 34
+
+
+ 1617 001b 00000000 		.4byte	0
+ 1618              	.LLST1:
+ 1619 001f 02000000 		.4byte	.LVL6
+ 1620 0023 06000000 		.4byte	.LVL7
+ 1621 0027 0200     		.2byte	0x2
+ 1622 0029 30       		.byte	0x30
+ 1623 002a 9F       		.byte	0x9f
+ 1624 002b 06000000 		.4byte	.LVL7
+ 1625 002f 27000000 		.4byte	.LVL8-1
+ 1626 0033 0100     		.2byte	0x1
+ 1627 0035 50       		.byte	0x50
+ 1628 0036 00000000 		.4byte	0
+ 1629 003a 00000000 		.4byte	0
+ 1630              		.section	.debug_aranges,"",%progbits
+ 1631 0000 64000000 		.4byte	0x64
+ 1632 0004 0200     		.2byte	0x2
+ 1633 0006 00000000 		.4byte	.Ldebug_info0
+ 1634 000a 04       		.byte	0x4
+ 1635 000b 00       		.byte	0
+ 1636 000c 0000     		.2byte	0
+ 1637 000e 0000     		.2byte	0
+ 1638 0010 00000000 		.4byte	.LFB3
+ 1639 0014 02000000 		.4byte	.LFE3-.LFB3
+ 1640 0018 00000000 		.4byte	.LFB4
+ 1641 001c 02000000 		.4byte	.LFE4-.LFB4
+ 1642 0020 00000000 		.4byte	.LFB5
+ 1643 0024 02000000 		.4byte	.LFE5-.LFB5
+ 1644 0028 00000000 		.4byte	.LFB6
+ 1645 002c 02000000 		.4byte	.LFE6-.LFB6
+ 1646 0030 00000000 		.4byte	.LFB8
+ 1647 0034 02000000 		.4byte	.LFE8-.LFB8
+ 1648 0038 00000000 		.4byte	.LFB9
+ 1649 003c 02000000 		.4byte	.LFE9-.LFB9
+ 1650 0040 00000000 		.4byte	.LFB10
+ 1651 0044 02000000 		.4byte	.LFE10-.LFB10
+ 1652 0048 00000000 		.4byte	.LFB1
+ 1653 004c 70000000 		.4byte	.LFE1-.LFB1
+ 1654 0050 00000000 		.4byte	.LFB2
+ 1655 0054 48000000 		.4byte	.LFE2-.LFB2
+ 1656 0058 00000000 		.4byte	.LFB7
+ 1657 005c 02000000 		.4byte	.LFE7-.LFB7
+ 1658 0060 00000000 		.4byte	0
+ 1659 0064 00000000 		.4byte	0
+ 1660              		.section	.debug_ranges,"",%progbits
+ 1661              	.Ldebug_ranges0:
+ 1662 0000 00000000 		.4byte	.LFB3
+ 1663 0004 02000000 		.4byte	.LFE3
+ 1664 0008 00000000 		.4byte	.LFB4
+ 1665 000c 02000000 		.4byte	.LFE4
+ 1666 0010 00000000 		.4byte	.LFB5
+ 1667 0014 02000000 		.4byte	.LFE5
+ 1668 0018 00000000 		.4byte	.LFB6
+ 1669 001c 02000000 		.4byte	.LFE6
+ 1670 0020 00000000 		.4byte	.LFB8
+ 1671 0024 02000000 		.4byte	.LFE8
+ 1672 0028 00000000 		.4byte	.LFB9
+ 1673 002c 02000000 		.4byte	.LFE9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 35
+
+
+ 1674 0030 00000000 		.4byte	.LFB10
+ 1675 0034 02000000 		.4byte	.LFE10
+ 1676 0038 00000000 		.4byte	.LFB1
+ 1677 003c 70000000 		.4byte	.LFE1
+ 1678 0040 00000000 		.4byte	.LFB2
+ 1679 0044 48000000 		.4byte	.LFE2
+ 1680 0048 00000000 		.4byte	.LFB7
+ 1681 004c 02000000 		.4byte	.LFE7
+ 1682 0050 00000000 		.4byte	0
+ 1683 0054 00000000 		.4byte	0
+ 1684              		.section	.debug_line,"",%progbits
+ 1685              	.Ldebug_line0:
+ 1686 0000 43010000 		.section	.debug_str,"MS",%progbits,1
+ 1686      02008B00 
+ 1686      00000201 
+ 1686      FB0E0D00 
+ 1686      01010101 
+ 1687              	.LASF55:
+ 1688 0000 6F735F74 		.ascii	"os_tcb\000"
+ 1688      636200
+ 1689              	.LASF25:
+ 1690 0007 4F535F43 		.ascii	"OS_CTX_SW_CTR\000"
+ 1690      54585F53 
+ 1690      575F4354 
+ 1690      5200
+ 1691              	.LASF97:
+ 1692 0015 53746B55 		.ascii	"StkUsed\000"
+ 1692      73656400 
+ 1693              	.LASF79:
+ 1694 001d 54696D65 		.ascii	"TimeQuantaCtr\000"
+ 1694      5175616E 
+ 1694      74614374 
+ 1694      7200
+ 1695              	.LASF51:
+ 1696 002b 4E627245 		.ascii	"NbrEntries\000"
+ 1696      6E747269 
+ 1696      657300
+ 1697              	.LASF24:
+ 1698 0036 4F535F43 		.ascii	"OS_CPU_USAGE\000"
+ 1698      50555F55 
+ 1698      53414745 
+ 1698      00
+ 1699              	.LASF129:
+ 1700 0043 4170705F 		.ascii	"App_OS_TaskSwHook\000"
+ 1700      4F535F54 
+ 1700      61736B53 
+ 1700      77486F6F 
+ 1700      6B00
+ 1701              	.LASF8:
+ 1702 0055 4350555F 		.ascii	"CPU_INT32U\000"
+ 1702      494E5433 
+ 1702      325500
+ 1703              	.LASF86:
+ 1704 0060 466C6167 		.ascii	"FlagsOpt\000"
+ 1704      734F7074 
+ 1704      00
+ 1705              	.LASF31:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 36
+
+
+ 1706 0069 4F535F4F 		.ascii	"OS_OBJ_QTY\000"
+ 1706      424A5F51 
+ 1706      545900
+ 1707              	.LASF99:
+ 1708 0074 44626750 		.ascii	"DbgPrevPtr\000"
+ 1708      72657650 
+ 1708      747200
+ 1709              	.LASF95:
+ 1710 007f 53656D50 		.ascii	"SemPendTime\000"
+ 1710      656E6454 
+ 1710      696D6500 
+ 1711              	.LASF100:
+ 1712 008b 4462674E 		.ascii	"DbgNextPtr\000"
+ 1712      65787450 
+ 1712      747200
+ 1713              	.LASF115:
+ 1714 0096 48656164 		.ascii	"HeadPtr\000"
+ 1714      50747200 
+ 1715              	.LASF137:
+ 1716 009e 4F535F41 		.ascii	"OS_AppTaskReturnHookPtr\000"
+ 1716      70705461 
+ 1716      736B5265 
+ 1716      7475726E 
+ 1716      486F6F6B 
+ 1717              	.LASF68:
+ 1718 00b6 50656E64 		.ascii	"PendOn\000"
+ 1718      4F6E00
+ 1719              	.LASF73:
+ 1720 00bd 50656E64 		.ascii	"PendDataTblEntries\000"
+ 1720      44617461 
+ 1720      54626C45 
+ 1720      6E747269 
+ 1720      657300
+ 1721              	.LASF142:
+ 1722 00d0 4350555F 		.ascii	"CPU_SR_Save\000"
+ 1722      53525F53 
+ 1722      61766500 
+ 1723              	.LASF116:
+ 1724 00dc 5461696C 		.ascii	"TailPtr\000"
+ 1724      50747200 
+ 1725              	.LASF53:
+ 1726 00e4 4F535F54 		.ascii	"OS_TASK_PTR\000"
+ 1726      41534B5F 
+ 1726      50545200 
+ 1727              	.LASF145:
+ 1728 00f0 4150505C 		.ascii	"APP\\os_app_hooks.c\000"
+ 1728      6F735F61 
+ 1728      70705F68 
+ 1728      6F6F6B73 
+ 1728      2E6300
+ 1729              	.LASF76:
+ 1730 0103 5469636B 		.ascii	"TickCtrMatch\000"
+ 1730      4374724D 
+ 1730      61746368 
+ 1730      00
+ 1731              	.LASF118:
+ 1732 0110 6F735F70 		.ascii	"os_pend_obj\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 37
+
+
+ 1732      656E645F 
+ 1732      6F626A00 
+ 1733              	.LASF84:
+ 1734 011c 466C6167 		.ascii	"FlagsPend\000"
+ 1734      7350656E 
+ 1734      6400
+ 1735              	.LASF90:
+ 1736 0126 43747853 		.ascii	"CtxSwCtr\000"
+ 1736      77437472 
+ 1736      00
+ 1737              	.LASF34:
+ 1738 012f 4F535F50 		.ascii	"OS_PRIO\000"
+ 1738      52494F00 
+ 1739              	.LASF12:
+ 1740 0137 666C6F61 		.ascii	"float\000"
+ 1740      7400
+ 1741              	.LASF106:
+ 1742 013d 6F735F70 		.ascii	"os_pend_data\000"
+ 1742      656E645F 
+ 1742      64617461 
+ 1742      00
+ 1743              	.LASF102:
+ 1744 014a 4F535F54 		.ascii	"OS_TICK_SPOKE\000"
+ 1744      49434B5F 
+ 1744      53504F4B 
+ 1744      4500
+ 1745              	.LASF133:
+ 1746 0158 6370755F 		.ascii	"cpu_sr\000"
+ 1746      737200
+ 1747              	.LASF40:
+ 1748 015f 4F535F4D 		.ascii	"OS_MSG\000"
+ 1748      534700
+ 1749              	.LASF10:
+ 1750 0166 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1750      206C6F6E 
+ 1750      6720756E 
+ 1750      7369676E 
+ 1750      65642069 
+ 1751              	.LASF105:
+ 1752 017d 4F535F50 		.ascii	"OS_PEND_DATA\000"
+ 1752      454E445F 
+ 1752      44415441 
+ 1752      00
+ 1753              	.LASF3:
+ 1754 018a 4350555F 		.ascii	"CPU_INT08U\000"
+ 1754      494E5430 
+ 1754      385500
+ 1755              	.LASF46:
+ 1756 0195 6F735F6D 		.ascii	"os_msg\000"
+ 1756      736700
+ 1757              	.LASF72:
+ 1758 019c 53746B53 		.ascii	"StkSize\000"
+ 1758      697A6500 
+ 1759              	.LASF64:
+ 1760 01a4 53746B42 		.ascii	"StkBasePtr\000"
+ 1760      61736550 
+ 1760      747200
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 38
+
+
+ 1761              	.LASF35:
+ 1762 01af 4F535F52 		.ascii	"OS_REG\000"
+ 1762      454700
+ 1763              	.LASF144:
+ 1764 01b6 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1764      43313120 
+ 1764      352E342E 
+ 1764      31203230 
+ 1764      31363036 
+ 1765 01e9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1765      20726576 
+ 1765      6973696F 
+ 1765      6E203233 
+ 1765      37373135 
+ 1766 021c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1766      66756E63 
+ 1766      74696F6E 
+ 1766      2D736563 
+ 1766      74696F6E 
+ 1767              	.LASF123:
+ 1768 0244 4170705F 		.ascii	"App_OS_TaskCreateHook\000"
+ 1768      4F535F54 
+ 1768      61736B43 
+ 1768      72656174 
+ 1768      65486F6F 
+ 1769              	.LASF38:
+ 1770 025a 4F535F53 		.ascii	"OS_STATUS\000"
+ 1770      54415455 
+ 1770      5300
+ 1771              	.LASF125:
+ 1772 0264 705F7463 		.ascii	"p_tcb\000"
+ 1772      6200
+ 1773              	.LASF29:
+ 1774 026a 4F535F4D 		.ascii	"OS_MSG_SIZE\000"
+ 1774      53475F53 
+ 1774      495A4500 
+ 1775              	.LASF134:
+ 1776 0276 4170705F 		.ascii	"App_OS_InitHook\000"
+ 1776      4F535F49 
+ 1776      6E697448 
+ 1776      6F6F6B00 
+ 1777              	.LASF132:
+ 1778 0286 4170705F 		.ascii	"App_OS_ClrAllHooks\000"
+ 1778      4F535F43 
+ 1778      6C72416C 
+ 1778      6C486F6F 
+ 1778      6B7300
+ 1779              	.LASF2:
+ 1780 0299 4350555F 		.ascii	"CPU_CHAR\000"
+ 1780      43484152 
+ 1780      00
+ 1781              	.LASF16:
+ 1782 02a2 4350555F 		.ascii	"CPU_STK_SIZE\000"
+ 1782      53544B5F 
+ 1782      53495A45 
+ 1782      00
+ 1783              	.LASF28:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 39
+
+
+ 1784 02af 4F535F4D 		.ascii	"OS_MSG_QTY\000"
+ 1784      53475F51 
+ 1784      545900
+ 1785              	.LASF75:
+ 1786 02ba 5469636B 		.ascii	"TickCtrPrev\000"
+ 1786      43747250 
+ 1786      72657600 
+ 1787              	.LASF50:
+ 1788 02c6 4E627245 		.ascii	"NbrEntriesSize\000"
+ 1788      6E747269 
+ 1788      65735369 
+ 1788      7A6500
+ 1789              	.LASF61:
+ 1790 02d5 5469636B 		.ascii	"TickPrevPtr\000"
+ 1790      50726576 
+ 1790      50747200 
+ 1791              	.LASF126:
+ 1792 02e1 4170705F 		.ascii	"App_OS_TaskReturnHook\000"
+ 1792      4F535F54 
+ 1792      61736B52 
+ 1792      65747572 
+ 1792      6E486F6F 
+ 1793              	.LASF82:
+ 1794 02f7 4D736751 		.ascii	"MsgQPendTimeMax\000"
+ 1794      50656E64 
+ 1794      54696D65 
+ 1794      4D617800 
+ 1795              	.LASF81:
+ 1796 0307 4D736751 		.ascii	"MsgQPendTime\000"
+ 1796      50656E64 
+ 1796      54696D65 
+ 1796      00
+ 1797              	.LASF128:
+ 1798 0314 4170705F 		.ascii	"App_OS_StatTaskHook\000"
+ 1798      4F535F53 
+ 1798      74617454 
+ 1798      61736B48 
+ 1798      6F6F6B00 
+ 1799              	.LASF122:
+ 1800 0328 4F535F41 		.ascii	"OS_APP_HOOK_TCB\000"
+ 1800      50505F48 
+ 1800      4F4F4B5F 
+ 1800      54434200 
+ 1801              	.LASF59:
+ 1802 0338 50726576 		.ascii	"PrevPtr\000"
+ 1802      50747200 
+ 1803              	.LASF0:
+ 1804 0340 63686172 		.ascii	"char\000"
+ 1804      00
+ 1805              	.LASF136:
+ 1806 0345 4F535F41 		.ascii	"OS_AppTaskDelHookPtr\000"
+ 1806      70705461 
+ 1806      736B4465 
+ 1806      6C486F6F 
+ 1806      6B507472 
+ 1807              	.LASF32:
+ 1808 035a 4F535F4F 		.ascii	"OS_OBJ_TYPE\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 40
+
+
+ 1808      424A5F54 
+ 1808      59504500 
+ 1809              	.LASF70:
+ 1810 0366 5461736B 		.ascii	"TaskState\000"
+ 1810      53746174 
+ 1810      6500
+ 1811              	.LASF17:
+ 1812 0370 4350555F 		.ascii	"CPU_SR\000"
+ 1812      535200
+ 1813              	.LASF131:
+ 1814 0377 4170705F 		.ascii	"App_OS_SetAllHooks\000"
+ 1814      4F535F53 
+ 1814      6574416C 
+ 1814      6C486F6F 
+ 1814      6B7300
+ 1815              	.LASF48:
+ 1816 038a 496E5074 		.ascii	"InPtr\000"
+ 1816      7200
+ 1817              	.LASF80:
+ 1818 0390 4D736751 		.ascii	"MsgQ\000"
+ 1818      00
+ 1819              	.LASF65:
+ 1820 0395 5461736B 		.ascii	"TaskEntryAddr\000"
+ 1820      456E7472 
+ 1820      79416464 
+ 1820      7200
+ 1821              	.LASF63:
+ 1822 03a3 4E616D65 		.ascii	"NamePtr\000"
+ 1822      50747200 
+ 1823              	.LASF69:
+ 1824 03ab 50656E64 		.ascii	"PendStatus\000"
+ 1824      53746174 
+ 1824      757300
+ 1825              	.LASF45:
+ 1826 03b6 4F535F4D 		.ascii	"OS_MSG_Q\000"
+ 1826      53475F51 
+ 1826      00
+ 1827              	.LASF119:
+ 1828 03bf 54797065 		.ascii	"Type\000"
+ 1828      00
+ 1829              	.LASF23:
+ 1830 03c4 4350555F 		.ascii	"CPU_TS\000"
+ 1830      545300
+ 1831              	.LASF11:
+ 1832 03cb 6C6F6E67 		.ascii	"long long int\000"
+ 1832      206C6F6E 
+ 1832      6720696E 
+ 1832      7400
+ 1833              	.LASF56:
+ 1834 03d9 53746B50 		.ascii	"StkPtr\000"
+ 1834      747200
+ 1835              	.LASF103:
+ 1836 03e0 6F735F74 		.ascii	"os_tick_spoke\000"
+ 1836      69636B5F 
+ 1836      73706F6B 
+ 1836      6500
+ 1837              	.LASF135:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 41
+
+
+ 1838 03ee 4F535F41 		.ascii	"OS_AppTaskCreateHookPtr\000"
+ 1838      70705461 
+ 1838      736B4372 
+ 1838      65617465 
+ 1838      486F6F6B 
+ 1839              	.LASF146:
+ 1840 0406 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 1840      73657273 
+ 1840      5C6A6F72 
+ 1840      74695C44 
+ 1840      6F63756D 
+ 1841 0433 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
+ 1841      5F536F66 
+ 1841      74776172 
+ 1841      655F315C 
+ 1841      63797072 
+ 1842 0463 5F63796B 		.ascii	"_cykit.cydsn\000"
+ 1842      69742E63 
+ 1842      7964736E 
+ 1842      00
+ 1843              	.LASF92:
+ 1844 0470 4379636C 		.ascii	"CyclesStart\000"
+ 1844      65735374 
+ 1844      61727400 
+ 1845              	.LASF5:
+ 1846 047c 4350555F 		.ascii	"CPU_INT16U\000"
+ 1846      494E5431 
+ 1846      365500
+ 1847              	.LASF39:
+ 1848 0487 4F535F54 		.ascii	"OS_TICK\000"
+ 1848      49434B00 
+ 1849              	.LASF22:
+ 1850 048f 4350555F 		.ascii	"CPU_TS32\000"
+ 1850      54533332 
+ 1850      00
+ 1851              	.LASF87:
+ 1852 0498 53757370 		.ascii	"SuspendCtr\000"
+ 1852      656E6443 
+ 1852      747200
+ 1853              	.LASF58:
+ 1854 04a3 53746B4C 		.ascii	"StkLimitPtr\000"
+ 1854      696D6974 
+ 1854      50747200 
+ 1855              	.LASF121:
+ 1856 04af 4F535F41 		.ascii	"OS_APP_HOOK_VOID\000"
+ 1856      50505F48 
+ 1856      4F4F4B5F 
+ 1856      564F4944 
+ 1856      00
+ 1857              	.LASF36:
+ 1858 04c0 4F535F53 		.ascii	"OS_SEM_CTR\000"
+ 1858      454D5F43 
+ 1858      545200
+ 1859              	.LASF107:
+ 1860 04cb 54434250 		.ascii	"TCBPtr\000"
+ 1860      747200
+ 1861              	.LASF91:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 42
+
+
+ 1862 04d2 4379636C 		.ascii	"CyclesDelta\000"
+ 1862      65734465 
+ 1862      6C746100 
+ 1863              	.LASF60:
+ 1864 04de 5469636B 		.ascii	"TickNextPtr\000"
+ 1864      4E657874 
+ 1864      50747200 
+ 1865              	.LASF109:
+ 1866 04ea 5264794F 		.ascii	"RdyObjPtr\000"
+ 1866      626A5074 
+ 1866      7200
+ 1867              	.LASF41:
+ 1868 04f4 4E657874 		.ascii	"NextPtr\000"
+ 1868      50747200 
+ 1869              	.LASF20:
+ 1870 04fc 6C6F6E67 		.ascii	"long double\000"
+ 1870      20646F75 
+ 1870      626C6500 
+ 1871              	.LASF112:
+ 1872 0508 52647954 		.ascii	"RdyTS\000"
+ 1872      5300
+ 1873              	.LASF143:
+ 1874 050e 4350555F 		.ascii	"CPU_SR_Restore\000"
+ 1874      53525F52 
+ 1874      6573746F 
+ 1874      726500
+ 1875              	.LASF138:
+ 1876 051d 4F535F41 		.ascii	"OS_AppIdleTaskHookPtr\000"
+ 1876      70704964 
+ 1876      6C655461 
+ 1876      736B486F 
+ 1876      6F6B5074 
+ 1877              	.LASF7:
+ 1878 0533 73686F72 		.ascii	"short int\000"
+ 1878      7420696E 
+ 1878      7400
+ 1879              	.LASF111:
+ 1880 053d 5264794D 		.ascii	"RdyMsgSize\000"
+ 1880      73675369 
+ 1880      7A6500
+ 1881              	.LASF141:
+ 1882 0548 4F535F41 		.ascii	"OS_AppTimeTickHookPtr\000"
+ 1882      70705469 
+ 1882      6D655469 
+ 1882      636B486F 
+ 1882      6F6B5074 
+ 1883              	.LASF18:
+ 1884 055e 6C6F6E67 		.ascii	"long int\000"
+ 1884      20696E74 
+ 1884      00
+ 1885              	.LASF96:
+ 1886 0567 53656D50 		.ascii	"SemPendTimeMax\000"
+ 1886      656E6454 
+ 1886      696D654D 
+ 1886      617800
+ 1887              	.LASF94:
+ 1888 0576 4379636C 		.ascii	"CyclesTotalPrev\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 43
+
+
+ 1888      6573546F 
+ 1888      74616C50 
+ 1888      72657600 
+ 1889              	.LASF139:
+ 1890 0586 4F535F41 		.ascii	"OS_AppStatTaskHookPtr\000"
+ 1890      70705374 
+ 1890      61745461 
+ 1890      736B486F 
+ 1890      6F6B5074 
+ 1891              	.LASF67:
+ 1892 059c 50656E64 		.ascii	"PendDataTblPtr\000"
+ 1892      44617461 
+ 1892      54626C50 
+ 1892      747200
+ 1893              	.LASF30:
+ 1894 05ab 4F535F4E 		.ascii	"OS_NESTING_CTR\000"
+ 1894      45535449 
+ 1894      4E475F43 
+ 1894      545200
+ 1895              	.LASF93:
+ 1896 05ba 4379636C 		.ascii	"CyclesTotal\000"
+ 1896      6573546F 
+ 1896      74616C00 
+ 1897              	.LASF117:
+ 1898 05c6 4F535F50 		.ascii	"OS_PEND_OBJ\000"
+ 1898      454E445F 
+ 1898      4F424A00 
+ 1899              	.LASF89:
+ 1900 05d2 43505555 		.ascii	"CPUUsageMax\000"
+ 1900      73616765 
+ 1900      4D617800 
+ 1901              	.LASF120:
+ 1902 05de 50656E64 		.ascii	"PendList\000"
+ 1902      4C697374 
+ 1902      00
+ 1903              	.LASF74:
+ 1904 05e7 53656D43 		.ascii	"SemCtr\000"
+ 1904      747200
+ 1905              	.LASF77:
+ 1906 05ee 5469636B 		.ascii	"TickRemain\000"
+ 1906      52656D61 
+ 1906      696E00
+ 1907              	.LASF9:
+ 1908 05f9 756E7369 		.ascii	"unsigned int\000"
+ 1908      676E6564 
+ 1908      20696E74 
+ 1908      00
+ 1909              	.LASF43:
+ 1910 0606 4D736753 		.ascii	"MsgSize\000"
+ 1910      697A6500 
+ 1911              	.LASF110:
+ 1912 060e 5264794D 		.ascii	"RdyMsgPtr\000"
+ 1912      73675074 
+ 1912      7200
+ 1913              	.LASF104:
+ 1914 0618 46697273 		.ascii	"FirstPtr\000"
+ 1914      74507472 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 44
+
+
+ 1914      00
+ 1915              	.LASF57:
+ 1916 0621 45787450 		.ascii	"ExtPtr\000"
+ 1916      747200
+ 1917              	.LASF21:
+ 1918 0628 73697A65 		.ascii	"sizetype\000"
+ 1918      74797065 
+ 1918      00
+ 1919              	.LASF19:
+ 1920 0631 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1920      20756E73 
+ 1920      69676E65 
+ 1920      6420696E 
+ 1920      7400
+ 1921              	.LASF14:
+ 1922 0643 4350555F 		.ascii	"CPU_ADDR\000"
+ 1922      41444452 
+ 1922      00
+ 1923              	.LASF26:
+ 1924 064c 4F535F43 		.ascii	"OS_CYCLES\000"
+ 1924      59434C45 
+ 1924      5300
+ 1925              	.LASF54:
+ 1926 0656 4F535F54 		.ascii	"OS_TCB\000"
+ 1926      434200
+ 1927              	.LASF1:
+ 1928 065d 756E7369 		.ascii	"unsigned char\000"
+ 1928      676E6564 
+ 1928      20636861 
+ 1928      7200
+ 1929              	.LASF37:
+ 1930 066b 4F535F53 		.ascii	"OS_STATE\000"
+ 1930      54415445 
+ 1930      00
+ 1931              	.LASF33:
+ 1932 0674 4F535F4F 		.ascii	"OS_OPT\000"
+ 1932      505400
+ 1933              	.LASF62:
+ 1934 067b 5469636B 		.ascii	"TickSpokePtr\000"
+ 1934      53706F6B 
+ 1934      65507472 
+ 1934      00
+ 1935              	.LASF101:
+ 1936 0688 4462674E 		.ascii	"DbgNamePtr\000"
+ 1936      616D6550 
+ 1936      747200
+ 1937              	.LASF66:
+ 1938 0693 5461736B 		.ascii	"TaskEntryArg\000"
+ 1938      456E7472 
+ 1938      79417267 
+ 1938      00
+ 1939              	.LASF49:
+ 1940 06a0 4F757450 		.ascii	"OutPtr\000"
+ 1940      747200
+ 1941              	.LASF113:
+ 1942 06a7 4F535F50 		.ascii	"OS_PEND_LIST\000"
+ 1942      454E445F 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 45
+
+
+ 1942      4C495354 
+ 1942      00
+ 1943              	.LASF140:
+ 1944 06b4 4F535F41 		.ascii	"OS_AppTaskSwHookPtr\000"
+ 1944      70705461 
+ 1944      736B5377 
+ 1944      486F6F6B 
+ 1944      50747200 
+ 1945              	.LASF124:
+ 1946 06c8 4170705F 		.ascii	"App_OS_TaskDelHook\000"
+ 1946      4F535F54 
+ 1946      61736B44 
+ 1946      656C486F 
+ 1946      6F6B00
+ 1947              	.LASF4:
+ 1948 06db 7369676E 		.ascii	"signed char\000"
+ 1948      65642063 
+ 1948      68617200 
+ 1949              	.LASF44:
+ 1950 06e7 4D736754 		.ascii	"MsgTS\000"
+ 1950      5300
+ 1951              	.LASF6:
+ 1952 06ed 73686F72 		.ascii	"short unsigned int\000"
+ 1952      7420756E 
+ 1952      7369676E 
+ 1952      65642069 
+ 1952      6E7400
+ 1953              	.LASF27:
+ 1954 0700 4F535F46 		.ascii	"OS_FLAGS\000"
+ 1954      4C414753 
+ 1954      00
+ 1955              	.LASF42:
+ 1956 0709 4D736750 		.ascii	"MsgPtr\000"
+ 1956      747200
+ 1957              	.LASF85:
+ 1958 0710 466C6167 		.ascii	"FlagsRdy\000"
+ 1958      73526479 
+ 1958      00
+ 1959              	.LASF71:
+ 1960 0719 5072696F 		.ascii	"Prio\000"
+ 1960      00
+ 1961              	.LASF130:
+ 1962 071e 4170705F 		.ascii	"App_OS_TimeTickHook\000"
+ 1962      4F535F54 
+ 1962      696D6554 
+ 1962      69636B48 
+ 1962      6F6F6B00 
+ 1963              	.LASF13:
+ 1964 0732 646F7562 		.ascii	"double\000"
+ 1964      6C6500
+ 1965              	.LASF88:
+ 1966 0739 43505555 		.ascii	"CPUUsage\000"
+ 1966      73616765 
+ 1966      00
+ 1967              	.LASF108:
+ 1968 0742 50656E64 		.ascii	"PendObjPtr\000"
+ 1968      4F626A50 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVIRpAk.s 			page 46
+
+
+ 1968      747200
+ 1969              	.LASF52:
+ 1970 074d 4E627245 		.ascii	"NbrEntriesMax\000"
+ 1970      6E747269 
+ 1970      65734D61 
+ 1970      7800
+ 1971              	.LASF114:
+ 1972 075b 6F735F70 		.ascii	"os_pend_list\000"
+ 1972      656E645F 
+ 1972      6C697374 
+ 1972      00
+ 1973              	.LASF127:
+ 1974 0768 4170705F 		.ascii	"App_OS_IdleTaskHook\000"
+ 1974      4F535F49 
+ 1974      646C6554 
+ 1974      61736B48 
+ 1974      6F6F6B00 
+ 1975              	.LASF83:
+ 1976 077c 52656754 		.ascii	"RegTbl\000"
+ 1976      626C00
+ 1977              	.LASF98:
+ 1978 0783 53746B46 		.ascii	"StkFree\000"
+ 1978      72656500 
+ 1979              	.LASF78:
+ 1980 078b 54696D65 		.ascii	"TimeQuanta\000"
+ 1980      5175616E 
+ 1980      746100
+ 1981              	.LASF47:
+ 1982 0796 6F735F6D 		.ascii	"os_msg_q\000"
+ 1982      73675F71 
+ 1982      00
+ 1983              	.LASF15:
+ 1984 079f 4350555F 		.ascii	"CPU_STK\000"
+ 1984      53544B00 
+ 1985              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

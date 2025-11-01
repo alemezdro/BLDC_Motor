@@ -1,0 +1,88 @@
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/CortexM3/ARM_GCC_541/Debug/app.o : C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/BSP/OS/uCOS-III/bsp_os.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/BSP/bsp.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_B.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_G.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_R.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_1.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_1_aliases.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_2.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_2_aliases.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/SPIM_1.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/SPIM_1_IntClock.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/UART_1.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/push_button.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/push_button_aliases.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/ARM-Cortex-M3/GNU/cpu.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/cpu_core.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/cpu_def.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_ascii.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_def.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_math.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_mem.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_str.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Ports/ARM-Cortex-M3/Generic/GNU/os_cpu.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Source/os.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Source/os_type.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/app.c C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/app_cfg.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/cpu_cfg.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/includes.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/os_cfg.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_gpio.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_spi.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_uart.h C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/cyapicallbacks.h 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/BSP/OS/uCOS-III/bsp_os.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/BSP/bsp.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_B.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_G.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/PWM_R.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_1.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_1_aliases.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_2.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/Pin_2_aliases.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/SPIM_1.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/SPIM_1_IntClock.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/UART_1.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/push_button.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/Generated_Source/PSoC5/push_button_aliases.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/ARM-Cortex-M3/GNU/cpu.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/cpu_core.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-CPU/cpu_def.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_ascii.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_def.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_math.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_mem.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uC-LIB/lib_str.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Ports/ARM-Cortex-M3/Generic/GNU/os_cpu.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Source/os.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/uCOS-III/Source/os_type.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/app.c : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/app_cfg.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/cpu_cfg.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/includes.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/APP/os_cfg.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_gpio.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_spi.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/bsp_uart.h : 
+
+C:/Users/jorti/Documents/FH_Technikum/MES1/System_Software_1/cypress/esw_rtos_cykit/esw_uCOS3_cykit.cydsn/cyapicallbacks.h : 
+

@@ -1,15 +1,14 @@
-# --- General rule ---
-*
-!*.c
-!*.h
-!*/
-!.gitignore
+# -----------------------------
+# PSoC / ModusToolbox / Eclipse
+# -----------------------------
 
-# --- PSoC Creator specific ---
-# Project build output
+# Build output and generated sources
 Generated_Source/
 Debug/
 Release/
+build/
+Build_*/
+Output/
 CortexM0/
 CortexM3/
 CortexM4/
@@ -17,7 +16,6 @@ ARM_GCC_*
 ARM_Keil_*
 ARM_MDKeil_*
 ARM_PSoC_*
-Output/
 *.rpt
 *.elf
 *.hex
@@ -26,44 +24,50 @@ Output/
 *.dep
 *.svd
 
-# Creator metadata
-*.cywrk.*
-*.cyprj.*
-*.cycdx
-*.cyfit
+# Creator / ModusToolbox metadata
 *.cywrk
 *.cyprj
+*.cycdx
+*.cyfit
 *.cydwr
 *.cyupdt
+*.cywrk.*
+*.cyprj.*
+*.cyfit.*
+*.cydwr.*
 
-# Logs and temporary files
-*.log
-*.tmp
-*.bak
-*.swp
-*.dmp
-*.orig
-
-# --- ModusToolbox specific ---
+# ModusToolbox shared and library folders
 libs/
 libs.deps
-*.launch
-*.metadata/
 mtb_shared/
-mtb-example-*
 MtbShared/
 *.gpdsc
 *.mex
 *.mtb
 *.mk
 
-# Eclipse / IDE junk
+# IDE stuff (Eclipse, VSCode, etc.)
 .settings/
 .project
 .cproject
 .idea/
 .vscode/
+*.launch
+*.metadata/
 
-# OS files
+# Logs, backups, temps
+*.log
+*.tmp
+*.bak
+*.swp
+*.orig
+*.dmp
+
+# OS junk
 .DS_Store
 Thumbs.db
+
+# -----------------------------
+# Keep these files (tracked)
+# -----------------------------
+!.gitignore

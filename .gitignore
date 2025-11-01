@@ -1,0 +1,16 @@
+# Build folders
+/Debug/
+/Release/
+/Generate_Source/
+
+# Compiler outputs
+*.elf
+*.hex
+*.map
+*.rpt
+*.log
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db

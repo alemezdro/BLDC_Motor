@@ -61,6 +61,8 @@ OS_TCB* GetAdcTaskTCB();
 */
 CPU_STK* GetAdcTaskStk();
 
+CPU_INT32U* getAdcTaskBuffer();
+
 #endif
 
 /* [] END OF FILE */

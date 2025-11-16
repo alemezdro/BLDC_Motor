@@ -60,5 +60,8 @@ OS_TCB* GetDshotTaskTCB();
 */
 CPU_STK* GetDshotTaskStk();
 
+
+OS_SEM* getSemBufferFullEvent();
+
 #endif
 /* [] END OF FILE */

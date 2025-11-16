@@ -91,6 +91,10 @@
 */
 #define GENERAL_TASK_DELAY_MS 100u
 #define TASK_QUEUE_LENGTH     0u
+  
+  
+#define ADC_TASK_BUFF_LENGTH    10u
+#define DSHOT_TASK_QUEUE_LENGTH 5u
 
 /*
 *********************************************************************************************************

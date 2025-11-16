@@ -191,7 +191,7 @@ static void App_TaskCreate(void)
                (CPU_STK *)GetDshotTaskStk(),
                (CPU_STK_SIZE)APP_CFG_TASK_DSHOT_STK_SIZE_LIMIT,
                (CPU_STK_SIZE)APP_CFG_TASK_DSHOT_STK_SIZE,
-               (OS_MSG_QTY)TASK_QUEUE_LENGTH,
+               (OS_MSG_QTY)DSHOT_TASK_QUEUE_LENGTH,
                (OS_TICK)0u,
                (void *)0,
                (OS_OPT)(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
@@ -233,7 +233,7 @@ static void App_ObjCreate(void)
   /* declare and define function local variables */
   OS_ERR os_err;
 
- //TODO -> objects still not necessary. Check
+  OSSemCreate(getSemBufferFullEvent(),"SEM_BUFFER_FULL_EVENT",0,&os_err);
 }
 
 /* END OF FILE */

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000\esw_uCOS3_cykit">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\app.c">
 <ExpandedNodeIds>
 <v>esw_uCOS3_cykit-000</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit</v>
@@ -29,6 +29,8 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Flash Security</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\EEPROM</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.c</v>
@@ -41,16 +43,23 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_uart.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_uart.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\cpu_bsp.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\adc_task.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\app_cfg.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\com_task.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cpu_cfg.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cyapicallbacks.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\device.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\dshot_task.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\includes.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_app_hooks.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg_app.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\adc_task.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\app.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\com_task.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\dshot_task.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\os_app_hooks.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3</v>
@@ -106,11 +115,9 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Source\os_var.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Generated_Source</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Generated_Source\PSoC5</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Generated_Source\PSoC5\CS_1</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>esw_uCOS3_cykit-000</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\TopDesign</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Pins</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Analog</v>
@@ -123,6 +130,9 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\EEPROM</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_gpio.c</v>
@@ -134,7 +144,31 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_uart.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\cpu_bsp.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\adc_task.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\app_cfg.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\com_task.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cpu_cfg.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cyapicallbacks.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\device.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\dshot_task.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\includes.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_app_hooks.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg_app.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\adc_task.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\app.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\com_task.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\dshot_task.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\os_app_hooks.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu_a.s</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\cpu_core.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\cpu_core.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000">
@@ -161,6 +195,7 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\adc_task.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\app.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_gpio.lst</v>
@@ -168,7 +203,11 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_spi.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_uart.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\com_task.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1_PM.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_a.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_bsp.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_c.lst</v>
@@ -184,6 +223,8 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_1_dma.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\dshot_task.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_ascii.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_math.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_mem.lst</v>
@@ -213,10 +254,16 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_var.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_1.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_2.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_3.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_4.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_5.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_6.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\pin_rgb_b.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\pin_rgb_g.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\pin_rgb_r.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\push_button.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_1_PM.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_B.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_B_PM.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_G.lst</v>
@@ -247,6 +294,7 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\adc_task.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\app.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_gpio.lst</v>
@@ -254,7 +302,11 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_spi.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\bsp_uart.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\com_task.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\Control_Reg_1_PM.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_a.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_bsp.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cpu_c.lst</v>
@@ -268,6 +320,25 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_1_dma.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\dshot_task.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_ascii.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_math.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_mem.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\lib_str.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\MISO_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\MOSI_1.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_app_hooks.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_cfg_app.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_core.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_cpu_a.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_cpu_c.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_dbg.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_flag.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_int.lst</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CortexM3\ARM_GCC_541\Debug\Listing Files\os_mem.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -283,11 +354,15 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CY8C58LP Family Datasheet</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\System Reference Guides</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\System Reference Guides\cy_boot_v5_80</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_constant_v1_0</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_dma_v1_70.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_pins_v2_20</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CyControlReg_v1_80.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\demux_v1_10.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\PWM_v3_30</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\SPI_Master_v2_50.pdf</v>
@@ -300,11 +375,15 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CY8C58LP Family Datasheet</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\System Reference Guides</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\System Reference Guides\cy_boot_v5_80</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_constant_v1_0</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_dma_v1_70.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_pins_v2_20</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\CyControlReg_v1_80.pdf</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\demux_v1_10.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\PWM_v3_30</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\SPI_Master_v2_50.pdf</v>
@@ -318,7 +397,11 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
+<name v=".\adc_task.c" />
+<name v=".\Generated_Source\PSoC5\SPIM_1.h" />
 <name v=".\APP\app.c" />
+<name v=".\Generated_Source\PSoC5\SPIM_1.c" />
+<name v=".\Generated_Source\PSoC5\cytypes.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -326,7 +409,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1743, 746" SelectedTabbedMdiWindow="ffb151e3-9c0a-406a-bb89-6de7580e97b6"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="cc6445f2-6ddd-4439-842b-60a1020bbfa9" /><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\APP\app.c" Guid="ffb151e3-9c0a-406a-bb89-6de7580e97b6" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1645, 843" SelectedTabbedMdiWindow="c13c19f1-be0b-4ca8-b432-51da4f531092"><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\adc_task.c" Guid="c13c19f1-be0b-4ca8-b432-51da4f531092" /><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\Generated_Source\PSoC5\SPIM_1.h" Guid="099dfeba-4c73-4855-89ac-fd38cb99e500" /><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\APP\app.c" Guid="289b0056-6e7f-43cb-ab13-e4e81ae4e899" /><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\Generated_Source\PSoC5\SPIM_1.c" Guid="960090fa-1911-466f-81b3-1da553dff17a" /><DocumentWindow Key="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\Generated_Source\PSoC5\cytypes.h" Guid="9933fce0-b5db-4bc2-b20b-d0a8e89e9225" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
   28:Generated_Source\PSoC5/push_button.c **** *
   29:Generated_Source\PSoC5/push_button.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/push_button.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 2
 
 
   31:Generated_Source\PSoC5/push_button.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
   52              		.size	push_button_Write, .-push_button_Write
   53              		.section	.text.push_button_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 3
 
 
   55              		.global	push_button_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 12500040 		.word	1073762322
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  110              		.align	2
  111              		.global	push_button_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -306,15 +306,15 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  144 000b 01       		.uleb128 0x1
  145 000c 68000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
- 147 0011 03020000 		.4byte	.LASF21
- 148 0015 74010000 		.4byte	.LASF22
+ 147 0011 0E020000 		.4byte	.LASF21
+ 148 0015 84010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
  152 0025 02       		.uleb128 0x2
  153 0026 01       		.byte	0x1
  154 0027 06       		.byte	0x6
- 155 0028 F7010000 		.4byte	.LASF0
+ 155 0028 02020000 		.4byte	.LASF0
  156 002c 02       		.uleb128 0x2
  157 002d 01       		.byte	0x1
  158 002e 08       		.byte	0x8
@@ -322,7 +322,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  160 0033 02       		.uleb128 0x2
  161 0034 02       		.byte	0x2
  162 0035 05       		.byte	0x5
- 163 0036 DE010000 		.4byte	.LASF2
+ 163 0036 74010000 		.4byte	.LASF2
  164 003a 02       		.uleb128 0x2
  165 003b 02       		.byte	0x2
  166 003c 07       		.byte	0x7
@@ -330,7 +330,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  168 0041 02       		.uleb128 0x2
  169 0042 04       		.byte	0x4
  170 0043 05       		.byte	0x5
- 171 0044 EE010000 		.4byte	.LASF4
+ 171 0044 F9010000 		.4byte	.LASF4
  172 0048 02       		.uleb128 0x2
  173 0049 04       		.byte	0x4
  174 004a 07       		.byte	0x7
@@ -352,13 +352,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  190 0066 07       		.byte	0x7
  191 0067 27010000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
- 193 006c E8010000 		.4byte	.LASF12
+ 193 006c 7E010000 		.4byte	.LASF12
  194 0070 02       		.byte	0x2
  195 0071 E401     		.2byte	0x1e4
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 8
 
 
  256 00f5 50010000 		.4byte	.LASF18
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  480      02004800 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 12
 
 
  480      01010101 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  502 00fb 6C6F6E67 		.ascii	"long unsigned int\000"
  502      20756E73 
  502      69676E65 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 13
 
 
  502      6420696E 
@@ -760,41 +760,42 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 1
  517              	.LASF11:
  518 016f 63686172 		.ascii	"char\000"
  518      00
- 519              	.LASF22:
- 520 0174 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
- 520      73657273 
- 520      5C6A6F72 
- 520      74695C44 
- 520      6F63756D 
- 521 01a1 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
- 521      5F536F66 
- 521      74776172 
- 521      655F315C 
- 521      63797072 
- 522 01d1 5F63796B 		.ascii	"_cykit.cydsn\000"
- 522      69742E63 
- 522      7964736E 
- 522      00
- 523              	.LASF2:
- 524 01de 73686F72 		.ascii	"short int\000"
- 524      7420696E 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWZ1ZBi.s 			page 14
+ 519              	.LASF2:
+ 520 0174 73686F72 		.ascii	"short int\000"
+ 520      7420696E 
+ 520      7400
+ 521              	.LASF12:
+ 522 017e 75696E74 		.ascii	"uint8\000"
+ 522      3800
+ 523              	.LASF22:
+ 524 0184 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 524      73657273 
+ 524      5C6A6F72 
+ 524      74695C44 
+ 524      6F63756D 
+ 525 01b1 7374656D 		.ascii	"stem_Software_1\\cypress_bldc_motor\\esw_rtos_cykit"
+ 525      5F536F66 
+ 525      74776172 
+ 525      655F315C 
+ 525      63797072 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc97Nwjd.s 			page 14
 
 
- 524      7400
- 525              	.LASF12:
- 526 01e8 75696E74 		.ascii	"uint8\000"
- 526      3800
+ 526 01e2 5C657377 		.ascii	"\\esw_uCOS3_cykit.cydsn\000"
+ 526      5F75434F 
+ 526      53335F63 
+ 526      796B6974 
+ 526      2E637964 
  527              	.LASF4:
- 528 01ee 6C6F6E67 		.ascii	"long int\000"
+ 528 01f9 6C6F6E67 		.ascii	"long int\000"
  528      20696E74 
  528      00
  529              	.LASF0:
- 530 01f7 7369676E 		.ascii	"signed char\000"
+ 530 0202 7369676E 		.ascii	"signed char\000"
  530      65642063 
  530      68617200 
  531              	.LASF21:
- 532 0203 47656E65 		.ascii	"Generated_Source\\PSoC5\\push_button.c\000"
+ 532 020e 47656E65 		.ascii	"Generated_Source\\PSoC5\\push_button.c\000"
  532      72617465 
  532      645F536F 
  532      75726365 

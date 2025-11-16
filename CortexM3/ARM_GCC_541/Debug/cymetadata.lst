@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
 
 
    1              		.syntax unified
@@ -27,17 +27,17 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 1
   24              		.section	.cyconfigecc,"a",%progbits
   25              		.align	2
   26              		.type	cy_meta_configecc, %object
-  27              		.size	cy_meta_configecc, 1672
+  27              		.size	cy_meta_configecc, 1820
   28              	cy_meta_configecc:
   29 0000 06       		.byte	6
   30 0001 4F       		.byte	79
   31 0002 00       		.byte	0
   32 0003 40       		.byte	64
-  33 0004 04       		.byte	4
+  33 0004 07       		.byte	7
   34 0005 52       		.byte	82
   35 0006 00       		.byte	0
   36 0007 40       		.byte	64
-  37 0008 01       		.byte	1
+  37 0008 02       		.byte	2
   38 0009 64       		.byte	100
   39 000a 00       		.byte	0
   40 000b 40       		.byte	64
@@ -45,2225 +45,2383 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 1
   42 000d 65       		.byte	101
   43 000e 00       		.byte	0
   44 000f 40       		.byte	64
-  45 0010 04       		.byte	4
-  46 0011 00       		.byte	0
+  45 0010 01       		.byte	1
+  46 0011 01       		.byte	1
   47 0012 01       		.byte	1
   48 0013 40       		.byte	64
-  49 0014 03       		.byte	3
-  50 0015 01       		.byte	1
+  49 0014 04       		.byte	4
+  50 0015 04       		.byte	4
   51 0016 01       		.byte	1
   52 0017 40       		.byte	64
-  53 0018 07       		.byte	7
-  54 0019 07       		.byte	7
+  53 0018 03       		.byte	3
+  54 0019 05       		.byte	5
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
-  57 001c 54       		.byte	84
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 2
+  57 001c 03       		.byte	3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 2
 
 
-  58 001d 08       		.byte	8
+  58 001d 07       		.byte	7
   59 001e 01       		.byte	1
   60 001f 40       		.byte	64
-  61 0020 3B       		.byte	59
-  62 0021 09       		.byte	9
+  61 0020 6D       		.byte	109
+  62 0021 08       		.byte	8
   63 0022 01       		.byte	1
   64 0023 40       		.byte	64
-  65 0024 14       		.byte	20
-  66 0025 15       		.byte	21
+  65 0024 56       		.byte	86
+  66 0025 09       		.byte	9
   67 0026 01       		.byte	1
   68 0027 40       		.byte	64
-  69 0028 59       		.byte	89
-  70 0029 16       		.byte	22
+  69 0028 5B       		.byte	91
+  70 0029 0A       		.byte	10
   71 002a 01       		.byte	1
   72 002b 40       		.byte	64
-  73 002c 43       		.byte	67
-  74 002d 17       		.byte	23
+  73 002c 41       		.byte	65
+  74 002d 0B       		.byte	11
   75 002e 01       		.byte	1
   76 002f 40       		.byte	64
-  77 0030 54       		.byte	84
-  78 0031 18       		.byte	24
+  77 0030 01       		.byte	1
+  78 0031 0D       		.byte	13
   79 0032 01       		.byte	1
   80 0033 40       		.byte	64
-  81 0034 4F       		.byte	79
-  82 0035 19       		.byte	25
+  81 0034 01       		.byte	1
+  82 0035 0F       		.byte	15
   83 0036 01       		.byte	1
   84 0037 40       		.byte	64
-  85 0038 55       		.byte	85
-  86 0039 1A       		.byte	26
+  85 0038 01       		.byte	1
+  86 0039 15       		.byte	21
   87 003a 01       		.byte	1
   88 003b 40       		.byte	64
-  89 003c 4C       		.byte	76
-  90 003d 1B       		.byte	27
+  89 003c 03       		.byte	3
+  90 003d 17       		.byte	23
   91 003e 01       		.byte	1
   92 003f 40       		.byte	64
-  93 0040 06       		.byte	6
-  94 0041 40       		.byte	64
+  93 0040 76       		.byte	118
+  94 0041 18       		.byte	24
   95 0042 01       		.byte	1
   96 0043 40       		.byte	64
-  97 0044 05       		.byte	5
-  98 0045 41       		.byte	65
+  97 0044 45       		.byte	69
+  98 0045 19       		.byte	25
   99 0046 01       		.byte	1
  100 0047 40       		.byte	64
- 101 0048 0F       		.byte	15
- 102 0049 42       		.byte	66
+ 101 0048 4F       		.byte	79
+ 102 0049 1A       		.byte	26
  103 004a 01       		.byte	1
  104 004b 40       		.byte	64
- 105 004c 0B       		.byte	11
- 106 004d 43       		.byte	67
+ 105 004c 44       		.byte	68
+ 106 004d 1B       		.byte	27
  107 004e 01       		.byte	1
  108 004f 40       		.byte	64
- 109 0050 04       		.byte	4
- 110 0051 45       		.byte	69
+ 109 0050 09       		.byte	9
+ 110 0051 40       		.byte	64
  111 0052 01       		.byte	1
  112 0053 40       		.byte	64
- 113 0054 02       		.byte	2
- 114 0055 46       		.byte	70
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 3
+ 113 0054 06       		.byte	6
+ 114 0055 41       		.byte	65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 3
 
 
  115 0056 01       		.byte	1
  116 0057 40       		.byte	64
- 117 0058 02       		.byte	2
- 118 0059 47       		.byte	71
+ 117 0058 10       		.byte	16
+ 118 0059 42       		.byte	66
  119 005a 01       		.byte	1
  120 005b 40       		.byte	64
- 121 005c 09       		.byte	9
- 122 005d 48       		.byte	72
+ 121 005c 0E       		.byte	14
+ 122 005d 43       		.byte	67
  123 005e 01       		.byte	1
  124 005f 40       		.byte	64
- 125 0060 09       		.byte	9
- 126 0061 49       		.byte	73
+ 125 0060 02       		.byte	2
+ 126 0061 44       		.byte	68
  127 0062 01       		.byte	1
  128 0063 40       		.byte	64
- 129 0064 08       		.byte	8
- 130 0065 4C       		.byte	76
+ 129 0064 06       		.byte	6
+ 130 0065 45       		.byte	69
  131 0066 01       		.byte	1
  132 0067 40       		.byte	64
  133 0068 07       		.byte	7
- 134 0069 4D       		.byte	77
+ 134 0069 46       		.byte	70
  135 006a 01       		.byte	1
  136 006b 40       		.byte	64
- 137 006c 05       		.byte	5
- 138 006d 50       		.byte	80
+ 137 006c 06       		.byte	6
+ 138 006d 47       		.byte	71
  139 006e 01       		.byte	1
  140 006f 40       		.byte	64
- 141 0070 01       		.byte	1
- 142 0071 51       		.byte	81
+ 141 0070 08       		.byte	8
+ 142 0071 48       		.byte	72
  143 0072 01       		.byte	1
  144 0073 40       		.byte	64
- 145 0074 01       		.byte	1
- 146 0075 20       		.byte	32
- 147 0076 0A       		.byte	10
- 148 0077 4B       		.byte	75
- 149 0078 0D       		.byte	13
- 150 0079 20       		.byte	32
- 151 007a 16       		.byte	22
- 152 007b 4B       		.byte	75
- 153 007c 19       		.byte	25
- 154 007d 20       		.byte	32
- 155 007e 22       		.byte	34
- 156 007f 4B       		.byte	75
- 157 0080 08       		.byte	8
- 158 0081 04       		.byte	4
- 159 0082 09       		.byte	9
- 160 0083 04       		.byte	4
- 161 0084 10       		.byte	16
- 162 0085 04       		.byte	4
- 163 0086 11       		.byte	17
- 164 0087 80       		.byte	-128
- 165 0088 89       		.byte	-119
- 166 0089 0F       		.byte	15
- 167 008a 87       		.byte	-121
- 168 008b 0F       		.byte	15
- 169 008c 89       		.byte	-119
- 170 008d 72       		.byte	114
- 171 008e 8A       		.byte	-118
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 4
+ 145 0074 03       		.byte	3
+ 146 0075 49       		.byte	73
+ 147 0076 01       		.byte	1
+ 148 0077 40       		.byte	64
+ 149 0078 0C       		.byte	12
+ 150 0079 4C       		.byte	76
+ 151 007a 01       		.byte	1
+ 152 007b 40       		.byte	64
+ 153 007c 09       		.byte	9
+ 154 007d 4D       		.byte	77
+ 155 007e 01       		.byte	1
+ 156 007f 40       		.byte	64
+ 157 0080 04       		.byte	4
+ 158 0081 50       		.byte	80
+ 159 0082 01       		.byte	1
+ 160 0083 40       		.byte	64
+ 161 0084 02       		.byte	2
+ 162 0085 51       		.byte	81
+ 163 0086 01       		.byte	1
+ 164 0087 40       		.byte	64
+ 165 0088 01       		.byte	1
+ 166 0089 30       		.byte	48
+ 167 008a 0A       		.byte	10
+ 168 008b 4B       		.byte	75
+ 169 008c 0D       		.byte	13
+ 170 008d 30       		.byte	48
+ 171 008e 16       		.byte	22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 4
 
 
- 172 008f 38       		.byte	56
- 173 0090 38       		.byte	56
- 174 0091 80       		.byte	-128
- 175 0092 3E       		.byte	62
- 176 0093 40       		.byte	64
- 177 0094 58       		.byte	88
- 178 0095 04       		.byte	4
- 179 0096 5F       		.byte	95
- 180 0097 01       		.byte	1
- 181 0098 1B       		.byte	27
- 182 0099 40       		.byte	64
- 183 009a 8F       		.byte	-113
- 184 009b 40       		.byte	64
- 185 009c E6       		.byte	-26
- 186 009d 40       		.byte	64
- 187 009e 81       		.byte	-127
- 188 009f 08       		.byte	8
- 189 00a0 87       		.byte	-121
- 190 00a1 04       		.byte	4
- 191 00a2 9F       		.byte	-97
- 192 00a3 04       		.byte	4
- 193 00a4 B7       		.byte	-73
- 194 00a5 04       		.byte	4
- 195 00a6 E2       		.byte	-30
- 196 00a7 01       		.byte	1
- 197 00a8 E4       		.byte	-28
- 198 00a9 0C       		.byte	12
- 199 00aa EE       		.byte	-18
- 200 00ab 10       		.byte	16
- 201 00ac 00       		.byte	0
- 202 00ad 20       		.byte	32
- 203 00ae 01       		.byte	1
- 204 00af 10       		.byte	16
- 205 00b0 02       		.byte	2
- 206 00b1 43       		.byte	67
- 207 00b2 03       		.byte	3
- 208 00b3 AC       		.byte	-84
- 209 00b4 04       		.byte	4
- 210 00b5 51       		.byte	81
- 211 00b6 05       		.byte	5
- 212 00b7 10       		.byte	16
- 213 00b8 06       		.byte	6
- 214 00b9 0E       		.byte	14
- 215 00ba 07       		.byte	7
+ 172 008f 4B       		.byte	75
+ 173 0090 19       		.byte	25
+ 174 0091 30       		.byte	48
+ 175 0092 22       		.byte	34
+ 176 0093 4B       		.byte	75
+ 177 0094 00       		.byte	0
+ 178 0095 0B       		.byte	11
+ 179 0096 08       		.byte	8
+ 180 0097 54       		.byte	84
+ 181 0098 09       		.byte	9
+ 182 0099 44       		.byte	68
+ 183 009a 10       		.byte	16
+ 184 009b 82       		.byte	-126
+ 185 009c 11       		.byte	17
+ 186 009d 08       		.byte	8
+ 187 009e 61       		.byte	97
+ 188 009f 88       		.byte	-120
+ 189 00a0 64       		.byte	100
+ 190 00a1 40       		.byte	64
+ 191 00a2 88       		.byte	-120
+ 192 00a3 0F       		.byte	15
+ 193 00a4 89       		.byte	-119
+ 194 00a5 0F       		.byte	15
+ 195 00a6 89       		.byte	-119
+ 196 00a7 0F       		.byte	15
+ 197 00a8 8A       		.byte	-118
+ 198 00a9 38       		.byte	56
+ 199 00aa 8B       		.byte	-117
+ 200 00ab 72       		.byte	114
+ 201 00ac E2       		.byte	-30
+ 202 00ad 08       		.byte	8
+ 203 00ae B9       		.byte	-71
+ 204 00af 80       		.byte	-128
+ 205 00b0 BF       		.byte	-65
+ 206 00b1 40       		.byte	64
+ 207 00b2 D9       		.byte	-39
+ 208 00b3 04       		.byte	4
+ 209 00b4 DF       		.byte	-33
+ 210 00b5 01       		.byte	1
+ 211 00b6 27       		.byte	39
+ 212 00b7 02       		.byte	2
+ 213 00b8 E0       		.byte	-32
+ 214 00b9 20       		.byte	32
+ 215 00ba E6       		.byte	-26
  216 00bb 40       		.byte	64
- 217 00bc 08       		.byte	8
- 218 00bd 0C       		.byte	12
- 219 00be 09       		.byte	9
- 220 00bf DC       		.byte	-36
- 221 00c0 0A       		.byte	10
- 222 00c1 53       		.byte	83
- 223 00c2 0B       		.byte	11
- 224 00c3 22       		.byte	34
- 225 00c4 0D       		.byte	13
- 226 00c5 14       		.byte	20
- 227 00c6 0E       		.byte	14
- 228 00c7 0C       		.byte	12
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 5
+ 217 00bc AB       		.byte	-85
+ 218 00bd 02       		.byte	2
+ 219 00be E8       		.byte	-24
+ 220 00bf 01       		.byte	1
+ 221 00c0 EE       		.byte	-18
+ 222 00c1 80       		.byte	-128
+ 223 00c2 03       		.byte	3
+ 224 00c3 04       		.byte	4
+ 225 00c4 10       		.byte	16
+ 226 00c5 04       		.byte	4
+ 227 00c6 16       		.byte	22
+ 228 00c7 01       		.byte	1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 5
 
 
- 229 00c8 11       		.byte	17
- 230 00c9 09       		.byte	9
- 231 00ca 13       		.byte	19
- 232 00cb D0       		.byte	-48
- 233 00cc 17       		.byte	23
- 234 00cd 03       		.byte	3
- 235 00ce 19       		.byte	25
- 236 00cf 0C       		.byte	12
- 237 00d0 1A       		.byte	26
- 238 00d1 40       		.byte	64
- 239 00d2 1B       		.byte	27
- 240 00d3 71       		.byte	113
- 241 00d4 1C       		.byte	28
- 242 00d5 51       		.byte	81
- 243 00d6 1E       		.byte	30
- 244 00d7 06       		.byte	6
- 245 00d8 2A       		.byte	42
- 246 00d9 08       		.byte	8
- 247 00da 2F       		.byte	47
- 248 00db 20       		.byte	32
- 249 00dc 32       		.byte	50
- 250 00dd 0F       		.byte	15
- 251 00de 33       		.byte	51
- 252 00df E0       		.byte	-32
- 253 00e0 34       		.byte	52
- 254 00e1 40       		.byte	64
- 255 00e2 35       		.byte	53
- 256 00e3 1F       		.byte	31
- 257 00e4 36       		.byte	54
- 258 00e5 30       		.byte	48
- 259 00e6 38       		.byte	56
- 260 00e7 80       		.byte	-128
- 261 00e8 3A       		.byte	58
- 262 00e9 08       		.byte	8
- 263 00ea 3B       		.byte	59
- 264 00eb 08       		.byte	8
- 265 00ec 3E       		.byte	62
- 266 00ed 10       		.byte	16
- 267 00ee 40       		.byte	64
- 268 00ef 41       		.byte	65
- 269 00f0 41       		.byte	65
- 270 00f1 02       		.byte	2
- 271 00f2 45       		.byte	69
- 272 00f3 EC       		.byte	-20
- 273 00f4 46       		.byte	70
- 274 00f5 0B       		.byte	11
- 275 00f6 48       		.byte	72
- 276 00f7 07       		.byte	7
- 277 00f8 49       		.byte	73
- 278 00f9 FF       		.byte	-1
- 279 00fa 4A       		.byte	74
- 280 00fb FF       		.byte	-1
- 281 00fc 4B       		.byte	75
- 282 00fd FF       		.byte	-1
- 283 00fe 4E       		.byte	78
- 284 00ff F0       		.byte	-16
- 285 0100 4F       		.byte	79
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 6
+ 229 00c8 1B       		.byte	27
+ 230 00c9 03       		.byte	3
+ 231 00ca 1D       		.byte	29
+ 232 00cb 01       		.byte	1
+ 233 00cc 26       		.byte	38
+ 234 00cd 07       		.byte	7
+ 235 00ce 30       		.byte	48
+ 236 00cf 02       		.byte	2
+ 237 00d0 31       		.byte	49
+ 238 00d1 01       		.byte	1
+ 239 00d2 32       		.byte	50
+ 240 00d3 04       		.byte	4
+ 241 00d4 33       		.byte	51
+ 242 00d5 04       		.byte	4
+ 243 00d6 36       		.byte	54
+ 244 00d7 01       		.byte	1
+ 245 00d8 37       		.byte	55
+ 246 00d9 02       		.byte	2
+ 247 00da 40       		.byte	64
+ 248 00db 26       		.byte	38
+ 249 00dc 41       		.byte	65
+ 250 00dd 01       		.byte	1
+ 251 00de 42       		.byte	66
+ 252 00df 40       		.byte	64
+ 253 00e0 44       		.byte	68
+ 254 00e1 05       		.byte	5
+ 255 00e2 45       		.byte	69
+ 256 00e3 BE       		.byte	-66
+ 257 00e4 46       		.byte	70
+ 258 00e5 0C       		.byte	12
+ 259 00e6 47       		.byte	71
+ 260 00e7 DF       		.byte	-33
+ 261 00e8 48       		.byte	72
+ 262 00e9 37       		.byte	55
+ 263 00ea 49       		.byte	73
+ 264 00eb FF       		.byte	-1
+ 265 00ec 4A       		.byte	74
+ 266 00ed FF       		.byte	-1
+ 267 00ee 4B       		.byte	75
+ 268 00ef FF       		.byte	-1
+ 269 00f0 4C       		.byte	76
+ 270 00f1 22       		.byte	34
+ 271 00f2 4E       		.byte	78
+ 272 00f3 F0       		.byte	-16
+ 273 00f4 4F       		.byte	79
+ 274 00f5 08       		.byte	8
+ 275 00f6 50       		.byte	80
+ 276 00f7 04       		.byte	4
+ 277 00f8 56       		.byte	86
+ 278 00f9 02       		.byte	2
+ 279 00fa 57       		.byte	87
+ 280 00fb 2C       		.byte	44
+ 281 00fc 58       		.byte	88
+ 282 00fd 04       		.byte	4
+ 283 00fe 59       		.byte	89
+ 284 00ff 04       		.byte	4
+ 285 0100 5A       		.byte	90
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 6
 
 
- 286 0101 44       		.byte	68
- 287 0102 50       		.byte	80
- 288 0103 0C       		.byte	12
- 289 0104 54       		.byte	84
- 290 0105 40       		.byte	64
- 291 0106 56       		.byte	86
- 292 0107 04       		.byte	4
- 293 0108 58       		.byte	88
- 294 0109 04       		.byte	4
- 295 010a 59       		.byte	89
- 296 010b 04       		.byte	4
- 297 010c 5A       		.byte	90
- 298 010d 04       		.byte	4
- 299 010e 5B       		.byte	91
- 300 010f 04       		.byte	4
- 301 0110 5C       		.byte	92
+ 286 0101 04       		.byte	4
+ 287 0102 5B       		.byte	91
+ 288 0103 04       		.byte	4
+ 289 0104 5D       		.byte	93
+ 290 0105 11       		.byte	17
+ 291 0106 5F       		.byte	95
+ 292 0107 01       		.byte	1
+ 293 0108 62       		.byte	98
+ 294 0109 C0       		.byte	-64
+ 295 010a 64       		.byte	100
+ 296 010b 40       		.byte	64
+ 297 010c 65       		.byte	101
+ 298 010d 01       		.byte	1
+ 299 010e 66       		.byte	102
+ 300 010f 10       		.byte	16
+ 301 0110 67       		.byte	103
  302 0111 11       		.byte	17
- 303 0112 5D       		.byte	93
- 304 0113 01       		.byte	1
- 305 0114 5F       		.byte	95
+ 303 0112 68       		.byte	104
+ 304 0113 C0       		.byte	-64
+ 305 0114 69       		.byte	105
  306 0115 01       		.byte	1
- 307 0116 66       		.byte	102
- 308 0117 C0       		.byte	-64
- 309 0118 6A       		.byte	106
+ 307 0116 6B       		.byte	107
+ 308 0117 11       		.byte	17
+ 309 0118 6C       		.byte	108
  310 0119 40       		.byte	64
- 311 011a 6B       		.byte	107
- 312 011b 02       		.byte	2
- 313 011c 89       		.byte	-119
- 314 011d 0C       		.byte	12
- 315 011e 8D       		.byte	-115
- 316 011f 0D       		.byte	13
- 317 0120 8F       		.byte	-113
- 318 0121 12       		.byte	18
- 319 0122 97       		.byte	-105
- 320 0123 12       		.byte	18
- 321 0124 99       		.byte	-103
- 322 0125 04       		.byte	4
- 323 0126 9D       		.byte	-99
- 324 0127 08       		.byte	8
- 325 0128 A0       		.byte	-96
- 326 0129 01       		.byte	1
- 327 012a A1       		.byte	-95
- 328 012b 13       		.byte	19
- 329 012c A3       		.byte	-93
- 330 012d 0C       		.byte	12
- 331 012e A9       		.byte	-87
- 332 012f 0F       		.byte	15
- 333 0130 AB       		.byte	-85
- 334 0131 10       		.byte	16
- 335 0132 AD       		.byte	-83
- 336 0133 1F       		.byte	31
- 337 0134 B1       		.byte	-79
- 338 0135 1C       		.byte	28
- 339 0136 B3       		.byte	-77
- 340 0137 01       		.byte	1
- 341 0138 B4       		.byte	-76
- 342 0139 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 7
+ 311 011a 6D       		.byte	109
+ 312 011b 01       		.byte	1
+ 313 011c 6E       		.byte	110
+ 314 011d 40       		.byte	64
+ 315 011e 6F       		.byte	111
+ 316 011f 01       		.byte	1
+ 317 0120 80       		.byte	-128
+ 318 0121 02       		.byte	2
+ 319 0122 82       		.byte	-126
+ 320 0123 0D       		.byte	13
+ 321 0124 84       		.byte	-124
+ 322 0125 20       		.byte	32
+ 323 0126 86       		.byte	-122
+ 324 0127 10       		.byte	16
+ 325 0128 87       		.byte	-121
+ 326 0129 08       		.byte	8
+ 327 012a 89       		.byte	-119
+ 328 012b 01       		.byte	1
+ 329 012c 8B       		.byte	-117
+ 330 012d 02       		.byte	2
+ 331 012e 8E       		.byte	-114
+ 332 012f 30       		.byte	48
+ 333 0130 8F       		.byte	-113
+ 334 0131 03       		.byte	3
+ 335 0132 90       		.byte	-112
+ 336 0133 20       		.byte	32
+ 337 0134 92       		.byte	-110
+ 338 0135 10       		.byte	16
+ 339 0136 94       		.byte	-108
+ 340 0137 05       		.byte	5
+ 341 0138 96       		.byte	-106
+ 342 0139 0A       		.byte	10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 7
 
 
- 343 013a B7       		.byte	-73
- 344 013b 0E       		.byte	14
- 345 013c BA       		.byte	-70
- 346 013d 80       		.byte	-128
- 347 013e BB       		.byte	-69
- 348 013f 02       		.byte	2
- 349 0140 BE       		.byte	-66
- 350 0141 10       		.byte	16
- 351 0142 BF       		.byte	-65
- 352 0143 04       		.byte	4
- 353 0144 D4       		.byte	-44
+ 343 013a 97       		.byte	-105
+ 344 013b 0C       		.byte	12
+ 345 013c 9B       		.byte	-101
+ 346 013d 04       		.byte	4
+ 347 013e 9C       		.byte	-100
+ 348 013f 03       		.byte	3
+ 349 0140 9D       		.byte	-99
+ 350 0141 02       		.byte	2
+ 351 0142 9E       		.byte	-98
+ 352 0143 0C       		.byte	12
+ 353 0144 9F       		.byte	-97
  354 0145 01       		.byte	1
- 355 0146 D6       		.byte	-42
- 356 0147 04       		.byte	4
- 357 0148 D8       		.byte	-40
- 358 0149 04       		.byte	4
- 359 014a D9       		.byte	-39
- 360 014b 04       		.byte	4
- 361 014c DB       		.byte	-37
- 362 014d 04       		.byte	4
- 363 014e DC       		.byte	-36
- 364 014f 11       		.byte	17
- 365 0150 DD       		.byte	-35
- 366 0151 10       		.byte	16
- 367 0152 DF       		.byte	-33
- 368 0153 01       		.byte	1
- 369 0154 04       		.byte	4
- 370 0155 10       		.byte	16
- 371 0156 05       		.byte	5
- 372 0157 40       		.byte	64
- 373 0158 06       		.byte	6
- 374 0159 C0       		.byte	-64
- 375 015a 07       		.byte	7
- 376 015b 50       		.byte	80
- 377 015c 0C       		.byte	12
- 378 015d 40       		.byte	64
- 379 015e 0E       		.byte	14
- 380 015f 01       		.byte	1
- 381 0160 0F       		.byte	15
- 382 0161 08       		.byte	8
- 383 0162 10       		.byte	16
- 384 0163 80       		.byte	-128
- 385 0164 16       		.byte	22
- 386 0165 08       		.byte	8
- 387 0166 19       		.byte	25
- 388 0167 80       		.byte	-128
- 389 0168 1A       		.byte	26
- 390 0169 04       		.byte	4
- 391 016a 1C       		.byte	28
- 392 016b 18       		.byte	24
- 393 016c 1D       		.byte	29
- 394 016d 40       		.byte	64
- 395 016e 1E       		.byte	30
- 396 016f 22       		.byte	34
- 397 0170 20       		.byte	32
- 398 0171 40       		.byte	64
- 399 0172 22       		.byte	34
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 8
+ 355 0146 A4       		.byte	-92
+ 356 0147 09       		.byte	9
+ 357 0148 A6       		.byte	-90
+ 358 0149 06       		.byte	6
+ 359 014a B0       		.byte	-80
+ 360 014b 0F       		.byte	15
+ 361 014c B1       		.byte	-79
+ 362 014d 08       		.byte	8
+ 363 014e B2       		.byte	-78
+ 364 014f 10       		.byte	16
+ 365 0150 B3       		.byte	-77
+ 366 0151 04       		.byte	4
+ 367 0152 B4       		.byte	-76
+ 368 0153 20       		.byte	32
+ 369 0154 B5       		.byte	-75
+ 370 0155 01       		.byte	1
+ 371 0156 B7       		.byte	-73
+ 372 0157 02       		.byte	2
+ 373 0158 BA       		.byte	-70
+ 374 0159 02       		.byte	2
+ 375 015a BE       		.byte	-66
+ 376 015b 14       		.byte	20
+ 377 015c BF       		.byte	-65
+ 378 015d 54       		.byte	84
+ 379 015e C0       		.byte	-64
+ 380 015f 30       		.byte	48
+ 381 0160 C1       		.byte	-63
+ 382 0161 02       		.byte	2
+ 383 0162 C5       		.byte	-59
+ 384 0163 D1       		.byte	-47
+ 385 0164 C6       		.byte	-58
+ 386 0165 20       		.byte	32
+ 387 0166 C7       		.byte	-57
+ 388 0167 05       		.byte	5
+ 389 0168 C8       		.byte	-56
+ 390 0169 1B       		.byte	27
+ 391 016a C9       		.byte	-55
+ 392 016b FF       		.byte	-1
+ 393 016c CA       		.byte	-54
+ 394 016d FF       		.byte	-1
+ 395 016e CB       		.byte	-53
+ 396 016f FF       		.byte	-1
+ 397 0170 CD       		.byte	-51
+ 398 0171 A0       		.byte	-96
+ 399 0172 CF       		.byte	-49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 8
 
 
- 400 0173 84       		.byte	-124
- 401 0174 26       		.byte	38
- 402 0175 20       		.byte	32
- 403 0176 27       		.byte	39
- 404 0177 18       		.byte	24
- 405 0178 29       		.byte	41
- 406 0179 91       		.byte	-111
- 407 017a 2E       		.byte	46
- 408 017b 80       		.byte	-128
- 409 017c 30       		.byte	48
- 410 017d 24       		.byte	36
- 411 017e 31       		.byte	49
- 412 017f 80       		.byte	-128
- 413 0180 36       		.byte	54
- 414 0181 01       		.byte	1
- 415 0182 37       		.byte	55
- 416 0183 18       		.byte	24
- 417 0184 38       		.byte	56
- 418 0185 40       		.byte	64
- 419 0186 3A       		.byte	58
- 420 0187 10       		.byte	16
- 421 0188 3C       		.byte	60
- 422 0189 10       		.byte	16
- 423 018a 3D       		.byte	61
- 424 018b 08       		.byte	8
- 425 018c 3E       		.byte	62
- 426 018d 09       		.byte	9
- 427 018e 3F       		.byte	63
- 428 018f 80       		.byte	-128
- 429 0190 44       		.byte	68
+ 400 0173 04       		.byte	4
+ 401 0174 D0       		.byte	-48
+ 402 0175 18       		.byte	24
+ 403 0176 D2       		.byte	-46
+ 404 0177 03       		.byte	3
+ 405 0178 D3       		.byte	-45
+ 406 0179 03       		.byte	3
+ 407 017a D4       		.byte	-44
+ 408 017b 07       		.byte	7
+ 409 017c D6       		.byte	-42
+ 410 017d 10       		.byte	16
+ 411 017e D8       		.byte	-40
+ 412 017f 04       		.byte	4
+ 413 0180 D9       		.byte	-39
+ 414 0181 04       		.byte	4
+ 415 0182 DA       		.byte	-38
+ 416 0183 04       		.byte	4
+ 417 0184 DB       		.byte	-37
+ 418 0185 04       		.byte	4
+ 419 0186 DC       		.byte	-36
+ 420 0187 01       		.byte	1
+ 421 0188 DF       		.byte	-33
+ 422 0189 01       		.byte	1
+ 423 018a E0       		.byte	-32
+ 424 018b 40       		.byte	64
+ 425 018c E2       		.byte	-30
+ 426 018d C0       		.byte	-64
+ 427 018e E4       		.byte	-28
+ 428 018f 40       		.byte	64
+ 429 0190 E5       		.byte	-27
  430 0191 40       		.byte	64
- 431 0192 47       		.byte	71
- 432 0193 50       		.byte	80
- 433 0194 4C       		.byte	76
- 434 0195 80       		.byte	-128
- 435 0196 4D       		.byte	77
- 436 0197 02       		.byte	2
- 437 0198 4E       		.byte	78
- 438 0199 10       		.byte	16
- 439 019a 4F       		.byte	79
- 440 019b 08       		.byte	8
- 441 019c 57       		.byte	87
- 442 019d 40       		.byte	64
- 443 019e 58       		.byte	88
- 444 019f 80       		.byte	-128
- 445 01a0 59       		.byte	89
+ 431 0192 E6       		.byte	-26
+ 432 0193 C0       		.byte	-64
+ 433 0194 E8       		.byte	-24
+ 434 0195 C0       		.byte	-64
+ 435 0196 EA       		.byte	-22
+ 436 0197 C0       		.byte	-64
+ 437 0198 EC       		.byte	-20
+ 438 0199 C0       		.byte	-64
+ 439 019a EE       		.byte	-18
+ 440 019b C0       		.byte	-64
+ 441 019c 00       		.byte	0
+ 442 019d 08       		.byte	8
+ 443 019e 01       		.byte	1
+ 444 019f 02       		.byte	2
+ 445 01a0 02       		.byte	2
  446 01a1 02       		.byte	2
- 447 01a2 5A       		.byte	90
- 448 01a3 24       		.byte	36
- 449 01a4 62       		.byte	98
- 450 01a5 02       		.byte	2
- 451 01a6 64       		.byte	100
- 452 01a7 28       		.byte	40
- 453 01a8 66       		.byte	102
- 454 01a9 02       		.byte	2
- 455 01aa 67       		.byte	103
- 456 01ab 02       		.byte	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 9
+ 447 01a2 08       		.byte	8
+ 448 01a3 08       		.byte	8
+ 449 01a4 09       		.byte	9
+ 450 01a5 40       		.byte	64
+ 451 01a6 0A       		.byte	10
+ 452 01a7 80       		.byte	-128
+ 453 01a8 0D       		.byte	13
+ 454 01a9 08       		.byte	8
+ 455 01aa 0E       		.byte	14
+ 456 01ab 80       		.byte	-128
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 9
 
 
- 457 01ac 82       		.byte	-126
- 458 01ad 02       		.byte	2
- 459 01ae 83       		.byte	-125
- 460 01af 01       		.byte	1
- 461 01b0 84       		.byte	-124
- 462 01b1 08       		.byte	8
- 463 01b2 88       		.byte	-120
- 464 01b3 84       		.byte	-124
- 465 01b4 8D       		.byte	-115
- 466 01b5 80       		.byte	-128
- 467 01b6 8E       		.byte	-114
- 468 01b7 20       		.byte	32
- 469 01b8 C0       		.byte	-64
- 470 01b9 F0       		.byte	-16
- 471 01ba C2       		.byte	-62
- 472 01bb C0       		.byte	-64
- 473 01bc C4       		.byte	-60
- 474 01bd 48       		.byte	72
- 475 01be CA       		.byte	-54
- 476 01bf 1D       		.byte	29
- 477 01c0 CC       		.byte	-52
- 478 01c1 EE       		.byte	-18
- 479 01c2 CE       		.byte	-50
- 480 01c3 FC       		.byte	-4
- 481 01c4 D0       		.byte	-48
- 482 01c5 B0       		.byte	-80
- 483 01c6 D6       		.byte	-42
- 484 01c7 0F       		.byte	15
- 485 01c8 D8       		.byte	-40
- 486 01c9 F1       		.byte	-15
- 487 01ca 80       		.byte	-128
- 488 01cb 20       		.byte	32
- 489 01cc 85       		.byte	-123
+ 457 01ac 10       		.byte	16
+ 458 01ad 10       		.byte	16
+ 459 01ae 15       		.byte	21
+ 460 01af 08       		.byte	8
+ 461 01b0 18       		.byte	24
+ 462 01b1 04       		.byte	4
+ 463 01b2 19       		.byte	25
+ 464 01b3 06       		.byte	6
+ 465 01b4 1E       		.byte	30
+ 466 01b5 90       		.byte	-112
+ 467 01b6 1F       		.byte	31
+ 468 01b7 40       		.byte	64
+ 469 01b8 20       		.byte	32
+ 470 01b9 40       		.byte	64
+ 471 01ba 21       		.byte	33
+ 472 01bb 40       		.byte	64
+ 473 01bc 22       		.byte	34
+ 474 01bd 16       		.byte	22
+ 475 01be 25       		.byte	37
+ 476 01bf 08       		.byte	8
+ 477 01c0 26       		.byte	38
+ 478 01c1 80       		.byte	-128
+ 479 01c2 27       		.byte	39
+ 480 01c3 40       		.byte	64
+ 481 01c4 28       		.byte	40
+ 482 01c5 10       		.byte	16
+ 483 01c6 2B       		.byte	43
+ 484 01c7 10       		.byte	16
+ 485 01c8 30       		.byte	48
+ 486 01c9 20       		.byte	32
+ 487 01ca 31       		.byte	49
+ 488 01cb 08       		.byte	8
+ 489 01cc 32       		.byte	50
  490 01cd 40       		.byte	64
- 491 01ce 87       		.byte	-121
- 492 01cf 01       		.byte	1
- 493 01d0 99       		.byte	-103
+ 491 01ce 36       		.byte	54
+ 492 01cf A0       		.byte	-96
+ 493 01d0 38       		.byte	56
  494 01d1 40       		.byte	64
- 495 01d2 9B       		.byte	-101
- 496 01d3 01       		.byte	1
- 497 01d4 9C       		.byte	-100
- 498 01d5 20       		.byte	32
- 499 01d6 A8       		.byte	-88
- 500 01d7 80       		.byte	-128
- 501 01d8 AB       		.byte	-85
- 502 01d9 01       		.byte	1
- 503 01da AC       		.byte	-84
- 504 01db 14       		.byte	20
- 505 01dc AD       		.byte	-83
- 506 01dd 01       		.byte	1
- 507 01de AF       		.byte	-81
- 508 01df 08       		.byte	8
- 509 01e0 B4       		.byte	-76
- 510 01e1 04       		.byte	4
- 511 01e2 B5       		.byte	-75
- 512 01e3 02       		.byte	2
- 513 01e4 B6       		.byte	-74
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 10
+ 495 01d2 39       		.byte	57
+ 496 01d3 10       		.byte	16
+ 497 01d4 3B       		.byte	59
+ 498 01d5 08       		.byte	8
+ 499 01d6 3C       		.byte	60
+ 500 01d7 02       		.byte	2
+ 501 01d8 41       		.byte	65
+ 502 01d9 18       		.byte	24
+ 503 01da 44       		.byte	68
+ 504 01db 08       		.byte	8
+ 505 01dc 45       		.byte	69
+ 506 01dd 40       		.byte	64
+ 507 01de 46       		.byte	70
+ 508 01df 80       		.byte	-128
+ 509 01e0 47       		.byte	71
+ 510 01e1 20       		.byte	32
+ 511 01e2 49       		.byte	73
+ 512 01e3 01       		.byte	1
+ 513 01e4 4A       		.byte	74
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 10
 
 
- 514 01e5 40       		.byte	64
- 515 01e6 E2       		.byte	-30
- 516 01e7 01       		.byte	1
- 517 01e8 E4       		.byte	-28
- 518 01e9 08       		.byte	8
- 519 01ea E6       		.byte	-26
- 520 01eb 05       		.byte	5
- 521 01ec E8       		.byte	-24
- 522 01ed 09       		.byte	9
- 523 01ee EC       		.byte	-20
- 524 01ef 02       		.byte	2
- 525 01f0 EE       		.byte	-18
+ 514 01e5 20       		.byte	32
+ 515 01e6 4B       		.byte	75
+ 516 01e7 08       		.byte	8
+ 517 01e8 4E       		.byte	78
+ 518 01e9 01       		.byte	1
+ 519 01ea 4F       		.byte	79
+ 520 01eb 25       		.byte	37
+ 521 01ec 50       		.byte	80
+ 522 01ed 20       		.byte	32
+ 523 01ee 51       		.byte	81
+ 524 01ef 14       		.byte	20
+ 525 01f0 56       		.byte	86
  526 01f1 01       		.byte	1
- 527 01f2 00       		.byte	0
- 528 01f3 02       		.byte	2
- 529 01f4 01       		.byte	1
- 530 01f5 0E       		.byte	14
- 531 01f6 03       		.byte	3
- 532 01f7 10       		.byte	16
- 533 01f8 04       		.byte	4
- 534 01f9 FC       		.byte	-4
- 535 01fa 05       		.byte	5
- 536 01fb 10       		.byte	16
- 537 01fc 06       		.byte	6
- 538 01fd 03       		.byte	3
- 539 01fe 07       		.byte	7
- 540 01ff 27       		.byte	39
- 541 0200 08       		.byte	8
- 542 0201 21       		.byte	33
- 543 0202 0A       		.byte	10
- 544 0203 D8       		.byte	-40
- 545 0204 0C       		.byte	12
- 546 0205 9A       		.byte	-102
- 547 0206 11       		.byte	17
- 548 0207 38       		.byte	56
- 549 0208 14       		.byte	20
- 550 0209 02       		.byte	2
- 551 020a 16       		.byte	22
- 552 020b 98       		.byte	-104
- 553 020c 17       		.byte	23
- 554 020d 01       		.byte	1
- 555 020e 18       		.byte	24
- 556 020f 98       		.byte	-104
- 557 0210 19       		.byte	25
- 558 0211 14       		.byte	20
- 559 0212 1A       		.byte	26
- 560 0213 02       		.byte	2
- 561 0214 1B       		.byte	27
- 562 0215 2B       		.byte	43
- 563 0216 1C       		.byte	28
- 564 0217 13       		.byte	19
- 565 0218 1E       		.byte	30
- 566 0219 64       		.byte	100
- 567 021a 20       		.byte	32
- 568 021b 98       		.byte	-104
- 569 021c 22       		.byte	34
- 570 021d 02       		.byte	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 11
+ 527 01f2 57       		.byte	87
+ 528 01f3 85       		.byte	-123
+ 529 01f4 59       		.byte	89
+ 530 01f5 01       		.byte	1
+ 531 01f6 5A       		.byte	90
+ 532 01f7 18       		.byte	24
+ 533 01f8 5B       		.byte	91
+ 534 01f9 40       		.byte	64
+ 535 01fa 65       		.byte	101
+ 536 01fb 02       		.byte	2
+ 537 01fc 68       		.byte	104
+ 538 01fd 04       		.byte	4
+ 539 01fe 69       		.byte	105
+ 540 01ff 10       		.byte	16
+ 541 0200 6A       		.byte	106
+ 542 0201 80       		.byte	-128
+ 543 0202 6C       		.byte	108
+ 544 0203 15       		.byte	21
+ 545 0204 6D       		.byte	109
+ 546 0205 01       		.byte	1
+ 547 0206 6E       		.byte	110
+ 548 0207 40       		.byte	64
+ 549 0208 77       		.byte	119
+ 550 0209 01       		.byte	1
+ 551 020a 81       		.byte	-127
+ 552 020b 44       		.byte	68
+ 553 020c 8E       		.byte	-114
+ 554 020d 10       		.byte	16
+ 555 020e 92       		.byte	-110
+ 556 020f 02       		.byte	2
+ 557 0210 94       		.byte	-108
+ 558 0211 2A       		.byte	42
+ 559 0212 95       		.byte	-107
+ 560 0213 01       		.byte	1
+ 561 0214 96       		.byte	-106
+ 562 0215 40       		.byte	64
+ 563 0216 97       		.byte	-105
+ 564 0217 05       		.byte	5
+ 565 0218 9A       		.byte	-102
+ 566 0219 80       		.byte	-128
+ 567 021a 9B       		.byte	-101
+ 568 021b 20       		.byte	32
+ 569 021c 9E       		.byte	-98
+ 570 021d 01       		.byte	1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 11
 
 
- 571 021e 24       		.byte	36
- 572 021f 38       		.byte	56
- 573 0220 26       		.byte	38
- 574 0221 C0       		.byte	-64
- 575 0222 2C       		.byte	44
- 576 0223 9A       		.byte	-102
- 577 0224 32       		.byte	50
- 578 0225 E0       		.byte	-32
- 579 0226 34       		.byte	52
- 580 0227 0F       		.byte	15
- 581 0228 35       		.byte	53
- 582 0229 03       		.byte	3
- 583 022a 36       		.byte	54
- 584 022b 13       		.byte	19
- 585 022c 37       		.byte	55
- 586 022d 3C       		.byte	60
- 587 022e 39       		.byte	57
- 588 022f 80       		.byte	-128
- 589 0230 3A       		.byte	58
- 590 0231 28       		.byte	40
- 591 0232 58       		.byte	88
- 592 0233 04       		.byte	4
- 593 0234 59       		.byte	89
- 594 0235 04       		.byte	4
- 595 0236 5F       		.byte	95
- 596 0237 01       		.byte	1
- 597 0238 80       		.byte	-128
- 598 0239 8D       		.byte	-115
- 599 023a 84       		.byte	-124
- 600 023b 62       		.byte	98
- 601 023c 86       		.byte	-122
- 602 023d 14       		.byte	20
- 603 023e 88       		.byte	-120
- 604 023f 02       		.byte	2
- 605 0240 8A       		.byte	-118
- 606 0241 0D       		.byte	13
- 607 0242 8C       		.byte	-116
- 608 0243 0D       		.byte	13
- 609 0244 8E       		.byte	-114
- 610 0245 80       		.byte	-128
- 611 0246 90       		.byte	-112
- 612 0247 42       		.byte	66
- 613 0248 92       		.byte	-110
- 614 0249 08       		.byte	8
- 615 024a 94       		.byte	-108
+ 571 021e 9F       		.byte	-97
+ 572 021f 01       		.byte	1
+ 573 0220 A1       		.byte	-95
+ 574 0221 40       		.byte	64
+ 575 0222 A3       		.byte	-93
+ 576 0223 10       		.byte	16
+ 577 0224 A7       		.byte	-89
+ 578 0225 85       		.byte	-123
+ 579 0226 AF       		.byte	-81
+ 580 0227 48       		.byte	72
+ 581 0228 B1       		.byte	-79
+ 582 0229 04       		.byte	4
+ 583 022a B4       		.byte	-76
+ 584 022b 20       		.byte	32
+ 585 022c B7       		.byte	-73
+ 586 022d 80       		.byte	-128
+ 587 022e C0       		.byte	-64
+ 588 022f 0D       		.byte	13
+ 589 0230 C2       		.byte	-62
+ 590 0231 3D       		.byte	61
+ 591 0232 C4       		.byte	-60
+ 592 0233 24       		.byte	36
+ 593 0234 CC       		.byte	-52
+ 594 0235 3E       		.byte	62
+ 595 0236 CE       		.byte	-50
+ 596 0237 8E       		.byte	-114
+ 597 0238 D0       		.byte	-48
+ 598 0239 B6       		.byte	-74
+ 599 023a D2       		.byte	-46
+ 600 023b 30       		.byte	48
+ 601 023c D6       		.byte	-42
+ 602 023d 0F       		.byte	15
+ 603 023e D8       		.byte	-40
+ 604 023f 80       		.byte	-128
+ 605 0240 E0       		.byte	-32
+ 606 0241 01       		.byte	1
+ 607 0242 E4       		.byte	-28
+ 608 0243 01       		.byte	1
+ 609 0244 E8       		.byte	-24
+ 610 0245 01       		.byte	1
+ 611 0246 EE       		.byte	-18
+ 612 0247 80       		.byte	-128
+ 613 0248 00       		.byte	0
+ 614 0249 40       		.byte	64
+ 615 024a 04       		.byte	4
  616 024b 8D       		.byte	-115
- 617 024c 98       		.byte	-104
- 618 024d 8D       		.byte	-115
- 619 024e 9C       		.byte	-100
- 620 024f 11       		.byte	17
- 621 0250 9E       		.byte	-98
- 622 0251 22       		.byte	34
- 623 0252 A0       		.byte	-96
- 624 0253 40       		.byte	64
- 625 0254 A4       		.byte	-92
- 626 0255 8D       		.byte	-115
- 627 0256 AA       		.byte	-86
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 12
+ 617 024c 07       		.byte	7
+ 618 024d 01       		.byte	1
+ 619 024e 09       		.byte	9
+ 620 024f 0E       		.byte	14
+ 621 0250 0B       		.byte	11
+ 622 0251 10       		.byte	16
+ 623 0252 0C       		.byte	12
+ 624 0253 8D       		.byte	-115
+ 625 0254 0D       		.byte	13
+ 626 0255 38       		.byte	56
+ 627 0256 10       		.byte	16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 12
 
 
- 628 0257 80       		.byte	-128
- 629 0258 B0       		.byte	-80
+ 628 0257 0D       		.byte	13
+ 629 0258 12       		.byte	18
  630 0259 80       		.byte	-128
- 631 025a B2       		.byte	-78
- 632 025b 0F       		.byte	15
- 633 025c B4       		.byte	-76
- 634 025d 70       		.byte	112
- 635 025e BA       		.byte	-70
- 636 025f 28       		.byte	40
- 637 0260 BE       		.byte	-66
- 638 0261 01       		.byte	1
- 639 0262 C0       		.byte	-64
+ 631 025a 14       		.byte	20
+ 632 025b 62       		.byte	98
+ 633 025c 15       		.byte	21
+ 634 025d 14       		.byte	20
+ 635 025e 16       		.byte	22
+ 636 025f 14       		.byte	20
+ 637 0260 17       		.byte	23
+ 638 0261 2B       		.byte	43
+ 639 0262 18       		.byte	24
  640 0263 42       		.byte	66
- 641 0264 C1       		.byte	-63
- 642 0265 05       		.byte	5
- 643 0266 C2       		.byte	-62
- 644 0267 30       		.byte	48
- 645 0268 C4       		.byte	-60
- 646 0269 06       		.byte	6
- 647 026a C5       		.byte	-59
- 648 026b BD       		.byte	-67
- 649 026c C6       		.byte	-58
- 650 026d EC       		.byte	-20
- 651 026e C7       		.byte	-57
- 652 026f 0F       		.byte	15
- 653 0270 C8       		.byte	-56
- 654 0271 1F       		.byte	31
- 655 0272 C9       		.byte	-55
- 656 0273 FF       		.byte	-1
- 657 0274 CA       		.byte	-54
- 658 0275 FF       		.byte	-1
- 659 0276 CB       		.byte	-53
- 660 0277 FF       		.byte	-1
- 661 0278 CC       		.byte	-52
- 662 0279 22       		.byte	34
- 663 027a CE       		.byte	-50
- 664 027b F0       		.byte	-16
- 665 027c CF       		.byte	-49
- 666 027d 08       		.byte	8
- 667 027e D0       		.byte	-48
- 668 027f 04       		.byte	4
- 669 0280 D6       		.byte	-42
- 670 0281 02       		.byte	2
- 671 0282 D7       		.byte	-41
- 672 0283 2C       		.byte	44
- 673 0284 D8       		.byte	-40
- 674 0285 04       		.byte	4
- 675 0286 DA       		.byte	-38
- 676 0287 04       		.byte	4
- 677 0288 DB       		.byte	-37
- 678 0289 04       		.byte	4
- 679 028a DF       		.byte	-33
- 680 028b 01       		.byte	1
- 681 028c E2       		.byte	-30
- 682 028d C0       		.byte	-64
- 683 028e E4       		.byte	-28
- 684 028f 40       		.byte	64
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 13
+ 641 0264 1A       		.byte	26
+ 642 0265 08       		.byte	8
+ 643 0266 1C       		.byte	28
+ 644 0267 02       		.byte	2
+ 645 0268 1E       		.byte	30
+ 646 0269 0D       		.byte	13
+ 647 026a 20       		.byte	32
+ 648 026b 8D       		.byte	-115
+ 649 026c 24       		.byte	36
+ 650 026d 11       		.byte	17
+ 651 026e 25       		.byte	37
+ 652 026f 10       		.byte	16
+ 653 0270 26       		.byte	38
+ 654 0271 22       		.byte	34
+ 655 0272 27       		.byte	39
+ 656 0273 27       		.byte	39
+ 657 0274 28       		.byte	40
+ 658 0275 8D       		.byte	-115
+ 659 0276 2E       		.byte	46
+ 660 0277 80       		.byte	-128
+ 661 0278 30       		.byte	48
+ 662 0279 80       		.byte	-128
+ 663 027a 33       		.byte	51
+ 664 027b 03       		.byte	3
+ 665 027c 34       		.byte	52
+ 666 027d 70       		.byte	112
+ 667 027e 36       		.byte	54
+ 668 027f 0F       		.byte	15
+ 669 0280 37       		.byte	55
+ 670 0281 3C       		.byte	60
+ 671 0282 39       		.byte	57
+ 672 0283 80       		.byte	-128
+ 673 0284 3A       		.byte	58
+ 674 0285 A0       		.byte	-96
+ 675 0286 3E       		.byte	62
+ 676 0287 01       		.byte	1
+ 677 0288 54       		.byte	84
+ 678 0289 40       		.byte	64
+ 679 028a 56       		.byte	86
+ 680 028b 04       		.byte	4
+ 681 028c 58       		.byte	88
+ 682 028d 04       		.byte	4
+ 683 028e 59       		.byte	89
+ 684 028f 04       		.byte	4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 13
 
 
- 685 0290 E5       		.byte	-27
- 686 0291 01       		.byte	1
- 687 0292 E6       		.byte	-26
- 688 0293 10       		.byte	16
- 689 0294 E7       		.byte	-25
- 690 0295 11       		.byte	17
- 691 0296 E8       		.byte	-24
- 692 0297 C0       		.byte	-64
- 693 0298 E9       		.byte	-23
- 694 0299 01       		.byte	1
- 695 029a EB       		.byte	-21
- 696 029b 11       		.byte	17
- 697 029c EC       		.byte	-20
- 698 029d 40       		.byte	64
- 699 029e ED       		.byte	-19
- 700 029f 01       		.byte	1
- 701 02a0 EE       		.byte	-18
- 702 02a1 40       		.byte	64
- 703 02a2 EF       		.byte	-17
- 704 02a3 01       		.byte	1
- 705 02a4 00       		.byte	0
- 706 02a5 08       		.byte	8
- 707 02a6 01       		.byte	1
- 708 02a7 40       		.byte	64
- 709 02a8 03       		.byte	3
- 710 02a9 48       		.byte	72
- 711 02aa 04       		.byte	4
- 712 02ab 84       		.byte	-124
- 713 02ac 05       		.byte	5
- 714 02ad 10       		.byte	16
- 715 02ae 06       		.byte	6
- 716 02af 40       		.byte	64
- 717 02b0 09       		.byte	9
- 718 02b1 10       		.byte	16
- 719 02b2 0A       		.byte	10
- 720 02b3 51       		.byte	81
- 721 02b4 0C       		.byte	12
- 722 02b5 20       		.byte	32
- 723 02b6 0E       		.byte	14
- 724 02b7 11       		.byte	17
- 725 02b8 10       		.byte	16
- 726 02b9 20       		.byte	32
- 727 02ba 12       		.byte	18
- 728 02bb 44       		.byte	68
- 729 02bc 13       		.byte	19
+ 685 0290 5B       		.byte	91
+ 686 0291 04       		.byte	4
+ 687 0292 5C       		.byte	92
+ 688 0293 11       		.byte	17
+ 689 0294 5D       		.byte	93
+ 690 0295 10       		.byte	16
+ 691 0296 5F       		.byte	95
+ 692 0297 01       		.byte	1
+ 693 0298 80       		.byte	-128
+ 694 0299 04       		.byte	4
+ 695 029a 81       		.byte	-127
+ 696 029b 9A       		.byte	-102
+ 697 029c 82       		.byte	-126
+ 698 029d 80       		.byte	-128
+ 699 029e 84       		.byte	-124
+ 700 029f 80       		.byte	-128
+ 701 02a0 85       		.byte	-123
+ 702 02a1 02       		.byte	2
+ 703 02a2 86       		.byte	-122
+ 704 02a3 04       		.byte	4
+ 705 02a4 87       		.byte	-121
+ 706 02a5 98       		.byte	-104
+ 707 02a6 88       		.byte	-120
+ 708 02a7 84       		.byte	-124
+ 709 02a8 89       		.byte	-119
+ 710 02a9 13       		.byte	19
+ 711 02aa 8B       		.byte	-117
+ 712 02ab 64       		.byte	100
+ 713 02ac 8C       		.byte	-116
+ 714 02ad 84       		.byte	-124
+ 715 02ae 8D       		.byte	-115
+ 716 02af 98       		.byte	-104
+ 717 02b0 8F       		.byte	-113
+ 718 02b1 02       		.byte	2
+ 719 02b2 91       		.byte	-111
+ 720 02b3 9A       		.byte	-102
+ 721 02b4 94       		.byte	-108
+ 722 02b5 56       		.byte	86
+ 723 02b6 95       		.byte	-107
+ 724 02b7 21       		.byte	33
+ 725 02b8 96       		.byte	-106
+ 726 02b9 09       		.byte	9
+ 727 02ba 97       		.byte	-105
+ 728 02bb D8       		.byte	-40
+ 729 02bc 98       		.byte	-104
  730 02bd 01       		.byte	1
- 731 02be 17       		.byte	23
- 732 02bf 4A       		.byte	74
- 733 02c0 18       		.byte	24
- 734 02c1 04       		.byte	4
- 735 02c2 19       		.byte	25
- 736 02c3 02       		.byte	2
- 737 02c4 1B       		.byte	27
- 738 02c5 08       		.byte	8
- 739 02c6 1C       		.byte	28
- 740 02c7 28       		.byte	40
- 741 02c8 1D       		.byte	29
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 14
+ 731 02be 99       		.byte	-103
+ 732 02bf 98       		.byte	-104
+ 733 02c0 9B       		.byte	-101
+ 734 02c1 02       		.byte	2
+ 735 02c2 9C       		.byte	-100
+ 736 02c3 60       		.byte	96
+ 737 02c4 9D       		.byte	-99
+ 738 02c5 38       		.byte	56
+ 739 02c6 9F       		.byte	-97
+ 740 02c7 C0       		.byte	-64
+ 741 02c8 A0       		.byte	-96
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 14
 
 
- 742 02c9 50       		.byte	80
- 743 02ca 1E       		.byte	30
- 744 02cb 01       		.byte	1
- 745 02cc 27       		.byte	39
- 746 02cd 05       		.byte	5
- 747 02ce 35       		.byte	53
- 748 02cf 10       		.byte	16
- 749 02d0 37       		.byte	55
- 750 02d1 05       		.byte	5
- 751 02d2 3A       		.byte	58
- 752 02d3 04       		.byte	4
- 753 02d4 3B       		.byte	59
- 754 02d5 04       		.byte	4
- 755 02d6 3C       		.byte	60
- 756 02d7 04       		.byte	4
- 757 02d8 3E       		.byte	62
- 758 02d9 01       		.byte	1
- 759 02da 40       		.byte	64
- 760 02db 24       		.byte	36
- 761 02dc 41       		.byte	65
- 762 02dd 01       		.byte	1
- 763 02de 49       		.byte	73
- 764 02df 49       		.byte	73
- 765 02e0 4B       		.byte	75
- 766 02e1 24       		.byte	36
- 767 02e2 51       		.byte	81
- 768 02e3 10       		.byte	16
- 769 02e4 52       		.byte	82
- 770 02e5 40       		.byte	64
- 771 02e6 53       		.byte	83
- 772 02e7 04       		.byte	4
- 773 02e8 60       		.byte	96
- 774 02e9 80       		.byte	-128
- 775 02ea 68       		.byte	104
- 776 02eb 20       		.byte	32
- 777 02ec 69       		.byte	105
- 778 02ed 40       		.byte	64
- 779 02ee 6A       		.byte	106
- 780 02ef 98       		.byte	-104
- 781 02f0 6B       		.byte	107
- 782 02f1 42       		.byte	66
- 783 02f2 70       		.byte	112
- 784 02f3 40       		.byte	64
- 785 02f4 81       		.byte	-127
- 786 02f5 01       		.byte	1
- 787 02f6 82       		.byte	-126
- 788 02f7 10       		.byte	16
- 789 02f8 83       		.byte	-125
- 790 02f9 40       		.byte	64
- 791 02fa 86       		.byte	-122
- 792 02fb 04       		.byte	4
- 793 02fc 89       		.byte	-119
- 794 02fd 10       		.byte	16
- 795 02fe 8C       		.byte	-116
- 796 02ff 40       		.byte	64
- 797 0300 8D       		.byte	-115
- 798 0301 10       		.byte	16
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 15
+ 742 02c9 84       		.byte	-124
+ 743 02ca A1       		.byte	-95
+ 744 02cb 02       		.byte	2
+ 745 02cc A4       		.byte	-92
+ 746 02cd 07       		.byte	7
+ 747 02ce A6       		.byte	-90
+ 748 02cf 38       		.byte	56
+ 749 02d0 A8       		.byte	-88
+ 750 02d1 0A       		.byte	10
+ 751 02d2 A9       		.byte	-87
+ 752 02d3 FC       		.byte	-4
+ 753 02d4 AA       		.byte	-86
+ 754 02d5 10       		.byte	16
+ 755 02d6 AB       		.byte	-85
+ 756 02d7 03       		.byte	3
+ 757 02d8 AC       		.byte	-84
+ 758 02d9 04       		.byte	4
+ 759 02da B0       		.byte	-80
+ 760 02db 02       		.byte	2
+ 761 02dc B1       		.byte	-79
+ 762 02dd E0       		.byte	-32
+ 763 02de B2       		.byte	-78
+ 764 02df 08       		.byte	8
+ 765 02e0 B3       		.byte	-77
+ 766 02e1 0F       		.byte	15
+ 767 02e2 B4       		.byte	-76
+ 768 02e3 7F       		.byte	127
+ 769 02e4 B6       		.byte	-74
+ 770 02e5 80       		.byte	-128
+ 771 02e6 B7       		.byte	-73
+ 772 02e7 13       		.byte	19
+ 773 02e8 B8       		.byte	-72
+ 774 02e9 20       		.byte	32
+ 775 02ea BB       		.byte	-69
+ 776 02eb 0A       		.byte	10
+ 777 02ec BE       		.byte	-66
+ 778 02ed 45       		.byte	69
+ 779 02ee D4       		.byte	-44
+ 780 02ef 09       		.byte	9
+ 781 02f0 D6       		.byte	-42
+ 782 02f1 04       		.byte	4
+ 783 02f2 D8       		.byte	-40
+ 784 02f3 04       		.byte	4
+ 785 02f4 D9       		.byte	-39
+ 786 02f5 04       		.byte	4
+ 787 02f6 DB       		.byte	-37
+ 788 02f7 04       		.byte	4
+ 789 02f8 DC       		.byte	-36
+ 790 02f9 11       		.byte	17
+ 791 02fa DD       		.byte	-35
+ 792 02fb 10       		.byte	16
+ 793 02fc DF       		.byte	-33
+ 794 02fd 01       		.byte	1
+ 795 02fe 00       		.byte	0
+ 796 02ff 04       		.byte	4
+ 797 0300 03       		.byte	3
+ 798 0301 81       		.byte	-127
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 15
 
 
- 799 0302 8E       		.byte	-114
- 800 0303 40       		.byte	64
- 801 0304 93       		.byte	-109
+ 799 0302 04       		.byte	4
+ 800 0303 2E       		.byte	46
+ 801 0304 05       		.byte	5
  802 0305 20       		.byte	32
- 803 0306 97       		.byte	-105
- 804 0307 08       		.byte	8
- 805 0308 9D       		.byte	-99
- 806 0309 08       		.byte	8
- 807 030a 9F       		.byte	-97
- 808 030b 04       		.byte	4
- 809 030c B3       		.byte	-77
- 810 030d 10       		.byte	16
- 811 030e C0       		.byte	-64
- 812 030f FF       		.byte	-1
- 813 0310 C2       		.byte	-62
- 814 0311 EF       		.byte	-17
- 815 0312 C4       		.byte	-60
- 816 0313 BE       		.byte	-66
- 817 0314 CC       		.byte	-52
- 818 0315 E0       		.byte	-32
- 819 0316 CE       		.byte	-50
- 820 0317 C0       		.byte	-64
- 821 0318 D0       		.byte	-48
- 822 0319 07       		.byte	7
- 823 031a D2       		.byte	-46
- 824 031b 0C       		.byte	12
- 825 031c D8       		.byte	-40
- 826 031d 01       		.byte	1
- 827 031e E0       		.byte	-32
- 828 031f 05       		.byte	5
- 829 0320 E2       		.byte	-30
- 830 0321 08       		.byte	8
- 831 0322 E4       		.byte	-28
- 832 0323 09       		.byte	9
- 833 0324 E8       		.byte	-24
- 834 0325 30       		.byte	48
- 835 0326 EC       		.byte	-20
- 836 0327 50       		.byte	80
- 837 0328 EE       		.byte	-18
- 838 0329 04       		.byte	4
- 839 032a 02       		.byte	2
- 840 032b 15       		.byte	21
- 841 032c 0E       		.byte	14
- 842 032d 08       		.byte	8
- 843 032e 14       		.byte	20
- 844 032f 2A       		.byte	42
- 845 0330 16       		.byte	22
- 846 0331 04       		.byte	4
- 847 0332 18       		.byte	24
- 848 0333 03       		.byte	3
- 849 0334 1A       		.byte	26
- 850 0335 04       		.byte	4
- 851 0336 1C       		.byte	28
- 852 0337 33       		.byte	51
- 853 0338 1D       		.byte	29
- 854 0339 02       		.byte	2
- 855 033a 1E       		.byte	30
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 16
+ 803 0306 06       		.byte	6
+ 804 0307 04       		.byte	4
+ 805 0308 07       		.byte	7
+ 806 0309 01       		.byte	1
+ 807 030a 08       		.byte	8
+ 808 030b 10       		.byte	16
+ 809 030c 09       		.byte	9
+ 810 030d 08       		.byte	8
+ 811 030e 0A       		.byte	10
+ 812 030f 41       		.byte	65
+ 813 0310 0E       		.byte	14
+ 814 0311 14       		.byte	20
+ 815 0312 0F       		.byte	15
+ 816 0313 21       		.byte	33
+ 817 0314 11       		.byte	17
+ 818 0315 01       		.byte	1
+ 819 0316 12       		.byte	18
+ 820 0317 15       		.byte	21
+ 821 0318 15       		.byte	21
+ 822 0319 01       		.byte	1
+ 823 031a 16       		.byte	22
+ 824 031b 10       		.byte	16
+ 825 031c 17       		.byte	23
+ 826 031d 60       		.byte	96
+ 827 031e 1A       		.byte	26
+ 828 031f 01       		.byte	1
+ 829 0320 1B       		.byte	27
+ 830 0321 12       		.byte	18
+ 831 0322 1D       		.byte	29
+ 832 0323 40       		.byte	64
+ 833 0324 1E       		.byte	30
+ 834 0325 06       		.byte	6
+ 835 0326 1F       		.byte	31
+ 836 0327 09       		.byte	9
+ 837 0328 21       		.byte	33
+ 838 0329 44       		.byte	68
+ 839 032a 25       		.byte	37
+ 840 032b 48       		.byte	72
+ 841 032c 26       		.byte	38
+ 842 032d 04       		.byte	4
+ 843 032e 27       		.byte	39
+ 844 032f 60       		.byte	96
+ 845 0330 28       		.byte	40
+ 846 0331 10       		.byte	16
+ 847 0332 29       		.byte	41
+ 848 0333 40       		.byte	64
+ 849 0334 2A       		.byte	42
+ 850 0335 80       		.byte	-128
+ 851 0336 2B       		.byte	43
+ 852 0337 10       		.byte	16
+ 853 0338 2E       		.byte	46
+ 854 0339 10       		.byte	16
+ 855 033a 2F       		.byte	47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 16
 
 
- 856 033b 0C       		.byte	12
- 857 033c 1F       		.byte	31
- 858 033d 0D       		.byte	13
- 859 033e 21       		.byte	33
- 860 033f 13       		.byte	19
- 861 0340 23       		.byte	35
- 862 0341 0C       		.byte	12
- 863 0342 28       		.byte	40
- 864 0343 33       		.byte	51
- 865 0344 29       		.byte	41
- 866 0345 15       		.byte	21
- 867 0346 2A       		.byte	42
- 868 0347 04       		.byte	4
- 869 0348 2B       		.byte	43
- 870 0349 0A       		.byte	10
- 871 034a 2D       		.byte	45
- 872 034b 19       		.byte	25
- 873 034c 2F       		.byte	47
- 874 034d 06       		.byte	6
- 875 034e 31       		.byte	49
- 876 034f 0F       		.byte	15
- 877 0350 32       		.byte	50
- 878 0351 30       		.byte	48
- 879 0352 33       		.byte	51
- 880 0353 10       		.byte	16
- 881 0354 36       		.byte	54
- 882 0355 0F       		.byte	15
- 883 0356 38       		.byte	56
- 884 0357 08       		.byte	8
- 885 0358 3A       		.byte	58
- 886 0359 80       		.byte	-128
- 887 035a 3B       		.byte	59
- 888 035b 02       		.byte	2
- 889 035c 3E       		.byte	62
- 890 035d 04       		.byte	4
- 891 035e 3F       		.byte	63
- 892 035f 04       		.byte	4
- 893 0360 40       		.byte	64
- 894 0361 03       		.byte	3
- 895 0362 47       		.byte	71
- 896 0363 04       		.byte	4
- 897 0364 49       		.byte	73
- 898 0365 FF       		.byte	-1
- 899 0366 4A       		.byte	74
- 900 0367 07       		.byte	7
- 901 0368 4B       		.byte	75
- 902 0369 FF       		.byte	-1
- 903 036a 4C       		.byte	76
- 904 036b 40       		.byte	64
- 905 036c 4D       		.byte	77
- 906 036d 20       		.byte	32
- 907 036e 4E       		.byte	78
- 908 036f F0       		.byte	-16
- 909 0370 4F       		.byte	79
- 910 0371 05       		.byte	5
- 911 0372 50       		.byte	80
- 912 0373 08       		.byte	8
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 17
+ 856 033b 80       		.byte	-128
+ 857 033c 31       		.byte	49
+ 858 033d 08       		.byte	8
+ 859 033e 35       		.byte	53
+ 860 033f 20       		.byte	32
+ 861 0340 36       		.byte	54
+ 862 0341 04       		.byte	4
+ 863 0342 37       		.byte	55
+ 864 0343 41       		.byte	65
+ 865 0344 39       		.byte	57
+ 866 0345 88       		.byte	-120
+ 867 0346 3A       		.byte	58
+ 868 0347 10       		.byte	16
+ 869 0348 3B       		.byte	59
+ 870 0349 10       		.byte	16
+ 871 034a 3C       		.byte	60
+ 872 034b 04       		.byte	4
+ 873 034c 3D       		.byte	61
+ 874 034d 01       		.byte	1
+ 875 034e 3E       		.byte	62
+ 876 034f 40       		.byte	64
+ 877 0350 3F       		.byte	63
+ 878 0351 10       		.byte	16
+ 879 0352 5C       		.byte	92
+ 880 0353 20       		.byte	32
+ 881 0354 5E       		.byte	94
+ 882 0355 02       		.byte	2
+ 883 0356 5F       		.byte	95
+ 884 0357 44       		.byte	68
+ 885 0358 61       		.byte	97
+ 886 0359 01       		.byte	1
+ 887 035a 62       		.byte	98
+ 888 035b 08       		.byte	8
+ 889 035c 63       		.byte	99
+ 890 035d 0A       		.byte	10
+ 891 035e 67       		.byte	103
+ 892 035f 82       		.byte	-126
+ 893 0360 86       		.byte	-122
+ 894 0361 04       		.byte	4
+ 895 0362 89       		.byte	-119
+ 896 0363 40       		.byte	64
+ 897 0364 8A       		.byte	-118
+ 898 0365 19       		.byte	25
+ 899 0366 8B       		.byte	-117
+ 900 0367 02       		.byte	2
+ 901 0368 8D       		.byte	-115
+ 902 0369 41       		.byte	65
+ 903 036a 97       		.byte	-105
+ 904 036b 80       		.byte	-128
+ 905 036c C0       		.byte	-64
+ 906 036d FD       		.byte	-3
+ 907 036e C2       		.byte	-62
+ 908 036f EF       		.byte	-17
+ 909 0370 C4       		.byte	-60
+ 910 0371 FF       		.byte	-1
+ 911 0372 CA       		.byte	-54
+ 912 0373 A2       		.byte	-94
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 17
 
 
- 913 0374 54       		.byte	84
- 914 0375 09       		.byte	9
- 915 0376 56       		.byte	86
- 916 0377 04       		.byte	4
- 917 0378 58       		.byte	88
- 918 0379 04       		.byte	4
- 919 037a 59       		.byte	89
- 920 037b 04       		.byte	4
- 921 037c 5A       		.byte	90
- 922 037d 04       		.byte	4
- 923 037e 5B       		.byte	91
- 924 037f 04       		.byte	4
- 925 0380 5C       		.byte	92
- 926 0381 01       		.byte	1
- 927 0382 5D       		.byte	93
- 928 0383 01       		.byte	1
- 929 0384 5F       		.byte	95
- 930 0385 01       		.byte	1
- 931 0386 60       		.byte	96
- 932 0387 40       		.byte	64
- 933 0388 61       		.byte	97
- 934 0389 A8       		.byte	-88
- 935 038a 62       		.byte	98
- 936 038b 40       		.byte	64
- 937 038c 63       		.byte	99
- 938 038d 20       		.byte	32
- 939 038e 80       		.byte	-128
- 940 038f 4C       		.byte	76
- 941 0390 82       		.byte	-126
- 942 0391 A3       		.byte	-93
- 943 0392 83       		.byte	-125
- 944 0393 02       		.byte	2
- 945 0394 84       		.byte	-124
- 946 0395 0C       		.byte	12
- 947 0396 88       		.byte	-120
- 948 0397 FF       		.byte	-1
- 949 0398 8C       		.byte	-116
- 950 0399 4F       		.byte	79
- 951 039a 8E       		.byte	-114
- 952 039b 90       		.byte	-112
- 953 039c 90       		.byte	-112
- 954 039d F3       		.byte	-13
- 955 039e 92       		.byte	-110
- 956 039f 0C       		.byte	12
- 957 03a0 96       		.byte	-106
- 958 03a1 33       		.byte	51
- 959 03a2 99       		.byte	-103
- 960 03a3 01       		.byte	1
- 961 03a4 9A       		.byte	-102
- 962 03a5 40       		.byte	64
- 963 03a6 9C       		.byte	-100
- 964 03a7 02       		.byte	2
- 965 03a8 A0       		.byte	-96
- 966 03a9 08       		.byte	8
- 967 03aa A3       		.byte	-93
- 968 03ab 02       		.byte	2
- 969 03ac A4       		.byte	-92
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 18
+ 913 0374 CC       		.byte	-52
+ 914 0375 F2       		.byte	-14
+ 915 0376 CE       		.byte	-50
+ 916 0377 FE       		.byte	-2
+ 917 0378 D6       		.byte	-42
+ 918 0379 F0       		.byte	-16
+ 919 037a D8       		.byte	-40
+ 920 037b 9F       		.byte	-97
+ 921 037c E0       		.byte	-32
+ 922 037d 22       		.byte	34
+ 923 037e E6       		.byte	-26
+ 924 037f 40       		.byte	64
+ 925 0380 97       		.byte	-105
+ 926 0381 80       		.byte	-128
+ 927 0382 87       		.byte	-121
+ 928 0383 40       		.byte	64
+ 929 0384 E6       		.byte	-26
+ 930 0385 02       		.byte	2
+ 931 0386 E2       		.byte	-30
+ 932 0387 04       		.byte	4
+ 933 0388 EA       		.byte	-22
+ 934 0389 08       		.byte	8
+ 935 038a EC       		.byte	-20
+ 936 038b 04       		.byte	4
+ 937 038c 06       		.byte	6
+ 938 038d 8C       		.byte	-116
+ 939 038e 09       		.byte	9
+ 940 038f 10       		.byte	16
+ 941 0390 0B       		.byte	11
+ 942 0391 64       		.byte	100
+ 943 0392 0E       		.byte	14
+ 944 0393 40       		.byte	64
+ 945 0394 10       		.byte	16
+ 946 0395 AC       		.byte	-84
+ 947 0396 12       		.byte	18
+ 948 0397 03       		.byte	3
+ 949 0398 14       		.byte	20
+ 950 0399 31       		.byte	49
+ 951 039a 16       		.byte	22
+ 952 039b 0E       		.byte	14
+ 953 039c 19       		.byte	25
+ 954 039d 42       		.byte	66
+ 955 039e 1A       		.byte	26
+ 956 039f 40       		.byte	64
+ 957 03a0 1B       		.byte	27
+ 958 03a1 19       		.byte	25
+ 959 03a2 1E       		.byte	30
+ 960 03a3 13       		.byte	19
+ 961 03a4 24       		.byte	36
+ 962 03a5 31       		.byte	49
+ 963 03a6 25       		.byte	37
+ 964 03a7 73       		.byte	115
+ 965 03a8 26       		.byte	38
+ 966 03a9 86       		.byte	-122
+ 967 03aa 29       		.byte	41
+ 968 03ab 73       		.byte	115
+ 969 03ac 2A       		.byte	42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 18
 
 
- 970 03ad 04       		.byte	4
- 971 03ae A8       		.byte	-88
- 972 03af 03       		.byte	3
- 973 03b0 AC       		.byte	-84
- 974 03b1 41       		.byte	65
- 975 03b2 B0       		.byte	-80
+ 970 03ad 08       		.byte	8
+ 971 03ae 2D       		.byte	45
+ 972 03af 21       		.byte	33
+ 973 03b0 2F       		.byte	47
+ 974 03b1 1A       		.byte	26
+ 975 03b2 30       		.byte	48
  976 03b3 0F       		.byte	15
- 977 03b4 B1       		.byte	-79
- 978 03b5 01       		.byte	1
- 979 03b6 B4       		.byte	-76
- 980 03b7 7C       		.byte	124
- 981 03b8 B5       		.byte	-75
- 982 03b9 02       		.byte	2
- 983 03ba B6       		.byte	-74
- 984 03bb 80       		.byte	-128
- 985 03bc B8       		.byte	-72
- 986 03bd 80       		.byte	-128
- 987 03be BA       		.byte	-70
- 988 03bf 22       		.byte	34
- 989 03c0 BF       		.byte	-65
- 990 03c1 11       		.byte	17
- 991 03c2 D6       		.byte	-42
- 992 03c3 02       		.byte	2
- 993 03c4 D7       		.byte	-41
- 994 03c5 12       		.byte	18
- 995 03c6 D8       		.byte	-40
- 996 03c7 04       		.byte	4
- 997 03c8 D9       		.byte	-39
- 998 03c9 04       		.byte	4
- 999 03ca DB       		.byte	-37
- 1000 03cb 04       		.byte	4
- 1001 03cc DC       		.byte	-36
- 1002 03cd 01       		.byte	1
- 1003 03ce DD       		.byte	-35
- 1004 03cf 10       		.byte	16
- 1005 03d0 DF       		.byte	-33
- 1006 03d1 01       		.byte	1
- 1007 03d2 00       		.byte	0
- 1008 03d3 40       		.byte	64
- 1009 03d4 01       		.byte	1
- 1010 03d5 22       		.byte	34
- 1011 03d6 02       		.byte	2
- 1012 03d7 10       		.byte	16
- 1013 03d8 05       		.byte	5
- 1014 03d9 44       		.byte	68
- 1015 03da 06       		.byte	6
- 1016 03db 50       		.byte	80
- 1017 03dc 08       		.byte	8
- 1018 03dd 84       		.byte	-124
- 1019 03de 0A       		.byte	10
- 1020 03df 64       		.byte	100
- 1021 03e0 0E       		.byte	14
- 1022 03e1 21       		.byte	33
- 1023 03e2 0F       		.byte	15
- 1024 03e3 08       		.byte	8
- 1025 03e4 10       		.byte	16
- 1026 03e5 A0       		.byte	-96
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 19
+ 977 03b4 31       		.byte	49
+ 978 03b5 0C       		.byte	12
+ 979 03b6 32       		.byte	50
+ 980 03b7 8A       		.byte	-118
+ 981 03b8 33       		.byte	51
+ 982 03b9 03       		.byte	3
+ 983 03ba 34       		.byte	52
+ 984 03bb 30       		.byte	48
+ 985 03bc 35       		.byte	53
+ 986 03bd 70       		.byte	112
+ 987 03be 36       		.byte	54
+ 988 03bf 40       		.byte	64
+ 989 03c0 38       		.byte	56
+ 990 03c1 20       		.byte	32
+ 991 03c2 3A       		.byte	58
+ 992 03c3 0A       		.byte	10
+ 993 03c4 3E       		.byte	62
+ 994 03c5 50       		.byte	80
+ 995 03c6 3F       		.byte	63
+ 996 03c7 01       		.byte	1
+ 997 03c8 40       		.byte	64
+ 998 03c9 35       		.byte	53
+ 999 03ca 41       		.byte	65
+ 1000 03cb 02       		.byte	2
+ 1001 03cc 42       		.byte	66
+ 1002 03cd 04       		.byte	4
+ 1003 03ce 44       		.byte	68
+ 1004 03cf 01       		.byte	1
+ 1005 03d0 45       		.byte	69
+ 1006 03d1 0C       		.byte	12
+ 1007 03d2 46       		.byte	70
+ 1008 03d3 E0       		.byte	-32
+ 1009 03d4 48       		.byte	72
+ 1010 03d5 09       		.byte	9
+ 1011 03d6 49       		.byte	73
+ 1012 03d7 FF       		.byte	-1
+ 1013 03d8 4A       		.byte	74
+ 1014 03d9 FF       		.byte	-1
+ 1015 03da 4B       		.byte	75
+ 1016 03db FF       		.byte	-1
+ 1017 03dc 4C       		.byte	76
+ 1018 03dd 62       		.byte	98
+ 1019 03de 4D       		.byte	77
+ 1020 03df A0       		.byte	-96
+ 1021 03e0 4E       		.byte	78
+ 1022 03e1 F0       		.byte	-16
+ 1023 03e2 4F       		.byte	79
+ 1024 03e3 41       		.byte	65
+ 1025 03e4 50       		.byte	80
+ 1026 03e5 0C       		.byte	12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 19
 
 
- 1027 03e6 11       		.byte	17
- 1028 03e7 40       		.byte	64
- 1029 03e8 12       		.byte	18
- 1030 03e9 08       		.byte	8
- 1031 03ea 17       		.byte	23
- 1032 03eb 10       		.byte	16
- 1033 03ec 19       		.byte	25
- 1034 03ed 11       		.byte	17
- 1035 03ee 1A       		.byte	26
- 1036 03ef 40       		.byte	64
- 1037 03f0 1B       		.byte	27
- 1038 03f1 80       		.byte	-128
- 1039 03f2 1D       		.byte	29
- 1040 03f3 08       		.byte	8
- 1041 03f4 1E       		.byte	30
+ 1027 03e6 52       		.byte	82
+ 1028 03e7 80       		.byte	-128
+ 1029 03e8 58       		.byte	88
+ 1030 03e9 04       		.byte	4
+ 1031 03ea 59       		.byte	89
+ 1032 03eb 04       		.byte	4
+ 1033 03ec 5A       		.byte	90
+ 1034 03ed 04       		.byte	4
+ 1035 03ee 5B       		.byte	91
+ 1036 03ef 04       		.byte	4
+ 1037 03f0 5C       		.byte	92
+ 1038 03f1 22       		.byte	34
+ 1039 03f2 5D       		.byte	93
+ 1040 03f3 02       		.byte	2
+ 1041 03f4 5F       		.byte	95
  1042 03f5 01       		.byte	1
- 1043 03f6 20       		.byte	32
- 1044 03f7 80       		.byte	-128
- 1045 03f8 21       		.byte	33
- 1046 03f9 20       		.byte	32
- 1047 03fa 26       		.byte	38
- 1048 03fb 04       		.byte	4
- 1049 03fc 27       		.byte	39
- 1050 03fd 40       		.byte	64
- 1051 03fe 29       		.byte	41
- 1052 03ff 20       		.byte	32
- 1053 0400 2A       		.byte	42
- 1054 0401 20       		.byte	32
- 1055 0402 2B       		.byte	43
- 1056 0403 80       		.byte	-128
- 1057 0404 2C       		.byte	44
- 1058 0405 40       		.byte	64
- 1059 0406 2D       		.byte	45
- 1060 0407 80       		.byte	-128
- 1061 0408 2F       		.byte	47
- 1062 0409 08       		.byte	8
- 1063 040a 32       		.byte	50
- 1064 040b 20       		.byte	32
- 1065 040c 37       		.byte	55
- 1066 040d 40       		.byte	64
- 1067 040e 3B       		.byte	59
- 1068 040f 01       		.byte	1
- 1069 0410 45       		.byte	69
- 1070 0411 08       		.byte	8
- 1071 0412 55       		.byte	85
- 1072 0413 04       		.byte	4
- 1073 0414 56       		.byte	86
- 1074 0415 40       		.byte	64
- 1075 0416 5A       		.byte	90
- 1076 0417 08       		.byte	8
- 1077 0418 5C       		.byte	92
+ 1043 03f6 66       		.byte	102
+ 1044 03f7 40       		.byte	64
+ 1045 03f8 67       		.byte	103
+ 1046 03f9 02       		.byte	2
+ 1047 03fa 69       		.byte	105
+ 1048 03fb 10       		.byte	16
+ 1049 03fc 6A       		.byte	106
+ 1050 03fd 30       		.byte	48
+ 1051 03fe 6B       		.byte	107
+ 1052 03ff 10       		.byte	16
+ 1053 0400 6D       		.byte	109
+ 1054 0401 10       		.byte	16
+ 1055 0402 6E       		.byte	110
+ 1056 0403 10       		.byte	16
+ 1057 0404 6F       		.byte	111
+ 1058 0405 12       		.byte	18
+ 1059 0406 80       		.byte	-128
+ 1060 0407 40       		.byte	64
+ 1061 0408 84       		.byte	-124
+ 1062 0409 09       		.byte	9
+ 1063 040a 85       		.byte	-123
+ 1064 040b 33       		.byte	51
+ 1065 040c 86       		.byte	-122
+ 1066 040d 10       		.byte	16
+ 1067 040e 87       		.byte	-121
+ 1068 040f 0C       		.byte	12
+ 1069 0410 88       		.byte	-120
+ 1070 0411 10       		.byte	16
+ 1071 0412 89       		.byte	-119
+ 1072 0413 03       		.byte	3
+ 1073 0414 8B       		.byte	-117
+ 1074 0415 14       		.byte	20
+ 1075 0416 8C       		.byte	-116
+ 1076 0417 1C       		.byte	28
+ 1077 0418 8E       		.byte	-114
  1078 0419 02       		.byte	2
- 1079 041a 5E       		.byte	94
- 1080 041b 90       		.byte	-112
- 1081 041c 5F       		.byte	95
- 1082 041d 04       		.byte	4
- 1083 041e 67       		.byte	103
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 20
+ 1079 041a 90       		.byte	-112
+ 1080 041b 20       		.byte	32
+ 1081 041c 92       		.byte	-110
+ 1082 041d 03       		.byte	3
+ 1083 041e 94       		.byte	-108
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 20
 
 
- 1084 041f 82       		.byte	-126
- 1085 0420 69       		.byte	105
- 1086 0421 14       		.byte	20
- 1087 0422 6A       		.byte	106
- 1088 0423 80       		.byte	-128
- 1089 0424 70       		.byte	112
- 1090 0425 A0       		.byte	-96
- 1091 0426 71       		.byte	113
- 1092 0427 84       		.byte	-124
- 1093 0428 82       		.byte	-126
- 1094 0429 08       		.byte	8
- 1095 042a 83       		.byte	-125
- 1096 042b 60       		.byte	96
- 1097 042c 84       		.byte	-124
- 1098 042d 40       		.byte	64
- 1099 042e 86       		.byte	-122
- 1100 042f 02       		.byte	2
- 1101 0430 87       		.byte	-121
- 1102 0431 40       		.byte	64
- 1103 0432 8B       		.byte	-117
- 1104 0433 04       		.byte	4
- 1105 0434 8D       		.byte	-115
- 1106 0435 12       		.byte	18
- 1107 0436 8E       		.byte	-114
- 1108 0437 01       		.byte	1
- 1109 0438 8F       		.byte	-113
- 1110 0439 04       		.byte	4
- 1111 043a 90       		.byte	-112
+ 1084 041f 0C       		.byte	12
+ 1085 0420 95       		.byte	-107
+ 1086 0421 33       		.byte	51
+ 1087 0422 96       		.byte	-106
+ 1088 0423 11       		.byte	17
+ 1089 0424 97       		.byte	-105
+ 1090 0425 04       		.byte	4
+ 1091 0426 9B       		.byte	-101
+ 1092 0427 08       		.byte	8
+ 1093 0428 A1       		.byte	-95
+ 1094 0429 0A       		.byte	10
+ 1095 042a A3       		.byte	-93
+ 1096 042b 34       		.byte	52
+ 1097 042c A4       		.byte	-92
+ 1098 042d 14       		.byte	20
+ 1099 042e A8       		.byte	-88
+ 1100 042f 10       		.byte	16
+ 1101 0430 AA       		.byte	-86
+ 1102 0431 0C       		.byte	12
+ 1103 0432 AD       		.byte	-83
+ 1104 0433 40       		.byte	64
+ 1105 0434 AF       		.byte	-81
+ 1106 0435 15       		.byte	21
+ 1107 0436 B0       		.byte	-80
+ 1108 0437 1F       		.byte	31
+ 1109 0438 B1       		.byte	-79
+ 1110 0439 10       		.byte	16
+ 1111 043a B2       		.byte	-78
  1112 043b 40       		.byte	64
- 1113 043c 92       		.byte	-110
- 1114 043d 08       		.byte	8
- 1115 043e 96       		.byte	-106
- 1116 043f 01       		.byte	1
- 1117 0440 99       		.byte	-103
- 1118 0441 40       		.byte	64
- 1119 0442 9A       		.byte	-102
+ 1113 043c B3       		.byte	-77
+ 1114 043d 0F       		.byte	15
+ 1115 043e B4       		.byte	-76
+ 1116 043f 20       		.byte	32
+ 1117 0440 B5       		.byte	-75
+ 1118 0441 60       		.byte	96
+ 1119 0442 B9       		.byte	-71
  1120 0443 20       		.byte	32
- 1121 0444 9B       		.byte	-101
- 1122 0445 10       		.byte	16
- 1123 0446 9C       		.byte	-100
- 1124 0447 24       		.byte	36
- 1125 0448 9D       		.byte	-99
- 1126 0449 11       		.byte	17
- 1127 044a 9E       		.byte	-98
- 1128 044b 50       		.byte	80
- 1129 044c A2       		.byte	-94
- 1130 044d B0       		.byte	-80
- 1131 044e A3       		.byte	-93
- 1132 044f 04       		.byte	4
- 1133 0450 A4       		.byte	-92
- 1134 0451 20       		.byte	32
- 1135 0452 A5       		.byte	-91
- 1136 0453 84       		.byte	-124
- 1137 0454 AA       		.byte	-86
- 1138 0455 02       		.byte	2
- 1139 0456 C0       		.byte	-64
- 1140 0457 9F       		.byte	-97
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 21
+ 1121 0444 BB       		.byte	-69
+ 1122 0445 08       		.byte	8
+ 1123 0446 BE       		.byte	-66
+ 1124 0447 14       		.byte	20
+ 1125 0448 BF       		.byte	-65
+ 1126 0449 01       		.byte	1
+ 1127 044a C0       		.byte	-64
+ 1128 044b 64       		.byte	100
+ 1129 044c C1       		.byte	-63
+ 1130 044d 03       		.byte	3
+ 1131 044e C5       		.byte	-59
+ 1132 044f 0B       		.byte	11
+ 1133 0450 C6       		.byte	-58
+ 1134 0451 CE       		.byte	-50
+ 1135 0452 C8       		.byte	-56
+ 1136 0453 0D       		.byte	13
+ 1137 0454 C9       		.byte	-55
+ 1138 0455 FF       		.byte	-1
+ 1139 0456 CA       		.byte	-54
+ 1140 0457 FF       		.byte	-1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 21
 
 
- 1141 0458 C2       		.byte	-62
- 1142 0459 EF       		.byte	-17
- 1143 045a C4       		.byte	-60
- 1144 045b 4F       		.byte	79
- 1145 045c CA       		.byte	-54
- 1146 045d B1       		.byte	-79
- 1147 045e CC       		.byte	-52
- 1148 045f 14       		.byte	20
- 1149 0460 CE       		.byte	-50
+ 1141 0458 CB       		.byte	-53
+ 1142 0459 FF       		.byte	-1
+ 1143 045a CE       		.byte	-50
+ 1144 045b F0       		.byte	-16
+ 1145 045c CF       		.byte	-49
+ 1146 045d 44       		.byte	68
+ 1147 045e D0       		.byte	-48
+ 1148 045f 0C       		.byte	12
+ 1149 0460 D4       		.byte	-44
  1150 0461 01       		.byte	1
- 1151 0462 D0       		.byte	-48
- 1152 0463 40       		.byte	64
- 1153 0464 D6       		.byte	-42
- 1154 0465 F2       		.byte	-14
- 1155 0466 D8       		.byte	-40
- 1156 0467 90       		.byte	-112
- 1157 0468 E0       		.byte	-32
- 1158 0469 12       		.byte	18
- 1159 046a E4       		.byte	-28
- 1160 046b 30       		.byte	48
- 1161 046c E8       		.byte	-24
- 1162 046d 10       		.byte	16
- 1163 046e EC       		.byte	-20
- 1164 046f 50       		.byte	80
- 1165 0470 00       		.byte	0
- 1166 0471 08       		.byte	8
- 1167 0472 01       		.byte	1
- 1168 0473 21       		.byte	33
- 1169 0474 02       		.byte	2
- 1170 0475 04       		.byte	4
- 1171 0476 03       		.byte	3
- 1172 0477 18       		.byte	24
- 1173 0478 05       		.byte	5
- 1174 0479 F0       		.byte	-16
- 1175 047a 09       		.byte	9
- 1176 047b F0       		.byte	-16
- 1177 047c 0A       		.byte	10
- 1178 047d 02       		.byte	2
- 1179 047e 0C       		.byte	12
- 1180 047f 04       		.byte	4
- 1181 0480 0E       		.byte	14
- 1182 0481 09       		.byte	9
- 1183 0482 0F       		.byte	15
- 1184 0483 03       		.byte	3
- 1185 0484 15       		.byte	21
- 1186 0485 13       		.byte	19
- 1187 0486 17       		.byte	23
- 1188 0487 64       		.byte	100
- 1189 0488 1B       		.byte	27
- 1190 0489 03       		.byte	3
- 1191 048a 1D       		.byte	29
- 1192 048b 80       		.byte	-128
- 1193 048c 21       		.byte	33
- 1194 048d 42       		.byte	66
- 1195 048e 22       		.byte	34
- 1196 048f 02       		.byte	2
- 1197 0490 23       		.byte	35
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 22
+ 1151 0462 D6       		.byte	-42
+ 1152 0463 04       		.byte	4
+ 1153 0464 D8       		.byte	-40
+ 1154 0465 04       		.byte	4
+ 1155 0466 D9       		.byte	-39
+ 1156 0467 04       		.byte	4
+ 1157 0468 DA       		.byte	-38
+ 1158 0469 04       		.byte	4
+ 1159 046a DB       		.byte	-37
+ 1160 046b 04       		.byte	4
+ 1161 046c DC       		.byte	-36
+ 1162 046d 22       		.byte	34
+ 1163 046e DD       		.byte	-35
+ 1164 046f 22       		.byte	34
+ 1165 0470 DF       		.byte	-33
+ 1166 0471 01       		.byte	1
+ 1167 0472 E6       		.byte	-26
+ 1168 0473 C0       		.byte	-64
+ 1169 0474 EA       		.byte	-22
+ 1170 0475 40       		.byte	64
+ 1171 0476 EB       		.byte	-21
+ 1172 0477 02       		.byte	2
+ 1173 0478 00       		.byte	0
+ 1174 0479 84       		.byte	-124
+ 1175 047a 01       		.byte	1
+ 1176 047b 02       		.byte	2
+ 1177 047c 02       		.byte	2
+ 1178 047d 44       		.byte	68
+ 1179 047e 04       		.byte	4
+ 1180 047f 64       		.byte	100
+ 1181 0480 05       		.byte	5
+ 1182 0481 20       		.byte	32
+ 1183 0482 07       		.byte	7
+ 1184 0483 01       		.byte	1
+ 1185 0484 09       		.byte	9
+ 1186 0485 08       		.byte	8
+ 1187 0486 0A       		.byte	10
+ 1188 0487 80       		.byte	-128
+ 1189 0488 0E       		.byte	14
+ 1190 0489 60       		.byte	96
+ 1191 048a 0F       		.byte	15
+ 1192 048b 0A       		.byte	10
+ 1193 048c 10       		.byte	16
+ 1194 048d 20       		.byte	32
+ 1195 048e 13       		.byte	19
+ 1196 048f 10       		.byte	16
+ 1197 0490 15       		.byte	21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 22
 
 
- 1198 0491 18       		.byte	24
- 1199 0492 24       		.byte	36
- 1200 0493 0C       		.byte	12
- 1201 0494 25       		.byte	37
- 1202 0495 03       		.byte	3
- 1203 0496 28       		.byte	40
- 1204 0497 0C       		.byte	12
- 1205 0498 2B       		.byte	43
- 1206 0499 03       		.byte	3
- 1207 049a 2D       		.byte	45
- 1208 049b 03       		.byte	3
- 1209 049c 30       		.byte	48
- 1210 049d 02       		.byte	2
- 1211 049e 31       		.byte	49
- 1212 049f 03       		.byte	3
- 1213 04a0 33       		.byte	51
- 1214 04a1 70       		.byte	112
- 1215 04a2 34       		.byte	52
- 1216 04a3 01       		.byte	1
- 1217 04a4 35       		.byte	53
- 1218 04a5 80       		.byte	-128
- 1219 04a6 36       		.byte	54
- 1220 04a7 0C       		.byte	12
- 1221 04a8 37       		.byte	55
- 1222 04a9 0C       		.byte	12
- 1223 04aa 3E       		.byte	62
- 1224 04ab 01       		.byte	1
- 1225 04ac 3F       		.byte	63
- 1226 04ad 40       		.byte	64
- 1227 04ae 40       		.byte	64
- 1228 04af 42       		.byte	66
- 1229 04b0 41       		.byte	65
- 1230 04b1 03       		.byte	3
- 1231 04b2 42       		.byte	66
- 1232 04b3 05       		.byte	5
- 1233 04b4 44       		.byte	68
- 1234 04b5 01       		.byte	1
- 1235 04b6 45       		.byte	69
- 1236 04b7 EC       		.byte	-20
- 1237 04b8 48       		.byte	72
- 1238 04b9 03       		.byte	3
- 1239 04ba 49       		.byte	73
- 1240 04bb FF       		.byte	-1
- 1241 04bc 4A       		.byte	74
- 1242 04bd FF       		.byte	-1
- 1243 04be 4B       		.byte	75
- 1244 04bf FF       		.byte	-1
- 1245 04c0 4C       		.byte	76
- 1246 04c1 62       		.byte	98
- 1247 04c2 4D       		.byte	77
- 1248 04c3 A0       		.byte	-96
- 1249 04c4 4E       		.byte	78
- 1250 04c5 F0       		.byte	-16
- 1251 04c6 4F       		.byte	79
- 1252 04c7 41       		.byte	65
- 1253 04c8 50       		.byte	80
- 1254 04c9 0C       		.byte	12
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 23
+ 1198 0491 08       		.byte	8
+ 1199 0492 16       		.byte	22
+ 1200 0493 04       		.byte	4
+ 1201 0494 18       		.byte	24
+ 1202 0495 08       		.byte	8
+ 1203 0496 19       		.byte	25
+ 1204 0497 04       		.byte	4
+ 1205 0498 1A       		.byte	26
+ 1206 0499 80       		.byte	-128
+ 1207 049a 1C       		.byte	28
+ 1208 049b 81       		.byte	-127
+ 1209 049c 1D       		.byte	29
+ 1210 049d 09       		.byte	9
+ 1211 049e 1E       		.byte	30
+ 1212 049f 68       		.byte	104
+ 1213 04a0 20       		.byte	32
+ 1214 04a1 04       		.byte	4
+ 1215 04a2 21       		.byte	33
+ 1216 04a3 04       		.byte	4
+ 1217 04a4 22       		.byte	34
+ 1218 04a5 10       		.byte	16
+ 1219 04a6 23       		.byte	35
+ 1220 04a7 90       		.byte	-112
+ 1221 04a8 25       		.byte	37
+ 1222 04a9 10       		.byte	16
+ 1223 04aa 27       		.byte	39
+ 1224 04ab 50       		.byte	80
+ 1225 04ac 29       		.byte	41
+ 1226 04ad 01       		.byte	1
+ 1227 04ae 2B       		.byte	43
+ 1228 04af 03       		.byte	3
+ 1229 04b0 2D       		.byte	45
+ 1230 04b1 80       		.byte	-128
+ 1231 04b2 2F       		.byte	47
+ 1232 04b3 28       		.byte	40
+ 1233 04b4 31       		.byte	49
+ 1234 04b5 08       		.byte	8
+ 1235 04b6 32       		.byte	50
+ 1236 04b7 10       		.byte	16
+ 1237 04b8 36       		.byte	54
+ 1238 04b9 0C       		.byte	12
+ 1239 04ba 37       		.byte	55
+ 1240 04bb 10       		.byte	16
+ 1241 04bc 38       		.byte	56
+ 1242 04bd 20       		.byte	32
+ 1243 04be 39       		.byte	57
+ 1244 04bf 08       		.byte	8
+ 1245 04c0 3D       		.byte	61
+ 1246 04c1 20       		.byte	32
+ 1247 04c2 41       		.byte	65
+ 1248 04c3 08       		.byte	8
+ 1249 04c4 43       		.byte	67
+ 1250 04c5 02       		.byte	2
+ 1251 04c6 45       		.byte	69
+ 1252 04c7 20       		.byte	32
+ 1253 04c8 47       		.byte	71
+ 1254 04c9 45       		.byte	69
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 23
 
 
- 1255 04ca 54       		.byte	84
- 1256 04cb 18       		.byte	24
- 1257 04cc 56       		.byte	86
- 1258 04cd 04       		.byte	4
- 1259 04ce 58       		.byte	88
- 1260 04cf 04       		.byte	4
- 1261 04d0 59       		.byte	89
- 1262 04d1 04       		.byte	4
- 1263 04d2 5A       		.byte	90
- 1264 04d3 04       		.byte	4
- 1265 04d4 5B       		.byte	91
- 1266 04d5 04       		.byte	4
- 1267 04d6 5C       		.byte	92
- 1268 04d7 11       		.byte	17
- 1269 04d8 5D       		.byte	93
- 1270 04d9 11       		.byte	17
- 1271 04da 5F       		.byte	95
- 1272 04db 01       		.byte	1
- 1273 04dc 66       		.byte	102
- 1274 04dd 40       		.byte	64
- 1275 04de 67       		.byte	103
- 1276 04df 02       		.byte	2
- 1277 04e0 69       		.byte	105
- 1278 04e1 10       		.byte	16
- 1279 04e2 6A       		.byte	106
- 1280 04e3 30       		.byte	48
- 1281 04e4 6B       		.byte	107
+ 1255 04ca 48       		.byte	72
+ 1256 04cb 20       		.byte	32
+ 1257 04cc 4B       		.byte	75
+ 1258 04cd 10       		.byte	16
+ 1259 04ce 4E       		.byte	78
+ 1260 04cf 01       		.byte	1
+ 1261 04d0 4F       		.byte	79
+ 1262 04d1 08       		.byte	8
+ 1263 04d2 50       		.byte	80
+ 1264 04d3 10       		.byte	16
+ 1265 04d4 52       		.byte	82
+ 1266 04d5 40       		.byte	64
+ 1267 04d6 56       		.byte	86
+ 1268 04d7 10       		.byte	16
+ 1269 04d8 59       		.byte	89
+ 1270 04d9 26       		.byte	38
+ 1271 04da 5B       		.byte	91
+ 1272 04db 80       		.byte	-128
+ 1273 04dc 63       		.byte	99
+ 1274 04dd 80       		.byte	-128
+ 1275 04de 74       		.byte	116
+ 1276 04df 01       		.byte	1
+ 1277 04e0 83       		.byte	-125
+ 1278 04e1 40       		.byte	64
+ 1279 04e2 8C       		.byte	-116
+ 1280 04e3 80       		.byte	-128
+ 1281 04e4 8F       		.byte	-113
  1282 04e5 10       		.byte	16
- 1283 04e6 6D       		.byte	109
- 1284 04e7 10       		.byte	16
- 1285 04e8 6E       		.byte	110
- 1286 04e9 10       		.byte	16
- 1287 04ea 6F       		.byte	111
- 1288 04eb 12       		.byte	18
- 1289 04ec 81       		.byte	-127
- 1290 04ed 04       		.byte	4
- 1291 04ee 85       		.byte	-123
- 1292 04ef 84       		.byte	-124
- 1293 04f0 8D       		.byte	-115
- 1294 04f1 60       		.byte	96
- 1295 04f2 91       		.byte	-111
- 1296 04f3 04       		.byte	4
- 1297 04f4 93       		.byte	-109
- 1298 04f5 80       		.byte	-128
- 1299 04f6 95       		.byte	-107
- 1300 04f7 84       		.byte	-124
- 1301 04f8 99       		.byte	-103
- 1302 04f9 80       		.byte	-128
- 1303 04fa 9B       		.byte	-101
- 1304 04fb 04       		.byte	4
- 1305 04fc 9D       		.byte	-99
- 1306 04fd 01       		.byte	1
- 1307 04fe A1       		.byte	-95
- 1308 04ff 84       		.byte	-124
- 1309 0500 A5       		.byte	-91
- 1310 0501 07       		.byte	7
- 1311 0502 A7       		.byte	-89
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 24
+ 1283 04e6 A4       		.byte	-92
+ 1284 04e7 01       		.byte	1
+ 1285 04e8 AF       		.byte	-81
+ 1286 04e9 40       		.byte	64
+ 1287 04ea B4       		.byte	-76
+ 1288 04eb 04       		.byte	4
+ 1289 04ec C0       		.byte	-64
+ 1290 04ed AF       		.byte	-81
+ 1291 04ee C2       		.byte	-62
+ 1292 04ef FC       		.byte	-4
+ 1293 04f0 C4       		.byte	-60
+ 1294 04f1 66       		.byte	102
+ 1295 04f2 CA       		.byte	-54
+ 1296 04f3 79       		.byte	121
+ 1297 04f4 CC       		.byte	-52
+ 1298 04f5 26       		.byte	38
+ 1299 04f6 CE       		.byte	-50
+ 1300 04f7 26       		.byte	38
+ 1301 04f8 D0       		.byte	-48
+ 1302 04f9 F3       		.byte	-13
+ 1303 04fa D2       		.byte	-46
+ 1304 04fb 14       		.byte	20
+ 1305 04fc D6       		.byte	-42
+ 1306 04fd 0F       		.byte	15
+ 1307 04fe D8       		.byte	-40
+ 1308 04ff 01       		.byte	1
+ 1309 0500 EC       		.byte	-20
+ 1310 0501 04       		.byte	4
+ 1311 0502 01       		.byte	1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 24
 
 
- 1312 0503 38       		.byte	56
- 1313 0504 A9       		.byte	-87
- 1314 0505 0A       		.byte	10
- 1315 0506 AB       		.byte	-85
- 1316 0507 10       		.byte	16
- 1317 0508 AD       		.byte	-83
- 1318 0509 56       		.byte	86
- 1319 050a AF       		.byte	-81
- 1320 050b 09       		.byte	9
- 1321 050c B1       		.byte	-79
- 1322 050d 7F       		.byte	127
- 1323 050e B3       		.byte	-77
- 1324 050f 80       		.byte	-128
- 1325 0510 B7       		.byte	-73
- 1326 0511 08       		.byte	8
- 1327 0512 B9       		.byte	-71
- 1328 0513 02       		.byte	2
- 1329 0514 BF       		.byte	-65
- 1330 0515 44       		.byte	68
- 1331 0516 D9       		.byte	-39
- 1332 0517 04       		.byte	4
- 1333 0518 DF       		.byte	-33
- 1334 0519 01       		.byte	1
- 1335 051a 00       		.byte	0
- 1336 051b 20       		.byte	32
- 1337 051c 01       		.byte	1
- 1338 051d 40       		.byte	64
- 1339 051e 03       		.byte	3
- 1340 051f 80       		.byte	-128
- 1341 0520 11       		.byte	17
- 1342 0521 14       		.byte	20
- 1343 0522 12       		.byte	18
- 1344 0523 80       		.byte	-128
- 1345 0524 1A       		.byte	26
- 1346 0525 04       		.byte	4
- 1347 0526 1B       		.byte	27
- 1348 0527 81       		.byte	-127
- 1349 0528 20       		.byte	32
- 1350 0529 05       		.byte	5
- 1351 052a 21       		.byte	33
- 1352 052b 08       		.byte	8
- 1353 052c 22       		.byte	34
- 1354 052d 19       		.byte	25
- 1355 052e 26       		.byte	38
- 1356 052f 44       		.byte	68
- 1357 0530 27       		.byte	39
- 1358 0531 40       		.byte	64
- 1359 0532 28       		.byte	40
- 1360 0533 A8       		.byte	-88
- 1361 0534 2A       		.byte	42
- 1362 0535 80       		.byte	-128
- 1363 0536 2B       		.byte	43
- 1364 0537 80       		.byte	-128
- 1365 0538 2D       		.byte	45
- 1366 0539 80       		.byte	-128
- 1367 053a 2E       		.byte	46
- 1368 053b 02       		.byte	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 25
+ 1312 0503 02       		.byte	2
+ 1313 0504 0B       		.byte	11
+ 1314 0505 01       		.byte	1
+ 1315 0506 0E       		.byte	14
+ 1316 0507 01       		.byte	1
+ 1317 0508 0F       		.byte	15
+ 1318 0509 01       		.byte	1
+ 1319 050a 15       		.byte	21
+ 1320 050b 02       		.byte	2
+ 1321 050c 25       		.byte	37
+ 1322 050d 02       		.byte	2
+ 1323 050e 31       		.byte	49
+ 1324 050f 02       		.byte	2
+ 1325 0510 35       		.byte	53
+ 1326 0511 01       		.byte	1
+ 1327 0512 36       		.byte	54
+ 1328 0513 01       		.byte	1
+ 1329 0514 3F       		.byte	63
+ 1330 0515 10       		.byte	16
+ 1331 0516 54       		.byte	84
+ 1332 0517 18       		.byte	24
+ 1333 0518 56       		.byte	86
+ 1334 0519 04       		.byte	4
+ 1335 051a 58       		.byte	88
+ 1336 051b 04       		.byte	4
+ 1337 051c 59       		.byte	89
+ 1338 051d 04       		.byte	4
+ 1339 051e 5B       		.byte	91
+ 1340 051f 04       		.byte	4
+ 1341 0520 5C       		.byte	92
+ 1342 0521 22       		.byte	34
+ 1343 0522 5D       		.byte	93
+ 1344 0523 20       		.byte	32
+ 1345 0524 5F       		.byte	95
+ 1346 0525 01       		.byte	1
+ 1347 0526 81       		.byte	-127
+ 1348 0527 C3       		.byte	-61
+ 1349 0528 84       		.byte	-124
+ 1350 0529 18       		.byte	24
+ 1351 052a 85       		.byte	-123
+ 1352 052b 04       		.byte	4
+ 1353 052c 88       		.byte	-120
+ 1354 052d 08       		.byte	8
+ 1355 052e 89       		.byte	-119
+ 1356 052f 0C       		.byte	12
+ 1357 0530 8C       		.byte	-116
+ 1358 0531 04       		.byte	4
+ 1359 0532 8F       		.byte	-113
+ 1360 0533 E3       		.byte	-29
+ 1361 0534 94       		.byte	-108
+ 1362 0535 3C       		.byte	60
+ 1363 0536 95       		.byte	-107
+ 1364 0537 F3       		.byte	-13
+ 1365 0538 96       		.byte	-106
+ 1366 0539 42       		.byte	66
+ 1367 053a 97       		.byte	-105
+ 1368 053b 0C       		.byte	12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 25
 
 
- 1369 053c 2F       		.byte	47
- 1370 053d 28       		.byte	40
- 1371 053e 31       		.byte	49
- 1372 053f 18       		.byte	24
- 1373 0540 32       		.byte	50
- 1374 0541 40       		.byte	64
- 1375 0542 36       		.byte	54
- 1376 0543 01       		.byte	1
- 1377 0544 37       		.byte	55
- 1378 0545 64       		.byte	100
- 1379 0546 38       		.byte	56
- 1380 0547 42       		.byte	66
- 1381 0548 39       		.byte	57
- 1382 0549 14       		.byte	20
- 1383 054a 3D       		.byte	61
- 1384 054b 01       		.byte	1
- 1385 054c 3E       		.byte	62
- 1386 054d 08       		.byte	8
- 1387 054e 3F       		.byte	63
- 1388 054f 80       		.byte	-128
- 1389 0550 40       		.byte	64
- 1390 0551 2D       		.byte	45
- 1391 0552 42       		.byte	66
- 1392 0553 E0       		.byte	-32
- 1393 0554 48       		.byte	72
- 1394 0555 10       		.byte	16
- 1395 0556 4B       		.byte	75
- 1396 0557 81       		.byte	-127
- 1397 0558 5A       		.byte	90
- 1398 0559 02       		.byte	2
- 1399 055a 61       		.byte	97
- 1400 055b 20       		.byte	32
- 1401 055c 62       		.byte	98
- 1402 055d 02       		.byte	2
- 1403 055e 63       		.byte	99
- 1404 055f 02       		.byte	2
- 1405 0560 64       		.byte	100
- 1406 0561 02       		.byte	2
- 1407 0562 67       		.byte	103
- 1408 0563 02       		.byte	2
- 1409 0564 7E       		.byte	126
- 1410 0565 80       		.byte	-128
- 1411 0566 7F       		.byte	127
+ 1369 053c 98       		.byte	-104
+ 1370 053d 7F       		.byte	127
+ 1371 053e 99       		.byte	-103
+ 1372 053f 1F       		.byte	31
+ 1373 0540 9B       		.byte	-101
+ 1374 0541 E0       		.byte	-32
+ 1375 0542 9D       		.byte	-99
+ 1376 0543 08       		.byte	8
+ 1377 0544 9E       		.byte	-98
+ 1378 0545 04       		.byte	4
+ 1379 0546 A1       		.byte	-95
+ 1380 0547 82       		.byte	-126
+ 1381 0548 A2       		.byte	-94
+ 1382 0549 23       		.byte	35
+ 1383 054a A4       		.byte	-92
+ 1384 054b 67       		.byte	103
+ 1385 054c A5       		.byte	-91
+ 1386 054d FF       		.byte	-1
+ 1387 054e A6       		.byte	-90
+ 1388 054f 18       		.byte	24
+ 1389 0550 A8       		.byte	-88
+ 1390 0551 1C       		.byte	28
+ 1391 0552 A9       		.byte	-87
+ 1392 0553 1C       		.byte	28
+ 1393 0554 AA       		.byte	-86
+ 1394 0555 61       		.byte	97
+ 1395 0556 AB       		.byte	-85
+ 1396 0557 E3       		.byte	-29
+ 1397 0558 AC       		.byte	-84
+ 1398 0559 10       		.byte	16
+ 1399 055a AD       		.byte	-83
+ 1400 055b 41       		.byte	65
+ 1401 055c B0       		.byte	-80
+ 1402 055d 38       		.byte	56
+ 1403 055e B1       		.byte	-79
+ 1404 055f 10       		.byte	16
+ 1405 0560 B2       		.byte	-78
+ 1406 0561 1F       		.byte	31
+ 1407 0562 B3       		.byte	-77
+ 1408 0563 2C       		.byte	44
+ 1409 0564 B5       		.byte	-75
+ 1410 0565 0F       		.byte	15
+ 1411 0566 B6       		.byte	-74
  1412 0567 40       		.byte	64
- 1413 0568 82       		.byte	-126
- 1414 0569 06       		.byte	6
- 1415 056a 83       		.byte	-125
- 1416 056b 41       		.byte	65
- 1417 056c 84       		.byte	-124
- 1418 056d 40       		.byte	64
- 1419 056e 87       		.byte	-121
- 1420 056f 20       		.byte	32
- 1421 0570 8C       		.byte	-116
+ 1413 0568 B7       		.byte	-73
+ 1414 0569 C0       		.byte	-64
+ 1415 056a B8       		.byte	-72
+ 1416 056b 80       		.byte	-128
+ 1417 056c BA       		.byte	-70
+ 1418 056d 28       		.byte	40
+ 1419 056e BB       		.byte	-69
+ 1420 056f 28       		.byte	40
+ 1421 0570 BF       		.byte	-65
  1422 0571 01       		.byte	1
- 1423 0572 8D       		.byte	-115
- 1424 0573 40       		.byte	64
- 1425 0574 90       		.byte	-112
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 26
+ 1423 0572 C0       		.byte	-64
+ 1424 0573 06       		.byte	6
+ 1425 0574 C7       		.byte	-57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 26
 
 
- 1426 0575 40       		.byte	64
- 1427 0576 91       		.byte	-111
- 1428 0577 15       		.byte	21
- 1429 0578 92       		.byte	-110
- 1430 0579 C0       		.byte	-64
- 1431 057a 95       		.byte	-107
- 1432 057b 40       		.byte	64
- 1433 057c 96       		.byte	-106
- 1434 057d 24       		.byte	36
- 1435 057e 97       		.byte	-105
- 1436 057f 01       		.byte	1
- 1437 0580 99       		.byte	-103
- 1438 0581 90       		.byte	-112
- 1439 0582 9A       		.byte	-102
- 1440 0583 2A       		.byte	42
- 1441 0584 9B       		.byte	-101
- 1442 0585 24       		.byte	36
- 1443 0586 9C       		.byte	-100
- 1444 0587 C2       		.byte	-62
- 1445 0588 A1       		.byte	-95
- 1446 0589 20       		.byte	32
- 1447 058a A2       		.byte	-94
- 1448 058b 81       		.byte	-127
- 1449 058c A3       		.byte	-93
- 1450 058d 48       		.byte	72
- 1451 058e A6       		.byte	-90
- 1452 058f 48       		.byte	72
- 1453 0590 AA       		.byte	-86
- 1454 0591 14       		.byte	20
- 1455 0592 AB       		.byte	-85
- 1456 0593 41       		.byte	65
- 1457 0594 AD       		.byte	-83
- 1458 0595 01       		.byte	1
- 1459 0596 AF       		.byte	-81
- 1460 0597 08       		.byte	8
- 1461 0598 B4       		.byte	-76
- 1462 0599 20       		.byte	32
- 1463 059a B5       		.byte	-75
- 1464 059b 80       		.byte	-128
- 1465 059c C0       		.byte	-64
- 1466 059d 0B       		.byte	11
- 1467 059e C4       		.byte	-60
- 1468 059f 0E       		.byte	14
- 1469 05a0 CA       		.byte	-54
- 1470 05a1 FF       		.byte	-1
- 1471 05a2 CC       		.byte	-52
- 1472 05a3 FE       		.byte	-2
- 1473 05a4 CE       		.byte	-50
- 1474 05a5 DF       		.byte	-33
- 1475 05a6 D0       		.byte	-48
- 1476 05a7 0F       		.byte	15
- 1477 05a8 D2       		.byte	-46
- 1478 05a9 08       		.byte	8
- 1479 05aa D6       		.byte	-42
- 1480 05ab 01       		.byte	1
- 1481 05ac D8       		.byte	-40
- 1482 05ad 0D       		.byte	13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 27
+ 1426 0575 04       		.byte	4
+ 1427 0576 C9       		.byte	-55
+ 1428 0577 FF       		.byte	-1
+ 1429 0578 CA       		.byte	-54
+ 1430 0579 07       		.byte	7
+ 1431 057a CB       		.byte	-53
+ 1432 057b FF       		.byte	-1
+ 1433 057c CC       		.byte	-52
+ 1434 057d 40       		.byte	64
+ 1435 057e CD       		.byte	-51
+ 1436 057f 20       		.byte	32
+ 1437 0580 CE       		.byte	-50
+ 1438 0581 F0       		.byte	-16
+ 1439 0582 CF       		.byte	-49
+ 1440 0583 05       		.byte	5
+ 1441 0584 D0       		.byte	-48
+ 1442 0585 08       		.byte	8
+ 1443 0586 D6       		.byte	-42
+ 1444 0587 02       		.byte	2
+ 1445 0588 D7       		.byte	-41
+ 1446 0589 13       		.byte	19
+ 1447 058a D8       		.byte	-40
+ 1448 058b 04       		.byte	4
+ 1449 058c D9       		.byte	-39
+ 1450 058d 04       		.byte	4
+ 1451 058e DA       		.byte	-38
+ 1452 058f 04       		.byte	4
+ 1453 0590 DB       		.byte	-37
+ 1454 0591 04       		.byte	4
+ 1455 0592 DC       		.byte	-36
+ 1456 0593 22       		.byte	34
+ 1457 0594 DD       		.byte	-35
+ 1458 0595 22       		.byte	34
+ 1459 0596 DF       		.byte	-33
+ 1460 0597 01       		.byte	1
+ 1461 0598 E0       		.byte	-32
+ 1462 0599 40       		.byte	64
+ 1463 059a E1       		.byte	-31
+ 1464 059b A8       		.byte	-88
+ 1465 059c E2       		.byte	-30
+ 1466 059d 40       		.byte	64
+ 1467 059e E3       		.byte	-29
+ 1468 059f 20       		.byte	32
+ 1469 05a0 01       		.byte	1
+ 1470 05a1 80       		.byte	-128
+ 1471 05a2 05       		.byte	5
+ 1472 05a3 80       		.byte	-128
+ 1473 05a4 07       		.byte	7
+ 1474 05a5 28       		.byte	40
+ 1475 05a6 0D       		.byte	13
+ 1476 05a7 20       		.byte	32
+ 1477 05a8 0E       		.byte	14
+ 1478 05a9 11       		.byte	17
+ 1479 05aa 15       		.byte	21
+ 1480 05ab 02       		.byte	2
+ 1481 05ac 16       		.byte	22
+ 1482 05ad 01       		.byte	1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 27
 
 
- 1483 05ae E8       		.byte	-24
- 1484 05af 40       		.byte	64
- 1485 05b0 EC       		.byte	-20
- 1486 05b1 40       		.byte	64
- 1487 05b2 31       		.byte	49
- 1488 05b3 08       		.byte	8
- 1489 05b4 33       		.byte	51
- 1490 05b5 80       		.byte	-128
- 1491 05b6 35       		.byte	53
- 1492 05b7 80       		.byte	-128
- 1493 05b8 37       		.byte	55
- 1494 05b9 04       		.byte	4
- 1495 05ba 8D       		.byte	-115
- 1496 05bb 20       		.byte	32
- 1497 05bc CC       		.byte	-52
- 1498 05bd F0       		.byte	-16
- 1499 05be 9D       		.byte	-99
- 1500 05bf 80       		.byte	-128
- 1501 05c0 9F       		.byte	-97
+ 1483 05ae 17       		.byte	23
+ 1484 05af 54       		.byte	84
+ 1485 05b0 1A       		.byte	26
+ 1486 05b1 01       		.byte	1
+ 1487 05b2 1C       		.byte	28
+ 1488 05b3 40       		.byte	64
+ 1489 05b4 1D       		.byte	29
+ 1490 05b5 20       		.byte	32
+ 1491 05b6 1E       		.byte	30
+ 1492 05b7 10       		.byte	16
+ 1493 05b8 1F       		.byte	31
+ 1494 05b9 54       		.byte	84
+ 1495 05ba 20       		.byte	32
+ 1496 05bb 80       		.byte	-128
+ 1497 05bc 21       		.byte	33
+ 1498 05bd 01       		.byte	1
+ 1499 05be 22       		.byte	34
+ 1500 05bf 01       		.byte	1
+ 1501 05c0 23       		.byte	35
  1502 05c1 04       		.byte	4
- 1503 05c2 A1       		.byte	-95
- 1504 05c3 20       		.byte	32
- 1505 05c4 A5       		.byte	-91
- 1506 05c5 08       		.byte	8
- 1507 05c6 A7       		.byte	-89
- 1508 05c7 80       		.byte	-128
- 1509 05c8 01       		.byte	1
- 1510 05c9 04       		.byte	4
- 1511 05ca 50       		.byte	80
- 1512 05cb 40       		.byte	64
- 1513 05cc 58       		.byte	88
- 1514 05cd 08       		.byte	8
- 1515 05ce 5C       		.byte	92
+ 1503 05c2 26       		.byte	38
+ 1504 05c3 01       		.byte	1
+ 1505 05c4 27       		.byte	39
+ 1506 05c5 15       		.byte	21
+ 1507 05c6 2B       		.byte	43
+ 1508 05c7 20       		.byte	32
+ 1509 05c8 2C       		.byte	44
+ 1510 05c9 80       		.byte	-128
+ 1511 05ca 2D       		.byte	45
+ 1512 05cb 80       		.byte	-128
+ 1513 05cc 2F       		.byte	47
+ 1514 05cd 14       		.byte	20
+ 1515 05ce 33       		.byte	51
  1516 05cf 08       		.byte	8
- 1517 05d0 60       		.byte	96
- 1518 05d1 08       		.byte	8
- 1519 05d2 61       		.byte	97
- 1520 05d3 20       		.byte	32
- 1521 05d4 9D       		.byte	-99
- 1522 05d5 80       		.byte	-128
- 1523 05d6 9F       		.byte	-97
- 1524 05d7 04       		.byte	4
- 1525 05d8 A1       		.byte	-95
- 1526 05d9 20       		.byte	32
- 1527 05da A5       		.byte	-91
- 1528 05db 08       		.byte	8
- 1529 05dc A7       		.byte	-89
- 1530 05dd 80       		.byte	-128
- 1531 05de C0       		.byte	-64
- 1532 05df 10       		.byte	16
- 1533 05e0 D4       		.byte	-44
- 1534 05e1 20       		.byte	32
- 1535 05e2 D6       		.byte	-42
- 1536 05e3 C0       		.byte	-64
- 1537 05e4 D8       		.byte	-40
- 1538 05e5 40       		.byte	64
- 1539 05e6 18       		.byte	24
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 28
+ 1517 05d0 37       		.byte	55
+ 1518 05d1 54       		.byte	84
+ 1519 05d2 38       		.byte	56
+ 1520 05d3 02       		.byte	2
+ 1521 05d4 3A       		.byte	58
+ 1522 05d5 10       		.byte	16
+ 1523 05d6 3B       		.byte	59
+ 1524 05d7 80       		.byte	-128
+ 1525 05d8 3C       		.byte	60
+ 1526 05d9 80       		.byte	-128
+ 1527 05da 3E       		.byte	62
+ 1528 05db 28       		.byte	40
+ 1529 05dc 3F       		.byte	63
+ 1530 05dd 01       		.byte	1
+ 1531 05de 4E       		.byte	78
+ 1532 05df 08       		.byte	8
+ 1533 05e0 56       		.byte	86
+ 1534 05e1 04       		.byte	4
+ 1535 05e2 57       		.byte	87
+ 1536 05e3 01       		.byte	1
+ 1537 05e4 5B       		.byte	91
+ 1538 05e5 01       		.byte	1
+ 1539 05e6 5E       		.byte	94
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 28
 
 
- 1540 05e7 11       		.byte	17
- 1541 05e8 1D       		.byte	29
+ 1540 05e7 02       		.byte	2
+ 1541 05e8 60       		.byte	96
  1542 05e9 01       		.byte	1
- 1543 05ea 83       		.byte	-125
- 1544 05eb 04       		.byte	4
- 1545 05ec 91       		.byte	-111
- 1546 05ed 04       		.byte	4
- 1547 05ee 9D       		.byte	-99
- 1548 05ef 80       		.byte	-128
- 1549 05f0 9F       		.byte	-97
- 1550 05f1 04       		.byte	4
- 1551 05f2 A5       		.byte	-91
- 1552 05f3 08       		.byte	8
- 1553 05f4 A7       		.byte	-89
- 1554 05f5 80       		.byte	-128
- 1555 05f6 B4       		.byte	-76
- 1556 05f7 40       		.byte	64
- 1557 05f8 C6       		.byte	-58
- 1558 05f9 70       		.byte	112
- 1559 05fa E2       		.byte	-30
- 1560 05fb 80       		.byte	-128
- 1561 05fc 50       		.byte	80
- 1562 05fd 04       		.byte	4
- 1563 05fe 61       		.byte	97
+ 1543 05ea 63       		.byte	99
+ 1544 05eb 44       		.byte	68
+ 1545 05ec 6C       		.byte	108
+ 1546 05ed 01       		.byte	1
+ 1547 05ee 6F       		.byte	111
+ 1548 05ef 28       		.byte	40
+ 1549 05f0 76       		.byte	118
+ 1550 05f1 29       		.byte	41
+ 1551 05f2 77       		.byte	119
+ 1552 05f3 28       		.byte	40
+ 1553 05f4 87       		.byte	-121
+ 1554 05f5 40       		.byte	64
+ 1555 05f6 89       		.byte	-119
+ 1556 05f7 80       		.byte	-128
+ 1557 05f8 90       		.byte	-112
+ 1558 05f9 01       		.byte	1
+ 1559 05fa 93       		.byte	-109
+ 1560 05fb 01       		.byte	1
+ 1561 05fc 94       		.byte	-108
+ 1562 05fd 40       		.byte	64
+ 1563 05fe 96       		.byte	-106
  1564 05ff 02       		.byte	2
- 1565 0600 D4       		.byte	-44
- 1566 0601 04       		.byte	4
- 1567 0602 D8       		.byte	-40
- 1568 0603 02       		.byte	2
- 1569 0604 94       		.byte	-108
- 1570 0605 08       		.byte	8
- 1571 0606 A5       		.byte	-91
- 1572 0607 02       		.byte	2
- 1573 0608 94       		.byte	-108
- 1574 0609 08       		.byte	8
- 1575 060a A5       		.byte	-91
- 1576 060b 02       		.byte	2
- 1577 060c 85       		.byte	-123
- 1578 060d 80       		.byte	-128
- 1579 060e 9D       		.byte	-99
- 1580 060f 80       		.byte	-128
- 1581 0610 A5       		.byte	-91
- 1582 0611 08       		.byte	8
- 1583 0612 AB       		.byte	-85
- 1584 0613 80       		.byte	-128
- 1585 0614 B1       		.byte	-79
- 1586 0615 04       		.byte	4
- 1587 0616 B4       		.byte	-76
- 1588 0617 11       		.byte	17
- 1589 0618 B5       		.byte	-75
- 1590 0619 01       		.byte	1
- 1591 061a E2       		.byte	-30
- 1592 061b 10       		.byte	16
- 1593 061c EE       		.byte	-18
- 1594 061d 20       		.byte	32
- 1595 061e 71       		.byte	113
- 1596 061f 04       		.byte	4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 29
+ 1565 0600 9A       		.byte	-102
+ 1566 0601 10       		.byte	16
+ 1567 0602 9D       		.byte	-99
+ 1568 0603 80       		.byte	-128
+ 1569 0604 9E       		.byte	-98
+ 1570 0605 04       		.byte	4
+ 1571 0606 9F       		.byte	-97
+ 1572 0607 04       		.byte	4
+ 1573 0608 A0       		.byte	-96
+ 1574 0609 80       		.byte	-128
+ 1575 060a A2       		.byte	-94
+ 1576 060b 08       		.byte	8
+ 1577 060c A5       		.byte	-91
+ 1578 060d 20       		.byte	32
+ 1579 060e A7       		.byte	-89
+ 1580 060f 29       		.byte	41
+ 1581 0610 B4       		.byte	-76
+ 1582 0611 04       		.byte	4
+ 1583 0612 B5       		.byte	-75
+ 1584 0613 10       		.byte	16
+ 1585 0614 B7       		.byte	-73
+ 1586 0615 01       		.byte	1
+ 1587 0616 C0       		.byte	-64
+ 1588 0617 E1       		.byte	-31
+ 1589 0618 C2       		.byte	-62
+ 1590 0619 E0       		.byte	-32
+ 1591 061a C4       		.byte	-60
+ 1592 061b F0       		.byte	-16
+ 1593 061c CA       		.byte	-54
+ 1594 061d F2       		.byte	-14
+ 1595 061e CC       		.byte	-52
+ 1596 061f 72       		.byte	114
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 29
 
 
- 1597 0620 7D       		.byte	125
- 1598 0621 80       		.byte	-128
- 1599 0622 81       		.byte	-127
- 1600 0623 0C       		.byte	12
- 1601 0624 85       		.byte	-123
- 1602 0625 40       		.byte	64
- 1603 0626 A5       		.byte	-91
- 1604 0627 08       		.byte	8
- 1605 0628 DC       		.byte	-36
- 1606 0629 80       		.byte	-128
- 1607 062a DE       		.byte	-34
- 1608 062b 20       		.byte	32
- 1609 062c E2       		.byte	-30
- 1610 062d C0       		.byte	-64
- 1611 062e E6       		.byte	-26
- 1612 062f 80       		.byte	-128
- 1613 0630 54       		.byte	84
- 1614 0631 02       		.byte	2
- 1615 0632 87       		.byte	-121
+ 1597 0620 CE       		.byte	-50
+ 1598 0621 FD       		.byte	-3
+ 1599 0622 D2       		.byte	-46
+ 1600 0623 20       		.byte	32
+ 1601 0624 D6       		.byte	-42
+ 1602 0625 81       		.byte	-127
+ 1603 0626 D8       		.byte	-40
+ 1604 0627 0D       		.byte	13
+ 1605 0628 31       		.byte	49
+ 1606 0629 20       		.byte	32
+ 1607 062a 33       		.byte	51
+ 1608 062b 08       		.byte	8
+ 1609 062c 35       		.byte	53
+ 1610 062d 80       		.byte	-128
+ 1611 062e 37       		.byte	55
+ 1612 062f 08       		.byte	8
+ 1613 0630 3E       		.byte	62
+ 1614 0631 20       		.byte	32
+ 1615 0632 85       		.byte	-123
  1616 0633 80       		.byte	-128
- 1617 0634 A0       		.byte	-96
- 1618 0635 02       		.byte	2
- 1619 0636 B4       		.byte	-76
- 1620 0637 06       		.byte	6
- 1621 0638 B5       		.byte	-75
- 1622 0639 02       		.byte	2
- 1623 063a D6       		.byte	-42
+ 1617 0634 CC       		.byte	-52
+ 1618 0635 F0       		.byte	-16
+ 1619 0636 CE       		.byte	-50
+ 1620 0637 20       		.byte	32
+ 1621 0638 E2       		.byte	-30
+ 1622 0639 10       		.byte	16
+ 1623 063a 53       		.byte	83
  1624 063b 04       		.byte	4
- 1625 063c E8       		.byte	-24
- 1626 063d 08       		.byte	8
- 1627 063e EC       		.byte	-20
- 1628 063f 0A       		.byte	10
- 1629 0640 12       		.byte	18
- 1630 0641 80       		.byte	-128
- 1631 0642 77       		.byte	119
- 1632 0643 80       		.byte	-128
- 1633 0644 8E       		.byte	-114
- 1634 0645 80       		.byte	-128
- 1635 0646 9B       		.byte	-101
- 1636 0647 80       		.byte	-128
- 1637 0648 C4       		.byte	-60
- 1638 0649 08       		.byte	8
- 1639 064a DE       		.byte	-34
- 1640 064b 04       		.byte	4
- 1641 064c E2       		.byte	-30
+ 1625 063c 9E       		.byte	-98
+ 1626 063d 20       		.byte	32
+ 1627 063e 9F       		.byte	-97
+ 1628 063f 08       		.byte	8
+ 1629 0640 A5       		.byte	-91
+ 1630 0641 20       		.byte	32
+ 1631 0642 A7       		.byte	-89
+ 1632 0643 08       		.byte	8
+ 1633 0644 D4       		.byte	-44
+ 1634 0645 20       		.byte	32
+ 1635 0646 01       		.byte	1
+ 1636 0647 04       		.byte	4
+ 1637 0648 53       		.byte	83
+ 1638 0649 40       		.byte	64
+ 1639 064a 58       		.byte	88
+ 1640 064b 02       		.byte	2
+ 1641 064c 5C       		.byte	92
  1642 064d 02       		.byte	2
- 1643 064e 00       		.byte	0
- 1644 064f 03       		.byte	3
- 1645 0650 0C       		.byte	12
- 1646 0651 03       		.byte	3
- 1647 0652 10       		.byte	16
- 1648 0653 03       		.byte	3
- 1649 0654 1A       		.byte	26
- 1650 0655 01       		.byte	1
- 1651 0656 1C       		.byte	28
- 1652 0657 03       		.byte	3
- 1653 0658 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 30
+ 1643 064e 60       		.byte	96
+ 1644 064f 10       		.byte	16
+ 1645 0650 89       		.byte	-119
+ 1646 0651 04       		.byte	4
+ 1647 0652 8D       		.byte	-115
+ 1648 0653 20       		.byte	32
+ 1649 0654 97       		.byte	-105
+ 1650 0655 08       		.byte	8
+ 1651 0656 9E       		.byte	-98
+ 1652 0657 20       		.byte	32
+ 1653 0658 9F       		.byte	-97
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 30
 
 
- 1654 0659 FF       		.byte	-1
- 1655 065a 00       		.byte	0
- 1656 065b 00       		.byte	0
- 1657 065c 88       		.byte	-120
- 1658 065d 81       		.byte	-127
- 1659 065e 00       		.byte	0
- 1660 065f 00       		.byte	0
- 1661 0660 40       		.byte	64
- 1662 0661 00       		.byte	0
- 1663 0662 00       		.byte	0
- 1664 0663 00       		.byte	0
- 1665 0664 00       		.byte	0
- 1666 0665 00       		.byte	0
- 1667 0666 03       		.byte	3
- 1668 0667 00       		.byte	0
- 1669 0668 00       		.byte	0
- 1670 0669 00       		.byte	0
- 1671 066a 00       		.byte	0
- 1672 066b 00       		.byte	0
- 1673 066c 80       		.byte	-128
- 1674 066d 00       		.byte	0
- 1675 066e 44       		.byte	68
- 1676 066f 8B       		.byte	-117
- 1677 0670 8B       		.byte	-117
- 1678 0671 00       		.byte	0
- 1679 0672 8B       		.byte	-117
- 1680 0673 00       		.byte	0
- 1681 0674 00       		.byte	0
- 1682 0675 00       		.byte	0
- 1683 0676 00       		.byte	0
- 1684 0677 00       		.byte	0
- 1685 0678 00       		.byte	0
- 1686 0679 0F       		.byte	15
- 1687 067a 4F       		.byte	79
- 1688 067b 00       		.byte	0
- 1689 067c 04       		.byte	4
- 1690 067d 00       		.byte	0
- 1691 067e 00       		.byte	0
- 1692 067f 00       		.byte	0
- 1693 0680 00       		.byte	0
- 1694 0681 82       		.byte	-126
- 1695 0682 86       		.byte	-122
- 1696 0683 00       		.byte	0
- 1697 0684 82       		.byte	-126
- 1698 0685 00       		.byte	0
- 1699 0686 00       		.byte	0
- 1700 0687 00       		.byte	0
- 1701              		.section	.cywolatch,"a",%progbits
- 1702              		.align	2
- 1703              		.type	cy_meta_wonvl, %object
- 1704              		.size	cy_meta_wonvl, 4
- 1705              	cy_meta_wonvl:
- 1706 0000 BC       		.byte	-68
- 1707 0001 90       		.byte	-112
- 1708 0002 AC       		.byte	-84
- 1709 0003 AF       		.byte	-81
- 1710              		.section	.cycustnvl,"a",%progbits
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 31
+ 1654 0659 08       		.byte	8
+ 1655 065a A5       		.byte	-91
+ 1656 065b 20       		.byte	32
+ 1657 065c A7       		.byte	-89
+ 1658 065d 08       		.byte	8
+ 1659 065e C0       		.byte	-64
+ 1660 065f 10       		.byte	16
+ 1661 0660 D4       		.byte	-44
+ 1662 0661 20       		.byte	32
+ 1663 0662 D6       		.byte	-42
+ 1664 0663 C0       		.byte	-64
+ 1665 0664 D8       		.byte	-40
+ 1666 0665 40       		.byte	64
+ 1667 0666 1A       		.byte	26
+ 1668 0667 10       		.byte	16
+ 1669 0668 1B       		.byte	27
+ 1670 0669 80       		.byte	-128
+ 1671 066a 1F       		.byte	31
+ 1672 066b 04       		.byte	4
+ 1673 066c 96       		.byte	-106
+ 1674 066d 10       		.byte	16
+ 1675 066e 97       		.byte	-105
+ 1676 066f 08       		.byte	8
+ 1677 0670 9E       		.byte	-98
+ 1678 0671 20       		.byte	32
+ 1679 0672 9F       		.byte	-97
+ 1680 0673 08       		.byte	8
+ 1681 0674 A7       		.byte	-89
+ 1682 0675 08       		.byte	8
+ 1683 0676 A8       		.byte	-88
+ 1684 0677 12       		.byte	18
+ 1685 0678 AA       		.byte	-86
+ 1686 0679 10       		.byte	16
+ 1687 067a B3       		.byte	-77
+ 1688 067b 40       		.byte	64
+ 1689 067c C6       		.byte	-58
+ 1690 067d 70       		.byte	112
+ 1691 067e E8       		.byte	-24
+ 1692 067f 80       		.byte	-128
+ 1693 0680 EE       		.byte	-18
+ 1694 0681 80       		.byte	-128
+ 1695 0682 72       		.byte	114
+ 1696 0683 80       		.byte	-128
+ 1697 0684 DC       		.byte	-36
+ 1698 0685 01       		.byte	1
+ 1699 0686 52       		.byte	82
+ 1700 0687 02       		.byte	2
+ 1701 0688 54       		.byte	84
+ 1702 0689 08       		.byte	8
+ 1703 068a 5D       		.byte	93
+ 1704 068b 02       		.byte	2
+ 1705 068c 9E       		.byte	-98
+ 1706 068d 80       		.byte	-128
+ 1707 068e D4       		.byte	-44
+ 1708 068f 03       		.byte	3
+ 1709 0690 D6       		.byte	-42
+ 1710 0691 01       		.byte	1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 31
 
 
- 1711              		.align	2
- 1712              		.type	cy_meta_custnvl, %object
- 1713              		.size	cy_meta_custnvl, 4
- 1714              	cy_meta_custnvl:
- 1715 0000 00       		.byte	0
- 1716 0001 00       		.byte	0
- 1717 0002 40       		.byte	64
- 1718 0003 05       		.byte	5
- 1719              		.section	.cymeta,"a",%progbits
- 1720              		.align	2
- 1721              		.type	cy_metadata, %object
- 1722              		.size	cy_metadata, 12
- 1723              	cy_metadata:
- 1724 0000 00       		.byte	0
- 1725 0001 01       		.byte	1
- 1726 0002 2E       		.byte	46
- 1727 0003 16       		.byte	22
- 1728 0004 10       		.byte	16
- 1729 0005 69       		.byte	105
- 1730 0006 00       		.byte	0
- 1731 0007 01       		.byte	1
- 1732 0008 00       		.byte	0
- 1733 0009 00       		.byte	0
- 1734 000a 00       		.byte	0
- 1735 000b 00       		.byte	0
- 1736              		.section	.cyflashprotect,"a",%progbits
- 1737              		.align	2
- 1738              		.type	cy_meta_flashprotect, %object
- 1739              		.size	cy_meta_flashprotect, 256
- 1740              	cy_meta_flashprotect:
- 1741 0000 00000000 		.space	256
- 1741      00000000 
- 1741      00000000 
- 1741      00000000 
- 1741      00000000 
- 1742              		.text
- 1743              	.Letext0:
- 1744              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 1745              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
- 1746              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
- 1747              		.section	.debug_info,"",%progbits
- 1748              	.Ldebug_info0:
- 1749 0000 34010000 		.4byte	0x134
- 1750 0004 0400     		.2byte	0x4
- 1751 0006 00000000 		.4byte	.Ldebug_abbrev0
- 1752 000a 04       		.byte	0x4
- 1753 000b 01       		.uleb128 0x1
- 1754 000c 24000000 		.4byte	.LASF17
- 1755 0010 0C       		.byte	0xc
- 1756 0011 E8010000 		.4byte	.LASF18
- 1757 0015 5F010000 		.4byte	.LASF19
- 1758 0019 00000000 		.4byte	.Ldebug_line0
- 1759 001d 02       		.uleb128 0x2
- 1760 001e 01       		.byte	0x1
- 1761 001f 06       		.byte	0x6
- 1762 0020 DC010000 		.4byte	.LASF0
- 1763 0024 03       		.uleb128 0x3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 32
+ 1711 0692 86       		.byte	-122
+ 1712 0693 02       		.byte	2
+ 1713 0694 8E       		.byte	-114
+ 1714 0695 80       		.byte	-128
+ 1715 0696 9D       		.byte	-99
+ 1716 0697 02       		.byte	2
+ 1717 0698 9E       		.byte	-98
+ 1718 0699 80       		.byte	-128
+ 1719 069a A4       		.byte	-92
+ 1720 069b 08       		.byte	8
+ 1721 069c A6       		.byte	-90
+ 1722 069d 02       		.byte	2
+ 1723 069e E4       		.byte	-28
+ 1724 069f 08       		.byte	8
+ 1725 06a0 80       		.byte	-128
+ 1726 06a1 80       		.byte	-128
+ 1727 06a2 83       		.byte	-125
+ 1728 06a3 01       		.byte	1
+ 1729 06a4 8C       		.byte	-116
+ 1730 06a5 08       		.byte	8
+ 1731 06a6 9D       		.byte	-99
+ 1732 06a7 02       		.byte	2
+ 1733 06a8 A8       		.byte	-88
+ 1734 06a9 08       		.byte	8
+ 1735 06aa E0       		.byte	-32
+ 1736 06ab 02       		.byte	2
+ 1737 06ac 83       		.byte	-125
+ 1738 06ad 08       		.byte	8
+ 1739 06ae 9F       		.byte	-97
+ 1740 06af 08       		.byte	8
+ 1741 06b0 A7       		.byte	-89
+ 1742 06b1 08       		.byte	8
+ 1743 06b2 AB       		.byte	-85
+ 1744 06b3 80       		.byte	-128
+ 1745 06b4 AE       		.byte	-82
+ 1746 06b5 20       		.byte	32
+ 1747 06b6 E2       		.byte	-30
+ 1748 06b7 20       		.byte	32
+ 1749 06b8 EA       		.byte	-22
+ 1750 06b9 10       		.byte	16
+ 1751 06ba EC       		.byte	-20
+ 1752 06bb 20       		.byte	32
+ 1753 06bc 87       		.byte	-121
+ 1754 06bd 08       		.byte	8
+ 1755 06be A7       		.byte	-89
+ 1756 06bf 08       		.byte	8
+ 1757 06c0 E6       		.byte	-26
+ 1758 06c1 40       		.byte	64
+ 1759 06c2 54       		.byte	84
+ 1760 06c3 02       		.byte	2
+ 1761 06c4 5C       		.byte	92
+ 1762 06c5 08       		.byte	8
+ 1763 06c6 63       		.byte	99
+ 1764 06c7 01       		.byte	1
+ 1765 06c8 64       		.byte	100
+ 1766 06c9 80       		.byte	-128
+ 1767 06ca 93       		.byte	-109
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 32
 
 
- 1764 0025 00000000 		.4byte	.LASF9
- 1765 0029 01       		.byte	0x1
- 1766 002a 1D       		.byte	0x1d
- 1767 002b 2F000000 		.4byte	0x2f
- 1768 002f 02       		.uleb128 0x2
- 1769 0030 01       		.byte	0x1
- 1770 0031 08       		.byte	0x8
- 1771 0032 16000000 		.4byte	.LASF1
- 1772 0036 02       		.uleb128 0x2
- 1773 0037 02       		.byte	0x2
- 1774 0038 05       		.byte	0x5
- 1775 0039 C9010000 		.4byte	.LASF2
- 1776 003d 02       		.uleb128 0x2
- 1777 003e 02       		.byte	0x2
- 1778 003f 07       		.byte	0x7
- 1779 0040 C4000000 		.4byte	.LASF3
- 1780 0044 02       		.uleb128 0x2
- 1781 0045 04       		.byte	0x4
- 1782 0046 05       		.byte	0x5
- 1783 0047 D3010000 		.4byte	.LASF4
- 1784 004b 02       		.uleb128 0x2
- 1785 004c 04       		.byte	0x4
- 1786 004d 07       		.byte	0x7
- 1787 004e B2000000 		.4byte	.LASF5
- 1788 0052 02       		.uleb128 0x2
- 1789 0053 08       		.byte	0x8
- 1790 0054 05       		.byte	0x5
- 1791 0055 51010000 		.4byte	.LASF6
- 1792 0059 02       		.uleb128 0x2
- 1793 005a 08       		.byte	0x8
- 1794 005b 07       		.byte	0x7
- 1795 005c 06010000 		.4byte	.LASF7
- 1796 0060 04       		.uleb128 0x4
- 1797 0061 04       		.byte	0x4
- 1798 0062 05       		.byte	0x5
- 1799 0063 696E7400 		.ascii	"int\000"
- 1800 0067 02       		.uleb128 0x2
- 1801 0068 04       		.byte	0x4
- 1802 0069 07       		.byte	0x7
- 1803 006a F9000000 		.4byte	.LASF8
- 1804 006e 03       		.uleb128 0x3
- 1805 006f 1D010000 		.4byte	.LASF10
- 1806 0073 02       		.byte	0x2
- 1807 0074 18       		.byte	0x18
- 1808 0075 24000000 		.4byte	0x24
- 1809 0079 05       		.uleb128 0x5
- 1810 007a 91000000 		.4byte	0x91
- 1811 007e 8A000000 		.4byte	0x8a
- 1812 0082 06       		.uleb128 0x6
- 1813 0083 8A000000 		.4byte	0x8a
- 1814 0087 8706     		.2byte	0x687
- 1815 0089 00       		.byte	0
- 1816 008a 02       		.uleb128 0x2
- 1817 008b 04       		.byte	0x4
- 1818 008c 07       		.byte	0x7
- 1819 008d 48010000 		.4byte	.LASF11
- 1820 0091 07       		.uleb128 0x7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 33
+ 1768 06cb 01       		.byte	1
+ 1769 06cc 98       		.byte	-104
+ 1770 06cd 88       		.byte	-120
+ 1771 06ce A0       		.byte	-96
+ 1772 06cf 02       		.byte	2
+ 1773 06d0 A9       		.byte	-87
+ 1774 06d1 02       		.byte	2
+ 1775 06d2 B4       		.byte	-76
+ 1776 06d3 02       		.byte	2
+ 1777 06d4 D6       		.byte	-42
+ 1778 06d5 07       		.byte	7
+ 1779 06d6 D8       		.byte	-40
+ 1780 06d7 01       		.byte	1
+ 1781 06d8 EC       		.byte	-20
+ 1782 06d9 02       		.byte	2
+ 1783 06da 11       		.byte	17
+ 1784 06db 01       		.byte	1
+ 1785 06dc 7A       		.byte	122
+ 1786 06dd 01       		.byte	1
+ 1787 06de 89       		.byte	-119
+ 1788 06df 01       		.byte	1
+ 1789 06e0 A2       		.byte	-94
+ 1790 06e1 01       		.byte	1
+ 1791 06e2 B6       		.byte	-74
+ 1792 06e3 01       		.byte	1
+ 1793 06e4 C4       		.byte	-60
+ 1794 06e5 08       		.byte	8
+ 1795 06e6 DC       		.byte	-36
+ 1796 06e7 01       		.byte	1
+ 1797 06e8 E6       		.byte	-26
+ 1798 06e9 01       		.byte	1
+ 1799 06ea E8       		.byte	-24
+ 1800 06eb 08       		.byte	8
+ 1801 06ec 00       		.byte	0
+ 1802 06ed 03       		.byte	3
+ 1803 06ee 0C       		.byte	12
+ 1804 06ef 03       		.byte	3
+ 1805 06f0 10       		.byte	16
+ 1806 06f1 05       		.byte	5
+ 1807 06f2 1C       		.byte	28
+ 1808 06f3 05       		.byte	5
+ 1809 06f4 00       		.byte	0
+ 1810 06f5 FF       		.byte	-1
+ 1811 06f6 10       		.byte	16
+ 1812 06f7 02       		.byte	2
+ 1813 06f8 00       		.byte	0
+ 1814 06f9 04       		.byte	4
+ 1815 06fa 0F       		.byte	15
+ 1816 06fb 00       		.byte	0
+ 1817 06fc 04       		.byte	4
+ 1818 06fd 00       		.byte	0
+ 1819 06fe 00       		.byte	0
+ 1820 06ff 00       		.byte	0
+ 1821 0700 80       		.byte	-128
+ 1822 0701 00       		.byte	0
+ 1823 0702 44       		.byte	68
+ 1824 0703 98       		.byte	-104
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 33
 
 
- 1821 0092 6E000000 		.4byte	0x6e
- 1822 0096 08       		.uleb128 0x8
- 1823 0097 E7000000 		.4byte	.LASF12
- 1824 009b 03       		.byte	0x3
- 1825 009c 1F       		.byte	0x1f
- 1826 009d A7000000 		.4byte	0xa7
- 1827 00a1 05       		.uleb128 0x5
- 1828 00a2 03       		.byte	0x3
- 1829 00a3 00000000 		.4byte	cy_meta_configecc
- 1830 00a7 07       		.uleb128 0x7
- 1831 00a8 79000000 		.4byte	0x79
- 1832 00ac 05       		.uleb128 0x5
- 1833 00ad 91000000 		.4byte	0x91
- 1834 00b1 BC000000 		.4byte	0xbc
- 1835 00b5 09       		.uleb128 0x9
- 1836 00b6 8A000000 		.4byte	0x8a
- 1837 00ba 03       		.byte	0x3
- 1838 00bb 00       		.byte	0
- 1839 00bc 08       		.uleb128 0x8
- 1840 00bd D7000000 		.4byte	.LASF13
- 1841 00c1 03       		.byte	0x3
- 1842 00c2 FD       		.byte	0xfd
- 1843 00c3 CD000000 		.4byte	0xcd
- 1844 00c7 05       		.uleb128 0x5
- 1845 00c8 03       		.byte	0x3
- 1846 00c9 00000000 		.4byte	cy_meta_custnvl
- 1847 00cd 07       		.uleb128 0x7
- 1848 00ce AC000000 		.4byte	0xac
- 1849 00d2 0A       		.uleb128 0xa
- 1850 00d3 3A010000 		.4byte	.LASF14
- 1851 00d7 03       		.byte	0x3
- 1852 00d8 0B01     		.2byte	0x10b
- 1853 00da E4000000 		.4byte	0xe4
- 1854 00de 05       		.uleb128 0x5
- 1855 00df 03       		.byte	0x3
- 1856 00e0 00000000 		.4byte	cy_meta_wonvl
- 1857 00e4 07       		.uleb128 0x7
- 1858 00e5 AC000000 		.4byte	0xac
- 1859 00e9 05       		.uleb128 0x5
- 1860 00ea 91000000 		.4byte	0x91
- 1861 00ee F9000000 		.4byte	0xf9
- 1862 00f2 09       		.uleb128 0x9
- 1863 00f3 8A000000 		.4byte	0x8a
- 1864 00f7 FF       		.byte	0xff
- 1865 00f8 00       		.byte	0
- 1866 00f9 0A       		.uleb128 0xa
- 1867 00fa 25010000 		.4byte	.LASF15
- 1868 00fe 03       		.byte	0x3
- 1869 00ff 1901     		.2byte	0x119
- 1870 0101 0B010000 		.4byte	0x10b
- 1871 0105 05       		.uleb128 0x5
- 1872 0106 03       		.byte	0x3
- 1873 0107 00000000 		.4byte	cy_meta_flashprotect
- 1874 010b 07       		.uleb128 0x7
- 1875 010c E9000000 		.4byte	0xe9
- 1876 0110 05       		.uleb128 0x5
- 1877 0111 91000000 		.4byte	0x91
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 34
+ 1825 0704 98       		.byte	-104
+ 1826 0705 00       		.byte	0
+ 1827 0706 98       		.byte	-104
+ 1828 0707 00       		.byte	0
+ 1829 0708 00       		.byte	0
+ 1830 0709 00       		.byte	0
+ 1831 070a 00       		.byte	0
+ 1832 070b 00       		.byte	0
+ 1833 070c 00       		.byte	0
+ 1834 070d 7F       		.byte	127
+ 1835 070e 7F       		.byte	127
+ 1836 070f 00       		.byte	0
+ 1837 0710 74       		.byte	116
+ 1838 0711 00       		.byte	0
+ 1839 0712 00       		.byte	0
+ 1840 0713 00       		.byte	0
+ 1841 0714 00       		.byte	0
+ 1842 0715 8A       		.byte	-118
+ 1843 0716 8E       		.byte	-114
+ 1844 0717 00       		.byte	0
+ 1845 0718 8A       		.byte	-118
+ 1846 0719 00       		.byte	0
+ 1847 071a 00       		.byte	0
+ 1848 071b 00       		.byte	0
+ 1849              		.section	.cywolatch,"a",%progbits
+ 1850              		.align	2
+ 1851              		.type	cy_meta_wonvl, %object
+ 1852              		.size	cy_meta_wonvl, 4
+ 1853              	cy_meta_wonvl:
+ 1854 0000 BC       		.byte	-68
+ 1855 0001 90       		.byte	-112
+ 1856 0002 AC       		.byte	-84
+ 1857 0003 AF       		.byte	-81
+ 1858              		.section	.cycustnvl,"a",%progbits
+ 1859              		.align	2
+ 1860              		.type	cy_meta_custnvl, %object
+ 1861              		.size	cy_meta_custnvl, 4
+ 1862              	cy_meta_custnvl:
+ 1863 0000 00       		.byte	0
+ 1864 0001 00       		.byte	0
+ 1865 0002 40       		.byte	64
+ 1866 0003 05       		.byte	5
+ 1867              		.section	.cymeta,"a",%progbits
+ 1868              		.align	2
+ 1869              		.type	cy_metadata, %object
+ 1870              		.size	cy_metadata, 12
+ 1871              	cy_metadata:
+ 1872 0000 00       		.byte	0
+ 1873 0001 01       		.byte	1
+ 1874 0002 2E       		.byte	46
+ 1875 0003 16       		.byte	22
+ 1876 0004 10       		.byte	16
+ 1877 0005 69       		.byte	105
+ 1878 0006 00       		.byte	0
+ 1879 0007 01       		.byte	1
+ 1880 0008 00       		.byte	0
+ 1881 0009 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 34
 
 
- 1878 0115 20010000 		.4byte	0x120
- 1879 0119 09       		.uleb128 0x9
- 1880 011a 8A000000 		.4byte	0x8a
- 1881 011e 0B       		.byte	0xb
- 1882 011f 00       		.byte	0
- 1883 0120 0A       		.uleb128 0xa
- 1884 0121 0A000000 		.4byte	.LASF16
- 1885 0125 03       		.byte	0x3
- 1886 0126 4601     		.2byte	0x146
- 1887 0128 32010000 		.4byte	0x132
- 1888 012c 05       		.uleb128 0x5
- 1889 012d 03       		.byte	0x3
- 1890 012e 00000000 		.4byte	cy_metadata
- 1891 0132 07       		.uleb128 0x7
- 1892 0133 10010000 		.4byte	0x110
- 1893 0137 00       		.byte	0
- 1894              		.section	.debug_abbrev,"",%progbits
- 1895              	.Ldebug_abbrev0:
- 1896 0000 01       		.uleb128 0x1
- 1897 0001 11       		.uleb128 0x11
- 1898 0002 01       		.byte	0x1
- 1899 0003 25       		.uleb128 0x25
- 1900 0004 0E       		.uleb128 0xe
- 1901 0005 13       		.uleb128 0x13
- 1902 0006 0B       		.uleb128 0xb
- 1903 0007 03       		.uleb128 0x3
- 1904 0008 0E       		.uleb128 0xe
- 1905 0009 1B       		.uleb128 0x1b
- 1906 000a 0E       		.uleb128 0xe
- 1907 000b 10       		.uleb128 0x10
- 1908 000c 17       		.uleb128 0x17
- 1909 000d 00       		.byte	0
- 1910 000e 00       		.byte	0
- 1911 000f 02       		.uleb128 0x2
- 1912 0010 24       		.uleb128 0x24
- 1913 0011 00       		.byte	0
- 1914 0012 0B       		.uleb128 0xb
- 1915 0013 0B       		.uleb128 0xb
- 1916 0014 3E       		.uleb128 0x3e
- 1917 0015 0B       		.uleb128 0xb
- 1918 0016 03       		.uleb128 0x3
- 1919 0017 0E       		.uleb128 0xe
- 1920 0018 00       		.byte	0
- 1921 0019 00       		.byte	0
- 1922 001a 03       		.uleb128 0x3
- 1923 001b 16       		.uleb128 0x16
- 1924 001c 00       		.byte	0
- 1925 001d 03       		.uleb128 0x3
- 1926 001e 0E       		.uleb128 0xe
- 1927 001f 3A       		.uleb128 0x3a
- 1928 0020 0B       		.uleb128 0xb
- 1929 0021 3B       		.uleb128 0x3b
- 1930 0022 0B       		.uleb128 0xb
- 1931 0023 49       		.uleb128 0x49
- 1932 0024 13       		.uleb128 0x13
- 1933 0025 00       		.byte	0
- 1934 0026 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 35
+ 1882 000a 00       		.byte	0
+ 1883 000b 00       		.byte	0
+ 1884              		.section	.cyflashprotect,"a",%progbits
+ 1885              		.align	2
+ 1886              		.type	cy_meta_flashprotect, %object
+ 1887              		.size	cy_meta_flashprotect, 256
+ 1888              	cy_meta_flashprotect:
+ 1889 0000 00000000 		.space	256
+ 1889      00000000 
+ 1889      00000000 
+ 1889      00000000 
+ 1889      00000000 
+ 1890              		.text
+ 1891              	.Letext0:
+ 1892              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1893              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1894              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 1895              		.section	.debug_info,"",%progbits
+ 1896              	.Ldebug_info0:
+ 1897 0000 35010000 		.4byte	0x135
+ 1898 0004 0400     		.2byte	0x4
+ 1899 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1900 000a 04       		.byte	0x4
+ 1901 000b 01       		.uleb128 0x1
+ 1902 000c 24000000 		.4byte	.LASF17
+ 1903 0010 0C       		.byte	0xc
+ 1904 0011 F3010000 		.4byte	.LASF18
+ 1905 0015 69010000 		.4byte	.LASF19
+ 1906 0019 00000000 		.4byte	.Ldebug_line0
+ 1907 001d 02       		.uleb128 0x2
+ 1908 001e 01       		.byte	0x1
+ 1909 001f 06       		.byte	0x6
+ 1910 0020 E7010000 		.4byte	.LASF0
+ 1911 0024 03       		.uleb128 0x3
+ 1912 0025 00000000 		.4byte	.LASF9
+ 1913 0029 01       		.byte	0x1
+ 1914 002a 1D       		.byte	0x1d
+ 1915 002b 2F000000 		.4byte	0x2f
+ 1916 002f 02       		.uleb128 0x2
+ 1917 0030 01       		.byte	0x1
+ 1918 0031 08       		.byte	0x8
+ 1919 0032 16000000 		.4byte	.LASF1
+ 1920 0036 02       		.uleb128 0x2
+ 1921 0037 02       		.byte	0x2
+ 1922 0038 05       		.byte	0x5
+ 1923 0039 5F010000 		.4byte	.LASF2
+ 1924 003d 02       		.uleb128 0x2
+ 1925 003e 02       		.byte	0x2
+ 1926 003f 07       		.byte	0x7
+ 1927 0040 C4000000 		.4byte	.LASF3
+ 1928 0044 02       		.uleb128 0x2
+ 1929 0045 04       		.byte	0x4
+ 1930 0046 05       		.byte	0x5
+ 1931 0047 DE010000 		.4byte	.LASF4
+ 1932 004b 02       		.uleb128 0x2
+ 1933 004c 04       		.byte	0x4
+ 1934 004d 07       		.byte	0x7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 35
 
 
- 1935 0027 04       		.uleb128 0x4
- 1936 0028 24       		.uleb128 0x24
- 1937 0029 00       		.byte	0
- 1938 002a 0B       		.uleb128 0xb
- 1939 002b 0B       		.uleb128 0xb
- 1940 002c 3E       		.uleb128 0x3e
- 1941 002d 0B       		.uleb128 0xb
- 1942 002e 03       		.uleb128 0x3
- 1943 002f 08       		.uleb128 0x8
- 1944 0030 00       		.byte	0
- 1945 0031 00       		.byte	0
- 1946 0032 05       		.uleb128 0x5
- 1947 0033 01       		.uleb128 0x1
- 1948 0034 01       		.byte	0x1
- 1949 0035 49       		.uleb128 0x49
- 1950 0036 13       		.uleb128 0x13
- 1951 0037 01       		.uleb128 0x1
- 1952 0038 13       		.uleb128 0x13
- 1953 0039 00       		.byte	0
- 1954 003a 00       		.byte	0
- 1955 003b 06       		.uleb128 0x6
- 1956 003c 21       		.uleb128 0x21
- 1957 003d 00       		.byte	0
- 1958 003e 49       		.uleb128 0x49
- 1959 003f 13       		.uleb128 0x13
- 1960 0040 2F       		.uleb128 0x2f
- 1961 0041 05       		.uleb128 0x5
- 1962 0042 00       		.byte	0
- 1963 0043 00       		.byte	0
- 1964 0044 07       		.uleb128 0x7
- 1965 0045 26       		.uleb128 0x26
- 1966 0046 00       		.byte	0
- 1967 0047 49       		.uleb128 0x49
- 1968 0048 13       		.uleb128 0x13
- 1969 0049 00       		.byte	0
- 1970 004a 00       		.byte	0
- 1971 004b 08       		.uleb128 0x8
- 1972 004c 34       		.uleb128 0x34
- 1973 004d 00       		.byte	0
- 1974 004e 03       		.uleb128 0x3
- 1975 004f 0E       		.uleb128 0xe
- 1976 0050 3A       		.uleb128 0x3a
- 1977 0051 0B       		.uleb128 0xb
- 1978 0052 3B       		.uleb128 0x3b
- 1979 0053 0B       		.uleb128 0xb
- 1980 0054 49       		.uleb128 0x49
- 1981 0055 13       		.uleb128 0x13
- 1982 0056 3F       		.uleb128 0x3f
- 1983 0057 19       		.uleb128 0x19
- 1984 0058 02       		.uleb128 0x2
- 1985 0059 18       		.uleb128 0x18
- 1986 005a 00       		.byte	0
- 1987 005b 00       		.byte	0
- 1988 005c 09       		.uleb128 0x9
- 1989 005d 21       		.uleb128 0x21
- 1990 005e 00       		.byte	0
- 1991 005f 49       		.uleb128 0x49
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 36
+ 1935 004e B2000000 		.4byte	.LASF5
+ 1936 0052 02       		.uleb128 0x2
+ 1937 0053 08       		.byte	0x8
+ 1938 0054 05       		.byte	0x5
+ 1939 0055 51010000 		.4byte	.LASF6
+ 1940 0059 02       		.uleb128 0x2
+ 1941 005a 08       		.byte	0x8
+ 1942 005b 07       		.byte	0x7
+ 1943 005c 06010000 		.4byte	.LASF7
+ 1944 0060 04       		.uleb128 0x4
+ 1945 0061 04       		.byte	0x4
+ 1946 0062 05       		.byte	0x5
+ 1947 0063 696E7400 		.ascii	"int\000"
+ 1948 0067 02       		.uleb128 0x2
+ 1949 0068 04       		.byte	0x4
+ 1950 0069 07       		.byte	0x7
+ 1951 006a F9000000 		.4byte	.LASF8
+ 1952 006e 03       		.uleb128 0x3
+ 1953 006f 1D010000 		.4byte	.LASF10
+ 1954 0073 02       		.byte	0x2
+ 1955 0074 18       		.byte	0x18
+ 1956 0075 24000000 		.4byte	0x24
+ 1957 0079 05       		.uleb128 0x5
+ 1958 007a 91000000 		.4byte	0x91
+ 1959 007e 8A000000 		.4byte	0x8a
+ 1960 0082 06       		.uleb128 0x6
+ 1961 0083 8A000000 		.4byte	0x8a
+ 1962 0087 1B07     		.2byte	0x71b
+ 1963 0089 00       		.byte	0
+ 1964 008a 02       		.uleb128 0x2
+ 1965 008b 04       		.byte	0x4
+ 1966 008c 07       		.byte	0x7
+ 1967 008d 48010000 		.4byte	.LASF11
+ 1968 0091 07       		.uleb128 0x7
+ 1969 0092 6E000000 		.4byte	0x6e
+ 1970 0096 08       		.uleb128 0x8
+ 1971 0097 E7000000 		.4byte	.LASF12
+ 1972 009b 03       		.byte	0x3
+ 1973 009c 1F       		.byte	0x1f
+ 1974 009d A7000000 		.4byte	0xa7
+ 1975 00a1 05       		.uleb128 0x5
+ 1976 00a2 03       		.byte	0x3
+ 1977 00a3 00000000 		.4byte	cy_meta_configecc
+ 1978 00a7 07       		.uleb128 0x7
+ 1979 00a8 79000000 		.4byte	0x79
+ 1980 00ac 05       		.uleb128 0x5
+ 1981 00ad 91000000 		.4byte	0x91
+ 1982 00b1 BC000000 		.4byte	0xbc
+ 1983 00b5 09       		.uleb128 0x9
+ 1984 00b6 8A000000 		.4byte	0x8a
+ 1985 00ba 03       		.byte	0x3
+ 1986 00bb 00       		.byte	0
+ 1987 00bc 0A       		.uleb128 0xa
+ 1988 00bd D7000000 		.4byte	.LASF13
+ 1989 00c1 03       		.byte	0x3
+ 1990 00c2 1001     		.2byte	0x110
+ 1991 00c4 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 36
 
 
- 1992 0060 13       		.uleb128 0x13
- 1993 0061 2F       		.uleb128 0x2f
- 1994 0062 0B       		.uleb128 0xb
- 1995 0063 00       		.byte	0
- 1996 0064 00       		.byte	0
- 1997 0065 0A       		.uleb128 0xa
- 1998 0066 34       		.uleb128 0x34
- 1999 0067 00       		.byte	0
- 2000 0068 03       		.uleb128 0x3
- 2001 0069 0E       		.uleb128 0xe
- 2002 006a 3A       		.uleb128 0x3a
- 2003 006b 0B       		.uleb128 0xb
- 2004 006c 3B       		.uleb128 0x3b
- 2005 006d 05       		.uleb128 0x5
- 2006 006e 49       		.uleb128 0x49
- 2007 006f 13       		.uleb128 0x13
- 2008 0070 3F       		.uleb128 0x3f
- 2009 0071 19       		.uleb128 0x19
- 2010 0072 02       		.uleb128 0x2
- 2011 0073 18       		.uleb128 0x18
- 2012 0074 00       		.byte	0
- 2013 0075 00       		.byte	0
- 2014 0076 00       		.byte	0
- 2015              		.section	.debug_aranges,"",%progbits
- 2016 0000 14000000 		.4byte	0x14
- 2017 0004 0200     		.2byte	0x2
- 2018 0006 00000000 		.4byte	.Ldebug_info0
- 2019 000a 04       		.byte	0x4
- 2020 000b 00       		.byte	0
- 2021 000c 0000     		.2byte	0
- 2022 000e 0000     		.2byte	0
- 2023 0010 00000000 		.4byte	0
- 2024 0014 00000000 		.4byte	0
- 2025              		.section	.debug_line,"",%progbits
- 2026              	.Ldebug_line0:
- 2027 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 2027      02003701 
- 2027      00000201 
- 2027      FB0E0D00 
- 2027      01010101 
- 2028              	.LASF9:
- 2029 0000 5F5F7569 		.ascii	"__uint8_t\000"
- 2029      6E74385F 
- 2029      7400
- 2030              	.LASF16:
- 2031 000a 63795F6D 		.ascii	"cy_metadata\000"
- 2031      65746164 
- 2031      61746100 
- 2032              	.LASF1:
- 2033 0016 756E7369 		.ascii	"unsigned char\000"
- 2033      676E6564 
- 2033      20636861 
- 2033      7200
- 2034              	.LASF17:
- 2035 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2035      43313120 
- 2035      352E342E 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 37
+ 1992 00c8 05       		.uleb128 0x5
+ 1993 00c9 03       		.byte	0x3
+ 1994 00ca 00000000 		.4byte	cy_meta_custnvl
+ 1995 00ce 07       		.uleb128 0x7
+ 1996 00cf AC000000 		.4byte	0xac
+ 1997 00d3 0A       		.uleb128 0xa
+ 1998 00d4 3A010000 		.4byte	.LASF14
+ 1999 00d8 03       		.byte	0x3
+ 2000 00d9 1E01     		.2byte	0x11e
+ 2001 00db E5000000 		.4byte	0xe5
+ 2002 00df 05       		.uleb128 0x5
+ 2003 00e0 03       		.byte	0x3
+ 2004 00e1 00000000 		.4byte	cy_meta_wonvl
+ 2005 00e5 07       		.uleb128 0x7
+ 2006 00e6 AC000000 		.4byte	0xac
+ 2007 00ea 05       		.uleb128 0x5
+ 2008 00eb 91000000 		.4byte	0x91
+ 2009 00ef FA000000 		.4byte	0xfa
+ 2010 00f3 09       		.uleb128 0x9
+ 2011 00f4 8A000000 		.4byte	0x8a
+ 2012 00f8 FF       		.byte	0xff
+ 2013 00f9 00       		.byte	0
+ 2014 00fa 0A       		.uleb128 0xa
+ 2015 00fb 25010000 		.4byte	.LASF15
+ 2016 00ff 03       		.byte	0x3
+ 2017 0100 2C01     		.2byte	0x12c
+ 2018 0102 0C010000 		.4byte	0x10c
+ 2019 0106 05       		.uleb128 0x5
+ 2020 0107 03       		.byte	0x3
+ 2021 0108 00000000 		.4byte	cy_meta_flashprotect
+ 2022 010c 07       		.uleb128 0x7
+ 2023 010d EA000000 		.4byte	0xea
+ 2024 0111 05       		.uleb128 0x5
+ 2025 0112 91000000 		.4byte	0x91
+ 2026 0116 21010000 		.4byte	0x121
+ 2027 011a 09       		.uleb128 0x9
+ 2028 011b 8A000000 		.4byte	0x8a
+ 2029 011f 0B       		.byte	0xb
+ 2030 0120 00       		.byte	0
+ 2031 0121 0A       		.uleb128 0xa
+ 2032 0122 0A000000 		.4byte	.LASF16
+ 2033 0126 03       		.byte	0x3
+ 2034 0127 5901     		.2byte	0x159
+ 2035 0129 33010000 		.4byte	0x133
+ 2036 012d 05       		.uleb128 0x5
+ 2037 012e 03       		.byte	0x3
+ 2038 012f 00000000 		.4byte	cy_metadata
+ 2039 0133 07       		.uleb128 0x7
+ 2040 0134 11010000 		.4byte	0x111
+ 2041 0138 00       		.byte	0
+ 2042              		.section	.debug_abbrev,"",%progbits
+ 2043              	.Ldebug_abbrev0:
+ 2044 0000 01       		.uleb128 0x1
+ 2045 0001 11       		.uleb128 0x11
+ 2046 0002 01       		.byte	0x1
+ 2047 0003 25       		.uleb128 0x25
+ 2048 0004 0E       		.uleb128 0xe
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 37
 
 
- 2035      31203230 
- 2035      31363036 
- 2036 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 2036      20726576 
- 2036      6973696F 
- 2036      6E203233 
- 2036      37373135 
- 2037 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2037      66756E63 
- 2037      74696F6E 
- 2037      2D736563 
- 2037      74696F6E 
- 2038              	.LASF5:
- 2039 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
- 2039      20756E73 
- 2039      69676E65 
- 2039      6420696E 
- 2039      7400
- 2040              	.LASF3:
- 2041 00c4 73686F72 		.ascii	"short unsigned int\000"
- 2041      7420756E 
- 2041      7369676E 
- 2041      65642069 
- 2041      6E7400
- 2042              	.LASF13:
- 2043 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 2043      6574615F 
- 2043      63757374 
- 2043      6E766C00 
- 2044              	.LASF12:
- 2045 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
- 2045      6574615F 
- 2045      636F6E66 
- 2045      69676563 
- 2045      6300
- 2046              	.LASF8:
- 2047 00f9 756E7369 		.ascii	"unsigned int\000"
- 2047      676E6564 
- 2047      20696E74 
- 2047      00
- 2048              	.LASF7:
- 2049 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2049      206C6F6E 
- 2049      6720756E 
- 2049      7369676E 
- 2049      65642069 
- 2050              	.LASF10:
- 2051 011d 75696E74 		.ascii	"uint8_t\000"
- 2051      385F7400 
- 2052              	.LASF15:
- 2053 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 2053      6574615F 
- 2053      666C6173 
- 2053      6870726F 
- 2053      74656374 
- 2054              	.LASF14:
- 2055 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccjANxUp.s 			page 38
+ 2049 0005 13       		.uleb128 0x13
+ 2050 0006 0B       		.uleb128 0xb
+ 2051 0007 03       		.uleb128 0x3
+ 2052 0008 0E       		.uleb128 0xe
+ 2053 0009 1B       		.uleb128 0x1b
+ 2054 000a 0E       		.uleb128 0xe
+ 2055 000b 10       		.uleb128 0x10
+ 2056 000c 17       		.uleb128 0x17
+ 2057 000d 00       		.byte	0
+ 2058 000e 00       		.byte	0
+ 2059 000f 02       		.uleb128 0x2
+ 2060 0010 24       		.uleb128 0x24
+ 2061 0011 00       		.byte	0
+ 2062 0012 0B       		.uleb128 0xb
+ 2063 0013 0B       		.uleb128 0xb
+ 2064 0014 3E       		.uleb128 0x3e
+ 2065 0015 0B       		.uleb128 0xb
+ 2066 0016 03       		.uleb128 0x3
+ 2067 0017 0E       		.uleb128 0xe
+ 2068 0018 00       		.byte	0
+ 2069 0019 00       		.byte	0
+ 2070 001a 03       		.uleb128 0x3
+ 2071 001b 16       		.uleb128 0x16
+ 2072 001c 00       		.byte	0
+ 2073 001d 03       		.uleb128 0x3
+ 2074 001e 0E       		.uleb128 0xe
+ 2075 001f 3A       		.uleb128 0x3a
+ 2076 0020 0B       		.uleb128 0xb
+ 2077 0021 3B       		.uleb128 0x3b
+ 2078 0022 0B       		.uleb128 0xb
+ 2079 0023 49       		.uleb128 0x49
+ 2080 0024 13       		.uleb128 0x13
+ 2081 0025 00       		.byte	0
+ 2082 0026 00       		.byte	0
+ 2083 0027 04       		.uleb128 0x4
+ 2084 0028 24       		.uleb128 0x24
+ 2085 0029 00       		.byte	0
+ 2086 002a 0B       		.uleb128 0xb
+ 2087 002b 0B       		.uleb128 0xb
+ 2088 002c 3E       		.uleb128 0x3e
+ 2089 002d 0B       		.uleb128 0xb
+ 2090 002e 03       		.uleb128 0x3
+ 2091 002f 08       		.uleb128 0x8
+ 2092 0030 00       		.byte	0
+ 2093 0031 00       		.byte	0
+ 2094 0032 05       		.uleb128 0x5
+ 2095 0033 01       		.uleb128 0x1
+ 2096 0034 01       		.byte	0x1
+ 2097 0035 49       		.uleb128 0x49
+ 2098 0036 13       		.uleb128 0x13
+ 2099 0037 01       		.uleb128 0x1
+ 2100 0038 13       		.uleb128 0x13
+ 2101 0039 00       		.byte	0
+ 2102 003a 00       		.byte	0
+ 2103 003b 06       		.uleb128 0x6
+ 2104 003c 21       		.uleb128 0x21
+ 2105 003d 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 38
 
 
- 2055      6574615F 
- 2055      776F6E76 
- 2055      6C00
- 2056              	.LASF11:
- 2057 0148 73697A65 		.ascii	"sizetype\000"
- 2057      74797065 
- 2057      00
- 2058              	.LASF6:
- 2059 0151 6C6F6E67 		.ascii	"long long int\000"
- 2059      206C6F6E 
- 2059      6720696E 
- 2059      7400
- 2060              	.LASF19:
- 2061 015f 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
- 2061      73657273 
- 2061      5C6A6F72 
- 2061      74695C44 
- 2061      6F63756D 
- 2062 018c 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
- 2062      5F536F66 
- 2062      74776172 
- 2062      655F315C 
- 2062      63797072 
- 2063 01bc 5F63796B 		.ascii	"_cykit.cydsn\000"
- 2063      69742E63 
- 2063      7964736E 
- 2063      00
- 2064              	.LASF2:
- 2065 01c9 73686F72 		.ascii	"short int\000"
- 2065      7420696E 
- 2065      7400
- 2066              	.LASF4:
- 2067 01d3 6C6F6E67 		.ascii	"long int\000"
- 2067      20696E74 
- 2067      00
- 2068              	.LASF0:
- 2069 01dc 7369676E 		.ascii	"signed char\000"
- 2069      65642063 
- 2069      68617200 
- 2070              	.LASF18:
- 2071 01e8 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
- 2071      72617465 
- 2071      645F536F 
- 2071      75726365 
- 2071      5C50536F 
- 2072              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2106 003e 49       		.uleb128 0x49
+ 2107 003f 13       		.uleb128 0x13
+ 2108 0040 2F       		.uleb128 0x2f
+ 2109 0041 05       		.uleb128 0x5
+ 2110 0042 00       		.byte	0
+ 2111 0043 00       		.byte	0
+ 2112 0044 07       		.uleb128 0x7
+ 2113 0045 26       		.uleb128 0x26
+ 2114 0046 00       		.byte	0
+ 2115 0047 49       		.uleb128 0x49
+ 2116 0048 13       		.uleb128 0x13
+ 2117 0049 00       		.byte	0
+ 2118 004a 00       		.byte	0
+ 2119 004b 08       		.uleb128 0x8
+ 2120 004c 34       		.uleb128 0x34
+ 2121 004d 00       		.byte	0
+ 2122 004e 03       		.uleb128 0x3
+ 2123 004f 0E       		.uleb128 0xe
+ 2124 0050 3A       		.uleb128 0x3a
+ 2125 0051 0B       		.uleb128 0xb
+ 2126 0052 3B       		.uleb128 0x3b
+ 2127 0053 0B       		.uleb128 0xb
+ 2128 0054 49       		.uleb128 0x49
+ 2129 0055 13       		.uleb128 0x13
+ 2130 0056 3F       		.uleb128 0x3f
+ 2131 0057 19       		.uleb128 0x19
+ 2132 0058 02       		.uleb128 0x2
+ 2133 0059 18       		.uleb128 0x18
+ 2134 005a 00       		.byte	0
+ 2135 005b 00       		.byte	0
+ 2136 005c 09       		.uleb128 0x9
+ 2137 005d 21       		.uleb128 0x21
+ 2138 005e 00       		.byte	0
+ 2139 005f 49       		.uleb128 0x49
+ 2140 0060 13       		.uleb128 0x13
+ 2141 0061 2F       		.uleb128 0x2f
+ 2142 0062 0B       		.uleb128 0xb
+ 2143 0063 00       		.byte	0
+ 2144 0064 00       		.byte	0
+ 2145 0065 0A       		.uleb128 0xa
+ 2146 0066 34       		.uleb128 0x34
+ 2147 0067 00       		.byte	0
+ 2148 0068 03       		.uleb128 0x3
+ 2149 0069 0E       		.uleb128 0xe
+ 2150 006a 3A       		.uleb128 0x3a
+ 2151 006b 0B       		.uleb128 0xb
+ 2152 006c 3B       		.uleb128 0x3b
+ 2153 006d 05       		.uleb128 0x5
+ 2154 006e 49       		.uleb128 0x49
+ 2155 006f 13       		.uleb128 0x13
+ 2156 0070 3F       		.uleb128 0x3f
+ 2157 0071 19       		.uleb128 0x19
+ 2158 0072 02       		.uleb128 0x2
+ 2159 0073 18       		.uleb128 0x18
+ 2160 0074 00       		.byte	0
+ 2161 0075 00       		.byte	0
+ 2162 0076 00       		.byte	0
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 39
+
+
+ 2163              		.section	.debug_aranges,"",%progbits
+ 2164 0000 14000000 		.4byte	0x14
+ 2165 0004 0200     		.2byte	0x2
+ 2166 0006 00000000 		.4byte	.Ldebug_info0
+ 2167 000a 04       		.byte	0x4
+ 2168 000b 00       		.byte	0
+ 2169 000c 0000     		.2byte	0
+ 2170 000e 0000     		.2byte	0
+ 2171 0010 00000000 		.4byte	0
+ 2172 0014 00000000 		.4byte	0
+ 2173              		.section	.debug_line,"",%progbits
+ 2174              	.Ldebug_line0:
+ 2175 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 2175      02003701 
+ 2175      00000201 
+ 2175      FB0E0D00 
+ 2175      01010101 
+ 2176              	.LASF9:
+ 2177 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 2177      6E74385F 
+ 2177      7400
+ 2178              	.LASF16:
+ 2179 000a 63795F6D 		.ascii	"cy_metadata\000"
+ 2179      65746164 
+ 2179      61746100 
+ 2180              	.LASF1:
+ 2181 0016 756E7369 		.ascii	"unsigned char\000"
+ 2181      676E6564 
+ 2181      20636861 
+ 2181      7200
+ 2182              	.LASF17:
+ 2183 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2183      43313120 
+ 2183      352E342E 
+ 2183      31203230 
+ 2183      31363036 
+ 2184 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2184      20726576 
+ 2184      6973696F 
+ 2184      6E203233 
+ 2184      37373135 
+ 2185 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2185      66756E63 
+ 2185      74696F6E 
+ 2185      2D736563 
+ 2185      74696F6E 
+ 2186              	.LASF5:
+ 2187 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2187      20756E73 
+ 2187      69676E65 
+ 2187      6420696E 
+ 2187      7400
+ 2188              	.LASF3:
+ 2189 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 2189      7420756E 
+ 2189      7369676E 
+ 2189      65642069 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 40
+
+
+ 2189      6E7400
+ 2190              	.LASF13:
+ 2191 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2191      6574615F 
+ 2191      63757374 
+ 2191      6E766C00 
+ 2192              	.LASF12:
+ 2193 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2193      6574615F 
+ 2193      636F6E66 
+ 2193      69676563 
+ 2193      6300
+ 2194              	.LASF8:
+ 2195 00f9 756E7369 		.ascii	"unsigned int\000"
+ 2195      676E6564 
+ 2195      20696E74 
+ 2195      00
+ 2196              	.LASF7:
+ 2197 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2197      206C6F6E 
+ 2197      6720756E 
+ 2197      7369676E 
+ 2197      65642069 
+ 2198              	.LASF10:
+ 2199 011d 75696E74 		.ascii	"uint8_t\000"
+ 2199      385F7400 
+ 2200              	.LASF15:
+ 2201 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2201      6574615F 
+ 2201      666C6173 
+ 2201      6870726F 
+ 2201      74656374 
+ 2202              	.LASF14:
+ 2203 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2203      6574615F 
+ 2203      776F6E76 
+ 2203      6C00
+ 2204              	.LASF11:
+ 2205 0148 73697A65 		.ascii	"sizetype\000"
+ 2205      74797065 
+ 2205      00
+ 2206              	.LASF6:
+ 2207 0151 6C6F6E67 		.ascii	"long long int\000"
+ 2207      206C6F6E 
+ 2207      6720696E 
+ 2207      7400
+ 2208              	.LASF2:
+ 2209 015f 73686F72 		.ascii	"short int\000"
+ 2209      7420696E 
+ 2209      7400
+ 2210              	.LASF19:
+ 2211 0169 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 2211      73657273 
+ 2211      5C6A6F72 
+ 2211      74695C44 
+ 2211      6F63756D 
+ 2212 0196 7374656D 		.ascii	"stem_Software_1\\cypress_bldc_motor\\esw_rtos_cykit"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 41
+
+
+ 2212      5F536F66 
+ 2212      74776172 
+ 2212      655F315C 
+ 2212      63797072 
+ 2213 01c7 5C657377 		.ascii	"\\esw_uCOS3_cykit.cydsn\000"
+ 2213      5F75434F 
+ 2213      53335F63 
+ 2213      796B6974 
+ 2213      2E637964 
+ 2214              	.LASF4:
+ 2215 01de 6C6F6E67 		.ascii	"long int\000"
+ 2215      20696E74 
+ 2215      00
+ 2216              	.LASF0:
+ 2217 01e7 7369676E 		.ascii	"signed char\000"
+ 2217      65642063 
+ 2217      68617200 
+ 2218              	.LASF18:
+ 2219 01f3 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2219      72617465 
+ 2219      645F536F 
+ 2219      75726365 
+ 2219      5C50536F 
+ 2220              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

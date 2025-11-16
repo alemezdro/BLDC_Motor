@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
   28:Generated_Source\PSoC5/Pin_2.c **** *
   29:Generated_Source\PSoC5/Pin_2.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/Pin_2.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 2
 
 
   31:Generated_Source\PSoC5/Pin_2.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
   52              		.section	.text.Pin_2_SetDriveMode,"ax",%progbits
   53              		.align	2
   54              		.global	Pin_2_SetDriveMode
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 3
 
 
   55              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
   76 0012 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
   77 0014 03F0F103 		and	r3, r3, #241
   78 0018 1843     		orrs	r0, r0, r3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 4
 
 
   79 001a 1070     		strb	r0, [r2]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  109              	.L8:
  110 000c 01510040 		.word	1073762561
  111              		.cfi_endproc
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 5
 
 
  112              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  138              	.LFE3:
  139              		.size	Pin_2_ReadDataReg, .-Pin_2_ReadDataReg
  140              		.text
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 6
 
 
  141              	.Letext0:
@@ -313,14 +313,14 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  150 000c 4F000000 		.4byte	.LASF20
  151 0010 0C       		.byte	0xc
  152 0011 44010000 		.4byte	.LASF21
- 153 0015 7B010000 		.4byte	.LASF22
+ 153 0015 8B010000 		.4byte	.LASF22
  154 0019 00000000 		.4byte	.Ldebug_ranges0+0
  155 001d 00000000 		.4byte	0
  156 0021 00000000 		.4byte	.Ldebug_line0
  157 0025 02       		.uleb128 0x2
  158 0026 01       		.byte	0x1
  159 0027 06       		.byte	0x6
- 160 0028 FE010000 		.4byte	.LASF0
+ 160 0028 09020000 		.4byte	.LASF0
  161 002c 02       		.uleb128 0x2
  162 002d 01       		.byte	0x1
  163 002e 08       		.byte	0x8
@@ -328,7 +328,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  165 0033 02       		.uleb128 0x2
  166 0034 02       		.byte	0x2
  167 0035 05       		.byte	0x5
- 168 0036 E5010000 		.4byte	.LASF2
+ 168 0036 7B010000 		.4byte	.LASF2
  169 003a 02       		.uleb128 0x2
  170 003b 02       		.byte	0x2
  171 003c 07       		.byte	0x7
@@ -336,7 +336,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  173 0041 02       		.uleb128 0x2
  174 0042 04       		.byte	0x4
  175 0043 05       		.byte	0x5
- 176 0044 F5010000 		.4byte	.LASF4
+ 176 0044 00020000 		.4byte	.LASF4
  177 0048 02       		.uleb128 0x2
  178 0049 04       		.byte	0x4
  179 004a 07       		.byte	0x7
@@ -358,10 +358,10 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  195 0066 07       		.byte	0x7
  196 0067 0E010000 		.4byte	.LASF8
  197 006b 04       		.uleb128 0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 7
 
 
- 198 006c EF010000 		.4byte	.LASF12
+ 198 006c 85010000 		.4byte	.LASF12
  199 0070 02       		.byte	0x2
  200 0071 E401     		.2byte	0x1e4
  201 0073 2C000000 		.4byte	0x2c
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  252 00e0 F4000000 		.4byte	0xf4
  253 00e4 07       		.uleb128 0x7
  254 00e5 63010000 		.4byte	.LASF17
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 8
 
 
  255 00e9 01       		.byte	0x1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  309 001c 00       		.byte	0
  310 001d 00       		.byte	0
  311 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 9
 
 
  312 001f 24       		.uleb128 0x24
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  366 0056 00       		.byte	0
  367 0057 07       		.uleb128 0x7
  368 0058 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 10
 
 
  369 0059 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  423              		.section	.debug_loc,"",%progbits
  424              	.Ldebug_loc0:
  425              	.LLST0:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 11
 
 
  426 0000 00000000 		.4byte	.LVL0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  480 001c 10000000 		.4byte	.LFE3
  481 0020 00000000 		.4byte	0
  482 0024 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 12
 
 
  483              		.section	.debug_line,"",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  505      00
  506              	.LASF5:
  507 00e2 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 13
 
 
  507      20756E73 
@@ -768,37 +768,38 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 1
  524              	.LASF11:
  525 0176 63686172 		.ascii	"char\000"
  525      00
- 526              	.LASF22:
- 527 017b 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
- 527      73657273 
- 527      5C6A6F72 
- 527      74695C44 
- 527      6F63756D 
- 528 01a8 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
- 528      5F536F66 
- 528      74776172 
- 528      655F315C 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccxNu1fh.s 			page 14
+ 526              	.LASF2:
+ 527 017b 73686F72 		.ascii	"short int\000"
+ 527      7420696E 
+ 527      7400
+ 528              	.LASF12:
+ 529 0185 75696E74 		.ascii	"uint8\000"
+ 529      3800
+ 530              	.LASF22:
+ 531 018b 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 531      73657273 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc3c2F32.s 			page 14
 
 
- 528      63797072 
- 529 01d8 5F63796B 		.ascii	"_cykit.cydsn\000"
- 529      69742E63 
- 529      7964736E 
- 529      00
- 530              	.LASF2:
- 531 01e5 73686F72 		.ascii	"short int\000"
- 531      7420696E 
- 531      7400
- 532              	.LASF12:
- 533 01ef 75696E74 		.ascii	"uint8\000"
- 533      3800
+ 531      5C6A6F72 
+ 531      74695C44 
+ 531      6F63756D 
+ 532 01b8 7374656D 		.ascii	"stem_Software_1\\cypress_bldc_motor\\esw_rtos_cykit"
+ 532      5F536F66 
+ 532      74776172 
+ 532      655F315C 
+ 532      63797072 
+ 533 01e9 5C657377 		.ascii	"\\esw_uCOS3_cykit.cydsn\000"
+ 533      5F75434F 
+ 533      53335F63 
+ 533      796B6974 
+ 533      2E637964 
  534              	.LASF4:
- 535 01f5 6C6F6E67 		.ascii	"long int\000"
+ 535 0200 6C6F6E67 		.ascii	"long int\000"
  535      20696E74 
  535      00
  536              	.LASF0:
- 537 01fe 7369676E 		.ascii	"signed char\000"
+ 537 0209 7369676E 		.ascii	"signed char\000"
  537      65642063 
  537      68617200 
  538              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

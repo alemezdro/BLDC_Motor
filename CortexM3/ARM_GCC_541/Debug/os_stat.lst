@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
   28:uCOS-III\Source/os_stat.c **** *
   29:uCOS-III\Source/os_stat.c **** *           You can contact us at www.micrium.com, or by phone at +1 (954) 217-2036.
   30:uCOS-III\Source/os_stat.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 2
 
 
   31:uCOS-III\Source/os_stat.c **** */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
   70:uCOS-III\Source/os_stat.c **** 
   71:uCOS-III\Source/os_stat.c **** 
   72:uCOS-III\Source/os_stat.c **** #ifdef OS_SAFETY_CRITICAL
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 3
 
 
   73:uCOS-III\Source/os_stat.c ****     if (p_err == (OS_ERR *)0) {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
   62              		.loc 1 107 0
   63 001e FFF7FEFF 		bl	CPU_SR_Restore
   64              	.LVL3:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 4
 
 
  108:uCOS-III\Source/os_stat.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
   94              		.loc 1 132 0
   95 004a C4F89C50 		str	r5, [r4, #156]
  133:uCOS-III\Source/os_stat.c ****         p_tcb->CyclesTotalPrev  = (OS_CYCLES   )0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 5
 
 
   96              		.loc 1 133 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  131              	.LVL16:
  152:uCOS-III\Source/os_stat.c ****         p_msg_q                = &p_q->MsgQ;
  153:uCOS-III\Source/os_stat.c ****         p_msg_q->NbrEntriesMax = (OS_MSG_QTY)0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 6
 
 
  132              		.loc 1 153 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  172              		.thumb
  173              		.thumb_func
  174              		.type	OS_StatTask, %function
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 7
 
 
  175              	OS_StatTask:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  219:uCOS-III\Source/os_stat.c ****         return;
  220:uCOS-III\Source/os_stat.c ****     }
  221:uCOS-III\Source/os_stat.c ****     CPU_CRITICAL_ENTER();
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 8
 
 
  222:uCOS-III\Source/os_stat.c ****     OSStatTaskCtr = (OS_TICK)0;                             /* Clear idle counter                  
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  276:uCOS-III\Source/os_stat.c **** *
  277:uCOS-III\Source/os_stat.c **** *              4) This function is INTERNAL to uC/OS-III and your application should not call it.
  278:uCOS-III\Source/os_stat.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 9
 
 
  279:uCOS-III\Source/os_stat.c **** */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  203 0014 FFF7FEFF 		bl	OSTimeDly
  204              	.LVL25:
  205              	.L10:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 10
 
 
  305:uCOS-III\Source/os_stat.c ****         OSTimeDly(2u * OSCfg_StatTaskRate_Hz,               /* Wait until statistic task is ready  
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  243              	.LVL32:
  244 004c 0646     		mov	r6, r0
  245              	.LVL33:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 11
 
 
  322:uCOS-III\Source/os_stat.c **** #ifdef  CPU_CFG_INT_DIS_MEAS_EN
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  280 0080 8A42     		cmp	r2, r1
  281 0082 0ED8     		bhi	.L32
  342:uCOS-III\Source/os_stat.c ****                 ctr_mult =    10u;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 12
 
 
  343:uCOS-III\Source/os_stat.c ****                 ctr_div  =  1000u;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  321 00bc 574A     		ldr	r2, .L40+40
  322              	.LVL38:
  323 00be 1380     		strh	r3, [r2]	@ movhi
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 13
 
 
  350:uCOS-III\Source/os_stat.c ****             if (OSStatTaskCPUUsageMax < OSStatTaskCPUUsage) {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  368:uCOS-III\Source/os_stat.c ****             OS_CRITICAL_ENTER();
  359              		.loc 1 368 0
  360 00ea FFF7FEFF 		bl	CPU_SR_Save
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 14
 
 
  361              	.LVL45:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  394              		.loc 1 388 0
  395 011e 3C4B     		ldr	r3, .L40+28
  396 0120 9D42     		cmp	r5, r3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 15
 
 
  397 0122 0ED9     		bls	.L35
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  434              	.L20:
  435              	.LVL51:
  400:uCOS-III\Source/os_stat.c ****             }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 16
 
 
  401:uCOS-III\Source/os_stat.c ****             cycles_max  = cycles_total / cycles_div;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  475              	.L22:
  415:uCOS-III\Source/os_stat.c ****             }
  416:uCOS-III\Source/os_stat.c ****             p_tcb->CPUUsage = usage;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 17
 
 
  476              		.loc 1 416 0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  510 01c4 06D1     		bne	.L25
  436:uCOS-III\Source/os_stat.c ****             OSStatResetFlag  = DEF_FALSE;
  511              		.loc 1 436 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 18
 
 
  512 01c6 0022     		movs	r2, #0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  554 0214 FF596202 		.word	39999999
  555 0218 FF83D717 		.word	399999999
  556 021c 00000000 		.word	OSStatTaskCPUUsage
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 19
 
 
  557 0220 00000000 		.word	OSStatTaskCPUUsageMax
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  605              	.LVL75:
  217:uCOS-III\Source/os_stat.c ****        *p_err = err;
  606              		.loc 1 217 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 20
 
 
  607 0026 BDF80630 		ldrh	r3, [sp, #6]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  233:uCOS-III\Source/os_stat.c ****               OS_OPT_TIME_DLY,
  651              		.loc 1 233 0
  652 005e 0DF10602 		add	r2, sp, #6
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 21
 
 
  653 0062 0021     		movs	r1, #0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  696              	.LVL88:
  697              	.L53:
  698 009e 00BF     		.align	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 22
 
 
  699              	.L52:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  479:uCOS-III\Source/os_stat.c **** #endif
  480:uCOS-III\Source/os_stat.c **** 
  481:uCOS-III\Source/os_stat.c ****     OSStatTaskCtr    = (OS_TICK)0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 23
 
 
  723              		.loc 1 481 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  763              		.cfi_def_cfa_offset 8
  764              		.cfi_offset 4, -8
  765              		.cfi_offset 14, -4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 24
 
 
  766 003a 8AB0     		sub	sp, sp, #40
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  515:uCOS-III\Source/os_stat.c ****                  (OS_ERR     *)p_err);
  516:uCOS-III\Source/os_stat.c **** }
  800              		.loc 1 516 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 25
 
 
  801 0070 0AB0     		add	sp, sp, #40
@@ -1488,7 +1488,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  841 000c 98060000 		.4byte	.LASF344
  842 0010 0C       		.byte	0xc
  843 0011 FA020000 		.4byte	.LASF345
- 844 0015 C60A0000 		.4byte	.LASF346
+ 844 0015 F7110000 		.4byte	.LASF346
  845 0019 00000000 		.4byte	.Ldebug_ranges0+0
  846 001d 00000000 		.4byte	0
  847 0021 00000000 		.4byte	.Ldebug_line0
@@ -1498,21 +1498,21 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  851 002b 76       		.byte	0x76
  852 002c 30000000 		.4byte	0x30
  853 0030 03       		.uleb128 0x3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 26
 
 
  854 0031 01       		.byte	0x1
  855 0032 08       		.byte	0x8
  856 0033 51090000 		.4byte	.LASF2
  857 0037 02       		.uleb128 0x2
- 858 0038 29110000 		.4byte	.LASF1
+ 858 0038 BF100000 		.4byte	.LASF1
  859 003c 02       		.byte	0x2
  860 003d 77       		.byte	0x77
  861 003e 42000000 		.4byte	0x42
  862 0042 03       		.uleb128 0x3
  863 0043 01       		.byte	0x1
  864 0044 08       		.byte	0x8
- 865 0045 8C110000 		.4byte	.LASF3
+ 865 0045 22110000 		.4byte	.LASF3
  866 0049 02       		.uleb128 0x2
  867 004a 29060000 		.4byte	.LASF4
  868 004e 02       		.byte	0x2
@@ -1523,7 +1523,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  873 0056 06       		.byte	0x6
  874 0057 0D130000 		.4byte	.LASF5
  875 005b 02       		.uleb128 0x2
- 876 005c 8F0B0000 		.4byte	.LASF6
+ 876 005c 250B0000 		.4byte	.LASF6
  877 0060 02       		.byte	0x2
  878 0061 7A       		.byte	0x7a
  879 0062 66000000 		.4byte	0x66
@@ -1534,7 +1534,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  884 006d 03       		.uleb128 0x3
  885 006e 02       		.byte	0x2
  886 006f 05       		.byte	0x5
- 887 0070 9C0E0000 		.4byte	.LASF8
+ 887 0070 320E0000 		.4byte	.LASF8
  888 0074 02       		.uleb128 0x2
  889 0075 E8010000 		.4byte	.LASF9
  890 0079 02       		.byte	0x2
@@ -1543,7 +1543,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  893 007f 03       		.uleb128 0x3
  894 0080 04       		.byte	0x4
  895 0081 07       		.byte	0x7
- 896 0082 1C100000 		.4byte	.LASF10
+ 896 0082 B20F0000 		.4byte	.LASF10
  897 0086 04       		.uleb128 0x4
  898 0087 04       		.byte	0x4
  899 0088 05       		.byte	0x5
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  908 0097 6E0A0000 		.4byte	.LASF12
  909 009b 03       		.uleb128 0x3
  910 009c 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 27
 
 
  911 009d 04       		.byte	0x4
@@ -1578,12 +1578,12 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  925 00ba 08       		.uleb128 0x8
  926 00bb 04       		.byte	0x4
  927 00bc 02       		.uleb128 0x2
- 928 00bd C9100000 		.4byte	.LASF15
+ 928 00bd 5F100000 		.4byte	.LASF15
  929 00c1 02       		.byte	0x2
  930 00c2 B5       		.byte	0xb5
  931 00c3 74000000 		.4byte	0x74
  932 00c7 02       		.uleb128 0x2
- 933 00c8 8B150000 		.4byte	.LASF16
+ 933 00c8 96150000 		.4byte	.LASF16
  934 00cc 02       		.byte	0x2
  935 00cd D9       		.byte	0xd9
  936 00ce 74000000 		.4byte	0x74
@@ -1600,25 +1600,25 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  947 00e9 03       		.uleb128 0x3
  948 00ea 04       		.byte	0x4
  949 00eb 05       		.byte	0x5
- 950 00ec EA0E0000 		.4byte	.LASF19
+ 950 00ec 800E0000 		.4byte	.LASF19
  951 00f0 03       		.uleb128 0x3
  952 00f1 04       		.byte	0x4
  953 00f2 07       		.byte	0x7
- 954 00f3 A1100000 		.4byte	.LASF20
+ 954 00f3 37100000 		.4byte	.LASF20
  955 00f7 03       		.uleb128 0x3
  956 00f8 08       		.byte	0x8
  957 00f9 04       		.byte	0x4
- 958 00fa BE0D0000 		.4byte	.LASF21
+ 958 00fa 540D0000 		.4byte	.LASF21
  959 00fe 03       		.uleb128 0x3
  960 00ff 04       		.byte	0x4
  961 0100 07       		.byte	0x7
- 962 0101 98100000 		.4byte	.LASF22
+ 962 0101 2E100000 		.4byte	.LASF22
  963 0105 02       		.uleb128 0x2
- 964 0106 4B0C0000 		.4byte	.LASF23
+ 964 0106 E10B0000 		.4byte	.LASF23
  965 010a 03       		.byte	0x3
  966 010b C4       		.byte	0xc4
  967 010c 74000000 		.4byte	0x74
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 28
 
 
  968 0110 02       		.uleb128 0x2
@@ -1642,7 +1642,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  986 0137 34       		.byte	0x34
  987 0138 74000000 		.4byte	0x74
  988 013c 02       		.uleb128 0x2
- 989 013d 35110000 		.4byte	.LASF28
+ 989 013d CB100000 		.4byte	.LASF28
  990 0141 04       		.byte	0x4
  991 0142 36       		.byte	0x36
  992 0143 74000000 		.4byte	0x74
@@ -1662,7 +1662,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1006 0163 40       		.byte	0x40
  1007 0164 5B000000 		.4byte	0x5b
  1008 0168 02       		.uleb128 0x2
- 1009 0169 5B0F0000 		.4byte	.LASF32
+ 1009 0169 F10E0000 		.4byte	.LASF32
  1010 016d 04       		.byte	0x4
  1011 016e 42       		.byte	0x42
  1012 016f 49000000 		.4byte	0x49
@@ -1677,8 +1677,8 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1021 0184 45       		.byte	0x45
  1022 0185 74000000 		.4byte	0x74
  1023 0189 02       		.uleb128 0x2
- 1024 018a E0110000 		.4byte	.LASF35
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 29
+ 1024 018a 76110000 		.4byte	.LASF35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 29
 
 
  1025 018e 04       		.byte	0x4
@@ -1700,12 +1700,12 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1041 01b0 4F       		.byte	0x4f
  1042 01b1 74000000 		.4byte	0x74
  1043 01b5 02       		.uleb128 0x2
- 1044 01b6 700C0000 		.4byte	.LASF39
+ 1044 01b6 060C0000 		.4byte	.LASF39
  1045 01ba 04       		.byte	0x4
  1046 01bb 52       		.byte	0x52
  1047 01bc 74000000 		.4byte	0x74
  1048 01c0 02       		.uleb128 0x2
- 1049 01c1 C5110000 		.4byte	.LASF40
+ 1049 01c1 5B110000 		.4byte	.LASF40
  1050 01c5 04       		.byte	0x4
  1051 01c6 54       		.byte	0x54
  1052 01c7 49000000 		.4byte	0x49
@@ -1715,7 +1715,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1056 01d1 56       		.byte	0x56
  1057 01d2 49000000 		.4byte	0x49
  1058 01d6 02       		.uleb128 0x2
- 1059 01d7 020C0000 		.4byte	.LASF42
+ 1059 01d7 980B0000 		.4byte	.LASF42
  1060 01db 04       		.byte	0x4
  1061 01dc 58       		.byte	0x58
  1062 01dd 74000000 		.4byte	0x74
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1079 0206 0C       		.uleb128 0xc
  1080 0207 9F000000 		.4byte	.LASF46
  1081 020b F82A     		.2byte	0x2af8
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 30
 
 
  1082 020d 0C       		.uleb128 0xc
@@ -1766,7 +1766,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1104 023f 9F080000 		.4byte	.LASF54
  1105 0243 FD3A     		.2byte	0x3afd
  1106 0245 0C       		.uleb128 0xc
- 1107 0246 6A100000 		.4byte	.LASF55
+ 1107 0246 00100000 		.4byte	.LASF55
  1108 024a FE3A     		.2byte	0x3afe
  1109 024c 0C       		.uleb128 0xc
  1110 024d 7C0A0000 		.4byte	.LASF56
@@ -1798,11 +1798,11 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1136 028b 0C       		.uleb128 0xc
  1137 028c A6120000 		.4byte	.LASF65
  1138 0290 5546     		.2byte	0x4655
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 31
 
 
  1139 0292 0C       		.uleb128 0xc
- 1140 0293 410D0000 		.4byte	.LASF66
+ 1140 0293 D70C0000 		.4byte	.LASF66
  1141 0297 5646     		.2byte	0x4656
  1142 0299 0C       		.uleb128 0xc
  1143 029a E7000000 		.4byte	.LASF67
@@ -1814,31 +1814,31 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1149 02a8 F9000000 		.4byte	.LASF69
  1150 02ac 0852     		.2byte	0x5208
  1151 02ae 0C       		.uleb128 0xc
- 1152 02af 560E0000 		.4byte	.LASF70
+ 1152 02af EC0D0000 		.4byte	.LASF70
  1153 02b3 0952     		.2byte	0x5209
  1154 02b5 0C       		.uleb128 0xc
  1155 02b6 02010000 		.4byte	.LASF71
  1156 02ba F055     		.2byte	0x55f0
  1157 02bc 0C       		.uleb128 0xc
- 1158 02bd FE110000 		.4byte	.LASF72
+ 1158 02bd 94110000 		.4byte	.LASF72
  1159 02c1 B956     		.2byte	0x56b9
  1160 02c3 0C       		.uleb128 0xc
- 1161 02c4 0A0C0000 		.4byte	.LASF73
+ 1161 02c4 A00B0000 		.4byte	.LASF73
  1162 02c8 BA56     		.2byte	0x56ba
  1163 02ca 0C       		.uleb128 0xc
- 1164 02cb 2E0E0000 		.4byte	.LASF74
+ 1164 02cb C40D0000 		.4byte	.LASF74
  1165 02cf BB56     		.2byte	0x56bb
  1166 02d1 0C       		.uleb128 0xc
  1167 02d2 B8080000 		.4byte	.LASF75
  1168 02d6 BC56     		.2byte	0x56bc
  1169 02d8 0C       		.uleb128 0xc
- 1170 02d9 C00B0000 		.4byte	.LASF76
+ 1170 02d9 560B0000 		.4byte	.LASF76
  1171 02dd BD56     		.2byte	0x56bd
  1172 02df 0C       		.uleb128 0xc
- 1173 02e0 150E0000 		.4byte	.LASF77
+ 1173 02e0 AB0D0000 		.4byte	.LASF77
  1174 02e4 BE56     		.2byte	0x56be
  1175 02e6 0C       		.uleb128 0xc
- 1176 02e7 320C0000 		.4byte	.LASF78
+ 1176 02e7 C80B0000 		.4byte	.LASF78
  1177 02eb BF56     		.2byte	0x56bf
  1178 02ed 0C       		.uleb128 0xc
  1179 02ee 19050000 		.4byte	.LASF79
@@ -1847,22 +1847,22 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1182 02f5 5A140000 		.4byte	.LASF80
  1183 02f9 C156     		.2byte	0x56c1
  1184 02fb 0C       		.uleb128 0xc
- 1185 02fc 73150000 		.4byte	.LASF81
+ 1185 02fc 7E150000 		.4byte	.LASF81
  1186 0300 C256     		.2byte	0x56c2
  1187 0302 0C       		.uleb128 0xc
- 1188 0303 C10E0000 		.4byte	.LASF82
+ 1188 0303 570E0000 		.4byte	.LASF82
  1189 0307 1D57     		.2byte	0x571d
  1190 0309 0C       		.uleb128 0xc
- 1191 030a 420F0000 		.4byte	.LASF83
+ 1191 030a D80E0000 		.4byte	.LASF83
  1192 030e 1E57     		.2byte	0x571e
  1193 0310 0C       		.uleb128 0xc
  1194 0311 88070000 		.4byte	.LASF84
  1195 0315 8157     		.2byte	0x5781
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 32
 
 
  1196 0317 0C       		.uleb128 0xc
- 1197 0318 31100000 		.4byte	.LASF85
+ 1197 0318 C70F0000 		.4byte	.LASF85
  1198 031c 8257     		.2byte	0x5782
  1199 031e 0C       		.uleb128 0xc
  1200 031f 6A030000 		.4byte	.LASF86
@@ -1886,16 +1886,16 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1218 0349 580A0000 		.4byte	.LASF92
  1219 034d C25D     		.2byte	0x5dc2
  1220 034f 0C       		.uleb128 0xc
- 1221 0350 D80B0000 		.4byte	.LASF93
+ 1221 0350 6E0B0000 		.4byte	.LASF93
  1222 0354 C35D     		.2byte	0x5dc3
  1223 0356 0C       		.uleb128 0xc
- 1224 0357 AF0F0000 		.4byte	.LASF94
+ 1224 0357 450F0000 		.4byte	.LASF94
  1225 035b C45D     		.2byte	0x5dc4
  1226 035d 0C       		.uleb128 0xc
  1227 035e 74090000 		.4byte	.LASF95
  1228 0362 255E     		.2byte	0x5e25
  1229 0364 0C       		.uleb128 0xc
- 1230 0365 CA0D0000 		.4byte	.LASF96
+ 1230 0365 600D0000 		.4byte	.LASF96
  1231 0369 895E     		.2byte	0x5e89
  1232 036b 0C       		.uleb128 0xc
  1233 036c 19080000 		.4byte	.LASF97
@@ -1907,22 +1907,22 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1239 037a C9130000 		.4byte	.LASF99
  1240 037e A961     		.2byte	0x61a9
  1241 0380 0C       		.uleb128 0xc
- 1242 0381 B3100000 		.4byte	.LASF100
+ 1242 0381 49100000 		.4byte	.LASF100
  1243 0385 AA61     		.2byte	0x61aa
  1244 0387 0C       		.uleb128 0xc
- 1245 0388 05100000 		.4byte	.LASF101
+ 1245 0388 9B0F0000 		.4byte	.LASF101
  1246 038c AB61     		.2byte	0x61ab
  1247 038e 0C       		.uleb128 0xc
- 1248 038f 780B0000 		.4byte	.LASF102
+ 1248 038f 0E0B0000 		.4byte	.LASF102
  1249 0393 AC61     		.2byte	0x61ac
  1250 0395 0C       		.uleb128 0xc
  1251 0396 08140000 		.4byte	.LASF103
  1252 039a AD61     		.2byte	0x61ad
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 33
 
 
  1253 039c 0C       		.uleb128 0xc
- 1254 039d 3B120000 		.4byte	.LASF104
+ 1254 039d D1110000 		.4byte	.LASF104
  1255 03a1 AE61     		.2byte	0x61ae
  1256 03a3 0C       		.uleb128 0xc
  1257 03a4 7E020000 		.4byte	.LASF105
@@ -1934,10 +1934,10 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1263 03b2 DE040000 		.4byte	.LASF107
  1264 03b6 0D62     		.2byte	0x620d
  1265 03b8 0C       		.uleb128 0xc
- 1266 03b9 D2100000 		.4byte	.LASF108
+ 1266 03b9 68100000 		.4byte	.LASF108
  1267 03bd 0E62     		.2byte	0x620e
  1268 03bf 0C       		.uleb128 0xc
- 1269 03c0 46150000 		.4byte	.LASF109
+ 1269 03c0 51150000 		.4byte	.LASF109
  1270 03c4 7162     		.2byte	0x6271
  1271 03c6 0C       		.uleb128 0xc
  1272 03c7 FC130000 		.4byte	.LASF110
@@ -1946,7 +1946,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1275 03ce 14000000 		.4byte	.LASF111
  1276 03d2 7362     		.2byte	0x6273
  1277 03d4 0C       		.uleb128 0xc
- 1278 03d5 8E0D0000 		.4byte	.LASF112
+ 1278 03d5 240D0000 		.4byte	.LASF112
  1279 03d9 D562     		.2byte	0x62d5
  1280 03db 0C       		.uleb128 0xc
  1281 03dc 26010000 		.4byte	.LASF113
@@ -1961,24 +1961,24 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1290 03f1 3C090000 		.4byte	.LASF116
  1291 03f5 9365     		.2byte	0x6593
  1292 03f7 0C       		.uleb128 0xc
- 1293 03f8 410B0000 		.4byte	.LASF117
+ 1293 03f8 D70A0000 		.4byte	.LASF117
  1294 03fc 9465     		.2byte	0x6594
  1295 03fe 0C       		.uleb128 0xc
  1296 03ff 2F010000 		.4byte	.LASF118
  1297 0403 7869     		.2byte	0x6978
  1298 0405 0C       		.uleb128 0xc
- 1299 0406 EC0B0000 		.4byte	.LASF119
+ 1299 0406 820B0000 		.4byte	.LASF119
  1300 040a 7969     		.2byte	0x6979
  1301 040c 0C       		.uleb128 0xc
- 1302 040d 000E0000 		.4byte	.LASF120
+ 1302 040d 960D0000 		.4byte	.LASF120
  1303 0411 7A69     		.2byte	0x697a
  1304 0413 0C       		.uleb128 0xc
- 1305 0414 9A0B0000 		.4byte	.LASF121
+ 1305 0414 300B0000 		.4byte	.LASF121
  1306 0418 7B69     		.2byte	0x697b
  1307 041a 0C       		.uleb128 0xc
  1308 041b 38010000 		.4byte	.LASF122
  1309 041f 606D     		.2byte	0x6d60
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 34
 
 
  1310 0421 0C       		.uleb128 0xc
@@ -1994,10 +1994,10 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1320 0437 E4130000 		.4byte	.LASF126
  1321 043b 646D     		.2byte	0x6d64
  1322 043d 0C       		.uleb128 0xc
- 1323 043e F30E0000 		.4byte	.LASF127
+ 1323 043e 890E0000 		.4byte	.LASF127
  1324 0442 656D     		.2byte	0x6d65
  1325 0444 0C       		.uleb128 0xc
- 1326 0445 CF140000 		.4byte	.LASF128
+ 1326 0445 DA140000 		.4byte	.LASF128
  1327 0449 C56D     		.2byte	0x6dc5
  1328 044b 0C       		.uleb128 0xc
  1329 044c 9E140000 		.4byte	.LASF129
@@ -2012,22 +2012,22 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1338 0461 78080000 		.4byte	.LASF132
  1339 0465 2B6E     		.2byte	0x6e2b
  1340 0467 0C       		.uleb128 0xc
- 1341 0468 4D100000 		.4byte	.LASF133
+ 1341 0468 E30F0000 		.4byte	.LASF133
  1342 046c 2C6E     		.2byte	0x6e2c
  1343 046e 0C       		.uleb128 0xc
- 1344 046f A10D0000 		.4byte	.LASF134
+ 1344 046f 370D0000 		.4byte	.LASF134
  1345 0473 2D6E     		.2byte	0x6e2d
  1346 0475 0C       		.uleb128 0xc
- 1347 0476 1C120000 		.4byte	.LASF135
+ 1347 0476 B2110000 		.4byte	.LASF135
  1348 047a 2E6E     		.2byte	0x6e2e
  1349 047c 0C       		.uleb128 0xc
  1350 047d F3010000 		.4byte	.LASF136
  1351 0481 2F6E     		.2byte	0x6e2f
  1352 0483 0C       		.uleb128 0xc
- 1353 0484 61110000 		.4byte	.LASF137
+ 1353 0484 F7100000 		.4byte	.LASF137
  1354 0488 306E     		.2byte	0x6e30
  1355 048a 0C       		.uleb128 0xc
- 1356 048b F6100000 		.4byte	.LASF138
+ 1356 048b 8C100000 		.4byte	.LASF138
  1357 048f 316E     		.2byte	0x6e31
  1358 0491 0C       		.uleb128 0xc
  1359 0492 41010000 		.4byte	.LASF139
@@ -2038,38 +2038,38 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1364 049f 0C       		.uleb128 0xc
  1365 04a0 E3070000 		.4byte	.LASF141
  1366 04a4 4A71     		.2byte	0x714a
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 35
 
 
  1367 04a6 0C       		.uleb128 0xc
  1368 04a7 DB120000 		.4byte	.LASF142
  1369 04ab 4B71     		.2byte	0x714b
  1370 04ad 0C       		.uleb128 0xc
- 1371 04ae DE140000 		.4byte	.LASF143
+ 1371 04ae E9140000 		.4byte	.LASF143
  1372 04b2 4C71     		.2byte	0x714c
  1373 04b4 0C       		.uleb128 0xc
  1374 04b5 EE050000 		.4byte	.LASF144
  1375 04b9 4D71     		.2byte	0x714d
  1376 04bb 0C       		.uleb128 0xc
- 1377 04bc 6E0D0000 		.4byte	.LASF145
+ 1377 04bc 040D0000 		.4byte	.LASF145
  1378 04c0 4E71     		.2byte	0x714e
  1379 04c2 0C       		.uleb128 0xc
- 1380 04c3 E10C0000 		.4byte	.LASF146
+ 1380 04c3 770C0000 		.4byte	.LASF146
  1381 04c7 4F71     		.2byte	0x714f
  1382 04c9 0C       		.uleb128 0xc
- 1383 04ca 1A0C0000 		.4byte	.LASF147
+ 1383 04ca B00B0000 		.4byte	.LASF147
  1384 04ce 5071     		.2byte	0x7150
  1385 04d0 0C       		.uleb128 0xc
  1386 04d1 CF020000 		.4byte	.LASF148
  1387 04d5 5171     		.2byte	0x7151
  1388 04d7 0C       		.uleb128 0xc
- 1389 04d8 BA0C0000 		.4byte	.LASF149
+ 1389 04d8 500C0000 		.4byte	.LASF149
  1390 04dc 5271     		.2byte	0x7152
  1391 04de 0C       		.uleb128 0xc
  1392 04df B5020000 		.4byte	.LASF150
  1393 04e3 5371     		.2byte	0x7153
  1394 04e5 0C       		.uleb128 0xc
- 1395 04e6 9A110000 		.4byte	.LASF151
+ 1395 04e6 30110000 		.4byte	.LASF151
  1396 04ea 5471     		.2byte	0x7154
  1397 04ec 0C       		.uleb128 0xc
  1398 04ed 0F020000 		.4byte	.LASF152
@@ -2078,13 +2078,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1401 04f4 87040000 		.4byte	.LASF153
  1402 04f8 5671     		.2byte	0x7156
  1403 04fa 0C       		.uleb128 0xc
- 1404 04fb 820F0000 		.4byte	.LASF154
+ 1404 04fb 180F0000 		.4byte	.LASF154
  1405 04ff 5771     		.2byte	0x7157
  1406 0501 0C       		.uleb128 0xc
  1407 0502 92050000 		.4byte	.LASF155
  1408 0506 5871     		.2byte	0x7158
  1409 0508 0C       		.uleb128 0xc
- 1410 0509 6E0E0000 		.4byte	.LASF156
+ 1410 0509 040E0000 		.4byte	.LASF156
  1411 050d 5971     		.2byte	0x7159
  1412 050f 0C       		.uleb128 0xc
  1413 0510 72140000 		.4byte	.LASF157
@@ -2098,11 +2098,11 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1421 0524 0C       		.uleb128 0xc
  1422 0525 52030000 		.4byte	.LASF160
  1423 0529 5D71     		.2byte	0x715d
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 36
 
 
  1424 052b 0C       		.uleb128 0xc
- 1425 052c 0D0D0000 		.4byte	.LASF161
+ 1425 052c A30C0000 		.4byte	.LASF161
  1426 0530 5E71     		.2byte	0x715e
  1427 0532 0C       		.uleb128 0xc
  1428 0533 2C030000 		.4byte	.LASF162
@@ -2114,7 +2114,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1434 0541 65050000 		.4byte	.LASF164
  1435 0545 C071     		.2byte	0x71c0
  1436 0547 0C       		.uleb128 0xc
- 1437 0548 5F0D0000 		.4byte	.LASF165
+ 1437 0548 F50C0000 		.4byte	.LASF165
  1438 054c C171     		.2byte	0x71c1
  1439 054e 0C       		.uleb128 0xc
  1440 054f 56130000 		.4byte	.LASF166
@@ -2126,25 +2126,25 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1446 055d 6B070000 		.4byte	.LASF168
  1447 0561 C471     		.2byte	0x71c4
  1448 0563 0C       		.uleb128 0xc
- 1449 0564 2D150000 		.4byte	.LASF169
+ 1449 0564 38150000 		.4byte	.LASF169
  1450 0568 1172     		.2byte	0x7211
  1451 056a 0C       		.uleb128 0xc
- 1452 056b 2A0F0000 		.4byte	.LASF170
+ 1452 056b C00E0000 		.4byte	.LASF170
  1453 056f 1272     		.2byte	0x7212
  1454 0571 0C       		.uleb128 0xc
  1455 0572 CB010000 		.4byte	.LASF171
  1456 0576 1372     		.2byte	0x7213
  1457 0578 0C       		.uleb128 0xc
- 1458 0579 970C0000 		.4byte	.LASF172
+ 1458 0579 2D0C0000 		.4byte	.LASF172
  1459 057d 1472     		.2byte	0x7214
  1460 057f 0C       		.uleb128 0xc
- 1461 0580 E2100000 		.4byte	.LASF173
+ 1461 0580 78100000 		.4byte	.LASF173
  1462 0584 7572     		.2byte	0x7275
  1463 0586 0C       		.uleb128 0xc
- 1464 0587 12150000 		.4byte	.LASF174
+ 1464 0587 1D150000 		.4byte	.LASF174
  1465 058b 7672     		.2byte	0x7276
  1466 058d 0C       		.uleb128 0xc
- 1467 058e F3140000 		.4byte	.LASF175
+ 1467 058e FE140000 		.4byte	.LASF175
  1468 0592 7772     		.2byte	0x7277
  1469 0594 0C       		.uleb128 0xc
  1470 0595 AB070000 		.4byte	.LASF176
@@ -2158,20 +2158,20 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1478 05a9 0C       		.uleb128 0xc
  1479 05aa 70060000 		.4byte	.LASF179
  1480 05ae 7B72     		.2byte	0x727b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 37
 
 
  1481 05b0 0C       		.uleb128 0xc
  1482 05b1 040A0000 		.4byte	.LASF180
  1483 05b5 7C72     		.2byte	0x727c
  1484 05b7 0C       		.uleb128 0xc
- 1485 05b8 EC0D0000 		.4byte	.LASF181
+ 1485 05b8 820D0000 		.4byte	.LASF181
  1486 05bc 7D72     		.2byte	0x727d
  1487 05be 0C       		.uleb128 0xc
  1488 05bf 4E080000 		.4byte	.LASF182
  1489 05c3 7E72     		.2byte	0x727e
  1490 05c5 0C       		.uleb128 0xc
- 1491 05c6 AA110000 		.4byte	.LASF183
+ 1491 05c6 40110000 		.4byte	.LASF183
  1492 05ca D972     		.2byte	0x72d9
  1493 05cc 0C       		.uleb128 0xc
  1494 05cd 51050000 		.4byte	.LASF184
@@ -2201,16 +2201,16 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1518 0605 C5070000 		.4byte	.LASF192
  1519 0609 4573     		.2byte	0x7345
  1520 060b 0C       		.uleb128 0xc
- 1521 060c F50C0000 		.4byte	.LASF193
+ 1521 060c 8B0C0000 		.4byte	.LASF193
  1522 0610 4673     		.2byte	0x7346
  1523 0612 0C       		.uleb128 0xc
  1524 0613 12060000 		.4byte	.LASF194
  1525 0617 4773     		.2byte	0x7347
  1526 0619 0C       		.uleb128 0xc
- 1527 061a 7B0C0000 		.4byte	.LASF195
+ 1527 061a 110C0000 		.4byte	.LASF195
  1528 061e 4873     		.2byte	0x7348
  1529 0620 0C       		.uleb128 0xc
- 1530 0621 79110000 		.4byte	.LASF196
+ 1530 0621 0F110000 		.4byte	.LASF196
  1531 0625 4973     		.2byte	0x7349
  1532 0627 0C       		.uleb128 0xc
  1533 0628 4A010000 		.4byte	.LASF197
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1535 062e 0C       		.uleb128 0xc
  1536 062f 53010000 		.4byte	.LASF198
  1537 0633 1879     		.2byte	0x7918
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 38
 
 
  1538 0635 0C       		.uleb128 0xc
@@ -2228,13 +2228,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1542 063d 65010000 		.4byte	.LASF200
  1543 0641 E880     		.2byte	0x80e8
  1544 0643 0C       		.uleb128 0xc
- 1545 0644 32120000 		.4byte	.LASF201
+ 1545 0644 C8110000 		.4byte	.LASF201
  1546 0648 D084     		.2byte	0x84d0
  1547 064a 0C       		.uleb128 0xc
  1548 064b 470A0000 		.4byte	.LASF202
  1549 064f D184     		.2byte	0x84d1
  1550 0651 0C       		.uleb128 0xc
- 1551 0652 4B120000 		.4byte	.LASF203
+ 1551 0652 E1110000 		.4byte	.LASF203
  1552 0656 B888     		.2byte	0x88b8
  1553 0658 00       		.byte	0
  1554 0659 09       		.uleb128 0x9
@@ -2254,7 +2254,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1568 0678 4003     		.2byte	0x340
  1569 067a B3060000 		.4byte	0x6b3
  1570 067e 0E       		.uleb128 0xe
- 1571 067f B60D0000 		.4byte	.LASF206
+ 1571 067f 4C0D0000 		.4byte	.LASF206
  1572 0683 05       		.byte	0x5
  1573 0684 4103     		.2byte	0x341
  1574 0686 110C0000 		.4byte	0xc11
@@ -2266,7 +2266,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1580 0693 BA000000 		.4byte	0xba
  1581 0697 04       		.byte	0x4
  1582 0698 0E       		.uleb128 0xe
- 1583 0699 29100000 		.4byte	.LASF208
+ 1583 0699 BF0F0000 		.4byte	.LASF208
  1584 069d 05       		.byte	0x5
  1585 069e 4303     		.2byte	0x343
  1586 06a0 5D010000 		.4byte	0x15d
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1592 06ad 10010000 		.4byte	0x110
  1593 06b1 0C       		.byte	0xc
  1594 06b2 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 39
 
 
  1595 06b3 09       		.uleb128 0x9
@@ -2293,13 +2293,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1604 06c6 4A03     		.2byte	0x34a
  1605 06c8 01070000 		.4byte	0x701
  1606 06cc 0E       		.uleb128 0xe
- 1607 06cd B60D0000 		.4byte	.LASF206
+ 1607 06cd 4C0D0000 		.4byte	.LASF206
  1608 06d1 05       		.byte	0x5
  1609 06d2 4B03     		.2byte	0x34b
  1610 06d4 110C0000 		.4byte	0xc11
  1611 06d8 00       		.byte	0
  1612 06d9 0E       		.uleb128 0xe
- 1613 06da 14120000 		.4byte	.LASF213
+ 1613 06da AA110000 		.4byte	.LASF213
  1614 06de 05       		.byte	0x5
  1615 06df 4C03     		.2byte	0x34c
  1616 06e1 52010000 		.4byte	0x152
@@ -2311,7 +2311,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1622 06ee 52010000 		.4byte	0x152
  1623 06f2 06       		.byte	0x6
  1624 06f3 0E       		.uleb128 0xe
- 1625 06f4 F3110000 		.4byte	.LASF215
+ 1625 06f4 89110000 		.4byte	.LASF215
  1626 06f8 05       		.byte	0x5
  1627 06f9 4E03     		.2byte	0x34e
  1628 06fb 52010000 		.4byte	0x152
@@ -2323,13 +2323,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1634 0707 8402     		.2byte	0x284
  1635 0709 0D070000 		.4byte	0x70d
  1636 070d 0D       		.uleb128 0xd
- 1637 070e 58150000 		.4byte	.LASF217
+ 1637 070e 63150000 		.4byte	.LASF217
  1638 0712 10       		.byte	0x10
  1639 0713 05       		.byte	0x5
  1640 0714 5303     		.2byte	0x353
  1641 0716 5C070000 		.4byte	0x75c
  1642 071a 0E       		.uleb128 0xe
- 1643 071b D50F0000 		.4byte	.LASF218
+ 1643 071b 6B0F0000 		.4byte	.LASF218
  1644 071f 05       		.byte	0x5
  1645 0720 5403     		.2byte	0x354
  1646 0722 110C0000 		.4byte	0xc11
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1649 0728 6C120000 		.4byte	.LASF219
  1650 072c 05       		.byte	0x5
  1651 072d 5503     		.2byte	0x355
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 40
 
 
  1652 072f 110C0000 		.4byte	0xc11
@@ -2368,7 +2368,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1676 0762 8A02     		.2byte	0x28a
  1677 0764 68070000 		.4byte	0x768
  1678 0768 0D       		.uleb128 0xd
- 1679 0769 5F0C0000 		.4byte	.LASF224
+ 1679 0769 F50B0000 		.4byte	.LASF224
  1680 076d 30       		.byte	0x30
  1681 076e 05       		.byte	0x5
  1682 076f 7E03     		.2byte	0x37e
@@ -2386,7 +2386,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1694 078a 0B0C0000 		.4byte	0xc0b
  1695 078e 04       		.byte	0x4
  1696 078f 0E       		.uleb128 0xe
- 1697 0790 A60F0000 		.4byte	.LASF227
+ 1697 0790 3C0F0000 		.4byte	.LASF227
  1698 0794 05       		.byte	0x5
  1699 0795 8203     		.2byte	0x382
  1700 0797 500B0000 		.4byte	0xb50
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1706 07a4 170C0000 		.4byte	0xc17
  1707 07a8 14       		.byte	0x14
  1708 07a9 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 41
 
 
  1709 07aa 21030000 		.4byte	.LASF229
@@ -2407,7 +2407,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1712 07b1 170C0000 		.4byte	0xc17
  1713 07b5 18       		.byte	0x18
  1714 07b6 0E       		.uleb128 0xe
- 1715 07b7 61120000 		.4byte	.LASF230
+ 1715 07b7 C0140000 		.4byte	.LASF230
  1716 07bb 05       		.byte	0x5
  1717 07bc 8603     		.2byte	0x386
  1718 07be 0B0C0000 		.4byte	0xc0b
@@ -2420,12 +2420,12 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1725 07cf 20       		.byte	0x20
  1726 07d0 00       		.byte	0
  1727 07d1 09       		.uleb128 0x9
- 1728 07d2 E7110000 		.4byte	.LASF232
+ 1728 07d2 7D110000 		.4byte	.LASF232
  1729 07d6 05       		.byte	0x5
  1730 07d7 8E02     		.2byte	0x28e
  1731 07d9 A9000000 		.4byte	0xa9
  1732 07dd 09       		.uleb128 0x9
- 1733 07de 3F110000 		.4byte	.LASF233
+ 1733 07de D5100000 		.4byte	.LASF233
  1734 07e2 05       		.byte	0x5
  1735 07e3 9002     		.2byte	0x290
  1736 07e5 E9070000 		.4byte	0x7e9
@@ -2442,23 +2442,23 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1747 07fe 1D0C0000 		.4byte	0xc1d
  1748 0802 00       		.byte	0
  1749 0803 0E       		.uleb128 0xe
- 1750 0804 91100000 		.4byte	.LASF236
+ 1750 0804 27100000 		.4byte	.LASF236
  1751 0808 05       		.byte	0x5
  1752 0809 AE03     		.2byte	0x3ae
  1753 080b BA000000 		.4byte	0xba
  1754 080f 04       		.byte	0x4
  1755 0810 0E       		.uleb128 0xe
- 1756 0811 E00D0000 		.4byte	.LASF237
+ 1756 0811 760D0000 		.4byte	.LASF237
  1757 0815 05       		.byte	0x5
  1758 0816 B003     		.2byte	0x3b0
  1759 0818 1D0C0000 		.4byte	0xc1d
  1760 081c 08       		.byte	0x8
  1761 081d 0E       		.uleb128 0xe
- 1762 081e B60D0000 		.4byte	.LASF206
+ 1762 081e 4C0D0000 		.4byte	.LASF206
  1763 0822 05       		.byte	0x5
  1764 0823 B203     		.2byte	0x3b2
  1765 0825 F90B0000 		.4byte	0xbf9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 42
 
 
  1766 0829 0C       		.byte	0xc
@@ -2469,7 +2469,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1771 0832 F90B0000 		.4byte	0xbf9
  1772 0836 10       		.byte	0x10
  1773 0837 0E       		.uleb128 0xe
- 1774 0838 AE0C0000 		.4byte	.LASF239
+ 1774 0838 440C0000 		.4byte	.LASF239
  1775 083c 05       		.byte	0x5
  1776 083d B503     		.2byte	0x3b5
  1777 083f F90B0000 		.4byte	0xbf9
@@ -2481,7 +2481,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1783 084c F90B0000 		.4byte	0xbf9
  1784 0850 18       		.byte	0x18
  1785 0851 0E       		.uleb128 0xe
- 1786 0852 54120000 		.4byte	.LASF241
+ 1786 0852 EA110000 		.4byte	.LASF241
  1787 0856 05       		.byte	0x5
  1788 0857 B803     		.2byte	0x3b8
  1789 0859 230C0000 		.4byte	0xc23
@@ -2511,14 +2511,14 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1813 088d BA000000 		.4byte	0xba
  1814 0891 2C       		.byte	0x2c
  1815 0892 0E       		.uleb128 0xe
- 1816 0893 BF0F0000 		.4byte	.LASF245
+ 1816 0893 550F0000 		.4byte	.LASF245
  1817 0897 05       		.byte	0x5
  1818 0898 C503     		.2byte	0x3c5
  1819 089a FF0B0000 		.4byte	0xbff
  1820 089e 30       		.byte	0x30
  1821 089f 0E       		.uleb128 0xe
  1822 08a0 AC030000 		.4byte	.LASF246
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 43
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 43
 
 
  1823 08a4 05       		.byte	0x5
@@ -2568,7 +2568,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1867 0901 10010000 		.4byte	0x110
  1868 0905 40       		.byte	0x40
  1869 0906 0E       		.uleb128 0xe
- 1870 0907 CE0F0000 		.4byte	.LASF252
+ 1870 0907 640F0000 		.4byte	.LASF252
  1871 090b 05       		.byte	0x5
  1872 090c D203     		.2byte	0x3d2
  1873 090e B5010000 		.4byte	0x1b5
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1877 0918 05       		.byte	0x5
  1878 0919 D503     		.2byte	0x3d5
  1879 091b D6010000 		.4byte	0x1d6
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 44
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 44
 
 
  1880 091f 48       		.byte	0x48
@@ -2589,13 +2589,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1885 0928 D6010000 		.4byte	0x1d6
  1886 092c 4C       		.byte	0x4c
  1887 092d 0E       		.uleb128 0xe
- 1888 092e F20F0000 		.4byte	.LASF255
+ 1888 092e 880F0000 		.4byte	.LASF255
  1889 0932 05       		.byte	0x5
  1890 0933 D703     		.2byte	0x3d7
  1891 0935 D6010000 		.4byte	0x1d6
  1892 0939 50       		.byte	0x50
  1893 093a 0E       		.uleb128 0xe
- 1894 093b 07150000 		.4byte	.LASF256
+ 1894 093b 12150000 		.4byte	.LASF256
  1895 093f 05       		.byte	0x5
  1896 0940 D903     		.2byte	0x3d9
  1897 0942 D6010000 		.4byte	0x1d6
@@ -2613,7 +2613,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1909 095c BA000000 		.4byte	0xba
  1910 0960 5C       		.byte	0x5c
  1911 0961 0E       		.uleb128 0xe
- 1912 0962 29100000 		.4byte	.LASF208
+ 1912 0962 BF0F0000 		.4byte	.LASF208
  1913 0966 05       		.byte	0x5
  1914 0967 DE03     		.2byte	0x3de
  1915 0969 5D010000 		.4byte	0x15d
@@ -2637,8 +2637,8 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1933 0990 10010000 		.4byte	0x110
  1934 0994 78       		.byte	0x78
  1935 0995 0E       		.uleb128 0xe
- 1936 0996 C0140000 		.4byte	.LASF260
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 45
+ 1936 0996 CB140000 		.4byte	.LASF260
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 45
 
 
  1937 099a 05       		.byte	0x5
@@ -2664,7 +2664,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1957 09c4 89010000 		.4byte	0x189
  1958 09c8 88       		.byte	0x88
  1959 09c9 0E       		.uleb128 0xe
- 1960 09ca 540C0000 		.4byte	.LASF264
+ 1960 09ca EA0B0000 		.4byte	.LASF264
  1961 09ce 05       		.byte	0x5
  1962 09cf F403     		.2byte	0x3f4
  1963 09d1 68010000 		.4byte	0x168
@@ -2676,7 +2676,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1969 09de 1B010000 		.4byte	0x11b
  1970 09e2 8C       		.byte	0x8c
  1971 09e3 0E       		.uleb128 0xe
- 1972 09e4 9A0F0000 		.4byte	.LASF266
+ 1972 09e4 300F0000 		.4byte	.LASF266
  1973 09e8 05       		.byte	0x5
  1974 09e9 F903     		.2byte	0x3f9
  1975 09eb 1B010000 		.4byte	0x11b
@@ -2688,40 +2688,40 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  1981 09f8 31010000 		.4byte	0x131
  1982 09fc 90       		.byte	0x90
  1983 09fd 0E       		.uleb128 0xe
- 1984 09fe 640C0000 		.4byte	.LASF268
+ 1984 09fe FA0B0000 		.4byte	.LASF268
  1985 0a02 05       		.byte	0x5
  1986 0a03 FB03     		.2byte	0x3fb
  1987 0a05 10010000 		.4byte	0x110
  1988 0a09 94       		.byte	0x94
  1989 0a0a 0E       		.uleb128 0xe
- 1990 0a0b 4F0B0000 		.4byte	.LASF269
+ 1990 0a0b E50A0000 		.4byte	.LASF269
  1991 0a0f 05       		.byte	0x5
  1992 0a10 FC03     		.2byte	0x3fc
  1993 0a12 10010000 		.4byte	0x110
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 46
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 46
 
 
  1994 0a16 98       		.byte	0x98
  1995 0a17 0E       		.uleb128 0xe
- 1996 0a18 6A0F0000 		.4byte	.LASF270
+ 1996 0a18 000F0000 		.4byte	.LASF270
  1997 0a1c 05       		.byte	0x5
  1998 0a1d FD03     		.2byte	0x3fd
  1999 0a1f 3C010000 		.4byte	0x13c
  2000 0a23 9C       		.byte	0x9c
  2001 0a24 0E       		.uleb128 0xe
- 2002 0a25 1A0F0000 		.4byte	.LASF271
+ 2002 0a25 B00E0000 		.4byte	.LASF271
  2003 0a29 05       		.byte	0x5
  2004 0a2a FE03     		.2byte	0x3fe
  2005 0a2c 3C010000 		.4byte	0x13c
  2006 0a30 A0       		.byte	0xa0
  2007 0a31 0E       		.uleb128 0xe
- 2008 0a32 820D0000 		.4byte	.LASF272
+ 2008 0a32 180D0000 		.4byte	.LASF272
  2009 0a36 05       		.byte	0x5
  2010 0a37 0004     		.2byte	0x400
  2011 0a39 10010000 		.4byte	0x110
  2012 0a3d A4       		.byte	0xa4
  2013 0a3e 0E       		.uleb128 0xe
- 2014 0a3f 0B0F0000 		.4byte	.LASF273
+ 2014 0a3f A10E0000 		.4byte	.LASF273
  2015 0a43 05       		.byte	0x5
  2016 0a44 0104     		.2byte	0x401
  2017 0a46 10010000 		.4byte	0x110
@@ -2751,14 +2751,14 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2041 0a7a F90B0000 		.4byte	0xbf9
  2042 0a7e B8       		.byte	0xb8
  2043 0a7f 0E       		.uleb128 0xe
- 2044 0a80 61120000 		.4byte	.LASF230
+ 2044 0a80 C0140000 		.4byte	.LASF230
  2045 0a84 05       		.byte	0x5
  2046 0a85 1304     		.2byte	0x413
  2047 0a87 0B0C0000 		.4byte	0xc0b
  2048 0a8b BC       		.byte	0xbc
  2049 0a8c 00       		.byte	0
  2050 0a8d 09       		.uleb128 0x9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 47
 
 
  2051 0a8e 0B050000 		.4byte	.LASF276
@@ -2772,7 +2772,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2059 0aa0 1E04     		.2byte	0x41e
  2060 0aa2 CE0A0000 		.4byte	0xace
  2061 0aa6 0E       		.uleb128 0xe
- 2062 0aa7 44100000 		.4byte	.LASF278
+ 2062 0aa7 DA0F0000 		.4byte	.LASF278
  2063 0aab 05       		.byte	0x5
  2064 0aac 1F04     		.2byte	0x41f
  2065 0aae F90B0000 		.4byte	0xbf9
@@ -2808,17 +2808,17 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2095 0aef FF0B0000 		.4byte	0xbff
  2096 0af3 00       		.byte	0
  2097 0af4 0E       		.uleb128 0xe
- 2098 0af5 B60D0000 		.4byte	.LASF206
+ 2098 0af5 4C0D0000 		.4byte	.LASF206
  2099 0af9 05       		.byte	0x5
  2100 0afa DF02     		.2byte	0x2df
  2101 0afc FF0B0000 		.4byte	0xbff
  2102 0b00 04       		.byte	0x4
  2103 0b01 0E       		.uleb128 0xe
- 2104 0b02 710B0000 		.4byte	.LASF281
+ 2104 0b02 070B0000 		.4byte	.LASF281
  2105 0b06 05       		.byte	0x5
  2106 0b07 E002     		.2byte	0x2e0
  2107 0b09 F90B0000 		.4byte	0xbf9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 48
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 48
 
 
  2108 0b0d 08       		.byte	0x8
@@ -2829,7 +2829,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2113 0b16 050C0000 		.4byte	0xc05
  2114 0b1a 0C       		.byte	0xc
  2115 0b1b 0E       		.uleb128 0xe
- 2116 0b1c 370D0000 		.4byte	.LASF283
+ 2116 0b1c CD0C0000 		.4byte	.LASF283
  2117 0b20 05       		.byte	0x5
  2118 0b21 E202     		.2byte	0x2e2
  2119 0b23 050C0000 		.4byte	0xc05
@@ -2841,13 +2841,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2125 0b30 BA000000 		.4byte	0xba
  2126 0b34 14       		.byte	0x14
  2127 0b35 0E       		.uleb128 0xe
- 2128 0b36 A60E0000 		.4byte	.LASF285
+ 2128 0b36 3C0E0000 		.4byte	.LASF285
  2129 0b3a 05       		.byte	0x5
  2130 0b3b E402     		.2byte	0x2e4
  2131 0b3d 5D010000 		.4byte	0x15d
  2132 0b41 18       		.byte	0x18
  2133 0b42 0E       		.uleb128 0xe
- 2134 0b43 500E0000 		.4byte	.LASF286
+ 2134 0b43 E60D0000 		.4byte	.LASF286
  2135 0b47 05       		.byte	0x5
  2136 0b48 E502     		.2byte	0x2e5
  2137 0b4a 10010000 		.4byte	0x110
@@ -2865,7 +2865,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2149 0b63 E902     		.2byte	0x2e9
  2150 0b65 910B0000 		.4byte	0xb91
  2151 0b69 0E       		.uleb128 0xe
- 2152 0b6a FD0F0000 		.4byte	.LASF289
+ 2152 0b6a 930F0000 		.4byte	.LASF289
  2153 0b6e 05       		.byte	0x5
  2154 0b6f EA02     		.2byte	0x2ea
  2155 0b71 FF0B0000 		.4byte	0xbff
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2162 0b82 04       		.byte	0x4
  2163 0b83 0E       		.uleb128 0xe
  2164 0b84 8F010000 		.4byte	.LASF221
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 49
 
 
  2165 0b88 05       		.byte	0x5
@@ -2887,7 +2887,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2168 0b8f 08       		.byte	0x8
  2169 0b90 00       		.byte	0
  2170 0b91 09       		.uleb128 0x9
- 2171 0b92 760F0000 		.4byte	.LASF291
+ 2171 0b92 0C0F0000 		.4byte	.LASF291
  2172 0b96 05       		.byte	0x5
  2173 0b97 A702     		.2byte	0x2a7
  2174 0b99 9D0B0000 		.4byte	0xb9d
@@ -2910,7 +2910,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2191 0bbf 0B0C0000 		.4byte	0xc0b
  2192 0bc3 04       		.byte	0x4
  2193 0bc4 0E       		.uleb128 0xe
- 2194 0bc5 A60F0000 		.4byte	.LASF227
+ 2194 0bc5 3C0F0000 		.4byte	.LASF227
  2195 0bc9 05       		.byte	0x5
  2196 0bca 0203     		.2byte	0x302
  2197 0bcc 500B0000 		.4byte	0xb50
@@ -2928,7 +2928,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2209 0be6 BA000000 		.4byte	0xba
  2210 0bea 18       		.byte	0x18
  2211 0beb 0E       		.uleb128 0xe
- 2212 0bec 61120000 		.4byte	.LASF230
+ 2212 0bec C0140000 		.4byte	.LASF230
  2213 0bf0 05       		.byte	0x5
  2214 0bf1 0603     		.2byte	0x306
  2215 0bf3 0B0C0000 		.4byte	0xc0b
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2219 0bfa 04       		.byte	0x4
  2220 0bfb DD070000 		.4byte	0x7dd
  2221 0bff 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 50
 
 
  2222 0c00 04       		.byte	0x4
@@ -2990,7 +2990,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2268 0c64 F90B0000 		.4byte	0xbf9
  2269 0c68 2C000000 		.4byte	.LLST1
  2270 0c6c 14       		.uleb128 0x14
- 2271 0c6d C7140000 		.4byte	.LASF294
+ 2271 0c6d D2140000 		.4byte	.LASF294
  2272 0c71 01       		.byte	0x1
  2273 0c72 3E       		.byte	0x3e
  2274 0c73 200D0000 		.4byte	0xd20
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2276 0c7b 15       		.uleb128 0x15
  2277 0c7c 705F7100 		.ascii	"p_q\000"
  2278 0c80 01       		.byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 51
 
 
  2279 0c81 41       		.byte	0x41
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2333 0d11 94000000 		.4byte	.LVL20
  2334 0d15 C4110000 		.4byte	0x11c4
  2335 0d19 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 52
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 52
 
 
  2336 0d1a 05       		.uleb128 0x5
@@ -3068,7 +3068,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2340 0d21 04       		.byte	0x4
  2341 0d22 01070000 		.4byte	0x701
  2342 0d26 19       		.uleb128 0x19
- 2343 0d27 B9110000 		.4byte	.LASF348
+ 2343 0d27 4F110000 		.4byte	.LASF348
  2344 0d2b 01       		.byte	0x1
  2345 0d2c 1901     		.2byte	0x119
  2346 0d2e 00000000 		.4byte	.LFB3
@@ -3077,7 +3077,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2349 0d37 9C       		.byte	0x9c
  2350 0d38 350F0000 		.4byte	0xf35
  2351 0d3c 1A       		.uleb128 0x1a
- 2352 0d3d 8B100000 		.4byte	.LASF297
+ 2352 0d3d 21100000 		.4byte	.LASF297
  2353 0d41 01       		.byte	0x1
  2354 0d42 1901     		.2byte	0x119
  2355 0d44 BA000000 		.4byte	0xba
@@ -3089,7 +3089,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2361 0d54 1B010000 		.4byte	0x11b
  2362 0d58 EC000000 		.4byte	.LLST6
  2363 0d5c 1B       		.uleb128 0x1b
- 2364 0d5d 54110000 		.4byte	.LASF299
+ 2364 0d5d EA100000 		.4byte	.LASF299
  2365 0d61 01       		.byte	0x1
  2366 0d62 1E01     		.2byte	0x11e
  2367 0d64 3C010000 		.4byte	0x13c
@@ -3118,12 +3118,12 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2390 0da2 2301     		.2byte	0x123
  2391 0da4 F90B0000 		.4byte	0xbf9
  2392 0da8 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 53
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 53
 
 
  2393 0da9 54       		.byte	0x54
  2394 0daa 1B       		.uleb128 0x1b
- 2395 0dab 480E0000 		.4byte	.LASF303
+ 2395 0dab DE0D0000 		.4byte	.LASF303
  2396 0daf 01       		.byte	0x1
  2397 0db0 2501     		.2byte	0x125
  2398 0db2 D6010000 		.4byte	0x1d6
@@ -3135,7 +3135,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2404 0dc2 D6010000 		.4byte	0x1d6
  2405 0dc6 98010000 		.4byte	.LLST12
  2406 0dca 1B       		.uleb128 0x1b
- 2407 0dcb 21110000 		.4byte	.LASF305
+ 2407 0dcb B7100000 		.4byte	.LASF305
  2408 0dcf 01       		.byte	0x1
  2409 0dd0 2701     		.2byte	0x127
  2410 0dd2 D6010000 		.4byte	0x1d6
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2447 0e32 420E0000 		.4byte	0xe42
  2448 0e36 18       		.uleb128 0x18
  2449 0e37 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 54
 
 
  2450 0e38 51       		.byte	0x51
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2504 0eb9 16       		.uleb128 0x16
  2505 0eba 72010000 		.4byte	.LVL58
  2506 0ebe A0110000 		.4byte	0x11a0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 55
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 55
 
 
  2507 0ec2 17       		.uleb128 0x17
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2561 0f24 50       		.byte	0x50
  2562 0f25 02       		.uleb128 0x2
  2563 0f26 77       		.byte	0x77
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 56
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 56
 
 
  2564 0f27 00       		.sleb128 0
@@ -3316,7 +3316,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2576 0f33 00       		.byte	0
  2577 0f34 00       		.byte	0
  2578 0f35 12       		.uleb128 0x12
- 2579 0f36 DB0F0000 		.4byte	.LASF309
+ 2579 0f36 710F0000 		.4byte	.LASF309
  2580 0f3a 01       		.byte	0x1
  2581 0f3b BF       		.byte	0xbf
  2582 0f3c 00000000 		.4byte	.LFB2
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2618 0f93 01       		.uleb128 0x1
  2619 0f94 51       		.byte	0x51
  2620 0f95 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 57
 
 
  2621 0f96 91       		.byte	0x91
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2675 0ff3 91       		.byte	0x91
  2676 0ff4 6E       		.sleb128 -18
  2677 0ff5 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 58
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 58
 
 
  2678 0ff6 16       		.uleb128 0x16
@@ -3429,7 +3429,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2683 1004 A0110000 		.4byte	0x11a0
  2684 1008 00       		.byte	0
  2685 1009 21       		.uleb128 0x21
- 2686 100a B10E0000 		.4byte	.LASF310
+ 2686 100a 470E0000 		.4byte	.LASF310
  2687 100e 01       		.byte	0x1
  2688 100f D801     		.2byte	0x1d8
  2689 1011 00000000 		.4byte	.LFB4
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2732 105b 30       		.byte	0x30
  2733 105c 18       		.uleb128 0x18
  2734 105d 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 59
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 59
 
 
  2735 105e 7D       		.byte	0x7d
@@ -3508,7 +3508,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2759 1076 00       		.byte	0
  2760 1077 00       		.byte	0
  2761 1078 22       		.uleb128 0x22
- 2762 1079 B60B0000 		.4byte	.LASF311
+ 2762 1079 4C0B0000 		.4byte	.LASF311
  2763 107d 05       		.byte	0x5
  2764 107e 8404     		.2byte	0x484
  2765 1080 B3060000 		.4byte	0x6b3
@@ -3528,7 +3528,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2779 10a2 BD04     		.2byte	0x4bd
  2780 10a4 1B010000 		.4byte	0x11b
  2781 10a8 22       		.uleb128 0x22
- 2782 10a9 5B0B0000 		.4byte	.LASF315
+ 2782 10a9 F10A0000 		.4byte	.LASF315
  2783 10ad 05       		.byte	0x5
  2784 10ae BE04     		.2byte	0x4be
  2785 10b0 1B010000 		.4byte	0x11b
@@ -3538,10 +3538,10 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2789 10ba BF04     		.2byte	0x4bf
  2790 10bc D6010000 		.4byte	0x1d6
  2791 10c0 22       		.uleb128 0x22
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 60
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 60
 
 
- 2792 10c1 260D0000 		.4byte	.LASF317
+ 2792 10c1 BC0C0000 		.4byte	.LASF317
  2793 10c5 05       		.byte	0x5
  2794 10c6 C004     		.2byte	0x4c0
  2795 10c8 D6010000 		.4byte	0x1d6
@@ -3561,7 +3561,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2809 10ea C304     		.2byte	0x4c3
  2810 10ec DD070000 		.4byte	0x7dd
  2811 10f0 22       		.uleb128 0x22
- 2812 10f1 CE110000 		.4byte	.LASF321
+ 2812 10f1 64110000 		.4byte	.LASF321
  2813 10f5 05       		.byte	0x5
  2814 10f6 C404     		.2byte	0x4c4
  2815 10f8 10010000 		.4byte	0x110
@@ -3571,7 +3571,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2819 1102 CA04     		.2byte	0x4ca
  2820 1104 F90B0000 		.4byte	0xbf9
  2821 1108 22       		.uleb128 0x22
- 2822 1109 0F110000 		.4byte	.LASF323
+ 2822 1109 A5100000 		.4byte	.LASF323
  2823 110d 05       		.byte	0x5
  2824 110e D504     		.2byte	0x4d5
  2825 1110 10010000 		.4byte	0x110
@@ -3581,12 +3581,12 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2829 111a DD04     		.2byte	0x4dd
  2830 111c DD070000 		.4byte	0x7dd
  2831 1120 22       		.uleb128 0x22
- 2832 1121 300B0000 		.4byte	.LASF325
+ 2832 1121 C60A0000 		.4byte	.LASF325
  2833 1125 05       		.byte	0x5
  2834 1126 DE04     		.2byte	0x4de
  2835 1128 10010000 		.4byte	0x110
  2836 112c 22       		.uleb128 0x22
- 2837 112d D70E0000 		.4byte	.LASF326
+ 2837 112d 6D0E0000 		.4byte	.LASF326
  2838 1131 05       		.byte	0x5
  2839 1132 0605     		.2byte	0x506
  2840 1134 38110000 		.4byte	0x1138
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2846 1143 0705     		.2byte	0x507
  2847 1145 49110000 		.4byte	0x1149
  2848 1149 23       		.uleb128 0x23
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 61
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 61
 
 
  2849 114a 9F010000 		.4byte	0x19f
@@ -3622,18 +3622,18 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2867 1176 0A05     		.2byte	0x50a
  2868 1178 6B110000 		.4byte	0x116b
  2869 117c 22       		.uleb128 0x22
- 2870 117d D00C0000 		.4byte	.LASF331
+ 2870 117d 660C0000 		.4byte	.LASF331
  2871 1181 05       		.byte	0x5
  2872 1182 0D05     		.2byte	0x50d
  2873 1184 6B110000 		.4byte	0x116b
  2874 1188 22       		.uleb128 0x22
- 2875 1189 61150000 		.4byte	.LASF332
+ 2875 1189 6C150000 		.4byte	.LASF332
  2876 118d 05       		.byte	0x5
  2877 118e 0F05     		.2byte	0x50f
  2878 1190 49110000 		.4byte	0x1149
  2879 1194 24       		.uleb128 0x24
- 2880 1195 860E0000 		.4byte	.LASF333
- 2881 1199 860E0000 		.4byte	.LASF333
+ 2880 1195 1C0E0000 		.4byte	.LASF333
+ 2881 1199 1C0E0000 		.4byte	.LASF333
  2882 119d 02       		.byte	0x2
  2883 119e 7C01     		.2byte	0x17c
  2884 11a0 24       		.uleb128 0x24
@@ -3657,11 +3657,11 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2902 11cd 05       		.byte	0x5
  2903 11ce 5F07     		.2byte	0x75f
  2904 11d0 24       		.uleb128 0x24
- 2905 11d1 920E0000 		.4byte	.LASF338
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 62
+ 2905 11d1 280E0000 		.4byte	.LASF338
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 62
 
 
- 2906 11d5 920E0000 		.4byte	.LASF338
+ 2906 11d5 280E0000 		.4byte	.LASF338
  2907 11d9 05       		.byte	0x5
  2908 11da 1707     		.2byte	0x717
  2909 11dc 24       		.uleb128 0x24
@@ -3670,13 +3670,13 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2912 11e5 05       		.byte	0x5
  2913 11e6 AE07     		.2byte	0x7ae
  2914 11e8 24       		.uleb128 0x24
- 2915 11e9 7E100000 		.4byte	.LASF340
- 2916 11ed 7E100000 		.4byte	.LASF340
+ 2915 11e9 14100000 		.4byte	.LASF340
+ 2916 11ed 14100000 		.4byte	.LASF340
  2917 11f1 05       		.byte	0x5
  2918 11f2 BF06     		.2byte	0x6bf
  2919 11f4 24       		.uleb128 0x24
- 2920 11f5 46110000 		.4byte	.LASF341
- 2921 11f9 46110000 		.4byte	.LASF341
+ 2920 11f5 DC100000 		.4byte	.LASF341
+ 2921 11f9 DC100000 		.4byte	.LASF341
  2922 11fd 05       		.byte	0x5
  2923 11fe A706     		.2byte	0x6a7
  2924 1200 24       		.uleb128 0x24
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  2960 0017 0E       		.uleb128 0xe
  2961 0018 3A       		.uleb128 0x3a
  2962 0019 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 63
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 63
 
 
  2963 001a 3B       		.uleb128 0x3b
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3017 0050 0F       		.uleb128 0xf
  3018 0051 00       		.byte	0
  3019 0052 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 64
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 64
 
 
  3020 0053 0B       		.uleb128 0xb
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3074 0089 03       		.uleb128 0x3
  3075 008a 0E       		.uleb128 0xe
  3076 008b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 65
 
 
  3077 008c 0B       		.uleb128 0xb
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3131 00c2 0B       		.uleb128 0xb
  3132 00c3 00       		.byte	0
  3133 00c4 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 66
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 66
 
 
  3134 00c5 12       		.uleb128 0x12
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3188 00fc 00       		.byte	0
  3189 00fd 15       		.uleb128 0x15
  3190 00fe 34       		.uleb128 0x34
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 67
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 67
 
 
  3191 00ff 00       		.byte	0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3245 013c 19       		.uleb128 0x19
  3246 013d 8701     		.uleb128 0x87
  3247 013f 19       		.uleb128 0x19
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 68
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 68
 
 
  3248 0140 11       		.uleb128 0x11
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3302 0177 18       		.uleb128 0x18
  3303 0178 00       		.byte	0
  3304 0179 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 69
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 69
 
 
  3305 017a 1D       		.uleb128 0x1d
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3359 01b2 21       		.uleb128 0x21
  3360 01b3 2E       		.uleb128 0x2e
  3361 01b4 01       		.byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 70
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 70
 
 
  3362 01b5 3F       		.uleb128 0x3f
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3416 01ec 0E       		.uleb128 0xe
  3417 01ed 03       		.uleb128 0x3
  3418 01ee 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 71
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 71
 
 
  3419 01ef 3A       		.uleb128 0x3a
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3473 006d 00000000 		.4byte	0
  3474 0071 00000000 		.4byte	0
  3475              	.LLST4:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 72
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 72
 
 
  3476 0075 04000000 		.4byte	.LVL1
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3530 0102 8C01     		.sleb128 140
  3531 0104 00000000 		.4byte	0
  3532 0108 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 73
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 73
 
 
  3533              	.LLST7:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3587 019c CE000000 		.4byte	.LVL39
  3588 01a0 0100     		.2byte	0x1
  3589 01a2 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 74
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 74
 
 
  3590 01a3 00000000 		.4byte	0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3643 0232 EE010000 		.4byte	.LVL69
  3644 0236 0100     		.2byte	0x1
  3645 0238 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 75
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 75
 
 
  3646 0239 00000000 		.4byte	0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3700 02c7 4E000000 		.4byte	.LVL78
  3701 02cb 0200     		.2byte	0x2
  3702 02cd 30       		.byte	0x30
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 76
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 76
 
 
  3703 02ce 9F       		.byte	0x9f
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3756 035a A8000000 		.4byte	.LFE4
  3757 035e 0400     		.2byte	0x4
  3758 0360 F3       		.byte	0xf3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 77
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 77
 
 
  3759 0361 01       		.uleb128 0x1
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3802      494E5641 
  3802      4C494400 
  3803              	.LASF204:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 78
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 78
 
 
  3804 0028 4F535F45 		.ascii	"OS_ERR\000"
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3828 00c3 4F535F45 		.ascii	"OS_ERR_F\000"
  3828      52525F46 
  3828      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 79
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 79
 
 
  3829              	.LASF58:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3856      52525F54 
  3856      00
  3857              	.LASF197:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 80
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 80
 
 
  3858 014a 4F535F45 		.ascii	"OS_ERR_U\000"
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3880      325500
  3881              	.LASF136:
  3882 01f3 4F535F45 		.ascii	"OS_ERR_STK_INVALID\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 81
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 81
 
 
  3882      52525F53 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3902      6B544342 
  3902      00
  3903              	.LASF150:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 82
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 82
 
 
  3904 02b5 4F535F45 		.ascii	"OS_ERR_TASK_NOT_SUSPENDED\000"
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3924      52525F4D 
  3924      55544558 
  3924      5F4E4553 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 83
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 83
 
 
  3924      54494E47 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3946      00
  3947              	.LASF284:
  3948 0428 5264794D 		.ascii	"RdyMsgPtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 84
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 84
 
 
  3948      73675074 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3971              	.LASF107:
  3972 04de 4F535F45 		.ascii	"OS_ERR_POST_NULL_PTR\000"
  3972      52525F50 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 85
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 85
 
 
  3972      4F53545F 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  3992 05a6 53746B55 		.ascii	"StkUsed\000"
  3992      73656400 
  3993              	.LASF189:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 86
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 86
 
 
  3994 05ae 4F535F45 		.ascii	"OS_ERR_TMR_INVALID\000"
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4016      52525F51 
  4016      5F454D50 
  4016      545900
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 87
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 87
 
 
  4017              	.LASF179:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4037              	.LASF84:
  4038 0788 4F535F45 		.ascii	"OS_ERR_MUTEX_NOT_OWNER\000"
  4038      52525F4D 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 88
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 88
 
 
  4038      55544558 
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4061              	.LASF220:
  4062 083f 4E627245 		.ascii	"NbrEntriesSize\000"
  4062      6E747269 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 89
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 89
 
 
  4062      65735369 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4084      00
  4085              	.LASF205:
  4086 08f8 4F535F4D 		.ascii	"OS_MSG\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 90
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 90
 
 
  4086      534700
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4109              	.LASF231:
  4110 09ae 4D736751 		.ascii	"MsgQ\000"
  4110      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 91
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 91
 
 
  4111              	.LASF37:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4134      00
  4135              	.LASF92:
  4136 0a58 4F535F45 		.ascii	"OS_ERR_OBJ_DEL\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 92
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 92
 
 
  4136      52525F4F 
@@ -5498,895 +5498,896 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 1
  4152 0aba 4F535F4D 		.ascii	"OS_MSG_POOL\000"
  4152      53475F50 
  4152      4F4F4C00 
- 4153              	.LASF346:
- 4154 0ac6 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
- 4154      73657273 
- 4154      5C6A6F72 
- 4154      74695C44 
- 4154      6F63756D 
- 4155 0af3 7374656D 		.ascii	"stem_Software_1\\cypress\\esw_rtos_cykit\\esw_uCOS3"
- 4155      5F536F66 
- 4155      74776172 
- 4155      655F315C 
- 4155      63797072 
- 4156 0b23 5F63796B 		.ascii	"_cykit.cydsn\000"
- 4156      69742E63 
- 4156      7964736E 
- 4156      00
- 4157              	.LASF325:
- 4158 0b30 4F53546D 		.ascii	"OSTmrTaskTimeMax\000"
- 4158      72546173 
- 4158      6B54696D 
- 4158      654D6178 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 93
+ 4153              	.LASF325:
+ 4154 0ac6 4F53546D 		.ascii	"OSTmrTaskTimeMax\000"
+ 4154      72546173 
+ 4154      6B54696D 
+ 4154      654D6178 
+ 4154      00
+ 4155              	.LASF117:
+ 4156 0ad7 4F535F45 		.ascii	"OS_ERR_Q_SIZE\000"
+ 4156      52525F51 
+ 4156      5F53495A 
+ 4156      4500
+ 4157              	.LASF269:
+ 4158 0ae5 4379636C 		.ascii	"CyclesStart\000"
+ 4158      65735374 
+ 4158      61727400 
+ 4159              	.LASF315:
+ 4160 0af1 4F535374 		.ascii	"OSStatTaskCPUUsageMax\000"
+ 4160      61745461 
+ 4160      736B4350 
+ 4160      55557361 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 93
 
 
- 4158      00
- 4159              	.LASF117:
- 4160 0b41 4F535F45 		.ascii	"OS_ERR_Q_SIZE\000"
- 4160      52525F51 
- 4160      5F53495A 
- 4160      4500
- 4161              	.LASF269:
- 4162 0b4f 4379636C 		.ascii	"CyclesStart\000"
- 4162      65735374 
- 4162      61727400 
- 4163              	.LASF315:
- 4164 0b5b 4F535374 		.ascii	"OSStatTaskCPUUsageMax\000"
- 4164      61745461 
- 4164      736B4350 
- 4164      55557361 
- 4164      67654D61 
- 4165              	.LASF281:
- 4166 0b71 54434250 		.ascii	"TCBPtr\000"
- 4166      747200
- 4167              	.LASF102:
- 4168 0b78 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_SELF\000"
- 4168      52525F50 
- 4168      454E445F 
- 4168      41424F52 
- 4168      545F5345 
- 4169              	.LASF6:
- 4170 0b8f 4350555F 		.ascii	"CPU_INT16U\000"
- 4170      494E5431 
- 4170      365500
- 4171              	.LASF121:
- 4172 0b9a 4F535F45 		.ascii	"OS_ERR_ROUND_ROBIN_DISABLED\000"
- 4172      52525F52 
- 4172      4F554E44 
- 4172      5F524F42 
- 4172      494E5F44 
- 4173              	.LASF311:
- 4174 0bb6 4F534D73 		.ascii	"OSMsgPool\000"
- 4174      67506F6F 
- 4174      6C00
- 4175              	.LASF76:
- 4176 0bc0 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_PART\000"
- 4176      52525F4D 
- 4176      454D5F49 
- 4176      4E56414C 
- 4176      49445F50 
- 4177              	.LASF93:
- 4178 0bd8 4F535F45 		.ascii	"OS_ERR_OBJ_PTR_NULL\000"
- 4178      52525F4F 
- 4178      424A5F50 
- 4178      54525F4E 
- 4178      554C4C00 
- 4179              	.LASF119:
- 4180 0bec 4F535F45 		.ascii	"OS_ERR_REG_ID_INVALID\000"
- 4180      52525F52 
- 4180      45475F49 
- 4180      445F494E 
- 4180      56414C49 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 94
+ 4160      67654D61 
+ 4161              	.LASF281:
+ 4162 0b07 54434250 		.ascii	"TCBPtr\000"
+ 4162      747200
+ 4163              	.LASF102:
+ 4164 0b0e 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_SELF\000"
+ 4164      52525F50 
+ 4164      454E445F 
+ 4164      41424F52 
+ 4164      545F5345 
+ 4165              	.LASF6:
+ 4166 0b25 4350555F 		.ascii	"CPU_INT16U\000"
+ 4166      494E5431 
+ 4166      365500
+ 4167              	.LASF121:
+ 4168 0b30 4F535F45 		.ascii	"OS_ERR_ROUND_ROBIN_DISABLED\000"
+ 4168      52525F52 
+ 4168      4F554E44 
+ 4168      5F524F42 
+ 4168      494E5F44 
+ 4169              	.LASF311:
+ 4170 0b4c 4F534D73 		.ascii	"OSMsgPool\000"
+ 4170      67506F6F 
+ 4170      6C00
+ 4171              	.LASF76:
+ 4172 0b56 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_PART\000"
+ 4172      52525F4D 
+ 4172      454D5F49 
+ 4172      4E56414C 
+ 4172      49445F50 
+ 4173              	.LASF93:
+ 4174 0b6e 4F535F45 		.ascii	"OS_ERR_OBJ_PTR_NULL\000"
+ 4174      52525F4F 
+ 4174      424A5F50 
+ 4174      54525F4E 
+ 4174      554C4C00 
+ 4175              	.LASF119:
+ 4176 0b82 4F535F45 		.ascii	"OS_ERR_REG_ID_INVALID\000"
+ 4176      52525F52 
+ 4176      45475F49 
+ 4176      445F494E 
+ 4176      56414C49 
+ 4177              	.LASF42:
+ 4178 0b98 4F535F54 		.ascii	"OS_TICK\000"
+ 4178      49434B00 
+ 4179              	.LASF73:
+ 4180 0ba0 4F535F45 		.ascii	"OS_ERR_MEM_FULL\000"
+ 4180      52525F4D 
+ 4180      454D5F46 
+ 4180      554C4C00 
+ 4181              	.LASF147:
+ 4182 0bb0 4F535F45 		.ascii	"OS_ERR_TASK_NO_MORE_TCB\000"
+ 4182      52525F54 
+ 4182      41534B5F 
+ 4182      4E4F5F4D 
+ 4182      4F52455F 
+ 4183              	.LASF78:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 94
 
 
- 4181              	.LASF42:
- 4182 0c02 4F535F54 		.ascii	"OS_TICK\000"
- 4182      49434B00 
- 4183              	.LASF73:
- 4184 0c0a 4F535F45 		.ascii	"OS_ERR_MEM_FULL\000"
+ 4184 0bc8 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_MEM\000"
  4184      52525F4D 
- 4184      454D5F46 
- 4184      554C4C00 
- 4185              	.LASF147:
- 4186 0c1a 4F535F45 		.ascii	"OS_ERR_TASK_NO_MORE_TCB\000"
- 4186      52525F54 
- 4186      41534B5F 
- 4186      4E4F5F4D 
- 4186      4F52455F 
- 4187              	.LASF78:
- 4188 0c32 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_MEM\000"
- 4188      52525F4D 
- 4188      454D5F49 
- 4188      4E56414C 
- 4188      49445F50 
- 4189              	.LASF23:
- 4190 0c4b 4350555F 		.ascii	"CPU_TS32\000"
- 4190      54533332 
+ 4184      454D5F49 
+ 4184      4E56414C 
+ 4184      49445F50 
+ 4185              	.LASF23:
+ 4186 0be1 4350555F 		.ascii	"CPU_TS32\000"
+ 4186      54533332 
+ 4186      00
+ 4187              	.LASF264:
+ 4188 0bea 53757370 		.ascii	"SuspendCtr\000"
+ 4188      656E6443 
+ 4188      747200
+ 4189              	.LASF224:
+ 4190 0bf5 6F735F71 		.ascii	"os_q\000"
  4190      00
- 4191              	.LASF264:
- 4192 0c54 53757370 		.ascii	"SuspendCtr\000"
- 4192      656E6443 
- 4192      747200
- 4193              	.LASF224:
- 4194 0c5f 6F735F71 		.ascii	"os_q\000"
- 4194      00
- 4195              	.LASF268:
- 4196 0c64 4379636C 		.ascii	"CyclesDelta\000"
- 4196      65734465 
- 4196      6C746100 
- 4197              	.LASF39:
- 4198 0c70 4F535F53 		.ascii	"OS_SEM_CTR\000"
- 4198      454D5F43 
- 4198      545200
- 4199              	.LASF195:
- 4200 0c7b 4F535F45 		.ascii	"OS_ERR_TMR_STK_SIZE_INVALID\000"
- 4200      52525F54 
- 4200      4D525F53 
- 4200      544B5F53 
- 4200      495A455F 
- 4201              	.LASF172:
- 4202 0c97 4F535F45 		.ascii	"OS_ERR_TICK_WHEEL_SIZE\000"
+ 4191              	.LASF268:
+ 4192 0bfa 4379636C 		.ascii	"CyclesDelta\000"
+ 4192      65734465 
+ 4192      6C746100 
+ 4193              	.LASF39:
+ 4194 0c06 4F535F53 		.ascii	"OS_SEM_CTR\000"
+ 4194      454D5F43 
+ 4194      545200
+ 4195              	.LASF195:
+ 4196 0c11 4F535F45 		.ascii	"OS_ERR_TMR_STK_SIZE_INVALID\000"
+ 4196      52525F54 
+ 4196      4D525F53 
+ 4196      544B5F53 
+ 4196      495A455F 
+ 4197              	.LASF172:
+ 4198 0c2d 4F535F45 		.ascii	"OS_ERR_TICK_WHEEL_SIZE\000"
+ 4198      52525F54 
+ 4198      49434B5F 
+ 4198      57484545 
+ 4198      4C5F5349 
+ 4199              	.LASF239:
+ 4200 0c44 5469636B 		.ascii	"TickNextPtr\000"
+ 4200      4E657874 
+ 4200      50747200 
+ 4201              	.LASF149:
+ 4202 0c50 4F535F45 		.ascii	"OS_ERR_TASK_NOT_EXIST\000"
  4202      52525F54 
- 4202      49434B5F 
- 4202      57484545 
- 4202      4C5F5349 
- 4203              	.LASF239:
- 4204 0cae 5469636B 		.ascii	"TickNextPtr\000"
- 4204      4E657874 
- 4204      50747200 
- 4205              	.LASF149:
- 4206 0cba 4F535F45 		.ascii	"OS_ERR_TASK_NOT_EXIST\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 95
-
-
+ 4202      41534B5F 
+ 4202      4E4F545F 
+ 4202      45584953 
+ 4203              	.LASF331:
+ 4204 0c66 4F534366 		.ascii	"OSCfg_StkSizeMin\000"
+ 4204      675F5374 
+ 4204      6B53697A 
+ 4204      654D696E 
+ 4204      00
+ 4205              	.LASF146:
+ 4206 0c77 4F535F45 		.ascii	"OS_ERR_TASK_INVALID\000"
  4206      52525F54 
  4206      41534B5F 
- 4206      4E4F545F 
- 4206      45584953 
- 4207              	.LASF331:
- 4208 0cd0 4F534366 		.ascii	"OSCfg_StkSizeMin\000"
- 4208      675F5374 
- 4208      6B53697A 
- 4208      654D696E 
- 4208      00
- 4209              	.LASF146:
- 4210 0ce1 4F535F45 		.ascii	"OS_ERR_TASK_INVALID\000"
+ 4206      494E5641 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 95
+
+
+ 4206      4C494400 
+ 4207              	.LASF193:
+ 4208 0c8b 4F535F45 		.ascii	"OS_ERR_TMR_PRIO_INVALID\000"
+ 4208      52525F54 
+ 4208      4D525F50 
+ 4208      52494F5F 
+ 4208      494E5641 
+ 4209              	.LASF161:
+ 4210 0ca3 4F535F45 		.ascii	"OS_ERR_TASK_SUSPEND_PRIO\000"
  4210      52525F54 
  4210      41534B5F 
- 4210      494E5641 
- 4210      4C494400 
- 4211              	.LASF193:
- 4212 0cf5 4F535F45 		.ascii	"OS_ERR_TMR_PRIO_INVALID\000"
- 4212      52525F54 
- 4212      4D525F50 
- 4212      52494F5F 
- 4212      494E5641 
- 4213              	.LASF161:
- 4214 0d0d 4F535F45 		.ascii	"OS_ERR_TASK_SUSPEND_PRIO\000"
- 4214      52525F54 
- 4214      41534B5F 
- 4214      53555350 
- 4214      454E445F 
- 4215              	.LASF317:
- 4216 0d26 4F535374 		.ascii	"OSStatTaskCtrMax\000"
- 4216      61745461 
- 4216      736B4374 
- 4216      724D6178 
- 4216      00
- 4217              	.LASF283:
- 4218 0d37 5264794F 		.ascii	"RdyObjPtr\000"
- 4218      626A5074 
- 4218      7200
- 4219              	.LASF66:
- 4220 0d41 4F535F45 		.ascii	"OS_ERR_INT_Q_STK_SIZE_INVALID\000"
- 4220      52525F49 
- 4220      4E545F51 
- 4220      5F53544B 
- 4220      5F53495A 
- 4221              	.LASF165:
- 4222 0d5f 4F535F45 		.ascii	"OS_ERR_TLS_ISR\000"
- 4222      52525F54 
- 4222      4C535F49 
- 4222      535200
- 4223              	.LASF145:
- 4224 0d6e 4F535F45 		.ascii	"OS_ERR_TASK_DEL_ISR\000"
- 4224      52525F54 
- 4224      41534B5F 
- 4224      44454C5F 
- 4224      49535200 
- 4225              	.LASF272:
- 4226 0d82 53656D50 		.ascii	"SemPendTime\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 96
+ 4210      53555350 
+ 4210      454E445F 
+ 4211              	.LASF317:
+ 4212 0cbc 4F535374 		.ascii	"OSStatTaskCtrMax\000"
+ 4212      61745461 
+ 4212      736B4374 
+ 4212      724D6178 
+ 4212      00
+ 4213              	.LASF283:
+ 4214 0ccd 5264794F 		.ascii	"RdyObjPtr\000"
+ 4214      626A5074 
+ 4214      7200
+ 4215              	.LASF66:
+ 4216 0cd7 4F535F45 		.ascii	"OS_ERR_INT_Q_STK_SIZE_INVALID\000"
+ 4216      52525F49 
+ 4216      4E545F51 
+ 4216      5F53544B 
+ 4216      5F53495A 
+ 4217              	.LASF165:
+ 4218 0cf5 4F535F45 		.ascii	"OS_ERR_TLS_ISR\000"
+ 4218      52525F54 
+ 4218      4C535F49 
+ 4218      535200
+ 4219              	.LASF145:
+ 4220 0d04 4F535F45 		.ascii	"OS_ERR_TASK_DEL_ISR\000"
+ 4220      52525F54 
+ 4220      41534B5F 
+ 4220      44454C5F 
+ 4220      49535200 
+ 4221              	.LASF272:
+ 4222 0d18 53656D50 		.ascii	"SemPendTime\000"
+ 4222      656E6454 
+ 4222      696D6500 
+ 4223              	.LASF112:
+ 4224 0d24 4F535F45 		.ascii	"OS_ERR_PTR_INVALID\000"
+ 4224      52525F50 
+ 4224      54525F49 
+ 4224      4E56414C 
+ 4224      494400
+ 4225              	.LASF134:
+ 4226 0d37 4F535F45 		.ascii	"OS_ERR_STATE_INVALID\000"
+ 4226      52525F53 
+ 4226      54415445 
+ 4226      5F494E56 
+ 4226      414C4944 
+ 4227              	.LASF206:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 96
 
 
- 4226      656E6454 
- 4226      696D6500 
- 4227              	.LASF112:
- 4228 0d8e 4F535F45 		.ascii	"OS_ERR_PTR_INVALID\000"
- 4228      52525F50 
- 4228      54525F49 
- 4228      4E56414C 
- 4228      494400
- 4229              	.LASF134:
- 4230 0da1 4F535F45 		.ascii	"OS_ERR_STATE_INVALID\000"
- 4230      52525F53 
- 4230      54415445 
- 4230      5F494E56 
- 4230      414C4944 
- 4231              	.LASF206:
- 4232 0db6 4E657874 		.ascii	"NextPtr\000"
- 4232      50747200 
- 4233              	.LASF21:
- 4234 0dbe 6C6F6E67 		.ascii	"long double\000"
- 4234      20646F75 
- 4234      626C6500 
- 4235              	.LASF96:
- 4236 0dca 4F535F45 		.ascii	"OS_ERR_OS_NOT_RUNNING\000"
- 4236      52525F4F 
- 4236      535F4E4F 
- 4236      545F5255 
- 4236      4E4E494E 
- 4237              	.LASF237:
- 4238 0de0 53746B4C 		.ascii	"StkLimitPtr\000"
- 4238      696D6974 
- 4238      50747200 
- 4239              	.LASF181:
- 4240 0dec 4F535F45 		.ascii	"OS_ERR_TIME_SET_ISR\000"
- 4240      52525F54 
- 4240      494D455F 
- 4240      5345545F 
- 4240      49535200 
- 4241              	.LASF120:
- 4242 0e00 4F535F45 		.ascii	"OS_ERR_ROUND_ROBIN_1\000"
- 4242      52525F52 
- 4242      4F554E44 
- 4242      5F524F42 
- 4242      494E5F31 
- 4243              	.LASF77:
- 4244 0e15 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_BLK\000"
- 4244      52525F4D 
- 4244      454D5F49 
- 4244      4E56414C 
- 4244      49445F50 
- 4245              	.LASF74:
- 4246 0e2e 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_ADDR\000"
- 4246      52525F4D 
- 4246      454D5F49 
- 4246      4E56414C 
- 4246      49445F50 
- 4247              	.LASF303:
- 4248 0e48 6374725F 		.ascii	"ctr_max\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 97
+ 4228 0d4c 4E657874 		.ascii	"NextPtr\000"
+ 4228      50747200 
+ 4229              	.LASF21:
+ 4230 0d54 6C6F6E67 		.ascii	"long double\000"
+ 4230      20646F75 
+ 4230      626C6500 
+ 4231              	.LASF96:
+ 4232 0d60 4F535F45 		.ascii	"OS_ERR_OS_NOT_RUNNING\000"
+ 4232      52525F4F 
+ 4232      535F4E4F 
+ 4232      545F5255 
+ 4232      4E4E494E 
+ 4233              	.LASF237:
+ 4234 0d76 53746B4C 		.ascii	"StkLimitPtr\000"
+ 4234      696D6974 
+ 4234      50747200 
+ 4235              	.LASF181:
+ 4236 0d82 4F535F45 		.ascii	"OS_ERR_TIME_SET_ISR\000"
+ 4236      52525F54 
+ 4236      494D455F 
+ 4236      5345545F 
+ 4236      49535200 
+ 4237              	.LASF120:
+ 4238 0d96 4F535F45 		.ascii	"OS_ERR_ROUND_ROBIN_1\000"
+ 4238      52525F52 
+ 4238      4F554E44 
+ 4238      5F524F42 
+ 4238      494E5F31 
+ 4239              	.LASF77:
+ 4240 0dab 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_BLK\000"
+ 4240      52525F4D 
+ 4240      454D5F49 
+ 4240      4E56414C 
+ 4240      49445F50 
+ 4241              	.LASF74:
+ 4242 0dc4 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_ADDR\000"
+ 4242      52525F4D 
+ 4242      454D5F49 
+ 4242      4E56414C 
+ 4242      49445F50 
+ 4243              	.LASF303:
+ 4244 0dde 6374725F 		.ascii	"ctr_max\000"
+ 4244      6D617800 
+ 4245              	.LASF286:
+ 4246 0de6 52647954 		.ascii	"RdyTS\000"
+ 4246      5300
+ 4247              	.LASF70:
+ 4248 0dec 4F535F45 		.ascii	"OS_ERR_LOCK_NESTING_OVF\000"
+ 4248      52525F4C 
+ 4248      4F434B5F 
+ 4248      4E455354 
+ 4248      494E475F 
+ 4249              	.LASF156:
+ 4250 0e04 4F535F45 		.ascii	"OS_ERR_TASK_STK_CHK_ISR\000"
+ 4250      52525F54 
+ 4250      41534B5F 
+ 4250      53544B5F 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 97
 
 
- 4248      6D617800 
- 4249              	.LASF286:
- 4250 0e50 52647954 		.ascii	"RdyTS\000"
- 4250      5300
- 4251              	.LASF70:
- 4252 0e56 4F535F45 		.ascii	"OS_ERR_LOCK_NESTING_OVF\000"
- 4252      52525F4C 
- 4252      4F434B5F 
- 4252      4E455354 
- 4252      494E475F 
- 4253              	.LASF156:
- 4254 0e6e 4F535F45 		.ascii	"OS_ERR_TASK_STK_CHK_ISR\000"
- 4254      52525F54 
- 4254      41534B5F 
- 4254      53544B5F 
- 4254      43484B5F 
- 4255              	.LASF333:
- 4256 0e86 4350555F 		.ascii	"CPU_SR_Save\000"
- 4256      53525F53 
- 4256      61766500 
- 4257              	.LASF338:
- 4258 0e92 4F535469 		.ascii	"OSTimeDly\000"
- 4258      6D65446C 
- 4258      7900
- 4259              	.LASF8:
- 4260 0e9c 73686F72 		.ascii	"short int\000"
- 4260      7420696E 
- 4260      7400
- 4261              	.LASF285:
- 4262 0ea6 5264794D 		.ascii	"RdyMsgSize\000"
- 4262      73675369 
- 4262      7A6500
- 4263              	.LASF310:
- 4264 0eb1 4F535F53 		.ascii	"OS_StatTaskInit\000"
- 4264      74617454 
- 4264      61736B49 
- 4264      6E697400 
- 4265              	.LASF82:
- 4266 0ec1 4F535F45 		.ascii	"OS_ERR_MSG_POOL_EMPTY\000"
- 4266      52525F4D 
- 4266      53475F50 
- 4266      4F4F4C5F 
- 4266      454D5054 
- 4267              	.LASF326:
- 4268 0ed7 4F534366 		.ascii	"OSCfg_StatTaskPrio\000"
- 4268      675F5374 
- 4268      61745461 
- 4268      736B5072 
- 4268      696F00
- 4269              	.LASF19:
- 4270 0eea 6C6F6E67 		.ascii	"long int\000"
- 4270      20696E74 
- 4270      00
- 4271              	.LASF127:
- 4272 0ef3 4F535F45 		.ascii	"OS_ERR_SCHED_UNLOCK_ISR\000"
- 4272      52525F53 
- 4272      43484544 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 98
+ 4250      43484B5F 
+ 4251              	.LASF333:
+ 4252 0e1c 4350555F 		.ascii	"CPU_SR_Save\000"
+ 4252      53525F53 
+ 4252      61766500 
+ 4253              	.LASF338:
+ 4254 0e28 4F535469 		.ascii	"OSTimeDly\000"
+ 4254      6D65446C 
+ 4254      7900
+ 4255              	.LASF8:
+ 4256 0e32 73686F72 		.ascii	"short int\000"
+ 4256      7420696E 
+ 4256      7400
+ 4257              	.LASF285:
+ 4258 0e3c 5264794D 		.ascii	"RdyMsgSize\000"
+ 4258      73675369 
+ 4258      7A6500
+ 4259              	.LASF310:
+ 4260 0e47 4F535F53 		.ascii	"OS_StatTaskInit\000"
+ 4260      74617454 
+ 4260      61736B49 
+ 4260      6E697400 
+ 4261              	.LASF82:
+ 4262 0e57 4F535F45 		.ascii	"OS_ERR_MSG_POOL_EMPTY\000"
+ 4262      52525F4D 
+ 4262      53475F50 
+ 4262      4F4F4C5F 
+ 4262      454D5054 
+ 4263              	.LASF326:
+ 4264 0e6d 4F534366 		.ascii	"OSCfg_StatTaskPrio\000"
+ 4264      675F5374 
+ 4264      61745461 
+ 4264      736B5072 
+ 4264      696F00
+ 4265              	.LASF19:
+ 4266 0e80 6C6F6E67 		.ascii	"long int\000"
+ 4266      20696E74 
+ 4266      00
+ 4267              	.LASF127:
+ 4268 0e89 4F535F45 		.ascii	"OS_ERR_SCHED_UNLOCK_ISR\000"
+ 4268      52525F53 
+ 4268      43484544 
+ 4268      5F554E4C 
+ 4268      4F434B5F 
+ 4269              	.LASF273:
+ 4270 0ea1 53656D50 		.ascii	"SemPendTimeMax\000"
+ 4270      656E6454 
+ 4270      696D654D 
+ 4270      617800
+ 4271              	.LASF271:
+ 4272 0eb0 4379636C 		.ascii	"CyclesTotalPrev\000"
+ 4272      6573546F 
+ 4272      74616C50 
+ 4272      72657600 
+ 4273              	.LASF170:
+ 4274 0ec0 4F535F45 		.ascii	"OS_ERR_TICK_STK_INVALID\000"
+ 4274      52525F54 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 98
 
 
- 4272      5F554E4C 
- 4272      4F434B5F 
- 4273              	.LASF273:
- 4274 0f0b 53656D50 		.ascii	"SemPendTimeMax\000"
- 4274      656E6454 
- 4274      696D654D 
- 4274      617800
- 4275              	.LASF271:
- 4276 0f1a 4379636C 		.ascii	"CyclesTotalPrev\000"
- 4276      6573546F 
- 4276      74616C50 
- 4276      72657600 
- 4277              	.LASF170:
- 4278 0f2a 4F535F45 		.ascii	"OS_ERR_TICK_STK_INVALID\000"
- 4278      52525F54 
- 4278      49434B5F 
- 4278      53544B5F 
- 4278      494E5641 
- 4279              	.LASF83:
- 4280 0f42 4F535F45 		.ascii	"OS_ERR_MSG_POOL_NULL_PTR\000"
- 4280      52525F4D 
- 4280      53475F50 
- 4280      4F4F4C5F 
- 4280      4E554C4C 
- 4281              	.LASF32:
- 4282 0f5b 4F535F4E 		.ascii	"OS_NESTING_CTR\000"
- 4282      45535449 
- 4282      4E475F43 
- 4282      545200
- 4283              	.LASF270:
- 4284 0f6a 4379636C 		.ascii	"CyclesTotal\000"
- 4284      6573546F 
- 4284      74616C00 
- 4285              	.LASF291:
- 4286 0f76 4F535F50 		.ascii	"OS_PEND_OBJ\000"
- 4286      454E445F 
- 4286      4F424A00 
- 4287              	.LASF154:
- 4288 0f82 4F535F45 		.ascii	"OS_ERR_TASK_RESUME_SELF\000"
- 4288      52525F54 
- 4288      41534B5F 
- 4288      52455355 
- 4288      4D455F53 
- 4289              	.LASF266:
- 4290 0f9a 43505555 		.ascii	"CPUUsageMax\000"
- 4290      73616765 
- 4290      4D617800 
- 4291              	.LASF227:
- 4292 0fa6 50656E64 		.ascii	"PendList\000"
- 4292      4C697374 
- 4292      00
- 4293              	.LASF94:
- 4294 0faf 4F535F45 		.ascii	"OS_ERR_OBJ_TYPE\000"
- 4294      52525F4F 
- 4294      424A5F54 
- 4294      59504500 
- 4295              	.LASF245:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 99
+ 4274      49434B5F 
+ 4274      53544B5F 
+ 4274      494E5641 
+ 4275              	.LASF83:
+ 4276 0ed8 4F535F45 		.ascii	"OS_ERR_MSG_POOL_NULL_PTR\000"
+ 4276      52525F4D 
+ 4276      53475F50 
+ 4276      4F4F4C5F 
+ 4276      4E554C4C 
+ 4277              	.LASF32:
+ 4278 0ef1 4F535F4E 		.ascii	"OS_NESTING_CTR\000"
+ 4278      45535449 
+ 4278      4E475F43 
+ 4278      545200
+ 4279              	.LASF270:
+ 4280 0f00 4379636C 		.ascii	"CyclesTotal\000"
+ 4280      6573546F 
+ 4280      74616C00 
+ 4281              	.LASF291:
+ 4282 0f0c 4F535F50 		.ascii	"OS_PEND_OBJ\000"
+ 4282      454E445F 
+ 4282      4F424A00 
+ 4283              	.LASF154:
+ 4284 0f18 4F535F45 		.ascii	"OS_ERR_TASK_RESUME_SELF\000"
+ 4284      52525F54 
+ 4284      41534B5F 
+ 4284      52455355 
+ 4284      4D455F53 
+ 4285              	.LASF266:
+ 4286 0f30 43505555 		.ascii	"CPUUsageMax\000"
+ 4286      73616765 
+ 4286      4D617800 
+ 4287              	.LASF227:
+ 4288 0f3c 50656E64 		.ascii	"PendList\000"
+ 4288      4C697374 
+ 4288      00
+ 4289              	.LASF94:
+ 4290 0f45 4F535F45 		.ascii	"OS_ERR_OBJ_TYPE\000"
+ 4290      52525F4F 
+ 4290      424A5F54 
+ 4290      59504500 
+ 4291              	.LASF245:
+ 4292 0f55 50656E64 		.ascii	"PendDataTblPtr\000"
+ 4292      44617461 
+ 4292      54626C50 
+ 4292      747200
+ 4293              	.LASF252:
+ 4294 0f64 53656D43 		.ascii	"SemCtr\000"
+ 4294      747200
+ 4295              	.LASF218:
+ 4296 0f6b 496E5074 		.ascii	"InPtr\000"
+ 4296      7200
+ 4297              	.LASF309:
+ 4298 0f71 4F535374 		.ascii	"OSStatTaskCPUUsageInit\000"
+ 4298      61745461 
+ 4298      736B4350 
+ 4298      55557361 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 99
 
 
- 4296 0fbf 50656E64 		.ascii	"PendDataTblPtr\000"
- 4296      44617461 
- 4296      54626C50 
- 4296      747200
- 4297              	.LASF252:
- 4298 0fce 53656D43 		.ascii	"SemCtr\000"
- 4298      747200
- 4299              	.LASF218:
- 4300 0fd5 496E5074 		.ascii	"InPtr\000"
- 4300      7200
- 4301              	.LASF309:
- 4302 0fdb 4F535374 		.ascii	"OSStatTaskCPUUsageInit\000"
- 4302      61745461 
- 4302      736B4350 
- 4302      55557361 
- 4302      6765496E 
- 4303              	.LASF255:
- 4304 0ff2 5469636B 		.ascii	"TickRemain\000"
- 4304      52656D61 
- 4304      696E00
- 4305              	.LASF289:
- 4306 0ffd 48656164 		.ascii	"HeadPtr\000"
- 4306      50747200 
- 4307              	.LASF101:
- 4308 1005 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_NONE\000"
- 4308      52525F50 
- 4308      454E445F 
- 4308      41424F52 
- 4308      545F4E4F 
- 4309              	.LASF10:
- 4310 101c 756E7369 		.ascii	"unsigned int\000"
- 4310      676E6564 
- 4310      20696E74 
- 4310      00
- 4311              	.LASF208:
- 4312 1029 4D736753 		.ascii	"MsgSize\000"
- 4312      697A6500 
- 4313              	.LASF85:
- 4314 1031 4F535F45 		.ascii	"OS_ERR_MUTEX_OWNER\000"
- 4314      52525F4D 
- 4314      55544558 
- 4314      5F4F574E 
- 4314      455200
- 4315              	.LASF278:
- 4316 1044 46697273 		.ascii	"FirstPtr\000"
- 4316      74507472 
- 4316      00
- 4317              	.LASF133:
- 4318 104d 4F535F45 		.ascii	"OS_ERR_STAT_STK_SIZE_INVALID\000"
- 4318      52525F53 
- 4318      5441545F 
- 4318      53544B5F 
- 4318      53495A45 
- 4319              	.LASF55:
- 4320 106a 4F535F45 		.ascii	"OS_ERR_FLAG_NOT_RDY\000"
- 4320      52525F46 
- 4320      4C41475F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 100
+ 4298      6765496E 
+ 4299              	.LASF255:
+ 4300 0f88 5469636B 		.ascii	"TickRemain\000"
+ 4300      52656D61 
+ 4300      696E00
+ 4301              	.LASF289:
+ 4302 0f93 48656164 		.ascii	"HeadPtr\000"
+ 4302      50747200 
+ 4303              	.LASF101:
+ 4304 0f9b 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_NONE\000"
+ 4304      52525F50 
+ 4304      454E445F 
+ 4304      41424F52 
+ 4304      545F4E4F 
+ 4305              	.LASF10:
+ 4306 0fb2 756E7369 		.ascii	"unsigned int\000"
+ 4306      676E6564 
+ 4306      20696E74 
+ 4306      00
+ 4307              	.LASF208:
+ 4308 0fbf 4D736753 		.ascii	"MsgSize\000"
+ 4308      697A6500 
+ 4309              	.LASF85:
+ 4310 0fc7 4F535F45 		.ascii	"OS_ERR_MUTEX_OWNER\000"
+ 4310      52525F4D 
+ 4310      55544558 
+ 4310      5F4F574E 
+ 4310      455200
+ 4311              	.LASF278:
+ 4312 0fda 46697273 		.ascii	"FirstPtr\000"
+ 4312      74507472 
+ 4312      00
+ 4313              	.LASF133:
+ 4314 0fe3 4F535F45 		.ascii	"OS_ERR_STAT_STK_SIZE_INVALID\000"
+ 4314      52525F53 
+ 4314      5441545F 
+ 4314      53544B5F 
+ 4314      53495A45 
+ 4315              	.LASF55:
+ 4316 1000 4F535F45 		.ascii	"OS_ERR_FLAG_NOT_RDY\000"
+ 4316      52525F46 
+ 4316      4C41475F 
+ 4316      4E4F545F 
+ 4316      52445900 
+ 4317              	.LASF340:
+ 4318 1014 4F535461 		.ascii	"OSTaskStkChk\000"
+ 4318      736B5374 
+ 4318      6B43686B 
+ 4318      00
+ 4319              	.LASF297:
+ 4320 1021 705F6172 		.ascii	"p_arg\000"
+ 4320      6700
+ 4321              	.LASF236:
+ 4322 1027 45787450 		.ascii	"ExtPtr\000"
+ 4322      747200
+ 4323              	.LASF22:
+ 4324 102e 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 100
 
 
- 4320      4E4F545F 
- 4320      52445900 
- 4321              	.LASF340:
- 4322 107e 4F535461 		.ascii	"OSTaskStkChk\000"
- 4322      736B5374 
- 4322      6B43686B 
- 4322      00
- 4323              	.LASF297:
- 4324 108b 705F6172 		.ascii	"p_arg\000"
- 4324      6700
- 4325              	.LASF236:
- 4326 1091 45787450 		.ascii	"ExtPtr\000"
- 4326      747200
- 4327              	.LASF22:
- 4328 1098 73697A65 		.ascii	"sizetype\000"
- 4328      74797065 
- 4328      00
- 4329              	.LASF20:
- 4330 10a1 6C6F6E67 		.ascii	"long unsigned int\000"
- 4330      20756E73 
- 4330      69676E65 
- 4330      6420696E 
- 4330      7400
- 4331              	.LASF100:
- 4332 10b3 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_ISR\000"
+ 4324      74797065 
+ 4324      00
+ 4325              	.LASF20:
+ 4326 1037 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4326      20756E73 
+ 4326      69676E65 
+ 4326      6420696E 
+ 4326      7400
+ 4327              	.LASF100:
+ 4328 1049 4F535F45 		.ascii	"OS_ERR_PEND_ABORT_ISR\000"
+ 4328      52525F50 
+ 4328      454E445F 
+ 4328      41424F52 
+ 4328      545F4953 
+ 4329              	.LASF15:
+ 4330 105f 4350555F 		.ascii	"CPU_ADDR\000"
+ 4330      41444452 
+ 4330      00
+ 4331              	.LASF108:
+ 4332 1068 4F535F45 		.ascii	"OS_ERR_POST_ISR\000"
  4332      52525F50 
- 4332      454E445F 
- 4332      41424F52 
- 4332      545F4953 
- 4333              	.LASF15:
- 4334 10c9 4350555F 		.ascii	"CPU_ADDR\000"
- 4334      41444452 
- 4334      00
- 4335              	.LASF108:
- 4336 10d2 4F535F45 		.ascii	"OS_ERR_POST_ISR\000"
- 4336      52525F50 
- 4336      4F53545F 
- 4336      49535200 
- 4337              	.LASF173:
- 4338 10e2 4F535F45 		.ascii	"OS_ERR_TIME_DLY_ISR\000"
- 4338      52525F54 
- 4338      494D455F 
- 4338      444C595F 
- 4338      49535200 
- 4339              	.LASF138:
- 4340 10f6 4F535F45 		.ascii	"OS_ERR_STK_LIMIT_INVALID\000"
- 4340      52525F53 
- 4340      544B5F4C 
- 4340      494D4954 
- 4340      5F494E56 
- 4341              	.LASF323:
- 4342 110f 4F535469 		.ascii	"OSTickTaskTimeMax\000"
- 4342      636B5461 
- 4342      736B5469 
- 4342      6D654D61 
- 4342      7800
- 4343              	.LASF305:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 101
+ 4332      4F53545F 
+ 4332      49535200 
+ 4333              	.LASF173:
+ 4334 1078 4F535F45 		.ascii	"OS_ERR_TIME_DLY_ISR\000"
+ 4334      52525F54 
+ 4334      494D455F 
+ 4334      444C595F 
+ 4334      49535200 
+ 4335              	.LASF138:
+ 4336 108c 4F535F45 		.ascii	"OS_ERR_STK_LIMIT_INVALID\000"
+ 4336      52525F53 
+ 4336      544B5F4C 
+ 4336      494D4954 
+ 4336      5F494E56 
+ 4337              	.LASF323:
+ 4338 10a5 4F535469 		.ascii	"OSTickTaskTimeMax\000"
+ 4338      636B5461 
+ 4338      736B5469 
+ 4338      6D654D61 
+ 4338      7800
+ 4339              	.LASF305:
+ 4340 10b7 6374725F 		.ascii	"ctr_div\000"
+ 4340      64697600 
+ 4341              	.LASF1:
+ 4342 10bf 4350555F 		.ascii	"CPU_BOOLEAN\000"
+ 4342      424F4F4C 
+ 4342      45414E00 
+ 4343              	.LASF28:
+ 4344 10cb 4F535F43 		.ascii	"OS_CYCLES\000"
+ 4344      59434C45 
+ 4344      5300
+ 4345              	.LASF233:
+ 4346 10d5 4F535F54 		.ascii	"OS_TCB\000"
+ 4346      434200
+ 4347              	.LASF341:
+ 4348 10dc 4F535461 		.ascii	"OSTaskSuspend\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 101
 
 
- 4344 1121 6374725F 		.ascii	"ctr_div\000"
- 4344      64697600 
- 4345              	.LASF1:
- 4346 1129 4350555F 		.ascii	"CPU_BOOLEAN\000"
- 4346      424F4F4C 
- 4346      45414E00 
- 4347              	.LASF28:
- 4348 1135 4F535F43 		.ascii	"OS_CYCLES\000"
- 4348      59434C45 
- 4348      5300
- 4349              	.LASF233:
- 4350 113f 4F535F54 		.ascii	"OS_TCB\000"
- 4350      434200
- 4351              	.LASF341:
- 4352 1146 4F535461 		.ascii	"OSTaskSuspend\000"
- 4352      736B5375 
- 4352      7370656E 
- 4352      6400
- 4353              	.LASF299:
- 4354 1154 6379636C 		.ascii	"cycles_total\000"
- 4354      65735F74 
- 4354      6F74616C 
- 4354      00
- 4355              	.LASF137:
- 4356 1161 4F535F45 		.ascii	"OS_ERR_STK_SIZE_INVALID\000"
- 4356      52525F53 
- 4356      544B5F53 
- 4356      495A455F 
- 4356      494E5641 
- 4357              	.LASF196:
- 4358 1179 4F535F45 		.ascii	"OS_ERR_TMR_STOPPED\000"
+ 4348      736B5375 
+ 4348      7370656E 
+ 4348      6400
+ 4349              	.LASF299:
+ 4350 10ea 6379636C 		.ascii	"cycles_total\000"
+ 4350      65735F74 
+ 4350      6F74616C 
+ 4350      00
+ 4351              	.LASF137:
+ 4352 10f7 4F535F45 		.ascii	"OS_ERR_STK_SIZE_INVALID\000"
+ 4352      52525F53 
+ 4352      544B5F53 
+ 4352      495A455F 
+ 4352      494E5641 
+ 4353              	.LASF196:
+ 4354 110f 4F535F45 		.ascii	"OS_ERR_TMR_STOPPED\000"
+ 4354      52525F54 
+ 4354      4D525F53 
+ 4354      544F5050 
+ 4354      454400
+ 4355              	.LASF3:
+ 4356 1122 756E7369 		.ascii	"unsigned char\000"
+ 4356      676E6564 
+ 4356      20636861 
+ 4356      7200
+ 4357              	.LASF151:
+ 4358 1130 4F535F45 		.ascii	"OS_ERR_TASK_OPT\000"
  4358      52525F54 
- 4358      4D525F53 
- 4358      544F5050 
- 4358      454400
- 4359              	.LASF3:
- 4360 118c 756E7369 		.ascii	"unsigned char\000"
- 4360      676E6564 
- 4360      20636861 
- 4360      7200
- 4361              	.LASF151:
- 4362 119a 4F535F45 		.ascii	"OS_ERR_TASK_OPT\000"
- 4362      52525F54 
- 4362      41534B5F 
- 4362      4F505400 
- 4363              	.LASF183:
- 4364 11aa 4F535F45 		.ascii	"OS_ERR_TIMEOUT\000"
- 4364      52525F54 
- 4364      494D454F 
- 4364      555400
- 4365              	.LASF348:
- 4366 11b9 4F535F53 		.ascii	"OS_StatTask\000"
- 4366      74617454 
- 4366      61736B00 
- 4367              	.LASF40:
- 4368 11c5 4F535F53 		.ascii	"OS_STATE\000"
- 4368      54415445 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 102
+ 4358      41534B5F 
+ 4358      4F505400 
+ 4359              	.LASF183:
+ 4360 1140 4F535F45 		.ascii	"OS_ERR_TIMEOUT\000"
+ 4360      52525F54 
+ 4360      494D454F 
+ 4360      555400
+ 4361              	.LASF348:
+ 4362 114f 4F535F53 		.ascii	"OS_StatTask\000"
+ 4362      74617454 
+ 4362      61736B00 
+ 4363              	.LASF40:
+ 4364 115b 4F535F53 		.ascii	"OS_STATE\000"
+ 4364      54415445 
+ 4364      00
+ 4365              	.LASF321:
+ 4366 1164 4F535374 		.ascii	"OSStatTaskTimeMax\000"
+ 4366      61745461 
+ 4366      736B5469 
+ 4366      6D654D61 
+ 4366      7800
+ 4367              	.LASF35:
+ 4368 1176 4F535F4F 		.ascii	"OS_OPT\000"
+ 4368      505400
+ 4369              	.LASF232:
+ 4370 117d 4F535F54 		.ascii	"OS_TASK_PTR\000"
+ 4370      41534B5F 
+ 4370      50545200 
+ 4371              	.LASF215:
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 102
 
 
- 4368      00
- 4369              	.LASF321:
- 4370 11ce 4F535374 		.ascii	"OSStatTaskTimeMax\000"
- 4370      61745461 
- 4370      736B5469 
- 4370      6D654D61 
- 4370      7800
- 4371              	.LASF35:
- 4372 11e0 4F535F4F 		.ascii	"OS_OPT\000"
- 4372      505400
- 4373              	.LASF232:
- 4374 11e7 4F535F54 		.ascii	"OS_TASK_PTR\000"
- 4374      41534B5F 
- 4374      50545200 
- 4375              	.LASF215:
- 4376 11f3 4E627255 		.ascii	"NbrUsedMax\000"
- 4376      7365644D 
- 4376      617800
- 4377              	.LASF72:
- 4378 11fe 4F535F45 		.ascii	"OS_ERR_MEM_CREATE_ISR\000"
- 4378      52525F4D 
- 4378      454D5F43 
- 4378      52454154 
- 4378      455F4953 
- 4379              	.LASF213:
- 4380 1214 4E627246 		.ascii	"NbrFree\000"
- 4380      72656500 
- 4381              	.LASF135:
- 4382 121c 4F535F45 		.ascii	"OS_ERR_STATUS_INVALID\000"
- 4382      52525F53 
- 4382      54415455 
- 4382      535F494E 
- 4382      56414C49 
- 4383              	.LASF201:
- 4384 1232 4F535F45 		.ascii	"OS_ERR_Y\000"
- 4384      52525F59 
+ 4372 1189 4E627255 		.ascii	"NbrUsedMax\000"
+ 4372      7365644D 
+ 4372      617800
+ 4373              	.LASF72:
+ 4374 1194 4F535F45 		.ascii	"OS_ERR_MEM_CREATE_ISR\000"
+ 4374      52525F4D 
+ 4374      454D5F43 
+ 4374      52454154 
+ 4374      455F4953 
+ 4375              	.LASF213:
+ 4376 11aa 4E627246 		.ascii	"NbrFree\000"
+ 4376      72656500 
+ 4377              	.LASF135:
+ 4378 11b2 4F535F45 		.ascii	"OS_ERR_STATUS_INVALID\000"
+ 4378      52525F53 
+ 4378      54415455 
+ 4378      535F494E 
+ 4378      56414C49 
+ 4379              	.LASF201:
+ 4380 11c8 4F535F45 		.ascii	"OS_ERR_Y\000"
+ 4380      52525F59 
+ 4380      00
+ 4381              	.LASF104:
+ 4382 11d1 4F535F45 		.ascii	"OS_ERR_PEND_ISR\000"
+ 4382      52525F50 
+ 4382      454E445F 
+ 4382      49535200 
+ 4383              	.LASF203:
+ 4384 11e1 4F535F45 		.ascii	"OS_ERR_Z\000"
+ 4384      52525F5A 
  4384      00
- 4385              	.LASF104:
- 4386 123b 4F535F45 		.ascii	"OS_ERR_PEND_ISR\000"
- 4386      52525F50 
- 4386      454E445F 
- 4386      49535200 
- 4387              	.LASF203:
- 4388 124b 4F535F45 		.ascii	"OS_ERR_Z\000"
- 4388      52525F5A 
- 4388      00
- 4389              	.LASF241:
- 4390 1254 5469636B 		.ascii	"TickSpokePtr\000"
- 4390      53706F6B 
- 4390      65507472 
- 4390      00
- 4391              	.LASF230:
- 4392 1261 4462674E 		.ascii	"DbgNamePtr\000"
- 4392      616D6550 
+ 4385              	.LASF241:
+ 4386 11ea 5469636B 		.ascii	"TickSpokePtr\000"
+ 4386      53706F6B 
+ 4386      65507472 
+ 4386      00
+ 4387              	.LASF346:
+ 4388 11f7 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
+ 4388      73657273 
+ 4388      5C6A6F72 
+ 4388      74695C44 
+ 4388      6F63756D 
+ 4389 1224 7374656D 		.ascii	"stem_Software_1\\cypress_bldc_motor\\esw_rtos_cykit"
+ 4389      5F536F66 
+ 4389      74776172 
+ 4389      655F315C 
+ 4389      63797072 
+ 4390 1255 5C657377 		.ascii	"\\esw_uCOS3_cykit.cydsn\000"
+ 4390      5F75434F 
+ 4390      53335F63 
+ 4390      796B6974 
+ 4390      2E637964 
+ 4391              	.LASF219:
+ 4392 126c 4F757450 		.ascii	"OutPtr\000"
  4392      747200
- 4393              	.LASF219:
- 4394 126c 4F757450 		.ascii	"OutPtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 103
+ 4393              	.LASF244:
+ 4394 1273 5461736B 		.ascii	"TaskEntryArg\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 103
 
 
- 4394      747200
- 4395              	.LASF244:
- 4396 1273 5461736B 		.ascii	"TaskEntryArg\000"
- 4396      456E7472 
- 4396      79417267 
- 4396      00
- 4397              	.LASF114:
- 4398 1280 4F535F45 		.ascii	"OS_ERR_Q_FULL\000"
- 4398      52525F51 
- 4398      5F46554C 
- 4398      4C00
- 4399              	.LASF318:
- 4400 128e 4F535374 		.ascii	"OSStatTaskCtrRun\000"
- 4400      61745461 
- 4400      736B4374 
- 4400      7252756E 
- 4400      00
- 4401              	.LASF307:
- 4402 129f 74735F65 		.ascii	"ts_end\000"
- 4402      6E6400
- 4403              	.LASF65:
- 4404 12a6 4F535F45 		.ascii	"OS_ERR_INT_Q_STK_INVALID\000"
- 4404      52525F49 
- 4404      4E545F51 
- 4404      5F53544B 
- 4404      5F494E56 
- 4405              	.LASF178:
- 4406 12bf 4F535F45 		.ascii	"OS_ERR_TIME_INVALID_SECONDS\000"
+ 4394      456E7472 
+ 4394      79417267 
+ 4394      00
+ 4395              	.LASF114:
+ 4396 1280 4F535F45 		.ascii	"OS_ERR_Q_FULL\000"
+ 4396      52525F51 
+ 4396      5F46554C 
+ 4396      4C00
+ 4397              	.LASF318:
+ 4398 128e 4F535374 		.ascii	"OSStatTaskCtrRun\000"
+ 4398      61745461 
+ 4398      736B4374 
+ 4398      7252756E 
+ 4398      00
+ 4399              	.LASF307:
+ 4400 129f 74735F65 		.ascii	"ts_end\000"
+ 4400      6E6400
+ 4401              	.LASF65:
+ 4402 12a6 4F535F45 		.ascii	"OS_ERR_INT_Q_STK_INVALID\000"
+ 4402      52525F49 
+ 4402      4E545F51 
+ 4402      5F53544B 
+ 4402      5F494E56 
+ 4403              	.LASF178:
+ 4404 12bf 4F535F45 		.ascii	"OS_ERR_TIME_INVALID_SECONDS\000"
+ 4404      52525F54 
+ 4404      494D455F 
+ 4404      494E5641 
+ 4404      4C49445F 
+ 4405              	.LASF142:
+ 4406 12db 4F535F45 		.ascii	"OS_ERR_TASK_DEL\000"
  4406      52525F54 
- 4406      494D455F 
- 4406      494E5641 
- 4406      4C49445F 
- 4407              	.LASF142:
- 4408 12db 4F535F45 		.ascii	"OS_ERR_TASK_DEL\000"
- 4408      52525F54 
- 4408      41534B5F 
- 4408      44454C00 
- 4409              	.LASF287:
- 4410 12eb 4F535F50 		.ascii	"OS_PEND_LIST\000"
- 4410      454E445F 
- 4410      4C495354 
+ 4406      41534B5F 
+ 4406      44454C00 
+ 4407              	.LASF287:
+ 4408 12eb 4F535F50 		.ascii	"OS_PEND_LIST\000"
+ 4408      454E445F 
+ 4408      4C495354 
+ 4408      00
+ 4409              	.LASF335:
+ 4410 12f8 4350555F 		.ascii	"CPU_TS_TmrRd\000"
+ 4410      54535F54 
+ 4410      6D725264 
  4410      00
- 4411              	.LASF335:
- 4412 12f8 4350555F 		.ascii	"CPU_TS_TmrRd\000"
- 4412      54535F54 
- 4412      6D725264 
- 4412      00
- 4413              	.LASF214:
- 4414 1305 4E627255 		.ascii	"NbrUsed\000"
- 4414      73656400 
- 4415              	.LASF5:
- 4416 130d 7369676E 		.ascii	"signed char\000"
- 4416      65642063 
- 4416      68617200 
- 4417              	.LASF209:
- 4418 1319 4D736754 		.ascii	"MsgTS\000"
- 4418      5300
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 104
+ 4411              	.LASF214:
+ 4412 1305 4E627255 		.ascii	"NbrUsed\000"
+ 4412      73656400 
+ 4413              	.LASF5:
+ 4414 130d 7369676E 		.ascii	"signed char\000"
+ 4414      65642063 
+ 4414      68617200 
+ 4415              	.LASF209:
+ 4416 1319 4D736754 		.ascii	"MsgTS\000"
+ 4416      5300
+ 4417              	.LASF53:
+ 4418 131f 4F535F45 		.ascii	"OS_ERR_FATAL_RETURN\000"
+ 4418      52525F46 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 104
 
 
- 4419              	.LASF53:
- 4420 131f 4F535F45 		.ascii	"OS_ERR_FATAL_RETURN\000"
- 4420      52525F46 
- 4420      4154414C 
- 4420      5F524554 
- 4420      55524E00 
- 4421              	.LASF7:
- 4422 1333 73686F72 		.ascii	"short unsigned int\000"
- 4422      7420756E 
- 4422      7369676E 
- 4422      65642069 
- 4422      6E7400
- 4423              	.LASF29:
- 4424 1346 4F535F46 		.ascii	"OS_FLAGS\000"
- 4424      4C414753 
- 4424      00
- 4425              	.LASF207:
- 4426 134f 4D736750 		.ascii	"MsgPtr\000"
- 4426      747200
- 4427              	.LASF166:
- 4428 1356 4F535F45 		.ascii	"OS_ERR_TLS_NO_MORE_AVAIL\000"
- 4428      52525F54 
- 4428      4C535F4E 
- 4428      4F5F4D4F 
- 4428      52455F41 
- 4429              	.LASF313:
- 4430 136f 4F535374 		.ascii	"OSStatResetFlag\000"
- 4430      61745265 
- 4430      73657446 
- 4430      6C616700 
- 4431              	.LASF43:
- 4432 137f 4F535F45 		.ascii	"OS_ERR_NONE\000"
- 4432      52525F4E 
- 4432      4F4E4500 
- 4433              	.LASF280:
- 4434 138b 6F735F70 		.ascii	"os_pend_data\000"
- 4434      656E645F 
- 4434      64617461 
- 4434      00
- 4435              	.LASF125:
- 4436 1398 4F535F45 		.ascii	"OS_ERR_SCHED_LOCKED\000"
- 4436      52525F53 
- 4436      43484544 
- 4436      5F4C4F43 
- 4436      4B454400 
- 4437              	.LASF57:
- 4438 13ac 4F535F45 		.ascii	"OS_ERR_FLUSH_ISR\000"
- 4438      52525F46 
- 4438      4C555348 
- 4438      5F495352 
+ 4418      4154414C 
+ 4418      5F524554 
+ 4418      55524E00 
+ 4419              	.LASF7:
+ 4420 1333 73686F72 		.ascii	"short unsigned int\000"
+ 4420      7420756E 
+ 4420      7369676E 
+ 4420      65642069 
+ 4420      6E7400
+ 4421              	.LASF29:
+ 4422 1346 4F535F46 		.ascii	"OS_FLAGS\000"
+ 4422      4C414753 
+ 4422      00
+ 4423              	.LASF207:
+ 4424 134f 4D736750 		.ascii	"MsgPtr\000"
+ 4424      747200
+ 4425              	.LASF166:
+ 4426 1356 4F535F45 		.ascii	"OS_ERR_TLS_NO_MORE_AVAIL\000"
+ 4426      52525F54 
+ 4426      4C535F4E 
+ 4426      4F5F4D4F 
+ 4426      52455F41 
+ 4427              	.LASF313:
+ 4428 136f 4F535374 		.ascii	"OSStatResetFlag\000"
+ 4428      61745265 
+ 4428      73657446 
+ 4428      6C616700 
+ 4429              	.LASF43:
+ 4430 137f 4F535F45 		.ascii	"OS_ERR_NONE\000"
+ 4430      52525F4E 
+ 4430      4F4E4500 
+ 4431              	.LASF280:
+ 4432 138b 6F735F70 		.ascii	"os_pend_data\000"
+ 4432      656E645F 
+ 4432      64617461 
+ 4432      00
+ 4433              	.LASF125:
+ 4434 1398 4F535F45 		.ascii	"OS_ERR_SCHED_LOCKED\000"
+ 4434      52525F53 
+ 4434      43484544 
+ 4434      5F4C4F43 
+ 4434      4B454400 
+ 4435              	.LASF57:
+ 4436 13ac 4F535F45 		.ascii	"OS_ERR_FLUSH_ISR\000"
+ 4436      52525F46 
+ 4436      4C555348 
+ 4436      5F495352 
+ 4436      00
+ 4437              	.LASF249:
+ 4438 13bd 5072696F 		.ascii	"Prio\000"
  4438      00
- 4439              	.LASF249:
- 4440 13bd 5072696F 		.ascii	"Prio\000"
- 4440      00
- 4441              	.LASF14:
- 4442 13c2 646F7562 		.ascii	"double\000"
- 4442      6C6500
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 105
+ 4439              	.LASF14:
+ 4440 13c2 646F7562 		.ascii	"double\000"
+ 4440      6C6500
+ 4441              	.LASF99:
+ 4442 13c9 4F535F45 		.ascii	"OS_ERR_PEND_ABORT\000"
+ 4442      52525F50 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 105
 
 
- 4443              	.LASF99:
- 4444 13c9 4F535F45 		.ascii	"OS_ERR_PEND_ABORT\000"
- 4444      52525F50 
- 4444      454E445F 
- 4444      41424F52 
- 4444      5400
- 4445              	.LASF265:
- 4446 13db 43505555 		.ascii	"CPUUsage\000"
- 4446      73616765 
- 4446      00
- 4447              	.LASF126:
- 4448 13e4 4F535F45 		.ascii	"OS_ERR_SCHED_NOT_LOCKED\000"
- 4448      52525F53 
- 4448      43484544 
- 4448      5F4E4F54 
- 4448      5F4C4F43 
- 4449              	.LASF110:
- 4450 13fc 4F535F45 		.ascii	"OS_ERR_PRIO\000"
+ 4442      454E445F 
+ 4442      41424F52 
+ 4442      5400
+ 4443              	.LASF265:
+ 4444 13db 43505555 		.ascii	"CPUUsage\000"
+ 4444      73616765 
+ 4444      00
+ 4445              	.LASF126:
+ 4446 13e4 4F535F45 		.ascii	"OS_ERR_SCHED_NOT_LOCKED\000"
+ 4446      52525F53 
+ 4446      43484544 
+ 4446      5F4E4F54 
+ 4446      5F4C4F43 
+ 4447              	.LASF110:
+ 4448 13fc 4F535F45 		.ascii	"OS_ERR_PRIO\000"
+ 4448      52525F50 
+ 4448      52494F00 
+ 4449              	.LASF103:
+ 4450 1408 4F535F45 		.ascii	"OS_ERR_PEND_DEL\000"
  4450      52525F50 
- 4450      52494F00 
- 4451              	.LASF103:
- 4452 1408 4F535F45 		.ascii	"OS_ERR_PEND_DEL\000"
- 4452      52525F50 
- 4452      454E445F 
- 4452      44454C00 
- 4453              	.LASF282:
- 4454 1418 50656E64 		.ascii	"PendObjPtr\000"
- 4454      4F626A50 
- 4454      747200
- 4455              	.LASF302:
- 4456 1423 6379636C 		.ascii	"cycles_max\000"
- 4456      65735F6D 
- 4456      617800
- 4457              	.LASF222:
- 4458 142e 4E627245 		.ascii	"NbrEntriesMax\000"
- 4458      6E747269 
- 4458      65734D61 
- 4458      7800
- 4459              	.LASF322:
- 4460 143c 4F535461 		.ascii	"OSTaskDbgListPtr\000"
- 4460      736B4462 
- 4460      674C6973 
- 4460      74507472 
+ 4450      454E445F 
+ 4450      44454C00 
+ 4451              	.LASF282:
+ 4452 1418 50656E64 		.ascii	"PendObjPtr\000"
+ 4452      4F626A50 
+ 4452      747200
+ 4453              	.LASF302:
+ 4454 1423 6379636C 		.ascii	"cycles_max\000"
+ 4454      65735F6D 
+ 4454      617800
+ 4455              	.LASF222:
+ 4456 142e 4E627245 		.ascii	"NbrEntriesMax\000"
+ 4456      6E747269 
+ 4456      65734D61 
+ 4456      7800
+ 4457              	.LASF322:
+ 4458 143c 4F535461 		.ascii	"OSTaskDbgListPtr\000"
+ 4458      736B4462 
+ 4458      674C6973 
+ 4458      74507472 
+ 4458      00
+ 4459              	.LASF288:
+ 4460 144d 6F735F70 		.ascii	"os_pend_list\000"
+ 4460      656E645F 
+ 4460      6C697374 
  4460      00
- 4461              	.LASF288:
- 4462 144d 6F735F70 		.ascii	"os_pend_list\000"
- 4462      656E645F 
- 4462      6C697374 
- 4462      00
- 4463              	.LASF80:
- 4464 145a 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_SIZE\000"
- 4464      52525F4D 
- 4464      454D5F49 
- 4464      4E56414C 
- 4464      49445F53 
- 4465              	.LASF157:
- 4466 1472 4F535F45 		.ascii	"OS_ERR_TASK_SUSPENDED\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 106
+ 4461              	.LASF80:
+ 4462 145a 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_SIZE\000"
+ 4462      52525F4D 
+ 4462      454D5F49 
+ 4462      4E56414C 
+ 4462      49445F53 
+ 4463              	.LASF157:
+ 4464 1472 4F535F45 		.ascii	"OS_ERR_TASK_SUSPENDED\000"
+ 4464      52525F54 
+ 4464      41534B5F 
+ 4464      53555350 
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 106
 
 
- 4466      52525F54 
- 4466      41534B5F 
- 4466      53555350 
- 4466      454E4445 
- 4467              	.LASF327:
- 4468 1488 4F534366 		.ascii	"OSCfg_StatTaskRate_Hz\000"
- 4468      675F5374 
- 4468      61745461 
- 4468      736B5261 
- 4468      74655F48 
- 4469              	.LASF129:
- 4470 149e 4F535F45 		.ascii	"OS_ERR_SET_ISR\000"
- 4470      52525F53 
- 4470      45545F49 
- 4470      535200
- 4471              	.LASF314:
- 4472 14ad 4F535374 		.ascii	"OSStatTaskCPUUsage\000"
- 4472      61745461 
- 4472      736B4350 
- 4472      55557361 
- 4472      676500
+ 4464      454E4445 
+ 4465              	.LASF327:
+ 4466 1488 4F534366 		.ascii	"OSCfg_StatTaskRate_Hz\000"
+ 4466      675F5374 
+ 4466      61745461 
+ 4466      736B5261 
+ 4466      74655F48 
+ 4467              	.LASF129:
+ 4468 149e 4F535F45 		.ascii	"OS_ERR_SET_ISR\000"
+ 4468      52525F53 
+ 4468      45545F49 
+ 4468      535200
+ 4469              	.LASF314:
+ 4470 14ad 4F535374 		.ascii	"OSStatTaskCPUUsage\000"
+ 4470      61745461 
+ 4470      736B4350 
+ 4470      55557361 
+ 4470      676500
+ 4471              	.LASF230:
+ 4472 14c0 4462674E 		.ascii	"DbgNamePtr\000"
+ 4472      616D6550 
+ 4472      747200
  4473              	.LASF260:
- 4474 14c0 52656754 		.ascii	"RegTbl\000"
+ 4474 14cb 52656754 		.ascii	"RegTbl\000"
  4474      626C00
  4475              	.LASF294:
- 4476 14c7 705F6D73 		.ascii	"p_msg_q\000"
+ 4476 14d2 705F6D73 		.ascii	"p_msg_q\000"
  4476      675F7100 
  4477              	.LASF128:
- 4478 14cf 4F535F45 		.ascii	"OS_ERR_SEM_OVF\000"
+ 4478 14da 4F535F45 		.ascii	"OS_ERR_SEM_OVF\000"
  4478      52525F53 
  4478      454D5F4F 
  4478      564600
  4479              	.LASF143:
- 4480 14de 4F535F45 		.ascii	"OS_ERR_TASK_DEL_IDLE\000"
+ 4480 14e9 4F535F45 		.ascii	"OS_ERR_TASK_DEL_IDLE\000"
  4480      52525F54 
  4480      41534B5F 
  4480      44454C5F 
  4480      49444C45 
  4481              	.LASF175:
- 4482 14f3 4F535F45 		.ascii	"OS_ERR_TIME_GET_ISR\000"
+ 4482 14fe 4F535F45 		.ascii	"OS_ERR_TIME_GET_ISR\000"
  4482      52525F54 
  4482      494D455F 
  4482      4745545F 
  4482      49535200 
  4483              	.LASF256:
- 4484 1507 54696D65 		.ascii	"TimeQuanta\000"
+ 4484 1512 54696D65 		.ascii	"TimeQuanta\000"
  4484      5175616E 
  4484      746100
  4485              	.LASF174:
- 4486 1512 4F535F45 		.ascii	"OS_ERR_TIME_DLY_RESUME_ISR\000"
+ 4486 151d 4F535F45 		.ascii	"OS_ERR_TIME_DLY_RESUME_ISR\000"
  4486      52525F54 
  4486      494D455F 
  4486      444C595F 
  4486      52455355 
  4487              	.LASF169:
- 4488 152d 4F535F45 		.ascii	"OS_ERR_TICK_PRIO_INVALID\000"
+ 4488 1538 4F535F45 		.ascii	"OS_ERR_TICK_PRIO_INVALID\000"
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccVe6yK4.s 			page 107
+
+
  4488      52525F54 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUF5ZRb.s 			page 107
-
-
  4488      49434B5F 
  4488      5052494F 
  4488      5F494E56 
  4489              	.LASF109:
- 4490 1546 4F535F45 		.ascii	"OS_ERR_PRIO_EXIST\000"
+ 4490 1551 4F535F45 		.ascii	"OS_ERR_PRIO_EXIST\000"
  4490      52525F50 
  4490      52494F5F 
  4490      45584953 
  4490      5400
  4491              	.LASF217:
- 4492 1558 6F735F6D 		.ascii	"os_msg_q\000"
+ 4492 1563 6F735F6D 		.ascii	"os_msg_q\000"
  4492      73675F71 
  4492      00
  4493              	.LASF332:
- 4494 1561 4F534366 		.ascii	"OSCfg_TickRate_Hz\000"
+ 4494 156c 4F534366 		.ascii	"OSCfg_TickRate_Hz\000"
  4494      675F5469 
  4494      636B5261 
  4494      74655F48 
  4494      7A00
  4495              	.LASF81:
- 4496 1573 4F535F45 		.ascii	"OS_ERR_MEM_NO_FREE_BLKS\000"
+ 4496 157e 4F535F45 		.ascii	"OS_ERR_MEM_NO_FREE_BLKS\000"
  4496      52525F4D 
  4496      454D5F4E 
  4496      4F5F4652 
  4496      45455F42 
  4497              	.LASF16:
- 4498 158b 4350555F 		.ascii	"CPU_STK\000"
+ 4498 1596 4350555F 		.ascii	"CPU_STK\000"
  4498      53544B00 
  4499              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

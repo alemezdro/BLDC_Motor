@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
   57 001c 03       		.byte	3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 2
 
 
   58 001d 07       		.byte	7
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  112 0053 40       		.byte	64
  113 0054 06       		.byte	6
  114 0055 41       		.byte	65
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 3
 
 
  115 0056 01       		.byte	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  169 008c 0D       		.byte	13
  170 008d 30       		.byte	48
  171 008e 16       		.byte	22
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 4
 
 
  172 008f 4B       		.byte	75
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  226 00c5 04       		.byte	4
  227 00c6 16       		.byte	22
  228 00c7 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 5
 
 
  229 00c8 1B       		.byte	27
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  283 00fe 59       		.byte	89
  284 00ff 04       		.byte	4
  285 0100 5A       		.byte	90
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 6
 
 
  286 0101 04       		.byte	4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  340 0137 05       		.byte	5
  341 0138 96       		.byte	-106
  342 0139 0A       		.byte	10
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 7
 
 
  343 013a 97       		.byte	-105
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  397 0170 CD       		.byte	-51
  398 0171 A0       		.byte	-96
  399 0172 CF       		.byte	-49
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 8
 
 
  400 0173 04       		.byte	4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  454 01a9 08       		.byte	8
  455 01aa 0E       		.byte	14
  456 01ab 80       		.byte	-128
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 9
 
 
  457 01ac 10       		.byte	16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  511 01e2 49       		.byte	73
  512 01e3 01       		.byte	1
  513 01e4 4A       		.byte	74
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 10
 
 
  514 01e5 20       		.byte	32
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  568 021b 20       		.byte	32
  569 021c 9E       		.byte	-98
  570 021d 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 11
 
 
  571 021e 9F       		.byte	-97
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  625 0254 0D       		.byte	13
  626 0255 38       		.byte	56
  627 0256 10       		.byte	16
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 12
 
 
  628 0257 0D       		.byte	13
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  682 028d 04       		.byte	4
  683 028e 59       		.byte	89
  684 028f 04       		.byte	4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 13
 
 
  685 0290 5B       		.byte	91
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  739 02c6 9F       		.byte	-97
  740 02c7 C0       		.byte	-64
  741 02c8 A0       		.byte	-96
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 14
 
 
  742 02c9 84       		.byte	-124
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  796 02ff 04       		.byte	4
  797 0300 03       		.byte	3
  798 0301 81       		.byte	-127
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 15
 
 
  799 0302 04       		.byte	4
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  853 0338 2E       		.byte	46
  854 0339 10       		.byte	16
  855 033a 2F       		.byte	47
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 16
 
 
  856 033b 80       		.byte	-128
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  910 0371 FF       		.byte	-1
  911 0372 CA       		.byte	-54
  912 0373 A2       		.byte	-94
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 17
 
 
  913 0374 CC       		.byte	-52
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  967 03aa 29       		.byte	41
  968 03ab 73       		.byte	115
  969 03ac 2A       		.byte	42
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 18
 
 
  970 03ad 08       		.byte	8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1024 03e3 41       		.byte	65
  1025 03e4 50       		.byte	80
  1026 03e5 0C       		.byte	12
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 19
 
 
  1027 03e6 52       		.byte	82
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1081 041c 92       		.byte	-110
  1082 041d 03       		.byte	3
  1083 041e 94       		.byte	-108
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 20
 
 
  1084 041f 0C       		.byte	12
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1138 0455 FF       		.byte	-1
  1139 0456 CA       		.byte	-54
  1140 0457 FF       		.byte	-1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 21
 
 
  1141 0458 CB       		.byte	-53
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1195 048e 13       		.byte	19
  1196 048f 10       		.byte	16
  1197 0490 15       		.byte	21
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 22
 
 
  1198 0491 08       		.byte	8
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1252 04c7 20       		.byte	32
  1253 04c8 47       		.byte	71
  1254 04c9 45       		.byte	69
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 23
 
 
  1255 04ca 48       		.byte	72
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1309 0500 EC       		.byte	-20
  1310 0501 04       		.byte	4
  1311 0502 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 24
 
 
  1312 0503 02       		.byte	2
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1366 0539 42       		.byte	66
  1367 053a 97       		.byte	-105
  1368 053b 0C       		.byte	12
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 25
 
 
  1369 053c 98       		.byte	-104
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1423 0572 C0       		.byte	-64
  1424 0573 06       		.byte	6
  1425 0574 C7       		.byte	-57
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 26
 
 
  1426 0575 04       		.byte	4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1480 05ab 02       		.byte	2
  1481 05ac 16       		.byte	22
  1482 05ad 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 27
 
 
  1483 05ae 17       		.byte	23
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1537 05e4 5B       		.byte	91
  1538 05e5 01       		.byte	1
  1539 05e6 5E       		.byte	94
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 28
 
 
  1540 05e7 02       		.byte	2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1594 061d F2       		.byte	-14
  1595 061e CC       		.byte	-52
  1596 061f 72       		.byte	114
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 29
 
 
  1597 0620 CE       		.byte	-50
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1651 0656 9E       		.byte	-98
  1652 0657 20       		.byte	32
  1653 0658 9F       		.byte	-97
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 30
 
 
  1654 0659 08       		.byte	8
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1708 068f 03       		.byte	3
  1709 0690 D6       		.byte	-42
  1710 0691 01       		.byte	1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 31
 
 
  1711 0692 86       		.byte	-122
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1765 06c8 64       		.byte	100
  1766 06c9 80       		.byte	-128
  1767 06ca 93       		.byte	-109
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 32
 
 
  1768 06cb 01       		.byte	1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1822 0701 00       		.byte	0
  1823 0702 44       		.byte	68
  1824 0703 98       		.byte	-104
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 33
 
 
  1825 0704 98       		.byte	-104
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1879 0007 01       		.byte	1
  1880 0008 00       		.byte	0
  1881 0009 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 34
 
 
  1882 000a 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1932 004b 02       		.uleb128 0x2
  1933 004c 04       		.byte	0x4
  1934 004d 07       		.byte	0x7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 35
 
 
  1935 004e B2000000 		.4byte	.LASF5
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  1989 00c1 03       		.byte	0x3
  1990 00c2 1001     		.2byte	0x110
  1991 00c4 CE000000 		.4byte	0xce
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 36
 
 
  1992 00c8 05       		.uleb128 0x5
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  2046 0002 01       		.byte	0x1
  2047 0003 25       		.uleb128 0x25
  2048 0004 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 37
 
 
  2049 0005 13       		.uleb128 0x13
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  2103 003b 06       		.uleb128 0x6
  2104 003c 21       		.uleb128 0x21
  2105 003d 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 38
 
 
  2106 003e 49       		.uleb128 0x49
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  2160 0074 00       		.byte	0
  2161 0075 00       		.byte	0
  2162 0076 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 39
 
 
  2163              		.section	.debug_aranges,"",%progbits
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  2189      7420756E 
  2189      7369676E 
  2189      65642069 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 40
 
 
  2189      6E7400
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 1
  2211      74695C44 
  2211      6F63756D 
  2212 0196 7374656D 		.ascii	"stem_Software_1\\cypress_bldc_motor\\esw_rtos_cykit"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccFUpBKM.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cceOjjus.s 			page 41
 
 
  2212      5F536F66 

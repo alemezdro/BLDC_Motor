@@ -58,6 +58,10 @@
           <File BuildType="BUILD" Toolchain="">bsp_gpio.h</File>
           <File BuildType="BUILD" Toolchain="">bsp_spi.c</File>
           <File BuildType="BUILD" Toolchain="">bsp_spi.h</File>
+          <File BuildType="BUILD" Toolchain="">bsp_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">bsp_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">bsp_pwm.h</File>
+          <File BuildType="BUILD" Toolchain="">bsp_pwm.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\Generated_Source\PSoC5">

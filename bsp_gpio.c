@@ -232,5 +232,4 @@ CPU_INT08S PWM_SET(CPU_INT08U color,CPU_INT08U value)
   }
   return 0;
 }
-
 /* [] END OF FILE */

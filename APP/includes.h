@@ -66,6 +66,8 @@
 #include  <bsp_uart.h>
 #include  <bsp_gpio.h>
 #include  <bsp_spi.h>
+#include <bsp_dma.h>
+#include <bsp_pwm.h>
 #include  <bsp_os.h>
 
 /*

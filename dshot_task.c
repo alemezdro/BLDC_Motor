@@ -155,6 +155,8 @@ void App_TaskDshot(void *p_arg)
   configure_pwm();
 
   CPU_INT08U dma_channel = configure_dma();
+  
+  CPU_INT08U var = 0;
 
   while (DEF_TRUE)
   {
@@ -162,23 +164,18 @@ void App_TaskDshot(void *p_arg)
     
     enable_dma(dma_channel);
     
-      //Chane compare value to 39
-    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
-    
-    wait_td_finish(dma_channel);
-    
-    //Measure output!
-    OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
-    
-   //Chane compare value to 99
-    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
-    
-    wait_td_finish(dma_channel);
-    
-    //Measure output!
-    OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    //DMA should have input PWM from channel 2. Therefore no SW should be trigger
+    // Just wait until the chain is finished
     
     wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
+    
+    //Measure output!
+    OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    
+    //Chain finished. Togge the comapre values to see sometehing on the line
+    var = g_cmp_value_one;
+    g_cmp_value_one = g_cmp_value_two;
+    g_cmp_value_two = var;
     
 #if REMOVE_CODE == 0    
     

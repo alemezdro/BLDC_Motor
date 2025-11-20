@@ -1,5 +1,5 @@
 -- Project:   esw_uCOS3_cykit
--- Generated: 11/20/2025 10:06:27
+-- Generated: 11/20/2025 10:15:27
 -- PSoC Creator  4.4
 
 ENTITY esw_uCOS3_cykit IS
@@ -57,6 +57,7 @@ ARCHITECTURE __DEFAULT__ OF esw_uCOS3_cykit IS
     SIGNAL Net_42 : bit;
     SIGNAL Net_543 : bit;
     SIGNAL Net_7 : bit;
+    SIGNAL Net_750 : bit;
     SIGNAL Pin_1(0)__PA : bit;
     SIGNAL Pin_2(0)__PA : bit;
     SIGNAL Pin_2(1)__PA : bit;
@@ -233,6 +234,7 @@ ARCHITECTURE __DEFAULT__ OF esw_uCOS3_cykit IS
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_0\ : LABEL IS "macrocell42";
     ATTRIBUTE lib_model OF \PWM_1:PWMUDB:status_1\ : LABEL IS "macrocell43";
     ATTRIBUTE lib_model OF Net_543 : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF Net_750 : LABEL IS "macrocell45";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -2048,10 +2050,10 @@ BEGIN
 
     DMA_1:drqcell
         GENERIC MAP(
-            drq_type => "10",
+            drq_type => "00",
             num_tds => 0)
         PORT MAP(
-            dmareq => '0',
+            dmareq => Net_750,
             termin => '0',
             termout => Net_359,
             clock => ClockBlock_BUS_CLK);
@@ -2533,5 +2535,17 @@ BEGIN
             main_0 => \PWM_1:PWMUDB:runmode_enable\,
             main_1 => \PWM_1:PWMUDB:cmp1_eq\,
             main_2 => \PWM_1:PWMUDB:cmp1_less\);
+
+    Net_750:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => Net_750,
+            clock_0 => Net_318,
+            main_0 => \PWM_1:PWMUDB:runmode_enable\,
+            main_1 => \PWM_1:PWMUDB:cmp2_less\);
 
 END __DEFAULT__;

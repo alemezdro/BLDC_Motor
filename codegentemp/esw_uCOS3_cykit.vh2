@@ -2,7 +2,7 @@
 --	Conversion of esw_uCOS3_cykit.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Nov 20 10:06:26 2025
+--	Thu Nov 20 10:15:26 2025
 --
 
 USE cypress.cypress.all;
@@ -672,7 +672,7 @@ SIGNAL \PWM_1:PWMUDB:tc_i_reg\ : bit;
 SIGNAL \PWM_1:Net_101\ : bit;
 SIGNAL \PWM_1:Net_96\ : bit;
 SIGNAL Net_543 : bit;
-SIGNAL Net_357 : bit;
+SIGNAL Net_750 : bit;
 SIGNAL \PWM_1:PWMUDB:pwm_temp\ : bit;
 SIGNAL \PWM_1:PWMUDB:MODULE_6:b_31\ : bit;
 SIGNAL \PWM_1:PWMUDB:MODULE_6:b_30\ : bit;
@@ -2360,9 +2360,9 @@ Clock_2:cy_clock_v1_0
 	PORT MAP(clock_out=>Net_318,
 		dig_domain_out=>open);
 DMA_1:cy_dma_v1_0
-	GENERIC MAP(drq_type=>"10",
+	GENERIC MAP(drq_type=>"00",
 		num_tds=>0)
-	PORT MAP(drq=>zero,
+	PORT MAP(drq=>Net_750,
 		trq=>zero,
 		nrq=>Net_359);
 dshot_pwm:cy_psoc3_pins_v1_10
@@ -2682,7 +2682,7 @@ Net_29:cy_dff
 \PWM_1:PWMUDB:pwm2_i_reg\:cy_dff
 	PORT MAP(d=>\PWM_1:PWMUDB:pwm2_i\,
 		clk=>\PWM_1:PWMUDB:ClockOutFromEnBlock\,
-		q=>\PWM_1:PWMUDB:pwm2_i_reg\);
+		q=>Net_750);
 \PWM_1:PWMUDB:tc_i_reg\:cy_dff
 	PORT MAP(d=>\PWM_1:PWMUDB:status_2\,
 		clk=>\PWM_1:PWMUDB:ClockOutFromEnBlock\,

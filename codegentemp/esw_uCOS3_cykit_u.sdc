@@ -1,3 +1,3 @@
 # Component constraints for C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\TopDesign\TopDesign.cysch
 # Project: C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\esw_uCOS3_cykit.cyprj
-# Date: Thu, 20 Nov 2025 09:37:30 GMT
+# Date: Thu, 20 Nov 2025 16:31:20 GMT

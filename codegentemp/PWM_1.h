@@ -226,9 +226,9 @@ void PWM_1_RestoreConfig(void) ;
 /***************************************
 *         Initialization Values
 **************************************/
-#define PWM_1_INIT_PERIOD_VALUE          (255u)
-#define PWM_1_INIT_COMPARE_VALUE1        (127u)
-#define PWM_1_INIT_COMPARE_VALUE2        (63u)
+#define PWM_1_INIT_PERIOD_VALUE          (159u)
+#define PWM_1_INIT_COMPARE_VALUE1        (100u)
+#define PWM_1_INIT_COMPARE_VALUE2        (20u)
 #define PWM_1_INIT_INTERRUPTS_MODE       (uint8)(((uint8)(0u <<   \
                                                     PWM_1_STATUS_TC_INT_EN_MASK_SHIFT)) | \
                                                     (uint8)((uint8)(0u <<  \
@@ -238,7 +238,7 @@ void PWM_1_RestoreConfig(void) ;
                                                     (uint8)((uint8)(0u <<  \
                                                     PWM_1_STATUS_KILL_INT_EN_MASK_SHIFT )))
 #define PWM_1_DEFAULT_COMPARE2_MODE      (uint8)((uint8)1u <<  PWM_1_CTRL_CMPMODE2_SHIFT)
-#define PWM_1_DEFAULT_COMPARE1_MODE      (uint8)((uint8)1u <<  PWM_1_CTRL_CMPMODE1_SHIFT)
+#define PWM_1_DEFAULT_COMPARE1_MODE      (uint8)((uint8)3u <<  PWM_1_CTRL_CMPMODE1_SHIFT)
 #define PWM_1_INIT_DEAD_TIME             (1u)
 
 

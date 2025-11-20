@@ -150,26 +150,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\push_button_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\push_button.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\push_button.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_R.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_R.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_R_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_G.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_G.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_G_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_B.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_B.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_B_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_r_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_r.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_r.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_g_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_g.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_g.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_b_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_b.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\pin_rgb_b.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_1_PM.c</File>
@@ -177,21 +157,9 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DMA_1_dma.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\DMA_1_dma.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Control_Reg_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Control_Reg_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Control_Reg_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_3.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_4.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_5_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_5.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_5.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_6_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_6.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Pin_6.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\dshot_pwm_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\dshot_pwm.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\dshot_pwm.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn">

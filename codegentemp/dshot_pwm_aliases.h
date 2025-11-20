@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: pin_rgb_b.h  
+* File Name: dshot_pwm.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_pin_rgb_b_ALIASES_H) /* Pins pin_rgb_b_ALIASES_H */
-#define CY_PINS_pin_rgb_b_ALIASES_H
+#if !defined(CY_PINS_dshot_pwm_ALIASES_H) /* Pins dshot_pwm_ALIASES_H */
+#define CY_PINS_dshot_pwm_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define pin_rgb_b_0			(pin_rgb_b__0__PC)
-#define pin_rgb_b_0_INTR	((uint16)((uint16)0x0001u << pin_rgb_b__0__SHIFT))
+#define dshot_pwm_0			(dshot_pwm__0__PC)
+#define dshot_pwm_0_INTR	((uint16)((uint16)0x0001u << dshot_pwm__0__SHIFT))
 
-#define pin_rgb_b_INTR_ALL	 ((uint16)(pin_rgb_b_0_INTR))
+#define dshot_pwm_INTR_ALL	 ((uint16)(dshot_pwm_0_INTR))
 
-#endif /* End Pins pin_rgb_b_ALIASES_H */
+#endif /* End Pins dshot_pwm_ALIASES_H */
 
 
 /* [] END OF FILE */

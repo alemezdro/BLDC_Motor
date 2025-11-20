@@ -49,26 +49,6 @@
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\push_button_aliases.h" value="HEADER;;;;;push_button" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\push_button.c" value="SOURCE_C;CortexM3;;;;push_button" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\push_button.h" value="HEADER;;;;;push_button" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_R.c" value="SOURCE_C;CortexM3;;;;PWM_R" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_R.h" value="HEADER;;;;;PWM_R" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_R_PM.c" value="SOURCE_C;CortexM3;;;;PWM_R" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM3;;;;Clock_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_G.c" value="SOURCE_C;CortexM3;;;;PWM_G" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_G.h" value="HEADER;;;;;PWM_G" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_G_PM.c" value="SOURCE_C;CortexM3;;;;PWM_G" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_B.c" value="SOURCE_C;CortexM3;;;;PWM_B" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_B.h" value="HEADER;;;;;PWM_B" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_B_PM.c" value="SOURCE_C;CortexM3;;;;PWM_B" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_r_aliases.h" value="HEADER;;;;;pin_rgb_r" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_r.c" value="SOURCE_C;CortexM3;;;;pin_rgb_r" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_r.h" value="HEADER;;;;;pin_rgb_r" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_g_aliases.h" value="HEADER;;;;;pin_rgb_g" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_g.c" value="SOURCE_C;CortexM3;;;;pin_rgb_g" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_g.h" value="HEADER;;;;;pin_rgb_g" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_b_aliases.h" value="HEADER;;;;;pin_rgb_b" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_b.c" value="SOURCE_C;CortexM3;;;;pin_rgb_b" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\pin_rgb_b.h" value="HEADER;;;;;pin_rgb_b" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_1.c" value="SOURCE_C;CortexM3;;;;PWM_1" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_1.h" value="HEADER;;;;;PWM_1" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\PWM_1_PM.c" value="SOURCE_C;CortexM3;;;;PWM_1" />
@@ -76,21 +56,9 @@
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\DMA_1_dma.c" value="SOURCE_C;CortexM3;;;;DMA_1" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\DMA_1_dma.h" value="HEADER;;;;;DMA_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Control_Reg_1.h" value="HEADER;;;;;Control_Reg_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Control_Reg_1.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Control_Reg_1_PM.c" value="SOURCE_C;CortexM3;;;;Control_Reg_1" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_3_aliases.h" value="HEADER;;;;;Pin_3" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_3.c" value="SOURCE_C;CortexM3;;;;Pin_3" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_3.h" value="HEADER;;;;;Pin_3" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_4_aliases.h" value="HEADER;;;;;Pin_4" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_4.c" value="SOURCE_C;CortexM3;;;;Pin_4" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_4.h" value="HEADER;;;;;Pin_4" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_5_aliases.h" value="HEADER;;;;;Pin_5" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_5.c" value="SOURCE_C;CortexM3;;;;Pin_5" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_5.h" value="HEADER;;;;;Pin_5" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_6_aliases.h" value="HEADER;;;;;Pin_6" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_6.c" value="SOURCE_C;CortexM3;;;;Pin_6" />
-  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\Pin_6.h" value="HEADER;;;;;Pin_6" />
+  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\dshot_pwm_aliases.h" value="HEADER;;;;;dshot_pwm" />
+  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\dshot_pwm.c" value="SOURCE_C;CortexM3;;;;dshot_pwm" />
+  <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\dshot_pwm.h" value="HEADER;;;;;dshot_pwm" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\UART_1_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_1_IntClock" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\UART_1_IntClock.h" value="HEADER;;;;;UART_1_IntClock" />
   <file name="C:\Users\jorti\Documents\FH_Technikum\MES1\System_Software_1\cypress_bldc_motor\esw_rtos_cykit\esw_uCOS3_cykit.cydsn\codegentemp\SPIM_1_IntClock.c" value="SOURCE_C;CortexM3;;;;SPIM_1_IntClock" />

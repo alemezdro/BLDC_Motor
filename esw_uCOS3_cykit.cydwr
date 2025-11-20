@@ -259,6 +259,7 @@
       <Data key="83b2fde2-60ad-45b6-9e5c-cb3baa6e3f9a" value="SCLK_1" />
       <Data key="264be2d3-9481-494b-8d9c-c1905a45e9cc" value="Pin_1" />
       <Data key="3008a664-3b5f-4e62-909b-37270b037897" value="Pin_2" />
+      <Data key="4300af4a-acd2-4349-83cf-68f31db24fa4" value="dshot_pwm" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
       <Data key="aebd1c44-8d23-413c-92af-251f5ba1ba6c" value="MISO_1" />
       <Data key="d19544f5-1faa-4884-9dcf-4f80a7a7375e" value="pin_rgb_g" />
@@ -3386,6 +3387,11 @@
     <Group key="3008a664-3b5f-4e62-909b-37270b037897">
       <Group key="2">
         <Data key="Port Format" value="2,2" />
+      </Group>
+    </Group>
+    <Group key="4300af4a-acd2-4349-83cf-68f31db24fa4">
+      <Group key="0">
+        <Data key="Port Format" value="1,2" />
       </Group>
     </Group>
     <Group key="1425177d-0d0e-4468-8bcc-e638e5509a9b">

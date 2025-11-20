@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Pin_3.c  
+* File Name: dshot_pwm.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Pin_3.h"
+#include "dshot_pwm.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 Pin_3__PORT == 15 && ((Pin_3__MASK & 0xC0) != 0))
+	 dshot_pwm__PORT == 15 && ((dshot_pwm__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: Pin_3_Write
+* Function Name: dshot_pwm_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet Pin_3_SUT.c usage_Pin_3_Write
+*  \snippet dshot_pwm_SUT.c usage_dshot_pwm_Write
 *******************************************************************************/
-void Pin_3_Write(uint8 value)
+void dshot_pwm_Write(uint8 value)
 {
-    uint8 staticBits = (Pin_3_DR & (uint8)(~Pin_3_MASK));
-    Pin_3_DR = staticBits | ((uint8)(value << Pin_3_SHIFT) & Pin_3_MASK);
+    uint8 staticBits = (dshot_pwm_DR & (uint8)(~dshot_pwm_MASK));
+    dshot_pwm_DR = staticBits | ((uint8)(value << dshot_pwm_SHIFT) & dshot_pwm_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: Pin_3_SetDriveMode
+* Function Name: dshot_pwm_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void Pin_3_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet Pin_3_SUT.c usage_Pin_3_SetDriveMode
+*  \snippet dshot_pwm_SUT.c usage_dshot_pwm_SetDriveMode
 *******************************************************************************/
-void Pin_3_SetDriveMode(uint8 mode)
+void dshot_pwm_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(Pin_3_0, mode);
+	CyPins_SetPinDriveMode(dshot_pwm_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Pin_3_Read
+* Function Name: dshot_pwm_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void Pin_3_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet Pin_3_SUT.c usage_Pin_3_Read  
+*  \snippet dshot_pwm_SUT.c usage_dshot_pwm_Read  
 *******************************************************************************/
-uint8 Pin_3_Read(void)
+uint8 dshot_pwm_Read(void)
 {
-    return (Pin_3_PS & Pin_3_MASK) >> Pin_3_SHIFT;
+    return (dshot_pwm_PS & dshot_pwm_MASK) >> dshot_pwm_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: Pin_3_ReadDataReg
+* Function Name: dshot_pwm_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 Pin_3_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred Pin_3_Read() API because the 
-* Pin_3_ReadDataReg() reads the data register instead of the status 
+* preferred dshot_pwm_Read() API because the 
+* dshot_pwm_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 Pin_3_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet Pin_3_SUT.c usage_Pin_3_ReadDataReg 
+*  \snippet dshot_pwm_SUT.c usage_dshot_pwm_ReadDataReg 
 *******************************************************************************/
-uint8 Pin_3_ReadDataReg(void)
+uint8 dshot_pwm_ReadDataReg(void)
 {
-    return (Pin_3_DR & Pin_3_MASK) >> Pin_3_SHIFT;
+    return (dshot_pwm_DR & dshot_pwm_MASK) >> dshot_pwm_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(Pin_3_INTSTAT) 
+#if defined(dshot_pwm_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Pin_3_SetInterruptMode
+    * Function Name: dshot_pwm_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 Pin_3_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use Pin_3_INTR_ALL to configure the
+    *  component. Or you may use dshot_pwm_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - Pin_3_0_INTR       (First pin in the list)
-    *  - Pin_3_1_INTR       (Second pin in the list)
+    *  - dshot_pwm_0_INTR       (First pin in the list)
+    *  - dshot_pwm_1_INTR       (Second pin in the list)
     *  - ...
-    *  - Pin_3_INTR_ALL     (All pins in Pins component)
+    *  - dshot_pwm_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 Pin_3_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet Pin_3_SUT.c usage_Pin_3_SetInterruptMode
+    *  \snippet dshot_pwm_SUT.c usage_dshot_pwm_SetInterruptMode
     *******************************************************************************/
-    void Pin_3_SetInterruptMode(uint16 position, uint16 mode)
+    void dshot_pwm_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & Pin_3_0_INTR) != 0u) 
+		if((position & dshot_pwm_0_INTR) != 0u) 
 		{ 
-			 Pin_3_0_INTTYPE_REG = (uint8)mode; 
+			 dshot_pwm_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: Pin_3_ClearInterrupt
+    * Function Name: dshot_pwm_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 Pin_3_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet Pin_3_SUT.c usage_Pin_3_ClearInterrupt
+    *  \snippet dshot_pwm_SUT.c usage_dshot_pwm_ClearInterrupt
     *******************************************************************************/
-    uint8 Pin_3_ClearInterrupt(void)
+    uint8 dshot_pwm_ClearInterrupt(void)
     {
-        return (Pin_3_INTSTAT & Pin_3_MASK) >> Pin_3_SHIFT;
+        return (dshot_pwm_INTSTAT & dshot_pwm_MASK) >> dshot_pwm_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

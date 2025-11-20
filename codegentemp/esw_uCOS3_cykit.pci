@@ -1,5 +1,5 @@
 # esw_uCOS3_cykit
-# 2025-11-17 17:06:18Z
+# 2025-11-20 07:45:25Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -14,9 +14,4 @@ set_io "MOSI_1(0)" iocell 2 3
 set_io "SCLK_1(0)" iocell 12 3
 set_io "CS_1(0)" iocell 12 4
 set_io "push_button(0)" iocell 2 2
-set_io "pin_rgb_r(0)" iocell 2 7
-set_io "pin_rgb_b(0)" iocell 2 1
-set_io "Pin_3(0)" iocell 1 2
-set_io "Pin_4(0)" iocell 1 4
-set_io "Pin_5(0)" iocell 1 5
-set_io "Pin_6(0)" iocell 1 6
+set_io "dshot_pwm(0)" iocell 1 2

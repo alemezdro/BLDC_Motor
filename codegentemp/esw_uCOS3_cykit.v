@@ -1,6 +1,6 @@
 // ======================================================================
 // esw_uCOS3_cykit.v generated from TopDesign.cysch
-// 11/20/2025 at 09:56
+// 11/20/2025 at 09:57
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -529,10 +529,12 @@ module top ;
 
           wire  Net_358;
           wire  Net_359;
+          wire  Net_750;
           wire  Net_288;
           wire  Net_725;
           wire  Net_724;
           wire  Net_723;
+          wire  Net_357;
           wire  Net_722;
           wire  Net_721;
           wire  Net_720;
@@ -563,7 +565,6 @@ module top ;
           wire  Net_40;
           wire  Net_36;
           wire  Net_39;
-          wire  Net_357;
           wire  Net_543;
           wire  Net_318;
           wire  Net_29;
@@ -1314,9 +1315,9 @@ module top ;
 
 
 	cy_dma_v1_0
-		#(.drq_type(2'b00))
+		#(.drq_type(2'b10))
 		DMA_1
-		 (.drq(Net_357),
+		 (.drq(1'b0),
 		  .nrq(Net_359),
 		  .trq(1'b0));
 

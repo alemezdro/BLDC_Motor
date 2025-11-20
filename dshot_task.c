@@ -25,7 +25,7 @@
 *********************************************************************************************************
 */
 
-
+#define REMOVE_CODE 1
 /*
 *********************************************************************************************************
 *                                            LOCAL VARIABLES
@@ -37,12 +37,88 @@ static CPU_STK App_TaskDShotStk_R[APP_CFG_TASK_DSHOT_STK_SIZE];
 
 static OS_SEM g_sem_buffer_full_event;
 
+static CPU_INT08U g_pwm_enable_value;
+static CPU_INT08U g_pwm_disable_value;
+
+static CPU_INT08U g_td0;
+static CPU_INT08U g_td1;
+
 /*
 *********************************************************************************************************
 *                                         FUNCTION PROTOTYPES
 *********************************************************************************************************
 */
+CPU_VOID configure_pwm(CPU_VOID);
 
+CPU_INT08U configure_dma(CPU_VOID);
+
+CPU_VOID enable_dma(CPU_INT08U dma_channel);
+
+CPU_VOID wait_td_finish(CPU_INT08U dma_channel);
+
+CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel);
+
+
+CPU_VOID configure_pwm(CPU_VOID){
+    
+    pwm_set_interrupt_mode(0);
+    
+    //no pwm initialized here. do it somewhere else
+    //now cmp value changed here (100 and 20 remain)
+    //no period changed at run 
+}
+
+CPU_INT08U configure_dma(CPU_VOID){
+    
+    g_pwm_enable_value = PWM_1_CONTROL |= PWM_1_CTRL_ENABLE;
+    g_pwm_disable_value = PWM_1_CONTROL &= ((uint8)(~PWM_1_CTRL_ENABLE));
+
+    //This is the dma configuration that's done once
+    
+    CPU_INT08U dma_channel = init_dma(1u, 1u, HI16(&g_pwm_enable_value), HI16(PWM_1_CONTROL_PTR));
+    
+    g_td0 = dma_td_allocate();
+    g_td1 = dma_td_allocate();
+    
+    //enable pwm setup
+    dma_td_set_configuration(g_td0, 1u, g_td1, 0u); //1 byte in total, no auto execute next one
+    
+    dma_td_set_address(g_td0, LO16((CPU_INT32U)&g_pwm_enable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));
+    
+    //disable pwm setup. 
+    dma_td_set_configuration(g_td1, 1u, CY_DMA_DISABLE_TD, 0u); //1 byte in total, Channel disabled after this
+    
+    dma_td_set_address(g_td1, LO16((CPU_INT32U)&g_pwm_disable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));    
+    
+    //Do not enable channel yet. Task does this
+    return dma_channel;
+}
+
+CPU_VOID enable_dma(CPU_INT08U dma_channel){
+
+    dma_ch_set_init_td(dma_channel, g_td0);
+    dma_ch_enable(dma_channel, 1u); //enables dma channel and it preserves td config after td chain finished
+}
+
+CPU_VOID wait_td_finish(CPU_INT08U dma_channel){
+    
+    CPU_INT08U current_td = 0;
+    CPU_INT08U state = 0;
+
+    do{
+        dma_ch_status(dma_channel, &current_td, &state);
+    }while(state & CY_DMA_STATUS_TD_ACTIVE);
+}
+
+CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel){
+    
+    CPU_INT08U current_td = 0;
+    CPU_INT08U state = 0;
+
+    do{
+        dma_ch_status(dma_channel, &current_td, &state);
+    }while(state & CY_DMA_STATUS_CHAIN_ACTIVE);
+}
 /*
 *********************************************************************************************************
 *                                          App_TaskDshot()
@@ -69,9 +145,35 @@ void App_TaskDshot(void *p_arg)
   CPU_TS ts;
   OS_MSG_SIZE cmd_msg_size = 0;
 
+  configure_pwm();
+
+  CPU_INT08U dma_channel = configure_dma();
+
   while (DEF_TRUE)
   {
     //TODO task behavior
+    
+    enable_dma(dma_channel);
+    
+      //Enable PWM channel
+    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
+    
+    wait_td_finish(dma_channel);
+    
+    //PWM should be enabled. Measure output!
+    OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    
+    //Disable PWM channel
+    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
+    
+    wait_td_finish(dma_channel);
+    
+    //PWM should be disabled. Measure output!
+    OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    
+    wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
+    
+#if REMOVE_CODE == 0    
     
     //Wait for ´buffer full event
     OSSemPend(&g_sem_buffer_full_event,0,OS_OPT_PEND_BLOCKING,&ts,&os_err_sem);
@@ -97,6 +199,8 @@ void App_TaskDshot(void *p_arg)
     if(NULL != com_command){
      //TODO: process incomming UART commands
     }
+    
+#endif    
     
     OSTimeDlyHMSM(0, 0, 0, GENERAL_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
   }

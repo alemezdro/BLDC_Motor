@@ -37,14 +37,15 @@ static CPU_STK App_TaskDShotStk_R[APP_CFG_TASK_DSHOT_STK_SIZE];
 
 static OS_SEM g_sem_buffer_full_event;
 
-//static CPU_INT08U g_pwm_enable_value;
-//static CPU_INT08U g_pwm_disable_value;
+static CPU_INT08U g_pwm_enable_value;
+static CPU_INT08U g_pwm_disable_value;
 
-static CPU_INT08U g_cmp_value_one;
-static CPU_INT08U g_cmp_value_two;
+static CPU_INT08U g_cmp_values[20];
 
 static CPU_INT08U g_td0;
 static CPU_INT08U g_td1;
+static CPU_INT08U g_td2;
+static CPU_INT08U g_td3;
 
 /*
 *********************************************************************************************************
@@ -61,41 +62,56 @@ CPU_VOID wait_td_finish(CPU_INT08U dma_channel);
 
 CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel);
 
-
 CPU_VOID configure_pwm(CPU_VOID){
     
     pwm_set_interrupt_mode(0);
     
-    init_pwm();
-    
+    //dma enables the pwm channel
     //now cmp value changed here (100 and 20 remain)
     //no period changed at run 
 }
 
 CPU_INT08U configure_dma(CPU_VOID){
     
-    //g_pwm_enable_value = PWM_1_CONTROL |= PWM_1_CTRL_ENABLE;
-    //g_pwm_disable_value = PWM_1_CONTROL &= ((uint8)(~PWM_1_CTRL_ENABLE));
+    g_pwm_enable_value = PWM_1_CONTROL |= PWM_1_CTRL_ENABLE;
+    g_pwm_disable_value = PWM_1_CONTROL &= ((uint8)(~PWM_1_CTRL_ENABLE));
     
-    g_cmp_value_one = 39;
-    g_cmp_value_two = 99;
+    for(CPU_INT08U i = 0; i < 20; i++){
+        if(i % 2 == 0){
+            g_cmp_values[i] = 39;
+        }else{
+            g_cmp_values[i] = 99;
+        }
+    }
 
     //This is the dma configuration that's done once
     
-    CPU_INT08U dma_channel = init_dma(1u, 1u, HI16(&g_cmp_value_one), HI16(PWM_1_COMPARE1_LSB_PTR));
+    CPU_INT08U dma_channel = init_dma(1u, 1u, HI16(g_cmp_values), HI16(PWM_1_COMPARE1_LSB_PTR));
     
     g_td0 = dma_td_allocate();
     g_td1 = dma_td_allocate();
+    g_td2 = dma_td_allocate();
+    g_td3 = dma_td_allocate();
     
-    //enable pwm setup
-    dma_td_set_configuration(g_td0, 1u, g_td1, 0u); //1 byte in total, no auto execute next one
+    //setup first compare value
+    dma_td_set_configuration(g_td0, 1u, g_td1, CY_DMA_TD_AUTO_EXEC_NEXT); //1 byte in total, auto execute the next TD
     
-    dma_td_set_address(g_td0, LO16((CPU_INT32U)&g_cmp_value_one), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));
+    dma_td_set_address(g_td0, LO16((CPU_INT32U)&g_cmp_values[0]), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));
     
-    //disable pwm setup. 
-    dma_td_set_configuration(g_td1, 1u, CY_DMA_DISABLE_TD, 0u); //1 byte in total, Channel disabled after this
+    //enable PWM output
+    dma_td_set_configuration(g_td1, 1u, g_td2, 0u); //1 byte in total, no auto execute next td
     
-    dma_td_set_address(g_td1, LO16((CPU_INT32U)&g_cmp_value_two), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));    
+    dma_td_set_address(g_td1, LO16((CPU_INT32U)&g_pwm_enable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));  
+    
+    //setup rest of cmp values
+    dma_td_set_configuration(g_td2, 19u, g_td3, CY_DMA_TD_INC_SRC_ADR); //1 byte in total, auto execute the next TD
+    
+    dma_td_set_address(g_td2, LO16((CPU_INT32U)&g_cmp_values[1]), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));    
+    
+    //Disable PWM output
+    dma_td_set_configuration(g_td3, 1u, CY_DMA_DISABLE_TD, 0u); //1 byte in total, no auto execute next td
+    
+    dma_td_set_address(g_td3, LO16((CPU_INT32U)&g_pwm_disable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));     
     
     //Do not enable channel yet. Task does this
     return dma_channel;
@@ -155,8 +171,6 @@ void App_TaskDshot(void *p_arg)
   configure_pwm();
 
   CPU_INT08U dma_channel = configure_dma();
-  
-  CPU_INT08U var = 0;
 
   while (DEF_TRUE)
   {
@@ -164,18 +178,13 @@ void App_TaskDshot(void *p_arg)
     
     enable_dma(dma_channel);
     
-    //DMA should have input PWM from channel 2. Therefore no SW should be trigger
-    // Just wait until the chain is finished
+    //trigger the TD chain only once. After that the PWM channel 2 should trigger DMA
+    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
     
     wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
     
     //Measure output!
     OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
-    
-    //Chain finished. Togge the comapre values to see sometehing on the line
-    var = g_cmp_value_one;
-    g_cmp_value_one = g_cmp_value_two;
-    g_cmp_value_two = var;
     
 #if REMOVE_CODE == 0    
     

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\dshot_task.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000\esw_uCOS3_cykit\TopDesign">
 <ExpandedNodeIds>
 <v>esw_uCOS3_cykit-000</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit</v>
@@ -121,33 +121,33 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\com_task.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cpu_cfg.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\cyapicallbacks.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\device.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\dshot_task.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\includes.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_app_hooks.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Header Files\os_cfg_app.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\adc_task.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\app.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\com_task.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\dshot_task.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Source Files\os_app_hooks.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu_a.s</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\cpu_core.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\cpu_core.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-CPU\cpu_def.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-LIB</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-LIB\lib_ascii.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uC-LIB\lib_ascii.h</v>
+<v>esw_uCOS3_cykit-000</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\TopDesign</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Pins</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Analog</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Clocks</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Interrupts</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\DMA</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\System</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Directives</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Flash Security</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\EEPROM</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_dma.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_dma.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_gpio.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_gpio.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_psoc.h</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_pwm.c</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp_pwm.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000">

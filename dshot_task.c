@@ -66,8 +66,10 @@ CPU_VOID configure_pwm(CPU_VOID){
     
     pwm_set_interrupt_mode(0);
     
+    pwm_write_compare_2(20);
+    
     //dma enables the pwm channel
-    //now cmp value changed here (100 and 20 remain)
+    //only cmp channel 2 changes here (ch1 with 100 remain)
     //no period changed at run 
 }
 

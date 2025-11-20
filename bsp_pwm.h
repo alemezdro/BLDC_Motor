@@ -10,6 +10,7 @@
  * ========================================
 */
 #include <cpu.h>
+#include <PWM_1.h>
 
 CPU_VOID init_pwm(CPU_VOID);
 

@@ -104,9 +104,64 @@ CPU_VOID init_empty_frame(){
     g_cmp_values[16] = 23; //0  
 }
 
-CPU_VOID init_real_frame(){
+CPU_VOID init_real_frame_slowest_throttle(){
+    
+    //throttle value 48
+    
+    //0000 0110 0000 1001
 
-g_cmp_values[0] = 8;
+g_cmp_values[0] = 23;
+    
+    g_cmp_values[1] = 23; //0 60
+    g_cmp_values[2] = 23; //0
+    g_cmp_values[3] = 23; //0
+    g_cmp_values[4] = 23; //0
+    
+    g_cmp_values[5] = 23; //0
+    g_cmp_values[6] = 8; //1 92
+    g_cmp_values[7] = 8; //1
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 23; //0
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 8; //1
+    g_cmp_values[14] = 23; //0
+    g_cmp_values[15] = 23; //0
+    g_cmp_values[16] = 8; //1    
+
+}
+
+CPU_VOID init_real_frame(){
+    
+    //throttle value 500
+    //0011 1110 1000 1010
+    
+    g_cmp_values[0] = 23;
+    
+    g_cmp_values[1] = 23; //0 60
+    g_cmp_values[2] = 23; //0
+    g_cmp_values[3] = 8; //1
+    g_cmp_values[4] = 8; //1
+    
+    g_cmp_values[5] = 8; //1
+    g_cmp_values[6] = 8; //1 92
+    g_cmp_values[7] = 8; //1
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 8; //1
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 8; //1
+    g_cmp_values[14] = 23; //0
+    g_cmp_values[15] = 8; //1
+    g_cmp_values[16] = 23; //0
+
+/*  g_cmp_values[0] = 8;
     
     g_cmp_values[1] = 8; //1 60
     g_cmp_values[2] = 8; //1
@@ -126,7 +181,7 @@ g_cmp_values[0] = 8;
     g_cmp_values[13] = 23; //0
     g_cmp_values[14] = 8; //1
     g_cmp_values[15] = 23; //0
-    g_cmp_values[16] = 8; //1    
+    g_cmp_values[16] = 8; //1  */  
 
 }
 
@@ -229,11 +284,12 @@ void App_TaskDshot(void *p_arg)
 
   configure_pwm();
 
+  //init_pwm();
+
   CPU_INT08U dma_channel = configure_dma();
 
-  CPU_INT08U counter = 0;
-
-  CPU_BOOLEAN frame_initialized = DEF_FALSE;
+  CPU_INT32U counter_empty_vals = 0;
+  CPU_INT32U counter_slow_throttle = 0;
 
   while (DEF_TRUE)
   {
@@ -254,14 +310,26 @@ void App_TaskDshot(void *p_arg)
     //Measure output!
     OSTimeDlyHMSM(0, 0, 0, 1, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
     
-    counter++;
     
-    if(counter == 100 && !frame_initialized){
-        init_real_frame();
-        counter = 0;
-        frame_initialized = DEF_TRUE;
+    if(counter_empty_vals < 1000){
+        counter_empty_vals++;
+    }else{
+        
+        if(counter_empty_vals == 1000){
+            init_real_frame_slowest_throttle();
+            counter_empty_vals++;
+        }
+    
+        if(counter_slow_throttle < 1000){
+            counter_slow_throttle++;
+        }else{
+            
+            if(counter_slow_throttle == 1000){
+                init_real_frame();
+                counter_slow_throttle++;
+            }   
+        }
     }
-  
     
 #if REMOVE_CODE == 0    
     

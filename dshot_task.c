@@ -65,14 +65,10 @@ CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel);
 CPU_VOID configure_pwm(CPU_VOID){
     
     pwm_set_interrupt_mode(0);
-    
-    //volatile CPU_INT08U period = PWM_1_ReadPeriod();
-    
-   // pwm_write_period(38);
-    
-    //init_pwm();
-    
+
     pwm_write_compare_2(18);
+    
+   // init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
     
     //dma enables the pwm channel
     //only cmp channel 2 changes here (ch1 with 100 remain)
@@ -108,7 +104,7 @@ CPU_VOID init_real_frame_slowest_throttle(){
     
     //throttle value 48
     
-    //0000 0110 0000 1001
+    //0000 0110 0000 0110
 
 g_cmp_values[0] = 23;
     
@@ -127,17 +123,17 @@ g_cmp_values[0] = 23;
     g_cmp_values[11] = 23; //0
     g_cmp_values[12] = 23; //0
     
-    g_cmp_values[13] = 8; //1
-    g_cmp_values[14] = 23; //0
-    g_cmp_values[15] = 23; //0
-    g_cmp_values[16] = 8; //1    
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 8; //1
+    g_cmp_values[15] = 8; //1
+    g_cmp_values[16] = 23; //0    
 
 }
 
 CPU_VOID init_real_frame(){
     
-    //throttle value 500
-    //0011 1110 1000 1010
+    //throttle value 500    
+    //0011 1110 1000 0101
     
     g_cmp_values[0] = 23;
     
@@ -156,10 +152,10 @@ CPU_VOID init_real_frame(){
     g_cmp_values[11] = 23; //0
     g_cmp_values[12] = 23; //0
     
-    g_cmp_values[13] = 8; //1
-    g_cmp_values[14] = 23; //0
-    g_cmp_values[15] = 8; //1
-    g_cmp_values[16] = 23; //0
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 8; //1
+    g_cmp_values[15] = 23; //0
+    g_cmp_values[16] = 8; //1
 
 /*  g_cmp_values[0] = 8;
     
@@ -284,12 +280,11 @@ void App_TaskDshot(void *p_arg)
 
   configure_pwm();
 
-  //init_pwm();
-
   CPU_INT08U dma_channel = configure_dma();
 
   CPU_INT32U counter_empty_vals = 0;
   CPU_INT32U counter_slow_throttle = 0;
+  
 
   while (DEF_TRUE)
   {
@@ -308,23 +303,24 @@ void App_TaskDshot(void *p_arg)
     wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
     
     //Measure output!
-    OSTimeDlyHMSM(0, 0, 0, 1, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    OSTimeDlyHMSM(0, 0, 0, 15, OS_OPT_TIME_HMSM_STRICT, &os_err_dly); //NO MORE DELAY THAN 15 ms
     
     
-    if(counter_empty_vals < 1000){
+    if(counter_empty_vals < 250){
         counter_empty_vals++;
     }else{
         
-        if(counter_empty_vals == 1000){
+        if(counter_empty_vals == 250){
             init_real_frame_slowest_throttle();
+            //init_real_frame();
             counter_empty_vals++;
         }
     
-        if(counter_slow_throttle < 1000){
+        if(counter_slow_throttle < 250){
             counter_slow_throttle++;
         }else{
             
-            if(counter_slow_throttle == 1000){
+            if(counter_slow_throttle == 250){
                 init_real_frame();
                 counter_slow_throttle++;
             }   

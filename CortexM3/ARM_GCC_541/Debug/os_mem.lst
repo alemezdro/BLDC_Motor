@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
   28:uCOS-III\Source/os_mem.c **** *
   29:uCOS-III\Source/os_mem.c **** *           You can contact us at www.micrium.com, or by phone at +1 (954) 217-2036.
   30:uCOS-III\Source/os_mem.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 2
 
 
   31:uCOS-III\Source/os_mem.c **** */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
   85:uCOS-III\Source/os_mem.c ****     OS_MEM_QTY     i;
   86:uCOS-III\Source/os_mem.c ****     OS_MEM_QTY     loops;
   87:uCOS-III\Source/os_mem.c ****     CPU_INT08U    *p_blk;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 3
 
 
   88:uCOS-III\Source/os_mem.c ****     void         **p_link;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  142:uCOS-III\Source/os_mem.c ****     loops  = n_blks - 1u;
  143:uCOS-III\Source/os_mem.c ****     for (i = 0u; i < loops; i++) {
  144:uCOS-III\Source/os_mem.c ****         p_blk +=  blk_size;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 4
 
 
  145:uCOS-III\Source/os_mem.c ****        *p_link = (void  *)p_blk;                            /* Save pointer to NEXT block in CURREN
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  194:uCOS-III\Source/os_mem.c ****     CPU_SR_ALLOC();
  195:uCOS-III\Source/os_mem.c **** 
  196:uCOS-III\Source/os_mem.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 5
 
 
  197:uCOS-III\Source/os_mem.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  214:uCOS-III\Source/os_mem.c ****        *p_err = OS_ERR_MEM_NO_FREE_BLKS;                    /* No,  Notify caller of empty memory p
   56              		.loc 1 214 0
   57 0018 FFF7FEFF 		bl	CPU_SR_Restore
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 6
 
 
   58              	.LVL2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  232:uCOS-III\Source/os_mem.c **** *
  233:uCOS-III\Source/os_mem.c **** * Arguments   : p_mem    is a pointer to the memory partition control block
  234:uCOS-III\Source/os_mem.c **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 7
 
 
  235:uCOS-III\Source/os_mem.c **** *               p_blk    is a pointer to the memory block being released.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  117              		.loc 1 267 0
  118 000e 19B9     		cbnz	r1, .L9
  268:uCOS-III\Source/os_mem.c ****        *p_err  = OS_ERR_MEM_INVALID_P_BLK;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 8
 
 
  119              		.loc 1 268 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  158 0044 0023     		movs	r3, #0
  159 0046 3380     		strh	r3, [r6]	@ movhi
  160 0048 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 9
 
 
  161              		.cfi_endproc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  190 000e C361     		str	r3, [r0, #28]
  309:uCOS-III\Source/os_mem.c ****         OSMemDbgListPtr->DbgPrevPtr =  p_mem;
  191              		.loc 1 309 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 10
 
 
  192 0010 9861     		str	r0, [r3, #24]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  240              		.loc 1 110 0
  241 0016 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
  242              	.LVL16:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 11
 
 
  243              	.L18:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  286 004e 45F2BB63 		movw	r3, #22203
  287              	.LVL26:
  288 0052 099A     		ldr	r2, [sp, #36]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 12
 
 
  289              	.LVL27:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  332              	.LVL38:
  333              	.L25:
  143:uCOS-III\Source/os_mem.c ****         p_blk +=  blk_size;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 13
 
 
  334              		.loc 1 143 0 discriminator 1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  376 00c2 2846     		mov	r0, r5
  377 00c4 FFF7FEFF 		bl	CPU_SR_Restore
  378              	.LVL44:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 14
 
 
  166:uCOS-III\Source/os_mem.c **** }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  337:uCOS-III\Source/os_mem.c ****     }
  338:uCOS-III\Source/os_mem.c **** #endif
  339:uCOS-III\Source/os_mem.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 15
 
 
  340:uCOS-III\Source/os_mem.c **** #if OS_CFG_DBG_EN > 0u
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  455 0039 08       		.byte	0x8
  456 003a 9C0C0000 		.4byte	.LASF1
  457 003e 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 16
 
 
  458 003f E3040000 		.4byte	.LASF3
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  512 00a5 02       		.byte	0x2
  513 00a6 B5       		.byte	0xb5
  514 00a7 69000000 		.4byte	0x69
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 17
 
 
  515 00ab 02       		.uleb128 0x2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  569 011b 08       		.uleb128 0x8
  570 011c 57010000 		.4byte	.LASF221
  571 0120 02       		.byte	0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 18
 
 
  572 0121 5B000000 		.4byte	0x5b
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  626 01a0 6842     		.2byte	0x4268
  627 01a2 0A       		.uleb128 0xa
  628 01a3 AD000000 		.4byte	.LASF43
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 19
 
 
  629 01a7 5046     		.2byte	0x4650
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  683 0225 BF56     		.2byte	0x56bf
  684 0227 0A       		.uleb128 0xa
  685 0228 F4030000 		.4byte	.LASF62
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 20
 
 
  686 022c C056     		.2byte	0x56c0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  740 02aa 8A5E     		.2byte	0x5e8a
  741 02ac 0A       		.uleb128 0xa
  742 02ad EC000000 		.4byte	.LASF81
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 21
 
 
  743 02b1 A861     		.2byte	0x61a8
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  797 032f 9365     		.2byte	0x6593
  798 0331 0A       		.uleb128 0xa
  799 0332 34080000 		.4byte	.LASF100
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 22
 
 
  800 0336 9465     		.2byte	0x6594
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  854 03b4 2E6E     		.2byte	0x6e2e
  855 03b6 0A       		.uleb128 0xa
  856 03b7 B9010000 		.4byte	.LASF119
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 23
 
 
  857 03bb 2F6E     		.2byte	0x6e2f
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  911 0439 5771     		.2byte	0x7157
  912 043b 0A       		.uleb128 0xa
  913 043c 6D040000 		.4byte	.LASF138
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 24
 
 
  914 0440 5871     		.2byte	0x7158
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  968 04be 7572     		.2byte	0x7275
  969 04c0 0A       		.uleb128 0xa
  970 04c1 5D0F0000 		.4byte	.LASF157
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 25
 
 
  971 04c5 7672     		.2byte	0x7276
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1025 0543 4573     		.2byte	0x7345
  1026 0545 0A       		.uleb128 0xa
  1027 0546 72090000 		.4byte	.LASF176
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 26
 
 
  1028 054a 4673     		.2byte	0x7346
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1082 05c5 0C       		.uleb128 0xc
  1083 05c6 F70A0000 		.4byte	.LASF190
  1084 05ca 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 27
 
 
  1085 05cb 2D03     		.2byte	0x32d
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1139 063f 01       		.byte	0x1
  1140 0640 BE       		.byte	0xbe
  1141 0641 9E000000 		.4byte	0x9e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 28
 
 
  1142 0645 00000000 		.4byte	.LFB2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1196 06c9 01       		.byte	0x1
  1197 06ca F7       		.byte	0xf7
  1198 06cb 34060000 		.4byte	0x634
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 29
 
 
  1199 06cf 66000000 		.4byte	.LLST3
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1253 0752 33080000 		.4byte	0x833
  1254 0756 0E       		.uleb128 0xe
  1255 0757 200B0000 		.4byte	.LASF198
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 30
 
 
  1256 075b 01       		.byte	0x1
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1310 07dd 01       		.byte	0x1
  1311 07de 57       		.byte	0x57
  1312 07df 33080000 		.4byte	0x833
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 31
 
 
  1313 07e3 5D030000 		.4byte	.LLST15
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1367 0857 A9060000 		.4byte	0x6a9
  1368 085b 01       		.uleb128 0x1
  1369 085c 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 32
 
 
  1370 085d 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1424 0019 0B       		.uleb128 0xb
  1425 001a 3B       		.uleb128 0x3b
  1426 001b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 33
 
 
  1427 001c 49       		.uleb128 0x49
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1481 0052 00       		.byte	0
  1482 0053 08       		.uleb128 0x8
  1483 0054 04       		.uleb128 0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 34
 
 
  1484 0055 01       		.byte	0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1538 008b 0B       		.uleb128 0xb
  1539 008c 3B       		.uleb128 0x3b
  1540 008d 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 35
 
 
  1541 008e 49       		.uleb128 0x49
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1595 00c5 0B       		.uleb128 0xb
  1596 00c6 3B       		.uleb128 0x3b
  1597 00c7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 36
 
 
  1598 00c8 49       		.uleb128 0x49
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1652 0101 00       		.byte	0
  1653 0102 13       		.uleb128 0x13
  1654 0103 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 37
 
 
  1655 0104 01       		.byte	0x1
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1709 013b 34       		.uleb128 0x34
  1710 013c 00       		.byte	0
  1711 013d 03       		.uleb128 0x3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 38
 
 
  1712 013e 08       		.uleb128 0x8
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1766 017b 19       		.uleb128 0x19
  1767 017c 00       		.byte	0
  1768 017d 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 39
 
 
  1769 017e 1B       		.uleb128 0x1b
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1823 005b 0100     		.2byte	0x1
  1824 005d 50       		.byte	0x50
  1825 005e 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 40
 
 
  1826 0062 00000000 		.4byte	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1880 00f4 50       		.byte	0x50
  1881 00f5 9B000000 		.4byte	.LVL40-1
  1882 00f9 D2000000 		.4byte	.LVL45
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 41
 
 
  1883 00fd 0100     		.2byte	0x1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1937 017c 0100     		.2byte	0x1
  1938 017e 52       		.byte	0x52
  1939 017f 32000000 		.4byte	.LVL21
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 42
 
 
  1940 0183 38000000 		.4byte	.LVL22
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  1994 01fc 00000000 		.4byte	0
  1995 0200 00000000 		.4byte	0
  1996              	.LLST10:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 43
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 43
 
 
  1997 0204 00000000 		.4byte	.LVL12
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2051 0280 9F       		.byte	0x9f
  2052 0281 5A000000 		.4byte	.LVL28
  2053 0285 64000000 		.4byte	.LVL29
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 44
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 44
 
 
  2054 0289 0100     		.2byte	0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2108 0309 7D       		.byte	0x7d
  2109 030a 04       		.sleb128 4
  2110 030b 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 45
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 45
 
 
  2111 030f 00000000 		.4byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2165 039c 7A000000 		.4byte	.LVL33
  2166 03a0 7E000000 		.4byte	.LVL35
  2167 03a4 0100     		.2byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 46
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 46
 
 
  2168 03a6 55       		.byte	0x55
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2222 0014 1C000000 		.4byte	.LFE4
  2223 0018 00000000 		.4byte	.LFB1
  2224 001c E0000000 		.4byte	.LFE1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 47
 
 
  2225 0020 00000000 		.4byte	.LFB5
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2251      52525F44 
  2251      00
  2252              	.LASF34:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 48
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 48
 
 
  2253 0089 4F535F45 		.ascii	"OS_ERR_E\000"
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2279      00
  2280              	.LASF105:
  2281 0107 4F535F45 		.ascii	"OS_ERR_S\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 49
 
 
  2281      52525F53 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2304              	.LASF8:
  2305 01ae 4350555F 		.ascii	"CPU_INT32U\000"
  2305      494E5433 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 50
 
 
  2305      325500
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2325      41534B5F 
  2325      4E4F545F 
  2325      444C5900 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 51
 
 
  2326              	.LASF196:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2347 032f 4F535F45 		.ascii	"OS_ERR_TASK_SUSPEND_IDLE\000"
  2347      52525F54 
  2347      41534B5F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 52
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 52
 
 
  2347      53555350 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2367 040e 6370755F 		.ascii	"cpu_sr\000"
  2367      737200
  2368              	.LASF174:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 53
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 53
 
 
  2369 0415 4F535F45 		.ascii	"OS_ERR_TMR_NO_CALLBACK\000"
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2387 04e3 4350555F 		.ascii	"CPU_INT08U\000"
  2387      494E5430 
  2387      385500
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 54
 
 
  2388              	.LASF146:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2407      454D00
  2408              	.LASF67:
  2409 0608 4F535F45 		.ascii	"OS_ERR_MUTEX_NOT_OWNER\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 55
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 55
 
 
  2409      52525F4D 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2429      4C41475F 
  2429      4752505F 
  2429      4445504C 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 56
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 56
 
 
  2430              	.LASF58:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2453      4E56414C 
  2453      494400
  2454              	.LASF16:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 57
 
 
  2455 0782 4350555F 		.ascii	"CPU_SR\000"
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2478              	.LASF100:
  2479 0834 4F535F45 		.ascii	"OS_ERR_Q_SIZE\000"
  2479      52525F51 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 58
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 58
 
 
  2479      5F53495A 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2499 0903 4F535F45 		.ascii	"OS_ERR_TASK_STK_CHK_ISR\000"
  2499      52525F54 
  2499      41534B5F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 59
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 59
 
 
  2499      53544B5F 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2517      49535200 
  2518              	.LASF95:
  2519 09e4 4F535F45 		.ascii	"OS_ERR_PTR_INVALID\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 60
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 60
 
 
  2519      52525F50 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2539      454D5F49 
  2539      4E56414C 
  2539      49445F50 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 61
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 61
 
 
  2540              	.LASF53:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2563      4E475F43 
  2563      545200
  2564              	.LASF137:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 62
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 62
 
 
  2565 0b66 4F535F45 		.ascii	"OS_ERR_TASK_RESUME_SELF\000"
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2586              	.LASF18:
  2587 0c1c 6C6F6E67 		.ascii	"long unsigned int\000"
  2587      20756E73 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 63
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 63
 
 
  2587      69676E65 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2608              	.LASF55:
  2609 0ccf 4F535F45 		.ascii	"OS_ERR_MEM_CREATE_ISR\000"
  2609      52525F4D 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 64
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 64
 
 
  2609      454D5F43 
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2629      52525F54 
  2629      494D455F 
  2629      494E5641 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 65
 
 
  2629      4C49445F 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2651      52525F46 
  2651      4C555348 
  2651      5F495352 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 66
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 66
 
 
  2651      00
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 1
  2673 0f49 4F535F45 		.ascii	"OS_ERR_TIME_GET_ISR\000"
  2673      52525F54 
  2673      494D455F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccit8RGc.s 			page 67
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cckXnmpG.s 			page 67
 
 
  2673      4745545F 

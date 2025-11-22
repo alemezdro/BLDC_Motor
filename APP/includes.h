@@ -91,12 +91,16 @@
 *                                              PROBE
 *********************************************************************************************************
 */
-#define GENERAL_TASK_DELAY_MS 100u
-#define TASK_QUEUE_LENGTH     0u
+#define GENERAL_TASK_DELAY_MS   100u
+#define COM_TASK_DELAY_MS       200u
+#define THUMSTICK_TASK_DELAY_MS 75u
+#define DSHOT_TASK_DELAY_MS     15u
+    
+#define TASK_QUEUE_LENGTH       0u
   
   
 #define ADC_TASK_BUFF_LENGTH    10u
-#define DSHOT_TASK_QUEUE_LENGTH 5u
+#define DSHOT_TASK_QUEUE_LENGTH 2u
 
 /*
 *********************************************************************************************************

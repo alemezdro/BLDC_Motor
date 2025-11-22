@@ -134,7 +134,7 @@ void  App_TaskCom (void *p_arg)
       idx = 0x00;
     }
     /* initiate scheduler */
-    OSTimeDlyHMSM(0, 0, 0, GENERAL_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, 
+    OSTimeDlyHMSM(0, 0, 0, COM_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, 
       &os_err);
   }
 }

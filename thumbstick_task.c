@@ -227,7 +227,7 @@ void App_TaskThumbstick(void *p_arg)
       
       }
 
-    OSTimeDlyHMSM(0, 0, 0, GENERAL_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+    OSTimeDlyHMSM(0, 0, 0, THUMSTICK_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
   }
 }
 

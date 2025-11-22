@@ -303,7 +303,7 @@ void App_TaskDshot(void *p_arg)
     wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
     
     //Measure output!
-    OSTimeDlyHMSM(0, 0, 0, 15, OS_OPT_TIME_HMSM_STRICT, &os_err_dly); //NO MORE DELAY THAN 15 ms
+    OSTimeDlyHMSM(0, 0, 0, DSHOT_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly); //NO MORE DELAY THAN 15 ms
     
     
     if(counter_empty_vals < 250){

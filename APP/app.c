@@ -168,12 +168,12 @@ static void App_TaskCreate(void)
   /* declare and define function local variables */
   OS_ERR os_err;
 
-  /* create Adc Task channel*/
+  /* create Thumstick Task channel*/
   OSTaskCreate((OS_TCB *)GetThumbstickTaskTCB(),
                (CPU_CHAR *)"TaskThumbstick",
                (OS_TASK_PTR)App_TaskThumbstick,
                (void *)0,
-               (OS_PRIO)APP_CFG_TASK_CMD_PRIO,
+               (OS_PRIO)APP_CFG_TASK_THUMSTICK_PRIO,
                (CPU_STK *)GetThumbstickTaskStk(),
                (CPU_STK_SIZE)APP_CFG_TASK_THUMBSTICK_STK_SIZE_LIMIT,
                (CPU_STK_SIZE)APP_CFG_TASK_THUMBSTICK_STK_SIZE,
@@ -187,7 +187,7 @@ static void App_TaskCreate(void)
                (CPU_CHAR *)"TaskDshot",
                (OS_TASK_PTR)App_TaskDshot,
                (void *)0,
-               (OS_PRIO)APP_CFG_TASK_SIN_PRIO,
+               (OS_PRIO)APP_CFG_TASK_DSHOT_PRIO,
                (CPU_STK *)GetDshotTaskStk(),
                (CPU_STK_SIZE)APP_CFG_TASK_DSHOT_STK_SIZE_LIMIT,
                (CPU_STK_SIZE)APP_CFG_TASK_DSHOT_STK_SIZE,

@@ -49,7 +49,7 @@
 #define  APP_CFG_TASK_START_PRIO                        2u
 #define  APP_CFG_TASK_COM_PRIO                          3u
 #define  APP_CFG_TASK_THUMSTICK_PRIO                    4u
-#define  APP_CFG_TASK_DSHOT_PRIO                        5u
+#define  APP_CFG_TASK_DSHOT_PRIO                        4u
 
 /*
 *********************************************************************************************************

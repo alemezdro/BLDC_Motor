@@ -47,12 +47,11 @@
 
 #define SPI_THUMBSTICK_RX_MASK 0xFFF
 
-#define BUFFER_INACTIVE -1
-#define BUFFER_FULL     ADC_TASK_BUFF_LENGTH
-
 #define MOTOR_THROTTLE_OFF     0u
 #define MOTOR_THROTTLE_MIN    48u
-#define MOTOR_THROTTLE_MAX    2047u
+//should be 2047 but the motor stops rotating as soons as the throttle surpasses 1000
+//possible current limitation in the motor
+#define MOTOR_THROTTLE_MAX    1000u 
 
 #define MOTOR_DEADBAND 0.05f
 
@@ -75,14 +74,6 @@ static CPU_STK App_TaskAdcStk_R[APP_CFG_TASK_THUMBSTICK_STK_SIZE];
 *********************************************************************************************************
 */
 
-static CPU_INT32U g_buff_thrust_values_one[ADC_TASK_BUFF_LENGTH];
-static CPU_INT32U g_buff_thrust_values_two[ADC_TASK_BUFF_LENGTH];
-
-static CPU_INT32U* g_active_buff = NULL;
-
-static CPU_INT08S g_idx_buff_one = 0;
-static CPU_INT08S g_idx_buff_two = BUFFER_INACTIVE;
-
 static CPU_INT32U g_max_adc_delta = 0;
 
 /*
@@ -91,12 +82,58 @@ static CPU_INT32U g_max_adc_delta = 0;
 *********************************************************************************************************
 */
 
-CPU_INT32U getThumbStickYAxisValue();
-CPU_INT32U getMotorThrottleValue(CPU_INT32U y_axis_adc_val);
+CPU_INT32U GetThumbStickYAxisValue();
+CPU_INT32U GetMotorThrottleValue(CPU_INT32U y_axis_adc_val);
 
+/*
+*********************************************************************************************************
+*                                          App_TaskAdc()
+*
+* Description : 
+*
+* Argument(s) : p_arg   is the argument passed to 'App_TaskAdc()' by 'OSTaskCreate()'.
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+void App_TaskThumbstick(void *p_arg)
+{
+  /* prevent compiler warnings */
+  (void)p_arg;
 
+  OS_ERR os_err_dly;
+  OS_ERR os_err_sem;
 
-CPU_INT32U getThumbStickYAxisValue()
+  CPU_INT32U y_axis_adc_val = 0;
+  CPU_INT32U last_motor_throttle_val = 0;
+  
+  g_max_adc_delta = ADC_MAX_DELTA_UP > ADC_MAX_DELTA_DOWN ? ADC_MAX_DELTA_UP : ADC_MAX_DELTA_DOWN;
+
+  while (DEF_TRUE)
+  {
+    //get adc value only for Y axis
+    y_axis_adc_val = GetThumbStickYAxisValue();
+    
+    CPU_INT32U current_value = GetMotorThrottleValue(y_axis_adc_val);
+    
+    if(last_motor_throttle_val != current_value){
+        
+        //calculate throttle based on adc and send it to the Dshot 
+        SetNewThrottleValue(current_value);
+        
+        last_motor_throttle_val = current_value;
+        
+        //Notify the Dshot task on new throttle value event
+        OSSemPost(GetNewThrottleEventSem(),OS_OPT_POST_ALL,&os_err_sem);
+    }
+  
+    OSTimeDlyHMSM(0, 0, 0, THUMSTICK_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+  }
+}
+
+CPU_INT32U GetThumbStickYAxisValue()
 {
   CPU_INT32U result = 0;
   
@@ -122,8 +159,8 @@ CPU_INT32U getThumbStickYAxisValue()
   return result;
 }
 
-CPU_INT32U getMotorThrottleValue(CPU_INT32U y_axis_adc_val) 
-{
+CPU_INT32U GetMotorThrottleValue(CPU_INT32U y_axis_adc_val){
+    
   //distance from the center (aboslute value)
   CPU_FP32 delta = fabsf((CPU_FP32)y_axis_adc_val - (CPU_FP32)ADC_THUMBSTICK_MIDDLE_POINT);
   
@@ -154,81 +191,6 @@ CPU_INT32U getMotorThrottleValue(CPU_INT32U y_axis_adc_val)
   }
 
   return throttle;
-}
-
-/*
-*********************************************************************************************************
-*                                          App_TaskAdc()
-*
-* Description : 
-*
-* Argument(s) : p_arg   is the argument passed to 'App_TaskAdc()' by 'OSTaskCreate()'.
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
-void App_TaskThumbstick(void *p_arg)
-{
-  /* prevent compiler warnings */
-  (void)p_arg;
-
-  CPU_TS ts;
-  OS_ERR os_err_dly;
-  OS_ERR os_err_queue;
-  OS_ERR os_err_sem;
-  
-  volatile CPU_INT32U y_axis_adc_val = 0;
-  CPU_INT32U throttle_val = 0;
-  
-  g_max_adc_delta = ADC_MAX_DELTA_UP > ADC_MAX_DELTA_DOWN ? ADC_MAX_DELTA_UP : ADC_MAX_DELTA_DOWN;
-
-  while (DEF_TRUE)
-  {
-    //get adc value
-    y_axis_adc_val = getThumbStickYAxisValue();
-    
-    //calculate throttle based on adc
-    throttle_val = getMotorThrottleValue(y_axis_adc_val);
-    
-    if(BUFFER_INACTIVE == g_idx_buff_two){
-      //filling buffer 1
-      g_buff_thrust_values_one[g_idx_buff_one] = throttle_val;
-      g_idx_buff_one++;
-    
-    }else if(BUFFER_INACTIVE == g_idx_buff_one){
-    //filling buffer 2
-      g_buff_thrust_values_two[g_idx_buff_two] = throttle_val;
-      g_idx_buff_two++;
-    }
-   
-    //one buffer is full already, notify Dshot task and proceed to fill the other buffer
-    //there is no need to be notified when dshot empties its queue, because meanwhile this
-    //task fills the other buffer
-    if(BUFFER_FULL == g_idx_buff_one || BUFFER_FULL == g_idx_buff_two){
-      
-      OSSemPost(GetNewThrottleEventSem(),OS_OPT_POST_ALL,&os_err_sem);
-      
-      if(BUFFER_FULL == g_idx_buff_one){
-        
-        g_active_buff = &g_buff_thrust_values_one[0];
-        
-        g_idx_buff_one = BUFFER_INACTIVE; //deactivate buffer because it being emptied
-        g_idx_buff_two = 0;
-      
-      }else if(BUFFER_FULL == g_idx_buff_two){
-        
-        g_active_buff = &g_buff_thrust_values_two[0];
-      
-        g_idx_buff_two = BUFFER_INACTIVE; //deactivate buffer because it being emptied
-        g_idx_buff_one = 0;
-      }
-      
-      }
-
-    OSTimeDlyHMSM(0, 0, 0, THUMSTICK_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
-  }
 }
 
 /*
@@ -265,17 +227,5 @@ OS_TCB* GetThumbstickTaskTCB()
 CPU_STK* GetThumbstickTaskStk()
 {
   return &App_TaskAdcStk_R[0];
-}
-
-
-CPU_INT32U* getThumbstickTaskBuffer()
-{
-  CPU_INT32U* buff = g_active_buff;
-  
-  //invalidate active buffer to avoid caller to reprocess the same data again
-  
-  g_active_buff = NULL; 
-
-  return buff;
 }
 /* [] END OF FILE */

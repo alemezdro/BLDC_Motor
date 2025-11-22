@@ -61,8 +61,6 @@ OS_TCB* GetThumbstickTaskTCB();
 */
 CPU_STK* GetThumbstickTaskStk();
 
-CPU_INT32U* getThumbstickTaskBuffer();
-
 #endif
 
 /* [] END OF FILE */

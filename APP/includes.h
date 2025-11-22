@@ -92,9 +92,9 @@
 *********************************************************************************************************
 */
 #define GENERAL_TASK_DELAY_MS   100u
-#define COM_TASK_DELAY_MS       200u
-#define THUMSTICK_TASK_DELAY_MS 75u
-#define DSHOT_TASK_DELAY_MS     15u
+#define COM_TASK_DELAY_MS       300u
+#define THUMSTICK_TASK_DELAY_MS 50u
+#define DSHOT_TASK_DELAY_MS     10u
     
 #define TASK_QUEUE_LENGTH       0u
   

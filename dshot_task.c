@@ -17,7 +17,7 @@
 #include <dshot_task.h>
 #include <includes.h>
 
-#include <adc_task.h>
+#include <thumbstick_task.h>
 
 /*
 *********************************************************************************************************

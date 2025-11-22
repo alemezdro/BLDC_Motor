@@ -15,7 +15,7 @@
 *                                             INCLUDE FILES
 *********************************************************************************************************
 */
-#include <adc_task.h>
+#include <thumbstick_task.h>
 #include <includes.h>
 
 #include <project.h>

@@ -233,7 +233,7 @@ static void App_ObjCreate(void)
   /* declare and define function local variables */
   OS_ERR os_err;
 
-  OSSemCreate(getSemBufferFullEvent(),"SEM_BUFFER_FULL_EVENT",0,&os_err);
+  OSSemCreate(GetNewThrottleEventSem(),"SEM_NEW_THROTTLE_EVENT",0,&os_err);
 }
 
 /* END OF FILE */

@@ -208,7 +208,7 @@ void App_TaskThumbstick(void *p_arg)
     //task fills the other buffer
     if(BUFFER_FULL == g_idx_buff_one || BUFFER_FULL == g_idx_buff_two){
       
-      OSSemPost(getSemBufferFullEvent(),OS_OPT_POST_ALL,&os_err_sem);
+      OSSemPost(GetNewThrottleEventSem(),OS_OPT_POST_ALL,&os_err_sem);
       
       if(BUFFER_FULL == g_idx_buff_one){
         

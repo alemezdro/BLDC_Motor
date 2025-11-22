@@ -121,6 +121,15 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\DMA</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\System</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Directives</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\Flash Security</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\esw_uCOS3_cykit.cydwr\EEPROM</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III</v>
+<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\OS\uCOS-III\bsp_os.h</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.c</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\BSP\bsp.h</v>
@@ -179,15 +188,6 @@
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Lib\ARM-Cortex-M3\PSoC_GNU</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Lib\ARM-Cortex-M3\PSoC_GNU\uCOS-III-ARM-Cortex-M3.a</v>
 <v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3\Generic</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_a.s</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_c.c</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Source</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Source\os.h</v>
-<v>esw_uCOS3_cykit-000\esw_uCOS3_cykit\uCOS-III\Source\os_cfg_app.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="esw_uCOS3_cykit-000">

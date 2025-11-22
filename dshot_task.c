@@ -35,7 +35,9 @@
 static OS_TCB App_TaskDShot_TCB;
 static CPU_STK App_TaskDShotStk_R[APP_CFG_TASK_DSHOT_STK_SIZE];
 
-static OS_SEM g_sem_buffer_full_event;
+static OS_SEM g_sem_new_throttle_event;
+
+static CPU_INT32U g_current_throttle_value;
 
 static CPU_INT08U g_pwm_enable_value;
 static CPU_INT08U g_pwm_disable_value;
@@ -396,9 +398,13 @@ CPU_STK* GetDshotTaskStk()
   return &App_TaskDShotStk_R[0];
 }
 
-OS_SEM* getSemBufferFullEvent()
+CPU_VOID SetThrottleValue(CPU_INT32U throttle_value){
+    g_current_throttle_value = throttle_value;
+}
+
+OS_SEM* GetNewThrottleEventSem()
 {
-  return &g_sem_buffer_full_event;
+  return &g_sem_new_throttle_event;
 }
 
 /* [] END OF FILE */

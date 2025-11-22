@@ -60,8 +60,9 @@ OS_TCB* GetDshotTaskTCB();
 */
 CPU_STK* GetDshotTaskStk();
 
+CPU_VOID SetThrottleValue(CPU_INT32U throttle_value);
 
-OS_SEM* getSemBufferFullEvent();
+OS_SEM* GetNewThrottleEventSem();
 
 #endif
 /* [] END OF FILE */

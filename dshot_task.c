@@ -42,6 +42,8 @@
 #define DSHOT_BIT_1     8u
 #define DSHOT_BIT_0     23u
 
+#define RESSOURCE_WAIT_TIME 1u
+
 /*
 *********************************************************************************************************
 *                                            LOCAL VARIABLES
@@ -58,6 +60,11 @@ static CPU_INT32U   g_current_throttle_value;
 CPU_INT08U g_pwm_enable_value;
 //value to load in the pwm control register to stop dma
 CPU_INT08U g_pwm_disable_value;
+
+enum OperationState{
+    THUMBSTICK_MODE = 0,
+    USER_MODE       = 1
+};
 
 
 static CPU_INT08U g_cmp_values[DSHOT_CMP_VALUES_LEN];
@@ -101,9 +108,11 @@ void App_TaskDshot(void *p_arg) {
   OS_ERR os_err_sem;
   
   CPU_TS ts;
-  //OS_MSG_SIZE cmd_msg_size = 0;
+  OS_MSG_SIZE cmd_msg_size = 0;
 
    volatile CPU_INT32U throttle_val = 0;
+   CPU_INT32U* user_throttle_val = NULL;
+   enum OperationState state = THUMBSTICK_MODE;
 
   //pwm intialization
   configure_pwm();
@@ -116,13 +125,33 @@ void App_TaskDshot(void *p_arg) {
         //start dma exectuion
         start_dma(dma_channel);
         
-        //Wait for ´buffer full event
-        OSSemPend(&g_sem_new_throttle_event,1u,OS_OPT_PEND_NON_BLOCKING,&ts,&os_err_sem);
+        //check semaphore throttle value event
+        OSSemPend(&g_sem_new_throttle_event,RESSOURCE_WAIT_TIME,OS_OPT_PEND_NON_BLOCKING,&ts,&os_err_sem);
         
-        if(OS_ERR_NONE == os_err_sem){
+        //check user command buffer
+        user_throttle_val = (CPU_INT32U *)OSTaskQPend(RESSOURCE_WAIT_TIME, OS_OPT_PEND_NON_BLOCKING, &cmd_msg_size, &ts, &os_err_queue);
+        
+        
+        if(OS_ERR_NONE == os_err_queue){
             //the call was succesfull and this task owns the ressource
+            //user sent something. check it and enter or leave the user mode eventually
+            
+            if(0 == *user_throttle_val){
+                state = THUMBSTICK_MODE; //leave user mode
+            
+            }else{
+                //the task assumes that thet throttle value was correctly controlled by the com task
+                //apply the user throttle value
+                update_dshot_frame_buffer(*user_throttle_val);
+                
+                state = USER_MODE; //enter user mode
+            }
+            
+        }else if(OS_ERR_NONE == os_err_sem && THUMBSTICK_MODE == state){
+            //the call was succesfull and this task owns the ressource
+            //consider thumbstick value only in the thumbstick mode
             throttle_val = g_current_throttle_value; // atomic read
-        
+    
             update_dshot_frame_buffer(throttle_val);
         }
 

@@ -1,0 +1,73 @@
+# -----------------------------
+# PSoC / ModusToolbox / Eclipse
+# -----------------------------
+
+# Build output and generated sources
+Generated_Source/
+Debug/
+Release/
+build/
+Build_*/
+Output/
+CortexM0/
+CortexM3/
+CortexM4/
+ARM_GCC_*
+ARM_Keil_*
+ARM_MDKeil_*
+ARM_PSoC_*
+*.rpt
+*.elf
+*.hex
+*.map
+*.lst
+*.dep
+*.svd
+
+# Creator / ModusToolbox metadata
+*.cywrk
+*.cyprj
+*.cycdx
+*.cyfit
+*.cydwr
+*.cyupdt
+*.cywrk.*
+*.cyprj.*
+*.cyfit.*
+*.cydwr.*
+
+# ModusToolbox shared and library folders
+libs/
+libs.deps
+mtb_shared/
+MtbShared/
+*.gpdsc
+*.mex
+*.mtb
+*.mk
+
+# IDE stuff (Eclipse, VSCode, etc.)
+.settings/
+.project
+.cproject
+.idea/
+.vscode/
+*.launch
+*.metadata/
+
+# Logs, backups, temps
+*.log
+*.tmp
+*.bak
+*.swp
+*.orig
+*.dmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Keep these files (tracked)
+# -----------------------------
+!.gitignore

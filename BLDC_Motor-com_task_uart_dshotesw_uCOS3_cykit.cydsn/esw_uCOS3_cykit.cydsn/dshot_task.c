@@ -1,0 +1,464 @@
+/* ========================================
+ *
+ * Copyright YOUR COMPANY, THE YEAR
+ * All Rights Reserved
+ * UNPUBLISHED, LICENSED SOFTWARE.
+ *
+ * CONFIDENTIAL AND PROPRIETARY INFORMATION
+ * WHICH IS THE PROPERTY OF your company.
+ *
+ * ========================================
+*/
+/*
+*********************************************************************************************************
+*                                             INCLUDE FILES
+*********************************************************************************************************
+*/
+#include <dshot_task.h>
+#include <includes.h>
+
+#include <adc_task.h>
+#include <com_task.h>
+
+/*
+*********************************************************************************************************
+*                                             LOCAL DEFINES
+*********************************************************************************************************
+*/
+
+#define REMOVE_CODE 1
+/*
+*********************************************************************************************************
+*                                            LOCAL VARIABLES
+*********************************************************************************************************
+*/
+
+static OS_TCB App_TaskDShot_TCB;
+static CPU_STK App_TaskDShotStk_R[APP_CFG_TASK_DSHOT_STK_SIZE];
+
+static OS_SEM g_sem_buffer_full_event;
+
+static CPU_INT08U g_pwm_enable_value;
+static CPU_INT08U g_pwm_disable_value;
+
+static CPU_INT08U g_cmp_values[17];
+
+static CPU_INT08U g_td0;
+static CPU_INT08U g_td1;
+static CPU_INT08U g_td2;
+static CPU_INT08U g_td3;
+
+/*
+*********************************************************************************************************
+*                                         FUNCTION PROTOTYPES
+*********************************************************************************************************
+*/
+CPU_VOID configure_pwm(CPU_VOID);
+
+CPU_INT08U configure_dma(CPU_VOID);
+
+CPU_VOID enable_dma(CPU_INT08U dma_channel);
+
+CPU_VOID wait_td_finish(CPU_INT08U dma_channel);
+
+CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel);
+
+CPU_VOID configure_pwm(CPU_VOID){
+    
+    pwm_set_interrupt_mode(0);
+
+    pwm_write_compare_2(18);
+    
+    init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
+    
+    //dma enables the pwm channel
+    //only cmp channel 2 changes here (ch1 with 100 remain)
+    //no period changed at run 
+}
+
+CPU_VOID init_empty_frame(){
+
+    g_cmp_values[0] = 23; // 28
+    
+    g_cmp_values[1] = 23; //0 60
+    g_cmp_values[2] = 23; //0
+    g_cmp_values[3] = 23; //0
+    g_cmp_values[4] = 23; //0
+    
+    g_cmp_values[5] = 23; //0
+    g_cmp_values[6] = 23; //0 92
+    g_cmp_values[7] = 23; //0
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 23; //0
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 23; //0
+    g_cmp_values[15] = 23; //0
+    g_cmp_values[16] = 23; //0  
+}
+
+CPU_VOID init_real_frame_slowest_throttle(){
+    
+    //throttle value 48
+    
+    //0000 0110 0000 0110
+
+g_cmp_values[0] = 23;
+    
+    g_cmp_values[1] = 23; //0 60
+    g_cmp_values[2] = 23; //0
+    g_cmp_values[3] = 23; //0
+    g_cmp_values[4] = 23; //0
+    
+    g_cmp_values[5] = 23; //0
+    g_cmp_values[6] = 8; //1 92
+    g_cmp_values[7] = 8; //1
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 23; //0
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 8; //1
+    g_cmp_values[15] = 8; //1
+    g_cmp_values[16] = 23; //0    
+
+}
+
+CPU_VOID init_real_frame(){
+    
+    //throttle value 500    
+    //0011 1110 1000 0101
+    
+    g_cmp_values[0] = 23;
+    
+    g_cmp_values[1] = 23; //0 60
+    g_cmp_values[2] = 23; //0
+    g_cmp_values[3] = 8; //1
+    g_cmp_values[4] = 8; //1
+    
+    g_cmp_values[5] = 8; //1
+    g_cmp_values[6] = 8; //1 92
+    g_cmp_values[7] = 8; //1
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 8; //1
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 8; //1
+    g_cmp_values[15] = 23; //0
+    g_cmp_values[16] = 8; //1
+
+/*  g_cmp_values[0] = 8;
+    
+    g_cmp_values[1] = 8; //1 60
+    g_cmp_values[2] = 8; //1
+    g_cmp_values[3] = 8; //1
+    g_cmp_values[4] = 8; //1
+    
+    g_cmp_values[5] = 8; //1
+    g_cmp_values[6] = 23; //0 92
+    g_cmp_values[7] = 8; //1
+    g_cmp_values[8] = 23; //0
+    
+    g_cmp_values[9] = 23; //0
+    g_cmp_values[10] = 23; //0
+    g_cmp_values[11] = 23; //0
+    g_cmp_values[12] = 23; //0
+    
+    g_cmp_values[13] = 23; //0
+    g_cmp_values[14] = 8; //1
+    g_cmp_values[15] = 23; //0
+    g_cmp_values[16] = 8; //1  */  
+
+}
+
+CPU_INT08U configure_dma(CPU_VOID){
+    
+    g_pwm_enable_value = PWM_1_CONTROL |= PWM_1_CTRL_ENABLE;
+    g_pwm_disable_value = PWM_1_CONTROL &= ((uint8)(~PWM_1_CTRL_ENABLE));
+    
+    init_empty_frame();
+
+    //This is the dma configuration that's done once
+    
+    CPU_INT08U dma_channel = init_dma(1u, 1u, HI16(g_cmp_values), HI16(PWM_1_COMPARE1_LSB_PTR));
+    
+    g_td0 = dma_td_allocate();
+    g_td1 = dma_td_allocate();
+    g_td2 = dma_td_allocate();
+    g_td3 = dma_td_allocate();
+    
+    //setup first compare value //CY_DMA_TD_AUTO_EXEC_NEXT
+    dma_td_set_configuration(g_td0, 1u, g_td1, 0u); //1 byte in total, don't auto execute next TD
+    
+    dma_td_set_address(g_td0, LO16((CPU_INT32U)&g_cmp_values[0]), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));
+    
+    //enable PWM output
+    dma_td_set_configuration(g_td1, 1u, g_td2, 0u); //1 byte in total, no auto execute next td
+    
+    dma_td_set_address(g_td1, LO16((CPU_INT32U)&g_pwm_enable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));  
+    
+    //setup rest of cmp values
+    dma_td_set_configuration(g_td2, 16u, g_td3, CY_DMA_TD_INC_SRC_ADR); //1 byte in total, auto execute the next TD
+    
+    dma_td_set_address(g_td2, LO16((CPU_INT32U)&g_cmp_values[1]), LO16((CPU_INT32U)PWM_1_COMPARE1_LSB_PTR));    
+    
+    //Disable PWM output
+    dma_td_set_configuration(g_td3, 1u, CY_DMA_DISABLE_TD, 0u); //1 byte in total, no auto execute next td
+    
+    dma_td_set_address(g_td3, LO16((CPU_INT32U)&g_pwm_disable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));     
+    
+    //Do not enable channel yet. Task does this
+    return dma_channel;
+}
+
+CPU_VOID enable_dma(CPU_INT08U dma_channel){
+
+    dma_ch_set_init_td(dma_channel, g_td0);
+    dma_ch_enable(dma_channel, 1u); //enables dma channel and it preserves td config after td chain finished
+}
+
+CPU_VOID wait_td_finish(CPU_INT08U dma_channel){
+    
+    CPU_INT08U current_td = 0;
+    CPU_INT08U state = 0;
+
+    do{
+        dma_ch_status(dma_channel, &current_td, &state);
+    }while(state & CY_DMA_STATUS_TD_ACTIVE);
+}
+
+CPU_VOID wait_td_chain_finish(CPU_INT08U dma_channel){
+    
+    CPU_INT08U current_td = 0;
+    CPU_INT08U state = 0;
+    
+
+    CPU_INT16U tf_cnt = 0;
+    CPU_INT08U config = 0;
+
+    do{
+        dma_ch_status(dma_channel, &current_td, &state);
+        CyDmaTdGetConfiguration(current_td, &tf_cnt, NULL, &config);
+        
+    }while(state & CY_DMA_STATUS_CHAIN_ACTIVE);
+}
+
+
+/*
+*********************************************************************************************************
+*                                 static void BuildDShotFrame()
+*
+* Description : Converts an 11-bit throttle value (0..2047) 
+*               into a full 16-bit DShot frame DShot150/300/600 format,
+*               telemetry bit = 0) and fills the global compare array 
+*               g_cmp_values[] with bit timings
+*              (8 cycles = '1', 23 cycles = '0').
+*
+* Argument(s) : throttle - Throttle value (0..2047)
+*
+* Return(s)   : none
+*
+* Note(s)     : g_cmp_values[16] is forced to '0' (23 cycles) as final stop bit
+*********************************************************************************************************
+*/
+
+static void BuildDShotFrame(CPU_INT16U throttle)
+{
+  /*11-bit value + telemetry bit = 0 */
+  CPU_INT16U frame = throttle << 1;    
+  CPU_INT08U crc  = (frame ^ (frame >> 4) ^ (frame >> 8)) & 0x0F;
+  /* final 16-bit frame */
+  frame = (frame << 4) | crc;
+  
+  for (int i = 0; i < 16; i++){
+    /* 8 = '1', 23 = '0' */
+    g_cmp_values[i] = (frame & (1u << (15-i))) ? 8 : 23;
+  }
+  /* final zero bit */
+  g_cmp_values[16] = 23;                                    
+}
+
+
+
+/*
+*********************************************************************************************************
+*                                          App_TaskDshot()
+*
+* Description : 
+*
+* Argument(s) : p_arg   is the argument passed to 'App_TaskDshot()' by 'OSTaskCreate()'.
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+void App_TaskDshot(void *p_arg)
+{
+
+  /* prevent compiler warnings */
+  (void)p_arg;
+
+  OS_ERR os_err_dly;
+  OS_ERR os_err_queue;
+  OS_ERR os_err_sem;
+  
+  CPU_TS ts;
+  //OS_MSG_SIZE cmd_msg_size = 0;
+  OS_MSG_SIZE msg_size = 0;
+
+  configure_pwm();
+
+  CPU_INT08U dma_channel = configure_dma();
+
+  CPU_INT32U counter_empty_vals = 0;
+  CPU_INT32U counter_slow_throttle = 0;
+  
+  /* Start with safe empty frames */  //
+    init_empty_frame();
+
+  while (DEF_TRUE)
+  {
+    //TODO task behavior
+    /* Check if COM task sent a new throttle command*/
+    com_cmd_t *p_cmd = (com_cmd_t *)OSQPend(ComTask_GetQueue(),
+                                            1,          /* timeout after 1 tick*/
+                                            OS_OPT_PEND_BLOCKING,
+                                            &msg_size,
+                                            &ts,
+                                            &os_err_queue);
+    
+    if (os_err_queue == OS_ERR_NONE && p_cmd != NULL){
+      /* Extract 16-bit throttle value (little-endian) */
+      CPU_INT16U throttle = (CPU_INT16U)p_cmd->payload[0] |
+                            ((CPU_INT16U)p_cmd->payload[1] << 8);
+      BuildDShotFrame(throttle);
+
+      /* Give memory block back to COM task */
+      OSMemPut(ComTask_GetMem(), p_cmd, &os_err_queue);
+    }
+    else{
+      if(counter_empty_vals < 250){
+        counter_empty_vals++;
+        init_empty_frame();
+      }
+      else if(counter_empty_vals == 250){
+        init_real_frame_slowest_throttle();
+        counter_empty_vals++;
+      }
+      else if(counter_slow_throttle < 250){
+        counter_slow_throttle++;
+        init_real_frame_slowest_throttle();
+      }
+      else if(counter_slow_throttle == 250){
+        init_real_frame();
+        counter_slow_throttle++;
+      }
+      else{
+        init_real_frame();
+      }
+    }
+    
+    enable_dma(dma_channel);
+    
+    //load first compare value
+    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
+    
+    wait_td_finish(dma_channel);
+    
+    //trigger the TD chain only once. After that the PWM channel 2 should trigger DMA
+    dma_ch_set_request(dma_channel, CY_DMA_CPU_REQ);
+    
+    wait_td_chain_finish(dma_channel); //TASK SHOULD NOT STALL HERE. Chain should be finished
+    
+    //Measure output!
+    OSTimeDlyHMSM(0, 0, 0, 15, OS_OPT_TIME_HMSM_STRICT, &os_err_dly); //NO MORE DELAY THAN 15 ms
+    
+    
+ #if REMOVE_CODE == 0    
+    
+    //Wait for ´buffer full event
+    OSSemPend(&g_sem_buffer_full_event,0,OS_OPT_PEND_BLOCKING,&ts,&os_err_sem);
+    
+    CPU_INT32U* buffer = getAdcTaskBuffer();
+    
+    if(NULL != buffer){
+      
+      //the pointer buffer contains the start of the buffer with the thrust values
+      //the buffer length is ADC_TASK_BUFF_LENGTH
+      
+      //TODO: initialize DMA to send data from (buffer, buffer + ADC_TASK_BUFF_LENGTH) to the 
+      //motor controller via the Dshot protocol.
+      
+      //its possible that the adc task filles the buffers faster than what the dshot task
+      //takes to send those values over the motor line. In that case, there should be another
+      // semaphore to synchronize the ADC task and let it know that it can continue filling values
+    }
+    
+    // wait for degree value from CMD task. Pending indefinitely.
+    CPU_INT32U *com_command = (CPU_INT32U *)OSTaskQPend(10u, OS_OPT_PEND_NON_BLOCKING, &cmd_msg_size, &ts, &os_err_queue);
+    
+    if(NULL != com_command){
+     //TODO: process incomming UART commands
+    }
+    
+#endif       
+
+    
+    //OSTimeDlyHMSM(0, 0, 0, GENERAL_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly);
+  }
+}
+
+/*
+*********************************************************************************************************
+*                                          GetDshotTaskTCB()
+*
+* Description : 
+*
+* Argument(s) : none
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+OS_TCB* GetDshotTaskTCB()
+{
+  return &App_TaskDShot_TCB;
+}
+
+/*
+*********************************************************************************************************
+*                                          GetDshotTaskStk()
+*
+* Description : 
+*
+* Argument(s) : none
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_STK* GetDshotTaskStk()
+{
+  return &App_TaskDShotStk_R[0];
+}
+
+OS_SEM* getSemBufferFullEvent()
+{
+  return &g_sem_buffer_full_event;
+}
+
+/* [] END OF FILE */

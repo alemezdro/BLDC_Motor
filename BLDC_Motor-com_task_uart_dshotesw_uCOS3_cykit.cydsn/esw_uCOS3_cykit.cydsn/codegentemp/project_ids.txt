@@ -1,0 +1,7 @@
+C:\cypressmotorcont\BLDC_Motor-com_task_uart_dshotesw_uCOS3_cykit.cydsn\esw_uCOS3_cykit.cydsn\esw_uCOS3_cykit.cyprj|9394341c-935a-4c80-8625-0cfb76380083
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5d56102f-6dfc-498c-8117-902117439526
+C:\Users\annaz\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|b324f696-2371-475a-a870-db957ac1826c
+C:\Users\annaz\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|64b32cb6-ba17-4ee8-ad8c-0080cc8ed781
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3a5d662b-1529-4582-9d66-c81ab95b2eef
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a47b2263-7472-45dd-ad61-1e4206799999
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e886aa4d-8051-48ee-b866-71f6bcd7da68

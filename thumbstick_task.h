@@ -10,8 +10,8 @@
  * ========================================
 */
 
-#ifndef ADC_TASK_H
-#define ADC_TASK_H
+#ifndef THUMBSTICK_TASK_H
+#define THUMBSTICK_TASK_H
  
 #include <os.h>
 #include <cpu.h>
@@ -29,7 +29,7 @@
 * Note(s)     : none
 *********************************************************************************************************
 */
-void App_TaskAdc(void *p_arg);
+void App_TaskThumbstick(void *p_arg);
 
 /*
 *********************************************************************************************************
@@ -44,7 +44,7 @@ void App_TaskAdc(void *p_arg);
 * Note(s)     : none
 *********************************************************************************************************
 */
-OS_TCB* GetAdcTaskTCB();
+OS_TCB* GetThumbstickTaskTCB();
 
 /*
 *********************************************************************************************************
@@ -59,9 +59,9 @@ OS_TCB* GetAdcTaskTCB();
 * Note(s)     : none
 *********************************************************************************************************
 */
-CPU_STK* GetAdcTaskStk();
+CPU_STK* GetThumbstickTaskStk();
 
-CPU_INT32U* getAdcTaskBuffer();
+CPU_INT32U* getThumbstickTaskBuffer();
 
 #endif
 

@@ -67,7 +67,7 @@
 #define MAX(a,b) (((a) > (b)) ? (a) : (b)) //call only for integers
 
 static OS_TCB App_TaskAdc_TCB;
-static CPU_STK App_TaskAdcStk_R[APP_CFG_TASK_ADC_STK_SIZE];
+static CPU_STK App_TaskAdcStk_R[APP_CFG_TASK_THUMBSTICK_STK_SIZE];
 
 /*
 *********************************************************************************************************
@@ -169,7 +169,7 @@ CPU_INT32U getMotorThrottleValue(CPU_INT32U y_axis_adc_val)
 * Note(s)     : none
 *********************************************************************************************************
 */
-void App_TaskAdc(void *p_arg)
+void App_TaskThumbstick(void *p_arg)
 {
   /* prevent compiler warnings */
   (void)p_arg;
@@ -244,7 +244,7 @@ void App_TaskAdc(void *p_arg)
 * Note(s)     : none
 *********************************************************************************************************
 */
-OS_TCB* GetAdcTaskTCB()
+OS_TCB* GetThumbstickTaskTCB()
 {
   return &App_TaskAdc_TCB;
 }
@@ -262,13 +262,13 @@ OS_TCB* GetAdcTaskTCB()
 * Note(s)     : none
 *********************************************************************************************************
 */
-CPU_STK* GetAdcTaskStk()
+CPU_STK* GetThumbstickTaskStk()
 {
   return &App_TaskAdcStk_R[0];
 }
 
 
-CPU_INT32U* getAdcTaskBuffer()
+CPU_INT32U* getThumbstickTaskBuffer()
 {
   CPU_INT32U* buff = g_active_buff;
   

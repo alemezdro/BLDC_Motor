@@ -19,7 +19,7 @@
 #include <includes.h>
 #include <cyapicallbacks.h>
 
-#include <adc_task.h>
+#include <thumbstick_task.h>
 #include <dshot_task.h>
 #include <com_task.h>
 
@@ -169,14 +169,14 @@ static void App_TaskCreate(void)
   OS_ERR os_err;
 
   /* create Adc Task channel*/
-  OSTaskCreate((OS_TCB *)GetAdcTaskTCB(),
-               (CPU_CHAR *)"TaskAdc",
-               (OS_TASK_PTR)App_TaskAdc,
+  OSTaskCreate((OS_TCB *)GetThumbstickTaskTCB(),
+               (CPU_CHAR *)"TaskThumbstick",
+               (OS_TASK_PTR)App_TaskThumbstick,
                (void *)0,
                (OS_PRIO)APP_CFG_TASK_CMD_PRIO,
-               (CPU_STK *)GetAdcTaskStk(),
-               (CPU_STK_SIZE)APP_CFG_TASK_ADC_STK_SIZE_LIMIT,
-               (CPU_STK_SIZE)APP_CFG_TASK_ADC_STK_SIZE,
+               (CPU_STK *)GetThumbstickTaskStk(),
+               (CPU_STK_SIZE)APP_CFG_TASK_THUMBSTICK_STK_SIZE_LIMIT,
+               (CPU_STK_SIZE)APP_CFG_TASK_THUMBSTICK_STK_SIZE,
                (OS_MSG_QTY)TASK_QUEUE_LENGTH,
                (OS_TICK)0u,
                (void *)0,

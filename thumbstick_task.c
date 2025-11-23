@@ -65,6 +65,8 @@
 #define MIN(a,b) (((a) < (b)) ? (a) : (b)) //call only for integers
 #define MAX(a,b) (((a) > (b)) ? (a) : (b)) //call only for integers
 
+#define MAX_THROTTLE_STEP 150
+
 static OS_TCB App_TaskAdc_TCB;
 static CPU_STK App_TaskAdcStk_R[APP_CFG_TASK_THUMBSTICK_STK_SIZE];
 
@@ -107,7 +109,9 @@ void App_TaskThumbstick(void *p_arg)
   OS_ERR os_err_sem;
 
   CPU_INT32U y_axis_adc_val = 0;
-  CPU_INT32U last_motor_throttle_val = 0;
+
+  CPU_INT32S last_motor_throttle_val = 0;
+  CPU_INT32S throttle_diff = 0;
   
   g_max_adc_delta = ADC_MAX_DELTA_UP > ADC_MAX_DELTA_DOWN ? ADC_MAX_DELTA_UP : ADC_MAX_DELTA_DOWN;
 
@@ -116,9 +120,20 @@ void App_TaskThumbstick(void *p_arg)
     //get adc value only for Y axis
     y_axis_adc_val = GetThumbStickYAxisValue();
     
-    CPU_INT32U current_value = GetMotorThrottleValue(y_axis_adc_val);
+    //GetMotorThrottleValue() always returns max MOTOR_THROTTLE_MAX
+    CPU_INT32S current_value = GetMotorThrottleValue(y_axis_adc_val);
     
     if(last_motor_throttle_val != current_value){
+        
+        throttle_diff = current_value - last_motor_throttle_val;
+        
+        if(throttle_diff > MAX_THROTTLE_STEP){
+            throttle_diff = MAX_THROTTLE_STEP;
+        }else if(throttle_diff < (MAX_THROTTLE_STEP * -1)){
+            throttle_diff = MAX_THROTTLE_STEP * -1;
+        }
+        
+        current_value = last_motor_throttle_val + throttle_diff;
         
         //calculate throttle based on adc and send it to the Dshot 
         SetNewThrottleValue(current_value);

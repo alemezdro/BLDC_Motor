@@ -39,14 +39,24 @@
 <dep name=".\Generated_Source\PSoC5\cymetadata.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\cymetadata.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\dshot_task.o">
+<file name=".\CortexM3\ARM_GCC_541\Debug\thumbstick_task.o">
 <dep name=".\APP\app_cfg.h" />
 <dep name=".\APP\cpu_cfg.h" />
 <dep name=".\APP\includes.h" />
 <dep name=".\APP\os_cfg.h" />
 <dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <dep name=".\BSP\bsp.h" />
+<dep name=".\Generated_Source\PSoC5\CS_1.h" />
+<dep name=".\Generated_Source\PSoC5\CS_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\CYDMAC.H" />
+<dep name=".\Generated_Source\PSoC5\CYFITTER.H" />
+<dep name=".\Generated_Source\PSoC5\Clock_2.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\DMA_1_dma.h" />
+<dep name=".\Generated_Source\PSoC5\MISO_1.h" />
+<dep name=".\Generated_Source\PSoC5\MISO_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MOSI_1.h" />
+<dep name=".\Generated_Source\PSoC5\MOSI_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_B.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_G.h" />
@@ -55,9 +65,24 @@
 <dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\Pin_2.h" />
 <dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SCLK_1.h" />
+<dep name=".\Generated_Source\PSoC5\SCLK_1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
 <dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
+<dep name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\dshot_pwm.h" />
+<dep name=".\Generated_Source\PSoC5\dshot_pwm_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\push_button.h" />
 <dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
@@ -85,8 +110,8 @@
 <dep name=".\bsp_pwm.h" />
 <dep name=".\bsp_spi.h" />
 <dep name=".\bsp_uart.h" />
-<dep name=".\dshot_task.c" />
 <dep name=".\dshot_task.h" />
+<dep name=".\thumbstick_task.c" />
 <dep name=".\thumbstick_task.h" />
 </file>
 <file name=".\APP\app_cfg.h" />
@@ -95,7 +120,15 @@
 <file name=".\APP\os_cfg.h" />
 <file name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <file name=".\BSP\bsp.h" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CS_1.h" />
+<file name=".\Generated_Source\PSoC5\CS_1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\CYDMAC.H" />
+<file name=".\Generated_Source\PSoC5\Clock_2.h" />
+<file name=".\Generated_Source\PSoC5\DMA_1_dma.h" />
+<file name=".\Generated_Source\PSoC5\MISO_1.h" />
+<file name=".\Generated_Source\PSoC5\MISO_1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\MOSI_1.h" />
+<file name=".\Generated_Source\PSoC5\MOSI_1_aliases.h" />
 <file name=".\Generated_Source\PSoC5\PWM_1.h" />
 <file name=".\Generated_Source\PSoC5\PWM_B.h" />
 <file name=".\Generated_Source\PSoC5\PWM_G.h" />
@@ -104,9 +137,24 @@
 <file name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
 <file name=".\Generated_Source\PSoC5\Pin_2.h" />
 <file name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<file name=".\Generated_Source\PSoC5\SCLK_1.h" />
+<file name=".\Generated_Source\PSoC5\SCLK_1_aliases.h" />
 <file name=".\Generated_Source\PSoC5\SPIM_1.h" />
 <file name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
+<file name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
+<file name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\dshot_pwm.h" />
+<file name=".\Generated_Source\PSoC5\dshot_pwm_aliases.h" />
+<file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\Generated_Source\PSoC5\push_button.h" />
 <file name=".\Generated_Source\PSoC5\push_button_aliases.h" />
 <file name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
@@ -125,13 +173,84 @@
 <file name=".\bsp_pwm.h" />
 <file name=".\bsp_spi.h" />
 <file name=".\bsp_uart.h" />
-<file name=".\dshot_task.c" />
 <file name=".\dshot_task.h" />
+<file name=".\thumbstick_task.c" />
 <file name=".\thumbstick_task.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\bsp_os.o">
+<file name=".\CortexM3\ARM_GCC_541\Debug\app.o">
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
+<dep name=".\BSP\bsp.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_B.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_G.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_R.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\UART_1.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\push_button.h" />
+<dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_core.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\uC-LIB\lib_math.h" />
+<dep name=".\uC-LIB\lib_mem.h" />
+<dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
+<dep name=".\uCOS-III\Source\os.h" />
+<dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app.c" />
 <dep name=".\APP\app_cfg.h" />
 <dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\includes.h" />
 <dep name=".\APP\os_cfg.h" />
+<dep name=".\bsp_dma.h" />
+<dep name=".\bsp_gpio.h" />
+<dep name=".\bsp_pwm.h" />
+<dep name=".\bsp_spi.h" />
+<dep name=".\bsp_uart.h" />
+<dep name=".\com_task.h" />
+<dep name=".\cyapicallbacks.h" />
+<dep name=".\dshot_task.h" />
+<dep name=".\thumbstick_task.h" />
+</file>
+<file name=".\APP\app.c" />
+<file name=".\com_task.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\os_app_hooks.o">
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_core.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\uC-LIB\lib_mem.h" />
+<dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
+<dep name=".\uCOS-III\Source\os.h" />
+<dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_app_hooks.c" />
+<dep name=".\APP\os_app_hooks.h" />
+<dep name=".\APP\os_cfg.h" />
+</file>
+<file name=".\APP\os_app_hooks.c" />
+<file name=".\APP\os_app_hooks.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\bsp_os.o">
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <dep name=".\BSP\bsp.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -159,14 +278,14 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\BSP\OS\uCOS-III\bsp_os.c" />
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
-</file>
-<file name=".\BSP\OS\uCOS-III\bsp_os.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\bsp.o">
 <dep name=".\APP\app_cfg.h" />
 <dep name=".\APP\cpu_cfg.h" />
 <dep name=".\APP\os_cfg.h" />
+<dep name=".\BSP\OS\uCOS-III\bsp_os.c" />
+</file>
+<file name=".\BSP\OS\uCOS-III\bsp_os.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\bsp.o">
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <dep name=".\BSP\bsp.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -199,7 +318,9 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\BSP\bsp.c" />
 <dep name=".\BSP\bsp_psoc.h" />
 <dep name=".\bsp_gpio.h" />
@@ -209,9 +330,7 @@
 <file name=".\BSP\bsp.c" />
 <file name=".\BSP\bsp_psoc.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\cpu_bsp.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <dep name=".\BSP\bsp.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -239,7 +358,9 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\BSP\cpu_bsp.c" />
 </file>
 <file name=".\BSP\cpu_bsp.c" />
@@ -254,8 +375,6 @@
 <dep name=".\Generated_Source\PSoC5\CS_1_aliases.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\CS_1.c" />
-<file name=".\Generated_Source\PSoC5\CS_1.h" />
-<file name=".\Generated_Source\PSoC5\CS_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_2.o">
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
@@ -265,8 +384,8 @@
 <dep name=".\Generated_Source\PSoC5\Clock_2.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_2.c" />
-<file name=".\Generated_Source\PSoC5\Clock_2.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -276,13 +395,12 @@
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o">
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -292,7 +410,6 @@
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.c" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\CyDmac.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyFlash.o">
@@ -346,7 +463,6 @@
 <dep name=".\Generated_Source\PSoC5\DMA_1_dma.H" />
 <dep name=".\Generated_Source\PSoC5\DMA_1_dma.c" />
 </file>
-<file name=".\Generated_Source\PSoC5\DMA_1_dma.H" />
 <file name=".\Generated_Source\PSoC5\DMA_1_dma.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MISO_1.o">
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
@@ -359,8 +475,6 @@
 <dep name=".\Generated_Source\PSoC5\MISO_1_aliases.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MISO_1.c" />
-<file name=".\Generated_Source\PSoC5\MISO_1.h" />
-<file name=".\Generated_Source\PSoC5\MISO_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\MOSI_1.o">
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
@@ -372,31 +486,29 @@
 <dep name=".\Generated_Source\PSoC5\MOSI_1_aliases.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\MOSI_1.c" />
-<file name=".\Generated_Source\PSoC5\MOSI_1.h" />
-<file name=".\Generated_Source\PSoC5\MOSI_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\PWM_1.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\cyPm.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_1.c" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\PWM_1.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\PWM_1_PM.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\cyPm.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC5\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_1_PM.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\PWM_1_PM.c" />
@@ -433,8 +545,6 @@
 <dep name=".\Generated_Source\PSoC5\SCLK_1_aliases.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\SCLK_1.c" />
-<file name=".\Generated_Source\PSoC5\SCLK_1.h" />
-<file name=".\Generated_Source\PSoC5\SCLK_1_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\SPIM_1.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -450,7 +560,6 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\SPIM_1.c" />
-<file name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\SPIM_1_INT.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -505,7 +614,6 @@
 <dep name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\UART_1.c" />
-<file name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\UART_1_BOOT.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -567,7 +675,6 @@
 <dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\cy_em_eeprom.c" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -601,8 +708,6 @@
 <dep name=".\Generated_Source\PSoC5\dshot_pwm_aliases.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\dshot_pwm.c" />
-<file name=".\Generated_Source\PSoC5\dshot_pwm.h" />
-<file name=".\Generated_Source\PSoC5\dshot_pwm_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\push_button.o">
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
@@ -615,7 +720,7 @@
 </file>
 <file name=".\Generated_Source\PSoC5\push_button.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\bsp_dma.o">
-<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -627,15 +732,14 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\CYDMAC.H" />
 <dep name=".\Generated_Source\PSoC5\CYFITTER.H" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\bsp_dma.c" />
 <dep name=".\bsp_dma.h" />
 </file>
 <file name=".\bsp_dma.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\bsp_gpio.o">
-<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -656,15 +760,16 @@
 <dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\bsp_gpio.c" />
 <dep name=".\bsp_gpio.h" />
 </file>
 <file name=".\bsp_gpio.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\bsp_pwm.o">
-<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\cyPm.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
@@ -672,13 +777,12 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\bsp_pwm.c" />
 <dep name=".\bsp_pwm.h" />
 </file>
 <file name=".\bsp_pwm.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\bsp_spi.o">
-<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -691,12 +795,12 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\bsp_spi.c" />
 <dep name=".\bsp_spi.h" />
 </file>
 <file name=".\bsp_spi.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\bsp_uart.o">
-<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
@@ -708,19 +812,19 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\bsp_uart.c" />
 <dep name=".\bsp_uart.h" />
 </file>
 <file name=".\bsp_uart.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\com_task.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\includes.h" />
-<dep name=".\APP\os_cfg.h" />
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
 <dep name=".\BSP\bsp.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
 <dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_B.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_G.h" />
 <dep name=".\Generated_Source\PSoC5\PWM_R.h" />
@@ -750,9 +854,10 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\includes.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\bsp_dma.h" />
 <dep name=".\bsp_gpio.h" />
 <dep name=".\bsp_pwm.h" />
@@ -762,45 +867,32 @@
 <dep name=".\com_task.h" />
 </file>
 <file name=".\com_task.c" />
-<file name=".\com_task.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cpu_c.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_core.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_mem.h" />
-<dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c" />
-</file>
-<file name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\cpu_core.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_core.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_mem.h" />
-<dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uC-CPU\cpu_core.c" />
-</file>
-<file name=".\uC-CPU\cpu_core.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\lib_ascii.o">
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_ascii.c" />
-</file>
-<file name=".\uC-LIB\lib_ascii.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\lib_math.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\dshot_task.o">
+<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
+<dep name=".\BSP\bsp.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_B.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_G.h" />
+<dep name=".\Generated_Source\PSoC5\PWM_R.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
+<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\UART_1.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\push_button.h" />
+<dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -809,12 +901,24 @@
 <dep name=".\uC-LIB\lib_math.h" />
 <dep name=".\uC-LIB\lib_mem.h" />
 <dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uC-LIB\lib_math.c" />
-</file>
-<file name=".\uC-LIB\lib_math.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\lib_mem.o">
+<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
+<dep name=".\uCOS-III\Source\os.h" />
+<dep name=".\uCOS-III\Source\os_type.h" />
 <dep name=".\APP\app_cfg.h" />
 <dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\includes.h" />
+<dep name=".\APP\os_cfg.h" />
+<dep name=".\bsp_dma.h" />
+<dep name=".\bsp_gpio.h" />
+<dep name=".\bsp_pwm.h" />
+<dep name=".\bsp_spi.h" />
+<dep name=".\bsp_uart.h" />
+<dep name=".\dshot_task.c" />
+<dep name=".\dshot_task.h" />
+<dep name=".\thumbstick_task.h" />
+</file>
+<file name=".\dshot_task.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cpu_c.o">
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -822,24 +926,72 @@
 <dep name=".\uC-LIB\lib_def.h" />
 <dep name=".\uC-LIB\lib_mem.h" />
 <dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c" />
+</file>
+<file name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu_c.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\cpu_core.o">
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_core.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\uC-LIB\lib_mem.h" />
+<dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\uC-CPU\cpu_core.c" />
+</file>
+<file name=".\uC-CPU\cpu_core.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\lib_ascii.o">
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\uC-LIB\lib_ascii.c" />
+</file>
+<file name=".\uC-LIB\lib_ascii.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\lib_math.o">
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_core.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\uC-LIB\lib_math.h" />
+<dep name=".\uC-LIB\lib_mem.h" />
+<dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\uC-LIB\lib_math.c" />
+</file>
+<file name=".\uC-LIB\lib_math.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\lib_mem.o">
+<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
+<dep name=".\uC-CPU\cpu_core.h" />
+<dep name=".\uC-CPU\cpu_def.h" />
+<dep name=".\uC-LIB\lib_ascii.h" />
+<dep name=".\uC-LIB\lib_def.h" />
+<dep name=".\uC-LIB\lib_mem.h" />
+<dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\uC-LIB\lib_mem.c" />
 </file>
 <file name=".\uC-LIB\lib_mem.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\lib_str.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
 <dep name=".\uC-LIB\lib_ascii.h" />
 <dep name=".\uC-LIB\lib_def.h" />
 <dep name=".\uC-LIB\lib_str.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
 <dep name=".\uC-LIB\lib_str.c" />
 </file>
 <file name=".\uC-LIB\lib_str.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_cpu_c.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -850,13 +1002,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_c.c" />
 </file>
 <file name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_c.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_cfg_app.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\APP\os_cfg_app.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
@@ -868,14 +1020,14 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_cfg_app.c" />
 </file>
 <file name=".\APP\os_cfg_app.h" />
 <file name=".\uCOS-III\Source\os_cfg_app.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_core.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -886,13 +1038,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_core.c" />
 </file>
 <file name=".\uCOS-III\Source\os_core.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_dbg.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -903,13 +1055,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_dbg.c" />
 </file>
 <file name=".\uCOS-III\Source\os_dbg.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_flag.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -920,13 +1072,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_flag.c" />
 </file>
 <file name=".\uCOS-III\Source\os_flag.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_int.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -937,13 +1089,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_int.c" />
 </file>
 <file name=".\uCOS-III\Source\os_int.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_mem.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -954,13 +1106,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_mem.c" />
 </file>
 <file name=".\uCOS-III\Source\os_mem.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_msg.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -971,13 +1123,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_msg.c" />
 </file>
 <file name=".\uCOS-III\Source\os_msg.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_mutex.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -988,13 +1140,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_mutex.c" />
 </file>
 <file name=".\uCOS-III\Source\os_mutex.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_pend_multi.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1005,13 +1157,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_pend_multi.c" />
 </file>
 <file name=".\uCOS-III\Source\os_pend_multi.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_prio.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1022,13 +1174,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_prio.c" />
 </file>
 <file name=".\uCOS-III\Source\os_prio.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_q.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1039,13 +1191,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_q.c" />
 </file>
 <file name=".\uCOS-III\Source\os_q.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_sem.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1056,13 +1208,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_sem.c" />
 </file>
 <file name=".\uCOS-III\Source\os_sem.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_stat.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1073,13 +1225,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_stat.c" />
 </file>
 <file name=".\uCOS-III\Source\os_stat.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_task.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1090,13 +1242,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_task.c" />
 </file>
 <file name=".\uCOS-III\Source\os_task.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_tick.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1107,13 +1259,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_tick.c" />
 </file>
 <file name=".\uCOS-III\Source\os_tick.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_time.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1124,13 +1276,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_time.c" />
 </file>
 <file name=".\uCOS-III\Source\os_time.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_tmr.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1141,13 +1293,13 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_tmr.c" />
 </file>
 <file name=".\uCOS-III\Source\os_tmr.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\os_var.o">
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_cfg.h" />
 <dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
 <dep name=".\uC-CPU\cpu_core.h" />
 <dep name=".\uC-CPU\cpu_def.h" />
@@ -1158,6 +1310,9 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
 <dep name=".\uCOS-III\Source\os.h" />
 <dep name=".\uCOS-III\Source\os_type.h" />
+<dep name=".\APP\app_cfg.h" />
+<dep name=".\APP\cpu_cfg.h" />
+<dep name=".\APP\os_cfg.h" />
 <dep name=".\uCOS-III\Source\os_var.c" />
 </file>
 <file name=".\uCOS-III\Source\os_var.c" />
@@ -1179,161 +1334,6 @@
 <dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_a.s" />
 </file>
 <file name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu_a.s" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\app.o">
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
-<dep name=".\BSP\bsp.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_B.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_G.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_R.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\UART_1.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\push_button.h" />
-<dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_core.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_math.h" />
-<dep name=".\uC-LIB\lib_mem.h" />
-<dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
-<dep name=".\uCOS-III\Source\os.h" />
-<dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\APP\app.c" />
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\includes.h" />
-<dep name=".\APP\os_cfg.h" />
-<dep name=".\bsp_dma.h" />
-<dep name=".\bsp_gpio.h" />
-<dep name=".\bsp_pwm.h" />
-<dep name=".\bsp_spi.h" />
-<dep name=".\bsp_uart.h" />
-<dep name=".\com_task.h" />
-<dep name=".\cyapicallbacks.h" />
-<dep name=".\dshot_task.h" />
-<dep name=".\thumbstick_task.h" />
-</file>
-<file name=".\APP\app.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\thumbstick_task.o">
-<dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
-<dep name=".\BSP\bsp.h" />
-<dep name=".\Generated_Source\PSoC5\CS_1.h" />
-<dep name=".\Generated_Source\PSoC5\CS_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\CYDMAC.H" />
-<dep name=".\Generated_Source\PSoC5\CYFITTER.H" />
-<dep name=".\Generated_Source\PSoC5\Clock_2.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\DMA_1_dma.h" />
-<dep name=".\Generated_Source\PSoC5\MISO_1.h" />
-<dep name=".\Generated_Source\PSoC5\MISO_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MOSI_1.h" />
-<dep name=".\Generated_Source\PSoC5\MOSI_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_B.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_G.h" />
-<dep name=".\Generated_Source\PSoC5\PWM_R.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2.h" />
-<dep name=".\Generated_Source\PSoC5\Pin_2_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SCLK_1.h" />
-<dep name=".\Generated_Source\PSoC5\SCLK_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
-<dep name=".\Generated_Source\PSoC5\UART_1.h" />
-<dep name=".\Generated_Source\PSoC5\UART_1_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\dshot_pwm.h" />
-<dep name=".\Generated_Source\PSoC5\dshot_pwm_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\Generated_Source\PSoC5\push_button.h" />
-<dep name=".\Generated_Source\PSoC5\push_button_aliases.h" />
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_core.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_math.h" />
-<dep name=".\uC-LIB\lib_mem.h" />
-<dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
-<dep name=".\uCOS-III\Source\os.h" />
-<dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\includes.h" />
-<dep name=".\APP\os_cfg.h" />
-<dep name=".\bsp_dma.h" />
-<dep name=".\bsp_gpio.h" />
-<dep name=".\bsp_pwm.h" />
-<dep name=".\bsp_spi.h" />
-<dep name=".\bsp_uart.h" />
-<dep name=".\dshot_task.h" />
-<dep name=".\thumbstick_task.c" />
-<dep name=".\thumbstick_task.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\project.h" />
-<file name=".\thumbstick_task.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\os_app_hooks.o">
-<dep name=".\uC-CPU\ARM-Cortex-M3\GNU\cpu.h" />
-<dep name=".\uC-CPU\cpu_core.h" />
-<dep name=".\uC-CPU\cpu_def.h" />
-<dep name=".\uC-LIB\lib_ascii.h" />
-<dep name=".\uC-LIB\lib_def.h" />
-<dep name=".\uC-LIB\lib_mem.h" />
-<dep name=".\uC-LIB\lib_str.h" />
-<dep name=".\uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU\os_cpu.h" />
-<dep name=".\uCOS-III\Source\os.h" />
-<dep name=".\uCOS-III\Source\os_type.h" />
-<dep name=".\APP\app_cfg.h" />
-<dep name=".\APP\cpu_cfg.h" />
-<dep name=".\APP\os_app_hooks.c" />
-<dep name=".\APP\os_app_hooks.h" />
-<dep name=".\APP\os_cfg.h" />
-</file>
-<file name=".\APP\os_app_hooks.c" />
-<file name=".\APP\os_app_hooks.h" />
 <file name=".\adc_task.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\adc_task.o">
 <dep name=".\BSP\OS\uCOS-III\bsp_os.h" />
@@ -1802,7 +1802,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134083023150088322" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="134084049281611894" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

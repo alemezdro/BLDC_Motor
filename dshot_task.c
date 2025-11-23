@@ -44,6 +44,8 @@
 
 #define RESSOURCE_WAIT_TIME 1u
 
+#define DMA_CH2_CMP_VALUE 18u
+
 /*
 *********************************************************************************************************
 *                                            LOCAL VARIABLES
@@ -208,7 +210,7 @@ CPU_VOID configure_pwm(CPU_VOID){
     
     pwm_set_interrupt_mode(0);
 
-    pwm_write_compare_2(18);
+    pwm_write_compare_2(DMA_CH2_CMP_VALUE);
     
    // init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
     

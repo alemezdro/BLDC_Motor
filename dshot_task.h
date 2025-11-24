@@ -22,54 +22,15 @@
 #define MOTOR_THROTTLE_MAX    1000u
     
 
-/*
-*********************************************************************************************************
-*                                          App_TaskDshot()
-*
-* Description : 
-*
-* Argument(s) : p_arg   is the argument passed to 'App_TaskDshot()' by 'OSTaskCreate()'.
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
 void App_TaskDshot(void *p_arg);
 
-/*
-*********************************************************************************************************
-*                                          GetDshotTaskTCB()
-*
-* Description : 
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
-OS_TCB* GetDshotTaskTCB();
+OS_TCB* GetDshotTaskTCB(CPU_VOID);
 
-/*
-*********************************************************************************************************
-*                                          GetDshotTaskStk()
-*
-* Description : 
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
-CPU_STK* GetDshotTaskStk();
+CPU_STK* GetDshotTaskStk(CPU_VOID);
 
 CPU_VOID SetNewThrottleValue(CPU_INT32U throttle_value);
 
-OS_SEM* GetNewThrottleEventSem();
+OS_SEM* GetNewThrottleEventSem(CPU_VOID);
 
 #endif
 /* [] END OF FILE */

@@ -46,6 +46,8 @@
 
 #define DMA_CH2_CMP_VALUE 18u
 
+#define PWM_PERIOD_VALUE 38u
+
 /*
 *********************************************************************************************************
 *                                            LOCAL VARIABLES
@@ -68,7 +70,6 @@ enum OperationState{
     USER_MODE       = 1
 };
 
-
 static CPU_INT08U g_cmp_values[DSHOT_CMP_VALUES_LEN];
 static CPU_INT08U g_td[DMA_AMOUNT_TDS];
 
@@ -77,21 +78,30 @@ static CPU_INT08U g_td[DMA_AMOUNT_TDS];
 *                                         FUNCTION PROTOTYPES
 *********************************************************************************************************
 */
-CPU_VOID configure_pwm(CPU_VOID);
+CPU_VOID ConfigurePwm(CPU_VOID);
 
-CPU_INT08U configure_dma(CPU_VOID);
+CPU_INT08U ConfigureDma(CPU_VOID);
 
-CPU_VOID start_dma(CPU_INT08U dma_channel);
+CPU_VOID StartDma(CPU_INT08U dma_channel);
 
-CPU_INT16U get_dshot_frame_format(uint32_t throttle_value);
+CPU_INT16U GetDshotFrameFormat(uint32_t throttle_value);
 
-CPU_VOID update_dshot_frame_buffer(uint32_t throttle_value);
+CPU_VOID UpdateDshotFrameBuffer(uint32_t throttle_value);
 
 /*
 *********************************************************************************************************
 *                                          App_TaskDshot()
 *
-* Description : 
+* Description : The dshot task controlls the dshot frame generation for the DC brushless motor.
+*               It intializes the PWM and the DMA module to send a specific TD chain that generates
+*               the Dshot pulse by using the PWM_1 channel and registers. It starts the DMA in every
+*               iteration to keep the moter alive. It also checks whether the thumbstick task notifies
+*               a new throttle value (with a semaphore) and if the COM task has received a new throttle
+*               value from the user (over the dshot task queue). The default state is the THUMBSTIC_MODE.
+*               Whenever the user sends a valid throttle, this task enters the USER_MODE. In the USER_MODE,
+*               the thubmstick throttle values are ignored. The user is responsible to leave the USER_MODE
+*               by entering the throttle value 0.
+*               
 *
 * Argument(s) : p_arg   is the argument passed to 'App_TaskDshot()' by 'OSTaskCreate()'.
 *
@@ -117,15 +127,28 @@ void App_TaskDshot(void *p_arg) {
    enum OperationState state = THUMBSTICK_MODE;
 
   //pwm intialization
-  configure_pwm();
+  ConfigurePwm();
 
   //dma initialization
-  CPU_INT08U dma_channel = configure_dma();
+  CPU_INT08U dma_channel = ConfigureDma();
 
     while (DEF_TRUE) {
+        
+        //stop_pwm(); //dma should have stopped the pwm module. potentially remove this!!!!!!!!!
+        
+        //while(PWM_1_ReadStatusRegister() & PWM_1_STATUS_FIFONEMPTY){
+          //  PWM_1_ReadCapture();
+       // };
+        
+        //PWM_1_ReadStatusRegister();
+        
+        //PWM_1_WriteCounter(0);
+        
+        //PWM_1_WritePeriod(PWM_PERIOD_VALUE);
+        //pwm_write_compare_1(PWM_PERIOD_VALUE);
  
-        //start dma exectuion
-        start_dma(dma_channel);
+        //start dma exectuion and wait until DMA finished
+        StartDma(dma_channel);
         
         //check semaphore throttle value event
         OSSemPend(&g_sem_new_throttle_event,RESSOURCE_WAIT_TIME,OS_OPT_PEND_NON_BLOCKING,&ts,&os_err_sem);
@@ -140,21 +163,19 @@ void App_TaskDshot(void *p_arg) {
             
             if(0 == *user_throttle_val){
                 state = THUMBSTICK_MODE; //leave user mode
-            
             }else{
-                //the task assumes that thet throttle value was correctly controlled by the com task
-                //apply the user throttle value
-                update_dshot_frame_buffer(*user_throttle_val);
-                
                 state = USER_MODE; //enter user mode
             }
+                //the task assumes that thet throttle value was correctly controlled by the com task
+                //apply the user throttle value. If 0, the user stops the motor
+                UpdateDshotFrameBuffer(*user_throttle_val);
             
         }else if(OS_ERR_NONE == os_err_sem && THUMBSTICK_MODE == state){
             //the call was succesfull and this task owns the ressource
             //consider thumbstick value only in the thumbstick mode
             throttle_val = g_current_throttle_value; // atomic read
     
-            update_dshot_frame_buffer(throttle_val);
+            UpdateDshotFrameBuffer(throttle_val);
         }
 
         OSTimeDlyHMSM(0, 0, 0, DSHOT_TASK_DELAY_MS, OS_OPT_TIME_HMSM_STRICT, &os_err_dly); //NO MORE DELAY THAN 15 ms
@@ -165,17 +186,16 @@ void App_TaskDshot(void *p_arg) {
 *********************************************************************************************************
 *                                          GetDshotTaskTCB()
 *
-* Description : 
+* Description : Get Dshot task TCB block
 *
 * Argument(s) : none
 *
-* Return(s)   : none
+* Return(s)   : Pointer to the Dshot task TCB block
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-OS_TCB* GetDshotTaskTCB()
-{
+OS_TCB* GetDshotTaskTCB(CPU_VOID){
   return &App_TaskDShot_TCB;
 }
 
@@ -183,7 +203,59 @@ OS_TCB* GetDshotTaskTCB()
 *********************************************************************************************************
 *                                          GetDshotTaskStk()
 *
-* Description : 
+* Description : Get Dshot Task stack
+*
+* Argument(s) : none
+*
+* Return(s)   : Pointer to the Dshot task stack
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_STK* GetDshotTaskStk(CPU_VOID){
+  return &App_TaskDShotStk_R[0];
+}
+
+/*
+*********************************************************************************************************
+*                                          SetNewThrottleValue()
+*
+* Description : Update the task's internal global variable that holds the latest throttle value.
+*
+* Argument(s) : Throttle value representing the new throttle value for the dshot frame.
+*
+* Return(s)   : none
+*
+* Note(s)     : This function is called by the thumbstick task to set a new throttle value. The dshot
+*               task only access its global variable once the thumbstick task notifies it via the semaphore.
+*********************************************************************************************************
+*/
+CPU_VOID SetNewThrottleValue(CPU_INT32U throttle_value){
+    g_current_throttle_value = throttle_value;
+}
+
+/*
+*********************************************************************************************************
+*                                          GetNewThrottleEventSem()
+*
+* Description : Function to access the new throttle event semaphore
+*
+* Argument(s) : none
+*
+* Return(s)   : Pointer to the semaphore.
+*
+* Note(s)     : Function called by the thumbstick task to access the semaphore and notify the dshot task.
+*********************************************************************************************************
+*/
+OS_SEM* GetNewThrottleEventSem(CPU_VOID){
+  return &g_sem_new_throttle_event;
+}
+
+/*
+*********************************************************************************************************
+*                                          ConfigurePwm()
+*
+* Description : Configure PWM module. This function initializes the PWM module.
 *
 * Argument(s) : none
 *
@@ -192,21 +264,22 @@ OS_TCB* GetDshotTaskTCB()
 * Note(s)     : none
 *********************************************************************************************************
 */
-CPU_STK* GetDshotTaskStk()
-{
-  return &App_TaskDShotStk_R[0];
-}
-
-CPU_VOID SetNewThrottleValue(CPU_INT32U throttle_value){
-    g_current_throttle_value = throttle_value;
-}
-
-OS_SEM* GetNewThrottleEventSem()
-{
-  return &g_sem_new_throttle_event;
-}
-
-CPU_VOID configure_pwm(CPU_VOID){
+CPU_VOID ConfigurePwm(CPU_VOID){
+    
+   /* stop_pwm();
+    
+    while(PWM_1_ReadStatusRegister() & PWM_1_STATUS_FIFONEMPTY){
+        PWM_1_ReadCapture();
+    };
+    
+    PWM_1_ReadStatusRegister();
+    
+    PWM_1_WriteCounter(0);
+    
+    PWM_1_WritePeriod(PWM_PERIOD_VALUE);
+    pwm_write_compare_1(PWM_PERIOD_VALUE);*/
+    
+    init_pwm();
     
     pwm_set_interrupt_mode(0);
 
@@ -219,7 +292,21 @@ CPU_VOID configure_pwm(CPU_VOID){
     //no period changed at run 
 }
 
-CPU_INT08U configure_dma(CPU_VOID){
+/*
+*********************************************************************************************************
+*                                          ConfigureDma()
+*
+* Description : Configure the DMA module. This module prepares the DMA to execute the TD chain that
+*               creates the dshot frame.
+*
+* Argument(s) : none
+*
+* Return(s)   : The dhma channel initialized
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_INT08U ConfigureDma(CPU_VOID){
     
     //value to load in the pwm control register to start dma
     g_pwm_enable_value = PWM_1_CONTROL |= PWM_1_CTRL_ENABLE;
@@ -228,7 +315,7 @@ CPU_INT08U configure_dma(CPU_VOID){
     g_pwm_disable_value = PWM_1_CONTROL &= ((uint8)(~PWM_1_CTRL_ENABLE));
     
     //initialize dshot frame buffer with 0
-    update_dshot_frame_buffer(0);
+    UpdateDshotFrameBuffer(0);
 
     //This is the dma configuration that's done once
     
@@ -257,10 +344,28 @@ CPU_INT08U configure_dma(CPU_VOID){
     dma_td_set_configuration(g_td[DMA_STOP_TD], ONE_BYTE, CY_DMA_DISABLE_TD, DMA_TD_NO_CONFIGURATION); //1 byte in total
     dma_td_set_address(g_td[DMA_STOP_TD], LO16((CPU_INT32U)&g_pwm_disable_value), LO16((CPU_INT32U)PWM_1_CONTROL_PTR));     
     
+    //make sure DMA starts clean
+    CyDmaChDisable(dma_channel);
+    CyDmaClearPendingDrq(dma_channel);
+    
     return dma_channel;
 }
 
-CPU_VOID start_dma(CPU_INT08U dma_channel){
+/*
+*********************************************************************************************************
+*                                          StartDma()
+*
+* Description : Function to start the DMA module. Once called, the DMA module will configurate the PWM
+*               in a way to create the dshot frame.
+*
+* Argument(s) : Number of a previously created dma channel
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_VOID StartDma(CPU_INT08U dma_channel){
 
     //set the initial transfer descriptor to run
     dma_ch_set_init_td(dma_channel, g_td[DMA_FIRST_CMP_VAL_TD]);
@@ -279,7 +384,20 @@ CPU_VOID start_dma(CPU_INT08U dma_channel){
     }while(state & CY_DMA_STATUS_CHAIN_ACTIVE);
 }
 
-CPU_INT16U get_dshot_frame_format(uint32_t throttle_value){
+/*
+*********************************************************************************************************
+*                                          GetDshotFrameFormat()
+*
+* Description : Function to create a variable in dshot format.
+*
+* Argument(s) : Throttle value that should be inside the dshot frame.
+*
+* Return(s)   : none
+*
+* Note(s)     : 16 bit variable representing the dshot format.
+*********************************************************************************************************
+*/
+CPU_INT16U GetDshotFrameFormat(uint32_t throttle_value){
     
     // build 12-bit value: [11:1]=throttle, [0]=telemetry (0)
     CPU_INT16U dshot_frame = (throttle_value & 0x07FFu) << 1;   // telemetry = 0
@@ -293,9 +411,23 @@ CPU_INT16U get_dshot_frame_format(uint32_t throttle_value){
     return dshot_frame;
 }
 
-CPU_VOID update_dshot_frame_buffer(uint32_t throttle_value){
+/*
+*********************************************************************************************************
+*                                          UpdateDshotFrameBuffer()
+*
+* Description : Function to update the dshot frame buffer representing the dshot frame that is
+*               going to be output in the line.
+*
+* Argument(s) : Throttle value that should be inside the dshot frame.
+*
+* Return(s)   : none
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_VOID UpdateDshotFrameBuffer(uint32_t throttle_value){
     
-    CPU_INT16U dshot_frame = get_dshot_frame_format(throttle_value);
+    CPU_INT16U dshot_frame = GetDshotFrameFormat(throttle_value);
     
     //actual dshot values go from [1:16]. Index 0 is a fill value.
     for(CPU_INT08U i = 1; i < DSHOT_CMP_VALUES_LEN; i++){

@@ -25,7 +25,7 @@
 *********************************************************************************************************
 */
 
-#define MAX_INPUT_STRING_LENGTH 15u
+#define MAX_INPUT_STRING_LENGTH  15u
 #define MAX_OUTPUT_STRING_LENGTH 20u
 
 /*
@@ -95,9 +95,6 @@ void App_TaskCom(void *p_arg)
 
   CPU_CHAR out_msg[MAX_OUTPUT_STRING_LENGTH];
 
-  CPU_TS ts;
-  OS_MSG_SIZE msg_size;
-
   /* prevent compiler warnings */
   (void)p_arg;
   (void)Start_of_Packet;
@@ -163,8 +160,8 @@ void App_TaskCom(void *p_arg)
 
         if (!is_error)
         {
-            // Check valid range 0-360
-            if ((g_user_rad_val > 0 && g_user_rad_val < 48) || g_user_rad_val > 1000)
+            // Check valid range MOTOR_THROTTLE_OFF or MOTOR_THROTTLE_MIN up to MOTOR_THROTTLE_MAX
+            if ((g_user_rad_val > MOTOR_THROTTLE_OFF && g_user_rad_val < MOTOR_THROTTLE_MIN) || g_user_rad_val > MOTOR_THROTTLE_MAX)
             {
               is_error = DEF_TRUE;
             }
@@ -197,6 +194,8 @@ void App_TaskCom(void *p_arg)
           {
             uart_send_byte(out_msg[jdx]);
           }
+        
+          ResetCOMState(&rx_msg[0], sizeof(rx_msg), &str_available, &rec_byte, &idx);
         }
     }
     
@@ -284,7 +283,7 @@ CPU_BOOLEAN CheckInputCommand(CPU_INT08U* string, CPU_INT32U* rad_value)
   CPU_CHAR* value = NULL;
 
   // tokenize input string. Split by space " "
-  token = strtok(string, " ");
+  token = strtok((CPU_CHAR*)string, " ");
 
   while (NULL != token)
   {

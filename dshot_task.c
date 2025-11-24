@@ -32,11 +32,11 @@
 #define DMA_CMP_VALUES_TD       2u
 #define DMA_STOP_TD             3u
 
-#define DSHOT_CMP_VALUES_LEN    17u
+#define DSHOT_CMP_VALUES_LEN     17u
 
-#define DMA_TD_NO_CONFIGURATION 0u
-#define ONE_BYTE                1u
-#define ENABLE_REQ_PER_BURST    1u
+#define DMA_TD_NO_CONFIGURATION  0u
+#define ONE_BYTE                 1u
+#define ENABLE_REQ_PER_BURST     1u
 #define PRESERVE_TD_CHAIN_CONFIG 1u
 
 #define DSHOT_BIT_1     8u
@@ -212,7 +212,7 @@ CPU_VOID configure_pwm(CPU_VOID){
 
     pwm_write_compare_2(DMA_CH2_CMP_VALUE);
     
-   // init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
+   //init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
     
     //dma enables the pwm channel
     //only cmp channel 2 changes here (ch1 with 100 remain)

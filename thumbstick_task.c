@@ -47,12 +47,6 @@
 
 #define SPI_THUMBSTICK_RX_MASK 0xFFF
 
-#define MOTOR_THROTTLE_OFF     0u
-#define MOTOR_THROTTLE_MIN    48u
-//should be 2047 but the motor stops rotating as soons as the throttle surpasses 1000
-//possible current limitation in the motor
-#define MOTOR_THROTTLE_MAX    1000u 
-
 #define MOTOR_DEADBAND 0.05f
 
 #define ADC_THUMBSTICK_FULL_DOWN    0u

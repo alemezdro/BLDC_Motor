@@ -53,30 +53,10 @@ CPU_INT32U g_user_rad_val;
 *                                         FUNCTION PROTOTYPES
 *********************************************************************************************************
 */
-
-
-/*
-*********************************************************************************************************
-*                                                ResetCOMState()
-*
-* Description : This function resets the COM task state variables.
-*
-* Argument(s) : rx_msg        is the receive message buffer.
-*               msg_size      is the size of the receive message buffer.
-*               str_available is the string available flag.
-*               rec_byte      is the received byte variable.
-*               idx           is the index variable for the receive buffer.
-*
-* Return(s)   : none
-*
-* Caller(s)   : App_TaskCOM().
-*
-* Note(s)     : none.
-*********************************************************************************************************
-*/
 void ResetCOMState(CPU_INT08U *rx_msg, CPU_INT32U msg_size, CPU_BOOLEAN *str_available, CPU_INT08U *rec_byte, CPU_INT08U *idx);
 
 CPU_BOOLEAN CheckInputCommand(CPU_INT08U* input_msg, CPU_INT08U* output_msg, CPU_INT32U* rad_value);
+
 /*
 *********************************************************************************************************
 *                                          App_TaskCom()
@@ -84,6 +64,9 @@ CPU_BOOLEAN CheckInputCommand(CPU_INT08U* input_msg, CPU_INT08U* output_msg, CPU
 * Description : COM Task checks for available bytes within the UART receive buffer. If correct string is
 *               available (e.g. PC -> uC: #abc$ or #Hellor World$), process the message and output a
 *               pre-defined string via UART and append the user-defined string via the UART interface.
+*               
+*               If the string format is valid. Send user throttle value to dshot task by using the dshot
+*               task queue.
 *
 * Argument(s) : p_arg   is the argument passed to 'App_TaskCom()' by 'OSTaskCreate()'.
 *
@@ -200,17 +183,16 @@ void App_TaskCom(void *p_arg){
 *********************************************************************************************************
 *                                          GetComTaskTCB()
 *
-* Description : 
+* Description : Get COM task TCB block
 *
 * Argument(s) : none
 *
-* Return(s)   : none
+* Return(s)   : Pointer to the COM task TCB block
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-OS_TCB* GetComTaskTCB()
-{
+OS_TCB* GetComTaskTCB(CPU_VOID){
   return &App_TaskCom_TCB;
 }
 
@@ -218,17 +200,16 @@ OS_TCB* GetComTaskTCB()
 *********************************************************************************************************
 *                                          GetComTaskStk()
 *
-* Description : 
+* Description : Get COM Task stack
 *
 * Argument(s) : none
 *
-* Return(s)   : none
+* Return(s)   : Pointer to the COM task stack
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-CPU_STK* GetComTaskStk()
-{
+CPU_STK* GetComTaskStk(CPU_VOID){
   return &App_TaskComStk_R[0];
 }
 
@@ -242,7 +223,6 @@ CPU_STK* GetComTaskStk()
 *               msg_size      is the size of the receive message buffer.
 *               str_available is the string available flag.
 *               rec_byte      is the received byte variable.
-*               idx           is the index variable for the receive buffer.
 *
 * Return(s)   : none
 *
@@ -251,8 +231,7 @@ CPU_STK* GetComTaskStk()
 * Note(s)     : none.
 *********************************************************************************************************
 */
-void ResetCOMState(CPU_INT08U *rx_msg, CPU_INT32U msg_size, CPU_BOOLEAN *str_available, CPU_INT08U *rec_byte, CPU_INT08U *idx)
-{
+void ResetCOMState(CPU_INT08U *rx_msg, CPU_INT32U msg_size, CPU_BOOLEAN *str_available, CPU_INT08U *rec_byte, CPU_INT08U *idx){
   /* reset software receive buffer */
   memset(rx_msg, 0, msg_size);
   /* reset string available signal */
@@ -263,7 +242,22 @@ void ResetCOMState(CPU_INT08U *rx_msg, CPU_INT32U msg_size, CPU_BOOLEAN *str_ava
   *idx = 0x00;
 }
 
-
+/*
+*********************************************************************************************************
+*                                          CheckInputCommand()
+*
+* Description : Evaluate the user input command for correctness. Fill the output_msg buffer with error
+*               messages if any available. In case no error occurs, extract the rad value.
+*
+* Argument(s) : input_msg   Buffer containing the user input string
+                output_msg  Buffer that contains the output string to the user
+                rad_value   Pointer to the rad value extracted from the user input command
+*
+* Return(s)   : true is there's an error
+*
+* Note(s)     : If there is no error, then the rad_value variable contains the user rad value
+*********************************************************************************************************
+*/
 CPU_BOOLEAN CheckInputCommand(CPU_INT08U* input_msg, CPU_INT08U* output_msg, CPU_INT32U* rad_value){
     
   CPU_BOOLEAN is_error = DEF_FALSE;

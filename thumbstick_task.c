@@ -78,24 +78,30 @@ static CPU_INT32U g_max_adc_delta = 0;
 *********************************************************************************************************
 */
 
-CPU_INT32U GetThumbStickYAxisValue();
+CPU_INT32U GetThumbStickYAxisValue(CPU_VOID);
+
 CPU_INT32U GetMotorThrottleValue(CPU_INT32U y_axis_adc_val);
+
+CPU_INT32S GetMotorThrottleValueRegulated(CPU_INT32S last_throttle_value, CPU_INT32S throttle_value);
 
 /*
 *********************************************************************************************************
-*                                          App_TaskAdc()
+*                                          App_TaskThumbstick()
 *
-* Description : 
+* Description : The thumbstick task reads periodically the ADC value from the thumbstick component via
+*               SPI, maps the ADC value to a valid Dshot range and if the new value differs from the
+*               last measured one, it notifies the Dshot task that a new value is available by the use
+*               of a semaphore.
 *
-* Argument(s) : p_arg   is the argument passed to 'App_TaskAdc()' by 'OSTaskCreate()'.
+* Argument(s) : p_arg   is the argument passed to 'App_TaskThumbstick()' by 'OSTaskCreate()'.
 *
 * Return(s)   : none
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-void App_TaskThumbstick(void *p_arg)
-{
+void App_TaskThumbstick(void *p_arg){
+    
   /* prevent compiler warnings */
   (void)p_arg;
 
@@ -105,34 +111,23 @@ void App_TaskThumbstick(void *p_arg)
   CPU_INT32U y_axis_adc_val = 0;
 
   CPU_INT32S last_motor_throttle_val = 0;
-  CPU_INT32S throttle_diff = 0;
   
   g_max_adc_delta = ADC_MAX_DELTA_UP > ADC_MAX_DELTA_DOWN ? ADC_MAX_DELTA_UP : ADC_MAX_DELTA_DOWN;
 
-  while (DEF_TRUE)
-  {
+  while (DEF_TRUE){
     //get adc value only for Y axis
     y_axis_adc_val = GetThumbStickYAxisValue();
     
     //GetMotorThrottleValue() always returns max MOTOR_THROTTLE_MAX
-    CPU_INT32S current_value = GetMotorThrottleValue(y_axis_adc_val);
     
-    if(last_motor_throttle_val != current_value){
-        
-        throttle_diff = current_value - last_motor_throttle_val;
-        
-        if(throttle_diff > MAX_THROTTLE_STEP){
-            throttle_diff = MAX_THROTTLE_STEP;
-        }else if(throttle_diff < (MAX_THROTTLE_STEP * -1)){
-            throttle_diff = MAX_THROTTLE_STEP * -1;
-        }
-        
-        current_value = last_motor_throttle_val + throttle_diff;
+    CPU_INT32S current_throttle = GetMotorThrottleValueRegulated(last_motor_throttle_val, GetMotorThrottleValue(y_axis_adc_val));
+    
+    if(last_motor_throttle_val != current_throttle){
         
         //calculate throttle based on adc and send it to the Dshot 
-        SetNewThrottleValue(current_value);
+        SetNewThrottleValue(current_throttle);
         
-        last_motor_throttle_val = current_value;
+        last_motor_throttle_val = current_throttle;
         
         //Notify the Dshot task on new throttle value event
         OSSemPost(GetNewThrottleEventSem(),OS_OPT_POST_ALL,&os_err_sem);
@@ -142,8 +137,22 @@ void App_TaskThumbstick(void *p_arg)
   }
 }
 
-CPU_INT32U GetThumbStickYAxisValue()
-{
+/*
+*********************************************************************************************************
+*                                          GetThumbStickYAxisValue()
+*
+* Description : Measures only the Y axis adc value from the thumbstick component (0...4095). For the
+*               measuremement is communicates with the thumbstick via SPI.
+*
+* Argument(s) : none
+*
+* Return(s)   : Measured ADC value for the thumstick Y-Axis
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+CPU_INT32U GetThumbStickYAxisValue(CPU_VOID){
+    
   CPU_INT32U result = 0;
   
   CS_1_Write(0); // CS selection
@@ -168,6 +177,20 @@ CPU_INT32U GetThumbStickYAxisValue()
   return result;
 }
 
+/*
+*********************************************************************************************************
+*                                          GetMotorThrottleValue()
+*
+* Description : Converts an ADC value (in this case from the Y-Axis into a suitable dshot motor throttle
+*               value. It can be either 0 or [MOTOR_THROTTLE_MIN...MOTOR_THROTTLE_MAX].
+*
+* Argument(s) : y_axis_adc_val variable containing the Y-Axis adc value
+*
+* Return(s)   : throttle value derived from y_axis_adc_val
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
 CPU_INT32U GetMotorThrottleValue(CPU_INT32U y_axis_adc_val){
     
   //distance from the center (aboslute value)
@@ -204,37 +227,75 @@ CPU_INT32U GetMotorThrottleValue(CPU_INT32U y_axis_adc_val){
 
 /*
 *********************************************************************************************************
-*                                          GetAdcTaskTCB()
+*                                          GetMotorThrottleValueRegulated()
 *
-* Description : 
+* Description : Regulate the throttle value. It determines with the help of the throttle value of the last
+*               iteration and the current throttle value, if the throttle increase/decrease magnitude falls
+*               within the desired range [-MAX_THROTTLE_STEP : MAX_THROTTLE_STEP]. If the mangnitude is outside
+*               the range, limit the increase/decrease to MAX_THROTTLE_STEP/-MAX_THROTTLE_STEP. This way the
+*               motor can be driven softly when the thumbstick moves too fast, avoiding sudden high current
+*               consumption.
 *
-* Argument(s) : none
+* Argument(s) : last_throttle_value: variable containing the throttle value of the last interation
+*               throttle_value:      variable containing the throttle value of the current iteration
 *
-* Return(s)   : none
+* Return(s)   : Throttle value that will be send to the dshot task to operate the motor.
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-OS_TCB* GetThumbstickTaskTCB()
-{
+CPU_INT32S GetMotorThrottleValueRegulated(CPU_INT32S last_throttle_value, CPU_INT32S throttle_value){
+    
+    CPU_INT32S throttle_diff = 0;
+    CPU_INT32S regulated_throttle_value = throttle_value;
+    
+    if(last_throttle_value != throttle_value){
+        
+        throttle_diff = throttle_value - last_throttle_value;
+        
+        if(throttle_diff > MAX_THROTTLE_STEP){
+            throttle_diff = MAX_THROTTLE_STEP;
+        }else if(throttle_diff < (MAX_THROTTLE_STEP * -1)){
+            throttle_diff = MAX_THROTTLE_STEP * -1;
+        }
+        
+        regulated_throttle_value = last_throttle_value + throttle_diff;
+    } 
+    
+    return regulated_throttle_value;
+}
+
+/*
+*********************************************************************************************************
+*                                          GetThumbstickTaskTCB()
+*
+* Description : Get Thumbstick task TCB block
+*
+* Argument(s) : none
+*
+* Return(s)   : Pointer to the Thumbstick task TCB block
+*
+* Note(s)     : none
+*********************************************************************************************************
+*/
+OS_TCB* GetThumbstickTaskTCB(CPU_VOID){
   return &App_TaskAdc_TCB;
 }
 
 /*
 *********************************************************************************************************
-*                                          GetAdcTaskStk()
+*                                          GetThumbstickTaskStk()
 *
-* Description : 
+* Description : Get Thumbstick Task stack
 *
 * Argument(s) : none
 *
-* Return(s)   : none
+* Return(s)   : Pointer to the Thumbstick task stack
 *
 * Note(s)     : none
 *********************************************************************************************************
 */
-CPU_STK* GetThumbstickTaskStk()
-{
+CPU_STK* GetThumbstickTaskStk(CPU_VOID){
   return &App_TaskAdcStk_R[0];
 }
 /* [] END OF FILE */

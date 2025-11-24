@@ -16,50 +16,11 @@
 #include <os.h>
 #include <cpu.h>
 
-/*
-*********************************************************************************************************
-*                                          App_TaskAdc()
-*
-* Description : 
-*
-* Argument(s) : p_arg   is the argument passed to 'App_TaskAdc()' by 'OSTaskCreate()'.
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
 void App_TaskThumbstick(void *p_arg);
 
-/*
-*********************************************************************************************************
-*                                          GetAdcTaskTCB()
-*
-* Description : 
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
-OS_TCB* GetThumbstickTaskTCB();
+OS_TCB* GetThumbstickTaskTCB(CPU_VOID);
 
-/*
-*********************************************************************************************************
-*                                          GetAdcTaskStk()
-*
-* Description : 
-*
-* Argument(s) : none
-*
-* Return(s)   : none
-*
-* Note(s)     : none
-*********************************************************************************************************
-*/
-CPU_STK* GetThumbstickTaskStk();
+CPU_STK* GetThumbstickTaskStk(CPU_VOID);
 
 #endif
 

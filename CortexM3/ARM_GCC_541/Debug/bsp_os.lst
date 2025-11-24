@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
   28:BSP\OS\uCOS-III/bsp_os.c **** /*
   29:BSP\OS\uCOS-III/bsp_os.c **** ***************************************************************************************************
   30:BSP\OS\uCOS-III/bsp_os.c **** *                                             INCLUDE FILES
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 2
 
 
   31:BSP\OS\uCOS-III/bsp_os.c **** ***************************************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
   85:BSP\OS\uCOS-III/bsp_os.c **** */
   86:BSP\OS\uCOS-III/bsp_os.c **** 
   87:BSP\OS\uCOS-III/bsp_os.c **** /*
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 3
 
 
   88:BSP\OS\uCOS-III/bsp_os.c **** ***************************************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
   32              	.LVL0:
   33 0000 10B5     		push	{r4, lr}
   34              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 4
 
 
   35              		.cfi_offset 4, -8
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  153:BSP\OS\uCOS-III/bsp_os.c **** 
  154:BSP\OS\uCOS-III/bsp_os.c **** /*
  155:BSP\OS\uCOS-III/bsp_os.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 5
 
 
  156:BSP\OS\uCOS-III/bsp_os.c **** *                                     BSP_OS_SemWait()
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  183:BSP\OS\uCOS-III/bsp_os.c ****               (OS_TICK )dly_ticks,
  184:BSP\OS\uCOS-III/bsp_os.c ****               (OS_OPT  )OS_OPT_PEND_BLOCKING,
  185:BSP\OS\uCOS-III/bsp_os.c ****               (CPU_TS  )0,
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 6
 
 
  186:BSP\OS\uCOS-III/bsp_os.c ****               (OS_ERR *)&err);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  209:BSP\OS\uCOS-III/bsp_os.c **** ***************************************************************************************************
  210:BSP\OS\uCOS-III/bsp_os.c **** */
  211:BSP\OS\uCOS-III/bsp_os.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 7
 
 
  212:BSP\OS\uCOS-III/bsp_os.c **** CPU_BOOLEAN  BSP_OS_SemPost (BSP_OS_SEM *p_sem)
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  171              	BSP_OS_TimeDlyMs:
  172              	.LFB4:
  227:BSP\OS\uCOS-III/bsp_os.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 8
 
 
  228:BSP\OS\uCOS-III/bsp_os.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  264:BSP\OS\uCOS-III/bsp_os.c **** 
  265:BSP\OS\uCOS-III/bsp_os.c ****     if (dly_ms >= 1000u) {
  191              		.loc 1 265 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 9
 
 
  192 000e B0F57A7F 		cmp	r0, #1000
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  231              	.L21:
  232 0044 D34D6210 		.word	274877907
  233              		.cfi_endproc
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 10
 
 
  234              	.LFE4:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  288 0062 03       		.uleb128 0x3
  289 0063 3B0A0000 		.4byte	.LASF7
  290 0067 02       		.byte	0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 11
 
 
  291 0068 7A       		.byte	0x7a
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  345 00ce 7B000000 		.4byte	0x7b
  346 00d2 03       		.uleb128 0x3
  347 00d3 4F070000 		.4byte	.LASF17
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 12
 
 
  348 00d7 02       		.byte	0x2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  402 0146 03       		.uleb128 0x3
  403 0147 F4060000 		.4byte	.LASF29
  404 014b 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 13
 
 
  405 014c 40       		.byte	0x40
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  459 01c4 04       		.byte	0x4
  460 01c5 58       		.byte	0x58
  461 01c6 7B000000 		.4byte	0x7b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 14
 
 
  462 01ca 09       		.uleb128 0x9
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  516 0248 803E     		.2byte	0x3e80
  517 024a 0B       		.uleb128 0xb
  518 024b 9A000000 		.4byte	.LASF57
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 15
 
 
  519 024f 6842     		.2byte	0x4268
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  573 02cd BE56     		.2byte	0x56be
  574 02cf 0B       		.uleb128 0xb
  575 02d0 D40A0000 		.4byte	.LASF76
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 16
 
 
  576 02d4 BF56     		.2byte	0x56bf
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  630 0352 895E     		.2byte	0x5e89
  631 0354 0B       		.uleb128 0xb
  632 0355 67070000 		.4byte	.LASF95
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 17
 
 
  633 0359 8A5E     		.2byte	0x5e8a
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  687 03d7 9265     		.2byte	0x6592
  688 03d9 0B       		.uleb128 0xb
  689 03da 8A080000 		.4byte	.LASF114
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 18
 
 
  690 03de 9365     		.2byte	0x6593
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  744 045c 2D6E     		.2byte	0x6e2d
  745 045e 0B       		.uleb128 0xb
  746 045f D40F0000 		.4byte	.LASF133
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 19
 
 
  747 0463 2E6E     		.2byte	0x6e2e
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  801 04e1 5671     		.2byte	0x7156
  802 04e3 0B       		.uleb128 0xb
  803 04e4 B70D0000 		.4byte	.LASF152
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 20
 
 
  804 04e8 5771     		.2byte	0x7157
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  858 0566 1472     		.2byte	0x7214
  859 0568 0B       		.uleb128 0xb
  860 0569 F80E0000 		.4byte	.LASF171
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 21
 
 
  861 056d 7572     		.2byte	0x7275
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  915 05eb 4473     		.2byte	0x7344
  916 05ed 0B       		.uleb128 0xb
  917 05ee 1A070000 		.4byte	.LASF190
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 22
 
 
  918 05f2 4573     		.2byte	0x7345
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  972 066d 4103     		.2byte	0x341
  973 066f B80B0000 		.4byte	0xbb8
  974 0673 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 23
 
 
  975 0674 0E       		.uleb128 0xe
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1029 06e9 0E       		.uleb128 0xe
  1030 06ea 0F120000 		.4byte	.LASF215
  1031 06ee 05       		.byte	0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 24
 
 
  1032 06ef 5803     		.2byte	0x358
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1086 0764 A003     		.2byte	0x3a0
  1087 0766 9E010000 		.4byte	0x19e
  1088 076a 20       		.byte	0x20
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 25
 
 
  1089 076b 0F       		.uleb128 0xf
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1143 07df 570B0000 		.4byte	.LASF231
  1144 07e3 05       		.byte	0x5
  1145 07e4 B503     		.2byte	0x3b5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 26
 
 
  1146 07e6 A00B0000 		.4byte	0xba0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1200 085b B4010000 		.4byte	0x1b4
  1201 085f 35       		.byte	0x35
  1202 0860 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 27
 
 
  1203 0861 B6060000 		.4byte	.LASF240
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1257 08d5 100E0000 		.4byte	.LASF247
  1258 08d9 05       		.byte	0x5
  1259 08da D703     		.2byte	0x3d7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 28
 
 
  1260 08dc BF010000 		.4byte	0x1bf
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1314 0951 30010000 		.4byte	0x130
  1315 0955 80       		.byte	0x80
  1316 0956 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 29
 
 
  1317 0957 BD070000 		.4byte	.LASF255
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1371 09cc 540D0000 		.4byte	.LASF264
  1372 09d0 05       		.byte	0x5
  1373 09d1 FE03     		.2byte	0x3fe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 30
 
 
  1374 09d3 25010000 		.4byte	0x125
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1428 0a47 1E04     		.2byte	0x41e
  1429 0a49 750A0000 		.4byte	0xa75
  1430 0a4d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 31
 
 
  1431 0a4e 6D0E0000 		.4byte	.LASF271
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1485 0ac3 BE0B0000 		.4byte	.LASF276
  1486 0ac7 05       		.byte	0x5
  1487 0ac8 E202     		.2byte	0x2e2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 32
 
 
  1488 0aca AC0B0000 		.4byte	0xbac
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1542 0b3e A702     		.2byte	0x2a7
  1543 0b40 440B0000 		.4byte	0xb44
  1544 0b44 0D       		.uleb128 0xd
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 33
 
 
  1545 0b45 BD030000 		.4byte	.LASF285
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1599 0bb8 05       		.uleb128 0x5
  1600 0bb9 04       		.byte	0x4
  1601 0bba 4E060000 		.4byte	0x64e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 34
 
 
  1602 0bbe 05       		.uleb128 0x5
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1656 0c3c 14       		.uleb128 0x14
  1657 0c3d 65727200 		.ascii	"err\000"
  1658 0c41 01       		.byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 35
 
 
  1659 0c42 8A       		.byte	0x8a
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1713 0c99 6B000000 		.4byte	.LLST3
  1714 0c9d 13       		.uleb128 0x13
  1715 0c9e E5100000 		.4byte	.LASF293
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 36
 
 
  1716 0ca2 01       		.byte	0x1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1770 0cf4 53       		.byte	0x53
  1771 0cf5 01       		.uleb128 0x1
  1772 0cf6 30       		.byte	0x30
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 37
 
 
  1773 0cf7 16       		.uleb128 0x16
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1827 0d51 00       		.byte	0
  1828 0d52 00       		.byte	0
  1829 0d53 18       		.uleb128 0x18
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 38
 
 
  1830 0d54 13090000 		.4byte	.LASF304
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1884 0dbf 02       		.uleb128 0x2
  1885 0dc0 7D       		.byte	0x7d
  1886 0dc1 04       		.sleb128 4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 39
 
 
  1887 0dc2 02       		.uleb128 0x2
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1941 0013 02       		.uleb128 0x2
  1942 0014 24       		.uleb128 0x24
  1943 0015 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 40
 
 
  1944 0016 0B       		.uleb128 0xb
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  1998 004c 13       		.uleb128 0x13
  1999 004d 00       		.byte	0
  2000 004e 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 41
 
 
  2001 004f 08       		.uleb128 0x8
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2055 0085 00       		.byte	0
  2056 0086 0D       		.uleb128 0xd
  2057 0087 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 42
 
 
  2058 0088 01       		.byte	0x1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2112 00be 00       		.byte	0
  2113 00bf 49       		.uleb128 0x49
  2114 00c0 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 43
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 43
 
 
  2115 00c1 2F       		.uleb128 0x2f
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2169 00f8 0B       		.uleb128 0xb
  2170 00f9 49       		.uleb128 0x49
  2171 00fa 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 44
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 44
 
 
  2172 00fb 02       		.uleb128 0x2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2226 0136 40       		.uleb128 0x40
  2227 0137 18       		.uleb128 0x18
  2228 0138 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 45
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 45
 
 
  2229 013a 19       		.uleb128 0x19
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2283 0170 00       		.byte	0
  2284 0171 49       		.uleb128 0x49
  2285 0172 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 46
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 46
 
 
  2286 0173 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2340              	.LLST2:
  2341 004d 00000000 		.4byte	.LVL0
  2342 0051 0C000000 		.4byte	.LVL1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 47
 
 
  2343 0055 0100     		.2byte	0x1
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2397 00cb 0100     		.2byte	0x1
  2398 00cd 51       		.byte	0x51
  2399 00ce 21000000 		.4byte	.LVL8-1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 48
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 48
 
 
  2400 00d2 32000000 		.4byte	.LVL9
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2454 0146 00000000 		.4byte	0
  2455 014a 00000000 		.4byte	0
  2456              	.LLST9:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 49
 
 
  2457 014e 28000000 		.4byte	.LVL15
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2506      636200
  2507              	.LASF109:
  2508 0007 4F535F45 		.ascii	"OS_ERR_PRIO_INVALID\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 50
 
 
  2508      52525F50 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2532      00
  2533              	.LASF58:
  2534 00a3 4F535F45 		.ascii	"OS_ERR_I\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 51
 
 
  2534      52525F49 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2561              	.LASF197:
  2562 0121 4F535F45 		.ascii	"OS_ERR_W\000"
  2562      52525F57 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 52
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 52
 
 
  2562      00
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2584      494400
  2585              	.LASF295:
  2586 01d3 4253505F 		.ascii	"BSP_OS_SemPost\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 53
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 53
 
 
  2586      4F535F53 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2606      41534B5F 
  2606      4E4F545F 
  2606      444C5900 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 54
 
 
  2607              	.LASF221:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2628      6E747269 
  2628      657300
  2629              	.LASF290:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 55
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 55
 
 
  2630 0355 705F7365 		.ascii	"p_sem_name\000"
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2652 0409 43747853 		.ascii	"CtxSwCtr\000"
  2652      77437472 
  2652      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 56
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 56
 
 
  2653              	.LASF151:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2674      4D525F49 
  2674      4E414354 
  2674      49564500 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 57
 
 
  2675              	.LASF162:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2695              	.LASF5:
  2696 0599 4350555F 		.ascii	"CPU_INT08U\000"
  2696      494E5430 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 58
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 58
 
 
  2696      385500
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2718      7200
  2719              	.LASF39:
  2720 06ac 4F535F53 		.ascii	"OS_STATUS\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 59
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 59
 
 
  2720      54415455 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2742 0767 4F535F45 		.ascii	"OS_ERR_OS_RUNNING\000"
  2742      52525F4F 
  2742      535F5255 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 60
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 60
 
 
  2742      4E4E494E 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2764      454D5F56 
  2764      414C00
  2765              	.LASF251:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 61
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 61
 
 
  2766 082e 4D736751 		.ascii	"MsgQPendTime\000"
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2789              	.LASF93:
  2790 08d1 4F535F45 		.ascii	"OS_ERR_OPT_INVALID\000"
  2790      52525F4F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 62
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 62
 
 
  2790      50545F49 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2813              	.LASF218:
  2814 0986 54797065 		.ascii	"Type\000"
  2814      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 63
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 63
 
 
  2815              	.LASF200:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2838      454E445F 
  2838      41424F52 
  2838      545F5345 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 64
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 64
 
 
  2839              	.LASF7:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2860      656E6443 
  2860      747200
  2861              	.LASF229:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 65
 
 
  2862 0b01 53746B4C 		.ascii	"StkLimitPtr\000"
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2882      7200
  2883              	.LASF64:
  2884 0bc8 4F535F45 		.ascii	"OS_ERR_INT_Q_STK_SIZE_INVALID\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 66
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 66
 
 
  2884      52525F49 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2904      5F524F42 
  2904      494E5F31 
  2905              	.LASF75:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 67
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 67
 
 
  2906 0c90 4F535F45 		.ascii	"OS_ERR_MEM_INVALID_P_BLK\000"
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2926      617800
  2927              	.LASF264:
  2928 0d54 4379636C 		.ascii	"CyclesTotalPrev\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 68
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 68
 
 
  2928      6573546F 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2951              	.LASF211:
  2952 0e0a 496E5074 		.ascii	"InPtr\000"
  2952      7200
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 69
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 69
 
 
  2953              	.LASF247:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  2977              	.LASF19:
  2978 0eb7 6C6F6E67 		.ascii	"long unsigned int\000"
  2978      20756E73 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 70
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 70
 
 
  2978      69676E65 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3000 0f6d 73656D5F 		.ascii	"sem_val\000"
  3000      76616C00 
  3001              	.LASF4:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 71
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 71
 
 
  3002 0f75 756E7369 		.ascii	"unsigned char\000"
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3024      00
  3025              	.LASF302:
  3026 1019 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 72
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 72
 
 
  3026      73657273 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3046      65642063 
  3046      68617200 
  3047              	.LASF207:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 73
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 73
 
 
  3048 1115 4D736754 		.ascii	"MsgTS\000"
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3071              	.LASF97:
  3072 11b5 4F535F45 		.ascii	"OS_ERR_PEND_ABORT\000"
  3072      52525F50 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 74
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 74
 
 
  3072      454E445F 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3094 1267 4379636C 		.ascii	"CyclesTotal\000"
  3094      6573546F 
  3094      74616C00 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 75
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 75
 
 
  3095              	.LASF223:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 1
  3116      74655F48 
  3116      7A00
  3117              	.LASF79:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccWG46LI.s 			page 76
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccgiOdjL.s 			page 76
 
 
  3118 1329 4F535F45 		.ascii	"OS_ERR_MEM_NO_FREE_BLKS\000"

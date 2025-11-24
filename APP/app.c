@@ -5,7 +5,7 @@
 *
 * Filename      : app.c
 * Version       : V1.00
-* Programmer(s) : Joaquin Ortiz, Ervin, Ana
+* Programmer(s) : Joaquin Ortiz, Ervin Sejdovic, Ana Zabolotneva, Michael Frank
 
 *********************************************************************************************************
 */

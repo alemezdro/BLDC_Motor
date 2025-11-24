@@ -153,9 +153,10 @@ void App_TaskDshot(void *p_arg) {
             }else{
                 state = USER_MODE; //enter user mode
             }
-                //the task assumes that thet throttle value was correctly controlled by the com task
-                //apply the user throttle value. If 0, the user stops the motor
-                UpdateDshotFrameBuffer(*user_throttle_val);
+            
+            //the task assumes that thet throttle value was correctly controlled by the com task
+            //apply the user throttle value. If 0, the user stops the motor
+            UpdateDshotFrameBuffer(*user_throttle_val);
             
         }else if(OS_ERR_NONE == os_err_sem && THUMBSTICK_MODE == state){
             //the call was succesfull and this task owns the ressource

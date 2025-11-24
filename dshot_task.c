@@ -133,20 +133,7 @@ void App_TaskDshot(void *p_arg) {
   CPU_INT08U dma_channel = ConfigureDma();
 
     while (DEF_TRUE) {
-        
-        //stop_pwm(); //dma should have stopped the pwm module. potentially remove this!!!!!!!!!
-        
-        //while(PWM_1_ReadStatusRegister() & PWM_1_STATUS_FIFONEMPTY){
-          //  PWM_1_ReadCapture();
-       // };
-        
-        //PWM_1_ReadStatusRegister();
-        
-        //PWM_1_WriteCounter(0);
-        
-        //PWM_1_WritePeriod(PWM_PERIOD_VALUE);
-        //pwm_write_compare_1(PWM_PERIOD_VALUE);
- 
+
         //start dma exectuion and wait until DMA finished
         StartDma(dma_channel);
         
@@ -266,30 +253,11 @@ OS_SEM* GetNewThrottleEventSem(CPU_VOID){
 */
 CPU_VOID ConfigurePwm(CPU_VOID){
     
-   /* stop_pwm();
-    
-    while(PWM_1_ReadStatusRegister() & PWM_1_STATUS_FIFONEMPTY){
-        PWM_1_ReadCapture();
-    };
-    
-    PWM_1_ReadStatusRegister();
-    
-    PWM_1_WriteCounter(0);
-    
-    PWM_1_WritePeriod(PWM_PERIOD_VALUE);
-    pwm_write_compare_1(PWM_PERIOD_VALUE);*/
-    
     init_pwm();
     
     pwm_set_interrupt_mode(0);
 
     pwm_write_compare_2(DMA_CH2_CMP_VALUE);
-    
-   //init_pwm(); //sometime this should be uncommented compiled and flash so that the board works
-    
-    //dma enables the pwm channel
-    //only cmp channel 2 changes here (ch1 with 100 remain)
-    //no period changed at run 
 }
 
 /*

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
   28:uCOS-III\Source/os_prio.c **** *
   29:uCOS-III\Source/os_prio.c **** *           You can contact us at www.micrium.com, or by phone at +1 (954) 217-2036.
   30:uCOS-III\Source/os_prio.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 2
 
 
   31:uCOS-III\Source/os_prio.c **** */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
   45              	.LVL2:
   46              	.L2:
   65:uCOS-III\Source/os_prio.c ****          OSPrioTbl[i] = (CPU_DATA)0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 3
 
 
   47              		.loc 1 65 0 is_stmt 0 discriminator 1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
   76              		.loc 1 91 0
   77 0002 0024     		movs	r4, #0
   92:uCOS-III\Source/os_prio.c ****     p_tbl = &OSPrioTbl[0];
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 4
 
 
   78              		.loc 1 92 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  103:uCOS-III\Source/os_prio.c **** *                                                  INSERT PRIORITY
  104:uCOS-III\Source/os_prio.c **** *
  105:uCOS-III\Source/os_prio.c **** * Description: This function is called to insert a priority in the priority table.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 5
 
 
  106:uCOS-III\Source/os_prio.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  154              		.align	2
  155              		.global	OS_PrioRemove
  156              		.thumb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 6
 
 
  157              		.thumb_func
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  183 001a 42F82130 		str	r3, [r2, r1, lsl #2]
  184 001e 7047     		bx	lr
  185              	.L17:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 7
 
 
  186              		.align	2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  240 0059 7C       		.byte	0x7c
  241 005a 5E000000 		.4byte	0x5e
  242 005e 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 8
 
 
  243 005f 04       		.byte	0x4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  297 00c5 18000000 		.4byte	.LFE1-.LFB1
  298 00c9 01       		.uleb128 0x1
  299 00ca 9C       		.byte	0x9c
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 9
 
 
  300 00cb DD000000 		.4byte	0xdd
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  354 014d 01       		.byte	0x1
  355 014e 75       		.byte	0x75
  356 014f 88000000 		.4byte	0x88
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 10
 
 
  357 0153 98000000 		.4byte	.LLST4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  411 01cc A8000000 		.4byte	0xa8
  412 01d0 00       		.byte	0
  413 01d1 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 11
 
 
  414 01d2 0F       		.uleb128 0xf
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  468 0026 0B       		.uleb128 0xb
  469 0027 49       		.uleb128 0x49
  470 0028 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 12
 
 
  471 0029 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  525 0060 2E       		.uleb128 0x2e
  526 0061 01       		.byte	0x1
  527 0062 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 13
 
 
  528 0063 19       		.uleb128 0x19
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  582 009c 00       		.byte	0
  583 009d 00       		.byte	0
  584 009e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 14
 
 
  585 009f 05       		.uleb128 0x5
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  639 00d5 3B       		.uleb128 0x3b
  640 00d6 0B       		.uleb128 0xb
  641 00d7 49       		.uleb128 0x49
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 15
 
 
  642 00d8 13       		.uleb128 0x13
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  696 0046 08000000 		.4byte	.LVL4
  697 004a 0200     		.2byte	0x2
  698 004c 30       		.byte	0x30
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 16
 
 
  699 004d 9F       		.byte	0x9f
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  753 00d9 24000000 		.4byte	.LFE4
  754 00dd 0400     		.2byte	0x4
  755 00df F3       		.byte	0xf3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 17
 
 
  756 00e0 01       		.uleb128 0x1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  810              		.section	.debug_line,"",%progbits
  811              	.Ldebug_line0:
  812 0000 F2000000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 18
 
 
  812      02008A00 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  836      74696F6E 
  836      2D736563 
  836      74696F6E 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 19
 
 
  837              	.LASF14:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 1
  858      7400
  859              	.LASF0:
  860 0192 63686172 		.ascii	"char\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccYE02pm.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccqhXXLB.s 			page 20
 
 
  860      00

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
   28:bsp_gpio.c    **** * Caller(s)   : Application.
   29:bsp_gpio.c    **** *
   30:bsp_gpio.c    **** * Note(s)     : Not re-entrant.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 2
 
 
   31:bsp_gpio.c    **** ***************************************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
   49:bsp_gpio.c    **** * Argument(s) : port ... indicates which port should be addressed (PORT1, PORT2)
   50:bsp_gpio.c    **** *               pin  ... indicates which pin of the chosen port is addressed (P1_6, P2_0, P2_1)
   51:bsp_gpio.c    **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 3
 
 
   52:bsp_gpio.c    **** * Return(s)   : 0 ... if no error occurred
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
   75:bsp_gpio.c    ****       Pin_2_Write(P2_0); 
   94              		.loc 1 75 0
   95 001a 0120     		movs	r0, #1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 4
 
 
   96              	.LVL8:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  133 003c 08BD     		pop	{r3, pc}
  134              		.cfi_endproc
  135              	.LFE1:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 5
 
 
  136              		.size	gpio_high, .-gpio_high
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  163              	.LVL21:
  164 000c FFF7FEFF 		bl	Pin_1_Write
  165              	.LVL22:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 6
 
 
  111:bsp_gpio.c    ****   CPU_INT08U err = 0;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  205              	.L16:
  127:bsp_gpio.c    ****     }
  128:bsp_gpio.c    ****     else{
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 7
 
 
  129:bsp_gpio.c    ****       err++;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  230              		@ args = 0, pretend = 0, frame = 0
  231              		@ frame_needed = 0, uses_anonymous_args = 0
  232              	.LVL35:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 8
 
 
  158:bsp_gpio.c    ****   CPU_INT08S err = 0;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  273              		.type	PWM_INIT, %function
  274              	PWM_INIT:
  275              	.LFB4:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 9
 
 
  170:bsp_gpio.c    ****   }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  198:bsp_gpio.c    ****     
  199:bsp_gpio.c    ****   } else if(color == PWM_BLUE){
  302              		.loc 1 199 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 10
 
 
  303 0014 0228     		cmp	r0, #2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  332              		.loc 1 224 0
  333 0002 18B9     		cbnz	r0, .L31
  225:bsp_gpio.c    ****     PWM_R_WriteCompare(value);
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 11
 
 
  334              		.loc 1 225 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  379              	.Ldebug_info0:
  380 0000 6F030000 		.4byte	0x36f
  381 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 12
 
 
  382 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  436 0075 05       		.byte	0x5
  437 0076 FF010000 		.4byte	.LASF9
  438 007a 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 13
 
 
  439 007b 04       		.byte	0x4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  493 00e8 01       		.uleb128 0x1
  494 00e9 3C       		.byte	0x3c
  495 00ea 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 14
 
 
  496 00eb 07       		.uleb128 0x7
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  550 0166 70010000 		.4byte	0x170
  551 016a 08       		.uleb128 0x8
  552 016b 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 15
 
 
  553 016c 50       		.byte	0x50
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  607 01de 1A030000 		.4byte	0x31a
  608 01e2 EC010000 		.4byte	0x1ec
  609 01e6 08       		.uleb128 0x8
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 16
 
 
  610 01e7 01       		.uleb128 0x1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  664 025f 01       		.uleb128 0x1
  665 0260 9C       		.byte	0x9c
  666 0261 90020000 		.4byte	0x290
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 17
 
 
  667 0265 0B       		.uleb128 0xb
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  721 02ef A9020000 		.4byte	.LASF26
  722 02f3 A9020000 		.4byte	.LASF26
  723 02f7 05       		.byte	0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 18
 
 
  724 02f8 27       		.byte	0x27
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  778 0370 09       		.byte	0x9
  779 0371 C3       		.byte	0xc3
  780 0372 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 19
 
 
  781              		.section	.debug_abbrev,"",%progbits
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  835 0034 00       		.byte	0
  836 0035 00       		.byte	0
  837 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 20
 
 
  838 0037 16       		.uleb128 0x16
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  892 0073 18       		.uleb128 0x18
  893 0074 00       		.byte	0
  894 0075 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 21
 
 
  895 0076 09       		.uleb128 0x9
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  949 00af 03       		.uleb128 0x3
  950 00b0 08       		.uleb128 0x8
  951 00b1 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 22
 
 
  952 00b2 0B       		.uleb128 0xb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1006 0000 00000000 		.4byte	.LVL4
  1007 0004 0D000000 		.4byte	.LVL6-1
  1008 0008 0100     		.2byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 23
 
 
  1009 000a 50       		.byte	0x50
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1063 0085 0100     		.2byte	0x1
  1064 0087 50       		.byte	0x50
  1065 0088 3C000000 		.4byte	.LVL18
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 24
 
 
  1066 008c 3E000000 		.4byte	.LFE1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1120 0108 3C000000 		.4byte	.LVL18
  1121 010c 3E000000 		.4byte	.LFE1
  1122 0110 0100     		.2byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 25
 
 
  1123 0112 50       		.byte	0x50
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1177 0192 0400     		.2byte	0x4
  1178 0194 F3       		.byte	0xf3
  1179 0195 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 26
 
 
  1180 0196 50       		.byte	0x50
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1234 0213 00000000 		.4byte	0
  1235              	.LLST5:
  1236 0217 02000000 		.4byte	.LVL20
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 27
 
 
  1237 021b 3E000000 		.4byte	.LVL34
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1291 029e F3       		.byte	0xf3
  1292 029f 01       		.uleb128 0x1
  1293 02a0 51       		.byte	0x51
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 28
 
 
  1294 02a1 9F       		.byte	0x9f
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1348 0327 F3       		.byte	0xf3
  1349 0328 01       		.uleb128 0x1
  1350 0329 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 29
 
 
  1351 032a 9F       		.byte	0x9f
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1405 03a9 51       		.byte	0x51
  1406 03aa 15000000 		.4byte	.LVL53-1
  1407 03ae 18000000 		.4byte	.LVL54
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 30
 
 
  1408 03b2 0400     		.2byte	0x4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1462 0030 00000000 		.4byte	0
  1463 0034 00000000 		.4byte	0
  1464              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 31
 
 
  1465              	.Ldebug_line0:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1488      494E4954 
  1488      00
  1489              	.LASF1:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 32
 
 
  1490 0091 756E7369 		.ascii	"unsigned char\000"
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1511              	.LASF22:
  1512 018c 636F6C6F 		.ascii	"color\000"
  1512      7200
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 33
 
 
  1513              	.LASF25:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 1
  1535      74776172 
  1535      655F315C 
  1535      63797072 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccUm3kPS.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmpwD37.s 			page 34
 
 
  1536 0270 5C657377 		.ascii	"\\esw_uCOS3_cykit.cydsn\000"

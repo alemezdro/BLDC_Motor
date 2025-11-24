@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
   28:uCOS-III\Source/os_tmr.c **** *
   29:uCOS-III\Source/os_tmr.c **** *           You can contact us at www.micrium.com, or by phone at +1 (954) 217-2036.
   30:uCOS-III\Source/os_tmr.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 2
 
 
   31:uCOS-III\Source/os_tmr.c **** */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
   85:uCOS-III\Source/os_tmr.c **** *
   86:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_NONE
   87:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_ILLEGAL_CREATE_RUN_TIME if you are trying to create the ti
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 3
 
 
   88:uCOS-III\Source/os_tmr.c **** *                                                                  OSSafetyCriticalStart().
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  142:uCOS-III\Source/os_tmr.c ****     }
  143:uCOS-III\Source/os_tmr.c **** 
  144:uCOS-III\Source/os_tmr.c ****     switch (opt) {
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 4
 
 
  145:uCOS-III\Source/os_tmr.c ****         case OS_OPT_TMR_PERIODIC:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  199:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_NONE
  200:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_OBJ_TYPE             'p_tmr' is not pointing to a timer
  201:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_TMR_INVALID          'p_tmr' is a NULL pointer
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 5
 
 
  202:uCOS-III\Source/os_tmr.c **** *                                 OS_ERR_TMR_ISR              if the function was called from an IS
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  256:uCOS-III\Source/os_tmr.c ****              OS_TmrUnlink(p_tmr);                           /* Remove from current wheel spoke     
  257:uCOS-III\Source/os_tmr.c ****              OS_TmrClr(p_tmr);
  258:uCOS-III\Source/os_tmr.c ****              OSSchedUnlock(&err);
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 6
 
 
  259:uCOS-III\Source/os_tmr.c ****             *p_err   = OS_ERR_NONE;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  313:uCOS-III\Source/os_tmr.c **** {
   28              		.loc 1 313 0
   29              		.cfi_startproc
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 7
 
 
   30              		@ args = 0, pretend = 0, frame = 8
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  355:uCOS-III\Source/os_tmr.c ****              break;
  356:uCOS-III\Source/os_tmr.c **** 
  357:uCOS-III\Source/os_tmr.c ****         case OS_TMR_STATE_STOPPED:                          /* It's assumed that the timer has not 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 8
 
 
  358:uCOS-III\Source/os_tmr.c ****              if (p_tmr->Opt == OS_OPT_TMR_PERIODIC) {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
   59              		.cfi_offset 5, -12
   60              		.cfi_offset 6, -8
   61              		.cfi_offset 14, -4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 9
 
 
   62 001c 82B0     		sub	sp, sp, #8
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  358:uCOS-III\Source/os_tmr.c ****                  if (p_tmr->Dly == 0u) {
  106              		.loc 1 358 0
  107 0054 2B8D     		ldrh	r3, [r5, #40]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 10
 
 
  108 0056 022B     		cmp	r3, #2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  151 0088 FFF7FEFF 		bl	OSSchedUnlock
  152              	.LVL16:
  380:uCOS-III\Source/os_tmr.c ****              remain = (OS_TICK)0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 11
 
 
  153              		.loc 1 380 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  397:uCOS-III\Source/os_tmr.c **** *
  398:uCOS-III\Source/os_tmr.c **** * Description: This function is called by your application code to start a timer.
  399:uCOS-III\Source/os_tmr.c **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 12
 
 
  400:uCOS-III\Source/os_tmr.c **** * Arguments  : p_tmr    Is a pointer to an OS_TMR
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  454:uCOS-III\Source/os_tmr.c ****     }
  455:uCOS-III\Source/os_tmr.c **** #endif
  456:uCOS-III\Source/os_tmr.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 13
 
 
  457:uCOS-III\Source/os_tmr.c ****     OSSchedLock(&err);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  511:uCOS-III\Source/os_tmr.c **** *
  512:uCOS-III\Source/os_tmr.c **** * Returns    : The current state of the timer (see description).
  513:uCOS-III\Source/os_tmr.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 14
 
 
  514:uCOS-III\Source/os_tmr.c **** */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  224 0018 0A80     		strh	r2, [r1]	@ movhi
  541:uCOS-III\Source/os_tmr.c ****         return (OS_TMR_STATE_UNUSED);
  225              		.loc 1 541 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 15
 
 
  226 001a 10E0     		b	.L19
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  254              	.LVL28:
  255              	.L19:
  568:uCOS-III\Source/os_tmr.c **** }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 16
 
 
  256              		.loc 1 568 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  605:uCOS-III\Source/os_tmr.c **** */
  606:uCOS-III\Source/os_tmr.c **** 
  607:uCOS-III\Source/os_tmr.c **** CPU_BOOLEAN  OSTmrStop (OS_TMR  *p_tmr,
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 17
 
 
  608:uCOS-III\Source/os_tmr.c ****                         OS_OPT   opt,
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  662:uCOS-III\Source/os_tmr.c ****                       p_fnct = p_tmr->CallbackPtr;                    /* Execute callback function 
  663:uCOS-III\Source/os_tmr.c ****                       if (p_fnct != (OS_TMR_CALLBACK_PTR)0) {
  664:uCOS-III\Source/os_tmr.c ****                         (*p_fnct)((void *)p_tmr, p_callback_arg);     /* .. using the 'callback_arg
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 18
 
 
  665:uCOS-III\Source/os_tmr.c ****                       } else {
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  719:uCOS-III\Source/os_tmr.c **** 
  720:uCOS-III\Source/os_tmr.c **** void  OS_TmrClr (OS_TMR  *p_tmr)
  721:uCOS-III\Source/os_tmr.c **** {
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 19
 
 
  274              		.loc 1 721 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  316              		.section	.text.OS_TmrDbgListAdd,"ax",%progbits
  317              		.align	2
  318              		.global	OS_TmrDbgListAdd
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 20
 
 
  319              		.thumb
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  761:uCOS-III\Source/os_tmr.c ****     }
  762:uCOS-III\Source/os_tmr.c ****     OSTmrDbgListPtr                 =  p_tmr;
  346              		.loc 1 762 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 21
 
 
  347 0012 014B     		ldr	r3, .L33
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  396              		.loc 1 139 0
  397 001a 28B9     		cbnz	r0, .L38
  140:uCOS-III\Source/os_tmr.c ****         return;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 22
 
 
  398              		.loc 1 140 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  161:uCOS-III\Source/os_tmr.c ****     }
  443              		.loc 1 161 0
  444 0054 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 23
 
 
  445              	.LVL47:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  180:uCOS-III\Source/os_tmr.c **** #endif
  486              		.loc 1 180 0
  487 008c 2046     		mov	r0, r4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 24
 
 
  488              	.LVL51:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  528              		.loc 1 773 0
  529 0000 C26A     		ldr	r2, [r0, #44]
  530              	.LVL56:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 25
 
 
  774:uCOS-III\Source/os_tmr.c ****     p_tmr_next = p_tmr->DbgNextPtr;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  568              	.LVL62:
  569 0024 0363     		str	r3, [r0, #48]
  791:uCOS-III\Source/os_tmr.c ****         p_tmr->DbgPrevPtr      = (OS_TMR *)0;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 26
 
 
  570              		.loc 1 791 0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  597 0002 8AB0     		sub	sp, sp, #40
  598              		.cfi_def_cfa_offset 48
  819:uCOS-III\Source/os_tmr.c ****     OS_TMR_SPOKE_IX   i;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 27
 
 
  820:uCOS-III\Source/os_tmr.c ****     OS_TMR_SPOKE     *p_spoke;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  630 0036 0023     		movs	r3, #0
  631 0038 254A     		ldr	r2, .L64+24
  632 003a 1360     		str	r3, [r2]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 28
 
 
  843:uCOS-III\Source/os_tmr.c **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  671              	.L59:
  857:uCOS-III\Source/os_tmr.c ****     }
  858:uCOS-III\Source/os_tmr.c **** 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 29
 
 
  859:uCOS-III\Source/os_tmr.c ****     if (OSCfg_TmrTaskStkSize < OSCfg_StkSizeMin) {
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  715              	.LVL70:
  716              	.L54:
  870:uCOS-III\Source/os_tmr.c ****                  (CPU_CHAR   *)((void *)"uC/OS-III Timer Task"),
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 30
 
 
  871:uCOS-III\Source/os_tmr.c ****                  (OS_TASK_PTR )OS_TmrTask,
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  888:uCOS-III\Source/os_tmr.c **** *
  889:uCOS-III\Source/os_tmr.c **** * Description: This function is called to insert the timer into the timer wheel.  The timer is alwa
  890:uCOS-III\Source/os_tmr.c **** *              beginning of the list.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 31
 
 
  891:uCOS-III\Source/os_tmr.c **** *
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  778 0018 036A     		ldr	r3, [r0, #32]
  779 001a 2BB9     		cbnz	r3, .L69
  921:uCOS-III\Source/os_tmr.c ****             p_tmr->Match = p_tmr->Period + OSTmrTickCtr;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 32
 
 
  780              		.loc 1 921 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  934:uCOS-III\Source/os_tmr.c ****     } else {
  935:uCOS-III\Source/os_tmr.c ****         p_tmr->Remain  = p_tmr->Match                       /* Compute remaining time for timer    
  936:uCOS-III\Source/os_tmr.c ****                        - OSTmrTickCtr;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 33
 
 
  822              		.loc 1 936 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  862              	.LVL77:
  863              	.L73:
  949:uCOS-III\Source/os_tmr.c ****                 }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 34
 
 
  950:uCOS-III\Source/os_tmr.c ****             } else {                                        /* Insert before the current timer     
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  899              	.L72:
  938:uCOS-III\Source/os_tmr.c ****             p_tmr1->Remain = p_tmr1->Match                  /* Compute time remaining of current ti
  900              		.loc 1 938 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 35
 
 
  901 00b0 002B     		cmp	r3, #0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  973:uCOS-III\Source/os_tmr.c **** /*$PAGE*/
  974:uCOS-III\Source/os_tmr.c **** /*
  975:uCOS-III\Source/os_tmr.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 36
 
 
  976:uCOS-III\Source/os_tmr.c **** *                                              RESET TIMER LIST PEAK DETECTOR
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  974 001a 7047     		bx	lr
  975              	.L86:
  976              		.align	2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 37
 
 
  977              	.L85:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
 1027:uCOS-III\Source/os_tmr.c ****     p_spoke = &OSCfg_TmrWheel[spoke];
  1004              		.loc 1 1027 0
  1005 000e 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 38
 
 
  1006              	.LVL91:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1043              		.loc 1 1044 0
  1044 003a 0022     		movs	r2, #0
  1045 003c 0261     		str	r2, [r0, #16]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 39
 
 
 1045:uCOS-III\Source/os_tmr.c ****     p_tmr->PrevPtr = (OS_TMR *)0;
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1094 0010 0025     		movs	r5, #0
  1095 0012 42E0     		b	.L94
  1096              	.L93:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 40
 
 
  235:uCOS-III\Source/os_tmr.c ****        *p_err = OS_ERR_TMR_INVALID;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1141              		.loc 1 258 0
  1142 0054 0DF10600 		add	r0, sp, #6
  1143 0058 FFF7FEFF 		bl	OSSchedUnlock
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 41
 
 
  1144              	.LVL104:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1186              	.L96:
  278:uCOS-III\Source/os_tmr.c ****             *p_err   = OS_ERR_TMR_INVALID_STATE;
  1187              		.loc 1 278 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 42
 
 
  1188 008c 0DF10600 		add	r0, sp, #6
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1237 000a 47F24333 		movw	r3, #29507
  1238 000e 0B80     		strh	r3, [r1]	@ movhi
  439:uCOS-III\Source/os_tmr.c ****     }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 43
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 43
 
 
  1239              		.loc 1 439 0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1284 0050 0023     		movs	r3, #0
  1285 0052 3380     		strh	r3, [r6]	@ movhi
  1286              	.LVL122:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 44
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 44
 
 
  464:uCOS-III\Source/os_tmr.c ****              break;
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1329              	.LVL131:
  483:uCOS-III\Source/os_tmr.c ****              success = DEF_FALSE;
  1330              		.loc 1 483 0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 45
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 45
 
 
  1331 008a 47F24133 		movw	r3, #29505
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1380              		.loc 1 628 0
  1381 0012 0024     		movs	r4, #0
  1382 0014 5BE0     		b	.L118
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 46
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 46
 
 
  1383              	.LVL135:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1429 0056 1BE0     		b	.L128
  1430              	.L126:
  653:uCOS-III\Source/os_tmr.c ****                       if (p_fnct != (OS_TMR_CALLBACK_PTR)0) {              /* ... if available     
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 47
 
 
  1431              		.loc 1 653 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1476 0088 45F62563 		movw	r3, #24101
  1477 008c 3B80     		strh	r3, [r7]	@ movhi
  676:uCOS-III\Source/os_tmr.c ****              }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 48
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 48
 
 
  1478              		.loc 1 676 0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1520 00c0 0DF10600 		add	r0, sp, #6
  1521 00c4 FFF7FEFF 		bl	OSSchedUnlock
  1522              	.LVL160:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 49
 
 
  697:uCOS-III\Source/os_tmr.c ****              success = DEF_FALSE;
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1556              		.cfi_offset 4, -20
  1557              		.cfi_offset 5, -16
  1558              		.cfi_offset 6, -12
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 50
 
 
  1559              		.cfi_offset 7, -8
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1589 002c B3FBF1F2 		udiv	r2, r3, r1
  1590 0030 01FB1233 		mls	r3, r1, r2, r3
  1591              	.LVL168:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 51
 
 
 1090:uCOS-III\Source/os_tmr.c ****         p_spoke  = &OSCfg_TmrWheel[spoke];
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1621 0050 2046     		mov	r0, r4
  1622 0052 FFF7FEFF 		bl	OS_TmrUnlink
  1623              	.LVL174:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 52
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 52
 
 
 1099:uCOS-III\Source/os_tmr.c ****                         OS_TmrLink(p_tmr,
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1666 0080 002D     		cmp	r5, #0
  1667 0082 DDD0     		beq	.L142
 1116:uCOS-III\Source/os_tmr.c ****             }
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 53
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 53
 
 
 1117:uCOS-III\Source/os_tmr.c ****         }
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1712 0004 0400     		.2byte	0x4
  1713 0006 00000000 		.4byte	.Ldebug_abbrev0
  1714 000a 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 54
 
 
  1715 000b 01       		.uleb128 0x1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1769 0080 04       		.byte	0x4
  1770 0081 07       		.byte	0x7
  1771 0082 E90F0000 		.4byte	.LASF10
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 55
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 55
 
 
  1772 0086 04       		.uleb128 0x4
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1826 00f0 03       		.uleb128 0x3
  1827 00f1 04       		.byte	0x4
  1828 00f2 07       		.byte	0x7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 56
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 56
 
 
  1829 00f3 6E100000 		.4byte	.LASF20
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1883 0168 02       		.uleb128 0x2
  1884 0169 370F0000 		.4byte	.LASF32
  1885 016d 04       		.byte	0x4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 57
 
 
  1886 016e 42       		.byte	0x42
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1940 01e6 04       		.byte	0x4
  1941 01e7 5B       		.byte	0x5b
  1942 01e8 5B000000 		.4byte	0x5b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 58
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 58
 
 
  1943 01ec 0A       		.uleb128 0xa
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  1997 026a 803E     		.2byte	0x3e80
  1998 026c 0C       		.uleb128 0xc
  1999 026d C2000000 		.4byte	.LASF60
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 59
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 59
 
 
  2000 0271 6842     		.2byte	0x4268
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2054 02ef BE56     		.2byte	0x56be
  2055 02f1 0C       		.uleb128 0xc
  2056 02f2 110C0000 		.4byte	.LASF79
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 60
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 60
 
 
  2057 02f6 BF56     		.2byte	0x56bf
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2111 0374 895E     		.2byte	0x5e89
  2112 0376 0C       		.uleb128 0xc
  2113 0377 40080000 		.4byte	.LASF98
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 61
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 61
 
 
  2114 037b 8A5E     		.2byte	0x5e8a
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2168 03f9 9265     		.2byte	0x6592
  2169 03fb 0C       		.uleb128 0xc
  2170 03fc A0090000 		.4byte	.LASF117
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 62
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 62
 
 
  2171 0400 9365     		.2byte	0x6593
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2225 047e 2D6E     		.2byte	0x6e2d
  2226 0480 0C       		.uleb128 0xc
  2227 0481 E8110000 		.4byte	.LASF136
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 63
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 63
 
 
  2228 0485 2E6E     		.2byte	0x6e2e
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2282 0503 5671     		.2byte	0x7156
  2283 0505 0C       		.uleb128 0xc
  2284 0506 5E0F0000 		.4byte	.LASF155
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 64
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 64
 
 
  2285 050a 5771     		.2byte	0x7157
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2339 0588 1472     		.2byte	0x7214
  2340 058a 0C       		.uleb128 0xc
  2341 058b B4100000 		.4byte	.LASF174
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 65
 
 
  2342 058f 7572     		.2byte	0x7275
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2396 060d 4473     		.2byte	0x7344
  2397 060f 0C       		.uleb128 0xc
  2398 0610 DF070000 		.4byte	.LASF193
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 66
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 66
 
 
  2399 0614 4573     		.2byte	0x7345
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2453 068f 4103     		.2byte	0x341
  2454 0691 8C0C0000 		.4byte	0xc8c
  2455 0695 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 67
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 67
 
 
  2456 0696 0E       		.uleb128 0xe
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2510 070b 0E       		.uleb128 0xe
  2511 070c 8B140000 		.4byte	.LASF218
  2512 0710 05       		.byte	0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 68
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 68
 
 
  2513 0711 5803     		.2byte	0x358
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2567 0787 740C0000 		.4byte	0xc74
  2568 078b 14       		.byte	0x14
  2569 078c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 69
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 69
 
 
  2570 078d 95080000 		.4byte	.LASF227
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2624 0802 7B070000 		.4byte	.LASF236
  2625 0806 05       		.byte	0x5
  2626 0807 C903     		.2byte	0x3c9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 70
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 70
 
 
  2627 0809 C0010000 		.4byte	0x1c0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2681 087d D6010000 		.4byte	0x1d6
  2682 0881 50       		.byte	0x50
  2683 0882 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 71
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 71
 
 
  2684 0883 3C150000 		.4byte	.LASF244
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2738 08f8 A1080000 		.4byte	.LASF251
  2739 08fc 05       		.byte	0x5
  2740 08fd EF03     		.2byte	0x3ef
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 72
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 72
 
 
  2741 08ff 47010000 		.4byte	0x147
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2795 0974 3C010000 		.4byte	0x13c
  2796 0978 A0       		.byte	0xa0
  2797 0979 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 73
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 73
 
 
  2798 097a 660D0000 		.4byte	.LASF261
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2852 09ef 1E100000 		.4byte	.LASF270
  2853 09f3 05       		.byte	0x5
  2854 09f4 1F04     		.2byte	0x41f
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 74
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 74
 
 
  2855 09f6 740C0000 		.4byte	0xc74
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2909 0a6c 02090000 		.4byte	.LASF275
  2910 0a70 05       		.byte	0x5
  2911 0a71 2E04     		.2byte	0x42e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 75
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 75
 
 
  2912 0a73 160A0000 		.4byte	0xa16
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  2966 0ae8 C0010000 		.4byte	0x1c0
  2967 0aec 2A       		.byte	0x2a
  2968 0aed 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 76
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 76
 
 
  2969 0aee ED020000 		.4byte	.LASF265
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3023 0b63 AD090000 		.4byte	.LASF225
  3024 0b67 05       		.byte	0x5
  3025 0b68 DE02     		.2byte	0x2de
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 77
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 77
 
 
  3026 0b6a 7A0C0000 		.4byte	0xc7a
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3080 0bde E902     		.2byte	0x2e9
  3081 0be0 0C0C0000 		.4byte	0xc0c
  3082 0be4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 78
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 78
 
 
  3083 0be5 C20F0000 		.4byte	.LASF293
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3137 0c5a 05030000 		.4byte	.LASF266
  3138 0c5e 05       		.byte	0x5
  3139 0c5f 0503     		.2byte	0x305
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 79
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 79
 
 
  3140 0c61 BA000000 		.4byte	0xba
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3194 0cd6 AE0C0000 		.4byte	0xcae
  3195 0cda 00000000 		.4byte	.LLST0
  3196 0cde 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 80
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 80
 
 
  3197 0cdf 8E090000 		.4byte	.LASF299
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3251 0d4e 6E160000 		.4byte	0x166e
  3252 0d52 5D0D0000 		.4byte	0xd5d
  3253 0d56 17       		.uleb128 0x17
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 81
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 81
 
 
  3254 0d57 01       		.uleb128 0x1
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3308 0dc3 C4120000 		.4byte	.LASF303
  3309 0dc7 01       		.byte	0x1
  3310 0dc8 0702     		.2byte	0x207
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 82
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 82
 
 
  3311 0dca C0010000 		.4byte	0x1c0
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3365 0e4a B4000000 		.4byte	.LFE1-.LFB1
  3366 0e4e 01       		.uleb128 0x1
  3367 0e4f 9C       		.byte	0x9c
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 83
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 83
 
 
  3368 0e50 090F0000 		.4byte	0xf09
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3422 0ed7 AE030000 		.4byte	.LLST15
  3423 0edb 19       		.uleb128 0x19
  3424 0edc 64000000 		.4byte	.LVL48
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 84
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 84
 
 
  3425 0ee0 7A160000 		.4byte	0x167a
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3479 0f53 01       		.byte	0x1
  3480 0f54 3103     		.2byte	0x331
  3481 0f56 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 85
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 85
 
 
  3482 0f5a 00010000 		.4byte	.LFE10-.LFB10
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3536 0fbb 17       		.uleb128 0x17
  3537 0fbc 02       		.uleb128 0x2
  3538 0fbd 7D       		.byte	0x7d
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 86
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 86
 
 
  3539 0fbe 14       		.sleb128 20
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3593 1019 D70F0000 		.4byte	0xfd7
  3594 101d 14       		.uleb128 0x14
  3595 101e D9120000 		.4byte	.LASF318
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 87
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 87
 
 
  3596 1022 01       		.byte	0x1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3650 10a3 21       		.uleb128 0x21
  3651 10a4 76020000 		.4byte	.LASF317
  3652 10a8 01       		.byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 88
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 88
 
 
  3653 10a9 FB03     		.2byte	0x3fb
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3707 112b D8       		.byte	0xd8
  3708 112c 37000000 		.4byte	0x37
  3709 1130 C4050000 		.4byte	.LLST30
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 89
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 89
 
 
  3710 1134 16       		.uleb128 0x16
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3764 1197 00       		.byte	0
  3765 1198 16       		.uleb128 0x16
  3766 1199 6A000000 		.4byte	.LVL107
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 90
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 90
 
 
  3767 119d F50D0000 		.4byte	0xdf5
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3821 1204 01       		.byte	0x1
  3822 1205 A501     		.2byte	0x1a5
  3823 1207 AE0C0000 		.4byte	0xcae
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 91
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 91
 
 
  3824 120b F0050000 		.4byte	.LLST31
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3878 127a 01       		.uleb128 0x1
  3879 127b 51       		.byte	0x51
  3880 127c 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 92
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 92
 
 
  3881 127d 30       		.byte	0x30
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3935 12dd 17       		.uleb128 0x17
  3936 12de 01       		.uleb128 0x1
  3937 12df 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 93
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 93
 
 
  3938 12e0 02       		.uleb128 0x2
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  3992 135f CA0F0000 		.4byte	.LASF325
  3993 1363 01       		.byte	0x1
  3994 1364 6602     		.2byte	0x266
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 94
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 94
 
 
  3995 1366 37000000 		.4byte	0x37
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4049 13c9 17       		.uleb128 0x17
  4050 13ca 01       		.uleb128 0x1
  4051 13cb 50       		.byte	0x50
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 95
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 95
 
 
  4052 13cc 02       		.uleb128 0x2
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4106 142d 01       		.uleb128 0x1
  4107 142e 9C       		.byte	0x9c
  4108 142f 72150000 		.4byte	0x1572
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 96
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 96
 
 
  4109 1433 13       		.uleb128 0x13
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4163 14b9 02       		.uleb128 0x2
  4164 14ba 91       		.byte	0x91
  4165 14bb 60       		.sleb128 -32
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 97
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 97
 
 
  4166 14bc 14       		.uleb128 0x14
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4220 151b 16       		.uleb128 0x16
  4221 151c 56000000 		.4byte	.LVL174
  4222 1520 7F100000 		.4byte	0x107f
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 98
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 98
 
 
  4223 1524 2F150000 		.4byte	0x152f
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4277 157f 39130000 		.4byte	.LASF335
  4278 1583 05       		.byte	0x5
  4279 1584 DA04     		.2byte	0x4da
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 99
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 99
 
 
  4280 1586 AE0C0000 		.4byte	0xcae
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4334 160a 05       		.byte	0x5
  4335 160b 1905     		.2byte	0x519
  4336 160d EF150000 		.4byte	0x15ef
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 100
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 100
 
 
  4337 1611 28       		.uleb128 0x28
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4391 1692 2B       		.uleb128 0x2b
  4392 1693 07000000 		.4byte	.LASF355
  4393 1697 07000000 		.4byte	.LASF355
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 101
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 101
 
 
  4394 169b 05       		.byte	0x5
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4448 0027 03       		.uleb128 0x3
  4449 0028 0E       		.uleb128 0xe
  4450 0029 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 102
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 102
 
 
  4451 002a 00       		.byte	0
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4505 0060 13       		.uleb128 0x13
  4506 0061 00       		.byte	0
  4507 0062 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 103
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 103
 
 
  4508 0063 0A       		.uleb128 0xa
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4562 0099 0E       		.uleb128 0xe
  4563 009a 3A       		.uleb128 0x3a
  4564 009b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 104
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 104
 
 
  4565 009c 3B       		.uleb128 0x3b
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4619 00d2 49       		.uleb128 0x49
  4620 00d3 13       		.uleb128 0x13
  4621 00d4 11       		.uleb128 0x11
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 105
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 105
 
 
  4622 00d5 01       		.uleb128 0x1
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4676 010c 00       		.byte	0
  4677 010d 00       		.byte	0
  4678 010e 16       		.uleb128 0x16
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 106
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 106
 
 
  4679 010f 898201   		.uleb128 0x4109
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4733 014e 40       		.uleb128 0x40
  4734 014f 18       		.uleb128 0x18
  4735 0150 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 107
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 107
 
 
  4736 0152 19       		.uleb128 0x19
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4790 0189 49       		.uleb128 0x49
  4791 018a 13       		.uleb128 0x13
  4792 018b 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 108
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 108
 
 
  4793 018c 17       		.uleb128 0x17
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4847 01c2 0B       		.uleb128 0xb
  4848 01c3 3B       		.uleb128 0x3b
  4849 01c4 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 109
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 109
 
 
  4850 01c5 49       		.uleb128 0x49
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4904 01fc 0B       		.uleb128 0xb
  4905 01fd 49       		.uleb128 0x49
  4906 01fe 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 110
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 110
 
 
  4907 01ff 02       		.uleb128 0x2
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  4961 0239 00       		.byte	0
  4962 023a 28       		.uleb128 0x28
  4963 023b 34       		.uleb128 0x34
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 111
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 111
 
 
  4964 023c 00       		.byte	0
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5018 0013 0400     		.2byte	0x4
  5019 0015 F3       		.byte	0xf3
  5020 0016 01       		.uleb128 0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 112
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 112
 
 
  5021 0017 50       		.byte	0x50
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5075 009d 9F       		.byte	0x9f
  5076 009e 92000000 		.4byte	.LVL17
  5077 00a2 96000000 		.4byte	.LVL18
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 113
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 113
 
 
  5078 00a6 0200     		.2byte	0x2
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5132 0129 02000000 		.4byte	.LVL24
  5133 012d 24000000 		.4byte	.LVL25
  5134 0131 0200     		.2byte	0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 114
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 114
 
 
  5135 0133 30       		.byte	0x30
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5189 01b7 52       		.byte	0x52
  5190 01b8 9F       		.byte	0x9f
  5191 01b9 1A000000 		.4byte	.LVL35
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 115
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 115
 
 
  5192 01bd 22000000 		.4byte	.LVL37
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5246 023d 74       		.byte	0x74
  5247 023e 20       		.sleb128 32
  5248 023f 91000000 		.4byte	.LVL52-1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 116
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 116
 
 
  5249 0243 B4000000 		.4byte	.LFE1
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5303 02bd 50000000 		.4byte	.LVL45
  5304 02c1 0100     		.2byte	0x1
  5305 02c3 53       		.byte	0x53
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 117
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 117
 
 
  5306 02c4 50000000 		.4byte	.LVL45
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5360 0346 B4000000 		.4byte	.LFE1
  5361 034a 0200     		.2byte	0x2
  5362 034c 7D       		.byte	0x7d
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 118
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 118
 
 
  5363 034d 04       		.sleb128 4
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5417 03d4 00000000 		.4byte	0
  5418              	.LLST16:
  5419 03d8 04000000 		.4byte	.LVL57
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 119
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 119
 
 
  5420 03dc 12000000 		.4byte	.LVL60
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5474 0464 56000000 		.4byte	.LVL67
  5475 0468 60000000 		.4byte	.LVL68
  5476 046c 0100     		.2byte	0x1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 120
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 120
 
 
  5477 046e 53       		.byte	0x53
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5531 04fa 00000000 		.4byte	0
  5532              	.LLST24:
  5533 04fe 00000000 		.4byte	.LVL85
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 121
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 121
 
 
  5534 0502 04000000 		.4byte	.LVL86
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5588 058f 9F       		.byte	0x9f
  5589 0590 00000000 		.4byte	0
  5590 0594 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 122
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 122
 
 
  5591              	.LLST29:
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5645              	.LLST32:
  5646 061c 00000000 		.4byte	.LVL116
  5647 0620 29000000 		.4byte	.LVL118-1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 123
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 123
 
 
  5648 0624 0100     		.2byte	0x1
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5702 06a8 0100     		.2byte	0x1
  5703 06aa 51       		.byte	0x51
  5704 06ab 2F000000 		.4byte	.LVL139-1
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 124
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 124
 
 
  5705 06af DC000000 		.4byte	.LFE6
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5759 072e CE000000 		.4byte	.LVL161
  5760 0732 0100     		.2byte	0x1
  5761 0734 57       		.byte	0x57
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 125
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 125
 
 
  5762 0735 CE000000 		.4byte	.LVL161
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5816 07bb 00000000 		.4byte	0
  5817 07bf 00000000 		.4byte	0
  5818              	.LLST40:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 126
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 126
 
 
  5819 07c3 00000000 		.4byte	.LVL162
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5873              	.LLST45:
  5874 0852 34000000 		.4byte	.LVL168
  5875 0856 3E000000 		.4byte	.LVL171
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 127
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 127
 
 
  5876 085a 0100     		.2byte	0x1
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5930              	.Ldebug_ranges0:
  5931 0000 00000000 		.4byte	.LFB3
  5932 0004 B4000000 		.4byte	.LFE3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 128
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 128
 
 
  5933 0008 00000000 		.4byte	.LFB5
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5973      54585F53 
  5973      575F4354 
  5973      5200
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 129
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 129
 
 
  5974              	.LASF321:
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  5999      52525F49 
  5999      00
  6000              	.LASF68:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 130
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 130
 
 
  6001 00d4 4F535F45 		.ascii	"OS_ERR_J\000"
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6027      00
  6028              	.LASF359:
  6029 0152 75434F53 		.ascii	"uCOS-III\\Source\\os_tmr.c\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 131
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 131
 
 
  6029      2D494949 
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6051 0208 466C6167 		.ascii	"FlagsOpt\000"
  6051      734F7074 
  6051      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 132
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 132
 
 
  6052              	.LASF153:
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6073      41534B5F 
  6073      4E4F545F 
  6073      53555350 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 133
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 133
 
 
  6074              	.LASF149:
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6095      4E56414C 
  6095      49445F53 
  6096              	.LASF234:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 134
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 134
 
 
  6097 038b 50656E64 		.ascii	"PendOn\000"
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6117      00
  6118              	.LASF326:
  6119 043b 4F53546D 		.ascii	"OSTmrStart\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 135
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 135
 
 
  6119      72537461 
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6143      7253746F 
  6143      7000
  6144              	.LASF108:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 136
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 136
 
 
  6145 04f4 4F535F45 		.ascii	"OS_ERR_POST_NULL_PTR\000"
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6163      494E4700 
  6164              	.LASF263:
  6165 05bc 53746B55 		.ascii	"StkUsed\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 137
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 137
 
 
  6165      73656400 
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6188              	.LASF164:
  6189 0673 4F535F45 		.ascii	"OS_ERR_TCB_INVALID\000"
  6189      52525F54 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 138
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 138
 
 
  6189      43425F49 
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6211      6500
  6212              	.LASF169:
  6213 0785 4F535F45 		.ascii	"OS_ERR_TLS_DESTRUCT_ASSIGNED\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 139
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 139
 
 
  6213      52525F54 
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6235 0840 4F535F45 		.ascii	"OS_ERR_OS_RUNNING\000"
  6235      52525F4F 
  6235      535F5255 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 140
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 140
 
 
  6235      4E4E494E 
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6257      49445F42 
  6258              	.LASF275:
  6259 0902 43616C6C 		.ascii	"CallbackPtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 141
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 141
 
 
  6259      6261636B 
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6283 09ad 50726576 		.ascii	"PrevPtr\000"
  6283      50747200 
  6284              	.LASF2:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 142
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 142
 
 
  6285 09b5 63686172 		.ascii	"char\000"
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6309      52525F53 
  6309      5441545F 
  6309      5052494F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 143
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 143
 
 
  6309      5F494E56 
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6334              	.LASF269:
  6335 0b06 6F735F74 		.ascii	"os_tick_spoke\000"
  6335      69636B5F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 144
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 144
 
 
  6335      73706F6B 
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6359 0bb7 4F535F45 		.ascii	"OS_ERR_OBJ_PTR_NULL\000"
  6359      52525F4F 
  6359      424A5F50 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 145
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 145
 
 
  6359      54525F4E 
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6382              	.LASF173:
  6383 0c7d 4F535F45 		.ascii	"OS_ERR_TICK_WHEEL_SIZE\000"
  6383      52525F54 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 146
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 146
 
 
  6383      49434B5F 
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6403      52525F54 
  6403      4C535F49 
  6403      535200
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 147
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 147
 
 
  6404              	.LASF146:
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6427      52525F52 
  6427      4F554E44 
  6427      5F524F42 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 148
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 148
 
 
  6427      494E5F31 
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6451 0ebb 4F535F45 		.ascii	"OS_ERR_SCHED_UNLOCK_ISR\000"
  6451      52525F53 
  6451      43484544 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 149
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 149
 
 
  6451      5F554E4C 
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6473 0f82 50656E64 		.ascii	"PendList\000"
  6473      4C697374 
  6473      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 150
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 150
 
 
  6474              	.LASF95:
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6499      00
  6500              	.LASF134:
  6501 1027 4F535F45 		.ascii	"OS_ERR_STAT_STK_SIZE_INVALID\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 151
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 151
 
 
  6501      52525F53 
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6523      494D4954 
  6523      5F494E56 
  6524              	.LASF356:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 152
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 152
 
 
  6525 10e1 4F535461 		.ascii	"OSTaskSemPend\000"
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6547 1184 4F535F45 		.ascii	"OS_ERR_TIMEOUT\000"
  6547      52525F54 
  6547      494D454F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 153
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 153
 
 
  6547      555400
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6571      65507472 
  6571      00
  6572              	.LASF360:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 154
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 154
 
 
  6573 122d 433A5C55 		.ascii	"C:\\Users\\jorti\\Documents\\FH_Technikum\\MES1\\Sy"
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6594              	.LASF143:
  6595 131c 4F535F45 		.ascii	"OS_ERR_TASK_DEL\000"
  6595      52525F54 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 155
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 155
 
 
  6595      41534B5F 
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6619      52525F4E 
  6619      4F4E4500 
  6620              	.LASF302:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 156
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 156
 
 
  6621 13cb 4F53546D 		.ascii	"OSTmrStateGet\000"
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6643      656C5369 
  6643      7A6500
  6644              	.LASF104:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 157
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 157
 
 
  6645 1470 4F535F45 		.ascii	"OS_ERR_PEND_DEL\000"
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6667      52525F54 
  6667      41534B5F 
  6667      44454C5F 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 158
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 158
 
 
  6667      49444C45 
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 1
  6689 15d7 4D617463 		.ascii	"Match\000"
  6689      6800
  6690              	.LASF298:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccmAuSDF.s 			page 159
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccI7fssk.s 			page 159
 
 
  6691 15dd 705F746D 		.ascii	"p_tmr\000"

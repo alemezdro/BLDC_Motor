@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
   28:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
   29:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * For       : ARMv7M Cortex-M3
   30:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Mode      : Thumb2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 2
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 2
 
 
   31:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Toolchain : GNU C Compiler
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
   45              	.L5:
   46              		.align	2
   47              	.L4:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 3
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 3
 
 
   48 000c 00000000 		.word	OS_AppIdleTaskHookPtr
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
   76              	.LVL2:
   77              	.L8:
   94:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c ****         *p_stk++ = (CPU_STK)0u;
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 4
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 4
 
 
   78              		.loc 1 94 0 discriminator 3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  103:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *                                         STATISTIC TASK HOOK
  104:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  105:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Description: This function is called every second by uC/OS-III's statistics task.  This allows yo
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 5
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 5
 
 
  106:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *              application to add functionality to the statistics task.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  128:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  129:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Description: This function is called when a task is created.
  130:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 6
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 6
 
 
  131:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Arguments  : p_tcb        Pointer to the task control block of the task being created.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  152:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *                                           TASK DELETION HOOK
  153:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  154:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Description: This function is called when a task is deleted.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 7
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 7
 
 
  155:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  176:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** ***************************************************************************************************
  177:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *                                            TASK RETURN HOOK
  178:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 8
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 8
 
 
  179:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Description: This function is called if a task accidentally returns.  In other words, a task shou
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  200:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** /*$PAGE*/
  201:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** /*
  202:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** ***************************************************************************************************
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 9
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 9
 
 
  203:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *                                       INITIALIZE A TASK'S STACK
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  266              		.loc 1 243 0
  267 0008 4FF08074 		mov	r4, #16777216
  268 000c 42F8044C 		str	r4, [r2, #-4]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 10
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 10
 
 
  269              	.LVL15:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  311 0056 42F8303C 		str	r3, [r2, #-48]
  312              	.LVL28:
  256:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c ****     *--p_stk = (CPU_STK)0x07070707u;                        /* R7                                  
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 11
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 11
 
 
  313              		.loc 1 256 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  273:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Arguments  : None.
  274:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  275:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Note(s)    : 1) Interrupts are disabled during this call.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 12
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 12
 
 
  276:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *              2) It is assumed that the global pointer 'OSTCBHighRdyPtr' points to the TCB of the 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  378 001a D2F89830 		ldr	r3, [r2, #152]
  379 001e C31A     		subs	r3, r0, r3
  380 0020 C2F89430 		str	r3, [r2, #148]
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 13
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 13
 
 
  303:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c ****         OSTCBCurPtr->CyclesTotal += (OS_CYCLES)OSTCBCurPtr->CyclesDelta;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  332:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  333:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Arguments  : None.
  334:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 14
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 14
 
 
  335:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Note(s)    : 1) This function is assumed to be called from the Tick ISR.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  357:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Arguments  : None.
  358:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** *
  359:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** * Note(s)    : 1) This function MUST be placed on entry 15 of the Cortex-M3 vector table.
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 15
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 15
 
 
  360:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** ***************************************************************************************************
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  477              		.type	OS_CPU_SysTickInit, %function
  478              	OS_CPU_SysTickInit:
  479              	.LFB11:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 16
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 16
 
 
  375:uCOS-III\Ports\ARM-Cortex-M3\Generic\GNU/os_cpu_c.c **** }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  502              	.LVL46:
  503 0012 1A68     		ldr	r2, [r3]
  504              	.LVL47:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 17
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 17
 
 
  505 0014 42F00502 		orr	r2, r2, #5
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  556 003a EC060000 		.4byte	.LASF1
  557 003e 02       		.uleb128 0x2
  558 003f 06020000 		.4byte	.LASF3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 18
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 18
 
 
  559 0043 02       		.byte	0x2
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  613 00a9 05       		.uleb128 0x5
  614 00aa 69000000 		.4byte	0x69
  615 00ae 06       		.uleb128 0x6
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 19
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 19
 
 
  616 00af 04       		.byte	0x4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  670 011c 02       		.uleb128 0x2
  671 011d 48040000 		.4byte	.LASF24
  672 0121 03       		.byte	0x3
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 20
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 20
 
 
  673 0122 C7       		.byte	0xc7
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  727 019a 04       		.byte	0x4
  728 019b 49       		.byte	0x49
  729 019c 3E000000 		.4byte	0x3e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 21
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 21
 
 
  730 01a0 02       		.uleb128 0x2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  784 0217 0D       		.uleb128 0xd
  785 0218 E8070000 		.4byte	.LASF45
  786 021c 05       		.byte	0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 22
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 22
 
 
  787 021d 4403     		.2byte	0x344
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  841 0292 9002     		.2byte	0x290
  842 0294 98020000 		.4byte	0x298
  843 0298 0C       		.uleb128 0xc
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 23
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 23
 
 
  844 0299 00000000 		.4byte	.LASF56
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  898 030e 27040000 		.4byte	.LASF64
  899 0312 05       		.byte	0x5
  900 0313 BA03     		.2byte	0x3ba
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 24
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 24
 
 
  901 0315 E3060000 		.4byte	0x6e3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  955 038a DE000000 		.4byte	0xde
  956 038e 38       		.byte	0x38
  957 038f 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 25
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 25
 
 
  958 0390 4F707400 		.ascii	"Opt\000"
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1012 0404 0A080000 		.4byte	.LASF43
  1013 0408 05       		.byte	0x5
  1014 0409 DD03     		.2byte	0x3dd
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 26
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 26
 
 
  1015 040b C6000000 		.4byte	0xc6
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1069 0480 69010000 		.4byte	0x169
  1070 0484 8A       		.byte	0x8a
  1071 0485 0D       		.uleb128 0xd
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 27
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 27
 
 
  1072 0486 26080000 		.4byte	.LASF89
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1126 04fb 15000000 		.4byte	.LASF98
  1127 04ff 05       		.byte	0x5
  1128 0500 0504     		.2byte	0x405
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 28
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 28
 
 
  1129 0502 DE000000 		.4byte	0xde
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1183 0577 74010000 		.4byte	0x174
  1184 057b 06       		.byte	0x6
  1185 057c 00       		.byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 29
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 29
 
 
  1186 057d 0B       		.uleb128 0xb
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1240 05f2 2C050000 		.4byte	.LASF113
  1241 05f6 05       		.byte	0x5
  1242 05f7 E502     		.2byte	0x2e5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 30
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 30
 
 
  1243 05f9 1C010000 		.4byte	0x11c
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1297 066e E3060000 		.4byte	0x6e3
  1298 0672 04       		.byte	0x4
  1299 0673 0D       		.uleb128 0xd
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 31
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 31
 
 
  1300 0674 FC050000 		.4byte	.LASF121
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1354 06e9 06       		.uleb128 0x6
  1355 06ea 04       		.byte	0x4
  1356 06eb D7010000 		.4byte	0x1d7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 32
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 32
 
 
  1357 06ef 06       		.uleb128 0x6
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1411 0765 89       		.byte	0x89
  1412 0766 00000000 		.4byte	.LFB4
  1413 076a 10000000 		.4byte	.LFE4-.LFB4
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 33
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 33
 
 
  1414 076e 01       		.uleb128 0x1
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1468 07d4 F5070000 		.4byte	0x7f5
  1469 07d8 15       		.uleb128 0x15
  1470 07d9 CA020000 		.4byte	.LASF130
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 34
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 34
 
 
  1471 07dd 01       		.byte	0x1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1525 084f DE000000 		.4byte	0xde
  1526 0853 0C010000 		.4byte	.LLST8
  1527 0857 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 35
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 35
 
 
  1528 0858 6F707400 		.ascii	"opt\000"
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1582 08d7 2F020000 		.4byte	.LLST11
  1583 08db 1D       		.uleb128 0x1d
  1584 08dc 06000000 		.4byte	.LVL38
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 36
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 36
 
 
  1585 08e0 EE090000 		.4byte	0x9ee
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1639 0966 5204     		.2byte	0x452
  1640 0968 B4060000 		.4byte	0x6b4
  1641 096c 23       		.uleb128 0x23
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 37
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 37
 
 
  1642 096d 3B050000 		.4byte	.LASF148
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1696 09ef 23010000 		.4byte	.LASF158
  1697 09f3 23010000 		.4byte	.LASF158
  1698 09f7 02       		.byte	0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 38
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 38
 
 
  1699 09f8 7C01     		.2byte	0x17c
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1753 0023 0B       		.uleb128 0xb
  1754 0024 0B       		.uleb128 0xb
  1755 0025 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 39
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 39
 
 
  1756 0026 0B       		.uleb128 0xb
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1810 005c 00       		.byte	0
  1811 005d 0A       		.uleb128 0xa
  1812 005e 0F       		.uleb128 0xf
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 40
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 40
 
 
  1813 005f 00       		.byte	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1867 0095 0B       		.uleb128 0xb
  1868 0096 3B       		.uleb128 0x3b
  1869 0097 05       		.uleb128 0x5
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 41
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 41
 
 
  1870 0098 49       		.uleb128 0x49
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1924 00cf 3A       		.uleb128 0x3a
  1925 00d0 0B       		.uleb128 0xb
  1926 00d1 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 42
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 42
 
 
  1927 00d2 0B       		.uleb128 0xb
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  1981 0109 49       		.uleb128 0x49
  1982 010a 13       		.uleb128 0x13
  1983 010b 02       		.uleb128 0x2
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 43
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 43
 
 
  1984 010c 17       		.uleb128 0x17
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2038 0148 0B       		.uleb128 0xb
  2039 0149 49       		.uleb128 0x49
  2040 014a 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 44
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 44
 
 
  2041 014b 02       		.uleb128 0x2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2095 0182 13       		.uleb128 0x13
  2096 0183 02       		.uleb128 0x2
  2097 0184 18       		.uleb128 0x18
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 45
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 45
 
 
  2098 0185 00       		.byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2152 01bf 19       		.uleb128 0x19
  2153 01c0 01       		.uleb128 0x1
  2154 01c1 13       		.uleb128 0x13
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 46
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 46
 
 
  2155 01c2 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2209 01f8 3A       		.uleb128 0x3a
  2210 01f9 0B       		.uleb128 0xb
  2211 01fa 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 47
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 47
 
 
  2212 01fb 05       		.uleb128 0x5
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2266 002e 14000000 		.4byte	.LVL4
  2267 0032 0300     		.2byte	0x3
  2268 0034 72       		.byte	0x72
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 48
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 48
 
 
  2269 0035 04       		.sleb128 4
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2323 00b7 50       		.byte	0x50
  2324 00b8 16000000 		.4byte	.LVL17
  2325 00bc 88000000 		.4byte	.LFE7
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 49
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 49
 
 
  2326 00c0 0200     		.2byte	0x2
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2380 0143 04       		.sleb128 4
  2381 0144 00000000 		.4byte	0
  2382 0148 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 50
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 50
 
 
  2383              	.LLST10:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2437 01c0 9F       		.byte	0x9f
  2438 01c1 42000000 		.4byte	.LVL25
  2439 01c5 4A000000 		.4byte	.LVL26
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 51
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 51
 
 
  2440 01c9 0300     		.2byte	0x3
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2494 0243 0100     		.2byte	0x1
  2495 0245 50       		.byte	0x50
  2496 0246 00000000 		.4byte	0
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 52
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 52
 
 
  2497 024a 00000000 		.4byte	0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2550 0048 00000000 		.4byte	.LFB8
  2551 004c 40000000 		.4byte	.LFE8-.LFB8
  2552 0050 00000000 		.4byte	.LFB9
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 53
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 53
 
 
  2553 0054 10000000 		.4byte	.LFE9-.LFB9
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2596      3200
  2597              	.LASF163:
  2598 0027 75434F53 		.ascii	"uCOS-III\\Ports\\ARM-Cortex-M3\\Generic\\GNU\\os_cp"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 54
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 54
 
 
  2598      2D494949 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2623      696D6500 
  2624              	.LASF101:
  2625 00de 4462674E 		.ascii	"DbgNextPtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 55
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 55
 
 
  2625      65787450 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2649      6E646C65 
  2650              	.LASF91:
  2651 018b 43747853 		.ascii	"CtxSwCtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 56
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 56
 
 
  2651      77437472 
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2679 0220 53746B42 		.ascii	"StkBasePtr\000"
  2679      61736550 
  2679      747200
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 57
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 57
 
 
  2680              	.LASF36:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2703      50726576 
  2703      50747200 
  2704              	.LASF159:
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 58
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 58
 
 
  2705 0324 4350555F 		.ascii	"CPU_SR_Restore\000"
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2728              	.LASF135:
  2729 03c2 705F7374 		.ascii	"p_stk_limit\000"
  2729      6B5F6C69 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 59
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 59
 
 
  2729      6D697400 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2757 044f 6C6F6E67 		.ascii	"long long int\000"
  2757      206C6F6E 
  2757      6720696E 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 60
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 60
 
 
  2757      7400
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2783      6C746100 
  2784              	.LASF61:
  2785 04f8 5469636B 		.ascii	"TickNextPtr\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 61
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 61
 
 
  2785      4E657874 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2811 0594 4379636C 		.ascii	"CyclesTotalPrev\000"
  2811      6573546F 
  2811      74616C50 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 62
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 62
 
 
  2811      72657600 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2836              	.LASF125:
  2837 063e 4F534964 		.ascii	"OSIdleTaskHook\000"
  2837      6C655461 
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 63
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 63
 
 
  2837      736B486F 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2863      736B4465 
  2863      6C486F6F 
  2863      6B00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 64
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 64
 
 
  2864              	.LASF134:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2885      00
  2886              	.LASF157:
  2887 07bb 4350555F 		.ascii	"CPU_TS_TmrRd\000"
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 65
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 65
 
 
  2887      54535F54 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 1
  2913      656E645F 
  2913      6C697374 
  2913      00
-ARM GAS  C:\Users\jorti\AppData\Local\Temp\ccrI1gpf.s 			page 66
+ARM GAS  C:\Users\jorti\AppData\Local\Temp\cc7R90V4.s 			page 66
 
 
  2914              	.LASF102:
